@@ -4,13 +4,20 @@
 
 ## 1 Introduction
 ### 1.1 Purpose of This Document
+
 - 类似，大体上直接翻译即可。— 梁海
+
 ### 1.2 How This Document was Created
+
 - 类似。— 梁海
 - 由 @小倩 编写。— 另一小组成员
+
 ### 1.3 Basic Principles for Development of This Document
+
 - 类似。— 梁海
 - 注意此章节开始出现需要与 JLReq 对比的内容。— 又一个小组成员
+- 另外，注意，在列表与标题之间一定要空行！— 请叫我红领巾
+
 ### 1.4 The Structure of This Document
 ### 1.5 Reference of Definition and Others
 

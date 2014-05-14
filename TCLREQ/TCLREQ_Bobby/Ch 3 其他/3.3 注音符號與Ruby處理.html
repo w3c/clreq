@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1265">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 19.0px 0.0px; font: 19.0px 'Heiti TC Light'; color: #005a9c}
+    p.p2 {margin: 0.0px 0.0px 24.0px 0.0px; font: 18.0px 'Heiti TC Light'; color: #005a9c}
+    p.p3 {margin: 0.0px 0.0px 4.0px 0.0px; font: 16.0px 'Heiti TC Light'}
+    p.p4 {margin: 0.0px 0.0px 4.0px 0.0px; font: 16.0px 'Heiti TC Light'; min-height: 16.0px}
+    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; text-indent: 23.6px; font: 16.0px 'Heiti TC Light'}
+    p.p6 {margin: 0.0px 0.0px 0.0px 0.0px; text-indent: 23.6px; font: 16.0px 'Heiti TC Light'; min-height: 16.0px}
+    p.p7 {margin: 0.0px 0.0px 0.0px 36.0px; font: 16.0px 'Heiti TC Light'}
+    p.p8 {margin: 0.0px 0.0px 0.0px 0.0px; text-indent: 23.6px; font: 12.0px 'Lucida Grande'; min-height: 15.0px}
+    p.p9 {margin: 0.0px 0.0px 24.0px 0.0px; font: 16.0px 'Heiti TC Light'}
+    li.li3 {margin: 0.0px 0.0px 4.0px 0.0px; font: 16.0px 'Heiti TC Light'}
+    span.s1 {font: 19.0px Arial}
+    span.s2 {font: 18.0px Arial}
+    span.Apple-tab-span {white-space:pre}
+    ol.ol1 {list-style-type: lower-alpha}
+    ol.ol2 {list-style-type: decimal}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1">3.3 </span>注音符號與Ruby處理</p>
+<p class="p2"><span class="s2">3.3.1 </span>注音符號概要</p>
+<p class="p3">注音符號為台灣地區特有的中文教學使用拼音符號，由21個子音（聲符）、16個母音與中間音（韻符），以及四個調號所組成。注音符號排版的配置方式如下：</p>
+<p class="p4"><br></p>
+<p class="p5"><span class="Apple-tab-span">	</span>a.<span class="Apple-tab-span">	</span>注音符號至少由單一聲符或韻符，致多由三個聲符與韻符所組成。</p>
+<p class="p5"><span class="Apple-tab-span">	</span>b.<span class="Apple-tab-span">	</span>調號中，輕聲[˙]於直式注音標注於字音上方，於橫式注音標注於字音第一個符號之前，陽平[ˊ]與上聲[ˇ]、去聲[ˋ]置於最後一個符號右上角。</p>
+<p class="p5"><span class="Apple-tab-span">	</span>c.<span class="Apple-tab-span">	</span>注音符號所占用空間需小於所標注之漢字之字高（直式）或字寬（橫式）。</p>
+<p class="p6"><br></p>
+<p class="p7">註1）無論直排或者橫排，當需標注注音時，通常會整篇文章都標注注音，而不會僅標注一字或者特定幾字。</p>
+<p class="p7">註2）當注音出現於內文時，往往是用以說明單一字的讀音，這時會將注音符號以全形方式作為內文字排列。直排時將輕聲以內文字置於符號前方，其他調號以Ruby文字方式標注於最後一個符號右側。橫排時則是將調號作為內文字，輕聲置於符號前方，其他調號置於符號後方。註3）由於標注注音時，難以做到避頭點處理，所以可允許逗點、句點等出現於一行之首。</p>
+<p class="p8"><br></p>
+<p class="p2"><span class="s2">3.3.2 </span>直排時的注音符號處理</p>
+<p class="p9">繁體中文直排時，注音符號一律標注於漢字之右側。</p>
+<p class="p2"><span class="s2">3.3.3 </span>橫排時的注音符號處理</p>
+<p class="p3">繁體中文橫排時注音符號有著兩種處理方式：</p>
+<p class="p4"><br></p>
+<ol class="ol1">
+  <li class="li3">置於標注漢字之上方。</li>
+  <li class="li3">置於標注漢字之右側。</li>
+</ol>
+<p class="p4"><br></p>
+<p class="p3">當橫排置於標注漢字之右側時，有著以下的排版要點：</p>
+<p class="p4"><br></p>
+<ol class="ol2">
+  <li class="li3">漢字與注音視為一體，不可因換行而分離。</li>
+  <li class="li3">無論是否有標注調號，每字所占空間需一致，也就是須確保每個單元寬度一致。</li>
+  <li class="li3">注音符號所在位置需置中對齊，不可靠標注漢字之上緣或下緣對齊。</li>
+</ol>
+<p class="p4"><br></p>
+<p class="p2"><span class="s2">3.3.4 </span>Ruby處理</p>
+<p class="p3">對繁體中文而言，Ruby不是傳統的排版方式。但隨著日文翻譯小說數量增加，此種處理方式也逐漸出現在繁體中文的出版品中。Ruby文字對中文書籍而言，可視為註解的一種，依照使用狀況來看，多用在語言上的對照，最常使用的狀況為中文與英文專有名詞的對照。</p>
+<p class="p4"><br></p>
+<p class="p3">繁體中文出版品中，最常見到的Ruby使用範例有以下幾種：</p>
+<p class="p4"><br></p>
+<ol class="ol1">
+  <li class="li3">標注的母文字為漢字或者漢字組成的單字，Ruby為西文單字，此時西文單字採用比例字，直排時順時針旋轉90度排列。所占空間儘量位於母文字內，或稍微超出母文字。</li>
+  <li class="li3">標注的母文字為漢字或者漢字所組成的單字，Ruby為西文專門用語縮寫，此時西文單字採用全形字，直排時不旋轉。所占空間儘量收於母文字內。</li>
+  <li class="li3">標注的母文字為西文單字或者西文句子，Ruby為中文字，此時中文字排列與直排相同。所占空間儘量收於母文字內，或稍微超出母文字。</li>
+</ol>
+<p class="p4"><br></p>
+<p class="p7">註1）當在進行c的處理時，母文字之西文句子排列依然按照排版規則進行。Ruby採用均等排列，或母文字進行換行處理，Ruby也隨均等排列，換至下一行。</p>
+</body>
+</html>

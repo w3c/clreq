@@ -125,7 +125,7 @@
         <section>
           <h2>Choice of Size and Ratio for Zhuyin</h2>
           <p>
-            If a Hanzi character is considered as a square with an aspect ratio of 30:30,  its Zhuyin should set the ratio of width to height as 15:30 in vertical writing mode and of 30:15 in horizontal writing mode, and stay sticky to the base-character. Among these Zhuyin (initials, medials and finals) have an aspect ratio of 9:9, while Mandarin non-neutral tones and dialect non-checked tones have an aspect ratio of 5:5, and the aspect ratio of Mandarin neutral tones is 9:2, the aspect ratio of dialect checked tones is 5:5.
+            If a Hanzi character is considered as a square with an aspect ratio of 30:30,  its Zhuyin should set the ratio of width to height as 15:30 in vertical writing mode and of 30:15 in horizontal writing mode, and stay sticky to the base character. Among these Zhuyin (initials, medials and finals) have an aspect ratio of 9:9, while Mandarin non-neutral tones and dialect non-checked tones have an aspect ratio of 5:5, and the aspect ratio of Mandarin neutral tones is 9:2, the aspect ratio of dialect checked tones is 5:5.
           </p>
           <p>
             When the font size of the body is small, it's possible to provide larger font size only for the MPS, and the other methods, e.g. providing Zhuyin in the parentheses within the body, are workable. More details can be found in 2.2.4 The Positioning of Different Composition for the Tones.
@@ -156,7 +156,7 @@
         <section>
           <h2>Rule to Zhuyin Typesetting</h2>
           <p>
-            Similar to the case that putting certain punctuation marks in the beginning of the line is forbidden, in principle, Zhuyin should stay sticky to the base-character in horizontal writing mode, they must not appear in the beginning of the line, and must always place on the right side of its corresponding base-character.
+            Similar to the case that putting certain punctuation marks in the beginning of the line is forbidden, in principle, Zhuyin should stay sticky to the base character in horizontal writing mode, they must not appear in the beginning of the line, and must always place on the right side of its corresponding base character.
           </p>
         </section>
       </section>
@@ -166,17 +166,17 @@
         <section>
           <h2>Basic Requirements</h2>
           <ul>
-            <li>Romanization is more commonly available in horizontal writing mode only. These phonetic annotations are usually placed on top of the base characters. In general, phonetic annotations and their base characters are sticky to each other regardless of space, and both of them are centered-aligned.</li>
-            <li>In special cases when Romanization is needed in vertical writing mode, the annotation is usually set to the right side of its its corresponding base-character, but it is difficult to read anyway.</li>
-            <li>If a Romanization annotation is longer than its base-character and is at the start of a line, both the annotation and the base-character can be aligned to the beginning of the line.</li>
-            <li>The space between two adjacent phonetic annotations should not be smaller than the size of normal space between two English words, which is about 1/4 em. Due to the limitation of typesetting, there's no space between the phonetic annotations which are longer than their base-characters in many prints.  Luckily, this is not likely to lead to ambiguity because every Hanzi character is just one syllable and most Pinyin fragments are easy to tell, but sometimes these connected phonetic annotations can cause misunderstanding that the two base-characters come from the same word, also make it hard to understand the meaning of words.</li>
+            <li>Romanization is more commonly available in horizontal writing mode only. These Ruby characters are usually placed on top of its base characters. In general, Ruby characters and their base characters are sticky to each other regardless of space, and both of them are aligned centered.</li>
+            <li>In special cases when Romanization is needed in vertical writing mode, the annotation is usually set to the right side of its corresponding base character, but it is difficult to read anyway.</li>
+            <li>If Ruby characters is longer than its base character and is at the start of a line, both the Ruby characters and the base character can be aligned to the beginning of the line.</li>
+            <li>The space between two adjacent Ruby characters should not be smaller than the size of normal Western-language space, which is about 1/4 em. Due to the limitation of typesetting, there's no space between the Ruby characters which are longer than their base characters in many prints. Luckily, this is not likely to lead to ambiguity because every Hanzi character is just one syllable and most Pinyin fragments are easy to tell, but sometimes these connected Ruby characters can cause misunderstanding that the two base characters come from the same word, also make it hard to understand the meaning of words.</li>
             <p><strong>Note</strong>: This layout requirement relies on the way HTML Ruby Markup Extensions supports <rt> and the way CSS Ruby Module Level 1 deals with space. <ruby><rb>双</rb><rb>窗</rb><rt>shuāng</rt>&nbsp;<rt>chuāng</rt></ruby></p>
             <p>The end of the bottom line and the beginner of the head line usually contains a space.</p>
-            <li>The phonetic annotations are allowed to be extended to the top of adjacent base-characters as long as the minimum space is insured. </li>
+            <li>The Ruby characters are allowed to be extended to the top of adjacent base characters as long as the minimum space is insured. </li>
             <li>As most target readers are beginners to Chinese, the body text has larger font size than usual prints.</li>
-            <li>As the width of most Latin letters are different from each other,  and the letters can vary in visual size according to the typefaces even in the same font size, there's no special requirement for the ratio of from the font size of phonetic annotations to the font size of their base-characters.  Despite of this, the phonetic annotations usually use 1/2 the font size of the base-characters under the impact of Japanese Ruby Typesetting.</li>
+            <li>As the width of most Latin letters are different from each other, and the letters can vary in visual size according to the typefaces even in the same font size, there's no special requirement for the ratio of from the font size of phonetic annotations to the font size of their base characters. Despite of this, the Ruby characters usually use 1/2 the font size of the base characters under the impact of Japanese Ruby Typesetting.</li>
             <li>
-              <p>Phonetic annotations usually use sans-serif typeface which is rather thin and round. It's a general opinion in publishing and in education that Pinyin must use those typefaces in which a and g are single story and the second-tone mark is thick on the lower part and thin on the upper as of its handwriting style of the stroke. Actually there have never been any national standard which can specify the typefaces and the glyphs for Pinyin. The General Association of Chinese Culture in Taiwan once wrote to the Ministry of Education in Mainland China about the rules about the typefaces of Pinyin, and was responded that the letter a and the letter g should only follow the corresponding Latin letters, but there are not any strict requirements for the typefaces.
+              <p>Phonetic annotations usually use sans-serif typeface which is rather thin and round. It's a general opinion in publishing and in education that Pinyin must use those typefaces in which ‘a’ and ‘g’ are single story and the second-tone mark is thick on the lower part and thin on the upper as of its handwriting style of the stroke. Actually there have never been any national standard which can specify the typefaces and the glyphs for Pinyin. The General Association of Chinese Culture in Taiwan once wrote to the Ministry of Education in Mainland China about the rules of the glyph issues of Pinyin, and was responded that the letter ‘a’ and ‘g’ should only follow the corresponding Latin letters, and there are no any strict requirements for their glyphs.
               </p>
               <ol type="a">
                 <li><a href="https://github.com/audreyt/moedict-webkit/issues/83#issuecomment-26715350">audreyt/moedict webkit#83</a> </li>
@@ -184,31 +184,31 @@
               </ol>
             </li>
           </ul>
-          <p>Below detailed description of the difference between two typical use cases.</p>
+          <p>Below detailed the description of the difference between two typical use cases.</p>
         </section>
         <section>
           <h2>Character-based Phonetic Annotation</h2>
           <ul>
             <li>The base character is a single Hanzi. Only the Hanzi is annotated, but not Arabic numerals, punctuation marks nor other characters.</li>
-            <li>The phonetic annotations are always on the top.</li>
-            <li>As the phonetic annotations are often longer than their base character, the space between each base character should be set larger to avoid too much irregular adjustment within the base-characters.</li>
-            <li>The phonetic annotations are all in lower case. Sentence cases are rare.</li>
+            <li>The ruby characters are always on the top.</li>
+            <li>As the ruby characters are often longer than their base character, the space between each base character should be set larger to avoid too much irregular adjustment within the base characters.</li>
+            <li>The ruby characters are all in lower case. Sentence case is rare.</li>
           </ul>
         </section>
         <section>
           <h2>Word-based Phonetic Annotation</h2>
           <ul>
-            <li>The base-characters are one or more words consist of Hanzi characters. Rules for the making of words can refer to GB/T 16159—2012 Basic Requirements for Words in Hanyu Pinyin.</li>
-            <li>Phonetic annotations sometimes appears at the bottom.</li>
-            <li>Both the phonetic annotation and the base-characters are separated by words. The adjacent phonetic annotations should be separated by a space of 1/2 em, but the spacing between each base-characters is normal.</li>
-            <li>Many phonetic annotations for words can indicate the logic of the whole sentence, rather than merely indicating the pronunciation: these phonetic annotations have sentence cases, as well as punctuation marks which follow the annotations in front of it.</li>
+            <li>The base characters are one or more words consist of Hanzi characters. Rules for the making of words can refer to GB/T 16159—2012 Basic Requirements for Words in Hanyu Pinyin.</li>
+            <li>Ruby characters sometimes appear at the bottom.</li>
+            <li>Both the Ruby characters and the base characters are separated by words. The adjacent Ruby characters should be separated by a space of 1/2 em, but the spacing between each base characters is normal.</li>
+            <li>Many Ruby characters for words can indicate the logic of the whole sentence, rather than merely indicating the pronunciation — these Ruby characters have sentence case, as well as punctuation marks which follow the annotations in front of it.</li>
           </ul>
         </section>
       </section>
       <section>
-        <h2>Both Annotating Pinyin and Zhuyin</h2>
+        <h2>Annotating Both Pinyin and Zhuyin</h2>
         <p>
-          Both annotating Pinyin and Zhuyin is a practical method to indicate the pronunciation to the readers who know only one of these phonetic systems, as well as to help study or enquiry the other phonetic system. Normally, when Pinyin and Zhuyin are both provided, the Zhuyin phonetic symbols are placed on the right side of the Hanzi character, while Romanization are set to the bottom of Hanzi in horizontal writing mode and the left side in vertical writing mode.
+           Annotating both Pinyin and Zhuyin is a practical method to indicate the pronunciation to the readers who know only one of these phonetic systems, as well as to help study or enquiry the other phonetic system. Normally, when Pinyin and Zhuyin are both provided, the Zhuyin are placed on the right side of the Hanzi character, while Romanization are set to the bottom of Hanzi in horizontal writing mode and the left side in vertical writing mode.
         </p>
       </section>
       <section>

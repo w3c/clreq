@@ -1,4 +1,5 @@
-## Usage of Chinese Ruby
+<section class='informative'>
+# Usage of Chinese Ruby
 
 Chinese Ruby, also known as interlinear annotation, is a small-sized,
 supplementary text attached to certain characters in the main text. Chinese
@@ -6,6 +7,7 @@ Ruby is usually set in the interlinear space, aligned to the corresponding
 annotated text. In Chinese typesetting, Chinese Ruby is mainly used to give
 pronunciation or meaning.
 
+<section>
 ## Indicate the Pronunciation for Chinese characters
 
 In Chinese, interlinear annotation is most commonly used in this way.
@@ -21,15 +23,18 @@ brackets.
 There are two methods, Zhuyin and Romanization, to indicate the pronunciation
 in Chinese phonetic systems:
 
-## Zhuyin
+<section>
+### Zhuyin
 
 Mandarin Phonetic Symbols (國語注音符號) and Taiwanese Dialect Phonetic Symbols
 (台灣方言音符號), hereinafter referred to as ‘Zhuyin’, are the systems of phonetic
 annotation mainly used in Taiwan, while other areas may also include Zhuyin in
 certain dictionaries or textbooks. In most cases, Zhuyin appears on the right
 side of the base characters, exceptions are very rare.
+</section><!--/###-->
 
-## Romanization
+<section>
+### Romanization
 
 Hanyu Pinyin, which is being carried out in Mainland China nowadays, uses the
 Latin alphabet to transcribe Modern Standard Chinese (Mandarin) pronunciations
@@ -52,17 +57,23 @@ base characters. The publication for Pinyin in the early stage are very varied
 and lack of consistency, both character-based and word-based annotation can be
 found, so we don't intend to provide detailed discussion about them in this
 document.
+</section><!--/###-->
+</section><!--/##-->
 
+<section>
 ## Indicate the Meaning or Other Additional Information
 
-## Bilingual Annotation
+<section>
+### Bilingual Annotation
 
 Bilingual annotation aims to provide Chinese translation of the text in
 foreign languages and acronyms, or to offer original text to the translated
 word. This is mainly used for proper nouns, titles or words difficult to be
 translated. It is commonly found in translation, especially in light novels.
+</section><!--/###-->
 
-## Interlinear Comments
+<section>
+### Interlinear Comments
 
 Interlinear comments are methods to annotate the meaning of a piece of text
 fragments or a single word, which is named for its interlinear positioning. It
@@ -71,15 +82,22 @@ Compared to other annotation methods, e.g. headnotes or footnotes, interlinear
 comments are more compact and stickier to the body. These kinds of comments
 are often found in ancient books, e.g. Rouge Inkstone, an early commentator of
 the novel Dream of the Red Chamber.
+</section><!--/###-->
+</section><!--/##-->
 
+<section>
 ## Qu Notation
 
 Qu Notation contains many tradition methods to represent musical notes and
 lyrics in ancient China, e.g. Gongche notation (工尺譜). In modern prints,
 similar methods like numbered musical notation can also be found.
+</section><!--/##-->
+</section><!--/#-->
 
-## Positioning of Chinese Ruby
+<section>
+# Positioning of Chinese Ruby
 
+<section>
 ## Overview
 
 In vertical writing mode, Zhuyin, Romanization or bilingual annotations are
@@ -97,10 +115,13 @@ controllable. The letters of Romanization alphabet can have different sizes
 and be composed to different length, and there should also be space between
 the Romanization for each word. Thus, these two kinds of phonetic annotations
 differ greatly in positioning.
+</section><!--/##-->
 
+<section>
 ## Zhuyin
 
-## Positioning of Zhuyin
+<section>
+### Positioning of Zhuyin
 
 According to Manual of Mandarin Phonetic Symbols (國語注音符號手冊) released by
 Ministry of Education in Taiwan, there are two standard ways placing Zhuyin to
@@ -109,8 +130,10 @@ corresponding Hanzi, the use cases of putting Zhuyin on the top are still
 rarely found in today's textbooks or other prints, and not accepted by the
 public. Therefore, it's always a better practice to place Zhuyin annotation on
 the right side no matter in horizontal or vertical writing mode.
+</section><!--/###-->
 
-## Choice of Size and Ratio for Zhuyin
+<section>
+### Choice of Size and Ratio for Zhuyin
 
 If a Hanzi character is considered as a square with an aspect ratio of 30:30,
 its Zhuyin should set the ratio of width to height as 15:30 in vertical
@@ -124,14 +147,18 @@ When the font size of the body is small, it's possible to provide larger font
 size only for the MPS, and the other methods, e.g. providing Zhuyin in the
 parentheses within the body, are workable. More details can be found in 2.2.4
 The Positioning of Different Composition for the Tones.
+</section><!--/###-->
 
-## Positioning of the Tones in Mandarin Phonetic Symbols
+<section>
+### Positioning of the Tones in Mandarin Phonetic Symbols
 
   * To Mandarin non-neutral tones and dialect non-checked tones, in either horizontal or vertical writing mode, they are placed to the upper right corner of the last phonetic symbol.
   * The Mandarin neutral tones come first to the phonetic symbols, which is the top in vertical writing mode and the left side in the horizontal writing mode.
   * The dialect checked tones are set to the lower right corner to the phonetic symbols.
+</section><!--/###-->
 
-## The Positioning of Different Composition for the Tones
+<section>
+### The Positioning of Different Composition for the Tones
 
   * Composition of one single symbol: initial, medial or final.
   * Composition of two symbols: initial-medial, initial-final or medial-final.
@@ -139,18 +166,24 @@ The Positioning of Different Composition for the Tones.
     1. Mandarin non-neutral tones and dialect non-checked tones
     2. Mandarin neutral tones
   * The dialect checked tones
+</section><!--/###-->
 
-## Rule to Zhuyin Typesetting
+<section>
+### Rule to Zhuyin Typesetting
 
 Similar to the case that putting certain punctuation marks in the beginning of
 the line is forbidden, in principle, Zhuyin should stay sticky to the base
 character in horizontal writing mode, they must not appear in the beginning of
 the line, and must always place on the right side of its corresponding base
 character.
+</section><!--/###-->
+</section><!--/##-->
 
+<section>
 ## Romanization
 
-## Basic Requirements
+<section>
+### Basic Requirements
 
   * Romanization is more commonly available in horizontal writing mode only. These Ruby characters are usually placed on top of its base characters. In general, Ruby characters and their base characters are sticky to each other regardless of space, and both of them are aligned centered.
   * In special cases when Romanization is needed in vertical writing mode, the annotation is usually set to the right side of its corresponding base character, but it is difficult to read anyway.
@@ -172,21 +205,28 @@ a space.
 
 Below detailed the description of the difference between two typical use
 cases.
+</section><!--/###-->
 
-## Character-based Phonetic Annotation
+<section>
+### Character-based Phonetic Annotation
 
   * The base character is a single Hanzi. Only the Hanzi is annotated, but not Arabic numerals, punctuation marks nor other characters.
   * The ruby characters are always on the top.
   * As the ruby characters are often longer than their base character, the space between each base character should be set larger to avoid too much irregular adjustment within the base characters.
   * The ruby characters are all in lower case. Sentence case is rare.
+</section><!--/###-->
 
-## Word-based Phonetic Annotation
+<section>
+### Word-based Phonetic Annotation
 
   * The base characters are one or more words consist of Hanzi characters. Rules for the making of words can refer to GB/T 16159—2012 Basic Requirements for Words in Hanyu Pinyin.
   * Ruby characters sometimes appear at the bottom.
   * Both the Ruby characters and the base characters are separated by words. The adjacent Ruby characters should be separated by a space of 1/2 em, but the spacing between each base characters is normal.
   * Many Ruby characters for words can indicate the logic of the whole sentence, rather than merely indicating the pronunciation — these Ruby characters have sentence case, as well as punctuation marks which follow the annotations in front of it.
+</section><!--/###-->
+</section><!--/##-->
 
+<section>
 ## Annotating Both Pinyin and Zhuyin
 
 Annotating both Pinyin and Zhuyin is a practical method to indicate the
@@ -195,24 +235,32 @@ well as to help study or enquiry the other phonetic system. Normally, when
 Pinyin and Zhuyin are both provided, the Zhuyin are placed on the right side
 of the Hanzi character, while Romanization are set to the bottom of Hanzi in
 horizontal writing mode and the left side in vertical writing mode.
+</section><!--/##-->
 
+<section>
 ## Atypical Use Cases for Hanzi Phonetic Annotations
 
-## Erhuayin
+<section>
+### Erhuayin
 
 Erhuayin is one special phonetic phenomenon of Modern Standard Chinese, which
 needs extra description in the body text or note with Zhuyin annotation system
 because Zhuyin corresponds to only one base character and fails to indicate
 the continuity of erhuayin and the change of the final, while Romanization
 shows the features of erhuayin very well.
+</section><!--/###-->
 
-## Ligature
+<section>
+### Ligature
 
 Ligature is special for its many syllables, thus its Ruby annotation may fail
 to typeset nicely. The pronunciation of ligature should be given by note
 instead, in parentheses or even inside the body. Ligature is rare in modern
 writing system of Chinese nowadays.
+</section><!--/###-->
+</section><!--/##-->
 
+<section>
 ## Bilingual Annotation
 
 The typesetting of bilingual annotation is actually quite similar to that of
@@ -220,7 +268,8 @@ Romanization. It is usually placed in the start of the annotated text, i.e.
 the right side of the base text in vertical writing mode and the top of the
 base text in horizontal writing mode.
 
-## Word Alignment
+<section>
+### Word Alignment
 
 In order to maintain the unity of the text, when the ruby text have different
 length from the base text, it is necessary to adjust the spacing between words
@@ -236,7 +285,10 @@ centered if it's in Western, or it can leave more spacing between each
 character if it's in Hanzi.
 
 **Note:** More detail can be referred to the section, [Positioning of Group-ruby with Respect to Base Characters](http://www.w3.org/TR/jlreq/#positioning_of_groupruby_with_respect_to_base_characters) in Requirements for Japanese Text Layout.
+</section><!--/###-->
+</section><!--/##-->
 
+<section>
 ## Interlinear Comments
 
 Interlinear comments can have very varied layouts and different length. They
@@ -250,3 +302,5 @@ rather long text fragment. In this case, due to the ambiguity of the base
 text, the ruby text can find itself a suitable place as an anchor and flow
 down. There's no strict requirement for its length, and sometimes it can be
 longer than one line.
+</section><!--/##-->
+</section><!--/#-->

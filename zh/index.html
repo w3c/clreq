@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>中文排版规范</title>
+    <meta charset='utf-8'>
+    <script src='http://www.w3.org/Tools/respec/respec-w3c-common'
+            async class='remove'></script>
+    <script class='remove'>
+      var respecConfig = {
+          specStatus: "ED",
+          shortName:  "clreq",
+          editors: [
+                {   name:       "董福興",
+                    mailto:     "bobbytung@wanderer.tw",
+                    company:    "Invited Expert" },
+                {   name:       "陳奕鈞",
+                    mailto:     "ethantw@me.com",
+                    company:    "Invited Expert" },
+                {   name:       "梁海",
+                    mailto:     "lianghai@gmail.com",
+                    company:    "Invited Expert" },
+                {   name:       "吴小倩",
+                    mailto:     "xiaoqian@w3.org",
+                    company:    "W3C" },
+                {   name:       "Richard Ishida",
+                    mailto:     "ishida@w3.org",
+                    company:    "W3C" }
+          ],
+          wg:           "Internationalization Core Working Group",
+          wgURI:        "http://www.w3.org/International/core/",
+          wgPublicList: "public-i18n-cjk",
+          wgPatentURI:  "http://www.w3.org/2004/01/pp-impl/",
+          edDraftURI: "http://w3c.github.io/CLReq/CLReq-Draft-20140512/zh.html", 
+      };
+    </script>
+  </head>
+  <body>
+    <section id='abstract'>
+      <p>
+        本文書整理了中文（漢字）書寫系統於排版上的需求。一方面說明需求事項以明確描述中文排版之需求與問題；另一方面也提與既有標準（如萬國碼）的對應，冀求透過本文書能在實作層級更能有效地促進實現。
+      </p>
+    </section>
+
+    <section id='sotd'>
+      <p>
+        <a href="http://www.w3.org/International/core/">The Internationalization Working Group</a> has been a great help during the writing of this document. You are also welcome to include <a href="mailto:public-i18n-cjk@w3.org">public-i18n-cjk@w3.org</a>
+            (<a href="mailto:public-i18n-cjk@w3.org?subject=subscribe">subscribe</a>) in any discussion about this document. Once the FPWD of this layout requirements is published, the HTML5 Chinese IG will work with <a href="http://www.w3.org/International/core/">the Internationalization Working Group</a> to take this document further, to widen the exposure and review of the document.
+      </p>
+
+      <p>A  <a href="../"><strong>English version</strong></a> of this document is also available.</p>
+    </section>
+    
+    <section class='informative'>
+      <h2>行间注的用途</h2>
+      <p>
+        行间注是标注于字词旁侧的小字号补充文本。行间注的注文通常位于行间，与其所标注的基文对齐，因這一性質而又名為行間注。行间注在中文排版里的用途主要为标音与释义。
+      </p>
+      <section>
+        <h2>为汉字标注读音</h2>
+        <p>
+          行间注最常见的用途係為漢字標注讀音。汉字标音针对的是汉语初学者，包括母语为汉语的幼儿以及学习汉语的外国人士，因此对个别字标音的情况较少，多为全文标音。常规排版中没有行间注标音的习惯，对生僻字也几乎从不标音，即便标音也只是用行内括号注。
+        </p>
+        <p>
+          中文的标音方案有注音符号与羅馬拼音两大类：
+        </p>
+        <section>
+          <h2>注音符号</h2>
+          <p>
+            國語注音符號及台灣方言音符號（以下統稱注音或注音符號）標音系統多用於台灣，其他地區僅見於特定的辭典或教科書中。絕大多數的情況下，注音符號標注於相應漢字（基文）的右側，例外情況非常少見。
+          </p>
+        </section>
+        <section>
+        <h2>羅馬拼音</h2>
+        <p>
+          使用拉丁字母的汉语拼音是中国大陆推行的現代標準漢語（普通话）标音与拉丁转写方案，汉语拼音的全文标音也是中国大陆现代最常见的行间注用例。在中国大陆与台湾，台湾闽南语罗马字拼音等各种汉语方言的拉丁字母标音方案也有与汉语拼音情况类似的行间注用例。
+        </p>
+        <p>
+          因拉丁字母的特质，此类标音文本仅横排。针对幼儿母语者的文本以单字作为基文进行标音。针对二语学习者的文本除偶有与前者一致的格式外，大多分词连写，以词作为基文进行标音，基文之间如西文书写般用空格隔开，并且注文有句首大写、专名首字母大写等格式以及与正文对应的标点符号，自成一体。汉语拼音早期印刷品的格式较为多变，一致性不强。大体上，单字标音与分词连写标音都常见，不作详细描述。
+        </p>
+        </section>
+      </section>
+
+      <section>
+        <h2>标注释义等非语音信息</h2>
+        <section>
+          <h2>中外文對照</h2>
+          <p>
+            為外來語、首字母縮略詞標注其中譯，或對翻譯名詞標注其原文，多見於專有名詞、作品名及譯後概念較難傳達的詞彙。常见于译作，尤以轻小说為主。
+          </p>
+        </section>
+        <section>
+          <h2>行間批語</h2>
+          <p>
+           行間批語是為一段文本片段或單個詞彙標注解釋的排版方式，因共存於正文文本，顯示於其行間而得名。行間批語較眉批、腳注等注釋方法更具緊湊、依附性，多見於如《紅樓夢》早期抄本的脂硯齋批語等古籍。
+          </p>
+        </section>
+      </section>
+    </section>
+    
+    <section>
+      <h2>行间注排版概述</h2>
+
+      <section>
+        <h2>综述</h2>
+        <p>
+          直排時，注音符號或羅馬拼音、中外文對照常位於受注基文（漢字）右側，行間批語則多位於基文片段左側；橫排時，注音符號可置於受注基文（漢字）的上方及右側，但多見於右側，而羅馬拼音及中外文對照上下皆可，行間批語則位於基文片段的後方。
+        </p>
+        <p>
+          注音符号等宽且每个汉字标音的注音符号字数不超过三个，较为可控；而拉丁字母非等宽，拼式长短不一，且相邻拼式相连时应当有词间空格隔开。两类标音 ruby 的排版差异较大。
+        </p>
+        <p>
+          拼注音共同標注是一種可行的作法，能同時為僅熟悉單一標音系統的二種讀者提供漢字標音，並作為學習、査詢另一種系統拼寫的有效方式。一般情況下，「拼注音共同標注」的注音符號位漢字右側，橫排時羅馬拼音位漢字下方，直排時位漢字左側。
+        </p>
+      </section>
+
+      <section>
+        <h2>注音符号標音的排版</h2>
+        <section>
+          <h2>注音符號的位置</h2>
+          <p>
+            根據台灣教育部制訂的《國語注音符號手冊》，將注音符號標注於漢字上方（橫式注音）及右方（直式注音）的二種排版格式皆屬官方標準，但在現今的教科書或其他印刷品中，將注音標注於漢字上方的格式非常罕見，一般大眾也不易接受，因此，無論在直排或橫排中，將注音符號標注在漢字右方都是較佳的作法。
+          </p>
+        </section>
+        <section>
+          <h2>注音符號的比例與大小</h2>
+          <p>
+            將一個漢字視作寬高相等「30:30」的正方形，其注音符號標示範圍之寬高則應為「15:30」，緊隨其標注的漢字。
+          </p>
+          <p>
+           聲母、介音、韻母之比例為「9:9」，國語陰陽上去四聲及方言音非入聲調號「5:5」、國語輕聲調號「9:2」、方言音入聲調號「5:5」。詳盡細節及圖例請參考下文「各種發音組合的排版方式」。
+          </p>
+          <p>
+            正文字號較小時，單獨為注音符號提供字號稍大的字體是可行的作法，亦可考慮其他字音標注方式，如置於正文括號內。
+          </p>
+        </section>
+        <section>
+          <h2>注音符號的聲調號位置</h2>
+          <ul>
+            <li>國語陰陽上去四聲調號及方言音非入聲調號，皆標注於字音最後一個符號右上角。</li>
+            <li>國語輕聲調號標於字音前方。</li>
+            <li>方言音入聲調號則位於字音右下角。</li>
+          </ul>
+        </section>
+        <section>
+          <h2>各種發音組合的排版方式</h2>
+          <ul>
+            <li>「聲母」「介音」「韻母」單個符號的拼式</li>
+            <li>「聲母－介音」「聲母－韻母」「介音－韻母」二個符號的拼式</li>
+            <li>「聲母－介音－韻母」三個符號
+              <ol type="a">
+                <li>國語「陰陽上去」調號、方言音非入聲調號</li>
+                <li>國語「輕聲」調號</li>
+              </ol>
+            </li>
+            <li>方言音「入聲」調號</li>
+          </ul>
+        </section>
+        <section>
+          <h2>注音標音分離禁則</h2>
+          <p>
+            如同標點禁則，直式注音在橫排文本中應注意其緊隨漢字的原則，注音標音不得單獨出現在行首，而需永遠緊隨其標注的漢字右側。
+          </p>
+        </section>
+      </section>
+
+      <section>
+        <h2>羅馬拼音標音的排版</h2>
+        <section>
+          <h2>基本规则</h2>
+          <ul>
+            <li>仅横排。注文通常置于基文上方。二者不论宽窄关系如何皆密排，居中对齐。</li>
+            <li>被迫於直排文本標音时，注文通常置于标音文本右侧，但难以阅读。</li>
+            <li>若注文长于基文且位于行端，二者可向行端对齐。</li>
+            <li>相邻注文的间距不应小于西文词间空格的宽度（约 1/4 em）。但受排版技术限制，许多出版物中过长的相邻注文都会紧密相连。因汉字为单音节文字且多数汉语拼音音节都容易辨认界限，并不容易出现标音的歧义，但由于每个汉字的标音都已隔开，意外的相连易造成分词连写的假象，且相连的标音时常横跨词界，打乱语义。</li>
+            <p>注：这一排版需求有赖于 HTML Ruby Markup Extensions 对 <rt> 成组连写的支持以及 CSS Ruby Module Level 1 的空白处理。<ruby><rb>双</rb><rb>窗</rb><rt>shuāng</rt> <rt>chuāng</rt></ruby></p>
+            <p>注：注意底線處結尾及開頭標籤之間包含一個空白。</p>
+            <li>只要不侵犯最小间距，可允许注文伸展到相邻基字上方。</li>
+            <li>因针对汉语初学者，正文通常用较大字号的楷体。</li>
+            <li>因拉丁字母为变宽文字，同等字号下使用不同字体时的视觉大小也差异较大，注文与基文的字号关系并无定数。但受振假名的排版习惯影响，注文常使用基文 1/2 的字号。</li>
+            <li>
+              注文常用较细、较饱满的无衬线体。出版与教育界普遍认为汉语拼音排版必须使用 a 与 g 为单层设计的、二声调号下粗上细的字体。但其实未有任何国家标准对汉语拼音的字体及字母形态作出过具体规定。
+            </li>
+            <li>台灣「中華文化總會」曾去信大陸教育部詢問漢語拼音字形相關事宜，部門回應表示，漢語拼音字母 a、g 對應相應的拉丁字母，呈現方式不需拘泥於手寫字形。</li>
+          </ul>
+          <p>下文描述两类典型用例之间的差异。</p>
+        </section>
+        <section>
+          <h2>单字标音</h2>
+          <ul>
+            <li>基文为单个汉字。仅标注汉字，不标注阿拉伯数字、标点等字符。</li>
+            <li>注文总是在上方。</li>
+            <li>因注文宽度经常超过基文，通常为正文设定较大的字距以供给注文足够的横向伸展空间，避免基文间距频繁被过宽的注文撑大。</li>
+            <li>注文全小写，鲜见专名首字母大写。</li>
+          </ul>
+        </section>
+        <section>
+          <h2>分词连写标音</h2>
+          <ul>
+            <li>基文为一个或多个汉字构成的词语。分词连写规则可依据《GB/T 16159—2012 汉语拼音正词法基本规则》。</li>
+            <li>注文有时在下方。</li>
+            <li>正文与标音双方皆分词连写。相邻基文之间有约 1/2 em 的空格隔开，基文内部字距通常正常。</li>
+            <li>许多分词连写标音用例体现出对整个句子标音的逻辑，而非简单对词语标音：注文有句首大写、专名首字母大写。有标点，标点跟随左侧（前方）注文。</li>
+          </ul>
+        </section>
+      </section>
+      <section>
+        <h2>漢字標音的非典型情況</h2>
+        <section>
+          <h2>兒化音</h2>
+          <p>
+            對現代標準漢語的特殊語音現象——兒化，注音符號受制於其標注單個漢字的局限，難以準確表達兒化音節的連續性及韻母變音，需要在正文或附注中額外說明；羅馬拼音則可有效標注此現象。
+          </p>
+        </section>
+        <section>
+          <h2>合文</h2>
+          <p>
+            由於合文「多音節」的特殊性，使用ruby標音可能導致文本排版效果不佳，應改在附注、括號內或於正文中說明其讀音。目前合文已少見於現代中文書寫系統。
+          </p>
+        </section>
+      </section>
+      <section>
+        <h2>中外文對照的排版</h2>
+        <p>
+         中外文對照的排版方式與羅馬拼音標音類似，多位於受注文本片段頂端——直排時位基文右側，橫排時位基文上方。
+        </p>
+        <section>
+          <h2>詞的對齊</h2>
+          <p>為了保證詞彙的整體性，在注文總長與其基文的長度不一時，需要調整相互間的對齊關係，以求體例清晰並避免誤會。</p>
+          <p>當注文總長小於其基文的長度時，將注文設置居中（適用西文）或加大注文字距（適用漢字），後者更有「間隔平均分配」及「始末端對齊」二種方式。</p>
+          <p>當注文總長大於其基文的長度時，將基文設置居中（適用西文）或加大基文字距（適用漢字）。</p>
+          <p>注: 底線處詳見〈JLReq・Positioning of Group-ruby with Respect to Base Characters〉一節, <a href="https://clreq.hackpad.com/ep/search/?q=%23positioning_of_groupruby_with_respect_to_base_characters&via=LEZdmNzTVUf">JLReq/#positioning_of_groupruby_with_respect_to_base_characters</a></p>
+        </section>  
+      </section>
+      <section>
+        <h2>行間批語的排版</h2>
+        <p>間批語的格式多變且內容長度不一，通常位於受注的文本片段底端——直排時位基文左側，橫排時位基文下方。為與正文區隔，有時以不同於正文文字的顏色來顯示。</p>
+        <p>行間批語可用於解釋一段長文本的整體語境。這種情況下，由於沒有明確的基文，其注文常自一個合適的錨點位置展開並向後延伸，長度不拘，時可超過一行。</p>
+      </section>
+    </section>
+  </body>
+</html>

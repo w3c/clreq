@@ -195,19 +195,18 @@ span.note, span.issue, span.warning { padding: .1em .5em .15em; }
 
     <dl>
       <dt>本版本：</dt>
-      <dd><a class="u-url" href="http://w3c.github.io/CLReq/CLReq-Draft-20140512/zh.html">http://www.w3.org/International/docs/chinese-layout/zh/</a></dd>
-
+      <dd><a class="u-url" href="http://www.w3.org/International/docs/chinese-layout/zh/">http://www.w3.org/International/docs/chinese-layout/zh/</a></dd>
       <dt>最新发布草稿：</dt>
-      <dd><a href="http://www.w3.org/TR/clreq/">http://www.w3.org/International/docs/chinese-layout/zh/</a></dd>
-
+      <dd><a href="http://www.w3.org/International/docs/chinese-layout/zh/">http://www.w3.org/International/docs/chinese-layout/zh/</a></dd>
       <dt>最新编辑草稿：</dt>
-      <dd><a href="http://w3c.github.io/CLReq/CLReq-Draft-20140512/zh.html">https://github.com/w3c/clreq</a></dd>
+      <dd><a href="https://github.com/w3c/clreq">https://github.com/w3c/clreq</a></dd>
     
       <dt>编辑：</dt>
       <dd class="p-author h-card vcard" property="bibo:editor" resource="_:editor0"><span property="rdf:first" typeof="foaf:Person"><span property="foaf:name" class="p-name fn">董福興</span>, 特邀专家, <span class="ed_mailto"><a class="u-email email" property="foaf:mbox" href="mailto:bobbytung@wanderer.tw">bobbytung@wanderer.tw</a></span></span><span property="rdf:rest" resource="_:editor1"></span></dd>
       <dd class="p-author h-card vcard" resource="_:editor1"><span property="rdf:first" typeof="foaf:Person"><span property="foaf:name" class="p-name fn">陳奕鈞</span>, 特邀专家, <span class="ed_mailto"><a class="u-email email" property="foaf:mbox" href="mailto:ethantw@me.com">ethantw@me.com</a></span></span><span property="rdf:rest" resource="_:editor2"></span></dd>
       <dd class="p-author h-card vcard" resource="_:editor2"><span property="rdf:first" typeof="foaf:Person"><span property="foaf:name" class="p-name fn">梁海</span>, 特邀专家, <span class="ed_mailto"><a class="u-email email" property="foaf:mbox" href="mailto:lianghai@gmail.com">lianghai@gmail.com</a></span></span><span property="rdf:rest" resource="_:editor3"></span></dd>
-      <dd class="p-author h-card vcard" resource="_:editor3"><span property="rdf:first" typeof="foaf:Person"><span property="foaf:name" class="p-name fn">吴小倩</span>, 万维网联盟, <span class="ed_mailto"><a class="u-email email" property="foaf:mbox" href="mailto:xiaoqian@w3.org">xiaoqian@w3.org</a></span></span><span property="rdf:rest" resource="_:editor4"></span></dd>
+      <dd class="p-author h-card vcard" resource="_:editor2"><span property="rdf:first" typeof="foaf:Person"><span property="foaf:name" class="p-name fn">劉慶</span>, 特邀专家, <span class="ed_mailto"><a class="u-email email" property="foaf:mbox" href="mailto:ryukeikun@me.com">ryukeikun@me.com</a></span></span><span property="rdf:rest" resource="_:editor4"></span></dd>
+      <dd class="p-author h-card vcard" resource="_:editor3"><span property="rdf:first" typeof="foaf:Person"><span property="foaf:name" class="p-name fn">吴小倩</span>, 万维网联盟, <span class="ed_mailto"><a class="u-email email" property="foaf:mbox" href="mailto:xiaoqian@w3.org">xiaoqian@w3.org</a></span></span><span property="rdf:rest" resource="_:editor5"></span></dd>
       <dd class="p-author h-card vcard" resource="_:editor4"><span property="rdf:first" typeof="foaf:Person"><span property="foaf:name" class="p-name fn">Richard Ishida</span>, 万维网联盟, <span class="ed_mailto"><a class="u-email email" property="foaf:mbox" href="mailto:ishida@w3.org">ishida@w3.org</a></span></span><span property="rdf:rest" resource="rdf:nil"></span></dd>
     </dl>
     
@@ -226,53 +225,44 @@ span.note, span.issue, span.warning { padding: .1em .5em .15em; }
   </div>
 
   <section id="abstract" class="introductory" property="dc:abstract">
-    <h2 id="h-abstract" resource="#h-abstract"><span property="xhv:role" resource="xhv:heading">Abstract</span></h2>
+    <h2 id="h-abstract" resource="#h-abstract"><span property="xhv:role" resource="xhv:heading">摘要</span></h2>
     <p>
       本文書整理了中文（漢字）書寫系統於排版上的需求。一方面說明需求事項以明確描述中文排版之需求與問題；另一方面也提與既有標準（如萬國碼）的對應，冀求透過本文書能在實作層級更能有效地促進實現。
     </p>
   </section>
 
   <section id="sotd" class="introductory">
-    <h2 id="h-sotd" resource="#h-sotd"><span property="xhv:role" resource="xhv:heading">Status of This Document</span></h2>
+    <h2 id="h-sotd" resource="#h-sotd"><span property="xhv:role" resource="xhv:heading">关于本文档</span></h2>
     <p>
-      <em>This section describes the status of this document at the time of its publication.
-      Other documents may supersede this document. A list of current <abbr title="World Wide Web Consortium">W3C</abbr> publications and the
-      latest revision of this technical report can be found in the <a href="http://www.w3.org/TR/"><abbr title="World Wide Web Consortium">W3C</abbr> technical reports index</a> at
-      <a href="http://www.w3.org/TR/">http://www.w3.org/TR/</a>.</em>
+      <em>本章节描述了本文档的发布状态。其它更新版本可能会覆盖本文档。<abbr title="World Wide Web Consortium">W3C</abbr> 的文档列表和最新版本可通过<a href="http://www.w3.org/TR/"> 
+      http://www.w3.org/TR/ <abbr title="World Wide Web Consortium">W3C</abbr> 技术报告索引</a>访问。</em>
     </p>
 
     <p>
-      <a href="http://www.w3.org/International/core/"><abbr title="World Wide Web Consortium">W3C</abbr>国际化工作组</a>为本文档提供了很多支持。欢迎使用<a href="mailto:public-i18n-cjk@w3.org">public-i18n-cjk@w3.org</a>（<a href="mailto:public-i18n-cjk@w3.org?subject=subscribe">订阅</a>）来进行任何关于本文档的讨论。本文档的第一版工作草稿发布后，<abbr title="World Wide Web Consortium">W3C</abbr> HTML5中文兴趣组将于<a href="http://www.w3.org/International/core/"><abbr title="World Wide Web Consortium">W3C</abbr>国际化工作组</a>一起，进一步扩展本文档内容并寻求更广的审阅意见。
+      本需求文档由<a href="http://www.w3.org/International/core/"><abbr title="World Wide Web Consortium">W3C</abbr>国际化工作组</a> 与 <a href="http://www.w3.org/html/ig/zh/"><abbr title="World Wide Web Consortium">W3C</abbr> HTML5中文兴趣组</a>共同发布和审阅。若对本文档有任何建议或反馈，欢迎通过 <a href="https://github.com/w3c/clreq">GitHub</a> 提交 <a href="https://github.com/w3c/clreq/issues">issues</a> 或者 <a href="https://github.com/w3c/clreq/pulls">pull request</a>。同时也欢迎使用 <a href="mailto:public-zhreq@w3.org">public-zhreq@w3.org</a>
+      (<a href="mailto:public-zhreq@w3.org?subject=subscribe">订阅</a>)来进行关于本文档的中文讨论或 <a href="mailto:public-i18n-cjk@w3.org">public-i18n-cjk@w3.org</a>
+      (<a href="mailto:public-i18n-cjk@w3.org?subject=subscribe">订阅</a>)来进行关于本文档的英文讨论。
     </p>
 
     <p>
-      欢迎同时查阅本文档的<a href="../"><strong>英文（English）</strong></a>版本。
-    </p>
-    
-    <p lang="en">
-      Publication as an Editor's Draft does not imply endorsement by the <abbr title="World Wide Web Consortium">W3C</abbr>
-      Membership. This is a draft document and may be updated, replaced or obsoleted by other
-      documents at any time. It is inappropriate to cite this document as other than work in
-      progress.
-    </p>
-
-    <p>
-      <span lang="zh">本文档遵循<a id="sotd_patent" property="w3p:patentRules" href="http://www.w3.org/Consortium/Patent-Policy-20040205/"><abbr title="World Wide Web Consortium">W3C</abbr>专利政策</a>（2004-02-05）。</span>
-      <abbr title="World Wide Web Consortium">W3C</abbr> maintains a 
-      <a href="http://www.w3.org/2004/01/pp-impl/" rel="disclosure">public list of any patentdisclosures</a> 
-      made in connection with the deliverables of the group; that page also includes
-      instructions for disclosing a patent. An individual who has actual knowledge of a patent
-      which the individual believes contains
-      <a href="http://www.w3.org/Consortium/Patent-Policy-20040205/#def-essential">Essential
-      Claim(s)</a> must disclose the information in accordance with
-      <a href="http://www.w3.org/Consortium/Patent-Policy-20040205/#sec-Disclosure">section
-      6 of the <abbr title="World Wide Web Consortium">W3C</abbr> Patent Policy</a>.
+      欢迎同时查阅本文档的<a href="../"><strong>英文 (English) </strong></a>版本。
     </p>
     
     <p>
-      本文档遵循<a id="w3c_process_revision" href="http://www.w3.org/2014/Process-20140801/"><abbr title="World Wide Web Consortium">W3C</abbr>流程文档</a>（2014-08-01）。
+      以编辑草稿方式发布的文档还没有通过 <abbr title="World Wide Web Consortium">W3C</abbr> 会员流程的认可。这是一份文档草稿并且会被不断更新。请暂时不要正式引用本文档。
+    </p>
+
+    <p>
+      本文档遵循<abbr title="World Wide Web Consortium">W3C</abbr>
+      <a id="sotd_patent" property="w3p:patentRules" href="http://www.w3.org/Consortium/Patent-Policy-20040205/">2004-02-05  专利政策</a>。
+      <abbr title="World Wide Web Consortium">W3C</abbr> 为工作组的产出成果维护着一份<a href="http://www.w3.org/2004/01/pp-impl/" rel="disclosure">公开专利披露列表</a>，此页面也同时涵盖了专利披露说明。若个人发现其有包含<a href="http://www.w3.org/Consortium/Patent-Policy-20040205/#def-essential">必须声明</a>的专利信息，必须按照 <a href="http://www.w3.org/Consortium/Patent-Policy-20040205/#sec-Disclosure"><abbr title="World Wide Web Consortium">W3C</abbr> 专利政策第六章节</a> 披露此信息.
+    </p>
+    
+    <p>
+      本文档遵循 <a id="w3c_process_revision" href="http://www.w3.org/2014/Process-20140801/">2014-08-01 <abbr title="World Wide Web Consortium">W3C</abbr> 流程文档</a>.
     </p>
   </section>
+
 
   <section id="toc">
     <h2 class="introductory" id="h-toc" resource="#h-toc"><span property="xhv:role" resource="xhv:heading">内容大纲</span></h2>
@@ -401,6 +391,11 @@ span.note, span.issue, span.warning { padding: .1em .5em .15em; }
             </ul>
           </li>
         </ul>
+      </li>
+
+      <!-- Chapter 6 -->
+      <li class="tocline">
+        <a href="#generatedID-80" class="tocxref"><span class="secno">6. </span>致谢</a>
       </li>
     </ul>
   </section>
@@ -580,7 +575,7 @@ span.note, span.issue, span.warning { padding: .1em .5em .15em; }
         <p>本部分說明如何以版心作為基本排版體裁來設計各頁面。</p>
         <ul>
           <li>配置標題的空間與位置標題所使用空間之文字方向與尺寸，以版心設定的行的位置為基準，採用數行的空間來設計。標題縮排時的處理，以版心所設定的文字尺寸為基準，決定要縮排數字。</li>
-          <li>圖片之尺寸橫排時圖片，寬度盡可能地以版心的尺寸一致；若為多欄排版時，則盡可能與版心所設定的一欄寬度一致。排列時多與版心的天或者地對齊配置。直排時亦同，依照版心的天地高度、或者多欄排版下所設計單欄或者多欄的天地尺寸為基準配置。排列時亦多與版心的天或者地對齊配置。</li>
+          <li>圖片之尺寸：橫排時圖片，寬度盡可能地以版心的尺寸一致；若為多欄排版時，則盡可能與版心所設定的一欄寬度一致。排列時多與版心的天或者地對齊配置。直排時亦同，依照版心的天地高度、或者多欄排版下所設計單欄或者多欄的天地尺寸為基準配置。排列時亦多與版心的天或者地對齊配置。</li>
           <li>目錄、索引、參考書目等頁面目錄、索引、參考書目等頁面以版心之尺寸作為基準設計。但有不少案例會於內文採單欄橫排時，目錄等頁採多欄設計；而目錄頁有時天地側會對文字進行縮排。</li>
         </ul>
       </section>
@@ -693,7 +688,7 @@ span.note, span.issue, span.warning { padding: .1em .5em .15em; }
               </li>
               <li>
                 <h6>刪節號</h6>
-                <p>刪節號（又作省略號）表示節略原文、語句未完或語氣的不連續。為佔一個漢字高、二個漢字寬，並包含六個省略點的[…](HORIZONTAL ELLIPSIS)（或使用連續二個「……]」）。</p>
+                <p>刪節號（又作省略號）表示節略原文、語句未完或語氣的不連續。為佔一個漢字高、二個漢字寬，並包含六個省略點的[…](HORIZONTAL ELLIPSIS)（或使用連續二個「……]）。</p>
               </li>
               <li>
                 <h6>着重號</h6>
@@ -784,7 +779,7 @@ span.note, span.issue, span.warning { padding: .1em .5em .15em; }
               </li>
               <li>
                 <h6>刪節號</h6>
-                <p>刪節號為佔一個漢字高、二個漢字寬，並包含六個省略點的[…](HORIZONTAL ELLIPSIS)（或使用連續二個「……]」）。</p>
+                <p>刪節號為佔一個漢字高、二個漢字寬，並包含六個省略點的[…](HORIZONTAL ELLIPSIS)（或使用連續二個「……]）。</p>
               </li>
             </ul>
           </li>
@@ -1115,9 +1110,9 @@ span.note, span.issue, span.warning { padding: .1em .5em .15em; }
         <h4 id="h-generatedid-73" resource="#h-generatedid-73"><span property="xhv:role" resource="xhv:heading"><span class="secno">4.1.2 </span>使標題得以突顯的方式</span></h4>
         <p>標題主要是為了呈現階層結構，所以需要以特別的表現體裁來顯示其階層。標題的表現體裁包含以下幾種方式：</p>
         <ul>
-          <li>使用不同的文字尺寸呈現標題的階層，例如，有著大標、中標、小標時，小標比本文文字尺寸（例如：9pt）大一階段（例如：10pt），中標則比小標大一階段（例如：12pt），大標則比中標大一階段（例如：14pt）。註1）也有採用將本文文字尺寸依照比例放大的方式，使用這方式時，以10%~20%上下，依階層放大為佳。</li>
-          <li>使用的字體使用黑體，或者採用宋體但加粗。此外，也有使用圓體、楷體的案例。註1）活版印刷使用作為標題的宋體字，其活字設計時都會因為供標題使用而字重偏重。但使用數位字體時由於是採內文字設計，放大字級後顯得過輕，幾乎都會加重字重為粗體。註2）使用黑體作為小標時，也都會加重字重，令標題凸顯。</li>
-          <li>對齊橫排的大標與中標使用置中對齊的案例相當多，但直排時，則多使用對齊行頭或下字。註1）下字時，下字的量一般使用版心設定文字尺寸的2字（2倍）。大標、中標、小標下字量，由各出版社決定，無一定規則。</li>
+          <li>使用不同的文字尺寸呈現標題的階層，例如，有著大標、中標、小標時，小標比本文文字尺寸（例如：9pt）大一階段（例如：10pt），中標則比小標大一階段（例如：12pt），大標則比中標大一階段（例如：14pt）。<div class="note"><div class="note-title" aria-level="5" role="heading" id="h-note31"><span>Note</span></div><p class="">也有採用將本文文字尺寸依照比例放大的方式，使用這方式時，以10%~20%上下，依階層放大為佳。</p></div></li>
+          <li>使用的字體使用黑體，或者採用宋體但加粗。此外，也有使用圓體、楷體的案例。<div class="note"><div class="note-title" aria-level="5" role="heading" id="h-note31"><span>Note</span></div><p class="">活版印刷使用作為標題的宋體字，其活字設計時都會因為供標題使用而字重偏重。但使用數位字體時由於是採內文字設計，放大字級後顯得過輕，幾乎都會加重字重為粗體。註2）使用黑體作為小標時，也都會加重字重，令標題凸顯。</p></div></li>
+          <li>對齊橫排的大標與中標使用置中對齊的案例相當多，但直排時，則多使用對齊行頭或下字。<div class="note"><div class="note-title" aria-level="5" role="heading" id="h-note31"><span>Note</span></div><p class="">下字時，下字的量一般使用版心設定文字尺寸的2字（2倍）。大標、中標、小標下字量，由各出版社決定，無一定規則。</p></div></li>
           <li>其他加上框線、圖片、記號等。</li>
         </ul>
       </section>
@@ -1126,7 +1121,7 @@ span.note, span.issue, span.warning { padding: .1em .5em .15em; }
         <h4 id="h-generatedid-74" resource="#h-generatedid-74"><span property="xhv:role" resource="xhv:heading"><span class="secno">4.1.3 </span>單頁起、換頁處理</span></h4>
         <p>標題為了作出明確區分，而會使用於新頁面開始的方法，此時以以下原則處理：</p>
         <ul>
-          <li>一定要出現於奇數頁稱為單頁起，主要應用於扉頁、大標等。註1）書籍由封面作為第一頁開始，所以直排右翻書，由左頁開始（稱為左頁起），橫排左翻書，由右頁開始（稱為右頁起）。</li>
+          <li>一定要出現於奇數頁稱為單頁起，主要應用於扉頁、大標等。<div class="note"><div class="note-title" aria-level="5" role="heading" id="h-note31"><span>Note</span></div><p class="">書籍由封面作為第一頁開始，所以直排右翻書，由左頁開始（稱為左頁起），橫排左翻書，由右頁開始（稱為右頁起）。</p></div></li>
           <li>不分奇數頁還偶數頁，從新頁面開始稱為換頁。主要用於大標。</li>
           <li>當中標、小標出現於某一頁的最末尾，其後沒有空間以至於無法接續內文段落時，由於這樣的呈現會使得體裁不良，也會讓中標、小標換頁，於下一頁開頭呈現。</li>
         </ul>
@@ -1148,7 +1143,7 @@ span.note, span.issue, span.warning { padding: .1em .5em .15em; }
         <p>同行標題主要用於小標，以下介紹幾個同行標題的配置範例。同行標題與之後接續內文的空白量，一般為版心設定文字尺寸的全形空白。此外，同行標題可以配置於頁末。</p>
         <ul>
           <li>與內文採相同文字尺寸，字體改為黑體或者楷體。</li>
-          <li>不比內文文字尺寸較小，字體改為黑體或者楷體。註1）此時同行標題所占空間並非內文文字尺寸的整數倍，所以可調整與內文間的空白量，以避免內文文字無法縱橫對齊，或者無法齊行首、行尾。</li>
+          <li>不比內文文字尺寸較小，字體改為黑體或者楷體。<div class="note"><div class="note-title" aria-level="5" role="heading" id="h-note31"><span>Note</span></div><p class="">此時同行標題所占空間並非內文文字尺寸的整數倍，所以可調整與內文間的空白量，以避免內文文字無法縱橫對齊，或者無法齊行首、行尾。</p></div></li>
           <li>與內文採用相同文字尺寸與字體，但於前面添加漢字數字或阿拉伯數字。</li>
         </ul>
       </section>
@@ -2064,8 +2059,6 @@ span.note, span.issue, span.warning { padding: .1em .5em .15em; }
           <dd>medial</dd>
           <dt>韻母</dt>
           <dd>final</dd>
-          <dt>韻腳</dt>
-          <dd>Foot Prosody</dd>
           <dt>聲調（號）</dt>
           <dd>tone (mark)</dd>
           <dt>輕聲</dt>
@@ -2077,6 +2070,15 @@ span.note, span.issue, span.warning { padding: .1em .5em .15em; }
         </dl>
       </section>
     </section>
+  </section>
+
+  <section id="generatedID-80" typeof="bibo:Chapter" resource="#generatedID-80" property="bibo:hasPart">
+    <!--OddPage-->
+    <h2 id="h-generatedid-80" resource="#h-generatedid-80"><span property="xhv:role" resource="xhv:heading"><span class="secno">6. </span>致谢</span></h2>
+    <p class="1st">感谢以下大牛们对本需求文档的建议和补充：
+      </p>
+      <p>Xidorn Quan (Mozilla)， 陳穎青，吕康豪(BGI)，侯迈(豆瓣)，Hawkeyes Wind，贺师俊（百姓网），technommy，等等。</p>
+      <p>想了解最新的贡献者信息，请参看<a href="https://github.com/w3c/clreq/graphs/contributors">GitHub贡献者列表</a>。</p>
   </section>
 </body>
 </html>

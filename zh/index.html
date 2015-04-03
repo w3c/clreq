@@ -345,6 +345,15 @@ span.note, span.issue, span.warning { padding: .1em .5em .15em; }
               <li><a href="#positioning_of_interlinear_comments"><span class="secno">3.3.7 </span>行間批語的排版</a></li>
             </ul>
           </li>
+          <li>
+            <a href="#paragraph_adjustment_rules"><span class="secno">3.4 </span>段落調整</a>
+            <ul class="toc">
+              <li><a href="#line_head_indent_at_the_beginning_of_paragraphs"><span class="secno">3.4.1 </span>段首縮排</a></li>
+              <li><a href="#line_head_indent_of_paragraphs"><span class="secno">3.4.2 </span>段落縮排</a></li>
+              <li><a href="#ways_of_alignments"><span class="secno">3.4.3 </span>對齊處理</a></li>
+              <li><a href="#adjustments_of_orphans_and_widows"><span class="secno">3.4.4 </span>孤行與孤字處理</a></li>
+            </ul>
+          </li>
         </ul>
       </li>
 
@@ -1056,6 +1065,103 @@ span.note, span.issue, span.warning { padding: .1em .5em .15em; }
         <h4 id="h-positioning_of_interlinear_comments"><span class="secno">3.3.7 </span>行間批語的排版</h4>
         <p>行間批語的格式多變且內容長度不一，通常位於受注的文本片段底端——直排時位基文左側，橫排時位基文下方。為與正文區隔，有時以不同於正文文字的顏色來顯示。</p>
         <p>行間批語可用於解釋一段長文本的整體語境。這種情況下，由於沒有明確的基文，其注文常自一個合適的錨點位置展開並向後延伸，長度不拘，時可超過一行。</p>
+      </section>
+    </section>
+
+    <section id="paragraph_adjustment_rules">
+      <h3 id="h-paragraph_adjustment_rules"><span class="secno">3.4 </span>段落調整</h3>
+
+      <section id="line_head_indent_at_the_beginning_of_paragraphs">
+        <h4 id="h-line_head_indent_at_the_beginning_of_paragraphs"><span class="secno">3.4.1 </span>段首縮排</h4>
+        <p>為使不同的文本形成意義上的區隔、構成段落，呈現上，會使用斷行以標示一個段落的起始，同時也會在段落首行加上空白進行縮排，原則上以文本的漢字大小作為縮排單位，主要呈現方法如下。</p>
+
+        <div class="note"><div class="note-title" aria-level="5" role="heading" id="h-noteXX"><span>Note</span></div><p class="">中文出版品上，段首縮排以兩個漢字的空間為標準。若遇到雜誌等多欄排版的情況，每欄字數較少時，視覺上縮排兩字將顯突兀，時有改用縮排一字的做法。</p></div>
+        <ol>
+          <li>所有段落首行皆縮排。幾乎所有的書籍與雜誌皆使用此方法。</li>
+          <li>篇章最初段落的首行不縮排，其余段落首行縮排。此方法多見於西文書籍。</li>
+          <li>所有段落首行皆不予縮排，在段落與段落間加入一定程度的間距，以為區隔。部分書籍與雜誌使用這種方式。</li>
+          <li>原則上，部分語氣未完的段落予以斷行、而不縮排。語氣未完的段落前可能出現對話、引言，及為與正文有所區隔，由編輯所下的標題等。</li>
+        </ol>
+        <p>原則上，在中文書籍排版中各段落間不使用間距，前段落末行、後段落首行與段落內行距一致。若段落間加入空白行，則表示一節的結束。但段落首行不縮排時所加入的段落間距則與傳統排版有所差異，不適合加入空行做節的區分，避免過多的留空造成體裁不良。</p>
+        <p>除縮排外，也有首行不縮排、次行起至末行縮排的狀況，稱為凸排。例如劇本中的對白，首行以人名開頭不縮排，第二行起縮排。編號列表、問答、法律條文等也使用此種方式處理。雖稱為凸排，但首行開始處不超過版心所設定的範圍。</p>
+        <p>凸排時，次行起縮排通常為固定量的空白，例如人名三字加冒號共四字，凡遇對話時次行皆縮排四個全型空白。遇人名少於三字時，則於姓與名間加入空白，以保持體例一致。</p>
+      </section>
+
+      <section id="line_head_indent_of_paragraphs">
+        <h4 id="h-line_head_indent_of_paragraphs"><span class="secno">3.4.2 </span>段落縮排</h4>
+        <p>段落縮排係指將版心（單欄排版時）以及欄的範圍（多欄排版時）由行頭側以指定的量，將文字開始位置向后移動的處理。此種縮排方式多應用於段落內或段落間引用文章、詩詞及標題等。</p>
+
+        <div class="note"><div class="note-title" aria-level="5" role="heading" id="h-noteXX"><span>Note</span></div><p class="">一般而言以縮排處理的段落，文字尺寸與內文相同。有時會調整字體，與內文做出差異。或／及於前後段落間加入段落間距，使該段落與內文段落差異更為明顯。加入間距所佔空間應為內文行的整數倍。</p></div>
+      </section>
+
+      <section id="ways_of_alignments">
+        <h4 id="h-ways_of_alignments"><span class="secno">3.4.3 </span>對齊處理</h4>
+        <p>對齊係指使段落間各行文字實際配置位置能夠與預設的文字配置位置符合。有著以下作法。</p>
+        <ol>
+          <li>
+            <h5>置中對齊</h5>
+            <p>行內文字原則上緊貼配置，文字列的中央與行的中央對齊排列，未滿一行時，該行文字列對行頭與行尾的空白量均等。</p>
+          </li>
+
+          <li>
+            <h5>行首對齊</h5>
+            <p>行內文字原則上緊貼配置，文字列開頭與行首位置對齊，未滿一行時，該行末字至行尾使用空白。</p>
+          </li>
+
+          <li>
+            <h5>行尾對齊</h5>
+            <p>行內文字原則上緊貼配置，文字列末尾與行尾位置對齊，未滿一行時，該行首字至行首使用空白。</p>
+          </li>
+
+          <li>
+            <h5>均等排列</h5>
+            <p>行內文字原則上緊貼配置，文字列開頭與行頭位置對齊、文字列末尾與行尾位置對齊，未滿一行時，空白平均置於該行各字間。</p>
+            <p>均等排列多見於以下兩種狀況：</p>
+            <ol>
+              <li>此種情況較常見。各行套用標點禁則處理後，部分行行內將剩餘一字以上的空白，為符合中文排版段落頭尾對齊的規則，該行以均等排列處理；於段落末行或段落僅有一行時則不使用均等排列。</li>
+              <li>於列表，如列舉人名、物品名時，採均等排列以求體例一致，於段落末行或段落僅有一行時，亦使用均等排列。</li>
+          </li>
+        </ol>
+      </section>
+
+      <section id="adjustments_of_orphans_and_widows">
+        <h4 id="h-adjustments_of_orphans_and_widows"><span class="secno">3.4.4 </span>孤行與孤字處理</h4>
+        <p>中文排版傳統上有著「孤字不成行、孤行不成頁」的規則。實際原則如下：</p>
+
+        <ol>
+          <li>
+            <p>若段落末行僅有一個漢字，或一個漢字加上標點符號，即為孤字。孤字可以以下方法處理，使段落末行能有兩個漢字以上：</p>
+            <ol>
+              <li>比照避頭點的處理方式，由前一行取一字至末行，前一行採均等排列。</li>
+              <li>刪減該段落文字，使孤字縮進段落前一行。</li>
+              <li>於該段落增加文字。</li>
+            </ol>
+            <div class="note"><div class="note-title" aria-level="5" role="heading" id="h-noteXX"><span>Note</span></div><p>孤字之定義近似於拉丁文字排版中orphan的概念，可參考<a href="http://www.w3.org/TR/dpub-latinreq/#orphans">《拉丁文字排版與分頁需求》5.1節　Orphan</a>，其定義也隨排版者有所不同。</p></div>
+          </li>
+
+          <li>
+            <p>若頁面中第一行為前一頁最後一個段落的末行，即為孤行。孤行可以以下方法處理：</p>
+            <ol>
+              <li>將孤行移至前一頁，使其突出版心。</li>
+              <li>前一頁最後段落取一行置於該頁。</li>
+              <li>刪除該段落文字，使該行能納入前一頁之段落。</li>
+              <li>於該段落增加文字，讓該行文字能夠超過一行以上。</li>
+            </ol>
+            <div class="note"><div class="note-title" aria-level="5" role="heading" id="h-noteXX"><span>Note</span></div><p>孤行之定義近似於拉丁文字排版中widow的概念，可參考<a href="http://www.w3.org/TR/dpub-latinreq/#widows">《拉丁文字排版與分頁需求》5.1節　Widow</a>。</p></div>
+          </li>
+        </ol>
+
+        <p>孤字孤行有著程度差異，如：</p>
+
+        <ol>
+          <li>一頁僅有一行，該行僅有一字與標點。即孤字孤行同時出現。</li>
+          <li>一頁有複數段落，第一行為孤行，且該行僅有一字與標點。即孤字孤行同時出現。</li>
+          <li>一頁僅有一行，該行為孤行。</li>
+          <li>一頁有複數段落，第一行為孤行。</li>
+          <li> 一頁有複數段落，其中某一段落末行僅有一字，該字為孤字。</li>
+        </ol>
+
+        <p>以上狀況是否需進行處理，各排版者有不同的標準。其中a.與b. 對體裁的影響較為嚴重，c.次之，d.與e.之處理則較少見。</p>
       </section>
     </section>
   </section>

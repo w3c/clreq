@@ -628,6 +628,8 @@ span.note, span.issue, span.warning { padding: .1em .5em .15em; }
       <p>中文標點符號的排版在各地區有不同的處理方式，其中較顯著的差異係其字面分布——繁體中文多使用符號居中的字形樣式，而簡體中文多使用符號尾隨受注文字末端的字形樣式，並依直、橫排有不同的處理。下文將詳述繁、簡中文標點的異同及準確的配置方式。</p>
       <p>在繁、簡中文排版中，標點符號的字面分布與形態差異為二者主要的分歧點（詳見3.2.2節）。進行版式配置時，需要多加留意。</p>
       <div class="note"><div class="note-title" aria-level="4" role="heading" id="h-note12"><span>Note</span></div><p class="">中日韓越意音文字標點符號有地區上的字形與形態差異，但萬國碼並未對其區分字碼，繁、簡中文及日文等標點多有共用。通常，排版時使用相應的字體進行配置，或由排版引擎自動調適。</p></div>
+
+      <p>本節主要基於中國大陸的《標點符號用法》（GB/T 15834–2011）及台灣教育部的《重訂標點符號手冊》（2008年修訂版）。前者屬推薦標準，後者主要用於規範教科書等教育書籍，對一般出版品不具強制性。</p>
       
       <section id="categories_and_usage_of_punctuation_marks">
         <h4 id="h-categories_and_usage_of_punctuation_marks"><span class="secno">3.1.1 </span>標點符號的分類及用法</h4>
@@ -665,17 +667,18 @@ span.note, span.issue, span.warning { padding: .1em .5em .15em; }
               </li>
               <li>
                 <h6>括號</h6>
-                <p>括號（又作夾注號）用於行內注釋、說明。分甲式及乙式，甲式為[（](FULLWIDTH LEFT PARENTHESIS)與[）](FULLWIDTH RIGHT PARENTHESIS)，乙式則為一對各佔一個漢字高、二個漢字寬的[—](EM DASH)（或使用連續二個「——」）。括號屬於括注符號。</p>
-                <p>中國大陸的《標點符號用法》（GB/T 15834–2011）將乙式括號視為破折號的一種形式。</p>
-                <div class="note"><div class="note-title" aria-level="6" role="heading" id="h-note15"><span>Note</span></div><p class="">其餘括號類則有：[【](LEFT BLACK LENTICULAR BRACKET)、[】](RIGHT BLACK LENTICULAR BRACKET)、[〖](LEFT WHITE LENTICULAR BRACKET)[〗](RIGHT WHITE LENTICULAR BRACKET)、[〔](LEFT TORTOISE SHELL BRACKET)、[〕](RIGHT TORTOISE SHELL BRACKET)、[［](FULLWIDTH LEFT SQUARE BRACKET)、[］](FULLWIDTH RIGHT SQUARE BRACKET)、[｛](FULLWIDTH LEFT CURLY BRACKET)、[｝](FULLWIDTH RIGHT CURLY BRACKET)。</p></div>
+                <p>括號用於行內注釋、說明。</p>
+                <p>台灣教育部的《重訂標點符號手冊》（修訂版）稱括號為夾注號，分甲式及乙式，甲式為[（](FULLWIDTH LEFT PARENTHESIS)與[）](FULLWIDTH RIGHT PARENTHESIS)，乙式則為一對各佔二個漢字空間的[—](EM DASH)（或使用連續二個「——」）。括號屬於括注符號。</p>
+                <p>中國大陸《標點符號用法》（GB/T 15834–2011）的括號基本與上述一致，但將乙式括號視為破折號的一種形式。</p>
+                <div class="note"><div class="note-title" aria-level="6" role="heading" id="h-note15"><span>Note</span></div><p class="">註：其餘括號類則有：前方头括号[【](LEFT BLACK LENTICULAR BRACKET)、后方头括号[】](RIGHT BLACK LENTICULAR BRACKET)、前空心方头括号[〖](LEFT WHITE LENTICULAR BRACKET)、后空心方头括号[〗](RIGHT WHITE LENTICULAR BRACKET)、前六角括号[〔](LEFT TORTOISE SHELL BRACKET)、后六角括号[〕](RIGHT TORTOISE SHELL BRACKET)、前方括号[［](FULLWIDTH LEFT SQUARE BRACKET)、后方括号[］](FULLWIDTH RIGHT SQUARE BRACKET)、前花括号[｛](FULLWIDTH LEFT CURLY BRACKET)、后花括号[｝](FULLWIDTH RIGHT CURLY BRACKET)。</p></div>
               </li>
               <li>
                 <h6>破折號</h6>
                 <p>破折號表示語氣或聲音的延續、語意的轉換或行文的補充。為佔一個漢字高、二個漢字寬的[—](EM DASH)（或使用連續二個「——」）。</p>
               </li>
               <li>
-                <h6>刪節號</h6>
-                <p>刪節號（又作省略號）表示節略原文、語句未完或語氣的不連續。為佔一個漢字高、二個漢字寬，並包含六個省略點的[…](HORIZONTAL ELLIPSIS)（或使用連續二個「……」）。</p>
+                <h6>刪節號／省略号</h6>
+                <p>刪節號又作省略號，表示節略原文、語句未完或語氣的不連續。為佔二個漢字空間、包含六個省略點的[…](HORIZONTAL ELLIPSIS)（或使用連續二個「……」）。</p>
               </li>
               <li>
                 <h6>着重號</h6>
@@ -684,7 +687,13 @@ span.note, span.issue, span.warning { padding: .1em .5em .15em; }
               </li>
               <li>
                 <h6>連接號</h6>
-                <p>連接號用於連結時空之起訖或數量之多寡。分為甲式及乙式，甲式為[–](EN DASH)、乙式為[～](FULLWIDTH TILDE)或[~](TILDE)。</p>
+                <p>連接號用於連結時空之起訖或數量之多寡，还可以用于化合物的名称或表格、插图的标号，门牌号码、电话号码等号码的连接，阿拉伯数字表示日期時年月日的區隔，复合名词中的连接，以及羅馬拼音、外来语内部的分合等等。</p>
+
+                <p>根据台灣教育部的《重訂標點符號手冊》，連接號分為甲式及乙式，甲式為[–](EN DASH)、乙式為[～](FULLWIDTH TILDE)或[~](TILDE)。</p>
+
+                <p>根据中国大陸的《标点符号用法》 （GB/T 15834—2011），连接号的形式有短横线[–]、一字线[—]和浪纹线[～]三种。</p>
+
+                <div class="note"><div class="note-title" aria-level="6" role="heading" id="h-note15"><span>Note</span></div><p class="">《标点符号用法》 （GB/T 15834—2011）中没有指定这三个符号的码位，但是基本上可以推断一字线是[—]EM DASH，浪纹线[～]是FULLWIDTH TILDE。但是对于「短横线」，该标准5.1.6规定「横短线比汉字『一』略短，占半个字位置」，因此可以是[–]EN DASH。这些连接号的实际长短根据所用处理系统和使用字體会有区别。</p></div>
               </li>
               <li>
                 <h6>間隔號</h6>
@@ -694,7 +703,9 @@ span.note, span.issue, span.warning { padding: .1em .5em .15em; }
               </li>
               <li>
                 <h6>書名號</h6>
-                <p>書名號用於標示書名、篇名、歌曲名、影劇名、文件名、字畫名等各種作品名稱。分為甲式及乙式，甲式為波浪底線[﹏](WAVY LOW LINE)，標注在相應文本底端，二個作品名稱相鄰時，甲式書名號間須在視覺上分離予以辨別。乙式有雙書名號[《](LEFT DOUBLE ANGLE BRACKET)與[》](RIGHT DOUBLE ANGLE BRACKET)、單書名號[〈](LEFT ANGEL BRACKET)與[〉](RIGHT ANGEL BRACKET)，前者用於標示書名號、後者用於標示篇名。</p>
+                <p>書名號用於標示書名、篇名、歌曲名、影劇名、文件名、字畫名等各種作品名稱。</p>
+                <p>根据台灣教育部的《重訂標點符號手冊》（修訂版），書名號分為甲式及乙式，甲式為波浪底線[﹏](WAVY LOW LINE)，標注在相應文本底端，二個作品名稱相鄰時，甲式書名號間須在視覺上分離予以辨別。乙式有雙書名號[《](LEFT DOUBLE ANGLE BRACKET)與[》](RIGHT DOUBLE ANGLE BRACKET)、單書名號[〈](LEFT ANGEL BRACKET)與[〉](RIGHT ANGEL BRACKET)，前者用於標示書名號、後者用於標示篇名。</p>
+                <p>根据中国大陸的《标点符号用法》 （GB/T 15834—2011），无论书名、篇章名都应该使用双书名号[《》]，只有在书名号中还需要书名号时，里面一层用单书名号，外面一层用双书名号。而甲式書名號（波浪底線）僅用於古籍。</p>
                 <p>書名號乙式屬於括注符號。</p>
                 <div class="note"><div class="note-title" aria-level="6" role="heading" id="h-note17"><span>Note</span></div><p class="">甲式書名號已甚少出現於現代的出版品，但仍可見於教科書或古籍的標示。</p></div>
               </li>
@@ -720,10 +731,10 @@ span.note, span.issue, span.warning { padding: .1em .5em .15em; }
         <p>繁體中文標點多位於字面正中，部分標號在直、橫排中使用不同的方向以準確地標注文字；簡體中文標點多位於受注文字的末端、字面始端，部分標號在直、橫排中除了使用不同的方向外，亦有需要因文字書寫方向替換符號形式的需求，如引號（橫排使用彎引號，直排使用直角引號）。</p>
         <p>點號，包括：頓號、逗號、分號、冒號、句號、問號、驚嘆號等，佔一個漢字的大小，直、橫排方向一致。繁體中文排版位於字面正中；簡體中文排版則位受注文字末端、字面始端偏頂端或底端一側（橫排時位字面左下角，直排時位字面右上角）。</p>
         <p>括注符號，包括：引號、括號、書名號及篇名號（乙式）等，位受注文本的二側，佔一個漢字的大小、依文字書寫方向使用相應的標注方向。其中，引號在繁、簡中文分別採用不同的形式，繁體中文排版多使用先單、後雙（依此類推）的配對形式； 簡體中文排版則使用先雙、後單（依此類推）的配對形式，並依文字書寫方向採用相應的符號（橫排使用彎引號，直排使用直角引號）。</p>
-        <p>包括：刪節號、破折號等標號，位字面正中，佔一個漢字之高、二個漢字之寬，並不得以適配分行之由拆至二行，依文字書寫方向使用相應的標注方向。</p>
+        <p>包括：刪節號、破折號等標號，位字面正中，佔二個漢字的空間，並不得以適配分行之由斷開或拆至二行，依文字書寫方向使用相應的標注方向。</p>
         <p>連接號位字面正中，佔一個漢字的大小，其中，甲式連接號在橫排時，符號的直線長度應稍小於漢字「一」以避免歧義，依文字書寫方向使用相應的標注方向。</p>
         <p>間隔號位於字面正中，佔一個漢字的大小，直、橫排方向一致。為了節省排版空間、使詞組或數字較緊湊地排列，可以使用半個漢字之寬的間隔號。</p>
-        <p>包括：專名號、甲式書名號、着重號等標注於行間的標號，位受注文字底端，着重號在直排時位在受注文字頂端（右側），以不影響上下行文字為原則。</p>
+        <p>標注於行間的標號需以不影響上下行文字為原則進行配置。包括：專名號、甲式書名號等二個符號，位受注文字底端（橫排位文字下方、直排位文字左側）；着重號橫排時位受注文字底端（下方）、直排時位在受注文字頂端（右側）。</p>
         <p>分隔號位字面正中，簡體中文排版時佔半個漢字的大小；繁體中文通行地區未有相關的規定，但多數出版品多使用一個漢字的大小。</p>
       </section>
 
@@ -761,11 +772,12 @@ span.note, span.issue, span.warning { padding: .1em .5em .15em; }
             <ul>
               <li>
                 <h6>乙式括號與破折號</h6>
-                <p>乙式括號與破折號為佔一個漢字高、二個漢字寬的[—](EM DASH)（或使用連續二個「——」）。</p>
+                <p>乙式括號與破折號為佔二個漢字空間的[—](EM DASH)（或使用連續二個「——」）。</p>
               </li>
               <li>
-                <h6>刪節號</h6>
-                <p>刪節號為佔一個漢字高、二個漢字寬，並包含六個省略點的[…](HORIZONTAL ELLIPSIS)（或使用連續二個「……」）。</p>
+                <h6>刪節號／省略号</h6>
+                <p>刪節號／省略號為佔二個漢字空間、包含六個省略點的[…](HORIZONTAL ELLIPSIS)（或使用連續二個「……]」）。</p>
+                <p>《標點符號用法》（GB/T 15834–2011）5.1.5節还规定，两个省略号连用时，占四个漢字位置并须单独占一行。</p>
               </li>
             </ul>
           </li>

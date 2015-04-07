@@ -403,7 +403,6 @@ span.note, span.issue, span.warning { padding: .1em .5em .15em; }
       <ol>
         <li>中文分為繁體字與簡體字，兩者除文字字形、筆畫多寡等差異外，各項排版規則也有所區別。</li>
         <li>中文的書寫方向有直排及橫排二種，其中，前者多見於繁體中文出版品。</li>
-        <li>中文排版與日文排版有近似之處，也因書寫系統不同，而有所差異。</li>
         <li>原則上，中文排版所使用的漢字與標點符號之比例皆為1:1的正方形，將其無縫隙並列排成版面。</li>
       </ol>
     </section>
@@ -604,7 +603,7 @@ span.note, span.issue, span.warning { padding: .1em .5em .15em; }
           </li>
           <li>
             <p>行與行之間的空白（行距）除特別狀況外，皆需保持一致。</p>
-            <div class="note"><div class="note-title" aria-level="5" role="heading" id="h-note9"><span>Note</span></div><p class="">在繁體中文排版，字間的注音符號可能會超入行距空間，而翻譯書籍亦可能使用類似日文排版的ruby文字，此時行距仍需保持一致。當文書需要配置這些元素時，於設計版心之階段就須考量到這些要素來決定行距。</p></div>
+            <div class="note"><div class="note-title" aria-level="5" role="heading" id="h-note9"><span>Note</span></div><p class="">在繁體中文排版，字間的注音符號可能會超入行距空間，而翻譯書籍亦可能使用類似日文排版的<a href="http://www.w3.org/TR/jlreq/#ruby_and_emphasis_dots">ruby</a>文字，此時行距仍需保持一致。當文書需要配置這些元素時，於設計版心之階段就須考量到這些要素來決定行距。</p></div>
             <div class="note"><div class="note-title" aria-level="5" role="heading" id="h-note10"><span>Note</span></div><p class="">版心之行距多半介於文字尺寸之50%~100%之間，當行長較短、或文字尺寸較小時，行距設定也會相對較小。反之，行距一般不會超過文字尺寸，就算超過文字尺寸，也不會因而增加易讀性。</p></div>
             <div class="note"><div class="note-title" aria-level="5" role="heading" id="h-note11">
               <span>Note</span></div>
@@ -628,7 +627,7 @@ span.note, span.issue, span.warning { padding: .1em .5em .15em; }
       <h3 id="h-line_composition_rules_for_punctuation_marks"><span class="secno">3.1 </span>標點符號與其排版</h3>
       <p>中文標點符號的排版在各地區有不同的處理方式，其中較顯著的差異係其字面分布——繁體中文多使用符號居中的字形樣式，而簡體中文多使用符號尾隨受注文字末端的字形樣式，並依直、橫排有不同的處理。下文將詳述繁、簡中文標點的異同及準確的配置方式。</p>
       <p>在繁、簡中文排版中，標點符號的字面分布與形態差異為二者主要的分歧點（詳見3.1.2節<!-- SECNO. IN CONTENT -->）。進行版式配置時，需要多加留意。</p>
-      <div class="note"><div class="note-title" aria-level="4" role="heading" id="h-note12"><span>Note</span></div><p class="">中日韓越意音文字標點符號有地區上的字形與形態差異，但萬國碼並未對其區分字碼，繁、簡中文及日文等標點多有共用。通常，排版時使用相應的字體進行配置，或由排版引擎自動調適。</p></div>
+      <div class="note"><div class="note-title" aria-level="4" role="heading" id="h-note12"><span>Note</span></div><p class="">中日韓越意音文字標點符號有地區上的字形與形態差異，但萬國碼並未對其區分字碼，標點多有共用。通常，排版時使用相應的字體進行配置，或由排版引擎自動調適。</p></div>
 
       <p>本節主要基於中國大陸的《標點符號用法》（GB/T 15834–2011）及台灣教育部的《重訂標點符號手冊》（2008年修訂版）。前者屬推薦標準，後者主要用於規範教科書等教育書籍，對一般出版品不具強制性。</p>
       
@@ -702,7 +701,7 @@ span.note, span.issue, span.warning { padding: .1em .5em .15em; }
                 <p>間隔號為[·](MIDDLE DOT)。用於書名號乙式（雙書名號）分隔篇、章、卷，以及外國人名中文譯名、少數民族音譯名，分隔姓名使用。</p>
                 <p>间隔号为中文标点，当外语姓名包含西文首字母缩写作为单节时，原则上西文字母后面应该使用西文句点，如「比尔·盖茨」「B. 盖茨」。</p>
                 <p>間隔號在繁、簡中文間的用法有所不同，原則上繁體中文無論直排或橫排，都佔用一個漢字的大小；簡體中文用於分隔日期（如9·11）等情況時，可用半個漢字的大小。</p>
-                <div class="note"><div class="note-title" aria-level="6" role="heading" id="h-note16"><span>Note</span></div><p class="">過去因BIG-5編碼未有詳細的語意定義，所以時有混用[．](Fullwidth Fullstop)、[·](Hyphenation Point)、[•](BULLET)等字元作為間隔號的例子，建議使用[·](Middle dot)。而[・](Katakana Middle Dot)與日文JIS編碼關係較深，也不建議使用。</p></div>
+                <div class="note"><div class="note-title" aria-level="6" role="heading" id="h-note16"><span>Note</span></div><p class="">過去因BIG-5編碼未有詳細的語意定義，所以時有混用[．](Fullwidth Fullstop)、[·](Hyphenation Point)、[•](BULLET)等字元作為間隔號的例子，建議使用[·](Middle dot)。而[・](Katakana Middle Dot)來自日文JIS編碼，並非中文編碼，不建議使用。</p></div>
               </li>
               <li>
                 <h6>書名號</h6>
@@ -831,7 +830,7 @@ span.note, span.issue, span.warning { padding: .1em .5em .15em; }
 
       <section id="hanging_punctuation_marks_at_line_end">
         <h4 id="h-hanging_punctuation_marks_at_line_end"><span class="secno">3.1.7 </span>行尾點號懸掛</h4>
-        <p>絕多數的中文出版品沒有懸掛行尾點號的慣例。參考日文排版的做法，點號懸掛是行首標點禁則處理方式的延伸，可以避免文字及點號在前後行的移動，甚而導致前行字距不一的問題。</p>
+        <p>絕多數的中文出版品沒有懸掛行尾點號的慣例。參考<a href="http://www.w3.org/TR/jlreq/#positioning_of_punctuation_marks">日文排版</a>的做法，點號懸掛是行首標點禁則處理方式的延伸，可以避免文字及點號在前後行的移動，甚而導致前行字距不一的問題。</p>
         <p>通常，適合行尾懸掛的點號有頓號、逗號及句號三者。簡體中文排版中，其餘點號因其字面分布偏向受注文字一側、字面始端，亦可進行行尾懸掛配置。</p>
         <p>若點號（頓號、逗號或句號）將出現於一行之首，可將其置於前一行的行尾端、突出版心。</p>
         <p>然而，由於繁體中文的點號位於字面正中，若在橫排時使用行尾懸掛，體例可能顯得突兀、不良。故橫排時，繁體中文不做行尾懸掛配置；但可用於直排。</p>
@@ -1196,7 +1195,7 @@ span.note, span.issue, span.warning { padding: .1em .5em .15em; }
           <li>同行標題</li>
         </ul>
         <div class="note"><div class="note-title" aria-level="5" role="heading" id="h-note30"><span>Note</span></div><p class="">雜誌因為排版需求，標題會使用相當多種多樣的方式處理，但書籍排版較為單純，故不將雜誌使用的標題配置方式列於本文件之中。</p></div>
-        <p>全頁為書籍中需要大幅區分時使用，為了標題而使用一整頁，背面為空白。有時還會有副標、摘句、作者名以及圖片、部分段落等元素配置其上。有時也有背面不為空白（即日文書中之半扉）的使用方式。通常在書籍內文開始處，會以扉頁標注書名。</p>
+        <p>全頁為書籍中需要大幅區分時使用，為了標題而使用一整頁，背面為空白。有時還會有副標、摘句、作者名以及圖片、部分段落等元素配置其上。有時也有背面不為空白的使用方式。通常在書籍內文開始處，會以扉頁標注書名。</p>
         <p>內文標題是以獨立一行呈現標題的作法。於標題後換行，直接接續本文。大標與中標等使用這種形式配置。</p>
         <div class="note"><div class="note-title" aria-level="5" role="heading" id="h-note31"><span>Note</span></div><p class="">標題是為了區分內容而添加，依照階層構造，由上而下分別為扉頁、大標、中標、小標。</p></div>
         <div class="note"><div class="note-title" aria-level="5" role="heading" id="h-note32"><span>Note</span></div><p class="">扉頁通常指一本書的蝴蝶頁，如果依照放標題順序，依序是：書名頁、章名頁、大標、中標、小標。</p></div>
@@ -2188,6 +2187,7 @@ span.note, span.issue, span.warning { padding: .1em .5em .15em; }
         <li>吕康豪（BGI）</li>
         <li>technommy</li>
         <li>Xidorn Quan（Mozilla）</li>
+        <li>殷建民（华光照排）</li>
       </ul>
       <p>欲了解最新的參與者信息，请参看<a href="https://github.com/w3c/clreq/graphs/contributors">GitHub贡献者列表</a>。</p>
     </section>

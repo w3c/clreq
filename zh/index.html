@@ -1273,10 +1273,8 @@ span.note, span.issue, span.warning { padding: .1em .5em .15em; }
           <th>萬國碼</th>
           <th>說明</th>
           <th>直排時順時針旋轉90度</th>
-          <th>禁止出現於行首（繁體字）</th>
-          <th>禁止出現於行首（簡體字）</th>
-          <th>禁止出現於行尾（繁體字）</th>
-          <th>禁止出現於行尾（簡體字）</th>
+          <th>禁止出現於行首</th>
+          <th>禁止出現於行尾</th>
           <th>不可分離</th>
           <th>其他</th>
         </thead>
@@ -1289,8 +1287,6 @@ span.note, span.issue, span.warning { padding: .1em .5em .15em; }
             <td>IDEOGRAPHIC FULL STOP</td>
             <td>否</td>
             <td>是</td>
-            <td>是</td>
-            <td>否</td>
             <td>否</td>
             <td></td>
             <td></td>
@@ -1302,8 +1298,6 @@ span.note, span.issue, span.warning { padding: .1em .5em .15em; }
             <td>FULLWIDTH COMMA</td>
             <td>否</td>
             <td>是</td>
-            <td>是</td>
-            <td>否</td>
             <td>否</td>
             <td></td>
             <td></td>
@@ -1315,8 +1309,6 @@ span.note, span.issue, span.warning { padding: .1em .5em .15em; }
             <td>IDEOGRAPHIC COMMA</td>
             <td>否</td>
             <td>是</td>
-            <td>是</td>
-            <td>否</td>
             <td>否</td>
             <td></td>
             <td></td>
@@ -1328,8 +1320,6 @@ span.note, span.issue, span.warning { padding: .1em .5em .15em; }
             <td>FULLWIDTH COLON</td>
             <td>否</td>
             <td>是</td>
-            <td>是</td>
-            <td>否</td>
             <td>否</td>
             <td></td>
             <td></td>
@@ -1341,8 +1331,6 @@ span.note, span.issue, span.warning { padding: .1em .5em .15em; }
             <td>FULLWIDTH SEMICOLON</td>
             <td>否</td>
             <td>是</td>
-            <td>是</td>
-            <td>否</td>
             <td>否</td>
             <td></td>
             <td></td>
@@ -1354,8 +1342,6 @@ span.note, span.issue, span.warning { padding: .1em .5em .15em; }
             <td>FULLWIDTH EXCLAMATION MARK</td>
             <td>否</td>
             <td>是*1</td>
-            <td>是</td>
-            <td>否</td>
             <td>否</td>
             <td></td>
             <td>三驚嘆號疊用時應佔二字寬</td>
@@ -1367,8 +1353,6 @@ span.note, span.issue, span.warning { padding: .1em .5em .15em; }
             <td></td>
             <td>否</td>
             <td>是</td>
-            <td>是</td>
-            <td>否</td>
             <td>否</td>
             <td></td>
             <td>應佔全形字寬</td>
@@ -1380,8 +1364,6 @@ span.note, span.issue, span.warning { padding: .1em .5em .15em; }
             <td>FULLWIDTH QUESTION MARK</td>
             <td>否</td>
             <td>是*1</td>
-            <td>是</td>
-            <td>否</td>
             <td>否</td>
             <td></td>
             <td>三問號疊用時應佔二字寬</td>
@@ -1393,8 +1375,6 @@ span.note, span.issue, span.warning { padding: .1em .5em .15em; }
             <td>DOUBLE QUESTION MARK</td>
             <td>否</td>
             <td>是*1</td>
-            <td>是</td>
-            <td>否</td>
             <td>否</td>
             <td></td>
             <td>應佔全形字寬</td>
@@ -1406,11 +1386,9 @@ span.note, span.issue, span.warning { padding: .1em .5em .15em; }
             <td>LEFT CORNER BRACKET</td>
             <td>是</td>
             <td>否</td>
-            <td>否</td>
-            <td>是</td>
             <td>是</td>
             <td></td>
-            <td>主用於繁體</td>
+            <td rowspan="4">主用於繁體</td>
           </tr>
           <tr>
             <th></th>
@@ -1419,11 +1397,8 @@ span.note, span.issue, span.warning { padding: .1em .5em .15em; }
             <td>RIGHT CORNER BRACKET</td>
             <td>是</td>
             <td>是</td>
-            <td>是</td>
-            <td>否</td>
             <td>否</td>
             <td></td>
-            <td>主用於繁體</td>
           </tr>
           <tr>
             <th></th>
@@ -1432,11 +1407,8 @@ span.note, span.issue, span.warning { padding: .1em .5em .15em; }
             <td>LEFT WHITE CORNER BRACKET</td>
             <td>是</td>
             <td>否</td>
-            <td>否</td>
-            <td>是</td>
             <td>是</td>
             <td></td>
-            <td>主用於繁體</td>
           </tr>
           <tr>
             <th></th>
@@ -1445,11 +1417,8 @@ span.note, span.issue, span.warning { padding: .1em .5em .15em; }
             <td>RIGHT WHITE CORNER BRACKET</td>
             <td>是</td>
             <td>是</td>
-            <td>是</td>
-            <td>否</td>
             <td>否</td>
             <td></td>
-            <td>主用於繁體</td>
           </tr>
           <tr>
             <th></th>
@@ -1458,11 +1427,9 @@ span.note, span.issue, span.warning { padding: .1em .5em .15em; }
             <td>LEFT DOUBLE QUOTATION MARK*4</td>
             <td>是*2</td>
             <td>否</td>
-            <td>否</td>
-            <td>是</td>
             <td>是</td>
             <td></td>
-            <td>主用於簡體</td>
+            <td rowspan="4">主用於簡體</td>
           </tr>
           <tr>
             <th></th>
@@ -1471,11 +1438,8 @@ span.note, span.issue, span.warning { padding: .1em .5em .15em; }
             <td>RIGHT DOUBLE QUOTATION MARK*4</td>
             <td>是*2</td>
             <td>是</td>
-            <td>是</td>
-            <td>否</td>
             <td>否</td>
             <td></td>
-            <td>主用於簡體</td>
           </tr>
           <tr>
             <th></th>
@@ -1484,11 +1448,8 @@ span.note, span.issue, span.warning { padding: .1em .5em .15em; }
             <td>LEFT SINGLE QUOTATION MARK*4</td>
             <td>是*2</td>
             <td>否</td>
-            <td>否</td>
-            <td>是</td>
             <td>是</td>
             <td></td>
-            <td>主用於簡體</td>
           </tr>
           <tr>
             <th></th>
@@ -1497,11 +1458,8 @@ span.note, span.issue, span.warning { padding: .1em .5em .15em; }
             <td>RIGHT SINGLE QUOTATION MARK*4</td>
             <td>是*2</td>
             <td>是</td>
-            <td>是</td>
-            <td>否</td>
             <td>否</td>
             <td></td>
-            <td>主用於簡體</td>
           </tr>
           <tr>
             <th>括號</th>
@@ -1510,8 +1468,6 @@ span.note, span.issue, span.warning { padding: .1em .5em .15em; }
             <td>FULLWIDTH LEFT PARENTHESIS</td>
             <td>是</td>
             <td>否</td>
-            <td>否</td>
-            <td>是</td>
             <td>是</td>
             <td></td>
             <td></td>
@@ -1523,8 +1479,6 @@ span.note, span.issue, span.warning { padding: .1em .5em .15em; }
             <td>FULLWIDTH RIGHT PARENTHESIS</td>
             <td>是</td>
             <td>是</td>
-            <td>是</td>
-            <td>否</td>
             <td>否</td>
             <td></td>
             <td></td>
@@ -1537,8 +1491,6 @@ span.note, span.issue, span.warning { padding: .1em .5em .15em; }
             <td>是</td>
             <td>否</td>
             <td>否</td>
-            <td>否</td>
-            <td>否</td>
             <td>是*3</td>
             <td></td>
           </tr>
@@ -1549,8 +1501,6 @@ span.note, span.issue, span.warning { padding: .1em .5em .15em; }
             <td>LEFT DOUBLE ANGLE BRACKET</td>
             <td>是</td>
             <td>否</td>
-            <td>否</td>
-            <td>是</td>
             <td>是</td>
             <td></td>
             <td></td>
@@ -1562,8 +1512,6 @@ span.note, span.issue, span.warning { padding: .1em .5em .15em; }
             <td>RIGHT DOUBLE ANGLE BRACKET</td>
             <td>是</td>
             <td>是</td>
-            <td>是</td>
-            <td>否</td>
             <td>否</td>
             <td></td>
             <td></td>
@@ -1575,8 +1523,6 @@ span.note, span.issue, span.warning { padding: .1em .5em .15em; }
             <td>LEFT ANGLE BRACKET</td>
             <td>是</td>
             <td>否</td>
-            <td>否</td>
-            <td>是</td>
             <td>是</td>
             <td></td>
             <td></td>
@@ -1588,37 +1534,20 @@ span.note, span.issue, span.warning { padding: .1em .5em .15em; }
             <td>RIGHT ANGLE BRACKET</td>
             <td>是</td>
             <td>是</td>
-            <td>是</td>
-            <td>否</td>
             <td>否</td>
             <td></td>
             <td></td>
           </tr>
           <tr>
-            <th>刪節號（繁）<br>省略號（簡）</th>
+            <th>刪節號／省略號</th>
             <td>……</td>
             <td>U+2026</td>
-            <td>HORIZONTAL ELLIPSIS*5</td>
+            <td>HORIZONTAL ELLIPSIS</td>
             <td>是</td>
             <td>否</td>
             <td>否</td>
-            <td>否</td>
-            <td>否</td>
             <td>是*3</td>
-            <td></td>
-          </tr>
-          <tr>
-            <th></th>
-            <td>……</td>
-            <td>U+22EF</td>
-            <td>MIDLINE HORIZONTAL ELLIPSIS*5</td>
-            <td>是</td>
-            <td>否</td>
-            <td>否</td>
-            <td>否</td>
-            <td>否</td>
-            <td>是*3</td>
-            <td></td>
+            <td>應將省略點置於字面中央</td>
           </tr>
           <tr>
             <th>連結號</th>
@@ -1627,8 +1556,6 @@ span.note, span.issue, span.warning { padding: .1em .5em .15em; }
             <td>FULLWIDTH TILDE</td>
             <td>是</td>
             <td>是*1</td>
-            <td>是</td>
-            <td>否</td>
             <td>否</td>
             <td></td>
             <td></td>
@@ -1640,8 +1567,6 @@ span.note, span.issue, span.warning { padding: .1em .5em .15em; }
             <td>HYPHEN-MINUS</td>
             <td>是</td>
             <td>是*1</td>
-            <td>是</td>
-            <td>否</td>
             <td>否</td>
             <td></td>
             <td></td>
@@ -1653,8 +1578,6 @@ span.note, span.issue, span.warning { padding: .1em .5em .15em; }
             <td>EM DASH</td>
             <td>是</td>
             <td>是*1</td>
-            <td>是</td>
-            <td>否</td>
             <td>否</td>
             <td></td>
             <td></td>
@@ -1666,11 +1589,9 @@ span.note, span.issue, span.warning { padding: .1em .5em .15em; }
             <td>MIDDLE DOT</td>
             <td>否</td>
             <td>是*1</td>
-            <td>是</td>
-            <td>否</td>
             <td>否</td>
             <td></td>
-            <td>簡體標準佔半字寬</td>
+            <td>可視情況改用半個漢字大小</td>
           </tr>
           <tr>
             <th></th>
@@ -1679,8 +1600,6 @@ span.note, span.issue, span.warning { padding: .1em .5em .15em; }
             <td>HYPHENATION POINT*4</td>
             <td>否</td>
             <td>是*1</td>
-            <td>是</td>
-            <td>否</td>
             <td>否</td>
             <td></td>
             <td></td>
@@ -1691,9 +1610,7 @@ span.note, span.issue, span.warning { padding: .1em .5em .15em; }
             <td>U+002F</td>
             <td>SOLIDUS</td>
             <td></td>
-            <td></td>
             <td>是</td>
-            <td></td>
             <td>是</td>
             <td></td>
             <td>主用於簡體</td>
@@ -1705,9 +1622,7 @@ span.note, span.issue, span.warning { padding: .1em .5em .15em; }
             <td>FULLWIDTH SOLIDUS</td>
             <td>否</td>
             <td>是</td>
-            <td></td>
             <td>否</td>
-            <td></td>
             <td></td>
             <td>主用於繁體</td>
           </tr>
@@ -1718,8 +1633,6 @@ span.note, span.issue, span.warning { padding: .1em .5em .15em; }
             <td>LEFT BLACK LENTICULAR BRACKET</td>
             <td>是</td>
             <td>否</td>
-            <td>否</td>
-            <td>是</td>
             <td>是</td>
             <td></td>
             <td></td>
@@ -1731,8 +1644,6 @@ span.note, span.issue, span.warning { padding: .1em .5em .15em; }
             <td>RIGHT BLACK LENTICULAR BRACKET</td>
             <td>是</td>
             <td>是</td>
-            <td>是</td>
-            <td>否</td>
             <td>否</td>
             <td></td>
             <td></td>
@@ -1744,8 +1655,6 @@ span.note, span.issue, span.warning { padding: .1em .5em .15em; }
             <td>LEFT WHITE LENTICULAR BRACKET</td>
             <td>是</td>
             <td>否</td>
-            <td>否</td>
-            <td>是</td>
             <td>是</td>
             <td></td>
             <td></td>
@@ -1757,8 +1666,6 @@ span.note, span.issue, span.warning { padding: .1em .5em .15em; }
             <td>RIGHT WHITE LENTICULAR BRACKET</td>
             <td>是</td>
             <td>是</td>
-            <td>是</td>
-            <td>否</td>
             <td>否</td>
             <td></td>
             <td></td>
@@ -1770,8 +1677,6 @@ span.note, span.issue, span.warning { padding: .1em .5em .15em; }
             <td>LEFT TORTOISE SHELL BRACKET</td>
             <td>是</td>
             <td>否</td>
-            <td>否</td>
-            <td>是</td>
             <td>是</td>
             <td></td>
             <td></td>
@@ -1783,8 +1688,6 @@ span.note, span.issue, span.warning { padding: .1em .5em .15em; }
             <td>RIGHT TORTOISE SHELL BRACKET</td>
             <td>是</td>
             <td>是</td>
-            <td>是</td>
-            <td>否</td>
             <td>否</td>
             <td></td>
             <td></td>
@@ -1796,8 +1699,6 @@ span.note, span.issue, span.warning { padding: .1em .5em .15em; }
             <td>FULLWIDTH LEFT SQUARE BRACKET</td>
             <td>是</td>
             <td>否</td>
-            <td>否</td>
-            <td>是</td>
             <td>是</td>
             <td></td>
             <td></td>
@@ -1809,8 +1710,6 @@ span.note, span.issue, span.warning { padding: .1em .5em .15em; }
             <td>FULLWIDTH RIGHT SQUARE BRACKET</td>
             <td>是</td>
             <td>是</td>
-            <td>是</td>
-            <td>否</td>
             <td>否</td>
             <td></td>
             <td></td>
@@ -1822,8 +1721,6 @@ span.note, span.issue, span.warning { padding: .1em .5em .15em; }
             <td>FULLWIDTH LEFT CURLY BRACKET</td>
             <td>是</td>
             <td>否</td>
-            <td>否</td>
-            <td>是</td>
             <td>是</td>
             <td></td>
             <td></td>
@@ -1835,8 +1732,6 @@ span.note, span.issue, span.warning { padding: .1em .5em .15em; }
             <td>FULLWIDTH RIGHT CURLY BRACKET</td>
             <td>是</td>
             <td>是</td>
-            <td>是</td>
-            <td>否</td>
             <td>否</td>
             <td></td>
             <td></td>
@@ -1845,11 +1740,10 @@ span.note, span.issue, span.warning { padding: .1em .5em .15em; }
       </table>
 
       <ol class="punctuation">
-        <li>依照出現的狀況不同，也有允許出現於行首的案例。</li>
-        <li>文字直排時改用角引號[『』「」]。</li>
-        <li>兩個符號間應彼此相連。唯無法避免時，兩符號可視狀況分離。</li>
+        <li>依照出現的狀況不同，也有允許出現於行首的案例，以繁體中文出版品為主。 </li>
+        <li>文字直排時通常改用角引號[『』「」]。</li>
+        <li>符號不可斷開、分行，唯無法避免時，可視狀況拆至二行。</li>
         <li>來自大五碼。</li>
-        <li>刪節號／省略號應將省略點置於字面中央。</li>
       </ol>
     </section>
 

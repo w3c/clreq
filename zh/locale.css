@@ -10,6 +10,11 @@ body {
   background-repeat: no-repeat;
 }
 
+body:lang(zh) {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+}
+
 article,
 aside,
 details,

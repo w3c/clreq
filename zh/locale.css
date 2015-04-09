@@ -91,6 +91,17 @@ section ol ol ol {
   list-style: lower-roman;
 }
 
+li h5,
+li h6,
+li p {
+  margin: .5em 0;
+}
+
+li h5 + p,
+li h6 + p {
+  margin-top: -.5em;
+}
+
 @media speech {
  h1, h2, h3 { voice-stress: moderate; }
  .hide { speak: none; }

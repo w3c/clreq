@@ -74,7 +74,7 @@ pre { margin-left: 2em }
 dt { font-weight: bold }
 
 ol.toc {
-  list-style: none;
+  list-style: none !important;
 }
 
 #toc ol {

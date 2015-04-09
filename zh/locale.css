@@ -79,6 +79,18 @@ ol.toc {
   padding-left: 1em;
 }
 
+section ol {
+  list-style: lower-latin;
+}
+
+section ol ol {
+  list-style: decimal;
+}
+
+section ol ol ol {
+  list-style: lower-roman;
+}
+
 @media speech {
  h1, h2, h3 { voice-stress: moderate; }
  .hide { speak: none; }
@@ -92,10 +104,6 @@ body {
 
 h1 abbr, h2 abbr, h3 abbr, h4 abbr, h5 abbr, h6 abbr, a abbr {
   border: none;
-}
-
-dfn {
-  font-weight: bold;
 }
 
 a.internalDFN {

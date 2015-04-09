@@ -1,0 +1,243 @@
+
+body {
+  padding: 2em 1em 2em 70px;
+  margin: 0;
+  font-family: sans-serif;
+  color: black;
+  background: white;
+  background-position: top left;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+[hidden] { display: none }
+
+:link { color: #00C; background: transparent }
+:visited { color: #609; background: transparent }
+a:active { color: #C00; background: transparent }
+
+a:link img,
+a:visited img { border-style: none }
+
+h1, h2, h3, h4, h5, h6 { text-align: left }
+/* background should be transparent, but WebTV has a bug */
+h1, h2, h3, h4 { color: #005A9C; background: white }
+h1 { font: 170% sans-serif }
+h2 { font: 140% sans-serif }
+h3 { font: 120% sans-serif }
+h4 { font: 100% sans-serif }
+h5 { font: bold 100% sans-serif }
+h6 { font: bold 100% sans-serif }
+
+header { margin-bottom: 1em }
+header h1 { margin-top: 2em; clear: both }
+header table { margin-left: 2em; margin-top: 2em }
+
+p.copyright { font-size: small }
+p.copyright small { font-size: small }
+
+@media screen {  /* hide from IE3 */
+a[href]:hover { background: #ffa }
+}
+
+pre { margin-left: 2em }
+
+dt { font-weight: bold }
+
+ol.toc {
+  list-style: none;
+}
+
+#toc ol {
+  padding-left: 0;
+}
+
+#toc ol ol {
+  padding-left: 1em;
+}
+
+@media speech {
+ h1, h2, h3 { voice-stress: moderate; }
+ .hide { speak: none; }
+ p.copyright { voice-volume: x-soft; voice-rate: x-fast; }
+ dt { pause-before: 63ms; }
+}
+
+body {
+  background-image: url(//www.w3.org/StyleSheets/TR/logo-ED);
+}
+
+h1 abbr, h2 abbr, h3 abbr, h4 abbr, h5 abbr, h6 abbr, a abbr {
+  border: none;
+}
+
+dfn {
+  font-weight: bold;
+}
+
+a.internalDFN {
+  color: inherit;
+  border-bottom: 1px solid #99c;
+  text-decoration: none;
+}
+
+a.externalDFN {
+  color: inherit;
+  border-bottom: 1px dotted #ccc;
+  text-decoration: none;
+}
+
+a.bibref {
+  text-decoration: none;
+}
+
+cite .bibref {
+  font-style: normal;
+}
+
+code {
+  color: #C83500;
+}
+
+/* --- TOC --- */
+.toc a, .tof a {
+  text-decoration: none;
+}
+
+a .secno, a .figno {
+  color: #000;
+}
+
+ul.tof, ol.tof {
+  list-style: none outside none;
+}
+
+.caption {
+  margin-top: 0.5em;
+  font-style: italic;
+}
+
+/* --- TABLE --- */
+table.simple {
+  border-spacing: 0;
+  border-collapse: collapse;
+  border-bottom: 3px solid #005a9c;
+}
+
+.simple th {
+  background: #005a9c;
+  color: #fff;
+  padding: 3px 5px;
+  text-align: left;
+}
+
+.simple th[scope="row"] {
+  background: inherit;
+  color: inherit;
+  border-top: 1px solid #ddd;
+}
+
+.simple td {
+  padding: 3px 10px;
+  border-top: 1px solid #ddd;
+}
+
+.simple tr:nth-child(even) {
+  background: #f0f6ff;
+}
+
+/* --- DL --- */
+section dd > p:first-child {
+  margin-top: 0;
+}
+
+section dd > p:last-child {
+  margin-bottom: 0;
+}
+
+section dd {
+  margin-bottom: 1em;
+}
+
+section dl.attrs dd,
+section dl.eldef dd {
+  margin-bottom: 0;
+}
+
+@media print {
+  .removeOnSave {
+    display: none;
+  }
+}
+
+div.issue-title, div.note-title , div.warning-title {
+  padding-right:  1em;
+  min-width: 7.5em;
+  color: #b9ab2d;
+}
+div.issue-title { color: #e05252; }
+div.note-title { color: #2b2; }
+div.warning-title { color: #f22; }
+div.issue-title span, div.note-title span, div.warning-title span {
+  text-transform: uppercase;
+}
+div.note, div.issue, div.warning {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.note > p:first-child, .issue > p:first-child, .warning > p:first-child { margin-top: 0 }
+.issue, .note, .warning {
+  padding: .5em;
+  border-left-width: .5em;
+  border-left-style: solid;
+}
+div.issue, div.note , div.warning {
+  padding: 1em 1.2em 0.5em;
+  margin: 1em 0;
+  position: relative;
+  clear: both;
+}
+span.note, span.issue, span.warning { padding: .1em .5em .15em; }
+
+.issue {
+  border-color: #e05252;
+  background: #fbe9e9;
+}
+.note {
+  border-color: #52e052;
+  background: #e9fbe9;
+}
+
+.warning {
+  border-color: #f11;
+  border-right-width: .2em;
+  border-top-width: .2em;
+  border-bottom-width: .2em;
+  border-style: solid;
+  background: #fbe9e9;
+}
+
+.warning-title:before{
+  content: "⚠"; /*U+26A0 WARNING SIGN*/
+  font-size: 3em;
+  float: left;
+  height: 100%;
+  padding-right: .3em;
+  vertical-align: top;
+  margin-top: -0.5em;
+}

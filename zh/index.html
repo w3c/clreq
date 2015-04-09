@@ -3,183 +3,8 @@
 <head>
   <title>中文排版需求</title>
   <meta charset="utf-8">
-  
-  <style>
-/*****************************************************************
- * ReSpec 3 CSS
- * Robin Berjon - http://berjon.com/
- *****************************************************************/
 
-/* --- INLINES --- */
-em.rfc2119 { 
-  text-transform: lowercase;
-  font-variant: small-caps;
-  font-style: normal;
-  color: #900;
-}
-
-h1 acronym, h2 acronym, h3 acronym, h4 acronym, h5 acronym, h6 acronym, a acronym,
-h1 abbr, h2 abbr, h3 abbr, h4 abbr, h5 abbr, h6 abbr, a abbr {
-  border: none;
-}
-
-dfn {
-  font-weight: bold;
-}
-
-a.internalDFN {
-  color: inherit;
-  border-bottom: 1px solid #99c;
-  text-decoration: none;
-}
-
-a.externalDFN {
-  color: inherit;
-  border-bottom: 1px dotted #ccc;
-  text-decoration: none;
-}
-
-a.bibref {
-  text-decoration: none;
-}
-
-cite .bibref {
-  font-style: normal;
-}
-
-code {
-  color: #C83500;
-}
-
-/* --- TOC --- */
-.toc a, .tof a {
-  text-decoration: none;
-}
-
-a .secno, a .figno {
-  color: #000;
-}
-
-ul.tof, ol.tof {
-  list-style: none outside none;
-}
-
-.caption {
-  margin-top: 0.5em;
-  font-style: italic;
-}
-
-/* --- TABLE --- */
-table.simple {
-  border-spacing: 0;
-  border-collapse: collapse;
-  border-bottom: 3px solid #005a9c;
-}
-
-.simple th {
-  background: #005a9c;
-  color: #fff;
-  padding: 3px 5px;
-  text-align: left;
-}
-
-.simple th[scope="row"] {
-  background: inherit;
-  color: inherit;
-  border-top: 1px solid #ddd;
-}
-
-.simple td {
-  padding: 3px 10px;
-  border-top: 1px solid #ddd;
-}
-
-.simple tr:nth-child(even) {
-  background: #f0f6ff;
-}
-
-/* --- DL --- */
-.section dd > p:first-child {
-  margin-top: 0;
-}
-
-.section dd > p:last-child {
-  margin-bottom: 0;
-}
-
-.section dd {
-  margin-bottom: 1em;
-}
-
-.section dl.attrs dd, .section dl.eldef dd {
-  margin-bottom: 0;
-}
-
-@media print {
-  .removeOnSave {
-    display: none;
-  }
-}
-  </style>
-  <style>/* --- ISSUES/NOTES --- */
-div.issue-title, div.note-title , div.warning-title {
-  padding-right:  1em;
-  min-width: 7.5em;
-  color: #b9ab2d;
-}
-div.issue-title { color: #e05252; }
-div.note-title { color: #2b2; }
-div.warning-title { color: #f22; }
-div.issue-title span, div.note-title span, div.warning-title span {
-  text-transform: uppercase;
-}
-div.note, div.issue, div.warning {
-  margin-top: 1em;
-  margin-bottom: 1em;
-}
-.note > p:first-child, .issue > p:first-child, .warning > p:first-child { margin-top: 0 }
-.issue, .note, .warning {
-  padding: .5em;
-  border-left-width: .5em;
-  border-left-style: solid;
-}
-div.issue, div.note , div.warning {
-  padding: 1em 1.2em 0.5em;
-  margin: 1em 0;
-  position: relative;
-  clear: both;
-}
-span.note, span.issue, span.warning { padding: .1em .5em .15em; }
-
-.issue {
-  border-color: #e05252;
-  background: #fbe9e9;
-}
-.note {
-  border-color: #52e052;
-  background: #e9fbe9;
-}
-
-.warning {
-  border-color: #f11;
-  border-right-width: .2em;
-  border-top-width: .2em;
-  border-bottom-width: .2em;
-  border-style: solid;
-  background: #fbe9e9;
-}
-
-.warning-title:before{
-  content: "⚠"; /*U+26A0 WARNING SIGN*/
-  font-size: 3em;
-  float: left;
-  height: 100%;
-  padding-right: .3em;
-  vertical-align: top;
-  margin-top: -0.5em;
-}
-  </style>
-  <link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/W3C-ED">
+  <link rel="stylesheet" href="locale.css">
   <!--[if lt IE 9]><script src='https://www.w3.org/2008/site/js/html5shiv.js'></script><![endif]-->
 </head>
 
@@ -256,6 +81,7 @@ span.note, span.issue, span.warning { padding: .1em .5em .15em; }
     <p>
       本文档遵循<a id="w3c_process_revision" href="http://www.w3.org/2014/Process-20140801/"><abbr title="World Wide Web Consortium">W3C</abbr>流程文档</a>（2014-08-01）。
     </p>
+    <hr>
   </section>
 
 
@@ -381,7 +207,7 @@ span.note, span.issue, span.warning { padding: .1em .5em .15em; }
         </ol>
       </li>
 
-      <!-- Chapter 5 -->
+      <!-- Appendix -->
       <li>
         <a href="#appendices">附录</a>
         <ol class="toc">
@@ -392,6 +218,7 @@ span.note, span.issue, span.warning { padding: .1em .5em .15em; }
         </ol>
       </li>
     </ol>
+    <hr>
   </section>
   
   <section id="introduction">

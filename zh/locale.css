@@ -44,6 +44,14 @@ h4 { font: 100% sans-serif }
 h5 { font: bold 100% sans-serif }
 h6 { font: bold 100% sans-serif }
 
+em,
+cite,
+dfn,
+var {
+  font-weight: bold;
+  font-style: inherit;
+}
+
 header { margin-bottom: 1em }
 header h1 { margin-top: 2em; clear: both }
 header table { margin-left: 2em; margin-top: 2em }

@@ -89,15 +89,15 @@ ol.toc {
   margin-top: 4em;
 }
 
-section ol {
+section ol:not([type]) {
   list-style: lower-latin;
 }
 
-section ol ol {
+section ol ol:not([type]) {
   list-style: decimal;
 }
 
-section ol ol ol {
+section ol ol ol:not([type]) {
   list-style: lower-roman;
 }
 

@@ -84,6 +84,10 @@ ol.toc {
   padding-left: 1em;
 }
 
+#toc + section {
+  margin-top: 4em;
+}
+
 section ol {
   list-style: lower-latin;
 }

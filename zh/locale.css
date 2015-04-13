@@ -5,10 +5,7 @@ body {
   margin: 0;
   font-family: sans-serif;
   color: black;
-  background: white;
-  background-position: top left;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
+  background: white url(//www.w3.org/StyleSheets/TR/logo-ED) top left fixed no-repeat;
 }
 
 body:lang(zh) {
@@ -31,47 +28,43 @@ summary {
   display: block;
 }
 
-[hidden] { display: none }
+[hidden] { display: none; }
 
-:link { color: #00C; background: transparent }
-:visited { color: #609; background: transparent }
-a:active { color: #C00; background: transparent }
+:link { color: #00C; background: transparent; }
+:visited { color: #609; background: transparent; }
+a[href]:hover { background: #ffa; }
+a:active { color: #C00; background: transparent; }
 
 a:link img,
-a:visited img { border-style: none }
+a:visited img { border-style: none; }
 
-h1, h2, h3, h4, h5, h6 { text-align: left }
+h1, h2, h3, h4, h5, h6 { text-align: left; }
 /* background should be transparent, but WebTV has a bug */
-h1, h2, h3, h4 { color: #005A9C; background: white }
-h1 { font: 170% sans-serif }
-h2 { font: 140% sans-serif }
-h3 { font: 120% sans-serif }
-h4 { font: 110% sans-serif }
-h5 { font: bold 100% sans-serif }
-h6 { font: bold 100% sans-serif }
+h1, h2, h3, h4 { color: #005A9C; background: white; }
+h1 { font: 170% sans-serif; }
+h2 { font: 140% sans-serif; }
+h3 { font: 120% sans-serif; }
+h4 { font: 110% sans-serif; }
+h5 { font: bold 100% sans-serif; }
+h6 { font: bold 100% sans-serif; }
 
-em,
-cite,
-dfn,
-var {
+pre { margin-left: 2em; }
+dt { font-weight: bold; }
+
+em:lang(zh),
+cite:lang(zh),
+dfn:lang(zh),
+var:lang(zh) {
   font-weight: bold;
   font-style: inherit;
 }
 
-header { margin-bottom: 1em }
-header h1 { margin-top: 2em; clear: both }
-header table { margin-left: 2em; margin-top: 2em }
+header { margin-bottom: 1em; }
+header h1 { margin-top: 2em; clear: both; }
+header table { margin-left: 2em; margin-top: 2em; }
 
-p.copyright { font-size: small }
-p.copyright small { font-size: small }
-
-@media screen {  /* hide from IE3 */
-a[href]:hover { background: #ffa }
-}
-
-pre { margin-left: 2em }
-
-dt { font-weight: bold }
+p.copyright { font-size: small; }
+p.copyright small { font-size: small; }
 
 ol.toc {
   list-style: none !important;
@@ -131,6 +124,10 @@ div.note {
   font-size: .85em;
 }
 
+.note > p:first-child,
+.issue > p:first-child,
+.warning > p:first-child { margin-top: 0; }
+
 #appendices table {
   border-collapse: collapse;
 }
@@ -165,18 +162,13 @@ table.glossary th:nth-child(2) { width: 5em; }
 table.glossary th:nth-child(3) { width: 8em; }
 table.glossary tbody th { text-align: left; }
 
-@media speech {
- h1, h2, h3 { voice-stress: moderate; }
- .hide { speak: none; }
- p.copyright { voice-volume: x-soft; voice-rate: x-fast; }
- dt { pause-before: 63ms; }
-}
-
-body {
-  background-image: url(//www.w3.org/StyleSheets/TR/logo-ED);
-}
-
-h1 abbr, h2 abbr, h3 abbr, h4 abbr, h5 abbr, h6 abbr, a abbr {
+h1 abbr,
+h2 abbr,
+h3 abbr,
+h4 abbr,
+h5 abbr,
+h6 abbr,
+a abbr {
   border: none;
 }
 
@@ -269,25 +261,15 @@ section dl.eldef dd {
   margin-bottom: 0;
 }
 
+@media speech {
+  h1, h2, h3 { voice-stress: moderate; }
+  .hide { speak: none; }
+  p.copyright { voice-volume: x-soft; voice-rate: x-fast; }
+  dt { pause-before: 63ms; }
+}
+
 @media print {
   .removeOnSave {
     display: none;
   }
 }
-
-div.issue-title, div.note-title , div.warning-title {
-  padding-right:  1em;
-  min-width: 7.5em;
-  color: #b9ab2d;
-}
-div.issue-title { color: #e05252; }
-div.note-title { color: #2b2; }
-div.warning-title { color: #f22; }
-div.issue-title span, div.note-title span, div.warning-title span {
-  text-transform: uppercase;
-}
-div.note, div.issue, div.warning {
-  margin-top: 1em;
-  margin-bottom: 1em;
-}
-.note > p:first-child, .issue > p:first-child, .warning > p:first-child { margin-top: 0 }

@@ -1,8 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Requirements for Chinese Text Layout</title>
     <meta charset='utf-8'>
+    <title>Requirements for Chinese Text Layout</title>
+<style>
+.leadin { font-weight: bold; }
+.ednote { color:red; font-style: italic; font-size: 80%; padding: 0 40px; }
+body { line-height: 1.5; }
+h2 { margin-top: 3em; }
+h3 { margin-top: 2em; }
+h4 { margin-top: 2em; }
+</style>
     <script src='http://www.w3.org/Tools/respec/respec-w3c-common'
             async class='remove'></script>
     <script class='remove'>
@@ -30,7 +38,7 @@
           wgURI:        "http://www.w3.org/International/core/",
           wgPublicList: "public-i18n-cjk",
           wgPatentURI:  "http://www.w3.org/2004/01/pp-impl/",
-          edDraftURI: "http://w3c.github.io/CLReq/CLReq-Draft-20140512/zh.html", 
+          edDraftURI: "http://w3c.github.io/clreq/", 
       };
     </script>
   </head>
@@ -49,6 +57,124 @@
 
       <p>A  <a href="zh/"><strong>Chinese version</strong></a> of this document is also available.</p>
     </section>
+    
+    <section class='informative'>
+      <h2>Introduction</h2>
+      <p>Each cultural community has its own language, script and writing system. The transfer of each writing system into cyberspace is a task with very high importance for information and communication technology.</p>
+      <p>As one of the basic work items of this task force, this document summarizes the text composition requirements in the Chinese writing system. One of the goals of the task force is to describe the issues in Chinese layout requirements, another is to provide satisfactory equivalents to the current standards (i.e. Unicode), and another is to prompt vendors to implement those relevant features correctly.</p>
+      <p class="ednote">Not sure of the meaning of "provide satisfactory equivalents to the current standards (i.e. Unicode)" - does it mean "provide useful companions for currently available standards"?</p>
+      <section>
+        <h3>How This Document Was Created</h3>
+        <p>Chinese composition exhibits several differences from other writing systems. The major features include: </p>
+        <ul>
+          <li> There are two written scripts in Chinese, using traditional and simplified characters. Apart from the differences between glyphs and strokes, the composition rules can be different as well.</li>
+          <li> There are two writing modes: vertical and horizontal. The former is often seen in Traditional Chinese publications.</li>
+          <li> In principal, the characters, including Chinese (hanzi) characters and punctuation, used in Chinese composition are squares with the ratio of 1:1, and are seamlessly arranged with one another.</li>
+        </ul>
+        <p>This document mainly adopts the following policies to explain the features of Chinese composition:</p>
+        <ul>
+        <li> It does not fully cover all details of the Chinese composition system, but mainly describes the differences from Western composition systems.</li>
+        <li> It explains in detail the similarities and differences between traditional and simplified Chinese composition.</li>
+        <li> It describes features of Chinese composition that differ from those mentioned in <a href="http://www.w3.org/TR/jlreq/">Requirements for Japanese Text Layout</a>.</li>
+        <li> It describes presentational results and considers these results as issues and requirements for Chinese text layout. Meanwhile, it offers principles or methods for for handling these issues, without describing particular technological solutions.</li>
+        <li> It suggests solutions for, or explains, present-day issues that people face in Chinese composition.</li>
+        <li> It provides typical instances of Chinese composition and their actual use cases as much as possible.</li>
+        <li> In consideration of non-Chinese readers of this document, figures are used for explanation wherever possible.</li>
+        <li> It mainly explains modern Chinese publications. Looking back to the publications in the time of movable type, there may be some differences, but they are still considered part of Chinese composition. The document does not yet fully cover ancient books. Future editions may be revised with such features in mind.</li>
+        <li> For non-Chinese readers, frequency of use is indicated for each requirement. These frequencies are not the outcome of any accurate research, but arise from the long experience of the authors. Non-Chinese readers should understand that they are intuitive for ordinary Chinese readers. These frequencies provide only rough information to prioritize the importance of issues.</li>
+        <li> The main target of this document is common books. Other publications, such as magazines or newspapers, are also included.</li>
+        </ul>
+      </section>
+        </section>
+        
+        
+        
+        <section>
+          <h2>Basics of Chinese Composition</h2>
+          
+          <section>
+          <h3>Characters Used for Chinese Composition</h3>
+          
+          <section>
+          <h4>Characters Used for Chinese Composition</h4>
+          <p>It is mainly Chinese (hanzi) characters that are used for Chinese composition. </p>
+          <p>Chinese characters include Traditional Chinese and Simplified Chinese alternatives. The former is commonly used in Taiwan, Hong Kong and Macao while the latter is commonly used in Mainland China, Singapore and Malaysia. In this document, the number of strokes and the compositional nature of a character are considered to be the major differences between Simplified Chinese characters and Traditional Chinese characters. </p>
+          <p>Different typefaces are used different in regions. The presentational aspects of typefaces do not have a relationship to Unicode, but rather depend on the operating system and the character library. The focus of this document is Chinese composition and we will not discuss typeface presentation. </p>
+          <p class="note">In addition to the Chinese (hanzi) characters, various punctuation marks, as well as Western characters such as Arabic numerals, Latin letters and/or Greek letters, may be used in Chinese text. </p>
+          <p class="note">One Simplified Chinese character may have more than one corresponding traditional form. For example, the Simplified Chinese character 发 can be matched to either the Traditional Chinese character 發 or 髮, depending on the context. </p>
+          </section>
+          
+          
+            <section>
+          <h4>Chinese Characters</h4>
+          <p>Chinese characters have square <dfn>character frames</dfn> of equal dimensions. Aligned with the vertical and horizontal center of the character frame, there is a smaller box called the <dfn>letter face</dfn>, which contains the actual symbol. (There should be some space left between the letter face and the frame). Most of the punctuation marks for Chinese characters share the same size as the other characters, however some of them differ, such as the ellipsis, which is one-character high and two-characters wide.</p>
+          <p>Character size is measured by the size of the character frame. <dfn>Character advance</dfn> is a term used to describe the advance width of the character frame of a character. The frame of a Chinese character should be a square. </p>
+            </section>
+          
+          
+            <section>
+          <h4>Principles for Arranging Characters during Chinese Composition</h4>
+          <p>In principle, when composing a line with Chinese characters, no extra space appears between their character frames. This is called <dfn>solid setting</dfn>. </p>
+          <p class="note">Unlike the letterpress printing era, when several sizes of the original pattern of a letter were required to create matrices, in today's digital era the same original pattern is used for any size simply by enlargement or reduction. Because of this, it might be necessary to adjust the inter-character space when composing lines at large character sizes. When composing lines at small character sizes, hinting data is used to ensure that the width of the strokes that make up a character look correct.</p>
+          <p>Depending on the context, there are several alternative setting methods used, in addition to solid setting, as described below.</p>
+          <ul>
+          <li><span class="leadin">Increasing inter-character spacing.</span> It is common in books to increase the space between each character frame for the following cases:
+<ul>
+  <li>To achieve a balance between running heads with different numbers of characters. Increased inter-character spacing is used for running heads with few characters.</li>
+  <li>For captions of illustrations and tables, which only have a few characters. Increased inter-character spacing is used to balance with the size of an illustration or table.</li>
+  <li>In some cases, increased inter-character spacing is used for poetry where one line has only a few characters, so as to maintain the balance of the layout.</li>
+  <li>For publications whose main audience is children, inter-character spacing is increased to make it easier for the children to read.</li>
+</ul>
+          		</li>
+          <li><span class="leadin">Even inter-character spacing.</span> Text may be set with equal inter-character spacing between characters on a given line, so that each line is aligned to the same line head and line end. Since the Chinese characters and punctuation marks are all in square shapes with almost the same dimensions, it is naturally that each line is aligned to the same line head and line end. Even inter-character spacing is mainly used in the following cases:
+<ul>
+  <li>To deal with rules that forbid certain characters at the beginning or end of a line. When a punctuation marks which is not supposed to be positioned at the end of a line happens to appear there, even inter-character space setting is used to move the character before the punctuation mark to the next line together with the punctuation mark. When a punctuation mark which is not supposed to be positioned at the beginning of a line happens to appear there it is necessary to move the last character from the previous line to the beginning of the next line, and there will be one or two (or sometimes more) empty spaces left in the previous line. Even inter-character space setting is used to unify the length of each line and justify them. </li>
+  <li> Even inter-character space setting is used when the number of characters in a table head differs from the table content, such as for person names, so as to justify the table. </li>
+</ul>
+          		</li>
+          <li><span class="leadin">Reducing inter-character spacing.</span> By reducing the inter-character spacing, a portion of two character frames overlap each other. This method is mainly used in the following cases:
+<ul>
+  <li> For characters in headings in magazines or advertisements, reduced inter-character spacing can be used to keep the characters on one line, or it can also be used to achieve a special effect for presentation. </li>
+  <li>Since Chinese characters are all square-shaped, this method does not apply to headings and content in books produced by letterpress printing. </li>
+</ul>
+          </li>
+          </ul>
+		    </section>
+            
+          </section>
+          </section>
+          
+        <section>
+        <h2>Romanization</h2>
+        <p>
+          Hanyu Pinyin (汉语拼音), the official standard in Mainland China now, uses the Latin alphabet to transcribe the Modern Standard Chinese (Mandarin) pronunciations of Chinese characters. Indicating the pronunciation for all characters of the full text with Hanyu Pinyin is the most common use case in Mainland China. In Taiwan and Hong Kong, the arrangements of the Taiwanese Romanization System for Minnan (台灣閩南語羅馬字), the Romanization System of the Hong Kong Education and Manpower Bureau (教育學院拼音方案) or Romanization systems of other Chinese dialects are similar to that of Hanyu Pinyin.
+        </p>
+        <p>
+          Due to the features of the Latin alphabet, such annotations appear in horizontal writing mode only. Texts for children who are native speakers usually provide reading assistance for each individual character, while texts for those who are learning Chinese as a second language mainly indicate pronunciation for whole words, but occasionally, both of them will have almost the same typesetting. There will be space between the base text in the latter situation, and the ruby characters will have unique requirements such as sentence case, or punctuation marks corresponding to base characters. Early publications using Pinyin are very varied and lack consistency. Both character-based and word-based annotations are quite common. Further description won't be found in this document.
+        </p>
+  </section>
+      </section>
+
+      <section>
+        <h2>Indicating Meaning or Other Additional Information</h2>
+        <section>
+          <h2>Bilingual Annotations</h2>
+          <p>
+            Bilingual annotations aim to provide a Chinese translation of text in foreign languages or acronyms, or to offer the original text for words that have been translated into Chinese. This is mainly used for proper nouns, titles or those terms whose concepts are difficult to convey after translation. It is commonly found in translated works, mainly in light novels.
+          </p>
+        </section>
+        <section>
+          <h2>Interlinear Comments</h2>
+          <p>
+           Interlinear comments are methods to annotate the meaning of a piece of text fragments or a single word, which is named for its interlinear positioning. It usually lies in the interlinear space and co-exists with the body text. Compared to other annotation methods, i.e. headnotes or footnotes, interlinear comments are more compact and stickier to the body. These kind of comments are often found in ancient books, such as Rouge Inkstone, an early commentator of the novel Dream of the Red Chamber.
+          </p>
+        </section>
+      </section>
+    </section>
+    
+    
+    
+    
     
     <section class='informative'>
       <h2>Usage of Ruby</h2>
@@ -95,7 +221,7 @@
           </p>
         </section>
       </section>
-    </section>
+  </section>
     
     <section>
       <h2>Overview of Ruby Positioning</h2>

@@ -99,7 +99,7 @@
         <p>Chinese characters include Traditional Chinese and Simplified Chinese alternatives. The former is commonly used in Taiwan, Hong Kong and Macao while the latter is commonly used in Mainland China, Singapore and Malaysia. In this document, the number of strokes and the compositional nature of a character are considered to be the major differences between Simplified Chinese characters and Traditional Chinese characters.</p>
         <p>Different typefaces are used different in regions. The presentational aspects of typefaces do not have a relationship to Unicode, but rather depend on the operating system and the character library. The focus of this document is Chinese composition and we will not discuss typeface presentation. </p>
         <div class="note">
-          <p>In addition to the Chinese (hanzi) characters, various punctuation marks, as well as Western characters such as Arabic numerals, Latin letters and/or Greek letters, may be used in Chinese text. </p>
+          <p>In addition to the Chinese (hanzi) characters, various punctuation marks, as well as Western characters such as European numerals, Latin letters and/or Greek letters, may be used in Chinese text. </p>
             </div>
         <div class="note">
               <p><span  class="issue">This note appears to no longer be in the Chinese translation. Delete?</span> One Simplified Chinese character may have more than one corresponding Traditional form. For example, the Simplified Chinese character 发 can be matched to either the Traditional Chinese character 發 or 髮, depending on the context. </p>
@@ -504,66 +504,66 @@
     <h3 id="h-chinese_and_western_mixed_text_composition">Composition of Chinese and Western Mixed Texts</h3>
     <section id="composition_of_chinese_and_western_mixed_text">
           <h4 id="h-composition_of_chinese_and_western_mixed_text">Composition of Chinese and Western Mixed Text</h4>
-          <p>In Chinese text there are plenty of situations where Western characters, such as Latin letters, Greek letters, or Arabic numerals, are found alongside Hanzi. The following are just a few examples:</p>
+          <p>There are many examples in Chinese text where Western characters, such as Latin letters, Greek letters, or European numerals, are found alongside Han characters. The following are just a few examples:</p>
           <ol>
-        <li> One Western letter is used as a symbol for something, such as 'A' or 'B'.</li>
+        <li>One Western letter used as a symbol for something, such as 'A' or 'B'.</li>
         <li>A Western word is used in a Chinese context, such as 'editor'.</li>
         <li>Acronyms, such as 'DTP' or 'GDP'.</li>
         <li> Book titles or authors in references to Western books that use the original spelling.</li>
-        <li> Arabic numerals used in xxxx, xxxx, or xxxx, such as '1999'.<span class="issue"> (? used to represent years, quantities or xxx)</span></li>
+        <li> European numerals used to express years or other numbers, such as '1999年'.</li>
       </ol>
-          <p>Western characters are also found in contexts such as numerals in itemized lists and numbered headings, or symbols for chemical elements or mathematical formulae. It can be seen from these examples that it is an everyday occurrence to find Western characters mixed with Hanzi in Chinese composition.</p>
+          <p>Western numeric characters are also used in itemized lists and numbered headings, or as symbols for chemical elements or mathematical formulae. It can be seen from these examples that it is an everyday occurrence to find Western characters mixed with Han characters in Chinese composition.</p>
           <div class="note">
-        <p>Arabic numerals are referred to as European Hindu-Arabic numerals in normal context of the document unless notes are given otherwise. </p>
+        <p>Arabic numerals are referred to as European Hindu-Arabic numerals in normal context of the document unless notes are given otherwise. <span class="issue">This is not very clear. I think it should say that Western numerals, sometimes called arabic, or arabic-indic numerals, are referred to as European numerals in the context of this document, unless notes indicate otherwise.</span></p>
       </div>
-          <p>Formerly, fullwidth ASCII characters were often used, either to make the presentation look orderly, or simply due to the poorly developed computer technologies available for text layout. Nowadays, typesetting engines allow for proportional or monospace fonts, as required, rather than forcing the user to resort to the old  fullwidth blocks of Latin letters and Arabic numerals.</p>
-          <p>When western texts mixed with Hanzi, Chinese style punctuation and its common usage should be used on principle since the main text is Chinese,  However, in case of technical documents, if plenty of formula are contained into the text, full stop can be unified with western-style period [.] as full stop. Also in text books on grammar of Western languages etc., since plenty of example sentences are contained and mixed with Chinese, western-style period can be used.</p>
+          <p>Formerly, fullwidth ASCII characters were often used, either to make the presentation look orderly, or simply due to the poorly developed computer technologies available for text layout. Nowadays, typesetting engines allow for proportional or monospace fonts, as required, rather than forcing the user to resort to the old  fullwidth blocks of Latin letters and European numerals.</p>
+          <p>When western texts are mixed with Han characters, Chinese style punctuation and its common usage should be used in principle since the main text is Chinese,  However, in the case of technical documents, if plenty of formula are contained in the text, the full stop can be unified with the western-style period [.]. Also in text books on grammar of Western languages etc., which contain plenty of example sentences mixed with Chinese, western-style periods can be used.</p>
         </section>
     <section id="mixed_text_composition_in_horizontal_writing_mode">
           <h4 id="h-mixed_text_composition_in_horizontal_writing_mode">Mixed Text Composition in Horizontal Writing Mode</h4>
-          <p>In horizontal writing mode, the basic approach uses proportional fonts to represent Western text and uses proportional or monospace fonts for Arabic numerals. In principle, there is tracking or spacing between an adjacent Hanzi and Western character of up to one quarter of a Hanzi character width, except at the line head or end.</p>
+          <p>In horizontal writing mode, the basic approach uses proportional fonts to represent Western text and uses proportional or monospace fonts for European numerals. In principle, there is tracking or spacing between an adjacent Han character and Western character of up to one quarter of a Han character width, except at the line head or end.</p>
           <div class="note">
-        <p>Another approach is the use a Western word space (U+0020 SPACE), in which case the width depends on the font in use. <span class="issue">This sentence was translated from a note in Hackpad.</span></p>
+        <p>Another approach is to use a Western word space (<span class="uname">U+0020 SPACE</span>), in which case the width depends on the font in use. <span class="issue">This sentence was translated from a note in Hackpad.</span></p>
       </div>
         </section>
     <section id="mixed_text_composition_in_vertical_writing_mode">
           <h4 id="h-mixed_text_composition_in_vertical_writing_mode">Mixed Text Composition in Vertical Writing Mode</h4>
-          <p>For vertical writing mode, the following list describes methods of setting Western letters and Arabic numerals:</p>
+          <p>For vertical writing mode, the following list describes methods of setting Western letters and European numerals:</p>
           <ol>
-        <li> Setting Western letters with Hanzi-width monospace fonts. Letters or Arabic numeral follow each other, one at a time, in the same direction and rotation as the Hanzi characters.  This arrangement is usually adopted where the text contains a single letter or digit, or an acronym.</li>
-        <li> Setting Western letters with proportional fonts, rotated 90 degrees clockwise.  This approach is usually adopted where Latin letters compose a word or sentence. There is tracking or spacing between a Hanzi character and an adjacent Western letter or Arabic numeral, up to a width of one quarter of a Hanzi character, except at the line head or end.</li>
-        <li> Setting Arabic numerals with proportional fonts in horizontal-in-vertical orientation. This style is usually adopted when dealing with a two to three digit number whose width is equal to the default line advance or slightly wider (within an acceptable range).</li>
+        <li><span class="leadin">Setting Western letters with Han character-width monospace fonts</span>. Letters or European numerals follow each other, one at a time, in the same direction and rotation as the Han characters.  This arrangement is usually adopted where the text contains a single letter or digit, or an acronym.</li>
+        <li><span class="leadin">Setting Western letters with proportional fonts, rotated 90 degrees clockwise.</span>  This approach is usually adopted where Latin letters compose a word or sentence. There is tracking or spacing between a Han character and an adjacent Western letter or European numeral, up to a width of one quarter of a Han character, except at the line head or end.</li>
+        <li><span class="leadin">Setting European numerals with proportional fonts in horizontal-in-vertical orientation.</span> This style is usually adopted when dealing with a two to three digit number whose width is equal to the default line advance or slightly wider (within an acceptable range).</li>
       </ol>
           <div class="note">
-        <p>Hanzi numerals are usually used in vertical writing mode, however in recent years it is becoming more common to see fullwidth Arabic numerals and proportional numerals set as horizontal-in-vertical.</p>
+        <p>Han numerals are usually used in vertical writing mode, however in recent years it is becoming more common to see fullwidth European numerals and proportional numerals set as horizontal-in-vertical.</p>
       </div>
         </section>
     <section id="handling_western_text_in_chinese_text_using_proportional_western_fonts">
           <h4 id="h-handling_western_text_in_chinese_text_using_proportional_western_fonts">Handling Western Text in Chinese Text Using Proportional Western Fonts</h4>
-          <p>The following provides composition rules for handling Western characters and Arabic numerals in horizontal writing mode or in situations in vertical writing mode where the Western words/phrases or Arabic numerals are rotated 90 degrees clockwise:</p>
+          <p>The following provides composition rules for handling Western characters and European numerals in horizontal writing mode or in situations in vertical writing mode where the Western words/phrases or European numerals are rotated 90 degrees clockwise:</p>
           <ol>
-        <li> A sequence of Western characters in a Western word should not break across a line-break, except where hyphenation is allowed.</li>
-        <li> Tracking or spacing between a Hanzi character and a Western letter or numeral is up to a quarter of the width of a Hanzi character.</li>
-        <li> Justified text alignment is an important feature of Chinese composition. It is harder to align text as expected with a line contains Western characters. Typically, spacing or tracking is applied equally across the line, but such adjustments only applied between Hanzi characters or between Hanzi and Western letters.  The spacing is not equally distributed between Western words and/or Arabic numerals.</li>
+        <li>A sequence of Western characters in a Western word should not break across a line-break, except where hyphenation is allowed.</li>
+        <li>Tracking or spacing between a Han character and a Western letter or numeral is up to a quarter of the width of a Han character.</li>
+        <li>Justified text alignment is an important feature of Chinese composition. It is harder to align text as expected when a line contains Western characters. Typically, spacing or tracking is applied equally across the line, but such adjustments are only applied between Han characters or between Han and Western letters.  The spacing is not equally distributed between characters in Western words and/or European numerals.</li>
       </ol>
           <p>Exceptions are made in the following cases:</p>
           <ol>
-        <li> Tracking or spacing of Western letters or Arabic numerals before the line head or after the line end are not justified.</li>
-        <li> Tracking or spacing of Western letters or Arabic numerals is not adjusted  before or after Chinese commas or full stops, nor after Chinese opening and before Chinese closing brackets.</li>
+        <li> Tracking or spacing of Western letters or European numerals before the line head or after the line end are not justified.</li>
+        <li> Tracking or spacing of Western letters or European numerals is not adjusted  before or after Chinese commas or full stops, nor after Chinese opening and before Chinese closing brackets.</li>
       </ol>
         </section>
     <section id="handling_of_grid_alignment_in_chinese_and_western_mixed_text_composition">
-          <h4 id="h-handling_of_grid_alignment_in_chinese_and_western_mixed_text_composition">Handling of Criss-cross [Grid?] Alignment in Chinese and Western Mixed Text Composition</h4>
-          <p>Due to the fact that each Hanzi character is of the same width, xxxx, it is also a requirement for blocks of Hanzi text to be aligned both vertically and horizontally, whether in vertical or horizontal writing mode.  When Western text or Arabic numerals intervene, this principle is harder to achieve. Possible approaches are listed below:</p>
+          <h4 id="h-handling_of_grid_alignment_in_chinese_and_western_mixed_text_composition">Handling of Grid Alignment in Chinese and Western Mixed Text Composition</h4>
+          <p>Due to the fact that each Han character is of the same width, <span class="needspostedit">xxxx</span>, it is also a requirement for blocks of Han text to be aligned both vertically and horizontally, whether in vertical or horizontal writing mode.  When Western text or European numerals intervene, this principle is harder to achieve. Possible approaches are listed below:</p>
           <ol>
-        <li> Instead of a quarter Hanzi-width tracking between Hanzi and Western letters, it is possible to use flexible spacing of up to half a Hanzi character width.  This brings the space occupied by Western characters to a multiple of the width of a Hanzi character. In this way, both the Hanzi character before and after the Western language span snaps to the grid lines.</li>
+        <li> Instead of a quarter Han-width tracking between Han and Western letters, it is possible to use flexible spacing of up to half a Han character width.  This brings the space occupied by Western characters to a multiple of the width of a Han character. In this way, both the Han character before and after the Western language span snaps to the grid lines.</li>
         <li> When a Western word appears at the line end and needs to be broken, rather than breaking the word at a syllable boundary per the Western convention, the word may be forced to break at the line end, in order to ensure correct alignment.</li>
       </ol>
           <div class="note">
-        <p>When in use of criss-cross alignment, it is recommended to deal with line end punctuation marks by hanging the first one of them outside the type area as mentioned in section <a href="#hanging_punctuation_marks_at_line_end">3.1.7</a>. As of the situations such as consecutive punctuation marks, the second and following ones are allowed to appear in the line start.</p>
+        <p>When using grid alignment, it is recommended to deal with line end punctuation marks by hanging the first of them outside the type area as mentioned in section <a href="#hanging_punctuation_marks_at_line_end"></a>. In situations that involve consecutive punctuation marks, the second and following punctuation marks are allowed to appear at the line start.</p>
       </div>
           <div class="note">
-        <p>Criss-cross alignment is adapted more often in Traditional Chinese typesetting, while the use in that of Simplified Chinese is rarely seen.</p>
+        <p>Grid alignment is adopted more often in Traditional Chinese typesetting, whereas use in Simplified Chinese is rare.</p>
       </div>
         </section>
   </section>
@@ -1334,7 +1334,7 @@
         <tr>
           <td>阿拉伯數字</td>
           <td>Ālābó shùzì</td>
-          <td>Arabic numerals</td>
+          <td>European numerals</td>
         </tr>
         <tr>
           <td>版心</td>

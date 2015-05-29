@@ -14,6 +14,9 @@ h4  {
     color: #005a9c; 
     margin-top: 2em;  
     }
+.leadin {
+	font-weight: bold;
+	}
 
 ins { 
 	background-color: #99FF99; 
@@ -72,3 +75,8 @@ samp, kbd {
 	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace; 
     font-size: 100%; 
     }
+.uname {
+	text-transform: uppercase;
+	font-size: 85%;
+	letter-spacing:0.03em;
+	}

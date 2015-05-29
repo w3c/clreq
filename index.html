@@ -29,27 +29,38 @@
                     mailto:     "ishida@w3.org",
                     company:    "W3C" }
           ],
-          wg:           "Internationalization Core Working Group",
-          wgURI:        "http://www.w3.org/International/core/",
-          wgPublicList: "public-i18n-cjk",
-          wgPatentURI:  "http://www.w3.org/2004/01/pp-impl/",
-          edDraftURI: "http://w3c.github.io/clreq/", 
+		wg:           "Internationalization Core Working Group",
+		wgURI:        "http://www.w3.org/International/core/",
+		bugTracker: { new: "https://github.com/w3c/clreq/issues", open: "https://github.com/w3c/clreq/issues" } ,
+		wgPublicList: "public-i18n-cjk",
+		wgPatentURI:  "http://www.w3.org/2004/01/pp-impl/",
+		edDraftURI: "http://w3c.github.io/clreq/", 
       };
     </script>
 	<link rel="stylesheet" href="local.css" type="text/css" />
+    <style>
+	.needspostedit { background-color: #F3F3C3; }
+	</style>
     </head>
     <body>
-<section id='abstract'>
+<div id='abstract'>
       <p> This document summarizes the text composition requirements in the Chinese writing system. One of the goals of the task force is to describe the issues in the Chinese layout requirements, another one is to provide satisfactory equivalent to the current standards (i.e. Unicode), also to promote vendors to implement those relevant features correctly. </p>
-    </section>
-<section id='sotd'>
-      <p> <a href="http://www.w3.org/International/core/">The Internationalization Working Group</a> has been a great help during the writing of this document. You are also welcome to include <a href="mailto:public-i18n-cjk@w3.org">public-i18n-cjk@w3.org</a> (<a href="mailto:public-i18n-cjk@w3.org?subject=subscribe">subscribe</a>) in any discussion about this document. Once the FPWD of this layout requirements is published, the HTML5 Chinese IG will work with <a href="http://www.w3.org/International/core/">the Internationalization Working Group</a> to take this document further, to widen the exposure and review of the document. </p>
+    </div>
+<div id='sotd'>
+      <p>This document was created by the <a href="http://www.w3.org/International/groups/chinese-layout/">Chinese Layout Task Force</a> within the W3C Internationalization Interest Group, and in collaboration with the  <a href="http://www.w3.org/html/ig/zh/">W3C HTML5 Chinese Interest Group</a>. The <a href="http://www.w3.org/International/core/">Internationalization Working Group</a> has been a great help during the writing of this document.  The Chinese Layout Task Force will work with Internationalization Working Group to publish Working Drafts of this document, and to widen the exposure and review of the document. </p>
       <p>A <a href="zh/"><strong>Chinese version</strong></a> of this document is also available.</p>
-    </section>
+      <p class="note">If you wish to make comments regarding this document, 
+    please <a href="https://github.com/w3c/clreq/issues" style="font-size: 120%;">raise a github issue</a>. 
+    If you are unable to use github issues, you may also send
+    email to the list mentioned below. Please include <q>[clreq]</q> at the start of your
+    email's subject. To make it easier to track comments, please raise
+    separate issues or send separate emails for each comment. All comments
+    are welcome.</p>
+    </div>
 <section id="introduction">
       <h2 id="h-introduction">Introduction</h2>
       <section id="purpose_of_this_document">
-    <h3 id="h-purpose_of_this_document"><span class="secno">1.1 </span>本文書之目的</h3>
+    <h3 id="h-purpose_of_this_document">本文書之目的</h3>
     <p>Each cultural community has its own language, script and writing system. The transfer of each writing system into cyberspace is a task with very high importance for information and communication technology.</p>
     <p>As one of the basic work items of this task force, this document summarizes the text composition requirements in the Chinese writing system. One of the goals of the task force is to describe the issues in Chinese layout requirements, another is to provide satisfactory equivalents to the current standards (i.e. Unicode), and another is to prompt vendors to implement those relevant features correctly.</p>
   </section>
@@ -61,7 +72,7 @@
           <li> There are two writing modes: vertical and horizontal. The former is often seen in Traditional Chinese publications.</li>
           <li> In principal, the characters, including Chinese (hanzi) characters and punctuation, used in Chinese composition are squares with the ratio of 1:1, and are seamlessly arranged with one another.</li>
         </ol>
-    <p class="ednote">The remaining Englih text in this section (ie. what follows) seems to no longer be in the Chinese version:</p>
+    <p class="issue">The remaining English text in this section (ie. what follows) comes from hackpad, but seems to no longer be in the Chinese version. Should it be deleted?</p>
     <p>This document mainly adopts the following policies to explain the features of Chinese composition:</p>
     <ul>
           <li> It does not fully cover all details of the Chinese composition system, but mainly describes the differences from Western composition systems.</li>
@@ -76,27 +87,28 @@
           <li> The main target of this document is common books. Other publications, such as magazines or newspapers, are also included.</li>
         </ul>
   </section>
+  </section>
+  
       <section id="basics_of_chinese_composition">
     <h2 id="h-basics_of_chinese_composition">Basics of Chinese Composition</h2>
     <section id="characters_and_the_principles_of_setting_them_for_chinese_composition">
           <h3 id="h-characters_and_the_principles_of_setting_them_for_chinese_composition">Characters used for Chinese composition</h3>
           <section id="characters_used_in_chinese_composition">
-        <h4 id="h-characters_used_in_chinese_composition">Characters used for Chinese composition</h4>
-        <p>It is mainly Chinese (hanzi) characters that are used for Chinese composition.</p>
+        <h4 id="h-characters_used_in_chinese_composition">Characters used for Chinese composition <span class="issue">remove duplicate heading?</span></h4>
+        <p>It is mainly Han characters (hanzi) that are used for Chinese composition.</p>
         <p>Chinese characters include Traditional Chinese and Simplified Chinese alternatives. The former is commonly used in Taiwan, Hong Kong and Macao while the latter is commonly used in Mainland China, Singapore and Malaysia. In this document, the number of strokes and the compositional nature of a character are considered to be the major differences between Simplified Chinese characters and Traditional Chinese characters.</p>
         <p>Different typefaces are used different in regions. The presentational aspects of typefaces do not have a relationship to Unicode, but rather depend on the operating system and the character library. The focus of this document is Chinese composition and we will not discuss typeface presentation. </p>
         <div class="note">
-              <p>In addition to the Chinese (hanzi) characters, various punctuation marks, as well as Western characters such as Arabic numerals, Latin letters and/or Greek letters, may be used in Chinese text. </p>
+          <p>In addition to the Chinese (hanzi) characters, various punctuation marks, as well as Western characters such as Arabic numerals, Latin letters and/or Greek letters, may be used in Chinese text. </p>
             </div>
-        <p class="ednote">The following additional note appears to no longer be in the Chinese translation</p>
         <div class="note">
-              <p>One Simplified Chinese character may have more than one corresponding traditional form. For example, the Simplified Chinese character 发 can be matched to either the Traditional Chinese character 發 or 髮, depending on the context. </p>
+              <p><span  class="issue">This note appears to no longer be in the Chinese translation. Delete?</span> One Simplified Chinese character may have more than one corresponding Traditional form. For example, the Simplified Chinese character 发 can be matched to either the Traditional Chinese character 發 or 髮, depending on the context. </p>
             </div>
       </section>
           <section id="han_characters">
         <h4 id="h-han_characters">Chinese Characters</h4>
-        <p>Chinese characters have square <dfn>character frames</dfn> of equal dimensions. Aligned with the vertical and horizontal center of the character frame, there is a smaller box called the <dfn>letter face</dfn>, which contains the actual symbol. (There should be some space left between the letter face and the frame). Most of the punctuation marks for Chinese characters share the same size as the other characters, however some of them differ, such as the ellipsis, which is one-character high and two-characters wide.</p>
-        <p>Character size is measured by the size of the character frame. <dfn>Character advance</dfn> is a term used to describe the advance width of the character frame of a character. The frame of a Chinese character should be a square. </p>
+        <p>Chinese characters have square <dfn id="def_characterFrame">character frames</dfn> of equal dimensions. Aligned with the vertical and horizontal center of the character frame, there is a smaller box called the <dfn id="def_letterFace">letter face</dfn>, which contains the actual symbol. (There should be some space left between the letter face and the frame). Most of the punctuation marks for Chinese characters share the same size as the other characters, however some of them differ, such as the ellipsis, which is one-character high and two-characters wide.</p>
+        <p>Character size is measured by the size of the character frame. <dfn id="def_characterAdvance">Character advance</dfn> is a term used to describe the advance width of the character frame of a character. The frame of a Chinese character should be a square. </p>
       </section>
           <section id="principles_of_arrangement_of_han_characters">
         <h4 id="h-principles_of_arrangement_of_han_characters">Principles for Arranging Characters during Chinese Composition</h4>
@@ -104,10 +116,10 @@
         <div class="note">
               <p>Unlike the letterpress printing era, when several sizes of the original pattern of a letter were required to create matrices, in today's digital era the same original pattern is used for any size simply by enlargement or reduction. Because of this, it might be necessary to adjust the inter-character space when composing lines at large character sizes. When composing lines at small character sizes, hinting data is used to ensure that the width of the strokes that make up a character look correct.</p>
             </div>
-        <p>Depending on the context, there are several alternative setting methods used, in addition to solid setting, as described below.</p>
+        <p>Depending on the context, in addition to solid setting several alternative setting methods can be used, as described below.</p>
         <ol>
               <li>
-            <p><span class="leadin">Increasing inter-character spacing.</span> It is common in books to increase the space between each character frame for the following cases:</p>
+            <p><span class="leadin">Increased inter-character spacing.</span> It is common in books to increase the space between each character frame for the following cases:</p>
             <ol>
                   <li>To achieve a balance between running heads with different numbers of characters. Increased inter-character spacing is used for running heads with few characters.</li>
                   <li>For captions of illustrations and tables, which only have a few characters. Increased inter-character spacing is used to balance with the size of an illustration or table.</li>
@@ -116,13 +128,13 @@
                 </ol>
           </li>
               <li>
-            <p><span class="leadin">Even inter-character spacing.</span> Text may be set with equal inter-character spacing between characters on a given line, so that each line is aligned to the same line head and line end. Since the Chinese characters and punctuation marks are all in square shapes with almost the same dimensions, it is naturally that each line is aligned to the same line head and line end. Even inter-character spacing is mainly used in the following cases:</p>
+            <p><span class="leadin">Even inter-character spacing.</span> Text may be set with equal inter-character spacing between all characters on a given line, so that each line is aligned to the same line head and line end. Since the Chinese characters and punctuation marks are all in square shapes with almost the same dimensions, it is natural that each line is aligned to the same line head and line end. Even inter-character spacing is mainly used in the following cases:</p>
             <ol>
-                  <li>To deal with rules that forbid certain characters at the beginning or end of a line. When a punctuation marks which is not supposed to be positioned at the end of a line happens to appear there, even inter-character space setting is used to move the character before the punctuation mark to the next line together with the punctuation mark. When a punctuation mark which is not supposed to be positioned at the beginning of a line happens to appear there it is necessary to move the last character from the previous line to the beginning of the next line, and there will be one or two (or sometimes more) empty spaces left in the previous line. Even inter-character space setting is used to unify the length of each line and justify them. </li>
+                  <li>To deal with rules that forbid certain characters at the beginning or end of a line. When a punctuation mark which is not supposed to be positioned at the end of a line happens to appear there, even inter-character space setting is used to move the character before the punctuation mark to the next line together with the punctuation mark. When a punctuation mark which is not supposed to be positioned at the beginning of a line happens to appear there it is necessary to move the last character from the previous line to the beginning of the next line, and there will be one or two (or sometimes more) empty spaces left in the previous line. Even inter-character space setting is used to unify the length of each line and justify them. </li>
                   <li> Even inter-character space setting is used when the number of characters in a table head differs from the table content, such as for person names, so as to justify the table. </li>
                 </ol>
           <li>
-            <p><span class="leadin">Reducing inter-character spacing.</span> By reducing the inter-character spacing, a portion of two character frames overlap each other. This method is mainly used in the following cases:</p>
+            <p><span class="leadin">Reduced inter-character spacing.</span> By reducing the inter-character spacing, a portion of two character frames overlap each other. This method is mainly used in the following cases:</p>
             <ol>
               <li> For characters in headings in magazines or advertisements, reduced inter-character spacing can be used to keep the characters on one line, or it can also be used to achieve a special effect for presentation. </li>
               <li>Since Chinese characters are all square-shaped, this method does not apply to headings and content in books produced by letterpress printing. </li>
@@ -131,19 +143,19 @@
             </ol>
       </section>
         </section>
-  </section>
+
       <section id="commonly_used_chinese_typefaces">
     <h3 id="h-commonly_used_chinese_typefaces">Typefaces for Chinese Characters</h3>
     <section id="four_commonly_used_typefaces_for_chinese_composition">
-          <h4 id="h-four_commonly_used_typefaces_for_chinese_composition">Four Frequently-used Typefaces for Chinese Characters <span class="ednote">I'm inclined to think that a heading is superfluous here.</span></h4>
-          <p>There are four main typefaces in use for Chinese characters: Song, Hei, Kai and Fangsong (Imitation Song). The common practice for these four typefaces will be presented in corresponding use of contexts. </p>
+          <h4 id="h-four_commonly_used_typefaces_for_chinese_composition">Four Frequently-used Typefaces for Chinese Characters <span class="issue">I'm inclined to think that a heading is superfluous here.</span></h4>
+          <p>There are four main typefaces in use for Chinese characters: Song, Hei, Kai and Fangsong (Imitation Song). This following sections describe common practice and contexts for use of these four typefaces. </p>
         </section>
     <section id="song">
           <h4 id="h-song">Song/Ming</h4>
           <figure id="fig-song"><span style="text-align:center;"><img src="zh/images/song.png" alt="Picture of Song Type" style="width: 80%"/></span>
         <figcaption>Song</figcaption>
       </figure>
-          <p><dfn>Song</dfn>, also known as Songti or Ming, is a category of typefaces used to display Chinese characters and currently the most common style of type in print for Chinese. In Mainland China, the most common name is Song while in Hong Kong, Taiwan, Japan and Korea, Ming is prevalent. </p>
+          <p><dfn>Song</dfn>, also known as Songti or Ming, is a category of typefaces used to display Chinese characters, and currently the most common style of type in print for Chinese. In Mainland China, the most common name is Song while in Hong Kong, Taiwan, Japan and Korea, Ming is prevalent. </p>
           <p>Song is commonly used in text, headings and annotations. When used in headings, the characters will appear in a bold face, so as to distinguish the heading from the text. </p>
         </section>
     <section id="kai">
@@ -154,7 +166,7 @@
           <p><dfn>Kai</dfn>, also known as Kaiti or regular script, is another of the major typefaces, and provides calligraphic styles for Chinese characters. It is also the most easily and widely recognized style and shows notable handwriting features. </p>
           <p>Kai is mainly used in text that needs to be differentiated from the rest of the content, for example, headlines, references, quotations, and dialogs. It is rarely used for emphasis, because of its similarity with Song. </p>
           <div class="note">
-        <p>Since Kai retains some calligraphic features, it is widely used in office documents and the textbooks. </p>
+        <p>Since Kai retains some calligraphic features, it is widely used in office documents and textbooks. </p>
       </div>
         </section>
     <section id="hei">
@@ -170,22 +182,22 @@
           <figure id="fig-fangsong"><span style="text-align:center;"><img src="zh/images/fangsong.png" alt="Picture of Fangsong Type" style="width: 80%"/></span>
         <figcaption>Fangsong (Imitation Song)</figcaption>
       </figure>
-          <p>The <dfn>Fangsong</dfn> (Imitation Song) style lies between Song and Kai. It is commonly used in isolated paragraphs such as quotations or highlighted sentences.</p>
+          <p>The <dfn>Fangsong</dfn> (Imitation Song) style lies between Song and Kai. It is commonly used in isolated paragraphs such as quotations or highlighted sentences. <span class="issue">Looking at the Chinese version, i'm not sure where "(imitation song)" comes from. Should this sentence start out with "The Fansong, or imitation song, style lies..." and remove (Imitation Song) from other locations?  I don't think we call Fangsong 'Imitation Song' in the West, just call it fansong.</span></p>
         </section>
   </section>
-    </section>
+
 <section id="type_area">
-      <h3 id="h-type_area"><span class="secno">Page format</span></h3>
-      <p>The <dfn>type area</dfn> <span class="ednote">reminder: double check this terminology</span>, sometimes called printing area, is designed in the following sequence. </p>
+      <h3 id="h-type_area">The Type Area (or Printing Area)</h3>
+      <p>The <dfn id="def_typeArea">type area</dfn>, sometimes called the printing area, is designed in the following sequence. <span class="issue">There is no actual definition of what the type area is. I suggest we change the foregoing to something like: The <dfn id="def_typeArea">type area</dfn>, sometimes called the printing area, is the rectangle in the middle of the page that contains the main body of the text. It is surrounded by space containing headers, footers, notes, etc.</span></p>
       <ul>
     <li> First, prepare a template of the page format, which determines the basic appearance of document pages.</li>
     <li> Then, specify the details of actual page elements based on the template.</li>
   </ul>
       <p>Books usually use one basic template for page format, whereas magazines often use several templates.</p>
-      <p>Although in books, there tends to be one template for the page format, some further design effort based around the basic page format will be needed for pages such as the table of contents and indexes. Furthermore, there are many examples of indexes with a different page format than the basic page format, and vertically set books often have indexes in horizontal writing mode, and sometimes multiple columns. However, while doing actual design for the page, the size of the type area should not exceed the basic page template.<span class="ednote"> (have some doubts about the translation of 版面 here)</span>. </p>
+      <p>Although in books, there tends to be one template for the page format, some further design effort based around the basic page format will be needed for pages such as the table of contents and indexes. Furthermore, there are many examples of indexes with a different page format than the basic page format, and vertically set books often have indexes in horizontal writing mode, and sometimes multiple columns. However, while doing actual design for the page, the size of the type area should not exceed the basic page template.<span class="issue"> (have some doubts about the translation of 版面 here)</span>. </p>
       <p>Magazines usually contain various kinds of content, which naturally leads to various designs of templates, different sizes of characters, and varying numbers of columns. </p>
       <section id="main_elements_of_basic_composition">
-    <h4 id="h-main_elements_of_basic_composition">Elements of Basic Page Format</h4>
+    <h4 id="h-main_elements_of_basic_composition">Basic Elements of Page Format</h4>
     <p>The following are the basic elements of a page format.</p>
     <ul>
           <li>Trim size and binding side (vertically set Chinese documents are bound on the right-hand side, and horizontally set documents are bound on the left-hand side.)</li>
@@ -194,14 +206,14 @@
           <li> Appearance of running heads and page numbers, and their positions relative to the trim size and type area.</li>
         </ul>
     <div class="note">
-          <p>Establishing a type area may be seen as defining not only a rectangular area on a page, but also within that area an underlying, logical grid, to guide the placement of such things as characters, headings, and illustrations. Once the grid is established under the composition principles, the setting of the characters must align with the grid. If the content contains Chinese characters only, it is an important principle that the first and last characters on a line to align with the border of the type area. When there are both Chinese characters and western text mixed in the content, or the forbidden roles of the punctuation marks need to be taken into consideration, the setting of the content may not align with the grid. </p>
+          <p>Establishing a type area may be seen as defining not only a rectangular area on a page, but also within that area an underlying, logical grid, to guide the placement of such things as characters, headings, and illustrations. Once the grid is established according to the principles of composition, the setting of the characters must align with the grid. If the content contains Chinese characters only, it is an important principle that the first and last characters on a line should align with the border of the type area. When both Chinese characters and Western text are mixed in the content, or forbidden locations of punctuation marks need to be taken into consideration, the setting of the content may not align with the grid.</p>
         </div>
   </section>
       <section id="designing_elements_of_type_area">
     <h4 id="h-designing_elements_of_type_area">Design of the Type Area</h4>
-    <p>The type area is the printing style designed as the basis of a book. The following are the basic elements of the type area.</p>
+    <p><span class="needspostedit">The type area defines the basic printing style of a book.</span> The following are the basic elements of the type area.</p>
     <ul>
-          <li> Character size and typeface name </li>
+      <li> Character size and typeface name </li>
           <li> Text direction (vertical writing mode or horizontal writing mode)</li>
           <li> Number of columns and column gap when using multi-column format</li>
           <li> Length of a line</li>
@@ -211,181 +223,174 @@
   </section>
       <section id="using_type_area_for_composition_in_real_pages">
     <h4 id="h-using_type_area_for_composition_in_real_pages">Type Area and Real Page Format</h4>
-    <p>This session explains how to create a real page format based on the type area. </p>
+    <p>This section explains how to create a real page format based on the type area. </p>
     <ol>
-          <li> Realm and position of headings: The direction and size of the characters of the heading should be based on a number of lines in the type area. The size of the indent is usually specified as a number of characters in the type area. </li>
-          <li> Size of illustrations: In horizontal writing mode, the width of illustrations should, if at all possible, be the width of the type area; in horizontal writing mode with two columns,  the width of illustrations should, if at all possible, be the width of one type area column. The illustrations are usually set at the head or the foot of the page. Likewise,  in vertical writing mode, the height of illustrations should, if at all possible, be either the height of one type area column or the height of the type area. The illustrations are usually set at the right side or left side of the type area.</li>
-          <li> Page for Table of Contents, Indexes and References: The size of the type area for the table of contents, indexes and references of books is based on the size of the type area. There are many examples of tables of contents in vertical writing mode where the left-to-right size is identical to that of the type area, but the top-to-bottom size is a little bit smaller. </li>
+          <li><span class="leadin">Realm and position of headings:</span> The direction and size of the characters of the heading should be based on a number of lines in the type area. The size of the indent is usually specified as a number of characters in the type area. </li>
+          <li><span class="leadin">Size of illustrations:</span> In horizontal writing mode, the width of illustrations should, if at all possible, be the width of the type area; in horizontal writing mode with two columns,  the width of illustrations should, if at all possible, be the width of one type area column. The illustrations are usually set at the head or the foot of the page. Likewise,  in vertical writing mode, the height of illustrations should, if at all possible, be either the height of one type area column or the height of the type area. The illustrations are usually set at the right side or left side of the type area.</li>
+          <li><span class="leadin">Page for Table of Contents, Indexes and References:</span> The size of the type area for the table of contents, indexes and references of books is based on the size of the type area <span class="needspostedit">for the main body content</span>. There are many examples of tables of contents in vertical writing mode where the left-to-right size is identical to that of the type area, but the top-to-bottom size is a little bit smaller. </li>
         </ol>
   </section>
       <section id="procedure_for_defining_type_area2">
     <h4 id="h-procedure_for_defining_type_area2">Procedure for Defining the Type Area</h4>
     <ol>
           <li>
-        <p> Specifying the dimensions of the Type Area </p>
+        <p> <span class="leadin">Specifying the dimensions of the type area</span> </p>
         <ol>
               <li> For a document with a single column per page, specify the character size, the line length (the number of characters per line), the number of lines per page, and the line gap. </li>
-              <li> For a document with multiple columns per page, specify the character size, the line length (the number of characters per line), the number of lines per column, the line-gap, and the number of columns and       the column gap.</li>
+              <li> For a document with multiple columns per page, specify the character size, the line length (the number of characters per line), the number of lines per column, the line-gap,  the number of columns and the column gap.</li>
             </ol>
       </li>
           <li>
-        <p> Determining the position of the type area relative to the trim size. There are various alternative methods for specifying the position of the type area relative to the trim size:</p>
+        <p> <span class="leadin">Determining the position of the type area relative to the trim size.</span> There are various alternative methods for specifying the position of the type area relative to the trim size:</p>
         <ol>
               <li> Set the type area at the horizontal and vertical center of the trim size.</li>
-              <li> Position vertically by specifying the space size at the head (for horizontal writing mode) or the space at the foot (for vertical writing mode). Position horizontally by centering the type area.</li>
-              <li> Position vertically by centering the type area. Position horizontally by specifying the space size of the gutter.</li>
-              <li> Position vertically by specifying the space at the head (for horizontal writing mode) or the space at the foot (for vertical writing mode). Position horizontally by specifying the space size of the gutter.</li>
+              <li> Position vertically by specifying the size of the space at the head (for horizontal writing mode) or the space at the foot (for vertical writing mode). Position horizontally by centering the type area.</li>
+              <li> Position vertically by centering the type area. Position horizontally by specifying the size of the space for the gutter.</li>
+              <li> Position vertically by specifying the space at the head (for horizontal writing mode) or the space at the foot (for vertical writing mode). Position horizontally by specifying the size of the space for the gutter.</li>
             </ol>
       </li>
         </ol>
     <div class="note">
-          <p>In most cases the type area is set at the horizontal and vertical center of the trim size, and then it can be adjusted depending on its dimensions. This design method is mainly inherited from the letter press printing technology. As for the 桌上排版, the dimension of type area is usually calculated based on the space between the type area and the trim size.</p>
+          <p>In most cases the type area is set at the horizontal and vertical center of the trim size, and then it can be adjusted depending on its dimensions. This design method is mainly inherited from the letter press printing technology. As for the <span class="needspostedit">桌上排版</span>, the dimensions of the type area are usually calculated based on the space between the type area and the trim size.</p>
         </div>
   </section>
+  
       <section id="considerations_in_designing_type_area">
-    <h4 id="h-considerations_in_designing_type_area">設計版心的注意點Considerations in Designing the Type Area</h4>
+    <h4 id="h-considerations_in_designing_type_area">Considerations when Designing the Type Area</h4>
     <p>The following are considerations that need to be taken into account when designing the type area: </p>
     <ol>
-          <li> When deciding the dimension of the type area, it is needed to consider both the trim size and the margin. Generally speaking, the shape of the type area could be made similar to that of the trim size.</li>
+          <li> When deciding the dimensions of the type area, it is necessary to consider both the trim size and the margin. Generally speaking, the shape of the type area could be made similar to that of the trim size.</li>
           <li>
-        <p> Character size. With the audits as the main target audience of the publications, generally the size of the character usually is 10.5pt（≒3.7mm）x 9pt（≒3.2mm）. The acceptable minimum size of type is 8pt（≒2.8mm）, expect for specialized publications. </p>
+        <p> Character size. With the audits <span class="issue">not clear what 'audits' means</span> as the main target audience of the publications, generally the character size is 10.5pt (≒3.7mm) x 9pt (≒3.2mm)<span class="issue">10.5x9 is not square - should this read 10.5 to 9?</span>. The minimum acceptable size of type is 8pt (≒2.8mm), except for specialized publications. </p>
         <div class="note">
-              <p>【请问在两岸这是通用的做法吗？还是各自不同？】中文活字尺寸以「號」為單位，又分新舊兩種寸法。可完整對應美制的「點」（point），分別如下：初號＝42pt、一號＝27.5pt、二號＝21pt、三號＝15.75pt、四號＝13.75pt、五號＝10.5pt、六號＝7.875pt、七號＝5.25pt。新五號四行＝36pt、新一號＝24pt、新二號＝18pt、新三號字＝16pt、新四號＝12pt、新五號＝9pt。</p>
+              <p><span class="needspostedit">【请问在两岸这是通用的做法吗？还是各自不同？】中文活字尺寸以「號」為單位，又分新舊兩種寸法。可完整對應美制的「點」（point），分別如下：初號＝42pt、一號＝27.5pt、二號＝21pt、三號＝15.75pt、四號＝13.75pt、五號＝10.5pt、六號＝7.875pt、七號＝5.25pt。新五號四行＝36pt、新一號＝24pt、新二號＝18pt、新三號字＝16pt、新四號＝12pt、新五號＝9pt。</span></p>
             </div>
         <div class="note">
-              <p>一般內文主要使用五號字（10.5pt≒3.7mm），而報紙、雜誌則使用新五號字（9pt≒3.2mm），兩種皆常為使用。而一般內文字最小使用到六號字（7.875pt≒2.8mm），若小於此尺寸，由於漢字結構複雜，則難以閱讀。</p>
+              <p><span class="needspostedit">一般內文主要使用五號字（10.5pt≒3.7mm），而報紙、雜誌則使用新五號字（9pt≒3.2mm），兩種皆常為使用。而一般內文字最小使用到六號字（7.875pt≒2.8mm），若小於此尺寸，由於漢字結構複雜，則難以閱讀。</span></p>
             </div>
       </li>
           <li>
-        <p> Line length should be multiples of the character size and each line should be in alignment with each other. </p>
+        <p>Line length should be multiples of the character size and each line should be in alignment with each other. </p>
         <div class="note">
-              <p>For Chinese composition without being mixed with western scripts, the characters are all with a square-shaped frame, so all line lengths except that of the last line of the paragraph should, in principle, be the same.</p>
+              <p>For Chinese composition without intermixed Western scripts, the characters all have a square-shaped frame, so all line lengths except that of the last line of the paragraph should, in principle, be the same.</p>
             </div>
       </li>
           <li>
-        <p> The line gaps between each line should be the same throughout the book, except for special cases. </p>
+        <p> The line gaps between each line should be the same throughout the book, except for special cases. <span class="issue">It would probably help, at this point, to define what the line gap is, since it initially sounds like the same thing as line height. What are the reference points for measuring the line gap?</span></p>
         <div class="note">
-              <p>In traditional Chinese composition, there are cases where pronunciation marks, or <a href="http://www.w3.org/TR/jlreq/#ruby_and_emphasis_dots">ruby</a> (in some translation books) inserted between lines. In such cases the line gap is not changed but is kept constant . If these elements are likely to occur in text, the line gap established during the type area design needs to be of an adequate size to accommodate them.</p>
+              <p>In traditional Chinese composition, there are cases where pronunciation marks, <span class="needspostedit">sometimes referred to as <a href="http://www.w3.org/TR/jlreq/#ruby_and_emphasis_dots">ruby</a></span>, are inserted between lines. In such cases the line gap is not changed but is kept constant . If these elements are likely to occur in text, the line gap established during the type area design needs to be of an adequate size to accommodate them.</p>
             </div>
         <div class="note">
-              <p>It is common that the line gap for the type area is set to a value between 50% to 100% of the height of the character frame used for the type area. A shorter line gap can be chosen in cases where the line length is short or the character size of the type area is relatively small, and vice versa, the line gap usually does not exceed the character size. Even if it does, the reading experience will not be improved accordingly. </p>
+              <p>It is common that the line gap for the type area is set to a value between 50% and 100% of the height of the character frame used for the type area. A shorter line gap can be chosen in cases where the line length is short or the character size of the type area is relatively small. On the other hand, the line gap usually does not exceed the character size. <span class="needspostedit">Increasing the line gap beyond the character size does not improve the reading experience.</span> </p>
             </div>
         <div class="note">
               <p>There is another method of specifying the type area that uses line height rather than line gaps. Line height is the distance between two adjacent lines measured from their reference points. The reference point differs from implementation to implementation, however, in vertical writing mode the horizontal center of the character frame is usually used, and with horizontal writing mode, the vertical center of the character frame is used. When the character size is the same for every character, the following calculation is used:</p>
               <ul>
             <li> line height = character size / 2 + line gap + character size / 2 = character size + line gap</li>
-            <li> line gap = line feed - character size</li>
+            <li> line gap = line feed - character size <span class="issue">Since the first line requires a knowledge of the dimension of the line gap, this line should presumably precede it. But this is still a bit mysterious. Isn't line height just equivalent to line feed in this equation?</span></li>
           </ul>
             </div>
       </li>
         </ol>
   </section>
     </section>
+    </section>
+    
 <section id="line_composition">
       <h2 id="h-line_composition">Line composition</h2>
       <section id="line_composition_rules_for_punctuation_marks2">
     <h3 id="h-line_composition_rules_for_punctuation_marks2">Line Composition Rules for Punctuation Marks</h3>
-    <p>The usage of Chinese punctuation marks differs upon difference regions in China. One of the major differences is their behavior for composition. The punctuation marks are usually positioned center-aligned while the punctuation marks in simplified Chinese should be in line with the style of the last character they follow and the way they will be handled also depends on whether the composition is in vertical writing mode or horizontal writing mode. The differences of punctuation composition between traditional Chinese and simplified Chinese as well as the correct way to position them will be introduced with more detailed information. </p>
-    <p>In the composition for traditional Chinese and simplified Chinese, the major difference is their 字面分布 and morphological differences. (See more at <a href="#glyphs_sizes_and_positions_in_character_faces_of_punctuation_marks">3.1.2</a>). </p>
+    <p>The usage of Chinese punctuation marks differs across different regions in China. One of the major differences is their behavior for composition. Punctuation marks <span class="needspostedit">in Traditional Chinese</span> are usually positioned center-aligned <span class="needspostedit"> with adjacent Han characters,</span> while punctuation marks in simplified Chinese should be aligned with the character they follow, and this alignment varies according to whether the composition uses vertical or horizontal writing mode. The differences of composition for punctuation in Traditional Chinese and Simplified Chinese, as well as the correct way to position them, will be introduced in more detail later. </p>
+    <p>The major difference in composition for Traditional Chinese and Simplified Chinese is their 字面分布 and morphological differences. (See more at <a href="#glyphs_sizes_and_positions_in_character_faces_of_punctuation_marks">3.1.2</a>). </p>
     <div class="note">
-          <p>There are differences between the punctuation marks used in China, Japan, Korea and Vietnam, but the Unicode does not distinguish them with different codes. A number of punctuation marks are shared among traditional Chinese, simplified Chinese and Japanese. Usually the punctuation marks will use the same style in correspondence to the characters they are used with or they will be adjusted by the composition engine automatically. </p>
+          <p>There are differences between the punctuation marks used in China, Japan, Korea and Vietnam, but Unicode does not distinguish them using different codes. A number of punctuation marks are shared among traditional Chinese, simplified Chinese and Japanese. Usually the punctuation marks will use the same style as the characters they are used with <span class="issue">Would it be clearer to say "Usually the font used for the Han characters will determine the style of the punctuation marks"?</span> or they will be adjusted by the composition engine automatically. </p>
         </div>
-    <p>本節主要基於中國大陸的《標點符號用法》（GB/T 15834–2011）及台灣教育部的《重訂標點符號手冊》（2008年修訂版）。前者屬推薦標準，後者主要用於規範教科書等教育書籍，對一般出版品不具強制性。</p>
+    <p><span class="needspostedit">本節主要基於中國大陸的《標點符號用法》（GB/T 15834–2011）及台灣教育部的《重訂標點符號手冊》（2008年修訂版）。前者屬推薦標準，後者主要用於規範教科書等教育書籍，對一般出版品不具強制性。</span>/p>
+    
     <section id="categories_and_usage_of_punctuation_marks">
           <h4 id="h-categories_and_usage_of_punctuation_marks">Categories and Usage of Punctuation Marks</h4>
           <ol>
         <li>
-              <p><span class="leadin">Pause or Stop Punctuation Marks.</span> 點號相對於標號，用於表示語句的停頓或暫停。分為句內點號，如頓號、逗號、分號、冒號等；及句末點號，如句號、問號、驚嘆號等。</p>
+              <p><span class="leadin">Pause or Stop Punctuation Marks.</span><span class="needspostedit"> 點號相對於標號，用於表示語句的停頓或暫停。分為句內點號，如頓號、逗號、分號、冒號等；及句末點號，如句號、問號、驚嘆號等。</span></p>
               <ol>
             <li>
                   <p><span class="leadin">Ideographic full stops, fullwidth commas and ideographic comma.</span> [。](IDEOGRAPHIC FULL STOP) is the punctuation mark placed at the end of a sentence. [，](FULLWIDTH COMMA) is mainly used for separating parts of a sentence such as clauses, and items in lists, particularly when there are three or more items listed. [、](IDEOGRAPHIC COMMA) is usually used to separate items in lists, as a way to show sequence.</p>
                   <div class="note">
-                <p>許多理工書籍、科技文獻、西文教科书语法书籍等內含大量西文詞句，並採用橫排，為求標點符號體例一致，也有採用[．](FULLWIDTH FULL STOP)為句號、採[,](COMMA)或[，](FULLWIDTH COMMA)為逗號與頓號的案例。詳見<a href="#atypical_punctuation_marks_and_their_arrangements">3.1.3節 
-                  <!-- SECNO. IN CONTENT --> 
-                  </a>。</p>
+                <p class="needspostedit">許多理工書籍、科技文獻、西文教科书语法书籍等內含大量西文詞句，並採用橫排，為求標點符號體例一致，也有採用[．](FULLWIDTH FULL STOP)為句號、採[,](COMMA)或[，](FULLWIDTH COMMA)為逗號與頓號的案例。詳見<a href="#atypical_punctuation_marks_and_their_arrangements">3.1.3節 </a>。</p>
               </div>
                 </li>
             <li>
                   <p><span class="leadin">Fullwidth colon and fullwith semicolon.</span> [：](FULLWIDTH COLON) consists of two equally sized dots centered on the same vertical line. It is used to explain or start an enumeration and it is also used with ratios, titles and subtitles of books, city and publisher in bibliographies, business letter salutation, hours and minutes, and formal letters. [；](FULLWIDTH SEMICOLON) is a punctuation mark that separates major sentence elements. A semicolon can be used between two closely related independent clauses, provided they are not already joined by a coordinating conjunction. Semicolons can also be used in place of commas to separate items in a list, particularly when the elements of that list contain commas.</p>
                 </li>
             <li>
-                  <p><span class="leadin">Fullwidth Exclamation Mark and Fullwidth Question Mark</span>. [！](FULLWIDTH EXCLAMATION MARK) is a punctuation mark usually used after an interjection or exclamation to indicate strong feelings or high volume (shouting), and often marks the end of a sentence. [？](FULLWIDTH QUESTION MARK) casually known as the interrogation point, query, and eroteme,[1] is a punctuation mark that indicates an interrogative clause, or phrase in many languages. The question mark is not used for indirect questions.</p>
+                  <p><span class="leadin">Fullwidth Exclamation Mark and Fullwidth Question Mark</span>. [！](FULLWIDTH EXCLAMATION MARK) is a punctuation mark usually used after an interjection or exclamation to indicate strong feelings or high volume (shouting), and often marks the end of a sentence. [？](FULLWIDTH QUESTION MARK) casually known as the interrogation point, query, and eroteme,[1] <span class="issue">The [1] was in the initial translation. I'm not sure why.</span> is a punctuation mark that indicates an interrogative clause, or phrase in many languages. The question mark is not used for indirect questions.</p>
                 </li>
           </ol>
             </li>
         <li>
-              <p><span class="leadin">Indication Punctuation Marks.</span> Compared to punctuation marks, Indication Punctuation Marks usually indicate a specific feature of the phrase or sentence, including bracket, parenthesis, em dash, horizontal ellipsis, black circle or bullet, tilde, middle dot, angle bracket, low line, and solidus. </p>
+              <p><span class="leadin">Indication <span class="issue">is this the right word? should it be Indicator?</span> Punctuation Marks.</span> <span class="needspostedit">Unlike pause or stop</span> punctuation marks, indication punctuation marks usually indicate a specific feature of the phrase or sentence. They include brackets, parentheses, em dashes, horizontal ellipsis, black circles or bullets, tildes, middle dots, angle brackets, low lines, and solidus. </p>
               <ol>
             <li>
-                  <p><span class="leadin">Bracket/Quotation Mark.</span> A Bracket, usually used in pairs, is commonly used to emphasize certain characters or words, or to indicate the beginning and ending of the dialog or quoted content. If there is a need to use a bracket within a pair of brackets, inner brackets which differ from the parenting brackets by shape will be used. </p>
-                  <p>When there is a need for quotation marks, traditional Chinese will apply the single quotation marks first and then the double quotation marks. Single quotation marks include [「](LEFT CORNER BRACKET) and [」](RIGHT CORNER BRACKET)；double quotation marks include [『](LEFT WHITE CORNER BRACKET) and [』](RIGHT WHITE CORNER BRACKET)。</p>
-                  <p> When there is a need for quotation marks, simplified Chinese will apply the double quotation marks first and then single quotation marks. For simplified Chinese, double quotation marks include left double quotation marks[“], left corner bracket[『], right double quotation mark[”], right white corner bracket[”]; the single quotation marks include left single quotation mark[‘], left white corner bracket[『], right single quotation mark [’]and right corner bracket[』]. </p>
+                  <p><span class="leadin">Bracket/Quotation Mark.</span> Brackets, usually used in pairs, are commonly used to emphasize certain characters or words, or to indicate the beginning and ending of the dialog or quoted content. If there is a need to use a bracket within a pair of brackets, the shape of the  inner brackets will differ from the parenting brackets. </p>
+                  <p>When there is a need for quotation marks, traditional Chinese will apply single quotation marks first and then double quotation marks. Single quotation marks include [「](LEFT CORNER BRACKET) and [」](RIGHT CORNER BRACKET); double quotation marks include [『](LEFT WHITE CORNER BRACKET) and [』](RIGHT WHITE CORNER BRACKET).</p>
+                  <p>On the other hand, simplified Chinese will apply double quotation marks first and then single quotation marks. For simplified Chinese, double quotation marks include [“](LEFT DOUBLE QUOTATION MARK), [『](LEFT WHITE CORNER BRACKET), [”](RIGHT SINGLE QUOTATION MARK), [』](RIGHT WHITE CORNER BRACKET); the single quotation marks include [‘](LEFT QUOTATION MARK), [「](LEFT CORNER BRACKET), [’](RIGHT SINGLE QUOTATION MARK) and [」](RIGHT CORNER BRACKET). </p>
                   <div class="note">
-                <p> Some publications in traditional Chinese might also apply the usage sequence with double quotation marks first and then single quotation marks. </p>
+                <p>Some publications in traditional Chinese might also apply double quotation marks first and then single quotation marks. </p>
               </div>
                   <div class="note">
-                <p> Traditional Chinese might also use quotation marks, but it is hardly used in vertical writing mode. </p>
-              </div>
-                </li>
-            <li>
-                  <p><span class="leadin">Parentheses</span> 括號用於行內注釋、說明。</p>
-                  <p> Parentheses, also called simply brackets, round brackets, or curved brackets, contain material that serves to clarify, or is aside from the main point. Parentheses used in Chinese inlcude PARENTHESIS and EM DASH(s). PARENTHESIS consists of fullwidth left parenthesis and [（] and fullwidth right parenthesis. Either one EM DASH [—] or two consecutive EN DASHs can be used too.</p>
-                  <p> General Rules for Punctuation (GB/T 15834–2011）, the national standard issued by China Central Government, lists EM DASH as a kind of dash. </p>
-                  <div class="note">
-                <p>There are other brackets and quotation marks which include: left black lenticular bracket [【],right black lenticular bracket [】] , left white lenticular bracket [〖] , right white lenticular bracket [〗] , left tortoise shell bracket [〔], right tortoise shell bracket [〕], fullwidth left square bracket[［] , fullwidth right square bracket [］] , fullwidth left curly bracket [｛] , fullwidth right curly bracket [｝]. These brackets and quotation marks are rarely used in Chinese publications. </p>
+                <p> Traditional Chinese might also use quotation marks, but it is hardly ever used in vertical writing mode. </p>
               </div>
                 </li>
             <li>
-                  <p><span class="leadin">Em Dash.</span> Em Dash sometimes shows a continuation of tone or sound, an abrupt change in thought, or adding new content to the context. This punctuation takes one-character height and two-character width; sometime two em dash can be used together. </p>
-                </li>
-            <li>
-                  <p><span class="leadin">Horizontal ellipsis</span></p>
-                  <p> In Chinese, the horizontal ellipsis usually consists of 3 dots or 6 dots (in two groups of three dots, occupying the same horizontal space as two characters). They usually indicate an intentional omission of a word, sentence, or whole section from a text. Depending on their context and placement in a sentence, ellipses can also indicate an unfinished thought, a leading statement, a slight pause, a mysterious, echoing voice, or a nervous or awkward silence. </p>
-                </li>
-            <li>
-                  <p><span class="leadin">Emphasis Dots</span></p>
-                  <p> Emphasis dots are symbols placed above or beneath characters to emphasize the text, strengthen the tone or avoid ambiguity. For horizontal writing mode, the emphasis dots are placed under the characters while in vertical writing mode, they are usually placed on the right side of the characters. Both black circle [●] or bullet [•] can work as emphasis dots.</p>
-                  <p> Punctuation Guidance (revised edition) issued by The Ministry of Education in Taiwan does not include this mark but it is still can be seen in some publications.</p>
-                </li>
-            <li>
-                  <p><span class="leadin">Connection Symbols</span></p>
-                  <p>連接號用於連結時空之起訖或數量之多寡，还可以用于化合物的名称或表格、插图的标号，门牌号码、电话号码等号码的连接，阿拉伯数字表示日期時年月日的區隔，复合名词中的连接，以及羅馬拼音、外来语内部的分合等等。</p>
-                  <p> Connection symbols, usually used to present the connection, start-stop or flow, include En Dash [–] and tilde [～]. </p>
-                  <p>根据中国大陸的《标点符号用法》 （GB/T 15834—2011），连接号的形式有短横线[–]、一字线[—]和浪纹线[～]三种。</p>
+                  <p><span class="leadin">Parentheses</span><span class="needspostedit"> 括號用於行內注釋、說明。</span> Parentheses, also called simply brackets, round brackets, or curved brackets, contain material that serves to clarify, or is aside from the main point. Parentheses used in Chinese inlcude [（](FULLWIDTH LEFT PARENTHESIS), [）](FULLWIDTH RIGHT PARENTHESIS) and [—](EM DASH). Either one em dash [—] or two consecutive em dashes can be used.</p>
+                  <p> General Rules for Punctuation (GB/T 15834–2011), the national standard issued by China Central Government, lists em dash as a kind of dash. </p>
                   <div class="note">
-                <p>《标点符号用法》 （GB/T 15834—2011）中没有指定这三个符号的码位，但是基本上可以推断一字线是[—](EM DASH)，浪纹线是[～](FULLWIDTH TILDE)。但是对于「短横线」，该标准5.1.6節规定「横短线比汉字『一』略短，占半个字位置」，因此可以是[–](EN DASH)。这些连接号的实际长短根据所用处理系统和使用字體会有区别。</p>
+                <p>There are other brackets and quotation marks which include: [【](LEFT BLACK LENTICULAR BRACKET), [】](RIGHT BLACK LENTICULAR BRACKET), [〖](LEFT WHITE LENTICULAR BRACKET), [〗](RIGHT WHITE LENTICULAR BRACKET), left [〔](LEFT TORTOISE SHELL BRACKET), [〕](RIGHT TORTOISE SHELL BRACKET), [［](FULLWIDTH LEFT SQUARE BRACKET), [］](FULLWIDTH RIGHT SQUARE BRACKET), [｛](FULLWIDTH LEFT CURLY BRACKET), [｝](FULLWIDTH RIGHT CURLY BRACKET). These brackets and quotation marks are rarely used in Chinese publications.</p>
               </div>
                 </li>
             <li>
-                  <p><span class="leadin">Middle Dot</span></p>
-                  <p> Middle Dot, also known as an interpoint, middot or centered dot, is a punctuation mark consisting of a vertically-centered dot used to separate the first name and family name in the translated names from a foreign language or minority groups names. It is also used with double quotation marks to separate the chapters, articles and volumes in publications. </p>
-                  <p>间隔号为中文标点，当外语姓名包含西文首字母缩写作为单节时，原则上西文字母后面应该使用西文句点，如「比尔·盖茨」「B. 盖茨」。</p>
-                  <p> The usage of middle dot differs between traditional Chinese and simplified Chinese. In principle, the middle dot, either in vertical writing mode or horizontal writing mode, should take the same dimension of a character; while in simplified Chinese, the middle dot sometimes takes half the weight of a character when it is used to separate the month and the date, e.g. 9·11. </p>
+                  <p><span class="leadin">Em Dash.</span> [—](EM DASH) sometimes shows a continuation of tone or sound, an abrupt change in thought, or adding new content to the context. This punctuation takes one-character height and two-character width; sometime two em dash can be used together, ie. "——"</p>
+                </li>
+            <li>
+                  <p><span class="leadin">Horizontal ellipsis.</span> In Chinese, the horizontal ellipsis usually consists of 3 dots, […](HORIZONTAL ELLIPSIS), or 6 dots (in two groups of three dots, occupying the same horizontal space as two characters, ie. "……"). They usually indicate an intentional omission of a word, sentence, or whole section from a text. Depending on their context and placement in a sentence, ellipses can also indicate an unfinished thought, a leading statement, a slight pause, a mysterious, echoing voice, or a nervous or awkward silence. </p>
+                </li>
+            <li>
+                  <p><span class="leadin">Emphasis Dots.</span> Emphasis dots are symbols placed above or beneath characters to emphasize the text, strengthen the tone, or avoid ambiguity. For horizontal writing mode, the emphasis dots are placed under the characters, whereas in vertical writing mode, they are usually placed to the right side of the characters. Both [●](BLACK CIRCLE) or [•](BULLET) can work as emphasis dots.</p>
+                  <p> Punctuation Guidance (revised edition) issued by The Ministry of Education in Taiwan does not include this mark but it is still seen in some publications.</p>
+                </li>
+            <li>
+                  <p><span class="leadin">Connection Symbols.</span> <span class="needspostedit">連接號用於連結時空之起訖或數量之多寡，还可以用于化合物的名称或表格、插图的标号，门牌号码、电话号码等号码的连接，阿拉伯数字表示日期時年月日的區隔，复合名词中的连接，以及羅馬拼音、外来语内部的分合等等。</span></p>
+                  <p> Connection symbols are usually used to present a connection, start-stop or flow, and include [–](EN DASH), [～](FULLWIDTH TILDE) and [~](TILDE). </p>
+                  <p class="needspostedit">根据中国大陸的《标点符号用法》 （GB/T 15834—2011），连接号的形式有短横线[–]、一字线[—]和浪纹线[～]三种。</p>
                   <div class="note">
-                <p> Due to the fact that BIG-5 Code does not give a detailed definition of the middle dot, sometimes fullwidth fullstop [．], hyphenation point [·] and bullet [•] are used as replacement of the middle dot. The Katakana Middle Dot [・] is tightly connected to the JIS code system, it is not recommended to use either. </p>
+                <p class="needspostedit">标点符号用法》 （GB/T 15834—2011）中没有指定这三个符号的码位，但是基本上可以推断一字线是[—](EM DASH)，浪纹线是[～](FULLWIDTH TILDE)。但是对于「短横线」，该标准5.1.6節规定「横短线比汉字『一』略短，占半个字位置」，因此可以是[–](EN DASH)。这些连接号的实际长短根据所用处理系统和使用字體会有区别。</p>
               </div>
                 </li>
             <li>
-                  <p><span class="leadin">Book Title Mark</span></p>
-                  <p>書名號用於標示書名、篇名、歌曲名、影劇名、文件名、字畫名等各種作品名稱。</p>
-                  <p> The book title mark is used to indicate the name of works which usually include books, articles, songs, movies, files, calligraphy and paintings. Generally there are two categories of book title marks, the WAVY LOW LINE [﹏] and angle bracket. The WAVY LOW LINE [﹏] is positioned beneath the corresponding characters. When two works are listed next to each other, the WAVY LOW LINE should make a clear separation of them. The angle bracket includes LEFT DOUBLE ANGLE BRACKET [《] ,(RIGHT DOUBLE ANGLE BRACKET [》],LEFT ANGEL BRACKET [〈] and RIGHT ANGEL BRACKET[〉].The former couple is used for the names of books while the latter couple is used for the names of the articles. When two book title marks are positioned next to each other, clear separation should be made to indicate the difference names. </p>
-                  <p>根据中国大陸的《标点符号用法》 （GB/T 15834—2011），无论书名、篇章名都应该使用双书名号[《》]，只有在书名号中还需要书名号时，里面一层用单书名号，外面一层用双书名号。而甲式書名號（波浪底線）僅用於古籍。</p>
-                  <p> The WAVY LOW LINE is rarely seen in modern publications, but they can still be seen in some textbooks and ancient publications. </p>
+                  <p><span class="leadin">Middle Dot.</span> [·](MIDDLE DOT), also known as interpoint, middot or centered dot, is a punctuation mark consisting of a vertically-centered dot, and is used to separate the first name and family name in names translated from a foreign language, or minority groups names. It is also used with double quotation marks to separate chapters, articles and volumes in publications. </p>
+                  <p class="needspostedit">间隔号为中文标点，当外语姓名包含西文首字母缩写作为单节时，原则上西文字母后面应该使用西文句点，如「比尔·盖茨」「B. 盖茨」。</p>
+                  <p> The usage of middle dot differs between traditional Chinese and simplified Chinese. In principle, the middle dot, either in vertical writing mode or horizontal writing mode, should have the same dimensions as a character; while in simplified Chinese, the middle dot sometimes has  half the width of a character when it is used to separate the month and the date, e.g. 9·11. </p>
                   <div class="note">
-                <p>甲式書名號已甚少出現於現代的出版品，但仍可見於教科書或古籍的標示。</p>
+                <p> Due to the fact that BIG-5 Code does not give a detailed definition of the middle dot, sometimes [．](FULLWIDTH FULL STOP), [	‧](HYPHENATION POINT) and [•](BULLET) are used as replacement for the middle dot. [・](KATAKANA MIDDLE DOT) is tightly connected to the JIS code system, it is not recommended to use this. <span class="issue">The names of the characters need to be upper-cased. The character in [ ] for hyphenation point is actually a middle dot in the Chinese version, so needs changing.</span></p>
               </div>
                 </li>
             <li>
-                  <p><span class="leadin">Fullwidth low line</span></p>
-                  <p> FULLWIDTH LOW LINE [＿] is positioned underneath the proper nouns such as people’s name, name of a places, etc. </p>
+                  <p><span class="leadin">Book Title Mark.</span> <span class="needspostedit">書名號用於標示書名、篇名、歌曲名、影劇名、文件名、字畫名等各種作品名稱。</span> The book title mark is used to indicate the names of works which usually include books, articles, songs, movies, files, calligraphy and paintings. Generally there are two types of book title marks, wavy low lines or angle brackets. [﹏](WAVY LOW LINE) is positioned beneath the corresponding characters. When two works are listed next to each other, the wavy lines for each should be clearly separated. The angle bracket includes [《](LEFT DOUBLE ANGLE BRACKET), [》](RIGHT DOUBLE ANGLE BRACKET), [〈](LEFT ANGEL BRACKET) and [〉](RIGHT ANGEL BRACKET).The former pair is used for the names of books while the latter pair is used for the names of the articles. When two book title marks are positioned next to each other, there should be a clear separation to indicate the difference names. </p>
+                  <p class="needspostedit">根据中国大陸的《标点符号用法》 （GB/T 15834—2011），无论书名、篇章名都应该使用双书名号[《》]，只有在书名号中还需要书名号时，里面一层用单书名号，外面一层用双书名号。而甲式書名號（波浪底線）僅用於古籍。</p>
+                  <p> WAVY LOW LINE is rarely seen in modern publications, but it can still be seen in some textbooks and ancient publications. </p>
+                  <div class="note">
+                <p class="needspostedit">甲式書名號已甚少出現於現代的出版品，但仍可見於教科書或古籍的標示。</p>
+              </div>
+                </li>
+            <li>
+                  <p><span class="leadin">Fullwidth low line.</span> [＿](FULLWIDTH LOW LINE) is positioned underneath proper nouns such as a person's name, the name of a place, etc. </p>
                   <p> When two proper nouns are listed together, the FULLWIDTH LOW LINE should provide a visual distinction for them. </p>
                   <div class="note">
-                <p> Same with WAVY LOW LINE, the FULLWIDTH LOW LINE is rarely used in modern publications, but they can still be seen in some textbooks and ancient publications.</p>
+                <p> As with WAVY LOW LINE, the FULLWIDTH LOW LINE is rarely used in modern publications, but it can still be seen in some textbooks and ancient publications.</p>
               </div>
                 </li>
             <li>
-                  <p><span class="leadin">Solidus</span></p>
-                  <p> Both SOLIDUS [/] and FULLWIDTH SOLIDUS [／] are used to indicate the separation of lines in poetry, syllable beats and characters which should be separated. </p>
+                  <p><span class="leadin">Solidus.</span> Both [/](SOLIDUS) and [／](FULLWIDTH SOLIDUS) are used to indicate the separation of lines in poetry, syllable beats, and characters which should be separated. </p>
                   <div class="note">
                 <p> Punctuation Guidance (revised edition) issued by The Ministry of Education in Taiwan does not include the SOLIDUS, but it is frequently used in traditional publications, including textbooks. </p>
               </div>
@@ -396,17 +401,15 @@
         </section>
     <section id="glyphs_sizes_and_positions_in_character_faces_of_punctuation_marks">
           <h4 id="h-glyphs_sizes_and_positions_in_character_faces_of_punctuation_marks">Sizes and positions of Punctuation Marks</h4>
-          <p>Please find the shape and usage of punctuation marks at section <a href="#categories_and_usage_of_punctuation_marks">3.1.1</a> and <a href="#tables_of_chinese_punctuation_marks">Appendix A 
-            <!-- SECNO. IN CONTENT --> 
-            </a>. There is no noted difference between the punctuations used in traditional Chinese and simplified Chinese. The major differences between the two lay in the dimension and position of the punctuation marks. </p>
-          <p>Punctuation marks used in traditional Chinese are usually positioned in the vertical and horizontal center of the square space left for them; while in vertical writing mode and horizontal writing mode, some of the punctuation marks are positioned in different directions so as to mark the corresponding characters more accurately. For simplified Chinese, the punctuation marks are usually positioned following the characters it is supposed to mark; while some punctuation marks might be positioned in different directions due to the vertical or horizontal writing mode. Also, different writing modes might require difference punctuation marks to fulfill the same function, e.g. horizontal writing mode requires curved quotation marks while vertical writing mode requires angel brackets. </p>
-          <p>Pause or stop punctuation marks include slight-pause comma, comma, semicolon, colon, period, question mark, exclamation mark, etc. They take the same dimension as well as the direction as a character does. Pause or stop punctuation marks are usually positioned in the vertical and horizontal center of the square space left for them; in simplified Chinese, they are positioned in the top or bottom side in the space left for them following the marked characters. In horizontal writing mode, the pause or stop punctuation marks are placed at the lower left corner in the square space while in vertical writing mode, they are placed in the right upper corner. </p>
-          <p>Brackets marks include quotation marks, parentheses, title marks, etc. They should be positioned in pairs at each side of the marked character and take the same dimension of a character, in the same direction with the characters. Among these brackets, the quotation marks have different position rules in traditional Chinese and simplified Chinese. In the traditional Chinese, single quotation marks will be used first and then the double quotation marks while in simplified Chinese, double quotation marks will be used first and then single quotation marks. Also, the writing mode should be put into consideration too. The horizontal writing mode requires curved quotation marks while vertical writing mode requires angel brackets.</p>
-          <p>Ellipsis and LONG DASH, in the vertical and horizontal center of the square space for them, should take one character height and two-character width. They are not supposed to be separated from one line to the next and should be positioned in the same direction with the characters. </p>
-          <p>DASH, taking the dimension same with one character, should be positioned in the vertical and horizontal center of the square space for it. Among the DASH marks, EN DASH should take a shorter length to make a clear distinction from the Chinese character「一」which means one. And they should be positioned in the same direction with the characters they mark. </p>
-          <p>SOLIDUS, taking the same dimension and direction with the character it follows, should be positioned in the vertical and horizontal center of the square space for it. To make a more economical use of the space, or to set the members or characters more solid, sometimes the SOLIDUS can take half of a character’s width. </p>
-          <p>Inline marks like Title marks, WAVY LOW LINE, and Emphasis dots should be positioned underneath the marked characters. In vertical writing mode, Emphasis dots should be positioned in the right side of the marked characters so as not to affect the characters above and beneath them. </p>
-          <p>SOLIDUS should be positioned in the vertical and horizontal center of the square space for it. In simplified Chinese, they should take half width of a character; while in traditional Chinese, there is no clear rule about their dimension but most of the publications will have them take the same dimension with one character. </p>
+          <p>Please find the shape and usage of punctuation marks at section <a href="#categories_and_usage_of_punctuation_marks"></a> and <a href="#tables_of_chinese_punctuation_marks"></a>. There are no notable differences between the punctuation used in traditional Chinese and simplified Chinese. The major differences between the two are in the dimension and position of the punctuation marks. </p>
+          <p>Punctuation marks used in traditional Chinese are usually positioned in the vertical and horizontal center of the square space left for them; while in vertical writing mode and horizontal writing mode, some of the punctuation marks are positioned in different directions so as to mark the corresponding characters more accurately. For simplified Chinese, the punctuation marks are usually positioned following the characters they are supposed to mark; while some punctuation marks might be positioned in different directions due to the vertical or horizontal writing mode. Also, different writing modes might require different punctuation marks to fulfill the same function, e.g. horizontal writing mode requires curved quotation marks while vertical writing mode requires angle brackets. </p>
+          <p>Pause or stop punctuation marks include the slight-pause comma, comma, semicolon, colon, period, question mark, exclamation mark, etc. <span class="needspostedit">In Traditional Chinese, they take the same dimensions as well as the direction as a character does. Traditional Chinese pause or stop punctuation marks are usually positioned in the vertical and horizontal center of the square space left for them. In simplified Chinese, they are positioned in the top or bottom side in the space left for them following the marked characters. In horizontal writing mode, the pause or stop punctuation marks are placed at the lower left corner in the square space while in vertical writing mode, they are placed in the right upper corner. </p>
+          <p>Brackets marks include quotation marks, parentheses, title marks, etc. They should be positioned in pairs at each side of the marked character and have the same dimensions as a character, and the same direction as the characters. Bracket quotation marks have different positioning rules in traditional Chinese and simplified Chinese. In traditional Chinese, single quotation marks will be used first and then double quotation marks, whereas in simplified Chinese, double quotation marks will be used first and then single quotation marks. Also, the writing mode should be taken into consideration too. Horizontal writing mode requires curved quotation marks while vertical writing mode requires angle brackets.</p>
+          <p>Ellipsis and long dash, in the vertical and horizontal center of the square space for them, should be one character in height and two-characters in width. They are not supposed to be separated from one line to the next and should be positioned in the same direction as the characters. </p>
+          <p>Dashes, with the same dimensions as one character, should be positioned in the vertical and horizontal center of the square space for it. Among the dash marks, EN DASH should have a short length to make a clear distinction from the Chinese character "一", which means one. And they should be positioned in the same direction as the characters they mark. </p>
+          <p>Solidus, with the same dimensions and direction as the character it follows, should be positioned in the vertical and horizontal center of the square space for it. To make a more economical use of the space, or to set the members or characters more solid, sometimes the solidus can have a half character width. </p>
+          <p>Inline marks like title marks, wavy low lines, and emphasis dots should be positioned underneath the marked characters <span class="needspostedit">in horizontal writing mode</span>. In vertical writing mode, emphasis dots should be positioned to the right side of the marked characters so as not to affect the characters above and beneath them. </p>
+          <p>Solidus should be positioned in the vertical and horizontal center of the square space for it. In simplified Chinese, it should take half a character width, whereas in traditional Chinese, there is no clear rule about its dimension but most publications will give them the same dimensions as one character. </p>
         </section>
     <section id="atypical_punctuation_marks_and_their_arrangements">
           <h4 id="h-atypical_punctuation_marks_and_their_arrangements">Atypical punctuation marks and their composition</h4>
@@ -508,7 +511,7 @@
         <li>A Western word is used in a Chinese context, such as 'editor'.</li>
         <li>Acronyms, such as 'DTP' or 'GDP'.</li>
         <li> Book titles or authors in references to Western books that use the original spelling.</li>
-        <li> Arabic numerals used in xxxx, xxxx, or xxxx, such as '1999'.<span class="ednote"> (? used to represent years, quantities or xxx)</span></li>
+        <li> Arabic numerals used in xxxx, xxxx, or xxxx, such as '1999'.<span class="issue"> (? used to represent years, quantities or xxx)</span></li>
       </ol>
           <p>Western characters are also found in contexts such as numerals in itemized lists and numbered headings, or symbols for chemical elements or mathematical formulae. It can be seen from these examples that it is an everyday occurrence to find Western characters mixed with Hanzi in Chinese composition.</p>
           <div class="note">
@@ -521,7 +524,7 @@
           <h4 id="h-mixed_text_composition_in_horizontal_writing_mode">Mixed Text Composition in Horizontal Writing Mode</h4>
           <p>In horizontal writing mode, the basic approach uses proportional fonts to represent Western text and uses proportional or monospace fonts for Arabic numerals. In principle, there is tracking or spacing between an adjacent Hanzi and Western character of up to one quarter of a Hanzi character width, except at the line head or end.</p>
           <div class="note">
-        <p>Another approach is the use a Western word space (U+0020 SPACE), in which case the width depends on the font in use. <span class="ednote">This sentence was translated from a note in Hackpad.</span></p>
+        <p>Another approach is the use a Western word space (U+0020 SPACE), in which case the width depends on the font in use. <span class="issue">This sentence was translated from a note in Hackpad.</span></p>
       </div>
         </section>
     <section id="mixed_text_composition_in_vertical_writing_mode">

@@ -48,6 +48,8 @@ h4 { font: 110% sans-serif; }
 h5 { font: bold 100% sans-serif; }
 h6 { font: bold 100% sans-serif; }
 
+.leadin { font-weight: bold; color: brown; }
+
 pre { margin-left: 2em; }
 dt { font-weight: bold; }
 
@@ -110,6 +112,7 @@ li {
   counter-reset: note;
 }
 
+/*
 div.note::before {
   counter-increment: note;
   content: "注" counter(note) "）";
@@ -117,6 +120,12 @@ div.note::before {
   left: 1em;
   top: 0;
 }
+*/
+
+div.note span::after {
+  counter-increment: note;
+  content: counter(note) "）";
+	}
 
 div.note {
   padding-left: 4em;

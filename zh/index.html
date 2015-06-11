@@ -1,1202 +1,1017 @@
 <!DOCTYPE html>
 <html lang="zh">
 <head>
-  <title>中文排版需求</title>
-  <meta charset="utf-8">
-
-  <link rel="stylesheet" href="locale.css">
-  <!--[if lt IE 9]><script src='https://www.w3.org/2008/site/js/html5shiv.js'></script><![endif]-->
+<meta charset='utf-8'>
+<title>中文排版需求</title>
+<script src='http://www.w3.org/Tools/respec/respec-w3c-common'
+            async class='remove'></script>
+<script class='remove'>
+      var respecConfig = {
+          specStatus: "ED",
+          shortName:  "clreq",
+          editors: [
+                {   name:       "董福興",
+                    mailto:     "bobbytung@wanderer.tw",
+                    company:    "特邀专家" },
+                {   name:       "陳奕鈞",
+                    mailto:     "ethantw@me.com",
+                    company:    "特邀专家" },
+                {   name:       "梁海",
+                    mailto:     "lianghai@gmail.com",
+                    company:    "特邀专家" },
+                {   name:       "刘庆",
+                    mailto:     "ryukeikun@me.com",
+                    company:    "特邀专家" },
+                {   name:       "吴小倩",
+                    mailto:     "xiaoqian@w3.org",
+                    company:    "万维网联盟" },
+                {   name:       "李安琪",
+                    mailto:     "angel@w3.org",
+                    company:    "万维网联盟" },
+                {   name:       "Richard Ishida",
+                    mailto:     "ishida@w3.org",
+                    company:    "万维网联盟" }
+          ],
+		wg:           "Internationalization Core Working Group",
+		wgURI:        "http://www.w3.org/International/core/",
+		bugTracker: { new: "https://github.com/w3c/clreq/issues", open: "https://github.com/w3c/clreq/issues" } ,
+		wgPublicList: "public-i18n-cjk",
+		wgPatentURI:  "http://www.w3.org/2004/01/pp-impl/",
+		edDraftURI: "http://w3c.github.io/clreq/", 
+      };
+    </script>
+<link rel="stylesheet" href="locale.css" type="text/css" />
+<!--link rel="stylesheet" href="local.css" type="text/css" /-->
+<style>
+.needspostedit {
+	background-color: #F3F3C3;
+}
+</style>
 </head>
-
-<body class="h-entry" role="document" id="respecDocument">
-
-  <header role="contentinfo" id="respecHeader">
-    <p>
-      <a href="http://www.w3.org/"><img width="72" height="48" src="https://www.w3.org/Icons/w3c_home" alt="W3C"></a>
-    </p>
-
-    <h1 class="title p-name" id="title" property="dcterms:title">中文排版需求</h1>
-    <h2 id="w3c-editor-s-draft-10-april-2015"><abbr title="World Wide Web Consortium">W3C</abbr> Editor's Draft <time property="dcterms:issued" class="dt-published" datetime="2015-04-10">10 April 2015</time></h2>
-
-    <dl>
-      <dt>本版本：</dt>
-      <dd><a class="u-url" href="http://www.w3.org/International/docs/chinese-layout/zh/">http://www.w3.org/International/docs/chinese-layout/zh/</a></dd>
-      <dt>最新发布草稿：</dt>
-      <dd><a href="http://www.w3.org/International/docs/chinese-layout/zh/">http://www.w3.org/International/docs/chinese-layout/zh/</a></dd>
-      <dt>最新编辑草稿：</dt>
-      <dd><a href="https://github.com/w3c/clreq">https://github.com/w3c/clreq</a></dd>
-    
-      <dt>编辑：</dt>
-      <dd>董福興, 特邀专家, <a class="email" href="mailto:bobbytung@wanderer.tw">bobbytung@wanderer.tw</a></dd>
-      <dd>陳奕鈞, 特邀专家, <a href="mailto:ethantw@me.com">ethantw@me.com</a></dd>
-      <dd>梁海, 特邀专家, <a href="mailto:lianghai@gmail.com">lianghai@gmail.com</a></dd>
-      <dd>劉慶, 特邀专家, <a href="mailto:ryukeikun@me.com">ryukeikun@me.com</a></dd>
-      <dd>吴小倩, 万维网联盟, <a href="mailto:xiaoqian@w3.org">xiaoqian@w3.org</a></dd>
-      <dd>Richard Ishida, 万维网联盟, <a href="mailto:ishida@w3.org">ishida@w3.org</a></dd>
-    </dl>
-    
-    <p class="copyright">
-      <a href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> © 2015
-      <a href="http://www.w3.org/"><abbr title="World Wide Web Consortium">W3C</abbr></a><sup>®</sup>
-      (<a href="http://www.csail.mit.edu/"><abbr title="Massachusetts Institute of Technology">MIT</abbr></a>,
-      <a href="http://www.ercim.eu/"><abbr title="European Research Consortium for Informatics and Mathematics">ERCIM</abbr></a>,
-      <a href="http://www.keio.ac.jp/">Keio</a>, <a href="http://ev.buaa.edu.cn/">Beihang</a>). 
-      <abbr title="World Wide Web Consortium">W3C</abbr> <a href="http://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>,
-      <a href="http://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and
-      <a href="http://www.w3.org/Consortium/Legal/copyright-documents">document use</a>
-      rules apply.
-    </p>
-    <hr>
-  </header>
-
-  <section id="abstract" class="introductory" property="dc:abstract">
-    <h2 id="h-abstract">摘要</h2>
-    <p>
-      本文書整理了中文（漢字）書寫系統於排版上的需求。一方面說明需求事項以明確描述中文排版之需求與問題；另一方面也提與既有標準（如萬國碼）的對應，冀求透過本文書能在實作層級更能有效地促進實現。
-    </p>
+<body>
+<div id='abstract'>
+  <p> 本文書整理了中文（漢字）書寫系統於排版上的需求。一方面說明需求事項以明確描述中文排版之需求與問題；另一方面也提與既有標準（如萬國碼）的對應，冀求透過本文書能在實作層級更能有效地促進實現。 </p>
+</div>
+<div id='sotd'>
+  <p>本需求文档由<a href="http://www.w3.org/International/core/"><abbr title="World Wide Web Consortium">W3C</abbr>国际化工作组</a>与<a href="http://www.w3.org/html/ig/zh/"><abbr title="World Wide Web Consortium">W3C</abbr> HTML5中文兴趣组</a>共同发布和审阅。若对本文档有任何建议或反馈，欢迎通过<a href="https://github.com/w3c/clreq">我們的GitHub專案</a>提交<a href="https://github.com/w3c/clreq/issues">issues</a>或<a href="https://github.com/w3c/clreq/pulls">pull requests</a>。同时也欢迎使用<a href="mailto:public-zhreq@w3.org">public-zhreq@w3.org</a>（<a href="mailto:public-zhreq@w3.org?subject=subscribe">订阅</a>）与<a href="mailto:public-html-ig-zh@w3.org">public-html-ig-zh@w3.org</a>（<a href="mailto:public-html-ig-zh@w3.org?subject=subscribe">订阅</a>）进行关于本文档的中文讨论或<a href="mailto:public-i18n-cjk@w3.org">public-i18n-cjk@w3.org</a>（<a href="mailto:public-i18n-cjk@w3.org?subject=subscribe">订阅</a>）进行关于本文档的英文讨论。</p>
+  <p>欢迎同时查阅本文档的<a href="../"><strong>英文（English）</strong></a>版本。 </p>
+  <p class="note">如果您希望对本文档进行意见反馈，请<a href="https://github.com/w3c/clreq/issues" style="font-size: 120%;">提交一个github issue</a>。如果您无法提交github issues，您也可以通过以下电子邮件的方式进行反馈。请使用<q>[clreq]</q>作为您的邮件的标题开头。为了方便大家跟踪您的意见反馈，请单独提交每一个意见或者以分开发送单独电子邮件的方式反馈每一个建议。您的每一个建议对我们都是非常重要的。</p>
+  <p>以编辑草稿方式发布的文档还没有通过<abbr title="World Wide Web Consortium">W3C</abbr>会员流程的认可。这是一份文档草稿并且会被不断更新。请暂时不要正式引用本文档。</p>
+  <p>本文档遵循<abbr title="World Wide Web Consortium">W3C</abbr><a id="sotd_patent" property="w3p:patentRules" href="http://www.w3.org/Consortium/Patent-Policy-20040205/">专利政策</a>（2004-02-05）。<abbr title="World Wide Web Consortium">W3C</abbr>为工作组的产出成果维护着一份<a href="http://www.w3.org/2004/01/pp-impl/" rel="disclosure">公开专利披露列表</a>，此页面也同时涵盖了专利披露说明。若个人发现其有包含<a href="http://www.w3.org/Consortium/Patent-Policy-20040205/#def-essential">必须声明</a>的专利信息，必须按照<a href="http://www.w3.org/Consortium/Patent-Policy-20040205/#sec-Disclosure"><abbr title="World Wide Web Consortium">W3C</abbr>专利政策第六章节</a>披露此信息。</p>
+  <p>本文档遵循<a id="w3c_process_revision" href="http://www.w3.org/2014/Process-20140801/"><abbr title="World Wide Web Consortium">W3C</abbr>流程文档</a>（2014-08-01）。</p>
+</div>
+<section id="introduction">
+  <h2 id="h-introduction">緒論</h2>
+  <section id="purpose_of_this_document">
+    <h3 id="h-purpose_of_this_document">本文書之目的</h3>
+    <p>每一個文化群體都擁有獨自的語言、文字、書寫系統。將個別書寫系統得以在虛擬空間再現，對文化資產的承繼而言，是資訊傳播技術的重要責任。</p>
+    <p>作為實現這個責任的基礎，本文書整理了中文（漢字）書寫系統於排版上的需求。一方面說明需求事項以明確描述中文排版之需求與問題；另一方面也提供與既有標準（如萬國碼）的對應，冀求透過本文書能在實作層級更能有效地促進實現。</p>
   </section>
-
-  <section id="sotd" class="introductory">
-    <h2 id="h-sotd">关于本文档</h2>
-    <p>
-      <em>本章节描述了本文档的发布状态。其它更新版本可能会覆盖本文档。<abbr title="World Wide Web Consortium">W3C</abbr>的文档列表和最新版本可通过<a href="http://www.w3.org/TR/"><abbr title="World Wide Web Consortium">W3C</abbr>技术报告索引</a>访问。</em>
-    </p>
-
-    <p>
-      本需求文档由<a href="http://www.w3.org/International/core/"><abbr title="World Wide Web Consortium">W3C</abbr>国际化工作组</a>与<a href="http://www.w3.org/html/ig/zh/"><abbr title="World Wide Web Consortium">W3C</abbr> HTML5中文兴趣组</a>共同发布和审阅。若对本文档有任何建议或反馈，欢迎通过<a href="https://github.com/w3c/clreq">我們的GitHub專案</a>提交<a href="https://github.com/w3c/clreq/issues">issues</a>或<a href="https://github.com/w3c/clreq/pulls">pull requests</a>。同时也欢迎使用<a href="mailto:public-zhreq@w3.org">public-zhreq@w3.org</a>（<a href="mailto:public-zhreq@w3.org?subject=subscribe">订阅</a>）与<a href="mailto:public-html-ig-zh@w3.org">public-html-ig-zh@w3.org</a>（<a href="mailto:public-html-ig-zh@w3.org?subject=subscribe">订阅</a>）进行关于本文档的中文讨论或<a href="mailto:public-i18n-cjk@w3.org">public-i18n-cjk@w3.org</a>（<a href="mailto:public-i18n-cjk@w3.org?subject=subscribe">订阅</a>）进行关于本文档的英文讨论。
-    </p>
-
-    <p>
-      欢迎同时查阅本文档的<a href="../"><strong>英文（English）</strong></a>版本。
-    </p>
-    
-    <p>
-      以编辑草稿方式发布的文档还没有通过<abbr title="World Wide Web Consortium">W3C</abbr>会员流程的认可。这是一份文档草稿并且会被不断更新。请暂时不要正式引用本文档。
-    </p>
-
-    <p>
-      本文档遵循<abbr title="World Wide Web Consortium">W3C</abbr><a id="sotd_patent" property="w3p:patentRules" href="http://www.w3.org/Consortium/Patent-Policy-20040205/">专利政策</a>（2004-02-05）。<abbr title="World Wide Web Consortium">W3C</abbr>为工作组的产出成果维护着一份<a href="http://www.w3.org/2004/01/pp-impl/" rel="disclosure">公开专利披露列表</a>，此页面也同时涵盖了专利披露说明。若个人发现其有包含<a href="http://www.w3.org/Consortium/Patent-Policy-20040205/#def-essential">必须声明</a>的专利信息，必须按照<a href="http://www.w3.org/Consortium/Patent-Policy-20040205/#sec-Disclosure"><abbr title="World Wide Web Consortium">W3C</abbr>专利政策第六章节</a>披露此信息。
-    </p>
-    
-    <p>
-      本文档遵循<a id="w3c_process_revision" href="http://www.w3.org/2014/Process-20140801/"><abbr title="World Wide Web Consortium">W3C</abbr>流程文档</a>（2014-08-01）。
-    </p>
-    <hr>
-  </section>
-
-
-  <section id="toc">
-    <h2 class="introductory" id="h-toc">内容大纲</h2>
-    <ol class="toc" role="directory" id="respecContents">
-
-      <!-- Chapter 1 -->
-      <li>
-        <a href="#introduction"><span class="secno">1. </span>緒論</a>
-        <ol class="toc">
-          <li><a href="#purpose_of_this_document"><span class="secno">1.1 </span>本文書之目的</a></li>
-          <li><a href="#basic_principles_for_development_of_this_document"><span class="secno">1.2 </span>本文件之撰寫方針</a></li>
-        </ol>
-      </li>
-
-      <!-- Chapter 2 -->
-      <li>
-        <a href="#basics_of_chinese_composition"><span class="secno">2. </span>中文排版基礎</a>
-        <ol class="toc">
-          <li>
-            <a href="#characters_and_the_principles_of_setting_them_for_chinese_composition"><span class="secno">2.1 </span>中文排版所使用的文字</a>
-            <ol class="toc">
-              <li><a href="#characters_used_in_chinese_composition"><span class="secno">2.1.1 </span>中文排版所使用的文字</a></li>
-              <li><a href="#han_characters"><span class="secno">2.1.2 </span>漢字</a></li>
-              <li><a href="#principles_of_arrangement_of_han_characters"><span class="secno">2.1.3 </span>漢字的配置原則</a></li>
-            </ol>
-          </li>
-          <li>
-            <a href="#commonly_used_chinese_typefaces"><span class="secno">2.2 </span>中文排版常用字體</a>
-            <ol class="toc">
-              <li><a href="#four_commonly_used_typefaces_for_chinese_composition"><span class="secno">2.2.1 </span>中文排版經常使用的四種字體</a></li>
-              <li><a href="#song"><span class="secno">2.2.2 </span>宋體（明體、明朝體）</a></li>
-              <li><a href="#kai"><span class="secno">2.2.3 </span>楷體</a></li>
-              <li><a href="#hei"><span class="secno">2.2.4 </span>黑體</a></li>
-              <li><a href="#imitation_song"><span class="secno">2.2.5 </span>仿宋體</a></li>
-            </ol>
-          </li>
-          <li>
-            <a href="#type_area"><span class="secno">2.3 </span>版心</a>
-            <ol class="toc">
-              <li><a href="#main_elements_of_basic_composition"><span class="secno">2.3.1 </span>基礎排版體裁的主要元素</a></li>
-              <li><a href="#designing_elements_of_type_area"><span class="secno">2.3.2 </span>版心的設計元素</a></li>
-              <li><a href="#using_type_area_for_composition_in_real_pages"><span class="secno">2.3.3 </span>以版心作為實際頁面的排版體裁</a></li>
-              <li><a href="#procedure_for_defining_type_area"><span class="secno">2.3.4 </span>設計版心的順序</a></li>
-              <li><a href="#considerations_in_designing_type_area"><span class="secno">2.3.5 </span>設計版心的注意點</a></li>
-            </ol>
-          </li>
-          <li>
-            <a href="#writing_modes"><span class="secno">2.4 </span>文字書寫方向</a>
-            <ol class="toc">
-              <li><a href="#writing_modes_in_chinese_composition"><span class="secno">2.4.1 </span>中文的文字書寫方向</a></li>
-              <li><a href="#major_differences_between_horizontal_and_vertical_writing_modes"><span class="secno">2.4.2 </span>橫排與直排的主要差異點</a></li>
-            </ol>
-          </li>
-        </ol>
-      </li>
-
-      <!-- Chapter 3 -->
-      <li>
-        <a href="#line_composition"><span class="secno">3. </span>行內文字排版處理</a>
-        <ol class="toc">
-          <li>
-            <a href="#line_composition_rules_for_punctuation_marks"><span class="secno">3.1 </span>標點符號與其排版</a>
-            <ol class="toc">
-              <li><a href="#categories_and_usage_of_punctuation_marks"><span class="secno">3.1.1 </span>標點符號的分類及用法</a></li>
-              <li><a href="#glyphs_sizes_and_positions_in_character_faces_of_punctuation_marks"><span class="secno">3.1.2 </span>標點符號的字形、尺寸與字面分布</a></li>
-              <li><a href="#atypical_punctuation_marks_and_their_arrangements"><span class="secno">3.1.3 </span>非典型的標點符號及其配置</a></li>
-              <li><a href="#prohibition_rules_for_line_start_end"><span class="secno">3.1.4 </span>行首行尾禁則</a></li>
-              <li><a href="#prohibition_rules_for_unbreakable_marks"><span class="secno">3.1.5 </span>符號分離禁則</a></li>
-              <li><a href="#compression_rules_for_consecutive_punctuation_marks"><span class="secno">3.1.6 </span>標點符號的擠壓</a></li>
-              <li><a href="#hanging_punctuation_marks_at_line_end"><span class="secno">3.1.7 </span>行尾點號懸掛</a></li>
-            </ol>
-          </li>
-          <li>
-            <a href="#chinese_and_western_mixed_text_composition"><span class="secno">3.2 </span>中、西文混排處理</a>
-            <ol class="toc">
-              <li><a href="#composition_of_chinese_and_western_mixed_text"><span class="secno">3.2.1 </span>中文與西文之混排</a></li>
-              <li><a href="#mixed_text_composition_in_horizontal_writing_mode"><span class="secno">3.2.2 </span>橫排的中、西文混排配置</a></li>
-              <li><a href="#mixed_text_composition_in_vertical_writing_mode"><span class="secno">3.2.3 </span>直排的中、西文混排配置</a></li>
-              <li><a href="#handling_western_text_in_chinese_text_using_proportional_western_fonts"><span class="secno">3.2.4 </span>西文使用比例字體時的混排處理</a></li>
-              <li><a href="#handling_of_grid_alignment_in_chinese_and_western_mixed_text_composition"><span class="secno">3.2.5 </span>縱橫對齊下的中西文混排處理</a></li>
-            </ol>
-          </li>
-          <li>
-            <a href="#interlinear_annotations"><span class="secno">3.3 </span>行间注</a>
-            <ol class="toc">
-              <li><a href="#usage_of_interlinear_annotations"><span class="secno">3.3.1 </span>行间注的用途</a></li>
-              <li><a href="#overview_of_positioning_of_interlinear_annotations"><span class="secno">3.3.2 </span>行间注排版概述</a></li>
-              <li><a href="#positioning_of_zhuyin"><span class="secno">3.3.3 </span>注音符号標音的排版</a></li>
-              <li><a href="#positioning_of_romanization"><span class="secno">3.3.4 </span>羅馬拼音標音的排版</a></li>
-              <li><a href="#atypical_cases_for_chinese_phonetic_annotations"><span class="secno">3.3.5 </span>漢字標音的非典型情況</a></li>
-              <li><a href="#positioning_of_bilingual_annotations"><span class="secno">3.3.6 </span>中外文對照的排版</a></li>
-              <li><a href="#positioning_of_interlinear_comments"><span class="secno">3.3.7 </span>行間批語的排版</a></li>
-            </ol>
-          </li>
-          <li>
-            <a href="#paragraph_adjustment_rules"><span class="secno">3.4 </span>段落調整</a>
-            <ol class="toc">
-              <li><a href="#line_head_indent_at_the_beginning_of_paragraphs"><span class="secno">3.4.1 </span>段首縮排</a></li>
-              <li><a href="#line_head_indent_of_paragraphs"><span class="secno">3.4.2 </span>段落縮排</a></li>
-              <li><a href="#ways_of_alignments"><span class="secno">3.4.3 </span>對齊處理</a></li>
-              <li><a href="#adjustments_of_orphans_and_widows"><span class="secno">3.4.4 </span>孤行與孤字處理</a></li>
-            </ol>
-          </li>
-        </ol>
-      </li>
-
-      <!-- Chapter 4 -->
-      <li>
-        <a href="#positioning_of_headings_notes_illustrations_and_tables"><span class="secno">4. </span>標題、注釋、圖片及表格的排版處理</a>
-        <ol class="toc">
-          <li>
-            <a href="#handling_of_headings"><span class="secno">4.1 </span>標題處理（包含換頁處理）</a>
-            <ol class="toc">
-              <li><a href="#types_of_headings"><span class="secno">4.1.1 </span>標題的種類</a></li>
-              <li><a href="#styling_of_headings"><span class="secno">4.1.2 </span>使標題得以突顯的方式</a></li>
-              <li><a href="#handling_of_new_retros"><span class="secno">4.1.3 </span>單頁起、換頁處理</a></li>
-              <li><a href="#handling_of_spaces_before_new_rectos"><span class="secno">4.1.4 </span>單頁起、換頁處理時，前一頁的處理</a></li>
-              <li><a href="#processing_of_runin_headings"><span class="secno">4.1.5 </span>同行標題的處理方式</a></li>
-            </ol>
-          </li>
-        </ol>
-      </li>
-
-      <!-- Appendix -->
-      <li>
-        <a href="#appendices">附录</a>
-        <ol class="toc">
-          <li><a href="#tables_of_chinese_punctuation_marks"><span class="secno">A </span>中文標點符號表</a></li>
-          <li><a href="#glossary"><span class="secno">B </span>詞彙表</a></li>
-          <li><a href="#references"><span class="secno">C </span>參考文獻</a></li>
-          <li><a href="#acknowledgement"><span class="secno">D </span>致謝</a></li>
-        </ol>
-      </li>
+  <section id="basic_principles_for_development_of_this_document">
+    <h3 id="h-basic_principles_for_development_of_this_document">本文件之撰寫方針</h3>
+    <p>中文排版有別於其他體系，主要特色在於以下各點：</p>
+    <ol>
+      <li>中文分為繁體字與簡體字，兩者除文字字形、筆畫多寡等差異外，各項排版規則也有所區別。</li>
+      <li>中文的書寫方向有直排及橫排二種，其中，前者多見於繁體中文出版品。</li>
+      <li>原則上，中文排版所使用的漢字與標點符號之比例皆為1:1的正方形，將其無縫隙並列排成版面。</li>
     </ol>
-    <hr>
   </section>
-  
-  <section id="introduction">
-    <!--OddPage-->
-    <h2 id="h-introduction"><span class="secno">1. </span>緒論</h2>
-    
-    <section id="purpose_of_this_document">
-      <h3 id="h-purpose_of_this_document"><span class="secno">1.1 </span>本文書之目的</h3>
-      <p>每一個文化群體都擁有獨自的語言、文字、書寫系統。將個別書寫系統得以在虛擬空間再現，對文化資產的承繼而言，是資訊傳播技術的重要責任。</p>
-      <p>作為實現這個責任的基礎，本文書整理了中文（漢字）書寫系統於排版上的需求。一方面說明需求事項以明確描述中文排版之需求與問題；另一方面也提供與既有標準（如萬國碼）的對應，冀求透過本文書能在實作層級更能有效地促進實現。</p>
+</section>
+<section id="basics_of_chinese_composition">
+  <h2 id="h-basics_of_chinese_composition">中文排版基礎</h2>
+  <section id="characters_and_the_principles_of_setting_them_for_chinese_composition">
+    <h3 id="h-characters_and_the_principles_of_setting_them_for_chinese_composition">中文排版所使用的文字</h3>
+    <section id="characters_used_in_chinese_composition">
+      <h4 id="h-characters_used_in_chinese_composition">中文排版所使用的文字</h4>
+      <p>中文排版主要使用的文字為漢字。</p>
+      <p>依照各地的通行標準，中文所使用的漢字主要又分為繁體字與簡體字。前者又作正體字、傳統漢字等，主要通行於台灣、香港、澳門等地；後者又作簡化字，主要通行於中國大陸、星馬地區。本文依筆畫多寡與部件結構為區別，統稱為繁體字與簡體字。</p>
+      <p>不同地区所使用的字形有差异，各种字形与万国码位并不是一一对应关系，需要依赖处理系统和字库来呈现。本文主要探究中文排版，對此不做詳述。</p>
+      <div class="note">
+        <p>中文排版除了漢字外，也使用標點符號。也會與阿拉伯數字、拉丁文字、希臘文字等外文混排。</p>
+      </div>
     </section>
-
-    <section id="basic_principles_for_development_of_this_document">
-      <h3 id="h-basic_principles_for_development_of_this_document"><span class="secno">1.2 </span>本文件之撰寫方針</h3>
-      <p>中文排版有別於其他體系，主要特色在於以下各點：</p>
-      <ol>
-        <li>中文分為繁體字與簡體字，兩者除文字字形、筆畫多寡等差異外，各項排版規則也有所區別。</li>
-        <li>中文的書寫方向有直排及橫排二種，其中，前者多見於繁體中文出版品。</li>
-        <li>原則上，中文排版所使用的漢字與標點符號之比例皆為1:1的正方形，將其無縫隙並列排成版面。</li>
-      </ol>
+    <section id="han_characters">
+      <h4 id="h-han_characters">漢字</h4>
+      <p>漢字有著正方形的文字外框。於文字外框的正中央，有著比文字外框小的字面（反過來說，字面的上下左右與文字外框之間，有稍微比字面大的若干空白）。中文標點符號的尺寸多與漢字一致，寬高相等，部分標點（如刪節號等）則佔用一個漢字高、二個漢字寬的大小。</p>
+      <p>文字尺寸則為文字外框的尺寸。此外，字幅則是依照文字排列方向的文字外框大小，為文字的寬度。</p>
     </section>
-  </section>
-
-  <section id="basics_of_chinese_composition">
-    <!--OddPage-->
-    <h2 id="h-basics_of_chinese_composition"><span class="secno">2. </span>中文排版基礎</h2>
-    
-    <section id="characters_and_the_principles_of_setting_them_for_chinese_composition">
-      <h3 id="h-characters_and_the_principles_of_setting_them_for_chinese_composition"><span class="secno">2.1 </span>中文排版所使用的文字</h3>
-      <section id="characters_used_in_chinese_composition">
-        <h4 id="h-characters_used_in_chinese_composition"><span class="secno">2.1.1 </span>中文排版所使用的文字</h4>
-        <p>中文排版主要使用的文字為漢字。</p>
-        <p>依照各地的通行標準，中文所使用的漢字主要又分為繁體字與簡體字。前者又作正體字、傳統漢字等，主要通行於台灣、香港、澳門等地；後者又作簡化字，主要通行於中國大陸、星馬地區。本文依筆畫多寡與部件結構為區別，統稱為繁體字與簡體字。</p>
-        <p>不同地区所使用的字形有差异，各种字形与万国码位并不是一一对应关系，需要依赖处理系统和字库来呈现。本文主要探究中文排版，對此不做詳述。</p>
-        <div class="note"><p>中文排版除了漢字外，也使用標點符號。也會與阿拉伯數字、拉丁文字、希臘文字等外文混排。</p></div>
-      </section>
-
-      <section id="han_characters">
-        <h4 id="h-han_characters"><span class="secno">2.1.2 </span>漢字</h4>
-        <p>漢字有著正方形的文字外框。於文字外框的正中央，有著比文字外框小的字面（反過來說，字面的上下左右與文字外框之間，有稍微比字面大的若干空白）。中文標點符號的尺寸多與漢字一致，寬高相等，部分標點（如刪節號等）則佔用一個漢字高、二個漢字寬的大小。</p>
-        <p>文字尺寸則為文字外框的尺寸。此外，字幅則是依照文字排列方向的文字外框大小，為文字的寬度。</p>
-      </section>
-
-      <section id="principles_of_arrangement_of_han_characters">
-        <h4 id="h-principles_of_arrangement_of_han_characters"><span class="secno">2.1.3 </span>漢字的配置原則</h4>
-        <p>漢字依行排列文字，原則上文字外框彼此緊貼配置，稱作密排。</p>
-        <div class="note"><p>從活字排版時代起，漢字無論直、橫文字外框彼此緊貼配置適於閱讀。但活字排版依照文字尺寸不同，各號數之字型原模不同，字面也隨之不同。目前數位字體僅採取單一原型，當文字尺寸放大時，有時需要調整字距。然而，中文漢字字體面率一般較日文字體小，除非在特殊狀況下，不需特別處理。另當文字尺寸縮小時，若為向量字體，則需要補正資訊來調整文字線幅；但有部分字體在文字尺寸較小時，會以點陣字體呈現，此時就不需另外調整。</p></div>
-        <p>依照內容的不同，也會採用以下方式排列：</p>
-        
+    <section id="principles_of_arrangement_of_han_characters">
+      <h4 id="h-principles_of_arrangement_of_han_characters">漢字的配置原則</h4>
+      <p>漢字依行排列文字，原則上文字外框彼此緊貼配置，稱作密排。</p>
+      <div class="note">
+        <p>從活字排版時代起，漢字無論直、橫文字外框彼此緊貼配置適於閱讀。但活字排版依照文字尺寸不同，各號數之字型原模不同，字面也隨之不同。目前數位字體僅採取單一原型，當文字尺寸放大時，有時需要調整字距。然而，中文漢字字體面率一般較日文字體小，除非在特殊狀況下，不需特別處理。另當文字尺寸縮小時，若為向量字體，則需要補正資訊來調整文字線幅；但有部分字體在文字尺寸較小時，會以點陣字體呈現，此時就不需另外調整。</p>
+      </div>
+      <p>依照內容的不同，也會採用以下方式排列：</p>
+      <section>
+        <h5 id="h-increased_inter_character_spacing">增加字距</h5>
+        <p>於各字之間加入固定量的空白來排列文字，稱作疏排。書籍排版上，遇到以下狀況時，會採用此排列方式：</p>
         <ol>
-          <li>
-            <h5>增加字距</h5>
-            <p>於各字之間加入固定量的空白來排列文字，稱作疏排。書籍排版上，遇到以下狀況時，會採用此排列方式：</p>
-            <ol>
-              <li>為使字數不同的標題間能取得平衡，而加大字距。</li>
-              <li>圖片與表格之說明文字字數少時，為取得平衡，而加大字距。</li>
-              <li>應用於字數少的詩詞時，為與版面取得平衡，而加大字距。</li>
-              <li>針對兒童書籍等，為提升易讀性時，而加大字距。</li>
-            </ol>
-          </li>
-
-          <li>
-            <h5>平均排列</h5>
-            <p>平均分配字距，使文字列兩端能夠對齊行首與行尾。中文排版時，由於使用的漢字與標點符號皆為正方形，自然會使得文字列對齊行首與行尾。該種排列方式，主要應用於：</p>
-            <ol>
-              <li>行首行尾禁則。當該行行尾遇到不能置於行尾的標點符號，而必須將標點符號與前一漢字移至次行時；或次行行頭遇到不能置於行頭的標點符號，而必須將移動前一行漢字於次行時，就會於行尾產生一到二字（甚至以上）的空白。由於中文書籍各行行頭尾對齊是重要的排版規則，此時就會利用平均排列將二字（以及以上）空白均分至該行各字字距。</li>
-              <li>表格标题、人名名单等求呈現上一致時，會採用平均排列的方式處理。</li>
-            </ol>
-
-          <li>
-            <h5>減少字距</h5>
-            <p>減少字與字間的字距，使得文字外框一部份重疊，稱作紧排。這種處理方式，主要應用於：</p>
-            <ol>
-              <li>雜誌標題以及廣告文案字數較多，為使其排列於一行，或為求特殊表現時使用。</li>
-              <li>由於漢字皆為正方形，此方式並不適用於活字排版，故不應用於書籍標題與內文的排列上。</li>
-            </ol>
-          </li>
+          <li>為使字數不同的標題間能取得平衡，而加大字距。</li>
+          <li>圖片與表格之說明文字字數少時，為取得平衡，而加大字距。</li>
+          <li>應用於字數少的詩詞時，為與版面取得平衡，而加大字距。</li>
+          <li>針對兒童書籍等，為提升易讀性時，而加大字距。</li>
+        </ol>
+      </section>
+      <section>
+        <h5 id="h-even_inter_character_spacing">平均排列</h5>
+        <p>平均分配字距，使文字列兩端能夠對齊行首與行尾。中文排版時，由於使用的漢字與標點符號皆為正方形，自然會使得文字列對齊行首與行尾。該種排列方式，主要應用於：</p>
+        <ol>
+          <li>行首行尾禁則。當該行行尾遇到不能置於行尾的標點符號，而必須將標點符號與前一漢字移至次行時；或次行行頭遇到不能置於行頭的標點符號，而必須將移動前一行漢字於次行時，就會於行尾產生一到二字（甚至以上）的空白。由於中文書籍各行行頭尾對齊是重要的排版規則，此時就會利用平均排列將二字（以及以上）空白均分至該行各字字距。</li>
+          <li>表格标题、人名名单等求呈現上一致時，會採用平均排列的方式處理。</li>
+        </ol>
+      </section>
+      <section>
+        <h5 id="h-reduced_inter_character_spacing">減少字距</h5>
+        <p>減少字與字間的字距，使得文字外框一部份重疊，稱作紧排。這種處理方式，主要應用於：</p>
+        <ol>
+          <li>雜誌標題以及廣告文案字數較多，為使其排列於一行，或為求特殊表現時使用。</li>
+          <li>由於漢字皆為正方形，此方式並不適用於活字排版，故不應用於書籍標題與內文的排列上。</li>
         </ol>
       </section>
     </section>
-
-    <section id="commonly_used_chinese_typefaces">
-      <h3 id="h-commonly_used_chinese_typefaces"><span class="secno">2.2 </span>中文排版常用字體</h3>
-      <section id="four_commonly_used_typefaces_for_chinese_composition">
-        <h4 id="h-four_commonly_used_typefaces_for_chinese_composition"><span class="secno">2.2.1 </span>中文排版經常使用的四種字體</h4>
-        <p>中文排版時，主要使用的四種字體為：</p>
-        <ul>
-          <li>宋體（明體、明朝體）</li>
-          <li>黑體</li>
-          <li>楷體</li>
-          <li>仿宋體</li>
-        </ul>
-        <p>這四種字體於書籍排版上有其常見之使用方式，下列各節分別敘述其使用情境。</p>
-      </section>
-
-      <section id="song">
-        <h4 id="h-song"><span class="secno">2.2.2 </span>宋體（明體、明朝體）</h4>
-        <figure id="fig-song">
-        <img src="images/song.png" width="600" height="415">
-        <figcaption>圖<span class="figno">1</span> <span class="fig-title">宋體（明體、明朝體）</span></figcaption>
+  </section>
+  <section id="commonly_used_chinese_typefaces">
+    <h3 id="h-commonly_used_chinese_typefaces">中文排版常用字體</h3>
+    <section id="four_commonly_used_typefaces_for_chinese_composition">
+      <h4 id="h-four_commonly_used_typefaces_for_chinese_composition">中文排版經常使用的四種字體</h4>
+      <p>中文排版時，主要使用的四種字體為：</p>
+      <ul>
+        <li>宋體（明體、明朝體）</li>
+        <li>黑體</li>
+        <li>楷體</li>
+        <li>仿宋體</li>
+      </ul>
+      <p>這四種字體於書籍排版上有其常見之使用方式，下列各節分別敘述其使用情境。</p>
+    </section>
+    <section id="song">
+      <h4 id="h-song">宋體（明體、明朝體）</h4>
+      <figure id="fig-song"> <img src="images/song.png" width="600" height="415">
+        <figcaption>宋體（明體、明朝體）</figcaption>
       </figure>
       <p>宋體，又稱為明體或明朝體，是中文排版最常使用之字體。</p>
       <p>普遍使用於內文文字、標題與注釋。當應用於標題時，通常會特別加強字重，令其與內文有所差異。</p>
-      </section>
-
-      <section id="kai">
-        <h4 id="h-kai"><span class="secno">2.2.3 </span>楷體</h4>
-        <figure id="fig-kai">
-          <img src="images/kai.png" width="600" height="215">
-          <figcaption>圖<span class="figno">2</span> <span class="fig-title">楷體</span></figcaption>
-        </figure>
-        <p>楷體為帶有書法形態、手寫筆觸之字體。</p>
-        <p>主要使用於標題、引言、摘句、對話、內容出處等，與內文有所不同的段落上。但因為與宋體近似，故少用於強調。</p>
-        <div class="note"><p>由於楷體保留了書法筆觸，普遍用於公文書、教科書之內文字。</p></div>
-      </section>
-
-      <section id="hei">
-        <h4 id="h-hei"><span class="secno">2.2.4 </span>黑體</h4>
-        <figure id="fig-hei">
-          <img src="images/hei.png" width="600" height="215">
-          <figcaption>圖<span class="figno">3</span> <span class="fig-title">黑體</span></figcaption>
-        </figure>
-        <p>黑體主要應用於標題、圖說、對話之人名。內文中也會使用字重較粗的黑體作為特定文字的強調、著重。</p>
-        <p>傳統印刷品少有使用黑體作為內文文字者，但受到萬維網、數位出版的影響，也有少數書籍開始使用黑體作為內文字體。</p>
-      </section>
-      <section id="imitation_song">
-        <h4 id="h-imitation_song"><span class="secno">2.2.5 </span>仿宋體</h4>
-        <figure id="fig-fangsong">
-          <img src="images/fangsong.png" width="600" height="215">
-          <figcaption>圖<span class="figno">4</span> <span class="fig-title">仿宋體</span></figcaption>
-        </figure>
-        <p>仿宋體的字體形態介於宋體與楷體之間。常用於引言、摘句等與內文區隔的段落上。</p>
-      </section>
     </section>
-
-    <section id="type_area">
-      <h3 id="h-type_area"><span class="secno">2.3 </span>版心</h3>
-      
-      <p>中文書籍排版依以下順序設計：</p>
+    <section id="kai">
+      <h4 id="h-kai">楷體</h4>
+      <figure id="fig-kai"> <img src="images/kai.png" width="600" height="215">
+        <figcaption>楷體</figcaption>
+      </figure>
+      <p>楷體為帶有書法形態、手寫筆觸之字體。</p>
+      <p>主要使用於標題、引言、摘句、對話、內容出處等，與內文有所不同的段落上。但因為與宋體近似，故少用於強調。</p>
+      <div class="note">
+        <p>由於楷體保留了書法筆觸，普遍用於公文書、教科書之內文字。</p>
+      </div>
+    </section>
+    <section id="hei">
+      <h4 id="h-hei">黑體</h4>
+      <figure id="fig-hei"> <img src="images/hei.png" width="600" height="215">
+        <figcaption>黑體</figcaption>
+      </figure>
+      <p>黑體主要應用於標題、圖說、對話之人名。內文中也會使用字重較粗的黑體作為特定文字的強調、著重。</p>
+      <p>傳統印刷品少有使用黑體作為內文文字者，但受到萬維網、數位出版的影響，也有少數書籍開始使用黑體作為內文字體。</p>
+    </section>
+    <section id="imitation_song">
+      <h4 id="h-imitation_song">仿宋體</h4>
+      <figure id="fig-fangsong"> <img src="images/fangsong.png" width="600" height="215">
+        <figcaption>仿宋體</figcaption>
+      </figure>
+      <p>仿宋體的字體形態介於宋體與楷體之間。常用於引言、摘句等與內文區隔的段落上。</p>
+    </section>
+  </section>
+  <section id="type_area">
+    <h3 id="h-type_area">版心</h3>
+    <p>中文書籍排版依以下順序設計：</p>
+    <ul>
+      <li>首先，設計版心。</li>
+      <li>其次以版心為基準，進行實際頁面的設計。</li>
+    </ul>
+    <p>書籍多數僅使用一種基礎排版體裁，雜誌則會使用上數種。</p>
+    <p>但儘管書籍僅使用一種體裁，在實際頁面的設計上，如：目錄、索引等頁面，會基於基本排版體裁重新設計。索引等頁面採用不同排版體裁設計的案例也相當多，直排書索引也會以橫排或者多欄排版方式設計。但在設計上，版面尺寸等依然不出基礎排版體裁。</p>
+    <p>雜誌則因為內容不同，排版體裁多變，文字大小、欄數依照內容不同會有所變化。</p>
+    <section id="main_elements_of_basic_composition">
+      <h4 id="h-main_elements_of_basic_composition">基礎排版體裁的主要元素</h4>
+      <p>基礎排版體裁的主要元素如下：</p>
       <ul>
-        <li>首先，設計版心。</li>
-        <li>其次以版心為基準，進行實際頁面的設計。</li>
+        <li>完成尺寸與裝訂邊（中文書籍直排為右側裝訂、橫排為左側裝訂）</li>
+        <li>文字書寫方向（直排或橫排）</li>
+        <li>版心與完成尺寸的相對位置</li>
+        <li>頁眉與頁數位置</li>
       </ul>
-      <p>書籍多數僅使用一種基礎排版體裁，雜誌則會使用上數種。</p>
-      <p>但儘管書籍僅使用一種體裁，在實際頁面的設計上，如：目錄、索引等頁面，會基於基本排版體裁重新設計。索引等頁面採用不同排版體裁設計的案例也相當多，直排書索引也會以橫排或者多欄排版方式設計。但在設計上，版面尺寸等依然不出基礎排版體裁。</p>
-      <p>雜誌則因為內容不同，排版體裁多變，文字大小、欄數依照內容不同會有所變化。</p>
-      
-      <section id="main_elements_of_basic_composition">
-        <h4 id="h-main_elements_of_basic_composition"><span class="secno">2.3.1 </span>基礎排版體裁的主要元素</h4>
-        <p>基礎排版體裁的主要元素如下：</p>
-        <ul>
-          <li>完成尺寸與裝訂邊（中文書籍直排為右側裝訂、橫排為左側裝訂）</li>
-          <li>文字書寫方向（直排或橫排）</li>
-          <li>版心與完成尺寸的相對位置</li>
-          <li>頁眉與頁數位置</li>
-        </ul>
-        <div class="note"><p>決定版心除了在頁面中設定長方形的空間外，也有著供內文、標題、圖片配置做為基準的格子設定。其格子設定於中文排版原則下，內文必須依照格子進行配置。在文章僅由漢字構成的狀況下，行首、行尾對齊版心邊界是中文書排版重要的原則。但在與西文混排、或配置標點禁則處理時，為遵從本項原則，內文可不按照格子排列。</p></div>
-      </section>
-      
-      <section id="designing_elements_of_type_area">
-        <h4 id="h-designing_elements_of_type_area"><span class="secno">2.3.2 </span>版心的設計元素</h4>
-        <p>作為書籍基本設計而成的排版體裁稱為版心，版心的設計元素如下：</p>
-        <ul>
-          <li>所使用的文字尺寸以及字體種類</li>
-          <li>文字書寫方向（直排或者橫排）</li>
-          <li>分欄時，欄數以及欄距</li>
-          <li>一行的長度（字數）</li>
-          <li>一頁之行數（分欄時為一欄之行數）</li>
-          <li>行距</li>
-          <li>字距</li>
-        </ul>
-      </section>
-      <section id="using_type_area_for_composition_in_real_pages">
-        <h4 id="h-using_type_area_for_composition_in_real_pages"><span class="secno">2.3.3 </span>以版心作為實際頁面的排版體裁</h4>
-        <p>本部分說明如何以版心作為基本排版體裁來設計各頁面。</p>
-        <ol>
-          <li>配置標題的空間與位置標題所使用空間之文字方向與尺寸，以版心設定的行的位置為基準，採用數行的空間來設計。標題縮排時的處理，以版心所設定的文字尺寸為基準，決定要縮排的量。</li>
-          <li>圖片之尺寸：橫排時圖片，寬度盡可能地以版心的尺寸一致；若為多欄排版時，則盡可能與版心所設定的一欄寬度一致。排列時多與版心的天或者地對齊配置。直排時亦同，依照版心的天地高度、或者多欄排版下所設計單欄或者多欄的天地尺寸為基準配置。排列時亦多與版心的天或者地對齊配置。</li>
-          <li>目錄、索引、參考書目等頁面目錄、索引、參考書目等頁面以版心之尺寸作為基準設計。但有不少案例會於內文採單欄橫排時，目錄等頁採多欄設計；而目錄頁有時天地側會對文字進行縮排。</li>
-        </ol>
-      </section>
-      <section id="procedure_for_defining_type_area">
-        <h4 id="h-procedure_for_defining_type_area"><span class="secno">2.3.4 </span>設計版心的順序</h4>
-        <ol>
-          <li>
-            <p>決定版心尺寸</p>
-            <ol>
-              <li>無分欄時，需決定文字尺寸、一行的字數（即為行長）、一頁的行數以及行距。</li>
-              <li>當分欄時，需決定文字尺寸、一行的字數（即為行長）、一欄的行數、行距、欄數以及欄距。</li>
-            </ol>
-          </li>
-          <li>
-            <p>決定相對於印刷版面，版心的配置位置。版心配置位置的設計順序有著以下方式。</p>
-            <ol>
-              <li>將版心置於印刷版面的正中央，天地等高、左右等寬。</li>
-              <li>橫排時指定天的留白量、直排時則指定地的留白量，左右等寬。</li>
-              <li>天地等高，指定裝訂邊的留白量。</li>
-              <li>指定裝訂邊的留白量，橫排時指定天的留白量、直排時則指定地的留白量。</li>
-            </ol>
-          </li>
-        </ol>
-        <div class="note"><p>一般而言，版心多置放於印刷版面的的正中央，然後依照版心尺寸不同，向上下、左右調整。這種設計方式主要承襲自活字印刷，但於桌上排版，則多以印刷版面計算與版心尺寸四方邊界之差為之。</p></div>
-      </section>
-      <section id="considerations_in_designing_type_area">
-        <h4 id="h-considerations_in_designing_type_area"><span class="secno">2.3.5 </span>設計版心的注意點</h4>
-        <p>版心於設計時需考量以下事項：</p>
-        <ol>
-          <li>決定版心尺寸時，得先考量到印刷版面尺寸與留白後進行。一般而言，版心與印刷版面會呈近於相似形的設計。</li>
-          <li>
-            <p>以成人為讀者製作書籍時，文字尺寸一般為10.5pt（≒3.7mm）與9pt（≒3.2mm）為多。除了特殊書籍外，最小也要有8pt（≒2.8mm）。</p>
-            <div class="note"><p>中文活字尺寸以「號」為單位，又分新舊兩種寸法。可完整對應美制的「點」（point），分別如下：初號＝42pt、一號＝27.5pt、二號＝21pt、三號＝15.75pt、四號＝13.75pt、五號＝10.5pt、六號＝7.875pt、七號＝5.25pt。新五號四行＝36pt、新一號＝24pt、新二號＝18pt、新三號字＝16pt、新四號＝12pt、新五號＝9pt。</p></div>
-            <div class="note"><p>一般內文主要使用五號字（10.5pt≒3.7mm），而報紙、雜誌則使用新五號字（9pt≒3.2mm），兩種皆常為使用。而一般內文字最小使用到六號字（7.875pt≒2.8mm），若小於此尺寸，由於漢字結構複雜，則難以閱讀。</p></div>
-          </li>
-          <li>
-            <p>一行的行長應為文字尺寸的整數倍，各行的位置盡可能頭尾對齊。</p>
-            <div class="note"><p>中文在不與西文混排的狀況下，所使用的文字外框皆為正方形，除段落最後一行不對齊外，各行行首、行尾皆需對齊，這是重要的排版原則。</p></div>
-          </li>
-          <li>
-            <p>行與行之間的空白（行距）除特別狀況外，皆需保持一致。</p>
-            <div class="note"><p>在繁體中文排版，字間的注音符號可能會超入行距空間，而翻譯書籍亦可能使用類似日文排版的<a href="http://www.w3.org/TR/jlreq/#ruby_and_emphasis_dots">ruby</a>文字，此時行距仍需保持一致。當文書需要配置這些元素時，於設計版心之階段就須考量到這些要素來決定行距。</p></div>
-            <div class="note"><p>版心之行距多半介於文字尺寸之50%–100%之間，當行長較短、或文字尺寸較小時，行距設定也會相對較小。反之，行距一般不會超過文字尺寸，就算超過文字尺寸，也不會因而增加易讀性。</p></div>
-            <div class="note">
-              <p>指定版心的方法中，有著不以行距，而是依行高來設定的方法。行高就是彼此鄰接的兩行的基準點到基準點之間的距離。基準點依照處理方式而會有所不同，直排時行左右的中央線，橫排時為行上下的中央線。當配置的文字全部尺寸相同時，有著以下關係：</p>
+      <div class="note">
+        <p>決定版心除了在頁面中設定長方形的空間外，也有著供內文、標題、圖片配置做為基準的格子設定。其格子設定於中文排版原則下，內文必須依照格子進行配置。在文章僅由漢字構成的狀況下，行首、行尾對齊版心邊界是中文書排版重要的原則。但在與西文混排、或配置標點禁則處理時，為遵從本項原則，內文可不按照格子排列。</p>
+      </div>
+    </section>
+    <section id="designing_elements_of_type_area">
+      <h4 id="h-designing_elements_of_type_area">版心的設計元素</h4>
+      <p>作為書籍基本設計而成的排版體裁稱為版心，版心的設計元素如下：</p>
+      <ul>
+        <li>所使用的文字尺寸以及字體種類</li>
+        <li>文字書寫方向（直排或者橫排）</li>
+        <li>分欄時，欄數以及欄距</li>
+        <li>一行的長度（字數）</li>
+        <li>一頁之行數（分欄時為一欄之行數）</li>
+        <li>行距</li>
+        <li>字距</li>
+      </ul>
+    </section>
+    <section id="using_type_area_for_composition_in_real_pages">
+      <h4 id="h-using_type_area_for_composition_in_real_pages">以版心作為實際頁面的排版體裁</h4>
+      <p>本部分說明如何以版心作為基本排版體裁來設計各頁面。</p>
+      <ol>
+        <li>配置標題的空間與位置標題所使用空間之文字方向與尺寸，以版心設定的行的位置為基準，採用數行的空間來設計。標題縮排時的處理，以版心所設定的文字尺寸為基準，決定要縮排的量。</li>
+        <li>圖片之尺寸：橫排時圖片，寬度盡可能地以版心的尺寸一致；若為多欄排版時，則盡可能與版心所設定的一欄寬度一致。排列時多與版心的天或者地對齊配置。直排時亦同，依照版心的天地高度、或者多欄排版下所設計單欄或者多欄的天地尺寸為基準配置。排列時亦多與版心的天或者地對齊配置。</li>
+        <li>目錄、索引、參考書目等頁面目錄、索引、參考書目等頁面以版心之尺寸作為基準設計。但有不少案例會於內文採單欄橫排時，目錄等頁採多欄設計；而目錄頁有時天地側會對文字進行縮排。</li>
+      </ol>
+    </section>
+    <section id="procedure_for_defining_type_area">
+      <h4 id="h-procedure_for_defining_type_area">設計版心的順序</h4>
+      <ol>
+        <li>
+          <p>決定版心尺寸</p>
+          <ol>
+            <li>無分欄時，需決定文字尺寸、一行的字數（即為行長）、一頁的行數以及行距。</li>
+            <li>當分欄時，需決定文字尺寸、一行的字數（即為行長）、一欄的行數、行距、欄數以及欄距。</li>
+          </ol>
+        </li>
+        <li>
+          <p>決定相對於印刷版面，版心的配置位置。版心配置位置的設計順序有著以下方式。</p>
+          <ol>
+            <li>將版心置於印刷版面的正中央，天地等高、左右等寬。</li>
+            <li>橫排時指定天的留白量、直排時則指定地的留白量，左右等寬。</li>
+            <li>天地等高，指定裝訂邊的留白量。</li>
+            <li>指定裝訂邊的留白量，橫排時指定天的留白量、直排時則指定地的留白量。</li>
+          </ol>
+        </li>
+      </ol>
+      <div class="note">
+        <p>一般而言，版心多置放於印刷版面的的正中央，然後依照版心尺寸不同，向上下、左右調整。這種設計方式主要承襲自活字印刷，但於桌上排版，則多以印刷版面計算與版心尺寸四方邊界之差為之。</p>
+      </div>
+    </section>
+    <section id="considerations_in_designing_type_area">
+      <h4 id="h-considerations_in_designing_type_area">設計版心的注意點</h4>
+      <p>版心於設計時需考量以下事項：</p>
+      <ol>
+        <li>決定版心尺寸時，得先考量到印刷版面尺寸與留白後進行。一般而言，版心與印刷版面會呈近於相似形的設計。</li>
+        <li>
+          <p>以成人為讀者製作書籍時，文字尺寸一般為10.5pt（≒3.7mm）與9pt（≒3.2mm）為多。除了特殊書籍外，最小也要有8pt（≒2.8mm）。</p>
+          <div class="note">
+            <p>中文活字尺寸以「號」為單位，又分新舊兩種寸法。可完整對應美制的「點」（point），分別如下：初號＝42pt、一號＝27.5pt、二號＝21pt、三號＝15.75pt、四號＝13.75pt、五號＝10.5pt、六號＝7.875pt、七號＝5.25pt。新五號四行＝36pt、新一號＝24pt、新二號＝18pt、新三號字＝16pt、新四號＝12pt、新五號＝9pt。</p>
+          </div>
+          <div class="note">
+            <p>一般內文主要使用五號字（10.5pt≒3.7mm），而報紙、雜誌則使用新五號字（9pt≒3.2mm），兩種皆常為使用。而一般內文字最小使用到六號字（7.875pt≒2.8mm），若小於此尺寸，由於漢字結構複雜，則難以閱讀。</p>
+          </div>
+        </li>
+        <li>
+          <p>一行的行長應為文字尺寸的整數倍，各行的位置盡可能頭尾對齊。</p>
+          <div class="note">
+            <p>中文在不與西文混排的狀況下，所使用的文字外框皆為正方形，除段落最後一行不對齊外，各行行首、行尾皆需對齊，這是重要的排版原則。</p>
+          </div>
+        </li>
+        <li>
+          <p>行與行之間的空白（行距）除特別狀況外，皆需保持一致。</p>
+          <div class="note">
+            <p>在繁體中文排版，字間的注音符號可能會超入行距空間，而翻譯書籍亦可能使用類似日文排版的<a href="http://www.w3.org/TR/jlreq/#ruby_and_emphasis_dots">ruby</a>文字，此時行距仍需保持一致。當文書需要配置這些元素時，於設計版心之階段就須考量到這些要素來決定行距。</p>
+          </div>
+          <div class="note">
+            <p>版心之行距多半介於文字尺寸之50%–100%之間，當行長較短、或文字尺寸較小時，行距設定也會相對較小。反之，行距一般不會超過文字尺寸，就算超過文字尺寸，也不會因而增加易讀性。</p>
+          </div>
+          <div class="note">
+            <p>指定版心的方法中，有著不以行距，而是依行高來設定的方法。行高就是彼此鄰接的兩行的基準點到基準點之間的距離。基準點依照處理方式而會有所不同，直排時行左右的中央線，橫排時為行上下的中央線。當配置的文字全部尺寸相同時，有著以下關係：</p>
+            <ul>
+              <li>行高＝文字尺寸÷2＋行距＋文字尺寸÷2＝文字尺寸＋行距</li>
+              <li>行距＝行高－文字尺寸</li>
+            </ul>
+          </div>
+        </li>
+      </ol>
+    </section>
+  </section>
+  <section id="writing_modes">
+    <h3 id="h-writing_modes">文字書寫方向</h3>
+    <section id="writing_modes_in_chinese_composition">
+      <h4 id="h-writing_modes_in_chinese_composition">中文的文字書寫方向</h4>
+      <p>中文的文字書寫方向，分為直排與橫排。其中，繁體中文出版品適用直排與橫排；簡體中文出版品則多為橫排，直排書籍的案例極少。</p>
+      <div class="note">
+        <p>中文所使用的漢字與標點符號，原則上都是正方形的文字，自活字排版時代起，無論直、橫排，都能使用相同的活字排列。但部分標點符號需配合文字書寫方向調整字面分布及方向，見<a href="#line_composition_rules_for_punctuation_marks"></a>節之詳述。</p>
+      </div>
+      <div class="note">
+        <p>傳統上，中文書籍以直排為主，繁體中文通行地區較大程度地保留了這項傳統。然而，近年隨著翻譯或中、西文混排等書籍的數量增加，加上文書處理軟體的預設文字書寫方向的影響，橫排也逐漸成為主流。在台灣，公文、自然科學類書籍等使用橫排居多；而文學作品，如詩、小說等，仍以直排為主。直排仍為繁體中文通行地區的重要文化表徵之一。</p>
+      </div>
+      <div class="note">
+        <p>一份印刷品中，原則上會選用統一的文字書寫方向進行排版。但直排印刷品中，頁眉、圖說、表格等多會混用橫排。同時，部分頁面，如參考書目、註釋等亦可能使用橫排呈現。</p>
+      </div>
+    </section>
+    <section id="major_differences_between_horizontal_and_vertical_writing_modes">
+      <h4 id="h-major_differences_between_horizontal_and_vertical_writing_modes">橫排與直排的主要差異點</h4>
+      <p>直排與橫排的主要差異點，列舉如下：</p>
+      <ol>
+        <li> <span>文字、行、欄以及頁面配置、裝訂方向</span>
+          <ol>
+            <li> <span>直排時</span>
               <ul>
-                <li>行高＝文字尺寸÷2＋行距＋文字尺寸÷2＝文字尺寸＋行距</li>
-                <li>行距＝行高－文字尺寸</li>
+                <li>文字由上而下，行由右而左排列。</li>
+                <li>欄水平切割，上下分欄。</li>
+                <li>頁面由封面開始，由右向左進行配置（由左向右翻頁）。</li>
               </ul>
+            </li>
+            <li> <span>橫排時</span>
+              <ul>
+                <li> <span>文字由左而右，行由上而下排列。</span>
+                  <div class="note">
+                    <p>中文傳統上僅使用直排，當文字需要橫向排列時，採用每行一字、由右向左的規則，且不分欄，形成視覺上由右向左的橫排，此為直排的特例。過去常見於匾額、報紙、雜誌的標題，目前多為由左而右的橫排書寫方向取代。</p>
+                  </div>
+                </li>
+                <li>欄垂直切割，左右分欄。</li>
+                <li>頁面由封面開始，由左而右進行配置（由右向左翻頁）。</li>
+              </ul>
+            </li>
+          </ol>
+        </li>
+        <li> <span>文中包含西文、阿拉伯數字時，如下配置：</span>
+          <ol>
+            <li> <span>直排時，西文或阿拉伯數字有以下三種配置方式：</span>
+              <ul>
+                <li> <span>與漢字採相同的書寫方向，依字母字字排列，主要用於單一西文字母或阿拉伯數字、首字母縮寫等。</span>
+                  <div class="note">
+                    <p>西文字母或阿拉伯數字，採用此配置時，需使用與漢字相同尺寸、字幅固定的等寬字體，而非比例字體。</p>
+                  </div>
+                </li>
+                <li>文字以順時鐘方向旋轉90度。主要用於西文的單字詞、語句等。</li>
+                <li> <span>保持正常方向，橫排處理（如日文的縱中橫排）。主要應用於二至三位數字。</span>
+                  <div class="note">
+                    <p>數字於直排行內橫排，原則上不超過一個漢字的字幅。這是從活字印刷時代起，每行寬度固定所致。故直排時，西文字母與阿拉伯數字橫排不限於二位數，但原則上不能超過一個漢字。現代常見的用法還包括[3.0]、[A+]、[2B]等。</p>
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <li>橫排時，以正常方向配置。</li>
+          </ol>
+        </li>
+        <li> <span>表格、圖片等標題列的位置</span>
+          <ol>
+            <li>直排時，表格橫列之標題列為上方，但直行之標題列位於右側。</li>
+            <li>橫排時，表格橫列之標題列為上方，但直行之標題列位於左側。</li>
+          </ol>
+        </li>
+        <li> <span>換頁、換章時最末頁採多欄排列、行於頁面中結束時，依以下方式處理：</span>
+          <ol>
+            <li>直排時，順其行文結束，各欄左右行數可以不一致。</li>
+            <li>橫排時，各欄的行數需平均。但因字數不足，行數無法與欄數配合時，不足的行數於最後一欄末尾留空。</li>
+          </ol>
+          <div class="note">
+            <p>中文書籍無論直、橫排大多不分欄，這項處理多來自翻譯書籍或參考日文書籍之排版方式，故承襲日文排版需求。</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+  </section>
+</section>
+<section id="line_composition"> 
+  <!--OddPage-->
+  <h2 id="h-line_composition">行內文字排版處理</h2>
+  <section id="line_composition_rules_for_punctuation_marks">
+    <h3 id="h-line_composition_rules_for_punctuation_marks">標點符號與其排版</h3>
+    <p>中文標點符號的排版在各地區有不同的處理方式，其中較顯著的差異係其字面分布——繁體中文多使用符號居中的字形樣式，而簡體中文多使用符號尾隨受注文字末端的字形樣式，並依直、橫排有不同的處理。下文將詳述繁、簡中文標點的異同及準確的配置方式。</p>
+    <p>在繁、簡中文排版中，標點符號的字面分布與形態差異為二者主要的分歧點（詳見<a href="#glyphs_sizes_and_positions_in_character_faces_of_punctuation_marks"></a>節）。進行版式配置時，需要多加留意。</p>
+    <div class="note">
+      <p>中日韓越意音文字標點符號有地區上的字形與形態差異，但萬國碼並未對其區分字碼，標點多有共用。通常，排版時使用相應的字體進行配置，或由排版引擎自動調適。</p>
+    </div>
+    <p>本節主要基於中國大陸的《標點符號用法》（GB/T 15834–2011）及台灣教育部的《重訂標點符號手冊》（2008年修訂版）。前者屬推薦標準，後者主要用於規範教科書等教育書籍，對一般出版品不具強制性。</p>
+    <section id="categories_and_usage_of_punctuation_marks">
+      <h4 id="h-categories_and_usage_of_punctuation_marks">標點符號的分類及用法</h4>
+      <section>
+        <h5 id="h-pause-or-stop-punctuation-marks">點號</h5>
+        <p>點號相對於標號，用於表示語句的停頓或暫停。分為句內點號，如頓號、逗號、分號、冒號等；及句末點號，如句號、問號、驚嘆號等。</p>
+        <ol>
+          <li>
+            <p><span class="leadin">句號、逗號與頓號</span></p>
+            <p>句號<span class="uname">U+3002 IDEOGRAPHIC FULL STOP </span>[。]、逗號<span class="uname">U+FF0C FULLWIDTH COMMA </span>[，]以及頓號<span class="uname">U+3001 IDEOGRAPHIC COMMA</span> [、]。句號表示語句結束、逗點表示語氣停頓、頓號使用於並列連用、表示次序的字詞之間。</p>
+            <div class="note">
+              <p>許多理工書籍、科技文獻、西文教科书语法书籍等內含大量西文詞句，並採用橫排，為求標點符號體例一致，也有採用<span class="uname">U+FF0E FULLWIDTH FULL STOP</span> [．]為句號、採<span class="uname">U+002C COMMA</span> [,]或<span class="uname">U+FF0C FULLWIDTH COMMA</span> [，]為逗號與頓號的案例。詳見<a href="#atypical_punctuation_marks_and_their_arrangements"></a>節。</p>
+            </div>
+          </li>
+          <li>
+            <p><span class="leadin">冒號與分號</span></p>
+            <p>冒號<span class="uname">U+FF1A FULLWIDTH COLON</span> [：]、分號<span class="uname">U+FF1B FULLWIDTH SEMICOLON</span> [；]。冒號表示引述語句開始；分號用於語句間，表示意義轉折。</p>
+          </li>
+          <li>
+            <p><span class="leadin">驚嘆號與問號</span></p>
+            <p>驚嘆號<span class="uname">U+FF01 FULLWIDTH EXCLAMATION MARK</span> [！]與問號<span class="uname">U+FF1F FULLWIDTH QUESTION MARK</span> [？]。驚嘆號及問號用於句末，前者表示驚訝，後者表示質疑。</p>
+          </li>
+        </ol>
+      </section>
+      <section>
+        <h5 id="indication_punctuation_marks">標號</h5>
+        <p>標號相對於點號，有標示詞組或語句之特定性質的作用。包含引号、括号（夾注號）、破折号、刪節號（省略号）、着重号、连接号、间隔号、书名号、专名号、分隔号。</p>
+        <ol>
+          <li>
+            <p><span class="leadin">引號</span></p>
+            <p>引號用於強調字詞，或作為引用話語、文獻的起訖邊界。引號中再次使用引號時，使用內引號。外引號與內引號有字形上的差異以便識別。引號屬於括注符號。</p>
+            <p>繁體中文採用先單、後雙的引號體例。單引號，包含開始單直角引號<span class="uname">U+300C LEFT CORNER BRACKET</span> [「]與結束單直角引號<span class="uname">U+300D RIGHT CORNER BRACKET</span> [」]；雙引號，包含開始雙直角引號<span class="uname">U+300E LEFT WHITE CORNER BRACKET</span> [『]與結束雙直角引號<span class="uname">U+300F RIGHT WHITE CORNER BRACKET</span> [』]。</p>
+            <p>簡體中文採用先雙、後單的引號體例，彎引號用於橫排、直角引號用於直排。雙引號，包含開始雙彎引號<span class="uname">U+201C LEFT DOUBLE QUOTATION MARK</span> [“]、開始雙直角引號<span class="uname">U+300E LEFT WHITE CORNER BRACKET</span> [『]、結束雙彎引號<span class="uname">U+2019 RIGHT SINGLE QUOTATION MARK</span> [”]、結束雙直角引號<span class="uname">U+300F RIGHT WHITE CORNER BRACKET</span> [』]；單引號，包含開始單彎引號<span class="uname">U+2018 LEFT SINGLE QUOTATION MARK</span> [‘]、開始單直角引號<span class="uname">U+300C LEFT CORNER BRACKET</span> [「]、結束單彎引號<span class="uname">U+2019 RIGHT SINGLE QUOTATION MARK</span> [’]、結束單直角引號<span class="uname">U+300D RIGHT CORNER BRACKET</span> [」]。</p>
+            <div class="note">
+              <p>某些繁體中文出版物亦會採用先雙、後單的引號體例。</p>
+            </div>
+            <div class="note">
+              <p>繁體中文也有使用彎引號者，但鮮少用於直排。</p>
+            </div>
+          </li>
+          <li>
+            <p><span class="leadin">括號</span></p>
+            <p>括號用於行內注釋、說明。</p>
+            <p>台灣教育部的《重訂標點符號手冊》（2008年修訂版）稱括號為夾注號，分甲式及乙式，甲式為<span class="uname">U+FF08 FULLWIDTH LEFT PARENTHESIS</span> [（]與<span class="uname">U+FF09 FULLWIDTH RIGHT PARENTHESIS</span> [）]，乙式則為一對各佔二個漢字空間的<span class="uname">U+2014 EM DASH</span> [—]（或使用連續二個「——」）。括號屬於括注符號。</p>
+            <p>中國大陸《標點符號用法》（GB/T 15834–2011）的括號基本與上述一致，但將乙式括號視為破折號的一種形式。</p>
+            <div class="note">
+              <p>其餘括號類則有：前方头括号<span class="uname">U+3010 LEFT BLACK LENTICULAR BRACKET</span> [【]、后方头括号<span class="uname">U+3011 RIGHT BLACK LENTICULAR BRACKET</span> [】]、前空心方头括号<span class="uname">U+3016 LEFT WHITE LENTICULAR BRACKET</span> [〖]、后空心方头括号<span class="uname">U+3017 RIGHT WHITE LENTICULAR BRACKET</span> [〗]、前六角括号<span class="uname">U+3014 LEFT TORTOISE SHELL BRACKET</span> [〔]、后六角括号<span class="uname">U+3015 RIGHT TORTOISE SHELL BRACKET</span> [〕]、前方括号<span class="uname">U+FF3B FULLWIDTH LEFT SQUARE BRACKET</span> [［]、后方括号<span class="uname">U+FF3D FULLWIDTH RIGHT SQUARE BRACKET</span> [］]、前花括号<span class="uname">U+FF5B FULLWIDTH LEFT CURLY BRACKET</span> [｛]、后花括号<span class="uname">U+FF5D FULLWIDTH RIGHT CURLY BRACKET</span> [｝]。</p>
+            </div>
+          </li>
+          <li>
+            <p><span class="leadin">破折號</span></p>
+            <p>破折號表示語氣或聲音的延續、語意的轉換或行文的補充。為佔二個漢字空間的<span class="uname">U+2014 EM DASH</span> [—]（或使用連續二個「——」）。</p>
+          </li>
+          <li>
+            <p><span class="leadin">刪節號／省略号</span></p>
+            <p>刪節號又作省略號，表示節略原文、語句未完或語氣的不連續。為佔二個漢字空間、包含六個省略點的<span class="uname">U+2026 HORIZONTAL ELLIPSIS</span> […]（或使用連續二個「……」）。</p>
+          </li>
+          <li>
+            <p><span class="leadin">着重號</span></p>
+            <p>着重號用於表示相應文本的強調、着重語氣或避免歧義。其形態為標注於文字底端或頂端（橫排多在下方〔底端〕、直排多在右側〔頂端〕）的圓形中黑點，可以為<span class="uname">U+25CF BLACK CIRCLE</span> [●]或<span class="uname">U+2022 BULLET</span> [•]。</p>
+            <p>台灣教育部的《重訂標點符號手冊》（2008年修訂版）中未收錄此符號，但仍可見於部分繁體中文出版品。</p>
+          </li>
+          <li>
+            <p><span class="leadin">連接號</span></p>
+            <p>連接號用於連結時空之起訖或數量之多寡，还可以用于化合物的名称或表格、插图的标号，门牌号码、电话号码等号码的连接，阿拉伯数字表示日期時年月日的區隔，复合名词中的连接，以及羅馬拼音、外来语内部的分合等等。</p>
+            <p>根据台灣教育部的《重訂標點符號手冊》，連接號分為甲式及乙式，甲式為<span class="uname">U+2013 EN DASH</span> [–]、乙式為<span class="uname">U+FF5E FULLWIDTH TILDE</span> [～]或<span class="uname">U+007E TILDE</span> [~]。</p>
+            <p>根据中国大陸的《标点符号用法》 （GB/T 15834—2011），连接号的形式有短横线[–]、一字线[—]和浪纹线[～]三种。</p>
+            <div class="note">
+              <p>《标点符号用法》 （GB/T 15834—2011）中没有指定这三个符号的码位，但是基本上可以推断一字线是<span class="uname">U+2014 EM DASH</span> [—]，浪纹线是<span class="uname">U+FF5E FULLWIDTH TILDE</span> [～]。但是对于「短横线」，该标准5.1.6節规定「横短线比汉字『一』略短，占半个字位置」，因此可以是<span class="uname">U+2013 EN DASH</span> [–]。这些连接号的实际长短根据所用处理系统和使用字體会有区别。</p>
+            </div>
+          </li>
+          <li>
+            <p><span class="leadin">間隔號</span></p>
+            <p>間隔號為<span class="uname">U+00B7 MIDDLE DOT</span> [·]。用於書名號乙式（雙書名號）分隔篇、章、卷，以及外國人名中文譯名、少數民族音譯名，分隔姓名使用。</p>
+            <p>间隔号为中文标点，当外语姓名包含西文首字母缩写作为单节时，原则上西文字母后面应该使用西文句点，如「比尔·盖茨」「B. 盖茨」。</p>
+            <p>間隔號在繁、簡中文間的用法有所不同，原則上繁體中文無論直排或橫排，都佔用一個漢字的大小；簡體中文用於分隔日期（如9·11）等情況時，可用半個漢字的大小。</p>
+            <div class="note">
+              <p>過去因大五碼未有詳細的語意定義，所以時有混用<span class="uname">U+FF0E FULLWIDTH FULL STOP</span> [．]、<span class="uname">U+2027 HYPHENATION POINT</span> [‧]、<span class="uname">U+2022 BULLET</span> [•]等字元作為間隔號的例子，建議使用<span class="uname">U+00B7 MIDDLE DOT</span> [·]。而<span class="uname">U+30FB KATAKANA MIDDLE DOT</span> [・]來自日文JIS編碼，並非中文編碼，不建議使用。</p>
+            </div>
+          </li>
+          <li>
+            <p><span class="leadin">書名號</span></p>
+            <p>書名號用於標示書名、篇名、歌曲名、影劇名、文件名、字畫名等各種作品名稱。</p>
+            <p>根据台灣教育部的《重訂標點符號手冊》（2008年修訂版），書名號分為甲式及乙式，甲式為波浪底線<span class="uname">U+FE4F WAVY LOW LINE</span> [﹏]，標注在相應文本底端，二個作品名稱相鄰時，甲式書名號間須在視覺上分離予以辨別。乙式有雙書名號<span class="uname">U+300A LEFT DOUBLE ANGLE BRACKET</span> [《]與<span class="uname">U+300B RIGHT DOUBLE ANGLE BRACKET</span> [》]、單書名號<span class="uname">U+3008 LEFT ANGLE BRACKET</span> [〈]與<span class="uname">U+3009 RIGHT ANGLE BRACKET</span> [〉]，前者用於標示書名號、後者用於標示篇名。</p>
+            <p>根据中国大陸的《标点符号用法》 （GB/T 15834—2011），无论书名、篇章名都应该使用双书名号[《》]，只有在书名号中还需要书名号时，里面一层用单书名号，外面一层用双书名号。而甲式書名號（波浪底線）僅用於古籍。</p>
+            <p>書名號乙式屬於括注符號。</p>
+            <div class="note">
+              <p>甲式書名號已甚少出現於現代的出版品，但仍可見於教科書或古籍的標示。</p>
+            </div>
+          </li>
+          <li>
+            <p><span class="leadin">專名號</span></p>
+            <p>專名號為<span class="uname">U+FF3F FULLWIDTH LOW LINE</span> [＿]，標示於專有名詞——如人名、地名等——底端之符號。</p>
+            <p>在二個專有名詞相鄰時，專名號間須在視覺上分離予以辨別。</p>
+            <div class="note">
+              <p>同甲式書名號，專名號已甚少出現於現代書籍，但仍可見於教科書或古籍的標示。</p>
+            </div>
+          </li>
+          <li>
+            <p><span class="leadin">分隔號</span></p>
+            <p>分隔號為<span class="uname">U+002F SOLIDUS</span> [/]、<span class="uname">U+FF0F FULLWIDTH SOLIDUS</span> [／]，用於標示詩的分行、音節節拍及相關文字的分隔。</p>
+            <div class="note">
+              <p>台灣教育部的《重訂標點符號手冊》（2008年修訂版）中未收錄此符號，但繁體中文出版品中多有使用，其中包含教科書。</p>
             </div>
           </li>
         </ol>
       </section>
     </section>
-
-    <section id="writing_modes">
-      <h3 id="h-writing_modes"><span class="secno">2.4 </span>文字書寫方向</h3>
-      <section id="writing_modes_in_chinese_composition">
-        <h4 id="h-writing_modes_in_chinese_composition"><span class="secno">2.4.1 </span>中文的文字書寫方向</h4>
-        <p>中文的文字書寫方向，分為直排與橫排。其中，繁體中文出版品適用直排與橫排；簡體中文出版品則多為橫排，直排書籍的案例極少。</p>
-        <div class="note"><p>中文所使用的漢字與標點符號，原則上都是正方形的文字，自活字排版時代起，無論直、橫排，都能使用相同的活字排列。但部分標點符號需配合文字書寫方向調整字面分布及方向，見<a href="#line_composition_rules_for_punctuation_marks">3.1節<!-- SECNO. IN CONTENT --></a>之詳述。</p></div>
-        <div class="note"><p>傳統上，中文書籍以直排為主，繁體中文通行地區較大程度地保留了這項傳統。然而，近年隨著翻譯或中、西文混排等書籍的數量增加，加上文書處理軟體的預設文字書寫方向的影響，橫排也逐漸成為主流。在台灣，公文、自然科學類書籍等使用橫排居多；而文學作品，如詩、小說等，仍以直排為主。直排仍為繁體中文通行地區的重要文化表徵之一。</p></div>
-        <div class="note"><p>一份印刷品中，原則上會選用統一的文字書寫方向進行排版。但直排印刷品中，頁眉、圖說、表格等多會混用橫排。同時，部分頁面，如參考書目、註釋等亦可能使用橫排呈現。</p></div>
+    <section id="glyphs_sizes_and_positions_in_character_faces_of_punctuation_marks">
+      <h4 id="h-glyphs_sizes_and_positions_in_character_faces_of_punctuation_marks">標點符號的字形、尺寸與字面分布</h4>
+      <p>標點符號的字形及用法請見<a href="#categories_and_usage_of_punctuation_marks"></a>節及<a href="#tables_of_chinese_punctuation_marks">附錄A 
+        <!-- SECNO. IN CONTENT --> 
+        </a>。繁、簡中文的標點符號在字形上未有顯著差異，二者間的區別主要係符號的尺寸與字面分布。</p>
+      <p>繁體中文標點多位於字面正中，部分標號在直、橫排中使用不同的方向以準確地標注文字；簡體中文標點多位於受注文字的末端、字面始端，部分標號在直、橫排中除了使用不同的方向外，亦有需要因文字書寫方向替換符號形式的需求，如引號（橫排使用彎引號，直排使用直角引號）。</p>
+      <p>點號，包括：頓號、逗號、分號、冒號、句號、問號、驚嘆號等，佔一個漢字的大小，直、橫排方向一致。繁體中文排版位於字面正中；簡體中文排版則位受注文字末端、字面始端偏頂端或底端一側（橫排時位字面左下角，直排時位字面右上角）。</p>
+      <p>括注符號，包括：引號、括號、書名號及篇名號（乙式）等，位受注文本的二側，佔一個漢字的大小、依文字書寫方向使用相應的標注方向。其中，引號在繁、簡中文分別採用不同的形式，繁體中文排版多使用先單、後雙（依此類推）的配對形式； 簡體中文排版則使用先雙、後單（依此類推）的配對形式，並依文字書寫方向採用相應的符號（橫排使用彎引號，直排使用直角引號）。</p>
+      <p>包括：刪節號、破折號等標號，位字面正中，佔二個漢字的空間，並不得以適配分行之由斷開或拆至二行，依文字書寫方向使用相應的標注方向。</p>
+      <p>連接號位字面正中，佔一個漢字的大小，其中，甲式連接號在橫排時，符號的直線長度應稍小於漢字「一」以避免歧義，依文字書寫方向使用相應的標注方向。</p>
+      <p>間隔號位於字面正中，佔一個漢字的大小，直、橫排方向一致。為了節省排版空間、使詞組或數字較緊湊地排列，可以使用半個漢字大小的間隔號。</p>
+      <p>標注於行間的標號需以不影響上下行文字為原則進行配置。包括：專名號、甲式書名號等二個符號，位受注文字底端（橫排位文字下方、直排位文字左側）；着重號橫排時位受注文字底端（下方）、直排時位在受注文字頂端（右側）。</p>
+      <p>分隔號位字面正中，簡體中文排版時佔半個漢字的大小；繁體中文通行地區未有相關的規定，但多數出版品多使用一個漢字的大小。</p>
+    </section>
+    <section id="atypical_punctuation_marks_and_their_arrangements">
+      <h4 id="h-atypical_punctuation_marks_and_their_arrangements">非典型的標點符號及其配置</h4>
+      <section>
+        <h5 id="h-science_and_technology_literature">科技文獻</h5>
+        <p>科技文獻中的「句號」多使用<span class="uname">U+FF0E FULLWIDTH FULL STOP</span> [．]替代<span class="uname">U+3002 IDEOGRAPHIC FULL STOP</span> [。]，以避免同拉丁字母「o」或數字「0」混淆。</p>
       </section>
-      
-      <section id="major_differences_between_horizontal_and_vertical_writing_modes">
-        <h4 id="h-major_differences_between_horizontal_and_vertical_writing_modes"><span class="secno">2.4.2 </span>橫排與直排的主要差異點</h4>
-        <p>直排與橫排的主要差異點，列舉如下：</p>
+      <section>
+        <h5 id="h-special_cases_in_TC_publications">繁體中文出版品的特殊情況</h5>
+        <p>在繁體中文的古籍、科技文獻、科學類教科書或常引西文的書籍中，亦可見使用位受注文字末端、字面始端的點號（頓號、逗號、句號），類似簡體中文或日文標點符號，以保持中、西文標點體例一致。</p>
+      </section>
+    </section>
+    <section id="prohibition_rules_for_line_start_end">
+      <h4 id="h-prohibition_rules_for_line_start_end">行首行尾禁則</h4>
+      <p>為了保持閱讀順暢、體例一致，多數標點符號的位置有其限制，通常一個標點符號依其性質，禁止出現在一行之首或之末。這項規則自活字排版時代開始通行。在中國大陸，《標點符號用法》（GB/T 15834–2011）規定了簡體中文標點在行間的位置；繁體中文通行地區雖未有相應的規範，但多數出版品皆以此處所述規則對標點符號進行配置。</p>
+      <div class="note">
+        <p>在繁體中文裡，並未嚴格禁止標點符號出現於行首，於活字排版時代，完全不處理標點禁則的出版品也相當多見。</p>
+      </div>
+      <div class="note">
+        <p>繁體中文出版品中，報紙、雜誌多採分欄式排版，此時由於一行字數較少，也有完全不使用行首行尾禁則的作法。</p>
+      </div>
+      <div class="note">
+        <p>排版時，若不希望標點符號出現於行頭時，僅能由前行取末字至下一行，前行多出來的空間採平均排列的方式處理。但若遇連續標點符號，如[。』」]等狀況，可能取一字會造成前行字距過大，這時則採寬鬆處理，允許標點出現於行頭，以避免字距過鬆造成體例不良。</p>
+      </div>
+      <p>包括：點號（頓號、逗號、句號、冒號、分號、驚嘆號、問號）、結束引號、結束括號、結束乙式書名號（篇名號）、刪節號、連接號、間隔號等符號，不得出現於一行之首。</p>
+      <p>包括：開始引號等、開始括號、開始單雙書名號等符號，不得出現於一行之尾。</p>
+    </section>
+    <section id="prohibition_rules_for_unbreakable_marks">
+      <h4 id="h-prohibition_rules_for_unbreakable_marks">符號分離禁則</h4>
+      <section>
+        <h5 id="h-unbreakable_marks_punctuation">標點符號</h5>
+        <p>以下標點符號佔用二個漢字的空間，在行間應為一體，視作一個字元存在，不得以適配分行之由拆至二行。</p>
         <ol>
           <li>
-            <span>文字、行、欄以及頁面配置、裝訂方向</span>
-            <ol>
-              <li>
-                <span>直排時</span>
-                <ul>
-                  <li>文字由上而下，行由右而左排列。</li>
-                  <li>欄水平切割，上下分欄。</li>
-                  <li>頁面由封面開始，由右向左進行配置（由左向右翻頁）。</li>
-                </ul>
-              </li>
-              <li>
-                <span>橫排時</span>
-                <ul>
-                  <li>
-                    <span>文字由左而右，行由上而下排列。</span>
-                    <div class="note"><p>中文傳統上僅使用直排，當文字需要橫向排列時，採用每行一字、由右向左的規則，且不分欄，形成視覺上由右向左的橫排，此為直排的特例。過去常見於匾額、報紙、雜誌的標題，目前多為由左而右的橫排書寫方向取代。</p></div>
-                  </li>
-                  <li>欄垂直切割，左右分欄。</li>
-                  <li>頁面由封面開始，由左而右進行配置（由右向左翻頁）。</li>
-                </ul>
-              </li>
-            </ol>
+            <p><span class="leadin">乙式括號與破折號</span></p>
+            <p>乙式括號與破折號為佔二個漢字空間的<span class="uname">U+2014 EM DASH</span> [—]（或使用連續二個「——」）。</p>
           </li>
           <li>
-            <span>文中包含西文、阿拉伯數字時，如下配置：</span>
-            <ol>
-              <li>
-                <span>直排時，西文或阿拉伯數字有以下三種配置方式：</span>
-                <ul>
-                  <li>
-                    <span>與漢字採相同的書寫方向，依字母字字排列，主要用於單一西文字母或阿拉伯數字、首字母縮寫等。</span>
-                    <div class="note"><p>西文字母或阿拉伯數字，採用此配置時，需使用與漢字相同尺寸、字幅固定的等寬字體，而非比例字體。</p></div>
-                  </li>
-                  <li>文字以順時鐘方向旋轉90度。主要用於西文的單字詞、語句等。</li>
-                  <li>
-                    <span>保持正常方向，橫排處理（如日文的縱中橫排）。主要應用於二至三位數字。</span>
-                    <div class="note"><p>數字於直排行內橫排，原則上不超過一個漢字的字幅。這是從活字印刷時代起，每行寬度固定所致。故直排時，西文字母與阿拉伯數字橫排不限於二位數，但原則上不能超過一個漢字。現代常見的用法還包括[3.0]、[A+]、[2B]等。</p></div>
-                  </li>
-                </ul>
-              </li>
-              <li>橫排時，以正常方向配置。</li>
-            </ol>
+            <p><span class="leadin">刪節號／省略号</span></p>
+            <p>刪節號／省略號為佔二個漢字空間、包含六個省略點的<span class="uname">U+2026 HORIZONTAL ELLIPSIS</span> […]（或使用連續二個「……]」）。</p>
+            <p>《標點符號用法》（GB/T 15834–2011）5.1.5節还规定，两个省略号连用时，占四个漢字位置并须单独占一行。</p>
           </li>
-          <li>
-            <span>表格、圖片等標題列的位置</span>
-            <ol>
-              <li>直排時，表格橫列之標題列為上方，但直行之標題列位於右側。</li>
-              <li>橫排時，表格橫列之標題列為上方，但直行之標題列位於左側。</li>
-            </ol>
-          </li>
-          <li>
-            <span>換頁、換章時最末頁採多欄排列、行於頁面中結束時，依以下方式處理：</span>
-            <ol>
-              <li>直排時，順其行文結束，各欄左右行數可以不一致。</li>
-              <li>橫排時，各欄的行數需平均。但因字數不足，行數無法與欄數配合時，不足的行數於最後一欄末尾留空。</li>
-            </ol>
-            <div class="note"><p>中文書籍無論直、橫排大多不分欄，這項處理多來自翻譯書籍或參考日文書籍之排版方式，故承襲日文排版需求。</p></div>
-          </li>
+        </ol>
+      </section>
+      <section>
+        <h5 id="h-digits_and_their_prefix_and_suffix">數字及其相應的前後綴單位符號</h5>
+      </section>
+      <section>
+        <h5 id="h-annotation_marks">注釋符號</h5>
+      </section>
+    </section>
+    <section id="compression_rules_for_consecutive_punctuation_marks">
+      <h4 id="h-compression_rules_for_consecutive_punctuation_marks">標點符號的擠壓</h4>
+      <p>中文的標點符號多佔一個（或以上）漢字的空間，使其在字間易於識別、適合配置及排版。然而，在標點前後不為文字時，標點的空白空間將顯突兀。對標點符號的空餘空間進行擠壓，可使文字體裁更加緊湊、易讀。</p>
+      <p>標點符號的擠壓通常分為二種——其一，標點符號連續出現時，對符號間相鄰的空隙進行調整；另一種則是符號出現於行首或行尾時，調整該符號字面位置，縮減行首或行尾的空隙。</p>
+      <section>
+        <h5 id="h-compression_of_adjacent_punctuation_marks">連續標點符號的擠壓</h5>
+        <p>在開始括注符號、結束括注符號、頓號、逗號、句號及間隔號等連續排列時，以下的空隙調整規則得以使文字體裁更加緊湊、易讀。</p>
+        <ol>
+          <li>簡體中文排版中，當結束括注符號出現於頓號、逗號、句號之後，縮減二者間二分之一個漢字大小的空白。（繁體中文標點不適用此規則）</li>
+          <li>當頓號、逗號、句號出現在結束括注符號之後，縮減其間二分之一個漢字大小的空白。</li>
+          <li>當開始括注符號出現於頓號、逗號、句號之後，縮減其間二分之一個漢字大小的空白。</li>
+          <li>當開始括注符號出現於結束括注符號之後，縮減其間二分之一個漢字大小的空白。</li>
+          <li>當二個（或以上）開始括注符號連續排列時，縮減其間二分之一個漢字大小的空白。</li>
+          <li>當二個（或以上）結束括注符號連續排列時，縮減其間二分之一個漢字大小的空白。</li>
+          <li>當間隔號出現於結束括注符號之後，縮減其間四分之一個漢字大小的空白。</li>
+          <li>當間隔號出現於開始括注符號之前，縮減其間四分之一個漢字大小的空白。</li>
+        </ol>
+      </section>
+      <section>
+        <h5 id="h-compression_of_punctuation_marks_at_line_start">行首行尾標點擠壓</h5>
+        <p>標點符號出現在一行之首或之末時，以下的空隙調整規則得以使文字體裁更加緊湊、易讀。</p>
+        <ol>
+          <li>使用段首縮進格式的排版中，若首行行首出現開始括注符號，可以縮減該符號始側二分之一個漢字大小的空白。</li>
+          <li>當行首出現開始括注符號，可以縮減該符號始側二分之一個漢字大小的空白。</li>
+          <li>當行尾出現結束括注符號時，可以縮減其末側二分之一個漢字大小的空白。</li>
+          <li>簡體中文排版中，當行尾出現頓號、逗號、句號時，可以縮減該符號末側二分之一個漢字大小的空白。（繁體中文標點不適用此規則）</li>
         </ol>
       </section>
     </section>
-
-  </section>
-
-  <section id="line_composition">
-    <!--OddPage-->
-    <h2 id="h-line_composition"><span class="secno">3. </span>行內文字排版處理</h2>
-    
-    <section id="line_composition_rules_for_punctuation_marks">
-      <h3 id="h-line_composition_rules_for_punctuation_marks"><span class="secno">3.1 </span>標點符號與其排版</h3>
-      <p>中文標點符號的排版在各地區有不同的處理方式，其中較顯著的差異係其字面分布——繁體中文多使用符號居中的字形樣式，而簡體中文多使用符號尾隨受注文字末端的字形樣式，並依直、橫排有不同的處理。下文將詳述繁、簡中文標點的異同及準確的配置方式。</p>
-      <p>在繁、簡中文排版中，標點符號的字面分布與形態差異為二者主要的分歧點（詳見<a href="#glyphs_sizes_and_positions_in_character_faces_of_punctuation_marks">3.1.2節<!-- SECNO. IN CONTENT --></a>）。進行版式配置時，需要多加留意。</p>
-      <div class="note"><p>中日韓越意音文字標點符號有地區上的字形與形態差異，但萬國碼並未對其區分字碼，標點多有共用。通常，排版時使用相應的字體進行配置，或由排版引擎自動調適。</p></div>
-      <p>本節主要基於中國大陸的《標點符號用法》（GB/T 15834–2011）及台灣教育部的《重訂標點符號手冊》（2008年修訂版）。前者屬推薦標準，後者主要用於規範教科書等教育書籍，對一般出版品不具強制性。</p>
-      
-      <section id="categories_and_usage_of_punctuation_marks">
-        <h4 id="h-categories_and_usage_of_punctuation_marks"><span class="secno">3.1.1 </span>標點符號的分類及用法</h4>
-        <ol>
-          <li>
-            <h5>點號</h5>
-            <p>點號相對於標號，用於表示語句的停頓或暫停。分為句內點號，如頓號、逗號、分號、冒號等；及句末點號，如句號、問號、驚嘆號等。</p>
-            <ol>
-              <li>
-                <h6>句號、逗號與頓號</h6>
-                <p>句號<span class="uname">U+3002 IDEOGRAPHIC FULL STOP </span>[。]、逗號<span class="uname">U+FF0C FULLWIDTH COMMA </span>[，]以及頓號<span class="uname">U+3001 IDEOGRAPHIC COMMA</span> [、]。句號表示語句結束、逗點表示語氣停頓、頓號使用於並列連用、表示次序的字詞之間。</p>
-                <div class="note"><p>許多理工書籍、科技文獻、西文教科书语法书籍等內含大量西文詞句，並採用橫排，為求標點符號體例一致，也有採用<span class="uname">U+FF0E FULLWIDTH FULL STOP</span> [．]為句號、採<span class="uname">U+002C COMMA</span> [,]或<span class="uname">U+FF0C FULLWIDTH COMMA</span> [，]為逗號與頓號的案例。詳見<a href="#atypical_punctuation_marks_and_their_arrangements">3.1.3節<!-- SECNO. IN CONTENT --></a>。</p></div>
-              </li>
-              <li>
-                <h6>冒號與分號</h6>
-                <p>冒號<span class="uname">U+FF1A FULLWIDTH COLON</span> [：]、分號<span class="uname">U+FF1B FULLWIDTH SEMICOLON</span> [；]。冒號表示引述語句開始；分號用於語句間，表示意義轉折。</p>
-              </li>
-              <li>
-                <h6>驚嘆號與問號</h6>
-                <p>驚嘆號<span class="uname">U+FF01 FULLWIDTH EXCLAMATION MARK</span> [！]與問號<span class="uname">U+FF1F FULLWIDTH QUESTION MARK</span> [？]。驚嘆號及問號用於句末，前者表示驚訝，後者表示質疑。</p>
-              </li>
-            </ol>
-          </li>
-
-          <li>
-            <h5>標號</h5>
-            <p>標號相對於點號，有標示詞組或語句之特定性質的作用。包含引号、括号（夾注號）、破折号、刪節號（省略号）、着重号、连接号、间隔号、书名号、专名号、分隔号。</p>
-            <ol>
-              <li>
-                <h6>引號</h6>
-                <p>引號用於強調字詞，或作為引用話語、文獻的起訖邊界。引號中再次使用引號時，使用內引號。外引號與內引號有字形上的差異以便識別。引號屬於括注符號。</p>
-                <p>繁體中文採用先單、後雙的引號體例。單引號，包含開始單直角引號<span class="uname">U+300C LEFT CORNER BRACKET</span> [「]與結束單直角引號<span class="uname">U+300D RIGHT CORNER BRACKET</span> [」]；雙引號，包含開始雙直角引號<span class="uname">U+300E LEFT WHITE CORNER BRACKET</span> [『]與結束雙直角引號<span class="uname">U+300F RIGHT WHITE CORNER BRACKET</span> [』]。</p>
-                <p>簡體中文採用先雙、後單的引號體例，彎引號用於橫排、直角引號用於直排。雙引號，包含開始雙彎引號<span class="uname">U+201C LEFT DOUBLE QUOTATION MARK</span> [“]、開始雙直角引號<span class="uname">U+300E LEFT WHITE CORNER BRACKET</span> [『]、結束雙彎引號<span class="uname">U+2019 RIGHT SINGLE QUOTATION MARK</span> [”]、結束雙直角引號<span class="uname">U+300F RIGHT WHITE CORNER BRACKET</span> [』]；單引號，包含開始單彎引號<span class="uname">U+2018 LEFT SINGLE QUOTATION MARK</span> [‘]、開始單直角引號<span class="uname">U+300C LEFT CORNER BRACKET</span> [「]、結束單彎引號<span class="uname">U+2019 RIGHT SINGLE QUOTATION MARK</span> [’]、結束單直角引號<span class="uname">U+300D RIGHT CORNER BRACKET</span> [」]。</p>
-                <div class="note"><p>某些繁體中文出版物亦會採用先雙、後單的引號體例。</p></div>
-                <div class="note"><p>繁體中文也有使用彎引號者，但鮮少用於直排。</p></div>
-              </li>
-              <li>
-                <h6>括號</h6>
-                <p>括號用於行內注釋、說明。</p>
-                <p>台灣教育部的《重訂標點符號手冊》（2008年修訂版）稱括號為夾注號，分甲式及乙式，甲式為<span class="uname">U+FF08 FULLWIDTH LEFT PARENTHESIS</span> [（]與<span class="uname">U+FF09 FULLWIDTH RIGHT PARENTHESIS</span> [）]，乙式則為一對各佔二個漢字空間的<span class="uname">U+2014 EM DASH</span> [—]（或使用連續二個「——」）。括號屬於括注符號。</p>
-                <p>中國大陸《標點符號用法》（GB/T 15834–2011）的括號基本與上述一致，但將乙式括號視為破折號的一種形式。</p>
-                <div class="note"><p>其餘括號類則有：前方头括号<span class="uname">U+3010 LEFT BLACK LENTICULAR BRACKET</span> [【]、后方头括号<span class="uname">U+3011 RIGHT BLACK LENTICULAR BRACKET</span> [】]、前空心方头括号<span class="uname">U+3016 LEFT WHITE LENTICULAR BRACKET</span> [〖]、后空心方头括号<span class="uname">U+3017 RIGHT WHITE LENTICULAR BRACKET</span> [〗]、前六角括号<span class="uname">U+3014 LEFT TORTOISE SHELL BRACKET</span> [〔]、后六角括号<span class="uname">U+3015 RIGHT TORTOISE SHELL BRACKET</span> [〕]、前方括号<span class="uname">U+FF3B FULLWIDTH LEFT SQUARE BRACKET</span> [［]、后方括号<span class="uname">U+FF3D FULLWIDTH RIGHT SQUARE BRACKET</span> [］]、前花括号<span class="uname">U+FF5B FULLWIDTH LEFT CURLY BRACKET</span> [｛]、后花括号<span class="uname">U+FF5D FULLWIDTH RIGHT CURLY BRACKET</span> [｝]。</p></div>
-              </li>
-              <li>
-                <h6>破折號</h6>
-                <p>破折號表示語氣或聲音的延續、語意的轉換或行文的補充。為佔二個漢字空間的<span class="uname">U+2014 EM DASH</span> [—]（或使用連續二個「——」）。</p>
-              </li>
-              <li>
-                <h6>刪節號／省略号</h6>
-                <p>刪節號又作省略號，表示節略原文、語句未完或語氣的不連續。為佔二個漢字空間、包含六個省略點的<span class="uname">U+2026 HORIZONTAL ELLIPSIS</span> […]（或使用連續二個「……」）。</p>
-              </li>
-              <li>
-                <h6>着重號</h6>
-                <p>着重號用於表示相應文本的強調、着重語氣或避免歧義。其形態為標注於文字底端或頂端（橫排多在下方〔底端〕、直排多在右側〔頂端〕）的圓形中黑點，可以為<span class="uname">U+25CF BLACK CIRCLE</span> [●]或<span class="uname">U+2022 BULLET</span> [•]。</p>
-                <p>台灣教育部的《重訂標點符號手冊》（2008年修訂版）中未收錄此符號，但仍可見於部分繁體中文出版品。</p>
-              </li>
-              <li>
-                <h6>連接號</h6>
-                <p>連接號用於連結時空之起訖或數量之多寡，还可以用于化合物的名称或表格、插图的标号，门牌号码、电话号码等号码的连接，阿拉伯数字表示日期時年月日的區隔，复合名词中的连接，以及羅馬拼音、外来语内部的分合等等。</p>
-
-                <p>根据台灣教育部的《重訂標點符號手冊》，連接號分為甲式及乙式，甲式為<span class="uname">U+2013 EN DASH</span> [–]、乙式為<span class="uname">U+FF5E FULLWIDTH TILDE</span> [～]或<span class="uname">U+007E TILDE</span> [~]。</p>
-
-                <p>根据中国大陸的《标点符号用法》 （GB/T 15834—2011），连接号的形式有短横线[–]、一字线[—]和浪纹线[～]三种。</p>
-
-                <div class="note"><p>《标点符号用法》 （GB/T 15834—2011）中没有指定这三个符号的码位，但是基本上可以推断一字线是<span class="uname">U+2014 EM DASH</span> [—]，浪纹线是<span class="uname">U+FF5E FULLWIDTH TILDE</span> [～]。但是对于「短横线」，该标准5.1.6節规定「横短线比汉字『一』略短，占半个字位置」，因此可以是<span class="uname">U+2013 EN DASH</span> [–]。这些连接号的实际长短根据所用处理系统和使用字體会有区别。</p></div>
-              </li>
-              <li>
-                <h6>間隔號</h6>
-                <p>間隔號為<span class="uname">U+00B7 MIDDLE DOT</span> [·]。用於書名號乙式（雙書名號）分隔篇、章、卷，以及外國人名中文譯名、少數民族音譯名，分隔姓名使用。</p>
-                <p>间隔号为中文标点，当外语姓名包含西文首字母缩写作为单节时，原则上西文字母后面应该使用西文句点，如「比尔·盖茨」「B. 盖茨」。</p>
-                <p>間隔號在繁、簡中文間的用法有所不同，原則上繁體中文無論直排或橫排，都佔用一個漢字的大小；簡體中文用於分隔日期（如9·11）等情況時，可用半個漢字的大小。</p>
-                <div class="note"><p>過去因大五碼未有詳細的語意定義，所以時有混用<span class="uname">U+FF0E FULLWIDTH FULL STOP</span> [．]、<span class="uname">U+2027 HYPHENATION POINT</span> [‧]、<span class="uname">U+2022 BULLET</span> [•]等字元作為間隔號的例子，建議使用<span class="uname">U+00B7 MIDDLE DOT</span> [·]。而<span class="uname">U+30FB KATAKANA MIDDLE DOT</span> [・]來自日文JIS編碼，並非中文編碼，不建議使用。</p></div>
-              </li>
-              <li>
-                <h6>書名號</h6>
-                <p>書名號用於標示書名、篇名、歌曲名、影劇名、文件名、字畫名等各種作品名稱。</p>
-                <p>根据台灣教育部的《重訂標點符號手冊》（2008年修訂版），書名號分為甲式及乙式，甲式為波浪底線<span class="uname">U+FE4F WAVY LOW LINE</span> [﹏]，標注在相應文本底端，二個作品名稱相鄰時，甲式書名號間須在視覺上分離予以辨別。乙式有雙書名號<span class="uname">U+300A LEFT DOUBLE ANGLE BRACKET</span> [《]與<span class="uname">U+300B RIGHT DOUBLE ANGLE BRACKET</span> [》]、單書名號<span class="uname">U+3008 LEFT ANGLE BRACKET</span> [〈]與<span class="uname">U+3009 RIGHT ANGLE BRACKET</span> [〉]，前者用於標示書名號、後者用於標示篇名。</p>
-                <p>根据中国大陸的《标点符号用法》 （GB/T 15834—2011），无论书名、篇章名都应该使用双书名号[《》]，只有在书名号中还需要书名号时，里面一层用单书名号，外面一层用双书名号。而甲式書名號（波浪底線）僅用於古籍。</p>
-                <p>書名號乙式屬於括注符號。</p>
-                <div class="note"><p>甲式書名號已甚少出現於現代的出版品，但仍可見於教科書或古籍的標示。</p></div>
-              </li>
-              <li>
-                <h6>專名號</h6>
-                <p>專名號為<span class="uname">U+FF3F FULLWIDTH LOW LINE</span> [＿]，標示於專有名詞——如人名、地名等——底端之符號。</p>
-                <p>在二個專有名詞相鄰時，專名號間須在視覺上分離予以辨別。</p>
-                <div class="note"><p>同甲式書名號，專名號已甚少出現於現代書籍，但仍可見於教科書或古籍的標示。</p></div>
-              </li>
-              <li>
-                <h6>分隔號</h6>
-                <p>分隔號為<span class="uname">U+002F SOLIDUS</span> [/]、<span class="uname">U+FF0F FULLWIDTH SOLIDUS</span> [／]，用於標示詩的分行、音節節拍及相關文字的分隔。</p>
-                <div class="note"><p>台灣教育部的《重訂標點符號手冊》（2008年修訂版）中未收錄此符號，但繁體中文出版品中多有使用，其中包含教科書。</p></div>
-              </li>
-            </ol>
-          </li>
-        </ol>
-      </section>
-
-      <section id="glyphs_sizes_and_positions_in_character_faces_of_punctuation_marks">
-        <h4 id="h-glyphs_sizes_and_positions_in_character_faces_of_punctuation_marks"><span class="secno">3.1.2 </span>標點符號的字形、尺寸與字面分布</h4>
-        <p>標點符號的字形及用法請見<a href="#categories_and_usage_of_punctuation_marks">3.1.1節<!-- SECNO. IN CONTENT --></a>及<a href="#tables_of_chinese_punctuation_marks">附錄A<!-- SECNO. IN CONTENT --></a>。繁、簡中文的標點符號在字形上未有顯著差異，二者間的區別主要係符號的尺寸與字面分布。</p>
-        <p>繁體中文標點多位於字面正中，部分標號在直、橫排中使用不同的方向以準確地標注文字；簡體中文標點多位於受注文字的末端、字面始端，部分標號在直、橫排中除了使用不同的方向外，亦有需要因文字書寫方向替換符號形式的需求，如引號（橫排使用彎引號，直排使用直角引號）。</p>
-        <p>點號，包括：頓號、逗號、分號、冒號、句號、問號、驚嘆號等，佔一個漢字的大小，直、橫排方向一致。繁體中文排版位於字面正中；簡體中文排版則位受注文字末端、字面始端偏頂端或底端一側（橫排時位字面左下角，直排時位字面右上角）。</p>
-        <p>括注符號，包括：引號、括號、書名號及篇名號（乙式）等，位受注文本的二側，佔一個漢字的大小、依文字書寫方向使用相應的標注方向。其中，引號在繁、簡中文分別採用不同的形式，繁體中文排版多使用先單、後雙（依此類推）的配對形式； 簡體中文排版則使用先雙、後單（依此類推）的配對形式，並依文字書寫方向採用相應的符號（橫排使用彎引號，直排使用直角引號）。</p>
-        <p>包括：刪節號、破折號等標號，位字面正中，佔二個漢字的空間，並不得以適配分行之由斷開或拆至二行，依文字書寫方向使用相應的標注方向。</p>
-        <p>連接號位字面正中，佔一個漢字的大小，其中，甲式連接號在橫排時，符號的直線長度應稍小於漢字「一」以避免歧義，依文字書寫方向使用相應的標注方向。</p>
-        <p>間隔號位於字面正中，佔一個漢字的大小，直、橫排方向一致。為了節省排版空間、使詞組或數字較緊湊地排列，可以使用半個漢字大小的間隔號。</p>
-        <p>標注於行間的標號需以不影響上下行文字為原則進行配置。包括：專名號、甲式書名號等二個符號，位受注文字底端（橫排位文字下方、直排位文字左側）；着重號橫排時位受注文字底端（下方）、直排時位在受注文字頂端（右側）。</p>
-        <p>分隔號位字面正中，簡體中文排版時佔半個漢字的大小；繁體中文通行地區未有相關的規定，但多數出版品多使用一個漢字的大小。</p>
-      </section>
-
-      <section id="atypical_punctuation_marks_and_their_arrangements">
-        <h4 id="h-atypical_punctuation_marks_and_their_arrangements"><span class="secno">3.1.3 </span>非典型的標點符號及其配置</h4>
-        <ol>
-          <li>
-            <h5>科技文獻</h5>
-            <p>科技文獻中的「句號」多使用<span class="uname">U+FF0E FULLWIDTH FULL STOP</span> [．]替代<span class="uname">U+3002 IDEOGRAPHIC FULL STOP</span> [。]，以避免同拉丁字母「o」或數字「0」混淆。</p>
-          </li>
-
-          <li>
-            <h5>繁體中文出版品的特殊情況</h5>
-            <p>在繁體中文的古籍、科技文獻、科學類教科書或常引西文的書籍中，亦可見使用位受注文字末端、字面始端的點號（頓號、逗號、句號），類似簡體中文或日文標點符號，以保持中、西文標點體例一致。</p>
-          </li>
-        </ol>
-      </section>
-
-      <section id="prohibition_rules_for_line_start_end">
-        <h4 id="h-prohibition_rules_for_line_start_end"><span class="secno">3.1.4 </span>行首行尾禁則</h4>
-        <p>為了保持閱讀順暢、體例一致，多數標點符號的位置有其限制，通常一個標點符號依其性質，禁止出現在一行之首或之末。這項規則自活字排版時代開始通行。在中國大陸，《標點符號用法》（GB/T 15834–2011）規定了簡體中文標點在行間的位置；繁體中文通行地區雖未有相應的規範，但多數出版品皆以此處所述規則對標點符號進行配置。</p>
-        <div class="note"><p>在繁體中文裡，並未嚴格禁止標點符號出現於行首，於活字排版時代，完全不處理標點禁則的出版品也相當多見。</p></div>
-        <div class="note"><p>繁體中文出版品中，報紙、雜誌多採分欄式排版，此時由於一行字數較少，也有完全不使用行首行尾禁則的作法。</p></div>
-        <div class="note"><p>排版時，若不希望標點符號出現於行頭時，僅能由前行取末字至下一行，前行多出來的空間採平均排列的方式處理。但若遇連續標點符號，如[。』」]等狀況，可能取一字會造成前行字距過大，這時則採寬鬆處理，允許標點出現於行頭，以避免字距過鬆造成體例不良。</p></div>
-        <p>包括：點號（頓號、逗號、句號、冒號、分號、驚嘆號、問號）、結束引號、結束括號、結束乙式書名號（篇名號）、刪節號、連接號、間隔號等符號，不得出現於一行之首。</p>
-        <p>包括：開始引號等、開始括號、開始單雙書名號等符號，不得出現於一行之尾。</p>
-      </section>
-
-      <section id="prohibition_rules_for_unbreakable_marks">
-        <h4 id="h-prohibition_rules_for_unbreakable_marks"><span class="secno">3.1.5 </span>符號分離禁則</h4>
-        <ol>
-          <li>
-            <h5>標點符號</h5>
-            <p>以下標點符號佔用二個漢字的空間，在行間應為一體，視作一個字元存在，不得以適配分行之由拆至二行。</p>
-            <ol>
-              <li>
-                <h6>乙式括號與破折號</h6>
-                <p>乙式括號與破折號為佔二個漢字空間的<span class="uname">U+2014 EM DASH</span> [—]（或使用連續二個「——」）。</p>
-              </li>
-              <li>
-                <h6>刪節號／省略号</h6>
-                <p>刪節號／省略號為佔二個漢字空間、包含六個省略點的<span class="uname">U+2026 HORIZONTAL ELLIPSIS</span> […]（或使用連續二個「……]」）。</p>
-                <p>《標點符號用法》（GB/T 15834–2011）5.1.5節还规定，两个省略号连用时，占四个漢字位置并须单独占一行。</p>
-              </li>
-            </ol>
-          </li>
-
-          <li>
-            <h5>數字及其相應的前後綴單位符號</h5>
-          </li>
-
-          <li>
-            <h5>注釋符號</h5>
-          </li>
-        </ol>
-      </section>
-
-      <section id="compression_rules_for_consecutive_punctuation_marks">
-        <h4 id="h-compression_rules_for_consecutive_punctuation_marks"><span class="secno">3.1.6 </span>標點符號的擠壓</h4>
-        <p>中文的標點符號多佔一個（或以上）漢字的空間，使其在字間易於識別、適合配置及排版。然而，在標點前後不為文字時，標點的空白空間將顯突兀。對標點符號的空餘空間進行擠壓，可使文字體裁更加緊湊、易讀。</p>
-        <p>標點符號的擠壓通常分為二種——其一，標點符號連續出現時，對符號間相鄰的空隙進行調整；另一種則是符號出現於行首或行尾時，調整該符號字面位置，縮減行首或行尾的空隙。</p>
-        
-        <ol>
-          <li>
-            <h5>連續標點符號的擠壓</h5>
-            <p>在開始括注符號、結束括注符號、頓號、逗號、句號及間隔號等連續排列時，以下的空隙調整規則得以使文字體裁更加緊湊、易讀。</p>
-            <ol>
-              <li>簡體中文排版中，當結束括注符號出現於頓號、逗號、句號之後，縮減二者間二分之一個漢字大小的空白。（繁體中文標點不適用此規則）</li>
-              <li>當頓號、逗號、句號出現在結束括注符號之後，縮減其間二分之一個漢字大小的空白。</li>
-              <li>當開始括注符號出現於頓號、逗號、句號之後，縮減其間二分之一個漢字大小的空白。</li>
-              <li>當開始括注符號出現於結束括注符號之後，縮減其間二分之一個漢字大小的空白。</li>
-              <li>當二個（或以上）開始括注符號連續排列時，縮減其間二分之一個漢字大小的空白。</li>
-              <li>當二個（或以上）結束括注符號連續排列時，縮減其間二分之一個漢字大小的空白。</li>
-              <li>當間隔號出現於結束括注符號之後，縮減其間四分之一個漢字大小的空白。</li>
-              <li>當間隔號出現於開始括注符號之前，縮減其間四分之一個漢字大小的空白。</li>
-            </ol>
-          </li>
-
-          <li>
-            <h5>行首行尾標點擠壓</h5>
-            <p>標點符號出現在一行之首或之末時，以下的空隙調整規則得以使文字體裁更加緊湊、易讀。</p>
-            <ol>
-              <li>使用段首縮進格式的排版中，若首行行首出現開始括注符號，可以縮減該符號始側二分之一個漢字大小的空白。</li>
-              <li>當行首出現開始括注符號，可以縮減該符號始側二分之一個漢字大小的空白。</li>
-              <li>當行尾出現結束括注符號時，可以縮減其末側二分之一個漢字大小的空白。</li>
-              <li>簡體中文排版中，當行尾出現頓號、逗號、句號時，可以縮減該符號末側二分之一個漢字大小的空白。（繁體中文標點不適用此規則）</li>
-            </ol>
-          </li>
-        </ol>
-      </section>
-
-      <section id="hanging_punctuation_marks_at_line_end">
-        <h4 id="h-hanging_punctuation_marks_at_line_end"><span class="secno">3.1.7 </span>行尾點號懸掛</h4>
-        <p>絕多數的中文出版品沒有懸掛行尾點號的慣例。參考<a href="http://www.w3.org/TR/jlreq/#positioning_of_punctuation_marks">日文排版</a>的做法，點號懸掛是行首標點禁則處理方式的延伸，可以避免文字及點號在前後行的移動，甚而導致前行字距不一的問題。</p>
-        <p>通常，適合行尾懸掛的點號有頓號、逗號及句號三者。簡體中文排版中，其餘點號因其字面分布偏向受注文字一側、字面始端，亦可進行行尾懸掛配置。</p>
-        <p>若點號（頓號、逗號或句號）將出現於一行之首，可將其置於前一行的行尾端、突出版心。</p>
-        <p>然而，由於繁體中文的點號位於字面正中，若在橫排時使用行尾懸掛，體例可能顯得突兀、不良。故橫排時，繁體中文不做行尾懸掛配置；但可用於直排。</p>
-        <p>連續多個標點符號的情況下，不作行尾點號懸掛的配置。</p>
-      </section>      
-    </section>
-
-    <section id="chinese_and_western_mixed_text_composition">
-      <h3 id="h-chinese_and_western_mixed_text_composition"><span class="secno">3.2 </span>中、西文混排處理</h3>
-      
-      <section id="composition_of_chinese_and_western_mixed_text">
-        <h4 id="h-composition_of_chinese_and_western_mixed_text"><span class="secno">3.2.1 </span>中文與西文之混排</h4>
-        <p>中文排版中，漢字與拉丁字母、希臘字母或阿拉伯數字等西文混排的狀況經常出現，以下列舉部分範例。</p>
-        <ol>
-          <li>使用西文字母作為記號使用，如「A」「B」。</li>
-          <li>直接使用如「editor」的西文單字詞。</li>
-          <li>使用如DTP、GDP等與組織名、專有名詞等首字母縮寫。</li>
-          <li>呈現西文文獻等之作者名、書名等採原本表計的方式呈現。</li>
-          <li>使用阿拉伯數字表示紀年、數量詞、編號等，如「1999年」。</li>
-        </ol>
-        <p>項目符號與標題編號、單位符號、元素符號、數學符號等也多有西文，由此可知，日常使用上中、西文的混排非常常見。</p>
-        <div class="note"><p>若無特別提示，本文使用之「阿拉伯數字」皆指西方語言或歐洲形式的印度－阿拉伯數字。</p></div>
-        <p>過去，因計算機排版技術不甚精良，多使用「全形ASCII字元」以達整齊等視覺排版效果。現今在文本儲存時，應避免使用該區段之拉丁字母及數字字元，交由排版引擎處理比例字體、等寬字體等顯示需求。</p>
-        <p>中西混排中，由于正文是中文，原则上应该使用中文标点，遵守中文标点的习惯用法。但是，科学技术中文图书，如果涉及公式较多，句号可以统一使用西文句号<span class="uname">U+002E FULL STOP</span> [.]，省略号使用英文的三点省略号；中文版西文语法教材之类的图书，西文例句较多且多与中文混排时，句号可以统一使用西文句号[.]。</p>
-      </section>
-
-      <section id="mixed_text_composition_in_horizontal_writing_mode">
-        <h4 id="h-mixed_text_composition_in_horizontal_writing_mode"><span class="secno">3.2.2 </span>橫排的中、西文混排配置</h4>
-        <p>橫排時，西文使用比例字體；阿拉伯數字則常用比例字體或等寬字體。原則上，漢字與西文字母、數字間使用四分之一個漢字寬的字距或空白。但西文出現在行頭或行尾時，則毋須加入空白。</p>
-        <div class="note"><p>或可使用西文詞間空格（<span class="uname">U+0020 SPACE</span> [ ]，其寬度隨不同字體有所變化）。</p></div>
-      </section>
-
-      <section id="mixed_text_composition_in_vertical_writing_mode">
-        <h4 id="h-mixed_text_composition_in_vertical_writing_mode"><span class="secno">3.2.3 </span>直排的中、西文混排配置</h4>
-        <p>直排時，西文與阿拉伯數字的配置有以下三種方法：</p>
-        <ol>
-          <li>採用與漢字等寬之字體或全形字元，使用與漢字相同的書寫方向依字母排列，毋須轉向。當文中的西文字母與阿拉伯數字為單獨一字、或為首字母縮寫時（如GDP），多使用這種方式配置。</li>
-          <li>採用比例字體，將文字順時針旋轉90度配置。當文中的西字為一般單字詞、語句，或阿拉伯數在四位數以上時，採用此方法配置。漢字與西文字母、數字間使用四分之一個漢字寬的字距或空白。但西文出現在行頭或行尾時，則毋須加入空白。</li>
-          <li>阿拉伯數字使用比例字體，以縱中橫排（保持正常方向，橫排）方式配置。主要應用於二至三位數的阿拉伯數字，其寬度與行幅相當，或稍微切出行幅。</li>
-        </ol>
-        <div class="note"><p>直排時多使用漢字數字，然而近年使用西文數字的情況漸有增長，縱中橫排亦頗為常見。</p></div>
-      </section>
-
-      <section id="handling_western_text_in_chinese_text_using_proportional_western_fonts">
-        <h4 id="h-handling_western_text_in_chinese_text_using_proportional_western_fonts"><span class="secno">3.2.4 </span>西文使用比例字體時的混排處理</h4>
-        <p>橫排中混排的西文、阿拉伯數字，及直排中將文字採順時針旋轉90度配置的西文、阿拉伯數字，其配置方式如下：</p>
-        <ol>
-          <li>西文單字詞在可使用連字符處之外，不得分隔為兩行。</li>
-          <li>漢字與西文字母之間，原則上使用四分之一個漢字寬的字距或空白。</li>
-          <li>由於中文排版強調行頭與行尾對齊，當行內包含西文時，較難對齊，這時多使用均等排列的方式處理。均等排列時，各西文詞組間、阿拉伯數字間之空格，以及西文字母與阿拉伯數字的之間不使用均等排列，僅調整漢字、漢字與西文間的字距或空白。</li>
-        </ol>
-        <p>以下情況例外：</p>
-        <ol>
-          <li>位於行頭的西文與阿拉伯數字之前、位於行尾的西文與阿拉伯數字之後不調整字距或加入空白。</li>
-          <li>於中文點號前後、中文開始括注符號之後、結束括注符號之前的西文，不調整字距或加入空白。</li>
-        </ol>
-      </section>
-
-      <section id="handling_of_grid_alignment_in_chinese_and_western_mixed_text_composition">
-        <h4 id="h-handling_of_grid_alignment_in_chinese_and_western_mixed_text_composition"><span class="secno">3.2.5 </span>縱橫對齊下的中西文混排處理</h4>
-        <p>由於漢字各字等寬的性質，無論在直排或橫排的情況下，除了行齊頭尾對齊外，亦求各行間的各個漢字能夠縱橫對齊。若遇西文或阿拉伯數字採用比例字體，便難以滿足這項原則，處理方式如下：</p>
-        <ol>
-          <li>漢字與西文字母間不使用四分之一漢字寬之字距，而是加入大於零、小於等於二分之一漢字寬的彈性空白，使西文所佔之空間為漢字的整數倍，確保西文前後之漢字都能縱橫對齊。</li>
-          <li>當西文位於行尾必須斷行時，不遵照西文從音節斷行的慣例，於行尾強制斷行，以確保行尾對齊。</li>
-        </ol>
-        <div class="note"><p>縱橫對齊時，可配合<a href="#hanging_punctuation_marks_at_line_end">3.1.7節<!-- SECNO. IN CONTENT --></a>的行尾點號懸掛方式處理標點禁則，若遇兩個以上連續標點時，第二個及其後之標點可令其出現於行首。</p></div>
-        <div class="note"><p>縱橫對齊多使用於繁體中文排版，簡體中文較為少見。</p></div>
-      </section>
-    </section>
-
-    <section id="interlinear_annotations">
-      <h3 id="h-interlinear_annotations"><span class="secno">3.3 </span>行间注</h3>
-      
-      <section id="usage_of_interlinear_annotations">
-        <h4 id="h-usage_of_interlinear_annotations"><span class="secno">3.3.1 </span>行间注的用途</h4>
-        <p>行间注是标注于字词旁侧的小字号补充文本。行间注的注文通常位于行间，与其所标注的基文对齐，因這一性質而又名為行間注。行间注在中文排版里的用途主要为标音与释义。</p>
-
-        <ol>
-          <li>
-            <h5>为汉字标注读音</h5>
-            <p>行间注最常见的用途係為漢字標注讀音。汉字标音针对的是汉语初学者，包括母语为汉语的幼儿以及学习汉语的外国人士，因此对个别字标音的情况较少，多为全文标音。常规排版中没有行间注标音的习惯，对生僻字也几乎从不标音，即便标音也只是用行内括号注。</p>
-            <p>中文的标音方案有注音符号与羅馬拼音两大类：</p>
-
-            <ol>
-              <li>
-                <h6>注音符号</h6>
-                <p>國語注音符號及台灣方言音符號（以下統稱注音或注音符號）標音系統多用於台灣，其他地區僅見於特定的辭典或教科書中。絕大多數的情況下，注音符號標注於相應漢字（基文）的右側，例外情況非常少見。</p>
-              </li>
-
-              <li>
-                <h6>羅馬拼音</h6>
-                <p>使用拉丁字母的汉语拼音是中国大陆推行的現代標準漢語（普通话）标音与拉丁转写方案，汉语拼音的全文标音也是中国大陆现代最常见的行间注用例。在中国大陆与台湾，台湾闽南语罗马字拼音等各种汉语方言的拉丁字母标音方案也有与汉语拼音情况类似的行间注用例。</p>
-                <p>因拉丁字母的特质，此类标音文本仅横排。针对幼儿母语者的文本以单字作为基文进行标音。针对二语学习者的文本除偶有与前者一致的格式外，大多分词连写，以词作为基文进行标音，基文之间如西文书写般用空格隔开，并且注文有句首大写、专名首字母大写等格式以及与正文对应的标点符号，自成一体。汉语拼音早期印刷品的格式较为多变，一致性不强。大体上，单字标音与分词连写标音都常见，不作详细描述。</p>
-              </li>
-            </ol>
-          </li>
-
-          <li>
-            <h5>标注释义等非语音信息</h5>
-            <ol>
-              <li>
-                <h6>中外文對照</h6>
-                <p>為外來語、首字母縮略詞標注其中譯，或對翻譯名詞標注其原文，多見於專有名詞、作品名及譯後概念較難傳達的詞彙。常见于译作，尤以轻小说為主。</p>
-              </li>
-
-              <li>
-                <h6>行間批語</h6>
-                <p>行間批語是為一段文本片段或單個詞彙標注解釋的排版方式，因共存於正文文本，顯示於其行間而得名。行間批語較眉批、腳注等注釋方法更具緊湊、依附性，多見於如《紅樓夢》早期抄本的脂硯齋批語等古籍。</p>
-              </li>
-              </ol>
-          </li>
-        </ol>
-      </section>
-
-      <section id="overview_of_positioning_of_interlinear_annotations">
-        <h4 id="h-overview_of_positioning_of_interlinear_annotations"><span class="secno">3.3.2 </span>行间注排版概述</h4>
-        <p>直排時，注音符號或羅馬拼音、中外文對照常位於受注基文（漢字）右側，行間批語則多位於基文片段左側；橫排時，注音符號可置於受注基文（漢字）的上方及右側，但多見於右側，而羅馬拼音及中外文對照上下皆可，行間批語則位於基文片段的後方。</p>  
-        <p>注音符号等宽且每个汉字标音的注音符号字数不超过三个，较为可控；而拉丁字母非等宽，拼式长短不一，且相邻拼式相连时应当有词间空格隔开。两类标音行間注的排版差异较大。</p>
-        <p>拼注音共同標注是一種可行的作法，能同時為僅熟悉單一標音系統的二種讀者提供漢字標音，並作為學習、査詢另一種系統拼寫的有效方式。一般情況下，「拼注音共同標注」的注音符號位漢字右側，橫排時羅馬拼音位漢字下方，直排時位漢字左側。</p>
-      </section>
-
-      <section id="positioning_of_zhuyin">
-        <h4 id="h-positioning_of_zhuyin"><span class="secno">3.3.3 </span>注音符号標音的排版</h4>
-        <ol>
-          <li>
-            <h5>注音符號的位置</h5>
-            <p>根據台灣教育部制訂的《國語注音符號手冊》，將注音符號標注於漢字上方（橫式注音）及右方（直式注音）的二種排版格式皆屬官方標準，但在現今的教科書或其他印刷品中，將注音標注於漢字上方的格式非常罕見，一般大眾也不易接受，因此，無論在直排或橫排中，將注音符號標注在漢字右方都是較佳的作法。</p>
-          </li>
-
-          <li>
-            <h5>注音符號的比例與大小</h5>
-            <ol>
-              <li>將一個漢字視作寬高相等「30:30」的正方形，其注音符號標示範圍之寬高則應為「15:30」，緊隨其標注的漢字。</li>
-              <li>聲母、介音、韻母之比例為「9:9」，平上去入等聲調號「5:5」、輕聲調號「9:2」。詳盡細節及圖例請參考下文「各種發音組合的排版方式」。</li>
-              <li>正文字號較小時，單獨為注音符號提供字號稍大的字體是可行的作法，亦可考慮其他字音標注方式，如置於正文括號內。</li>
-            </ol>
-          </li>
-
-          <li>
-            <h5>注音符號的聲調號位置</h5>
-            <ol>
-              <li>
-                <p>平上去等調號標注於字音最後一個符號右上角。</p>
-                <figure>
-                  <img width="300px" alt="注音符號及其調號（平上去聲）的排版示例" src="images/zhuyin-1-2-one-symbol-o2.svg">
-                  <img width="300px" alt="注音符號及其調號（平上去聲）的排版示例（2）" src="images/zhuyin-2-2-two-symbol-wo3.svg">
-                  <figcaption>注音符號及其調號（平上去聲）的排版示例。</figcaption>
-                </figure>
-              </li>
-
-              <li>
-                <p>國語輕聲調號標於字音前方。</p>
-                <figure>
-                  <img width="300px" alt="注音符號標注輕聲的排版示例" src="images/zhuyin-3-3-three-symbol-zuo.svg">
-                  <figcaption>注音符號標注輕聲的排版示例。</figcaption>
-                </figure>
-              </li>
-
-              <li>
-                <p>入聲調號則位於字音右下角。</p>
-                <figure>
-                  <img width="300px" alt="注音符號標注入聲調號的排版示例" src="images/zhuyin-2-4-two-symbol-lik.svg">
-                  <figcaption>注音符號標注入聲調號的排版示例（圖例以漢字「力」之閩南語發音標注）。</figcaption>
-                </figure>
-              </li>
-            </ol>
-          </li>
-
-          <li>
-            <h5>各種發音組合的排版方式</h5>
-            <ol>
-              <li>
-                <p>「聲母」「介音」「韻母」等單個符號自成音節的拼式中，字音位基字右側中間偏下處，調號則依上述「注音符號的聲調號位置」規則標注於字音旁側。</p>
-                <figure>
-                  <img width="500px" alt="音節包含單個符號，並標注平上去聲及輕聲的排版示例" src="images/zhuyin-1-0-1-one-symbol.svg">
-                  <img width="500px" alt="音節包含單個符號，並標注入聲調號的排版示例" src="images/zhuyin-1-0-2-one-symbol-checked-tone.svg">
-                  <figcaption>音節包含單個符號的注音標音排版示例。</figcaption>
-                </figure>
-              </li>
-
-              <li>
-                <p>「聲母－介音」「聲母－韻母」「介音－韻母」等音節中包含二個符號的拼式中，字音位基字右側中間偏下處，調號則依上述「注音符號的聲調號位置」規則標注於字音旁側。</p>
-                <figure>
-                  <img width="500px" alt="音節包含二個符號，並標注平上去聲及輕聲的排版示例" src="images/zhuyin-2-0-1-two-symbol.svg">
-                  <img width="500px" alt="音節包含二個符號，並標注入聲調號的排版示例" src="images/zhuyin-2-0-2-two-symbol-checked-tone.svg">
-                  <figcaption>音節包含二個符號的注音標音排版示例。</figcaption>
-                </figure>
-              </li>
-
-              <li>
-                <p>包含「聲母－介音－韻母」三個符號的音節拼式中，若調號為輕聲，則字音位基字右側下方，輕聲符號位基字右側上方；拼注其餘調號時，字音則位基字右側中間偏下處，並依上述「注音符號的聲調號位置」規則標注調號於字音旁側。</p>
-                <figure>
-                  <img width="500px" alt="音節包含三個符號，並標注國語輕聲調號的排版示例" src="images/zhuyin-3-0-2-three-symbol-neutral-tone.svg">
-                  <img width="500px" alt="音節包含三個符號，並標注平上去聲調號的排版示例" src="images/zhuyin-3-0-1-three-symbol-regular-tone.svg">
-                  <img width="500px" alt="音節包含三個符號，並標注入聲調號的排版示例" src="images/zhuyin-3-0-3-three-symbol-checked-tone.svg">
-                  <figcaption>音節包含三個符號的注音標音排版示例。</figcaption>
-                </figure>
-              </li>
-            </ol>
-          </li>
-
-          <li>
-            <h5>注音標音分離禁則</h5>
-            <p>如同標點禁則，直式注音在橫排文本中應注意其緊隨漢字的原則，注音標音不得單獨出現在行首，而需永遠緊隨其標注的漢字右側。</p>
-          </li>
-        </ol>
-      </section>
-
-      <section id="positioning_of_romanization">
-        <h4 id="h-positioning_of_romanization"><span class="secno">3.3.4 </span>羅馬拼音標音的排版</h4>
-        <ol>
-          <li>
-            <h5>基本规则</h5>
-            <ol>
-              <li>仅横排。注文通常置于基文上方。二者不论宽窄关系如何皆密排，居中对齐。</li>
-              <li>被迫於直排文本標音时，注文通常置于标音文本右侧，但难以阅读。</li>
-              <li>若注文长于基文且位于行端，二者可向行端对齐。</li>
-              <li>相邻注文的间距不应小于西文词间空格的宽度（约1/4em）。但受排版技术限制，许多出版物中过长的相邻注文都会紧密相连。因汉字为单音节文字且多数汉语拼音音节都容易辨认界限，并不容易出现标音的歧义，但由于每个汉字的标音都已隔开，意外的相连易造成分词连写的假象，且相连的标音时常横跨词界，打乱语义。</li>
-              <li>只要不侵犯最小间距，可允许注文伸展到相邻基字上方。</li>
-              <li>因针对汉语初学者，正文通常用较大字号的楷体。</li>
-              <li>因拉丁字母为变宽文字，同等字号下使用不同字体时的视觉大小也差异较大，注文与基文的字号关系并无定数。但受振假名的排版习惯影响，注文常使用基文1/2的字号。</li>
-              <li>注文常用较细、较饱满的无衬线体。出版与教育界普遍认为汉语拼音排版必须使用a与g为单层设计的、二声调号下粗上细的字体。但其实未有任何国家标准对汉语拼音的字体及字母形态作出过具体规定。</li>
-              <li>台灣「中華文化總會」曾去信大陸教育部詢問漢語拼音字形相關事宜，部門回應表示，漢語拼音字母a、g對應相應的拉丁字母，呈現方式不需拘泥於手寫字形。</li>
-            </ol>
-            <p>下文描述两类典型用例之间的差异。</p>
-          </li>
-
-          <li>
-            <h5>单字标音</h5>
-            <ol>
-              <li>基文为单个汉字。仅标注汉字，不标注阿拉伯数字、标点等字符。</li>
-              <li>注文总是在上方。</li>
-              <li>因注文宽度经常超过基文，通常为正文设定较大的字距以供给注文足够的横向伸展空间，避免基文间距频繁被过宽的注文撑大。</li>
-              <li>注文全小写，鲜见专名首字母大写。</li>
-            </ol>
-          </li>
-
-          <li>
-            <h5>分词连写标音</h5>
-            <ol>
-              <li>基文为一个或多个汉字构成的词语。分词连写规则可依据《汉语拼音正词法基本规则》（GB/T 16159—2012）。</li>
-              <li>注文有时在下方。</li>
-              <li>正文与标音双方皆分词连写。相邻基文之间有约1/2em的空格隔开，基文内部字距通常正常。</li>
-              <li>许多分词连写标音用例体现出对整个句子标音的逻辑，而非简单对词语标音：注文有句首大写、专名首字母大写。有标点，标点跟随左侧（前方）注文。</li>
-            </ol>
-          </li>
-        </ol>
-      </section>
-
-      <section id="atypical_cases_for_chinese_phonetic_annotations">
-        <h4 id="h-atypical_cases_for_chinese_phonetic_annotations"><span class="secno">3.3.5 </span>漢字標音的非典型情況</h4>
-        <ol>
-          <li>
-            <h5>兒化音</h5>
-            <p>對現代標準漢語的特殊語音現象——兒化，注音符號受制於其標注單個漢字的局限，難以準確表達兒化音節的連續性及韻母變音，需要在正文或附注中額外說明；羅馬拼音則可有效標注此現象。</p>
-          </li>
-
-          <li>
-            <h5>合文</h5>
-            <p>由於合文「多音節」的特殊性，使用行間注的方式標音可能導致文本排版效果不佳，應改在附注、括號內或於正文中說明其讀音。目前合文已少見於現代中文書寫系統。</p>
-          </li>
-        </ol>
-      </section>
-
-      <section id="positioning_of_bilingual_annotations">
-        <h4 id="h-positioning_of_bilingual_annotations"><span class="secno">3.3.6 </span>中外文對照的排版</h4>
-        <p>中外文對照的排版方式與羅馬拼音標音類似，多位於受注文本片段頂端——直排時位基文右側，橫排時位基文上方。</p>
-        <ol>
-          <li>
-            <h5>詞的對齊</h5>
-            <p>為了保證詞彙的整體性，在注文總長與其基文的長度不一時，需要調整相互間的對齊關係，以求體例清晰並避免誤會。</p>
-            <ol>
-              <li>當注文總長小於其基文的長度時，將注文設置居中（適用西文）或加大注文字距（適用漢字），後者更有「間隔平均分配」及「始末端對齊」二種方式。</li>
-              <li>當注文總長大於其基文的長度時，將基文設置居中（適用西文）或加大基文字距（適用漢字）。</li>
-            </ol>
-          </li>
-        </ol>
-      </section>
-
-      <section id="positioning_of_interlinear_comments">
-        <h4 id="h-positioning_of_interlinear_comments"><span class="secno">3.3.7 </span>行間批語的排版</h4>
-        <p>行間批語的格式多變且內容長度不一，通常位於受注的文本片段底端——直排時位基文左側，橫排時位基文下方。為與正文區隔，有時以不同於正文文字的顏色來顯示。</p>
-        <p>行間批語可用於解釋一段長文本的整體語境。這種情況下，由於沒有明確的基文，其注文常自一個合適的錨點位置展開並向後延伸，長度不拘，時可超過一行。</p>
-      </section>
-    </section>
-
-    <section id="paragraph_adjustment_rules">
-      <h3 id="h-paragraph_adjustment_rules"><span class="secno">3.4 </span>段落調整</h3>
-
-      <section id="line_head_indent_at_the_beginning_of_paragraphs">
-        <h4 id="h-line_head_indent_at_the_beginning_of_paragraphs"><span class="secno">3.4.1 </span>段首縮排</h4>
-        <p>為使不同的文本形成意義上的區隔、構成段落，呈現上，會使用斷行以標示一個段落的起始，同時也會在段落首行加上空白進行縮排，原則上以文本的漢字大小作為縮排單位，主要呈現方法如下。</p>
-
-        <div class="note"><p>中文出版品上，段首縮排以兩個漢字的空間為標準。若遇到雜誌等多欄排版的情況，每欄字數較少時，視覺上縮排兩字將顯突兀，時有改用縮排一字的做法。</p></div>
-        <ol>
-          <li>所有段落首行皆縮排。幾乎所有的書籍與雜誌皆使用此方法。</li>
-          <li>篇章最初段落的首行不縮排，其余段落首行縮排。此方法多見於西文書籍。</li>
-          <li>所有段落首行皆不予縮排，在段落與段落間加入一定程度的間距，以為區隔。部分書籍與雜誌使用這種方式。</li>
-          <li>原則上，部分語氣未完的段落予以斷行、而不縮排。語氣未完的段落前可能出現對話、引言，及為與正文有所區隔，由編輯所下的標題等。</li>
-        </ol>
-        <p>原則上，在中文書籍排版中各段落間不使用間距，前段落末行、後段落首行與段落內行距一致。若段落間加入空白行，則表示一節的結束。但段落首行不縮排時所加入的段落間距則與傳統排版有所差異，不適合加入空行做節的區分，避免過多的留空造成體裁不良。</p>
-        <p>除縮排外，也有首行不縮排、次行起至末行縮排的狀況，稱為凸排。例如劇本中的對白，首行以人名開頭不縮排，第二行起縮排。編號列表、問答、法律條文等也使用此種方式處理。雖稱為凸排，但首行開始處不超過版心所設定的範圍。</p>
-        <p>凸排時，次行起縮排通常為固定量的空白，例如人名三字加冒號共四字，凡遇對話時次行皆縮排四個全型空白。遇人名少於三字時，則於姓與名間加入空白，以保持體例一致。</p>
-      </section>
-
-      <section id="line_head_indent_of_paragraphs">
-        <h4 id="h-line_head_indent_of_paragraphs"><span class="secno">3.4.2 </span>段落縮排</h4>
-        <p>段落縮排係指將版心（單欄排版時）以及欄的範圍（多欄排版時）由行頭側以指定的量，將文字開始位置向后移動的處理。此種縮排方式多應用於段落內或段落間引用文章、詩詞及標題等。</p>
-
-        <div class="note"><p>一般而言以縮排處理的段落，文字尺寸與內文相同。有時會調整字體，與內文做出差異。或／及於前後段落間加入段落間距，使該段落與內文段落差異更為明顯。加入間距所佔空間應為內文行的整數倍。</p></div>
-      </section>
-
-      <section id="ways_of_alignments">
-        <h4 id="h-ways_of_alignments"><span class="secno">3.4.3 </span>對齊處理</h4>
-        <p>對齊係指使段落間各行文字實際配置位置能夠與預設的文字配置位置符合。有著以下作法。</p>
-        <ol>
-          <li>
-            <h5>置中對齊</h5>
-            <p>行內文字原則上緊貼配置，文字列的中央與行的中央對齊排列，未滿一行時，該行文字列對行頭與行尾的空白量均等。</p>
-          </li>
-
-          <li>
-            <h5>行首對齊</h5>
-            <p>行內文字原則上緊貼配置，文字列開頭與行首位置對齊，未滿一行時，該行末字至行尾使用空白。</p>
-          </li>
-
-          <li>
-            <h5>行尾對齊</h5>
-            <p>行內文字原則上緊貼配置，文字列末尾與行尾位置對齊，未滿一行時，該行首字至行首使用空白。</p>
-          </li>
-
-          <li>
-            <h5>均等排列</h5>
-            <p>行內文字原則上緊貼配置，文字列開頭與行頭位置對齊、文字列末尾與行尾位置對齊，未滿一行時，空白平均置於該行各字間。</p>
-            <p>均等排列多見於以下兩種狀況：</p>
-            <ol>
-              <li>此種情況較常見。各行套用標點禁則處理後，部分行行內將剩餘一字以上的空白，為符合中文排版段落頭尾對齊的規則，該行以均等排列處理；於段落末行或段落僅有一行時則不使用均等排列。</li>
-              <li>於列表，如列舉人名、物品名時，採均等排列以求體例一致，於段落末行或段落僅有一行時，亦使用均等排列。</li>
-              </ol>
-          </li>
-        </ol>
-      </section>
-
-      <section id="adjustments_of_orphans_and_widows">
-        <h4 id="h-adjustments_of_orphans_and_widows"><span class="secno">3.4.4 </span>孤行與孤字處理</h4>
-        <p>中文排版傳統上有著「孤字不成行、孤行不成頁」的規則。實際原則如下：</p>
-
-        <ol>
-          <li>
-            <p>若段落末行僅有一個漢字，或一個漢字加上標點符號，即為孤字。孤字可以以下方法處理，使段落末行能有兩個漢字以上：</p>
-            <ol>
-              <li>比照避頭點的處理方式，由前一行取一字至末行，前一行採均等排列。</li>
-              <li>刪減該段落文字，使孤字縮進段落前一行。</li>
-              <li>於該段落增加文字。</li>
-            </ol>
-            <div class="note"><p>孤字之定義近似於拉丁文字排版中orphan的概念，可參考<a href="http://www.w3.org/TR/dpub-latinreq/#orphans">《拉丁文字排版與分頁需求》5.2節</a>，其定義也隨排版者有所不同。</p></div>
-          </li>
-
-          <li>
-            <p>若頁面中第一行為前一頁最後一個段落的末行，即為孤行。孤行可以以下方法處理：</p>
-            <ol>
-              <li>將孤行移至前一頁，使其突出版心。</li>
-              <li>前一頁最後段落取一行置於該頁。</li>
-              <li>刪除該段落文字，使該行能納入前一頁之段落。</li>
-              <li>於該段落增加文字，讓該行文字能夠超過一行以上。</li>
-            </ol>
-            <div class="note"><p>孤行之定義近似於拉丁文字排版中widow的概念，可參考<a href="http://www.w3.org/TR/dpub-latinreq/#widows">《拉丁文字排版與分頁需求》5.1節</a>。</p></div>
-          </li>
-        </ol>
-
-        <p>孤字孤行有著程度差異，如：</p>
-
-        <ol type="a">
-          <li>一頁僅有一行，該行僅有一字與標點。即孤字孤行同時出現。</li>
-          <li>一頁有複數段落，第一行為孤行，且該行僅有一字與標點。即孤字孤行同時出現。</li>
-          <li>一頁僅有一行，該行為孤行。</li>
-          <li>一頁有複數段落，第一行為孤行。</li>
-          <li> 一頁有複數段落，其中某一段落末行僅有一字，該字為孤字。</li>
-        </ol>
-
-        <p>以上狀況是否需進行處理，各排版者有不同的標準。其中a.與b. 對體裁的影響較為嚴重，c.次之，d.與e.之處理則較少見。</p>
-      </section>
+    <section id="hanging_punctuation_marks_at_line_end">
+      <h4 id="h-hanging_punctuation_marks_at_line_end">行尾點號懸掛</h4>
+      <p>絕多數的中文出版品沒有懸掛行尾點號的慣例。參考<a href="http://www.w3.org/TR/jlreq/#positioning_of_punctuation_marks">日文排版</a>的做法，點號懸掛是行首標點禁則處理方式的延伸，可以避免文字及點號在前後行的移動，甚而導致前行字距不一的問題。</p>
+      <p>通常，適合行尾懸掛的點號有頓號、逗號及句號三者。簡體中文排版中，其餘點號因其字面分布偏向受注文字一側、字面始端，亦可進行行尾懸掛配置。</p>
+      <p>若點號（頓號、逗號或句號）將出現於一行之首，可將其置於前一行的行尾端、突出版心。</p>
+      <p>然而，由於繁體中文的點號位於字面正中，若在橫排時使用行尾懸掛，體例可能顯得突兀、不良。故橫排時，繁體中文不做行尾懸掛配置；但可用於直排。</p>
+      <p>連續多個標點符號的情況下，不作行尾點號懸掛的配置。</p>
     </section>
   </section>
-
-  <section id="positioning_of_headings_notes_illustrations_and_tables">
-    <!--OddPage-->
-    <h2 id="h-positioning_of_headings_notes_illustrations_and_tables"><span class="secno">4. </span>標題、注釋與圖片、表格的排版處理</h2>
-    
-    <section id="handling_of_headings">
-      <h3 id="h-handling_of_headings"><span class="secno">4.1 </span>標題處理（包含換頁處理）</h3>
-      
-      <section id="types_of_headings">
-        <h4 id="h-types_of_headings"><span class="secno">4.1.1 </span>標題的種類</h4>
-        <p>標題依照排版處理方式，可分為以下三種：</p>
-        <ul>
-          <li>全頁標題</li>
-          <li>內文標題</li>
-          <li>同行標題</li>
-        </ul>
-        <div class="note"><p>雜誌因為排版需求，標題會使用相當多種多樣的方式處理，但書籍排版較為單純，故不將雜誌使用的標題配置方式列於本文件之中。</p></div>
-        <p>全頁為書籍中需要大幅區分時使用，為了標題而使用一整頁，背面為空白。有時還會有副標、摘句、作者名以及圖片、部分段落等元素配置其上。有時也有背面不為空白的使用方式。通常在書籍內文開始處，會以扉頁標注書名。</p>
-        <p>內文標題是以獨立一行呈現標題的作法。於標題後換行，直接接續本文。大標與中標等使用這種形式配置。</p>
-        <div class="note"><p>標題是為了區分內容而添加，依照階層構造，由上而下分別為扉頁、大標、中標、小標。</p></div>
-        <div class="note"><p>扉頁通常指一本書的蝴蝶頁，如果依照放標題順序，依序是：書名頁、章名頁、大標、中標、小標。</p></div>
-        <div class="note"><p>標題構造結構為何，依照書籍內容而定。有人認為標題層級不應該過多。</p></div>
-        <div class="note"><p>多欄排列時，有著將換行標題置於複數欄的配置方法。稱為「跨欄標題」。</p></div>
-        <p>同行標題為標題後接的文章不予換行，而以接續在標題後面繼續排列的形式呈現。同行標題主要利用於小標。此外，小標也會使用換行標題。</p>
-      </section>
-
-      <section id="styling_of_headings">
-        <h4 id="h-styling_of_headings"><span class="secno">4.1.2 </span>使標題得以突顯的方式</h4>
-        <p>標題主要是為了呈現階層結構，所以需要以特別的表現體裁來顯示其階層。標題的表現體裁包含以下幾種方式：</p>
+  <section id="chinese_and_western_mixed_text_composition">
+    <h3 id="h-chinese_and_western_mixed_text_composition">中、西文混排處理</h3>
+    <section id="composition_of_chinese_and_western_mixed_text">
+      <h4 id="h-composition_of_chinese_and_western_mixed_text">中文與西文之混排</h4>
+      <p>中文排版中，漢字與拉丁字母、希臘字母或阿拉伯數字等西文混排的狀況經常出現，以下列舉部分範例。</p>
+      <ol>
+        <li>使用西文字母作為記號使用，如「A」「B」。</li>
+        <li>直接使用如「editor」的西文單字詞。</li>
+        <li>使用如DTP、GDP等與組織名、專有名詞等首字母縮寫。</li>
+        <li>呈現西文文獻等之作者名、書名等採原本表計的方式呈現。</li>
+        <li>使用阿拉伯數字表示紀年、數量詞、編號等，如「1999年」。</li>
+      </ol>
+      <p>項目符號與標題編號、單位符號、元素符號、數學符號等也多有西文，由此可知，日常使用上中、西文的混排非常常見。</p>
+      <div class="note">
+        <p>若無特別提示，本文使用之「阿拉伯數字」皆指西方語言或歐洲形式的印度－阿拉伯數字。</p>
+      </div>
+      <p>過去，因計算機排版技術不甚精良，多使用「全形ASCII字元」以達整齊等視覺排版效果。現今在文本儲存時，應避免使用該區段之拉丁字母及數字字元，交由排版引擎處理比例字體、等寬字體等顯示需求。</p>
+      <p>中西混排中，由于正文是中文，原则上应该使用中文标点，遵守中文标点的习惯用法。但是，科学技术中文图书，如果涉及公式较多，句号可以统一使用西文句号<span class="uname">U+002E FULL STOP</span> [.]，省略号使用英文的三点省略号；中文版西文语法教材之类的图书，西文例句较多且多与中文混排时，句号可以统一使用西文句号[.]。</p>
+    </section>
+    <section id="mixed_text_composition_in_horizontal_writing_mode">
+      <h4 id="h-mixed_text_composition_in_horizontal_writing_mode">橫排的中、西文混排配置</h4>
+      <p>橫排時，西文使用比例字體；阿拉伯數字則常用比例字體或等寬字體。原則上，漢字與西文字母、數字間使用四分之一個漢字寬的字距或空白。但西文出現在行頭或行尾時，則毋須加入空白。</p>
+      <div class="note">
+        <p>或可使用西文詞間空格（<span class="uname">U+0020 SPACE</span> [ ]，其寬度隨不同字體有所變化）。</p>
+      </div>
+    </section>
+    <section id="mixed_text_composition_in_vertical_writing_mode">
+      <h4 id="h-mixed_text_composition_in_vertical_writing_mode">直排的中、西文混排配置</h4>
+      <p>直排時，西文與阿拉伯數字的配置有以下三種方法：</p>
+      <ol>
+        <li>採用與漢字等寬之字體或全形字元，使用與漢字相同的書寫方向依字母排列，毋須轉向。當文中的西文字母與阿拉伯數字為單獨一字、或為首字母縮寫時（如GDP），多使用這種方式配置。</li>
+        <li>採用比例字體，將文字順時針旋轉90度配置。當文中的西字為一般單字詞、語句，或阿拉伯數在四位數以上時，採用此方法配置。漢字與西文字母、數字間使用四分之一個漢字寬的字距或空白。但西文出現在行頭或行尾時，則毋須加入空白。</li>
+        <li>阿拉伯數字使用比例字體，以縱中橫排（保持正常方向，橫排）方式配置。主要應用於二至三位數的阿拉伯數字，其寬度與行幅相當，或稍微切出行幅。</li>
+      </ol>
+      <div class="note">
+        <p>直排時多使用漢字數字，然而近年使用西文數字的情況漸有增長，縱中橫排亦頗為常見。</p>
+      </div>
+    </section>
+    <section id="handling_western_text_in_chinese_text_using_proportional_western_fonts">
+      <h4 id="h-handling_western_text_in_chinese_text_using_proportional_western_fonts">西文使用比例字體時的混排處理</h4>
+      <p>橫排中混排的西文、阿拉伯數字，及直排中將文字採順時針旋轉90度配置的西文、阿拉伯數字，其配置方式如下：</p>
+      <ol>
+        <li>西文單字詞在可使用連字符處之外，不得分隔為兩行。</li>
+        <li>漢字與西文字母之間，原則上使用四分之一個漢字寬的字距或空白。</li>
+        <li>由於中文排版強調行頭與行尾對齊，當行內包含西文時，較難對齊，這時多使用均等排列的方式處理。均等排列時，各西文詞組間、阿拉伯數字間之空格，以及西文字母與阿拉伯數字的之間不使用均等排列，僅調整漢字、漢字與西文間的字距或空白。</li>
+      </ol>
+      <p>以下情況例外：</p>
+      <ol>
+        <li>位於行頭的西文與阿拉伯數字之前、位於行尾的西文與阿拉伯數字之後不調整字距或加入空白。</li>
+        <li>於中文點號前後、中文開始括注符號之後、結束括注符號之前的西文，不調整字距或加入空白。</li>
+      </ol>
+    </section>
+    <section id="handling_of_grid_alignment_in_chinese_and_western_mixed_text_composition">
+      <h4 id="h-handling_of_grid_alignment_in_chinese_and_western_mixed_text_composition">縱橫對齊下的中西文混排處理</h4>
+      <p>由於漢字各字等寬的性質，無論在直排或橫排的情況下，除了行齊頭尾對齊外，亦求各行間的各個漢字能夠縱橫對齊。若遇西文或阿拉伯數字採用比例字體，便難以滿足這項原則，處理方式如下：</p>
+      <ol>
+        <li>漢字與西文字母間不使用四分之一漢字寬之字距，而是加入大於零、小於等於二分之一漢字寬的彈性空白，使西文所佔之空間為漢字的整數倍，確保西文前後之漢字都能縱橫對齊。</li>
+        <li>當西文位於行尾必須斷行時，不遵照西文從音節斷行的慣例，於行尾強制斷行，以確保行尾對齊。</li>
+      </ol>
+      <div class="note">
+        <p>縱橫對齊時，可配合<a href="#hanging_punctuation_marks_at_line_end"></a>節的行尾點號懸掛方式處理標點禁則，若遇兩個以上連續標點時，第二個及其後之標點可令其出現於行首。</p>
+      </div>
+      <div class="note">
+        <p>縱橫對齊多使用於繁體中文排版，簡體中文較為少見。</p>
+      </div>
+    </section>
+  </section>
+  <section id="interlinear_annotations">
+    <h3 id="h-interlinear_annotations">行间注</h3>
+    <section id="usage_of_interlinear_annotations">
+      <h4 id="h-usage_of_interlinear_annotations">行间注的用途</h4>
+      <p>行间注是标注于字词旁侧的小字号补充文本。行间注的注文通常位于行间，与其所标注的基文对齐，因這一性質而又名為行間注。行间注在中文排版里的用途主要为标音与释义。</p>
+      <section>
+        <h5 id="h-indicating_pronunciation_for_chinese_characters">为汉字标注读音</h5>
+        <p>行间注最常见的用途係為漢字標注讀音。汉字标音针对的是汉语初学者，包括母语为汉语的幼儿以及学习汉语的外国人士，因此对个别字标音的情况较少，多为全文标音。常规排版中没有行间注标音的习惯，对生僻字也几乎从不标音，即便标音也只是用行内括号注。</p>
+        <p>中文的标音方案有注音符号与羅馬拼音两大类：</p>
         <ol>
-          <li>使用不同的文字尺寸呈現標題的階層，例如，有著大標、中標、小標時，小標比本文文字尺寸（例如：9pt）大一階段（例如：10pt），中標則比小標大一階段（例如：12pt），大標則比中標大一階段（例如：14pt）。<div class="note"><p>也有採用將本文文字尺寸依照比例放大的方式，使用這方式時，以10%–20%上下，依階層放大為佳。</p></div></li>
-          <li>使用的字體使用黑體，或者採用宋體但加粗。此外，也有使用圓體、楷體的案例。<div class="note"><p>活版印刷使用作為標題的宋體字，其活字設計時都會因為供標題使用而字重偏重。但使用數位字體時由於是採內文字設計，放大字級後顯得過輕，幾乎都會加重字重為粗體。</p></div>
-          <div class="note"><p>使用黑體作為小標時，也都會加重字重，令標題凸顯。</p></div></li>
-          <li>對齊橫排的大標與中標使用置中對齊的案例相當多，但直排時，則多使用對齊行頭或下字。<div class="note"><p>下字時，下字的量一般使用版心設定文字尺寸的二倍漢字之長寬。大標、中標、小標下字量，由各排版者決定，無一定規則。</p></div></li>
-          <li>其他加上框線、圖片、記號等。</li>
+          <li>
+            <p class="leadin">注音符号</p>
+            <p>國語注音符號及台灣方言音符號（以下統稱注音或注音符號）標音系統多用於台灣，其他地區僅見於特定的辭典或教科書中。絕大多數的情況下，注音符號標注於相應漢字（基文）的右側，例外情況非常少見。</p>
+          </li>
+          <li>
+            <p class="leadin">羅馬拼音</p>
+            <p>使用拉丁字母的汉语拼音是中国大陆推行的現代標準漢語（普通话）标音与拉丁转写方案，汉语拼音的全文标音也是中国大陆现代最常见的行间注用例。在中国大陆与台湾，台湾闽南语罗马字拼音等各种汉语方言的拉丁字母标音方案也有与汉语拼音情况类似的行间注用例。</p>
+            <p>因拉丁字母的特质，此类标音文本仅横排。针对幼儿母语者的文本以单字作为基文进行标音。针对二语学习者的文本除偶有与前者一致的格式外，大多分词连写，以词作为基文进行标音，基文之间如西文书写般用空格隔开，并且注文有句首大写、专名首字母大写等格式以及与正文对应的标点符号，自成一体。汉语拼音早期印刷品的格式较为多变，一致性不强。大体上，单字标音与分词连写标音都常见，不作详细描述。</p>
+          </li>
         </ol>
       </section>
-
-      <section id="handling_of_new_retros">
-        <h4 id="h-handling_of_new_retros"><span class="secno">4.1.3 </span>單頁起、換頁處理</h4>
-        <p>標題為了作出明確區分，而會使用於新頁面開始的方法，此時以以下原則處理：</p>
+      <section>
+        <h5 id="h-indicating_meaning_or_other_information">标注释义等非语音信息</h5>
         <ol>
-          <li>一定要出現於奇數頁稱為單頁起，主要應用於扉頁、大標等。<div class="note"><p>書籍由封面作為第一頁開始，所以直排右翻書，由左頁開始（稱為左頁起），橫排左翻書，由右頁開始（稱為右頁起）。</p></div></li>
-          <li>不分奇數頁還偶數頁，從新頁面開始稱為換頁。主要用於大標。</li>
-          <li>當中標、小標出現於某一頁的最末尾，其後沒有空間以至於無法接續內文段落時，由於這樣的呈現會使得體裁不良，也會讓中標、小標換頁，於下一頁開頭呈現。</li>
-        </ol>
-      </section>
-
-      <section id="handling_of_spaces_before_new_rectos">
-        <h4 id="h-handling_of_spaces_before_new_rectos"><span class="secno">4.1.4 </span>單頁起、換頁處理時，前一頁的處理</h4>
-        <p>單頁起、換頁處理時，前一頁的排版處理會是問題（最終頁的處理亦同），以以下原則處理：</p>
-        <ol>
-          <li>不分欄排版遇到單頁起與換頁時，前一頁末尾後面留空即可。</li>
-          <li>換欄時，前一欄末尾後面留空即可。</li>
-          <li>直排多欄排版時，由上欄往下欄，各行依序排列，行數可不齊。</li>
-          <li>橫排多欄排版時，各欄行數原則上需對齊。若無法對齊時，不足的行數於最右欄末留空。</li>
-        </ol>
-      </section>
-
-      <section id="processing_of_runin_headings">
-        <h4 id="h-processing_of_runin_headings"><span class="secno">4.1.5 </span>同行標題的處理方式</h4>
-        <p>同行標題主要用於小標，以下介紹幾個同行標題的配置範例。同行標題與之後接續內文的空白量，一般為版心設定文字尺寸的全形空白。此外，同行標題可以配置於頁末。</p>
-        <ol>
-          <li>與內文採相同文字尺寸，字體改為黑體或者楷體。</li>
-          <li>不比內文文字尺寸較小，字體改為黑體或者楷體。<div class="note"><p>此時同行標題所占空間並非內文文字尺寸的整數倍，所以可調整與內文間的空白量，以避免內文文字無法縱橫對齊，或者無法齊行首、行尾。</p></div></li>
-          <li>與內文採用相同文字尺寸與字體，但於前面添加漢字數字或阿拉伯數字。</li>
+          <li>
+            <p class="leadin">中外文對照</p>
+            <p>為外來語、首字母縮略詞標注其中譯，或對翻譯名詞標注其原文，多見於專有名詞、作品名及譯後概念較難傳達的詞彙。常见于译作，尤以轻小说為主。</p>
+          </li>
+          <li>
+            <p class="leadin">行間批語</p>
+            <p>行間批語是為一段文本片段或單個詞彙標注解釋的排版方式，因共存於正文文本，顯示於其行間而得名。行間批語較眉批、腳注等注釋方法更具緊湊、依附性，多見於如《紅樓夢》早期抄本的脂硯齋批語等古籍。</p>
+          </li>
         </ol>
       </section>
     </section>
-
-    <!--
+    <section id="overview_of_positioning_of_interlinear_annotations">
+      <h4 id="h-overview_of_positioning_of_interlinear_annotations">行间注排版概述</h4>
+      <p>直排時，注音符號或羅馬拼音、中外文對照常位於受注基文（漢字）右側，行間批語則多位於基文片段左側；橫排時，注音符號可置於受注基文（漢字）的上方及右側，但多見於右側，而羅馬拼音及中外文對照上下皆可，行間批語則位於基文片段的後方。</p>
+      <p>注音符号等宽且每个汉字标音的注音符号字数不超过三个，较为可控；而拉丁字母非等宽，拼式长短不一，且相邻拼式相连时应当有词间空格隔开。两类标音行間注的排版差异较大。</p>
+      <p>拼注音共同標注是一種可行的作法，能同時為僅熟悉單一標音系統的二種讀者提供漢字標音，並作為學習、査詢另一種系統拼寫的有效方式。一般情況下，「拼注音共同標注」的注音符號位漢字右側，橫排時羅馬拼音位漢字下方，直排時位漢字左側。</p>
+    </section>
+    <section id="positioning_of_zhuyin">
+      <h4 id="h-positioning_of_zhuyin">注音符号標音的排版</h4>
+      <section>
+        <h5 id="h-positioning_zhuyin_symbols">注音符號的位置</h5>
+        <p>根據台灣教育部制訂的《國語注音符號手冊》，將注音符號標注於漢字上方（橫式注音）及右方（直式注音）的二種排版格式皆屬官方標準，但在現今的教科書或其他印刷品中，將注音標注於漢字上方的格式非常罕見，一般大眾也不易接受，因此，無論在直排或橫排中，將注音符號標注在漢字右方都是較佳的作法。</p>
+      </section>
+      <section>
+        <h5 id="h-choice_of_size_and_ratio_for_zhuyin">注音符號的比例與大小</h5>
+        <ol>
+          <li>將一個漢字視作寬高相等「30:30」的正方形，其注音符號標示範圍之寬高則應為「15:30」，緊隨其標注的漢字。</li>
+          <li>聲母、介音、韻母之比例為「9:9」，平上去入等聲調號「5:5」、輕聲調號「9:2」。詳盡細節及圖例請參考下文「各種發音組合的排版方式」。</li>
+          <li>正文字號較小時，單獨為注音符號提供字號稍大的字體是可行的作法，亦可考慮其他字音標注方式，如置於正文括號內。</li>
+        </ol>
+      </section>
+      <section>
+        <h5 id="h-positioning_tones_in_zhuyin">注音符號的聲調號位置</h5>
+        <ol>
+          <li>
+            <p>平上去等調號標注於字音最後一個符號右上角。</p>
+            <figure id="zhuyin-1-2-one-symbol-o2"> <img width="300" alt="注音符號及其調號（平上去聲）的排版示例" src="images/zhuyin-1-2-one-symbol-o2.svg"> <img width="300" alt="注音符號及其調號（平上去聲）的排版示例（2）" src="images/zhuyin-2-2-two-symbol-wo3.svg">
+              <figcaption>注音符號及其調號（平上去聲）的排版示例。</figcaption>
+            </figure>
+          </li>
+          <li>
+            <p>國語輕聲調號標於字音前方。</p>
+            <figure id="zhuyin-3-3-three-symbol-zuo"> <img width="300" alt="注音符號標注輕聲的排版示例" src="images/zhuyin-3-3-three-symbol-zuo.svg">
+              <figcaption>注音符號標注輕聲的排版示例。</figcaption>
+            </figure>
+          </li>
+          <li>
+            <p>入聲調號則位於字音右下角。</p>
+            <figure id="zhuyin-2-4-two-symbol-lik"> <img width="300" alt="注音符號標注入聲調號的排版示例" src="images/zhuyin-2-4-two-symbol-lik.svg">
+              <figcaption>注音符號標注入聲調號的排版示例（圖例以漢字「力」之閩南語發音標注）。</figcaption>
+            </figure>
+          </li>
+        </ol>
+      </section>
+      <section>
+        <h5 id="h-positioning_different_composition_for_tones">各種發音組合的排版方式</h5>
+        <ol>
+          <li>
+            <p>「聲母」「介音」「韻母」等單個符號自成音節的拼式中，字音位基字右側中間偏下處，調號則依上述「注音符號的聲調號位置」規則標注於字音旁側。</p>
+            <figure id="zhuyin-1-0-1-one-symbol"> <img width="500" alt="音節包含單個符號，並標注平上去聲及輕聲的排版示例" src="images/zhuyin-1-0-1-one-symbol.svg"> <img width="500" alt="音節包含單個符號，並標注入聲調號的排版示例" src="images/zhuyin-1-0-2-one-symbol-checked-tone.svg">
+              <figcaption>音節包含單個符號的注音標音排版示例。</figcaption>
+            </figure>
+          </li>
+          <li>
+            <p>「聲母－介音」「聲母－韻母」「介音－韻母」等音節中包含二個符號的拼式中，字音位基字右側中間偏下處，調號則依上述「注音符號的聲調號位置」規則標注於字音旁側。</p>
+            <figure id="zhuyin-2-0-1-two-symbol"> <img width="500" alt="音節包含二個符號，並標注平上去聲及輕聲的排版示例" src="images/zhuyin-2-0-1-two-symbol.svg"> <img width="500" alt="音節包含二個符號，並標注入聲調號的排版示例" src="images/zhuyin-2-0-2-two-symbol-checked-tone.svg">
+              <figcaption>音節包含二個符號的注音標音排版示例。</figcaption>
+            </figure>
+          </li>
+          <li>
+            <p>包含「聲母－介音－韻母」三個符號的音節拼式中，若調號為輕聲，則字音位基字右側下方，輕聲符號位基字右側上方；拼注其餘調號時，字音則位基字右側中間偏下處，並依上述「注音符號的聲調號位置」規則標注調號於字音旁側。</p>
+            <figure id="zhuyin-3-0-2-three-symbol-neutral-tone"> <img width="500" alt="音節包含三個符號，並標注國語輕聲調號的排版示例" src="images/zhuyin-3-0-2-three-symbol-neutral-tone.svg"> <img width="500" alt="音節包含三個符號，並標注平上去聲調號的排版示例" src="images/zhuyin-3-0-1-three-symbol-regular-tone.svg"> <img width="500" alt="音節包含三個符號，並標注入聲調號的排版示例" src="images/zhuyin-3-0-3-three-symbol-checked-tone.svg">
+              <figcaption>音節包含三個符號的注音標音排版示例。</figcaption>
+            </figure>
+          </li>
+        </ol>
+      </section>
+      <section>
+        <h5 id="h-line_prohibition_rules_for_zhuyin">注音標音分離禁則</h5>
+        <p>如同標點禁則，直式注音在橫排文本中應注意其緊隨漢字的原則，注音標音不得單獨出現在行首，而需永遠緊隨其標注的漢字右側。</p>
+      </section>
+    </section>
+    <section id="positioning_of_romanization">
+      <h4 id="h-positioning_of_romanization">羅馬拼音標音的排版</h4>
+      <section>
+        <h5 id="h-basic-requirements">基本规则</h5>
+        <ol>
+          <li>仅横排。注文通常置于基文上方。二者不论宽窄关系如何皆密排，居中对齐。</li>
+          <li>被迫於直排文本標音时，注文通常置于标音文本右侧，但难以阅读。</li>
+          <li>若注文长于基文且位于行端，二者可向行端对齐。</li>
+          <li>相邻注文的间距不应小于西文词间空格的宽度（约1/4em）。但受排版技术限制，许多出版物中过长的相邻注文都会紧密相连。因汉字为单音节文字且多数汉语拼音音节都容易辨认界限，并不容易出现标音的歧义，但由于每个汉字的标音都已隔开，意外的相连易造成分词连写的假象，且相连的标音时常横跨词界，打乱语义。</li>
+          <li>只要不侵犯最小间距，可允许注文伸展到相邻基字上方。</li>
+          <li>因针对汉语初学者，正文通常用较大字号的楷体。</li>
+          <li>因拉丁字母为变宽文字，同等字号下使用不同字体时的视觉大小也差异较大，注文与基文的字号关系并无定数。但受振假名的排版习惯影响，注文常使用基文1/2的字号。</li>
+          <li>注文常用较细、较饱满的无衬线体。出版与教育界普遍认为汉语拼音排版必须使用a与g为单层设计的、二声调号下粗上细的字体。但其实未有任何国家标准对汉语拼音的字体及字母形态作出过具体规定。</li>
+          <li>台灣「中華文化總會」曾去信大陸教育部詢問漢語拼音字形相關事宜，部門回應表示，漢語拼音字母a、g對應相應的拉丁字母，呈現方式不需拘泥於手寫字形。</li>
+        </ol>
+        <p>下文描述两类典型用例之间的差异。</p>
+      </section>
+      <section>
+        <h5 id="h-characters_as_basic_units_for_annotating_pronunciation"> 单字标音</h5>
+        <ol>
+          <li>基文为单个汉字。仅标注汉字，不标注阿拉伯数字、标点等字符。</li>
+          <li>注文总是在上方。</li>
+          <li>因注文宽度经常超过基文，通常为正文设定较大的字距以供给注文足够的横向伸展空间，避免基文间距频繁被过宽的注文撑大。</li>
+          <li>注文全小写，鲜见专名首字母大写。</li>
+        </ol>
+      </section>
+      <section>
+        <h5 id="h-words_as_basic_units_for_annotating_pronunciation">分词连写标音</h5>
+        <ol>
+          <li>基文为一个或多个汉字构成的词语。分词连写规则可依据《汉语拼音正词法基本规则》（GB/T 16159—2012）。</li>
+          <li>注文有时在下方。</li>
+          <li>正文与标音双方皆分词连写。相邻基文之间有约1/2em的空格隔开，基文内部字距通常正常。</li>
+          <li>许多分词连写标音用例体现出对整个句子标音的逻辑，而非简单对词语标音：注文有句首大写、专名首字母大写。有标点，标点跟随左侧（前方）注文。</li>
+        </ol>
+      </section>
+    </section>
+    <section id="atypical_cases_for_chinese_phonetic_annotations">
+      <h4 id="h-atypical_cases_for_chinese_phonetic_annotations">漢字標音的非典型情況</h4>
+      <section>
+        <h5 id="h-erhuayin">兒化音</h5>
+        <p>對現代標準漢語的特殊語音現象——兒化，注音符號受制於其標注單個漢字的局限，難以準確表達兒化音節的連續性及韻母變音，需要在正文或附注中額外說明；羅馬拼音則可有效標注此現象。</p>
+      </section>
+      <section>
+        <h5 id="h-ligatures">合文</h5>
+        <p>由於合文「多音節」的特殊性，使用行間注的方式標音可能導致文本排版效果不佳，應改在附注、括號內或於正文中說明其讀音。目前合文已少見於現代中文書寫系統。</p>
+      </section>
+    </section>
+    <section id="positioning_of_bilingual_annotations">
+      <h4 id="h-positioning_of_bilingual_annotations">中外文對照的排版</h4>
+      <p>中外文對照的排版方式與羅馬拼音標音類似，多位於受注文本片段頂端——直排時位基文右側，橫排時位基文上方。</p>
+      <section>
+        <h5 id="h-word_alignment">詞的對齊</h5>
+        <p>為了保證詞彙的整體性，在注文總長與其基文的長度不一時，需要調整相互間的對齊關係，以求體例清晰並避免誤會。</p>
+        <ol>
+          <li>當注文總長小於其基文的長度時，將注文設置居中（適用西文）或加大注文字距（適用漢字），後者更有「間隔平均分配」及「始末端對齊」二種方式。</li>
+          <li>當注文總長大於其基文的長度時，將基文設置居中（適用西文）或加大基文字距（適用漢字）。</li>
+        </ol>
+      </section>
+    </section>
+    <section id="positioning_of_interlinear_comments">
+      <h4 id="h-positioning_of_interlinear_comments">行間批語的排版</h4>
+      <p>行間批語的格式多變且內容長度不一，通常位於受注的文本片段底端——直排時位基文左側，橫排時位基文下方。為與正文區隔，有時以不同於正文文字的顏色來顯示。</p>
+      <p>行間批語可用於解釋一段長文本的整體語境。這種情況下，由於沒有明確的基文，其注文常自一個合適的錨點位置展開並向後延伸，長度不拘，時可超過一行。</p>
+    </section>
+  </section>
+  <section id="paragraph_adjustment_rules">
+    <h3 id="h-paragraph_adjustment_rules">段落調整</h3>
+    <section id="line_head_indent_at_the_beginning_of_paragraphs">
+      <h4 id="h-line_head_indent_at_the_beginning_of_paragraphs">段首縮排</h4>
+      <p>為使不同的文本形成意義上的區隔、構成段落，呈現上，會使用斷行以標示一個段落的起始，同時也會在段落首行加上空白進行縮排，原則上以文本的漢字大小作為縮排單位，主要呈現方法如下。</p>
+      <div class="note">
+        <p>中文出版品上，段首縮排以兩個漢字的空間為標準。若遇到雜誌等多欄排版的情況，每欄字數較少時，視覺上縮排兩字將顯突兀，時有改用縮排一字的做法。</p>
+      </div>
+      <ol>
+        <li>所有段落首行皆縮排。幾乎所有的書籍與雜誌皆使用此方法。</li>
+        <li>篇章最初段落的首行不縮排，其余段落首行縮排。此方法多見於西文書籍。</li>
+        <li>所有段落首行皆不予縮排，在段落與段落間加入一定程度的間距，以為區隔。部分書籍與雜誌使用這種方式。</li>
+        <li>原則上，部分語氣未完的段落予以斷行、而不縮排。語氣未完的段落前可能出現對話、引言，及為與正文有所區隔，由編輯所下的標題等。</li>
+      </ol>
+      <p>原則上，在中文書籍排版中各段落間不使用間距，前段落末行、後段落首行與段落內行距一致。若段落間加入空白行，則表示一節的結束。但段落首行不縮排時所加入的段落間距則與傳統排版有所差異，不適合加入空行做節的區分，避免過多的留空造成體裁不良。</p>
+      <p>除縮排外，也有首行不縮排、次行起至末行縮排的狀況，稱為凸排。例如劇本中的對白，首行以人名開頭不縮排，第二行起縮排。編號列表、問答、法律條文等也使用此種方式處理。雖稱為凸排，但首行開始處不超過版心所設定的範圍。</p>
+      <p>凸排時，次行起縮排通常為固定量的空白，例如人名三字加冒號共四字，凡遇對話時次行皆縮排四個全型空白。遇人名少於三字時，則於姓與名間加入空白，以保持體例一致。</p>
+    </section>
+    <section id="line_head_indent_of_paragraphs">
+      <h4 id="h-line_head_indent_of_paragraphs">段落縮排</h4>
+      <p>段落縮排係指將版心（單欄排版時）以及欄的範圍（多欄排版時）由行頭側以指定的量，將文字開始位置向后移動的處理。此種縮排方式多應用於段落內或段落間引用文章、詩詞及標題等。</p>
+      <div class="note">
+        <p>一般而言以縮排處理的段落，文字尺寸與內文相同。有時會調整字體，與內文做出差異。或／及於前後段落間加入段落間距，使該段落與內文段落差異更為明顯。加入間距所佔空間應為內文行的整數倍。</p>
+      </div>
+    </section>
+    <section id="ways_of_alignments">
+      <h4 id="h-ways_of_alignments">對齊處理</h4>
+      <p>對齊係指使段落間各行文字實際配置位置能夠與預設的文字配置位置符合。有著以下作法。</p>
+      <ol>
+        <li>
+          <h5>置中對齊</h5>
+          <p>行內文字原則上緊貼配置，文字列的中央與行的中央對齊排列，未滿一行時，該行文字列對行頭與行尾的空白量均等。</p>
+        </li>
+        <li>
+          <h5>行首對齊</h5>
+          <p>行內文字原則上緊貼配置，文字列開頭與行首位置對齊，未滿一行時，該行末字至行尾使用空白。</p>
+        </li>
+        <li>
+          <h5>行尾對齊</h5>
+          <p>行內文字原則上緊貼配置，文字列末尾與行尾位置對齊，未滿一行時，該行首字至行首使用空白。</p>
+        </li>
+        <li>
+          <h5>均等排列</h5>
+          <p>行內文字原則上緊貼配置，文字列開頭與行頭位置對齊、文字列末尾與行尾位置對齊，未滿一行時，空白平均置於該行各字間。</p>
+          <p>均等排列多見於以下兩種狀況：</p>
+          <ol>
+            <li>此種情況較常見。各行套用標點禁則處理後，部分行行內將剩餘一字以上的空白，為符合中文排版段落頭尾對齊的規則，該行以均等排列處理；於段落末行或段落僅有一行時則不使用均等排列。</li>
+            <li>於列表，如列舉人名、物品名時，採均等排列以求體例一致，於段落末行或段落僅有一行時，亦使用均等排列。</li>
+          </ol>
+        </li>
+      </ol>
+    </section>
+    <section id="adjustments_of_orphans_and_widows">
+      <h4 id="h-adjustments_of_orphans_and_widows">孤行與孤字處理</h4>
+      <p>中文排版傳統上有著「孤字不成行、孤行不成頁」的規則。實際原則如下：</p>
+      <ol>
+        <li>
+          <p>若段落末行僅有一個漢字，或一個漢字加上標點符號，即為孤字。孤字可以以下方法處理，使段落末行能有兩個漢字以上：</p>
+          <ol>
+            <li>比照避頭點的處理方式，由前一行取一字至末行，前一行採均等排列。</li>
+            <li>刪減該段落文字，使孤字縮進段落前一行。</li>
+            <li>於該段落增加文字。</li>
+          </ol>
+          <div class="note">
+            <p>孤字之定義近似於拉丁文字排版中orphan的概念，可參考<a href="http://www.w3.org/TR/dpub-latinreq/#orphans">《拉丁文字排版與分頁需求》5.2節</a>，其定義也隨排版者有所不同。</p>
+          </div>
+        </li>
+        <li>
+          <p>若頁面中第一行為前一頁最後一個段落的末行，即為孤行。孤行可以以下方法處理：</p>
+          <ol>
+            <li>將孤行移至前一頁，使其突出版心。</li>
+            <li>前一頁最後段落取一行置於該頁。</li>
+            <li>刪除該段落文字，使該行能納入前一頁之段落。</li>
+            <li>於該段落增加文字，讓該行文字能夠超過一行以上。</li>
+          </ol>
+          <div class="note">
+            <p>孤行之定義近似於拉丁文字排版中widow的概念，可參考<a href="http://www.w3.org/TR/dpub-latinreq/#widows">《拉丁文字排版與分頁需求》5.1節</a>。</p>
+          </div>
+        </li>
+      </ol>
+      <p>孤字孤行有著程度差異，如：</p>
+      <ol type="a">
+        <li>一頁僅有一行，該行僅有一字與標點。即孤字孤行同時出現。</li>
+        <li>一頁有複數段落，第一行為孤行，且該行僅有一字與標點。即孤字孤行同時出現。</li>
+        <li>一頁僅有一行，該行為孤行。</li>
+        <li>一頁有複數段落，第一行為孤行。</li>
+        <li> 一頁有複數段落，其中某一段落末行僅有一字，該字為孤字。</li>
+      </ol>
+      <p>以上狀況是否需進行處理，各排版者有不同的標準。其中a.與b. 對體裁的影響較為嚴重，c.次之，d.與e.之處理則較少見。</p>
+    </section>
+  </section>
+</section>
+<!-- end of Line Composition -->
+<section id="positioning_of_headings_notes_illustrations_and_tables"> 
+  <!--OddPage-->
+  <h2 id="h-positioning_of_headings_notes_illustrations_and_tables">標題、注釋與圖片、表格的排版處理</h2>
+  <section id="handling_of_headings">
+    <h3 id="h-handling_of_headings">標題處理（包含換頁處理）</h3>
+    <section id="types_of_headings">
+      <h4 id="h-types_of_headings">標題的種類</h4>
+      <p>標題依照排版處理方式，可分為以下三種：</p>
+      <ul>
+        <li>全頁標題</li>
+        <li>內文標題</li>
+        <li>同行標題</li>
+      </ul>
+      <div class="note">
+        <p>雜誌因為排版需求，標題會使用相當多種多樣的方式處理，但書籍排版較為單純，故不將雜誌使用的標題配置方式列於本文件之中。</p>
+      </div>
+      <p>全頁為書籍中需要大幅區分時使用，為了標題而使用一整頁，背面為空白。有時還會有副標、摘句、作者名以及圖片、部分段落等元素配置其上。有時也有背面不為空白的使用方式。通常在書籍內文開始處，會以扉頁標注書名。</p>
+      <p>內文標題是以獨立一行呈現標題的作法。於標題後換行，直接接續本文。大標與中標等使用這種形式配置。</p>
+      <div class="note">
+        <p>標題是為了區分內容而添加，依照階層構造，由上而下分別為扉頁、大標、中標、小標。</p>
+      </div>
+      <div class="note">
+        <p>扉頁通常指一本書的蝴蝶頁，如果依照放標題順序，依序是：書名頁、章名頁、大標、中標、小標。</p>
+      </div>
+      <div class="note">
+        <p>標題構造結構為何，依照書籍內容而定。有人認為標題層級不應該過多。</p>
+      </div>
+      <div class="note">
+        <p>多欄排列時，有著將換行標題置於複數欄的配置方法。稱為「跨欄標題」。</p>
+      </div>
+      <p>同行標題為標題後接的文章不予換行，而以接續在標題後面繼續排列的形式呈現。同行標題主要利用於小標。此外，小標也會使用換行標題。</p>
+    </section>
+    <section id="styling_of_headings">
+      <h4 id="h-styling_of_headings">使標題得以突顯的方式</h4>
+      <p>標題主要是為了呈現階層結構，所以需要以特別的表現體裁來顯示其階層。標題的表現體裁包含以下幾種方式：</p>
+      <ol>
+        <li>使用不同的文字尺寸呈現標題的階層，例如，有著大標、中標、小標時，小標比本文文字尺寸（例如：9pt）大一階段（例如：10pt），中標則比小標大一階段（例如：12pt），大標則比中標大一階段（例如：14pt）。
+          <div class="note">
+            <p>也有採用將本文文字尺寸依照比例放大的方式，使用這方式時，以10%–20%上下，依階層放大為佳。</p>
+          </div>
+        </li>
+        <li>使用的字體使用黑體，或者採用宋體但加粗。此外，也有使用圓體、楷體的案例。
+          <div class="note">
+            <p>活版印刷使用作為標題的宋體字，其活字設計時都會因為供標題使用而字重偏重。但使用數位字體時由於是採內文字設計，放大字級後顯得過輕，幾乎都會加重字重為粗體。</p>
+          </div>
+          <div class="note">
+            <p>使用黑體作為小標時，也都會加重字重，令標題凸顯。</p>
+          </div>
+        </li>
+        <li>對齊橫排的大標與中標使用置中對齊的案例相當多，但直排時，則多使用對齊行頭或下字。
+          <div class="note">
+            <p>下字時，下字的量一般使用版心設定文字尺寸的二倍漢字之長寬。大標、中標、小標下字量，由各排版者決定，無一定規則。</p>
+          </div>
+        </li>
+        <li>其他加上框線、圖片、記號等。</li>
+      </ol>
+    </section>
+    <section id="handling_of_new_retros">
+      <h4 id="h-handling_of_new_retros">單頁起、換頁處理</h4>
+      <p>標題為了作出明確區分，而會使用於新頁面開始的方法，此時以以下原則處理：</p>
+      <ol>
+        <li>一定要出現於奇數頁稱為單頁起，主要應用於扉頁、大標等。
+          <div class="note">
+            <p>書籍由封面作為第一頁開始，所以直排右翻書，由左頁開始（稱為左頁起），橫排左翻書，由右頁開始（稱為右頁起）。</p>
+          </div>
+        </li>
+        <li>不分奇數頁還偶數頁，從新頁面開始稱為換頁。主要用於大標。</li>
+        <li>當中標、小標出現於某一頁的最末尾，其後沒有空間以至於無法接續內文段落時，由於這樣的呈現會使得體裁不良，也會讓中標、小標換頁，於下一頁開頭呈現。</li>
+      </ol>
+    </section>
+    <section id="handling_of_spaces_before_new_rectos">
+      <h4 id="h-handling_of_spaces_before_new_rectos">單頁起、換頁處理時，前一頁的處理</h4>
+      <p>單頁起、換頁處理時，前一頁的排版處理會是問題（最終頁的處理亦同），以以下原則處理：</p>
+      <ol>
+        <li>不分欄排版遇到單頁起與換頁時，前一頁末尾後面留空即可。</li>
+        <li>換欄時，前一欄末尾後面留空即可。</li>
+        <li>直排多欄排版時，由上欄往下欄，各行依序排列，行數可不齊。</li>
+        <li>橫排多欄排版時，各欄行數原則上需對齊。若無法對齊時，不足的行數於最右欄末留空。</li>
+      </ol>
+    </section>
+    <section id="processing_of_runin_headings">
+      <h4 id="h-processing_of_runin_headings">同行標題的處理方式</h4>
+      <p>同行標題主要用於小標，以下介紹幾個同行標題的配置範例。同行標題與之後接續內文的空白量，一般為版心設定文字尺寸的全形空白。此外，同行標題可以配置於頁末。</p>
+      <ol>
+        <li>與內文採相同文字尺寸，字體改為黑體或者楷體。</li>
+        <li>不比內文文字尺寸較小，字體改為黑體或者楷體。
+          <div class="note">
+            <p>此時同行標題所占空間並非內文文字尺寸的整數倍，所以可調整與內文間的空白量，以避免內文文字無法縱橫對齊，或者無法齊行首、行尾。</p>
+          </div>
+        </li>
+        <li>與內文採用相同文字尺寸與字體，但於前面添加漢字數字或阿拉伯數字。</li>
+      </ol>
+    </section>
+  </section>
+  <!--
     <section id="generatedID-77">
       <h3 id="h-generatedid-77"><span class="secno">4.2 </span>注釋的排列</h3>
     </section>
@@ -1204,1063 +1019,1063 @@
     <section id="generatedID-78">
       <h3 id="h-generatedid-78"><span class="secno">4.3 </span>圖片與表格與計算公式的處理</h3>
     </section>
-    -->
+    --> 
 </section>
-  
-    
-    <section id="tables_of_chinese_punctuation_marks" class="appendix">
-      <h3 id="h-tables_of_chinese_punctuation_marks"><span class="secno">附錄Ａ </span>中文標點符號表</h3>
-
-      <table class="punctuation">
-        <thead>
-          <th>名稱</th>
-          <th>字符</th>
-          <th>萬國碼</th>
-          <th>萬國碼<wbr>名稱</th>
-          <th>直排時<wbr>順時針旋轉90度</th>
-          <th>禁止出現<wbr>於行首</th>
-          <th>禁止出現<wbr>於行尾</th>
-          <th>不可<wbr>分離</th>
-          <th>說明</th>
-        </thead>
-
-        <tbody>
-          <tr>
-            <th rowspan="2">句號</th>
-            <td>。</td>
-            <td>3002</td>
-            <td>IDEOGRAPHIC FULL STOP</td>
-            <td>否</td>
-            <td>是</td>
-            <td>否</td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>．</td>
-            <td>FF0E</td>
-            <td>FULLWIDTH FULL STOP</td>
-            <td></td>
-            <td>是</td>
-            <td>否</td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <th>逗號</th>
-            <td>，</td>
-            <td>FF0C</td>
-            <td>FULLWIDTH COMMA</td>
-            <td>否</td>
-            <td>是</td>
-            <td>否</td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <th>頓號</th>
-            <td>、</td>
-            <td>3001</td>
-            <td>IDEOGRAPHIC COMMA</td>
-            <td>否</td>
-            <td>是</td>
-            <td>否</td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <th>冒號</th>
-            <td>：</td>
-            <td>FF1A</td>
-            <td>FULLWIDTH COLON</td>
-            <td>否</td>
-            <td>是</td>
-            <td>否</td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <th>分號</th>
-            <td>；</td>
-            <td>FF1B</td>
-            <td>FULLWIDTH SEMICOLON</td>
-            <td>否</td>
-            <td>是</td>
-            <td>否</td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <th rowspan="2">驚嘆號</th>
-            <td>！</td>
-            <td>FF01</td>
-            <td>FULLWIDTH EXCLAMATION MARK</td>
-            <td>否</td>
-            <td>是*1</td>
-            <td>否</td>
-            <td></td>
-            <td>三驚嘆號疊用時應佔二個漢字大小</td>
-          </tr>
-          <tr>
-            <td>‼</td>
-            <td>203C</td>
-            <td></td>
-            <td>否</td>
-            <td>是</td>
-            <td>否</td>
-            <td></td>
-            <td>佔一個漢字大小</td>
-          </tr>
-          <tr>
-            <th rowspan="2">問號</th>
-            <td>？</td>
-            <td>FF1F</td>
-            <td>FULLWIDTH QUESTION MARK</td>
-            <td>否</td>
-            <td>是*1</td>
-            <td>否</td>
-            <td></td>
-            <td>三問號疊用時應佔二個漢字大小</td>
-          </tr>
-          <tr>
-            <td>⁇</td>
-            <td>2047</td>
-            <td>DOUBLE QUESTION MARK</td>
-            <td>否</td>
-            <td>是*1</td>
-            <td>否</td>
-            <td></td>
-            <td>佔一個漢字大小</td>
-          </tr>
-          <tr>
-            <th rowspan="8">引號</th>
-            <td>「</td>
-            <td>300C</td>
-            <td>LEFT CORNER BRACKET</td>
-            <td>是</td>
-            <td>否</td>
-            <td>是</td>
-            <td></td>
-            <td rowspan="4">主要用於繁體</td>
-          </tr>
-          <tr>
-            <td>」</td>
-            <td>300D</td>
-            <td>RIGHT CORNER BRACKET</td>
-            <td>是</td>
-            <td>是</td>
-            <td>否</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>『</td>
-            <td>300E</td>
-            <td>LEFT WHITE CORNER BRACKET</td>
-            <td>是</td>
-            <td>否</td>
-            <td>是</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>』</td>
-            <td>300F</td>
-            <td>RIGHT WHITE CORNER BRACKET</td>
-            <td>是</td>
-            <td>是</td>
-            <td>否</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>“</td>
-            <td>201C</td>
-            <td>LEFT DOUBLE QUOTATION MARK</td>
-            <td>是*2</td>
-            <td>否</td>
-            <td>是</td>
-            <td></td>
-            <td rowspan="4">佔一個漢字大小，主要用於簡體</td>
-          </tr>
-          <tr>
-            <td>”</td>
-            <td>201D</td>
-            <td>RIGHT DOUBLE QUOTATION MARK</td>
-            <td>是*2</td>
-            <td>是</td>
-            <td>否</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>‘</td>
-            <td>2018</td>
-            <td>LEFT SINGLE QUOTATION MARK</td>
-            <td>是*2</td>
-            <td>否</td>
-            <td>是</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>’</td>
-            <td>2019</td>
-            <td>RIGHT SINGLE QUOTATION MARK</td>
-            <td>是*2</td>
-            <td>是</td>
-            <td>否</td>
-            <td></td>
-          </tr>
-          <tr>
-            <th rowspan="2">括號</th>
-            <td>（</td>
-            <td>FF08</td>
-            <td>FULLWIDTH LEFT PARENTHESIS</td>
-            <td>是</td>
-            <td>否</td>
-            <td>是</td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>）</td>
-            <td>FF09</td>
-            <td>FULLWIDTH RIGHT PARENTHESIS</td>
-            <td>是</td>
-            <td>是</td>
-            <td>否</td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <th>破折號</th>
-            <td>——</td>
-            <td>2014</td>
-            <td>EM DASH</td>
-            <td>是</td>
-            <td>否</td>
-            <td>否</td>
-            <td>是*3</td>
-            <td>佔二個漢字大小，呈一直線、中間不斷開</td>
-          </tr>
-          <tr>
-            <th rowspan="4">書名號</th>
-            <td>《</td>
-            <td>300B</td>
-            <td>LEFT DOUBLE ANGLE BRACKET</td>
-            <td>是</td>
-            <td>否</td>
-            <td>是</td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>》</td>
-            <td>300B</td>
-            <td>RIGHT DOUBLE ANGLE BRACKET</td>
-            <td>是</td>
-            <td>是</td>
-            <td>否</td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>〈</td>
-            <td>3009</td>
-            <td>LEFT ANGLE BRACKET</td>
-            <td>是</td>
-            <td>否</td>
-            <td>是</td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>〉</td>
-            <td>3009</td>
-            <td>RIGHT ANGLE BRACKET</td>
-            <td>是</td>
-            <td>是</td>
-            <td>否</td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <th>刪節號／省略號</th>
-            <td>……</td>
-            <td>2026</td>
-            <td>HORIZONTAL ELLIPSIS</td>
-            <td>是</td>
-            <td>否</td>
-            <td>否</td>
-            <td>是*3</td>
-            <td>佔二個漢字大小，應將省略點置於字面中央</td>
-          </tr>
-          <tr>
-            <th rowspan="4">連接號</th>
-            <td>～</td>
-            <td>FF5E</td>
-            <td>FULLWIDTH TILDE</td>
-            <td>是</td>
-            <td>是*1</td>
-            <td>否</td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>-</td>
-            <td>002D</td>
-            <td>HYPHEN-MINUS</td>
-            <td>是</td>
-            <td>是*1</td>
-            <td>否</td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>–</td>
-            <td>2013</td>
-            <td>EN DASH</td>
-            <td>是</td>
-            <td>是*1</td>
-            <td>否</td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>—</td>
-            <td>2014</td>
-            <td>EM DASH</td>
-            <td>是</td>
-            <td>是*1</td>
-            <td>否</td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <th rowspan="2">間隔號</th>
-            <td>·</td>
-            <td>00B7</td>
-            <td>MIDDLE DOT</td>
-            <td>否</td>
-            <td>是*1</td>
-            <td>否</td>
-            <td></td>
-            <td>佔一個漢字大小，可視情況改用半個漢字大小</td>
-          </tr>
-          <tr>
-            <td>‧</td>
-            <td>2027</td>
-            <td>HYPHENATION POINT*4</td>
-            <td>否</td>
-            <td>是*1</td>
-            <td>否</td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <th rowspan="2">分隔號</th>
-            <td>/</td>
-            <td>002F</td>
-            <td>SOLIDUS</td>
-            <td></td>
-            <td>是</td>
-            <td>是</td>
-            <td></td>
-            <td>主要用於簡體</td>
-          </tr>
-          <tr>
-            <td>／</td>
-            <td>FF0F</td>
-            <td>FULLWIDTH SOLIDUS</td>
-            <td>否</td>
-            <td>是</td>
-            <td>否</td>
-            <td></td>
-            <td>主要用於繁體</td>
-          </tr>
-          <tr>
-            <th rowspan="10">括號類</th>
-            <td>【</td>
-            <td>3010</td>
-            <td>LEFT BLACK LENTICULAR BRACKET</td>
-            <td>是</td>
-            <td>否</td>
-            <td>是</td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>】</td>
-            <td>3011</td>
-            <td>RIGHT BLACK LENTICULAR BRACKET</td>
-            <td>是</td>
-            <td>是</td>
-            <td>否</td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>〖</td>
-            <td>3016</td>
-            <td>LEFT WHITE LENTICULAR BRACKET</td>
-            <td>是</td>
-            <td>否</td>
-            <td>是</td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>〗</td>
-            <td>3017</td>
-            <td>RIGHT WHITE LENTICULAR BRACKET</td>
-            <td>是</td>
-            <td>是</td>
-            <td>否</td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>〔</td>
-            <td>3014</td>
-            <td>LEFT TORTOISE SHELL BRACKET</td>
-            <td>是</td>
-            <td>否</td>
-            <td>是</td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>〕</td>
-            <td>3015</td>
-            <td>RIGHT TORTOISE SHELL BRACKET</td>
-            <td>是</td>
-            <td>是</td>
-            <td>否</td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>［</td>
-            <td>FF3B</td>
-            <td>FULLWIDTH LEFT SQUARE BRACKET</td>
-            <td>是</td>
-            <td>否</td>
-            <td>是</td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>］</td>
-            <td>FF3D</td>
-            <td>FULLWIDTH RIGHT SQUARE BRACKET</td>
-            <td>是</td>
-            <td>是</td>
-            <td>否</td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>｛</td>
-            <td>FF5B</td>
-            <td>FULLWIDTH LEFT CURLY BRACKET</td>
-            <td>是</td>
-            <td>否</td>
-            <td>是</td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>｝</td>
-            <td>FF5D</td>
-            <td>FULLWIDTH RIGHT CURLY BRACKET</td>
-            <td>是</td>
-            <td>是</td>
-            <td>否</td>
-            <td></td>
-            <td></td>
-          </tr>
-        </tbody>
-      </table>
-
-      <ol class="punctuation" type="1">
-        <li>依照出現的狀況不同，也有允許出現於行首的案例，以繁體中文出版品為主。 </li>
-        <li>文字直排時通常改用角引號[『』「」]。</li>
-        <li>符號不可斷開、分行，唯無法避免時，可視狀況拆至二行。</li>
-        <li>來自大五碼。</li>
-      </ol>
-    </section>
-
-    <section id="glossary" class="appendix">
-      <h3 id="h-glossary"><span class="secno">附錄B </span>詞彙表</h3>
-
-      <table class="glossary">
-        <thead>
-          <td>詞彙</td>
-          <td>漢語拼音</td>
-          <td>英語</td>
-        </thead>
-        <tbody>
-          <tr>
-            <td>阿拉伯數字</td>
-            <td>Ālābó shùzì</td>
-            <td>Arabic numerals</td>
-          </tr>
-          <tr>
-            <td>版心</td>
-            <td>bǎnxīn</td>
-            <td>type area</td>
-          </tr>
-          <tr>
-            <td>半形&#x2F;半角</td>
-            <td>bànxíng&#x2F;bànjiǎo</td>
-            <td>half-width</td>
-          </tr>
-          <tr>
-            <td>標點符號</td>
-            <td>biāodiǎn fúhào</td>
-            <td>punctuation marks</td>
-          </tr>
-          <tr>
-            <td>標點符號擠壓</td>
-            <td>biāodiǎn fúhào jǐyā</td>
-            <td>compression rules for consecutive punctuation marks</td>
-          </tr>
-          <tr>
-            <td>標號</td>
-            <td>biāohào</td>
-            <td>indication punctuation  marks</td>
-          </tr>
-          <tr>
-            <td>標音</td>
-            <td>biāoyīn</td>
-            <td>phonetic annotation</td>
-          </tr>
-          <tr>
-            <td>比例字體</td>
-            <td>bǐlì zìti</td>
-            <td>proportional fonts</td>
-          </tr>
-          <tr>
-            <td>出血</td>
-            <td>chūxiě</td>
-            <td>bleed</td>
-          </tr>
-          <tr>
-            <td>大五碼</td>
-            <td>Dàwǔmǎ</td>
-            <td>Big 5</td>
-          </tr>
-          <tr>
-            <td>地／地腳</td>
-            <td>dì&#x2F;dìjiǎo</td>
-            <td>foot&#x2F;bottom margin</td>
-          </tr>
-          <tr>
-            <td>點</td>
-            <td>diǎn</td>
-            <td>point (pt)</td>
-          </tr>
-          <tr>
-            <td>點號</td>
-            <td>diǎnhào</td>
-            <td>pause or stop punctuation marks</td>
-          </tr>
-          <tr>
-            <td>底端</td>
-            <td>dǐduān</td>
-            <td>foot side</td>
-          </tr>
-          <tr>
-            <td>頂端</td>
-            <td>dǐngduān</td>
-            <td>head side</td>
-          </tr>
-          <tr>
-            <td>逗號</td>
-            <td>dòuhào</td>
-            <td>comma</td>
-          </tr>
-          <tr>
-            <td>段落</td>
-            <td>duànlùo</td>
-            <td>paragraph</td>
-          </tr>
-          <tr>
-            <td>對齊方式</td>
-            <td>duìqí fāngshì</td>
-            <td>alignment</td>
-          </tr>
-          <tr>
-            <td>頓號</td>
-            <td>dùnhào</td>
-            <td>slight-pause comma</td>
-          </tr>
-          <tr>
-            <td>兒化音</td>
-            <td>érhuàyīn</td>
-            <td>rhotacization of syllable finals</td>
-          </tr>
-          <tr>
-            <td>仿宋體</td>
-            <td>fǎngsòngtǐ</td>
-            <td>Imitation Song (Fangsong)</td>
-          </tr>
-          <tr>
-            <td>繁體中文</td>
-            <td>fántǐ Zhōngwén</td>
-            <td>Traditional Chinese</td>
-          </tr>
-          <tr>
-            <td>分詞連寫</td>
-            <td>fēncí liánxiě</td>
-            <td>words as the base units</td>
-          </tr>
-          <tr>
-            <td>分隔號</td>
-            <td>fēngéhào</td>
-            <td>solidus</td>
-          </tr>
-          <tr>
-            <td>分號</td>
-            <td>fēnhào</td>
-            <td>semicolon</td>
-          </tr>
-          <tr>
-            <td>分字連寫</td>
-            <td>fēnzì liánxiě</td>
-            <td>characters as the base units</td>
-          </tr>
-          <tr>
-            <td>符號分離禁則</td>
-            <td>fúhào fēnlí jìnzé</td>
-            <td>prohibition rules for unbreakable characters</td>
-          </tr>
-          <tr>
-            <td>括號</td>
-            <td>guāhào</td>
-            <td>parenthesis</td>
-          </tr>
-          <tr>
-            <td>括注符號</td>
-            <td>guāzhù fúhào</td>
-            <td>brackets</td>
-          </tr>
-          <tr>
-            <td>孤行</td>
-            <td>gūháng</td>
-            <td>widows</td>
-          </tr>
-          <tr>
-            <td>國標碼</td>
-            <td>guóbiāomǎ</td>
-            <td>GB 18030-2005</td>
-          </tr>
-          <tr>
-            <td>行</td>
-            <td>háng</td>
-            <td>line</td>
-          </tr>
-          <tr>
-            <td>行高</td>
-            <td>hánggāo</td>
-            <td>line-height</td>
-          </tr>
-          <tr>
-            <td>行間批語</td>
-            <td>hángjiān pīyǔ</td>
-            <td>interlinear comments</td>
-          </tr>
-          <tr>
-            <td>行間注</td>
-            <td>hángjiānzhù</td>
-            <td>interlinear annotations</td>
-          </tr>
-          <tr>
-            <td>行首行尾禁則</td>
-            <td>hángshǒu hángwěi jìnzé</td>
-            <td>prohibition rules for line start&#x2F;end</td>
-          </tr>
-          <tr>
-            <td>行尾點號懸掛</td>
-            <td>hángwěi diǎnhào xuánguà</td>
-            <td>hanging punctuation marks for line end</td>
-          </tr>
-          <tr>
-            <td>漢語拼音</td>
-            <td>Hànyǔ pīnyīn</td>
-            <td>Hanyu Pinyin</td>
-          </tr>
-          <tr>
-            <td>漢字</td>
-            <td>Hànzì</td>
-            <td>Chinese characters (Han characters&#x2F;Hanzi)</td>
-          </tr>
-          <tr>
-            <td>黑體</td>
-            <td>hēitǐ</td>
-            <td>Heiti</td>
-          </tr>
-          <tr>
-            <td>橫排</td>
-            <td>héngpái</td>
-            <td>horizontal writing mode</td>
-          </tr>
-          <tr>
-            <td>合文</td>
-            <td>héwén</td>
-            <td>ligature</td>
-          </tr>
-          <tr>
-            <td>活字排版</td>
-            <td>huózì páibǎn</td>
-            <td>letterpress printing</td>
-          </tr>
-          <tr>
-            <td>間隔號</td>
-            <td>jiàngéhào</td>
-            <td>interpunct</td>
-          </tr>
-          <tr>
-            <td>簡體中文</td>
-            <td>jiǎntǐ Zhōngwén</td>
-            <td>Simplified Chiense</td>
-          </tr>
-          <tr>
-            <td>結束括注符號</td>
-            <td>jiéshù guāzhù fúhào</td>
-            <td>closing bracket(s)</td>
-          </tr>
-          <tr>
-            <td>介音</td>
-            <td>jièyīn</td>
-            <td>medial</td>
-          </tr>
-          <tr>
-            <td>驚嘆號</td>
-            <td>jīngtànhào</td>
-            <td>exclamation marks</td>
-          </tr>
-          <tr>
-            <td>基文</td>
-            <td>jīwén</td>
-            <td>base text</td>
-          </tr>
-          <tr>
-            <td>句號</td>
-            <td>jùhào</td>
-            <td>period</td>
-          </tr>
-          <tr>
-            <td>句末點號</td>
-            <td>jùmò diǎnhào</td>
-            <td>post-sentence pause punctuation marks</td>
-          </tr>
-          <tr>
-            <td>句中點號</td>
-            <td>jùzhōng diǎnhào</td>
-            <td>inter-sentence pause punctuation marks</td>
-          </tr>
-          <tr>
-            <td>開始括注符號</td>
-            <td>kāishǐ guāzhù fúhào</td>
-            <td>opening bracket(s)</td>
-          </tr>
-          <tr>
-            <td>楷體</td>
-            <td>kǎitǐ</td>
-            <td>Kai</td>
-          </tr>
-          <tr>
-            <td>拉丁字母</td>
-            <td>lādīng zìmǔ</td>
-            <td>Latin letters</td>
-          </tr>
-          <tr>
-            <td>欄</td>
-            <td>lán</td>
-            <td>column</td>
-          </tr>
-          <tr>
-            <td>欄間距</td>
-            <td>lán jiānjù</td>
-            <td>column gap</td>
-          </tr>
-          <tr>
-            <td>連接號</td>
-            <td>liánjiēhào</td>
-            <td>dash</td>
-          </tr>
-          <tr>
-            <td>羅馬拼音</td>
-            <td>luómā pīnyīn</td>
-            <td>Romanization</td>
-          </tr>
-          <tr>
-            <td>冒號</td>
-            <td>màohào</td>
-            <td>colon</td>
-          </tr>
-          <tr>
-            <td>密排</td>
-            <td>mìpái</td>
-            <td>seamless arrangement</td>
-          </tr>
-          <tr>
-            <td>末端</td>
-            <td>mòduān</td>
-            <td>end point</td>
-          </tr>
-          <tr>
-            <td>破折號</td>
-            <td>pòzhéhào</td>
-            <td>long dash</td>
-          </tr>
-          <tr>
-            <td>輕聲</td>
-            <td>qīngshēng</td>
-            <td>neutral tone</td>
-          </tr>
-          <tr>
-            <td>齊頭尾對齊</td>
-            <td>qítóuwěi duìqí</td>
-            <td>justified alignment</td>
-          </tr>
-          <tr>
-            <td>全形&#x2F;全角</td>
-            <td>quánxíng&#x2F;quánjiao</td>
-            <td>full-width</td>
-          </tr>
-          <tr>
-            <td>入聲</td>
-            <td>rùshēng</td>
-            <td>checked tone</td>
-          </tr>
-          <tr>
-            <td>刪節號／省略號</td>
-            <td>shānjiéhào&#x2F;shěnglüèhào</td>
-            <td>ellipsis</td>
-          </tr>
-          <tr>
-            <td>聲調</td>
-            <td>shēngdiào</td>
-            <td>tone</td>
-          </tr>
-          <tr>
-            <td>聲母</td>
-            <td>shēngmǔ</td>
-            <td>initial</td>
-          </tr>
-          <tr>
-            <td>始端</td>
-            <td>shǐduān</td>
-            <td>starting point</td>
-          </tr>
-          <tr>
-            <td>書名號</td>
-            <td>shūmínghào</td>
-            <td>title mark</td>
-          </tr>
-          <tr>
-            <td>疏排</td>
-            <td>shūpái</td>
-            <td>distributed arrangement</td>
-          </tr>
-          <tr>
-            <td>宋體（明體／明朝體）</td>
-            <td>Sòngtǐ (Míngtǐ&#x2F;Míngcháotǐ)</td>
-            <td>Song</td>
-          </tr>
-          <tr>
-            <td>天／天頭</td>
-            <td>tiān&#x2F;tiāntóu</td>
-            <td>head&#x2F;top margin</td>
-          </tr>
-          <tr>
-            <td>跳格</td>
-            <td>tiàogé</td>
-            <td>tab</td>
-          </tr>
-          <tr>
-            <td>彎引號</td>
-            <td>wān-yǐnhào</td>
-            <td>curve quotation mark</td>
-          </tr>
-          <tr>
-            <td>萬國碼</td>
-            <td>wànguómǎ</td>
-            <td>Unicode</td>
-          </tr>
-          <tr>
-            <td>文本</td>
-            <td>wénběn</td>
-            <td>text</td>
-          </tr>
-          <tr>
-            <td>問號</td>
-            <td>wènhào</td>
-            <td>question mark</td>
-          </tr>
-          <tr>
-            <td>文字設計／字體排印</td>
-            <td>wénzìshèjì&#x2F;zìtǐpáiyìn</td>
-            <td>typography</td>
-          </tr>
-          <tr>
-            <td>現代標準漢語（普通話、國語、華語）</td>
-            <td>xiàndài biāozhǔn Hànyǔ</td>
-            <td>Modern Standard Chinese (Mandarin)</td>
-          </tr>
-          <tr>
-            <td>希臘字母</td>
-            <td>xīlà zìmǔ</td>
-            <td>Greek letters</td>
-          </tr>
-          <tr>
-            <td>西文</td>
-            <td>xīwén</td>
-            <td>Western languages</td>
-          </tr>
-          <tr>
-            <td>西文字母</td>
-            <td>xīwén zìmǔ</td>
-            <td>Western alphabet</td>
-          </tr>
-          <tr>
-            <td>以連字符斷行</td>
-            <td>yǐ liánzìfú duànháng</td>
-            <td>hyphenation</td>
-          </tr>
-          <tr>
-            <td>引號</td>
-            <td>yǐnhào</td>
-            <td>quotation</td>
-          </tr>
-          <tr>
-            <td>意音文字</td>
-            <td>yìyīn wénzì</td>
-            <td>ideographs</td>
-          </tr>
-          <tr>
-            <td>韻母</td>
-            <td>yùnmŭ</td>
-            <td>final</td>
-          </tr>
-          <tr>
-            <td>直角引號</td>
-            <td>zhíjiǎo yǐnhào</td>
-            <td>corner quotation mark</td>
-          </tr>
-          <tr>
-            <td>直排（豎排）</td>
-            <td>zhípái (shùpái)</td>
-            <td>vertical writing mode</td>
-          </tr>
-          <tr>
-            <td>中外文對照</td>
-            <td>Zhōng-wàiwén duìzhào</td>
-            <td>bilingual annotations</td>
-          </tr>
-          <tr>
-            <td>中、西文混排處理</td>
-            <td>Zhōng-xīwén hùnpái chùlǐ</td>
-            <td>Chinese and Western mixed text composition</td>
-          </tr>
-          <tr>
-            <td>中日韓越意音文字</td>
-            <td>Zhōng-Rì-Hán-Yuè yìyīn wénzì</td>
-            <td>CJKV Ideographs</td>
-          </tr>
-          <tr>
-            <td>中文</td>
-            <td>Zhōngwén</td>
-            <td>Chinese</td>
-          </tr>
-          <tr>
-            <td>專名號</td>
-            <td>zhuānmínghào</td>
-            <td>proper name mark</td>
-          </tr>
-          <tr>
-            <td>著重號</td>
-            <td>zhuózhònghào</td>
-            <td>emphasis dot</td>
-          </tr>
-          <tr>
-            <td>注文</td>
-            <td>zhùwén</td>
-            <td>annotation text</td>
-          </tr>
-          <tr>
-            <td>注音符號</td>
-            <td>zhùyīn fúhào</td>
-            <td>Zhuyin (Bopomofo)</td>
-          </tr>
-          <tr>
-            <td>字幅</td>
-            <td>zìfú</td>
-            <td>character advance</td>
-          </tr>
-          <tr>
-            <td>字距</td>
-            <td>zìjù</td>
-            <td>tracking</td>
-          </tr>
-          <tr>
-            <td>字面</td>
-            <td>zìmiàn</td>
-            <td>character face</td>
-          </tr>
-          <tr>
-            <td>字體</td>
-            <td>zìtǐ</td>
-            <td>typeface</td>
-          </tr>
-          <tr>
-            <td>字型</td>
-            <td>zìxíng</td>
-            <td>font</td>
-          </tr>
-          <tr>
-            <td>字形</td>
-            <td>zìxíng</td>
-            <td>glyph</td>
-          </tr>
-          <tr>
-            <td>縱橫對齊</td>
-            <td>zònghéng duìqí</td>
-            <td>grid alignment</td>
-          </tr>
-          <tr>
-            <td>縱中橫排</td>
-            <td>zòngzhōnghéngpái</td>
-            <td>horizonal-in-vertical setting</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
-
-    <section id="references" class="appendix">
-      <h3 id="h-references"><span class="secno">附錄C </span>參考文獻</h3>
-      <ul class="references">
-        <li>《重訂標點符號手冊》（2008年修訂版）</li>
-        <li>《标点符号用法》（GB/T 15834―2011）</li>
-        <li>《出版物上数字用法》（GB/T 15835—2011）</li>
-        <li>《國語注音符號手冊》</li>
-        <li>《汉语拼音正词法基本规则》（GB/T 16159—2012）</li>
-      </ul>
-    </section>
-
-    <section id="acknowledgement" class="appendix">
-      <!--OddPage-->
-      <h3 id="h-acknowledgement"><span class="secno">附录D </span>致谢</h3>
-      <p>感谢以下參與者对本文档的建议與补充（依字母及拼音順序排列）：</p>
-      <ul class="acknowledgement">
-        <li>陳穎青</li>
-        <li>Hawkeyes Wind</li>
-        <li>贺师俊（百姓网）</li>
-        <li>侯迈（豆瓣）</li>
-        <li>吕康豪（BGI）</li>
-        <li>technommy</li>
-        <li>权循真（Mozilla）</li>
-        <li>殷建民（华光照排）</li>
-      </ul>
-      <p>欲了解最新的參與者信息，请参看<a href="https://github.com/w3c/clreq/graphs/contributors">GitHub贡献者列表</a>。</p>
-    </section>
+<section id="tables_of_chinese_punctuation_marks" class="appendix">
+  <h3 id="h-tables_of_chinese_punctuation_marks">中文標點符號表</h3>
+  <table class="punctuation">
+    <thead>
+      <tr>
+        <th>名稱</th>
+        <th>字符</th>
+        <th>萬國碼</th>
+        <th>萬國碼<wbr>
+          名稱</th>
+        <th>直排時<wbr>
+          順時針旋轉90度</th>
+        <th>禁止出現<wbr>
+          於行首</th>
+        <th>禁止出現<wbr>
+          於行尾</th>
+        <th>不可<wbr>
+          分離</th>
+        <th>說明</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th rowspan="2">句號</th>
+        <td>。</td>
+        <td>3002</td>
+        <td>IDEOGRAPHIC FULL STOP</td>
+        <td>否</td>
+        <td>是</td>
+        <td>否</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>．</td>
+        <td>FF0E</td>
+        <td>FULLWIDTH FULL STOP</td>
+        <td></td>
+        <td>是</td>
+        <td>否</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <th>逗號</th>
+        <td>，</td>
+        <td>FF0C</td>
+        <td>FULLWIDTH COMMA</td>
+        <td>否</td>
+        <td>是</td>
+        <td>否</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <th>頓號</th>
+        <td>、</td>
+        <td>3001</td>
+        <td>IDEOGRAPHIC COMMA</td>
+        <td>否</td>
+        <td>是</td>
+        <td>否</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <th>冒號</th>
+        <td>：</td>
+        <td>FF1A</td>
+        <td>FULLWIDTH COLON</td>
+        <td>否</td>
+        <td>是</td>
+        <td>否</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <th>分號</th>
+        <td>；</td>
+        <td>FF1B</td>
+        <td>FULLWIDTH SEMICOLON</td>
+        <td>否</td>
+        <td>是</td>
+        <td>否</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <th rowspan="2">驚嘆號</th>
+        <td>！</td>
+        <td>FF01</td>
+        <td>FULLWIDTH EXCLAMATION MARK</td>
+        <td>否</td>
+        <td>是*1</td>
+        <td>否</td>
+        <td></td>
+        <td>三驚嘆號疊用時應佔二個漢字大小</td>
+      </tr>
+      <tr>
+        <td>‼</td>
+        <td>203C</td>
+        <td></td>
+        <td>否</td>
+        <td>是</td>
+        <td>否</td>
+        <td></td>
+        <td>佔一個漢字大小</td>
+      </tr>
+      <tr>
+        <th rowspan="2">問號</th>
+        <td>？</td>
+        <td>FF1F</td>
+        <td>FULLWIDTH QUESTION MARK</td>
+        <td>否</td>
+        <td>是*1</td>
+        <td>否</td>
+        <td></td>
+        <td>三問號疊用時應佔二個漢字大小</td>
+      </tr>
+      <tr>
+        <td>⁇</td>
+        <td>2047</td>
+        <td>DOUBLE QUESTION MARK</td>
+        <td>否</td>
+        <td>是*1</td>
+        <td>否</td>
+        <td></td>
+        <td>佔一個漢字大小</td>
+      </tr>
+      <tr>
+        <th rowspan="8">引號</th>
+        <td>「</td>
+        <td>300C</td>
+        <td>LEFT CORNER BRACKET</td>
+        <td>是</td>
+        <td>否</td>
+        <td>是</td>
+        <td></td>
+        <td rowspan="4">主要用於繁體</td>
+      </tr>
+      <tr>
+        <td>」</td>
+        <td>300D</td>
+        <td>RIGHT CORNER BRACKET</td>
+        <td>是</td>
+        <td>是</td>
+        <td>否</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>『</td>
+        <td>300E</td>
+        <td>LEFT WHITE CORNER BRACKET</td>
+        <td>是</td>
+        <td>否</td>
+        <td>是</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>』</td>
+        <td>300F</td>
+        <td>RIGHT WHITE CORNER BRACKET</td>
+        <td>是</td>
+        <td>是</td>
+        <td>否</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>“</td>
+        <td>201C</td>
+        <td>LEFT DOUBLE QUOTATION MARK</td>
+        <td>是*2</td>
+        <td>否</td>
+        <td>是</td>
+        <td></td>
+        <td rowspan="4">佔一個漢字大小，主要用於簡體</td>
+      </tr>
+      <tr>
+        <td>”</td>
+        <td>201D</td>
+        <td>RIGHT DOUBLE QUOTATION MARK</td>
+        <td>是*2</td>
+        <td>是</td>
+        <td>否</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>‘</td>
+        <td>2018</td>
+        <td>LEFT SINGLE QUOTATION MARK</td>
+        <td>是*2</td>
+        <td>否</td>
+        <td>是</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>’</td>
+        <td>2019</td>
+        <td>RIGHT SINGLE QUOTATION MARK</td>
+        <td>是*2</td>
+        <td>是</td>
+        <td>否</td>
+        <td></td>
+      </tr>
+      <tr>
+        <th rowspan="2">括號</th>
+        <td>（</td>
+        <td>FF08</td>
+        <td>FULLWIDTH LEFT PARENTHESIS</td>
+        <td>是</td>
+        <td>否</td>
+        <td>是</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>）</td>
+        <td>FF09</td>
+        <td>FULLWIDTH RIGHT PARENTHESIS</td>
+        <td>是</td>
+        <td>是</td>
+        <td>否</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <th>破折號</th>
+        <td>——</td>
+        <td>2014</td>
+        <td>EM DASH</td>
+        <td>是</td>
+        <td>否</td>
+        <td>否</td>
+        <td>是*3</td>
+        <td>佔二個漢字大小，呈一直線、中間不斷開</td>
+      </tr>
+      <tr>
+        <th rowspan="4">書名號</th>
+        <td>《</td>
+        <td>300B</td>
+        <td>LEFT DOUBLE ANGLE BRACKET</td>
+        <td>是</td>
+        <td>否</td>
+        <td>是</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>》</td>
+        <td>300B</td>
+        <td>RIGHT DOUBLE ANGLE BRACKET</td>
+        <td>是</td>
+        <td>是</td>
+        <td>否</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>〈</td>
+        <td>3009</td>
+        <td>LEFT ANGLE BRACKET</td>
+        <td>是</td>
+        <td>否</td>
+        <td>是</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>〉</td>
+        <td>3009</td>
+        <td>RIGHT ANGLE BRACKET</td>
+        <td>是</td>
+        <td>是</td>
+        <td>否</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <th>刪節號／省略號</th>
+        <td>……</td>
+        <td>2026</td>
+        <td>HORIZONTAL ELLIPSIS</td>
+        <td>是</td>
+        <td>否</td>
+        <td>否</td>
+        <td>是*3</td>
+        <td>佔二個漢字大小，應將省略點置於字面中央</td>
+      </tr>
+      <tr>
+        <th rowspan="4">連接號</th>
+        <td>～</td>
+        <td>FF5E</td>
+        <td>FULLWIDTH TILDE</td>
+        <td>是</td>
+        <td>是*1</td>
+        <td>否</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>-</td>
+        <td>002D</td>
+        <td>HYPHEN-MINUS</td>
+        <td>是</td>
+        <td>是*1</td>
+        <td>否</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>–</td>
+        <td>2013</td>
+        <td>EN DASH</td>
+        <td>是</td>
+        <td>是*1</td>
+        <td>否</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>—</td>
+        <td>2014</td>
+        <td>EM DASH</td>
+        <td>是</td>
+        <td>是*1</td>
+        <td>否</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <th rowspan="2">間隔號</th>
+        <td>·</td>
+        <td>00B7</td>
+        <td>MIDDLE DOT</td>
+        <td>否</td>
+        <td>是*1</td>
+        <td>否</td>
+        <td></td>
+        <td>佔一個漢字大小，可視情況改用半個漢字大小</td>
+      </tr>
+      <tr>
+        <td>‧</td>
+        <td>2027</td>
+        <td>HYPHENATION POINT*4</td>
+        <td>否</td>
+        <td>是*1</td>
+        <td>否</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <th rowspan="2">分隔號</th>
+        <td>/</td>
+        <td>002F</td>
+        <td>SOLIDUS</td>
+        <td></td>
+        <td>是</td>
+        <td>是</td>
+        <td></td>
+        <td>主要用於簡體</td>
+      </tr>
+      <tr>
+        <td>／</td>
+        <td>FF0F</td>
+        <td>FULLWIDTH SOLIDUS</td>
+        <td>否</td>
+        <td>是</td>
+        <td>否</td>
+        <td></td>
+        <td>主要用於繁體</td>
+      </tr>
+      <tr>
+        <th rowspan="10">括號類</th>
+        <td>【</td>
+        <td>3010</td>
+        <td>LEFT BLACK LENTICULAR BRACKET</td>
+        <td>是</td>
+        <td>否</td>
+        <td>是</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>】</td>
+        <td>3011</td>
+        <td>RIGHT BLACK LENTICULAR BRACKET</td>
+        <td>是</td>
+        <td>是</td>
+        <td>否</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>〖</td>
+        <td>3016</td>
+        <td>LEFT WHITE LENTICULAR BRACKET</td>
+        <td>是</td>
+        <td>否</td>
+        <td>是</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>〗</td>
+        <td>3017</td>
+        <td>RIGHT WHITE LENTICULAR BRACKET</td>
+        <td>是</td>
+        <td>是</td>
+        <td>否</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>〔</td>
+        <td>3014</td>
+        <td>LEFT TORTOISE SHELL BRACKET</td>
+        <td>是</td>
+        <td>否</td>
+        <td>是</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>〕</td>
+        <td>3015</td>
+        <td>RIGHT TORTOISE SHELL BRACKET</td>
+        <td>是</td>
+        <td>是</td>
+        <td>否</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>［</td>
+        <td>FF3B</td>
+        <td>FULLWIDTH LEFT SQUARE BRACKET</td>
+        <td>是</td>
+        <td>否</td>
+        <td>是</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>］</td>
+        <td>FF3D</td>
+        <td>FULLWIDTH RIGHT SQUARE BRACKET</td>
+        <td>是</td>
+        <td>是</td>
+        <td>否</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>｛</td>
+        <td>FF5B</td>
+        <td>FULLWIDTH LEFT CURLY BRACKET</td>
+        <td>是</td>
+        <td>否</td>
+        <td>是</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>｝</td>
+        <td>FF5D</td>
+        <td>FULLWIDTH RIGHT CURLY BRACKET</td>
+        <td>是</td>
+        <td>是</td>
+        <td>否</td>
+        <td></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <ol class="punctuation" type="1">
+    <li>依照出現的狀況不同，也有允許出現於行首的案例，以繁體中文出版品為主。 </li>
+    <li>文字直排時通常改用角引號[『』「」]。</li>
+    <li>符號不可斷開、分行，唯無法避免時，可視狀況拆至二行。</li>
+    <li>來自大五碼。</li>
+  </ol>
+</section>
+<section class="appendix" id="glossary">
+  <h2 id="h-glossary">Glossary</h2>
+  <table class="glossary">
+    <thead>
+      <tr>
+        <td>詞彙</td>
+        <td>漢語拼音</td>
+        <td>英語</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>阿拉伯數字</td>
+        <td>Ālābó shùzì</td>
+        <td>European numerals</td>
+      </tr>
+      <tr>
+        <td>版心</td>
+        <td>bǎnxīn</td>
+        <td>type area</td>
+      </tr>
+      <tr>
+        <td>半形&#x2F;半角</td>
+        <td>bànxíng&#x2F;bànjiǎo</td>
+        <td>half-width</td>
+      </tr>
+      <tr>
+        <td>標點符號</td>
+        <td>biāodiǎn fúhào</td>
+        <td>punctuation marks</td>
+      </tr>
+      <tr>
+        <td>標點符號擠壓</td>
+        <td>biāodiǎn fúhào jǐyā</td>
+        <td>compression rules for consecutive punctuation marks</td>
+      </tr>
+      <tr>
+        <td>標號</td>
+        <td>biāohào</td>
+        <td>indication punctuation  marks</td>
+      </tr>
+      <tr>
+        <td>標音</td>
+        <td>biāoyīn</td>
+        <td>phonetic annotation</td>
+      </tr>
+      <tr>
+        <td>比例字體</td>
+        <td>bǐlì zìti</td>
+        <td>proportional fonts</td>
+      </tr>
+      <tr>
+        <td>出血</td>
+        <td>chūxiě</td>
+        <td>bleed</td>
+      </tr>
+      <tr>
+        <td>大五碼</td>
+        <td>Dàwǔmǎ</td>
+        <td>Big 5</td>
+      </tr>
+      <tr>
+        <td>地／地腳</td>
+        <td>dì&#x2F;dìjiǎo</td>
+        <td>foot&#x2F;bottom margin</td>
+      </tr>
+      <tr>
+        <td>點</td>
+        <td>diǎn</td>
+        <td>point (pt)</td>
+      </tr>
+      <tr>
+        <td>點號</td>
+        <td>diǎnhào</td>
+        <td>pause or stop punctuation marks</td>
+      </tr>
+      <tr>
+        <td>底端</td>
+        <td>dǐduān</td>
+        <td>foot side</td>
+      </tr>
+      <tr>
+        <td>頂端</td>
+        <td>dǐngduān</td>
+        <td>head side</td>
+      </tr>
+      <tr>
+        <td>逗號</td>
+        <td>dòuhào</td>
+        <td>comma</td>
+      </tr>
+      <tr>
+        <td>段落</td>
+        <td>duànlùo</td>
+        <td>paragraph</td>
+      </tr>
+      <tr>
+        <td>對齊方式</td>
+        <td>duìqí fāngshì</td>
+        <td>alignment</td>
+      </tr>
+      <tr>
+        <td>頓號</td>
+        <td>dùnhào</td>
+        <td>slight-pause comma</td>
+      </tr>
+      <tr>
+        <td>兒化音</td>
+        <td>érhuàyīn</td>
+        <td>rhotacization of syllable finals</td>
+      </tr>
+      <tr>
+        <td>仿宋體</td>
+        <td>fǎngsòngtǐ</td>
+        <td>Imitation Song (Fangsong)</td>
+      </tr>
+      <tr>
+        <td>繁體中文</td>
+        <td>fántǐ Zhōngwén</td>
+        <td>Traditional Chinese </td>
+      </tr>
+      <tr>
+        <td>分詞連寫</td>
+        <td>fēncí liánxiě</td>
+        <td>words as the base units</td>
+      </tr>
+      <tr>
+        <td>分隔號</td>
+        <td>fēngéhào</td>
+        <td>solidus</td>
+      </tr>
+      <tr>
+        <td>分號</td>
+        <td>fēnhào</td>
+        <td>semicolon</td>
+      </tr>
+      <tr>
+        <td>分字連寫</td>
+        <td>fēnzì liánxiě</td>
+        <td>characters as the base units</td>
+      </tr>
+      <tr>
+        <td>符號分離禁則</td>
+        <td>fúhào fēnlí jìnzé</td>
+        <td>prohibition rules for unbreakable characters</td>
+      </tr>
+      <tr>
+        <td>括號</td>
+        <td>guāhào</td>
+        <td>parenthesis</td>
+      </tr>
+      <tr>
+        <td>括注符號</td>
+        <td>guāzhù fúhào</td>
+        <td>brackets</td>
+      </tr>
+      <tr>
+        <td>孤行</td>
+        <td>gūháng</td>
+        <td>widows</td>
+      </tr>
+      <tr>
+        <td>國標碼</td>
+        <td>guóbiāomǎ</td>
+        <td>GB 18030-2005</td>
+      </tr>
+      <tr>
+        <td>行</td>
+        <td>háng</td>
+        <td>line</td>
+      </tr>
+      <tr>
+        <td>行高</td>
+        <td>hánggāo</td>
+        <td>line-height</td>
+      </tr>
+      <tr>
+        <td>行間批語</td>
+        <td>hángjiān pīyǔ</td>
+        <td>interlinear comments</td>
+      </tr>
+      <tr>
+        <td>行間注</td>
+        <td>hángjiānzhù</td>
+        <td>interlinear annotations</td>
+      </tr>
+      <tr>
+        <td>行首行尾禁則</td>
+        <td>hángshǒu hángwěi jìnzé</td>
+        <td>prohibition rules for line start&#x2F;end</td>
+      </tr>
+      <tr>
+        <td>行尾點號懸掛</td>
+        <td>hángwěi diǎnhào xuánguà</td>
+        <td>hanging punctuation marks for line end</td>
+      </tr>
+      <tr>
+        <td>漢語拼音</td>
+        <td>Hànyǔ pīnyīn</td>
+        <td>Hanyu Pinyin</td>
+      </tr>
+      <tr>
+        <td>漢字</td>
+        <td>Hànzì</td>
+        <td>Chinese characters (Han characters&#x2F;Hanzi)</td>
+      </tr>
+      <tr>
+        <td>黑體</td>
+        <td>hēitǐ</td>
+        <td>Heiti</td>
+      </tr>
+      <tr>
+        <td>橫排</td>
+        <td>héngpái</td>
+        <td>horizontal writing mode</td>
+      </tr>
+      <tr>
+        <td>合文</td>
+        <td>héwén</td>
+        <td>ligature</td>
+      </tr>
+      <tr>
+        <td>活字排版</td>
+        <td>huózì páibǎn</td>
+        <td>letterpress printing</td>
+      </tr>
+      <tr>
+        <td>間隔號</td>
+        <td>jiàngéhào</td>
+        <td>interpunct</td>
+      </tr>
+      <tr>
+        <td>簡體中文</td>
+        <td>jiǎntǐ Zhōngwén</td>
+        <td>Simplified Chiense</td>
+      </tr>
+      <tr>
+        <td>結束括注符號</td>
+        <td>jiéshù guāzhù fúhào</td>
+        <td>closing bracket(s)</td>
+      </tr>
+      <tr>
+        <td>介音</td>
+        <td>jièyīn</td>
+        <td>medial</td>
+      </tr>
+      <tr>
+        <td>驚嘆號</td>
+        <td>jīngtànhào</td>
+        <td>exclamation marks</td>
+      </tr>
+      <tr>
+        <td>基文</td>
+        <td>jīwén</td>
+        <td>base text</td>
+      </tr>
+      <tr>
+        <td>句號</td>
+        <td>jùhào</td>
+        <td>period</td>
+      </tr>
+      <tr>
+        <td>句末點號</td>
+        <td>jùmò diǎnhào</td>
+        <td>post-sentence pause punctuation marks</td>
+      </tr>
+      <tr>
+        <td>句中點號</td>
+        <td>jùzhōng diǎnhào</td>
+        <td>inter-sentence pause punctuation marks</td>
+      </tr>
+      <tr>
+        <td>開始括注符號</td>
+        <td>kāishǐ guāzhù fúhào</td>
+        <td>opening bracket(s)</td>
+      </tr>
+      <tr>
+        <td>楷體</td>
+        <td>kǎitǐ</td>
+        <td>Kai</td>
+      </tr>
+      <tr>
+        <td>拉丁字母</td>
+        <td>lādīng zìmǔ</td>
+        <td>Latin letters</td>
+      </tr>
+      <tr>
+        <td>欄</td>
+        <td>lán</td>
+        <td>column</td>
+      </tr>
+      <tr>
+        <td>欄間距</td>
+        <td>lán jiānjù</td>
+        <td>column gap</td>
+      </tr>
+      <tr>
+        <td>連接號</td>
+        <td>liánjiēhào</td>
+        <td>dash</td>
+      </tr>
+      <tr>
+        <td>羅馬拼音</td>
+        <td>luómā pīnyīn</td>
+        <td>Romanization</td>
+      </tr>
+      <tr>
+        <td>冒號</td>
+        <td>màohào</td>
+        <td>colon</td>
+      </tr>
+      <tr>
+        <td>密排</td>
+        <td>mìpái</td>
+        <td>seamless arrangement</td>
+      </tr>
+      <tr>
+        <td>末端</td>
+        <td>mòduān</td>
+        <td>end point</td>
+      </tr>
+      <tr>
+        <td>破折號</td>
+        <td>pòzhéhào</td>
+        <td>long dash</td>
+      </tr>
+      <tr>
+        <td>輕聲</td>
+        <td>qīngshēng</td>
+        <td>neutral tone</td>
+      </tr>
+      <tr>
+        <td>齊頭尾對齊</td>
+        <td>qítóuwěi duìqí</td>
+        <td>justified alignment</td>
+      </tr>
+      <tr>
+        <td>全形&#x2F;全角</td>
+        <td>quánxíng&#x2F;quánjiao</td>
+        <td>full-width</td>
+      </tr>
+      <tr>
+        <td>入聲</td>
+        <td>rùshēng</td>
+        <td>checked tone</td>
+      </tr>
+      <tr>
+        <td>刪節號／省略號</td>
+        <td>shānjiéhào&#x2F;shěnglüèhào</td>
+        <td>ellipsis</td>
+      </tr>
+      <tr>
+        <td>聲調</td>
+        <td>shēngdiào</td>
+        <td>tone</td>
+      </tr>
+      <tr>
+        <td>聲母</td>
+        <td>shēngmǔ</td>
+        <td>initial</td>
+      </tr>
+      <tr>
+        <td>始端</td>
+        <td>shǐduān</td>
+        <td>starting point</td>
+      </tr>
+      <tr>
+        <td>書名號</td>
+        <td>shūmínghào</td>
+        <td>title mark</td>
+      </tr>
+      <tr>
+        <td>疏排</td>
+        <td>shūpái</td>
+        <td>distributed arrangement</td>
+      </tr>
+      <tr>
+        <td>宋體（明體／明朝體）</td>
+        <td>Sòngtǐ (Míngtǐ&#x2F;Míngcháotǐ)</td>
+        <td>Song</td>
+      </tr>
+      <tr>
+        <td>天／天頭</td>
+        <td>tiān&#x2F;tiāntóu</td>
+        <td>head&#x2F;top margin</td>
+      </tr>
+      <tr>
+        <td>跳格</td>
+        <td>tiàogé</td>
+        <td>tab</td>
+      </tr>
+      <tr>
+        <td>彎引號</td>
+        <td>wān-yǐnhào</td>
+        <td>curve quotation mark</td>
+      </tr>
+      <tr>
+        <td>萬國碼</td>
+        <td>wànguómǎ</td>
+        <td>Unicode</td>
+      </tr>
+      <tr>
+        <td>文本</td>
+        <td>wénběn</td>
+        <td>text</td>
+      </tr>
+      <tr>
+        <td>問號</td>
+        <td>wènhào</td>
+        <td>question mark</td>
+      </tr>
+      <tr>
+        <td>文字設計／字體排印</td>
+        <td>wénzìshèjì&#x2F;zìtǐpáiyìn</td>
+        <td>typography</td>
+      </tr>
+      <tr>
+        <td>現代標準漢語（普通話、國語、華語）</td>
+        <td>xiàndài biāozhǔn Hànyǔ</td>
+        <td>Modern Standard Chinese (Mandarin)</td>
+      </tr>
+      <tr>
+        <td>希臘字母</td>
+        <td>xīlà zìmǔ</td>
+        <td>Greek letters</td>
+      </tr>
+      <tr>
+        <td>西文</td>
+        <td>xīwén</td>
+        <td>Western languages</td>
+      </tr>
+      <tr>
+        <td>西文字母</td>
+        <td>xīwén zìmǔ</td>
+        <td>Western alphabet</td>
+      </tr>
+      <tr>
+        <td>以連字符斷行</td>
+        <td>yǐ liánzìfú duànháng</td>
+        <td>hyphenation</td>
+      </tr>
+      <tr>
+        <td>引號</td>
+        <td>yǐnhào</td>
+        <td>quotation</td>
+      </tr>
+      <tr>
+        <td>意音文字</td>
+        <td>yìyīn wénzì</td>
+        <td>ideographs</td>
+      </tr>
+      <tr>
+        <td>韻母</td>
+        <td>yùnmŭ</td>
+        <td>final</td>
+      </tr>
+      <tr>
+        <td>直角引號</td>
+        <td>zhíjiǎo yǐnhào</td>
+        <td>corner quotation mark</td>
+      </tr>
+      <tr>
+        <td>直排（豎排）</td>
+        <td>zhípái (shùpái)</td>
+        <td>vertical writing mode</td>
+      </tr>
+      <tr>
+        <td>中外文對照</td>
+        <td>Zhōng-wàiwén duìzhào</td>
+        <td>bilingual annotations</td>
+      </tr>
+      <tr>
+        <td>中、西文混排處理</td>
+        <td>Zhōng-xīwén hùnpái chùlǐ</td>
+        <td>Chinese and Western mixed text composition</td>
+      </tr>
+      <tr>
+        <td>中日韓越意音文字</td>
+        <td>Zhōng-Rì-Hán-Yuè yìyīn wénzì</td>
+        <td>CJKV Ideographs</td>
+      </tr>
+      <tr>
+        <td>中文</td>
+        <td>Zhōngwén</td>
+        <td>Chinese</td>
+      </tr>
+      <tr>
+        <td>專名號</td>
+        <td>zhuānmínghào</td>
+        <td>proper name mark</td>
+      </tr>
+      <tr>
+        <td>著重號</td>
+        <td>zhuózhònghào</td>
+        <td>emphasis dot</td>
+      </tr>
+      <tr>
+        <td>注文</td>
+        <td>zhùwén</td>
+        <td>annotation text</td>
+      </tr>
+      <tr>
+        <td>注音符號</td>
+        <td>zhùyīn fúhào</td>
+        <td>Zhuyin (Bopomofo)</td>
+      </tr>
+      <tr>
+        <td>字幅</td>
+        <td>zìfú</td>
+        <td>character advance</td>
+      </tr>
+      <tr>
+        <td>字距</td>
+        <td>zìjù</td>
+        <td>tracking</td>
+      </tr>
+      <tr>
+        <td>字面</td>
+        <td>zìmiàn</td>
+        <td>character face</td>
+      </tr>
+      <tr>
+        <td>字體</td>
+        <td>zìtǐ</td>
+        <td>typeface</td>
+      </tr>
+      <tr>
+        <td>字型</td>
+        <td>zìxíng</td>
+        <td>font</td>
+      </tr>
+      <tr>
+        <td>字形</td>
+        <td>zìxíng</td>
+        <td>glyph</td>
+      </tr>
+      <tr>
+        <td>縱橫對齊</td>
+        <td>zònghéng duìqí</td>
+        <td>grid alignment</td>
+      </tr>
+      <tr>
+        <td>縱中橫排</td>
+        <td>zòngzhōnghéngpái</td>
+        <td>horizonal-in-vertical setting</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+<section id="references" class="appendix">
+  <h3 id="h-references">參考文獻</h3>
+  <ul class="references">
+    <li>《重訂標點符號手冊》（2008年修訂版）</li>
+    <li>《标点符号用法》（GB/T 15834―2011）</li>
+    <li>《出版物上数字用法》（GB/T 15835—2011）</li>
+    <li>《國語注音符號手冊》</li>
+    <li>《汉语拼音正词法基本规则》（GB/T 16159—2012）</li>
+  </ul>
+</section>
+<section id="acknowledgement" class="appendix"> 
+  <!--OddPage-->
+  <h3 id="h-acknowledgement">致谢</h3>
+  <p>感谢以下參與者对本文档的建议與补充（依字母及拼音順序排列）：</p>
+  <ul class="acknowledgement">
+    <li>陳穎青</li>
+    <li>Hawkeyes Wind</li>
+    <li>贺师俊（百姓网）</li>
+    <li>侯迈（豆瓣）</li>
+    <li>吕康豪（BGI）</li>
+    <li>technommy</li>
+    <li>权循真（Mozilla）</li>
+    <li>殷建民（华光照排）</li>
+  </ul>
+  <p>欲了解最新的參與者信息，请参看<a href="https://github.com/w3c/clreq/graphs/contributors">GitHub贡献者列表</a>。</p>
+</section>
 </body>
 </html>

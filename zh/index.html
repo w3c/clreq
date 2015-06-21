@@ -703,30 +703,47 @@
       <section>
         <h5 id="h-choice_of_size_and_ratio_for_zhuyin">注音符號的比例與大小</h5>
         <ol>
-          <li>將一個漢字視作寬高相等「30:30」的正方形，其注音符號標示範圍之寬高則應為「15:30」，緊隨其標注的漢字。</li>
-          <li>聲母、介音、韻母之比例為「9:9」，平上去入等聲調號「5:5」、輕聲調號「9:2」。詳盡細節及圖例請參考下文「各種發音組合的排版方式」。</li>
-          <li>正文字號較小時，單獨為注音符號提供字號稍大的字體是可行的作法，亦可考慮其他字音標注方式，如置於正文括號內。</li>
+          <li><p>為漢字標注注音時，注文（注音及其調號）尺寸原則上不大於其受注漢字（基文）。注文位基字上方時的寬度或位基字右方時的高度，原則上不應超過基字之寬高。</p></li>
+          <li>
+            <p>當注音標注於基字右側時，原則上佔用文字尺寸一半的空間。該空間包含字音與調號，無調號的注音（如國語陰平調）所佔的注文空間與包含調號者一致。</p>
+            <div class="note">
+              <p>文字直排、注音置於基字右側時，段落通常需要基字尺寸1.5倍以上的行距，注文應標注於此行距間，設計版心時須先取適當行距値。段落行距在基字尺寸1.5倍以上時，行距値不應受注音標注與否的影響。</p>
+            </div>
+            <div class="note">
+              <p>文字橫排、注音置於基字右側時，段落間的漢字皆須預留基字尺寸一半以上的字距，每字皆然，注文應標注於此字距間。在縱橫對齊的原則下，未標注注文的文字（如標點符號、西文詞組、首行縮進的字數等）也會預留相同的空間。</p>
+            </div>
+          </li>
+          <li>
+            <p>原則上，注文中各個符號（注音及調號）的尺寸為基字的25%。直排注音時，注文整體垂直向基字置中對齊；橫排注音時，注文整體水平向基字置中對齊。</p>
+            <div class="note">
+              <p>所用字體中，平上去入聲（ˊˇˋ˪˫ㆴㆵㆶㆷ）及輕聲（˙）等調號皆應與漢字尺寸一致，方適用以上比例。</p>
+            </div>
+            <div class="note">
+              <p>直排注音時，輕聲符寬度不變，高度為基字的10%；橫排注音時，輕聲符的高度不變，寬度為基字的10%。</p>
+            </div> 
+           </li>
+          <li><p>為字號較大的段落（如標題）標注注音時，可視情況調整注音符號的比例與大小。</p></li>
         </ol>
       </section>
       <section>
         <h5 id="h-positioning_tones_in_zhuyin">注音符號的聲調號位置</h5>
         <ol>
           <li>
-            <p>平上去等調號標注於字音最後一個符號右上角。</p>
+            <p>平上去等調號標注於字音最後一個符號外側右上方。直式注音向上回返半個符號空間；橫式注音向右突出半個符號空間。</p>
             <figure id="zhuyin-1-2-one-symbol-o2"> <img width="300" alt="注音符號及其調號（平上去聲）的排版示例" src="images/zhuyin-1-2-one-symbol-o2.svg"> <img width="300" alt="注音符號及其調號（平上去聲）的排版示例（2）" src="images/zhuyin-2-2-two-symbol-wo3.svg">
               <figcaption>注音符號及其調號（平上去聲）的排版示例。</figcaption>
             </figure>
           </li>
           <li>
-            <p>國語輕聲調號標於字音前方。</p>
-            <figure id="zhuyin-3-3-three-symbol-zuo"> <img width="300" alt="注音符號標注輕聲的排版示例" src="images/zhuyin-3-3-three-symbol-zuo.svg">
-              <figcaption>注音符號標注輕聲的排版示例。</figcaption>
+            <p>入聲調號標注於字音整體外側右下方。</p>
+            <figure id="zhuyin-2-4-two-symbol-lik"> <img width="300" alt="注音符號標注入聲調號的排版示例" src="images/zhuyin-2-4-two-symbol-lik.svg">
+              <figcaption>注音符號標注入聲調號的排版示例（圖例以漢字「力」之閩南語發音標注）。</figcaption>
             </figure>
           </li>
           <li>
-            <p>入聲調號則位於字音右下角。</p>
-            <figure id="zhuyin-2-4-two-symbol-lik"> <img width="300" alt="注音符號標注入聲調號的排版示例" src="images/zhuyin-2-4-two-symbol-lik.svg">
-              <figcaption>注音符號標注入聲調號的排版示例（圖例以漢字「力」之閩南語發音標注）。</figcaption>
+            <p>國語輕聲調號標於字音前方。直排注音的輕聲符寬度不變，高度為基字的10%；橫排注音的輕聲符的高度不變，寬度為基字的10%。</p>
+            <figure id="zhuyin-3-3-three-symbol-zuo"> <img width="300" alt="注音符號標注輕聲的排版示例" src="images/zhuyin-3-3-three-symbol-zuo.svg">
+              <figcaption>注音符號標注輕聲的排版示例。</figcaption>
             </figure>
           </li>
         </ol>

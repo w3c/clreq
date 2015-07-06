@@ -388,7 +388,8 @@
     <div class="note">
       <p>There are differences between the punctuation marks used in China, Japan, Korea and Vietnam, but Unicode does not distinguish them using different codes. A number of punctuation marks are shared among Traditional Chinese, Simplified Chinese and Japanese. Usually the font used for the Han characters will determine the style of the punctuation marks, or they will be adjusted by the composition engine automatically. </p>
     </div>
-    <p><span class="needspostedit">本節主要基於中國大陸的《標點符號用法》（GB/T 15834–2011）及台灣教育部的《重訂標點符號手冊》（2008年修訂版）。前者屬推薦標準，後者主要用於規範教科書等教育書籍，對一般出版品不具強制性。</span></p>
+    
+    <p>The content of the following section is mainly based on the content of <cite>General Rules for Punctuation</cite>（GB/T 15834—2011) issued in Mainland China, as well as the <cite>Punctuation Guidance (2008 revised edition)</cite> issued by The Ministry of Education in Taiwan. The former is a recommended national standard while the latter is not mandatory for general publications but mainly used to regulate education materials like textbooks.</p>
     <section id="categories_and_usage_of_punctuation_marks">
       <h4 id="h-categories_and_usage_of_punctuation_marks">Categories and Usage of Punctuation Marks</h4>
       <section>
@@ -450,12 +451,11 @@
             <p> Punctuation Guidance (revised edition) issued by The Ministry of Education in Taiwan does not include this mark but it is still seen in some publications.</p>
           </li>
           <li>
-            <p><span class="leadin">Connection Symbols.</span></p>
-            <p> <span class="needspostedit">連接號用於連結時空之起訖或數量之多寡，还可以用于化合物的名称或表格、插图的标号，门牌号码、电话号码等号码的连接，阿拉伯数字表示日期時年月日的區隔，复合名词中的连接，以及羅馬拼音、外来语内部的分合等等。</span></p>
-            <p> Connection symbols are usually used to present a connection, start-stop or flow, and include <span class="uname">U+2013 EN DASH</span> [–], <span class="uname">U+FF5E FULLWIDTH TILDE</span> [～] and <span class="uname">U+007E TILDE</span> [~]. </p>
-            <p class="needspostedit">根据中国大陸的《标点符号用法》 （GB/T 15834—2011），连接号的形式有短横线[–]、一字线[—]和浪纹线[～]三种。</p>
+            <p><span class="leadin">Connector Symbols.</span></p>
+            <p>Connector symbols are used to indicate the beginning and end of time or space, to indicate quantity, to express the name of a chemical compound, to label a table or illustration, to connect a house number in an address, for a phone number, to separate digits which indicate the year, month and date, or to connect compound nouns, for the romanization as well as the foreign text in the content. </p>
+            <p>According to the <cite>General Rules for Punctuation（GB/T 15834—2011)</cite>, there are three types of connector symbol, which are the short connector symbol [–], the long connector symbol [—], and tilde [~].</p>
             <div class="note">
-              <p class="needspostedit">标点符号用法》 （GB/T 15834—2011）中没有指定这三个符号的码位，但是基本上可以推断一字线是<span class="uname">U+2014 EM DASH</span> [—]，浪纹线是<span class="uname">U+FF5E FULLWIDTH TILDE</span> [～]。但是对于「短横线」，该标准5.1.6節规定「横短线比汉字『一』略短，占半个字位置」，因此可以是<span class="uname">U+2013 EN DASH</span> [–]。这些连接号的实际长短根据所用处理系统和使用字體会有区别。</p>
+              <p>The <cite>General Rules for Punctuation（GB/T 15834—2011)</cite> does not state the corresponding Unicode code point for the three types of connector symbols. However, we can make the deduction that the long connector symbol [—] is <span class="uname">U+2014 EM DASH</span> [—] and the tilde [~] is <span class="uname">U+FF5E FULLWIDTH TILDE</span> [～] . Since the short connector symbol should take half the width of the long connector symbol, it should be <span class="uname">U+2013 EN DASH</span> [–]. The actual length of these connector symbols may depend on the writing system as well as the typeface.</p>
             </div>
           </li>
           <li>
@@ -710,11 +710,11 @@
     <section id="positioning_of_zhuyin">
       <h4 id="h-positioning_of_zhuyin">Positioning of Zhuyin Interlinear Annotations
         <section>
-        </section></h4><section><h5 id="h-positioning_zhuyin_symbols">Positioning of Zhuyin Symbols.</h5>
+        </section></h4><section><h5 id="h-positioning_zhuyin_symbols">Positioning of Zhuyin Symbols</h5>
         <p> According to the <cite>Manual of Mandarin Phonetic Symbols</cite> (國語注音符號手冊) released by the Ministry of Education in Taiwan, there are two standard ways of positioning Zhuyin: above the corresponding Han character (horizontal Zhuyin), or on the right side of the corresponding Han character (vertical Zhuyin). The use cases for putting Zhuyin above the base characters are rarely found in today's textbooks or other publications, and it is rarely used by the public at large. Therefore, it's always better practice to place Zhuyin annotations on the right side of their corresponding Han character, whether in horizontal or vertical writing mode.</p>
       </section>
       <section>
-        <h5 id="h-choice_of_size_and_ratio_for_zhuyin">Choice of Size and Ratio for Zhuyin Symbols.</h5>
+        <h5 id="h-choice_of_size_and_ratio_for_zhuyin">Choice of Size and Ratio for Zhuyin Symbols</h5>
         <ol>
           <li>Considering a Han character a square with an aspect ratio of 30:30, the ratio of width to height of its Zhuyin annotation will be set as 15:30. The Zhuyin annotation should stay adjacent to its corresponding base character.</li>
           <li>The aspect ratio of initials, medials and finals is 9:9, while that of Mandarin non-neutral tones and dialect non-checked tones is 5:5, that of Mandarin neutral tones is 9:2, and that of dialectal checked tones is 5:5. More details and figures can be found in  Positioning of Different Composition for the Tones below.</li>
@@ -722,47 +722,48 @@
         </ol>
       </section>
       <section>
-        <h5 id="h-positioning_tones_in_zhuyin">Positioning of the Tones in Zhuyin Symbols. </h5>
+        <h5 id="h-positioning_tones_in_zhuyin">Positioning of the Tones in Zhuyin Symbols</h5>
         <ol>
           <li>
-            <p>Mandarin non-neutral tones and dialectal non-checked tones, are placed by the upper right corner of the last phonetic symbol. <span class="issue">Need translations for the captions and alt text for the images that follow.</span></p>
+            <p>Mandarin non-neutral tones and dialectal non-checked tones, are placed by the upper right corner of the last phonetic symbol.</p>
             <figure id="zhuyin-1-2-one-symbol-o2"> <img width="300" alt="注音符號及其調號（平上去聲）的排版示例" src="zh/images/zhuyin-1-2-one-symbol-o2.svg"> <img width="300" alt="注音符號及其調號（平上去聲）的排版示例（2）" src="zh/images/zhuyin-2-2-two-symbol-wo3.svg">
-              <figcaption><span class="needspostedit">注音符號及其調號（平上去聲）的排版示例。</span></figcaption>
+              <figcaption>An example of positioning for Mandarin non-neutral tones and dialectal non-checked tones.</figcaption>
             </figure>
+            <p class="note">In Mandarin Chinese there are syllables that, when part of certain words or sentences, are intentionally read in a shorter and less-emphasized way, therefore losing their original tone. When any syllable is read in this way, we say that it has a neutral tone or “toneless.”</p>
           </li>
           <li>
             <p>The Mandarin neutral tone comes on top before the phonetic symbols.</p>
             <figure id="zhuyin-3-3-three-symbol-zuo"> <img width="300" alt="注音符號標注輕聲的排版示例" src="zh/images/zhuyin-3-3-three-symbol-zuo.svg">
-              <figcaption><span class="needspostedit">注音符號標注輕聲的排版示例。</span></figcaption>
+              <figcaption>An example of positioning for Mandarin neutral tone.</figcaption>
             </figure>
           </li>
           <li>
             <p>The dialectal checked tones are set alongside the lower right corner of the phonetic symbols.</p>
             <figure id="zhuyin-2-4-two-symbol-lik"> <img width="300" alt="注音符號標注入聲調號的排版示例" src="zh/images/zhuyin-2-4-two-symbol-lik.svg">
-              <figcaption><span class="needspostedit">注音符號標注入聲調號的排版示例（圖例以漢字「力」之閩南語發音標注）。</span></figcaption>
+              <figcaption>An example of positioning for dialectal checked tones. (The example here is the Minnan Zhuyin symbol 力).</figcaption>
             </figure>
           </li>
         </ol>
       </section>
       <section>
-        <h5 id="h-positioning_different_composition_for_tones">Positioning of Different Composition for the Tones.</h5>
+        <h5 id="h-positioning_different_composition_for_tones">Positioning of Different Composition for the Tones</h5>
         <ol>
           <li>
-            <p>「聲母」「介音」「韻母」等單個符號自成音節的拼式中，字音位基字右側中間偏下處，調號則依上述「注音符號的聲調號位置」規則標注於字音旁側。</p>
+            <p>When there is only one Zhuyin phonetic symbol, whether initial, medial or final, the tone mark symbol should be set alongside the lower right corner of the character. The dialectal checked tones should be positioned as described in <a href="#h-positioning_tones_in_zhuyin"></a> above.</p>
             <figure id="zhuyin-1-0-1-one-symbol"> <img width="500" alt="音節包含單個符號，並標注平上去聲及輕聲的排版示例" src="zh/images/zhuyin-1-0-1-one-symbol.svg"> <img width="500" alt="音節包含單個符號，並標注入聲調號的排版示例" src="zh/images/zhuyin-1-0-2-one-symbol-checked-tone.svg">
-              <figcaption><span class="needspostedit">音節包含單個符號的注音標音排版示例。</span></figcaption>
+              <figcaption>An example of a syllable with one phonetic symbol.</figcaption>
             </figure>
           </li>
           <li>
-            <p><span class="needspostedit">「聲母－介音」「聲母－韻母」「介音－韻母」等音節中包含二個符號的拼式中，字音位基字右側中間偏下處，調號則依上述「注音符號的聲調號位置」規則標注於字音旁側。</span></p>
+            <p>In the case of a combination of two phonetic symbols such as initial+medial, initial+final or medial+final, the tone mark symbols should be set alongside the lower right corner of the character. The dialectal checked tones should be positioned as described in <a href="#h-positioning_tones_in_zhuyin"></a> above. </p>
             <figure id="zhuyin-2-0-1-two-symbol"> <img width="500" alt="音節包含二個符號，並標注平上去聲及輕聲的排版示例" src="zh/images/zhuyin-2-0-1-two-symbol.svg"> <img width="500" alt="音節包含二個符號，並標注入聲調號的排版示例" src="zh/images/zhuyin-2-0-2-two-symbol-checked-tone.svg">
-              <figcaption><span class="needspostedit">音節包含二個符號的注音標音排版示例。</span></figcaption>
+              <figcaption>An example of a syllable with two phonetic symbols.</figcaption>
             </figure>
           </li>
           <li>
-            <p><span class="needspostedit">包含「聲母－介音－韻母」三個符號的音節拼式中，若調號為輕聲，則字音位基字右側下方，輕聲符號位基字右側上方；拼注其餘調號時，字音則位基字右側中間偏下處，並依上述「注音符號的聲調號位置」規則標注調號於字音旁側。</span></p>
+            <p>In the case of a combination of three phonetic symbols, initial+medial+final, if the syllable should be read in a neutral tone the tone mark symbols should be positioned alongside the lower right corner of the character while the neutral tone should be positioned alongside the upper corner of the character. For non-neutral tones, the tone mark symbols should be set alongside the lower right corner of the phonetic symbol. The dialectal checked tones should be positioned as described in <a href="#h-positioning_tones_in_zhuyin"></a> above.</p>
             <figure id="zhuyin-3-0-2-three-symbol-neutral-tone"> <img width="500" alt="音節包含三個符號，並標注國語輕聲調號的排版示例" src="zh/images/zhuyin-3-0-2-three-symbol-neutral-tone.svg"> <img width="500" alt="音節包含三個符號，並標注平上去聲調號的排版示例" src="zh/images/zhuyin-3-0-1-three-symbol-regular-tone.svg"> <img width="500" alt="音節包含三個符號，並標注入聲調號的排版示例" src="zh/images/zhuyin-3-0-3-three-symbol-checked-tone.svg">
-              <figcaption><span class="needspostedit">音節包含三個符號的注音標音排版示例。</span></figcaption>
+              <figcaption>An example of a syllable with three phonetic symbols.</figcaption>
             </figure>
           </li>
         </ol>
@@ -852,94 +853,94 @@
   <!-- end of 3.3 Ruby  -->
   
   <section id="paragraph_adjustment_rules">
-    <h3 id="h-paragraph_adjustment_rules">段落調整</h3>
+    <h3 id="h-paragraph_adjustment_rules">Paragraph Adjustment Rules</h3>
     <section id="line_head_indent_at_the_beginning_of_paragraphs">
-      <h4 id="h-line_head_indent_at_the_beginning_of_paragraphs">段首縮排</h4>
-      <p>為使不同的文本形成意義上的區隔、構成段落，呈現上，會使用斷行以標示一個段落的起始，同時也會在段落首行加上空白進行縮排，原則上以文本的漢字大小作為縮排單位，主要呈現方法如下。</p>
+      <h4 id="h-line_head_indent_at_the_beginning_of_paragraphs">Line Head Indent at the Beginning of Paragraphs</h4>
+      <p>A paragraph, a section of a document which consists of one or more sentences to indicate a distinct idea, usually begins on a new line. For the related line head indent at the beginning of paragraphs, the following methods are available. </p>
       <div class="note">
-        <p>中文出版品上，段首縮排以兩個漢字的空間為標準。若遇到雜誌等多欄排版的情況，每欄字數較少時，視覺上縮排兩字將顯突兀，時有改用縮排一字的做法。</p>
+        <p>For Chinese publications, line head indent at the beginning of a paragraph usually uses two character-width spaces. Publications like magazines, with multi-column content and less text in each column, might apply a single character-width line head indent at the beginning of paragraph as well. </p>
       </div>
       <ol>
-        <li>所有段落首行皆縮排。幾乎所有的書籍與雜誌皆使用此方法。</li>
-        <li>篇章最初段落的首行不縮排，其余段落首行縮排。此方法多見於西文書籍。</li>
-        <li>所有段落首行皆不予縮排，在段落與段落間加入一定程度的間距，以為區隔。部分書籍與雜誌使用這種方式。</li>
-        <li>原則上，部分語氣未完的段落予以斷行、而不縮排。語氣未完的段落前可能出現對話、引言，及為與正文有所區隔，由編輯所下的標題等。</li>
+        <li>Line head indent at the beginning of a paragraph is applied to all paragraphs. Nearly all books and magazines make use of this method.</li>
+        <li>Line head indent does not apply to the first paragraph but to the rest of the paragraphs. This method is mostly seen in Western publications.</li>
+        <li>Line head indent at the beginning of a paragraph is not applied for any paragraph at all. A certain amount of space is inserted between the paragraphs so as to indicate the distinction of different paragraphs. In some books and magazines this method is applied.</li>
+        <li>In principle, some unfinished paragraphs should be broken rather than apply the line head indent for the following paragraph. Dialogs, quotations or subtitles that the editor inserted might appear before the unfinished paragraph.</li>
       </ol>
       <p>原則上，在中文書籍排版中各段落間不使用間距，前段落末行、後段落首行與段落內行距一致。若段落間加入空白行，則表示一節的結束。但段落首行不縮排時所加入的段落間距則與傳統排版有所差異，不適合加入空行做節的區分，避免過多的留空造成體裁不良。</p>
       <p>除縮排外，也有首行不縮排、次行起至末行縮排的狀況，稱為凸排。例如劇本中的對白，首行以人名開頭不縮排，第二行起縮排。編號列表、問答、法律條文等也使用此種方式處理。雖稱為凸排，但首行開始處不超過版心所設定的範圍。</p>
       <p>凸排時，次行起縮排通常為固定量的空白，例如人名三字加冒號共四字，凡遇對話時次行皆縮排四個全型空白。遇人名少於三字時，則於姓與名間加入空白，以保持體例一致。</p>
     </section>
     <section id="line_head_indent_of_paragraphs">
-      <h4 id="h-line_head_indent_of_paragraphs">段落縮排</h4>
-      <p>段落縮排係指將版心（單欄排版時）以及欄的範圍（多欄排版時）由行頭側以指定的量，將文字開始位置向后移動的處理。此種縮排方式多應用於段落內或段落間引用文章、詩詞及標題等。</p>
+      <h4 id="h-line_head_indent_of_paragraphs">Paragraph Indent</h4>
+      <p>The paragraph indent is the indentation of the line head by a fixed amount, starting from the line head side of the type area (in the case of one column) or of the column area (in the case of several columns).This method is usually applied for quotations, poetry or subtitles in a paragraph or between the paragraphs. </p>
       <div class="note">
-        <p>一般而言以縮排處理的段落，文字尺寸與內文相同。有時會調整字體，與內文做出差異。或／及於前後段落間加入段落間距，使該段落與內文段落差異更為明顯。加入間距所佔空間應為內文行的整數倍。</p>
+        <p>Generally speaking, the characters in the paragraphs which apply paragraph indent should be the same as the characters in the body content. Sometimes, due to the different typefaces, the size of characters in the paragraphs which apply paragraph indent differ from the characters in the body content. In this case, a certain amount of space might be added before and after the indent paragraph so as to make a clear distinction from other paragraphs. The space added is usually an integer times the height of paragraphs in the body content</p>
       </div>
     </section>
     <section id="ways_of_alignments">
-      <h4 id="h-ways_of_alignments">對齊處理</h4>
-      <p>對齊係指使段落間各行文字實際配置位置能夠與預設的文字配置位置符合。有著以下作法。</p>
+      <h4 id="h-ways_of_alignments">Line Alignment Processing</h4>
+      <p>Line alignment method is a process for setting the alignment of each line of text so that the actual position of the text can be matched with their preset position. The following methods are available. </p>
       <ol>
         <li>
-          <h5>置中對齊</h5>
-          <p>行內文字原則上緊貼配置，文字列的中央與行的中央對齊排列，未滿一行時，該行文字列對行頭與行尾的空白量均等。</p>
+          <p class="leadin">Centering</p>
+          <p>The space between adjacent characters is, in principle, set solid. Also, if there is an explicit instruction to insert spaces, such spaces are inserted. If there is not solid setting but a fixed space between characters, this is used; the amount of space at the line head and line end is made equal, and the center of the character sequence is unified with the center of the line.</p>
         </li>
         <li>
-          <h5>行首對齊</h5>
-          <p>行內文字原則上緊貼配置，文字列開頭與行首位置對齊，未滿一行時，該行末字至行尾使用空白。</p>
+          <p class="leadin">Line head alignment</p>
+          <p>The space between adjacent characters is, in principle, set solid. Also, if there is an explicit instruction to insert spaces, such spaces are inserted. If there is not solid setting but a fixed space between characters, this is used; the start of the character sequence is unified with the line head, and if the line is not full, the line end is kept empty.</p>
         </li>
         <li>
-          <h5>行尾對齊</h5>
-          <p>行內文字原則上緊貼配置，文字列末尾與行尾位置對齊，未滿一行時，該行首字至行首使用空白。</p>
+          <p class="leadin">Line end alignment</p>
+          <p>The space between adjacent characters is, in principle, set solid. Also, if there is an explicit instruction to insert spaces, such spaces are inserted. If there is not solid setting but a fixed space between characters, this is used; the end of the character sequence is unified with the line end, and if the line is not full, the line head is kept empty.</p>
         </li>
         <li>
-          <h5>均等排列</h5>
-          <p>行內文字原則上緊貼配置，文字列開頭與行頭位置對齊、文字列末尾與行尾位置對齊，未滿一行時，空白平均置於該行各字間。</p>
-          <p>均等排列多見於以下兩種狀況：</p>
+          <p class="leadin">Even inter-character spacing</p>
+          <p>The space between adjacent characters is, in principle, set solid. Also, if there is an explicit instruction to insert spaces, such spaces are inserted. In addition, using the space made available during line adjustment processing, equal character spacing is applied where possible. The start of the character sequence is aligned to the position of the line head, and the end of the character sequence to the position of the line end.</p>
+          <p>Two use cases for even inter-character spacing: </p>
           <ol>
-            <li>此種情況較常見。各行套用標點禁則處理後，部分行行內將剩餘一字以上的空白，為符合中文排版段落頭尾對齊的規則，該行以均等排列處理；於段落末行或段落僅有一行時則不使用均等排列。</li>
-            <li>於列表，如列舉人名、物品名時，採均等排列以求體例一致，於段落末行或段落僅有一行時，亦使用均等排列。</li>
+            <li>A frequently seen case of even inter-character spacing is that, after applying the punctuation prohibition rules to each line, some lines will have more than one character space left, so in order to align the beginning and ending with the rest of the lines, this line should apply even inter-character spacing.</li>
+            <li>Even inter-character spacing is often used for listing names of people or objects. The last line of a paragraph or a paragraph with only one line can have even inter-character spacing applied as well. </li>
           </ol>
         </li>
       </ol>
     </section>
     <section id="adjustments_of_orphans_and_widows">
-      <h4 id="h-adjustments_of_orphans_and_widows">孤行與孤字處理</h4>
-      <p>中文排版傳統上有著「孤字不成行、孤行不成頁」的規則。實際原則如下：</p>
+      <h4 id="h-adjustments_of_orphans_and_widows">Handling of Widows and Orphans</h4>
+      <p>In the tradition of Chinese composition, an orphan does not make a line, nor does a widow make a page. The principles are as described below. </p>
       <ol>
         <li>
-          <p>若段落末行僅有一個漢字，或一個漢字加上標點符號，即為孤字。孤字可以以下方法處理，使段落末行能有兩個漢字以上：</p>
+          <p>If there is only one character or one character with a punctuation mark left in the last line of a paragraph, this character is called an orphan. An orphan can be processed using the following methods, so that more than two characters can be positioned in the last line of a paragraph. </p>
           <ol>
-            <li>比照避頭點的處理方式，由前一行取一字至末行，前一行採均等排列。</li>
-            <li>刪減該段落文字，使孤字縮進段落前一行。</li>
-            <li>於該段落增加文字。</li>
+            <li>Similar to the handling for the prohibition rule that a punctuation marks should not appear at the line start, the last character of the previous line can be moved the next line, and the previous line should apply even inter-character spacing.</li>
+            <li>Delete some character(s) of the previous paragraph so that there will be enough space to move the orphan to the previous line.</li>
+            <li>Adding more characters to the last line.</li>
           </ol>
           <div class="note">
-            <p>孤字之定義近似於拉丁文字排版中orphan的概念，可參考<a href="http://www.w3.org/TR/dpub-latinreq/#orphans">《拉丁文字排版與分頁需求》5.2節</a>，其定義也隨排版者有所不同。</p>
+            <p>The definition of orphan in Chinese typesetting has some similarity with the definition of orphan in Latin typesetting. See more content in section <a href="http://www.w3.org/TR/dpub-latinreq/#orphans">5.2</a> of <cite>Requirements for Latin Text Layout and Pagination</cite>. </p>
           </div>
         </li>
         <li>
-          <p>若頁面中第一行為前一頁最後一個段落的末行，即為孤行。孤行可以以下方法處理：</p>
+          <p>If the first line of a paragraph in a page is the last line of a paragraph from the previous page, it is called a widow. A widow can be handled via the following methods.</p>
           <ol>
-            <li>將孤行移至前一頁，使其突出版心。</li>
-            <li>前一頁最後段落取一行置於該頁。</li>
-            <li>刪除該段落文字，使該行能納入前一頁之段落。</li>
-            <li>於該段落增加文字，讓該行文字能夠超過一行以上。</li>
+            <li>Move the widow line to the previous page and it can go beyond the tape area.</li>
+            <li>Move the last line of the previous page to join the widow.</li>
+            <li>Delete some characters of the paragraph so that there will be enough space for the widow to be moved to the previous page.</li>
+            <li>Add more characters to the widow so that there will be more than two lines on the page.</li>
           </ol>
           <div class="note">
-            <p>孤行之定義近似於拉丁文字排版中widow的概念，可參考<a href="http://www.w3.org/TR/dpub-latinreq/#widows">《拉丁文字排版與分頁需求》5.1節</a>。</p>
+          <p>The definition of widow in Chinese typesetting has some similarity with the definition of widow in Latin typesetting. See more content at session <a href="http://www.w3.org/TR/dpub-latinreq/#widows">5.1</a> of <cite>Requirements for Latin Text Layout and Pagination</cite>.</p>
           </div>
         </li>
       </ol>
-      <p>孤字孤行有著程度差異，如：</p>
+      <p>Orphans and widows might differ in the cases below:</p>
       <ol type="a">
-        <li>一頁僅有一行，該行僅有一字與標點。即孤字孤行同時出現。</li>
-        <li>一頁有複數段落，第一行為孤行，且該行僅有一字與標點。即孤字孤行同時出現。</li>
-        <li>一頁僅有一行，該行為孤行。</li>
-        <li>一頁有複數段落，第一行為孤行。</li>
-        <li> 一頁有複數段落，其中某一段落末行僅有一字，該字為孤字。</li>
+        <li>There is only one line in a page and the line consists of one character and a punctuation mark, which makes the text an orphan and widow at the same time.</li>
+        <li>There are multiple paragraphs in a page but the first line is a widow and the first line consists of one character and a punctuation mark, which makes the orphan and widow appear together.</li>
+        <li>There is only one line in a page, which makes the line a widow.</li>
+        <li>There are multiple paragraphs in a page but the first line is a widow.</li>
+        <li>There are multiple paragraphs in a page but one of the lines consists of one character only, which make the only character an orphan.</li>
       </ol>
-      <p>以上狀況是否需進行處理，各排版者有不同的標準。其中a.與b. 對體裁的影響較為嚴重，c.次之，d.與e.之處理則較少見。</p>
+      <p>There are different viewpoints about how the orphans and widows should be handled in the cases above due to differences between publishers. Case (a) and case (b) have a bigger affect on the typesetting while case (c) affects it less. Cases (d) and (e) are seem more rarely.</p>
     </section>
   </section>
 </section>
@@ -1031,7 +1032,7 @@
         <li> The run-in heading is set with the same character size as the main text and with Hei or Song. </li>
         <li> Set the run-in heading with one level smaller character size than the main text and use Hei or Song.
           <div class="note">
-            <p><span class="needspostedit">此時同行標題所占空間並非內文文字尺寸的整數倍，所以可調整與內文間的空白量，以避免內文文字無法縱橫對齊，或者無法齊行首、行尾。</span></p>
+            <p>The space that the run-in headings take is not an integer times larger than the characters in the body content, and the space between the run-in headings and body content can be adjusted so as to align the body content as well as the line start and line end.</p>
           </div>
         </li>
         <li> Set the run-in heading with the same character size and type-face as the main text. Note that heading numbers or Western characters  are added in front of the heading.</li>

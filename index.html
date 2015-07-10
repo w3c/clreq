@@ -9,6 +9,7 @@
       var respecConfig = {
           specStatus: "ED",
           shortName:  "clreq",
+		  noRecTrack: true,
           editors: [
                 {   name:       "Bobby Tung(董福興)",
                     mailto:     "bobbytung@wanderer.tw",
@@ -38,7 +39,17 @@
 		wgPublicList: "public-i18n-cjk",
 		wgPatentURI:  "http://www.w3.org/2004/01/pp-impl/",
 		edDraftURI: "http://w3c.github.io/clreq/", 
-      };
+ 		otherLinks: [
+			{
+			key: "Github",
+			data: [
+				{
+			  	value: "repository",
+			  	href: "https://github.com/w3c/clreq"
+		 		}
+				]
+			}
+			],     };
     </script>
 <link rel="stylesheet" href="local.css" type="text/css" />
 <style id="languageStyling">
@@ -66,7 +77,13 @@
     email's subject. To make it easier to track comments, please raise
     separate issues or send separate emails for each comment. All comments
     are welcome.</p>
+    <!-- THE FOLLOWING SHOULD BE USED ONCE THE DOCUMENT IS PUBLISHED AS FPWD
+    <p data-lang="en" style="font-weight: bold; font-size: 120%">Sending comments on this document</p>
+  	<p data-lang="en">If you wish to make comments regarding this document, please raise them as <a href="https://github.com/w3c/klreq/issues" style="font-size: 120%;">github issues</a> against the <a href="http://www.w3.org/TR/2015/WD-klreq-20150414/" style="font-size: 120%">latest dated version in /TR</a>. Only send comments by email if you are unable to raise issues on github (see links below).   All comments are welcome.</p>
+  	<p data-lang="en">To make it easier to track comments, please raise separate issues or emails for each comment, and point to the section you are commenting on&nbsp; using  a URL for the dated version of the document.</p>
+    -->
     </div>
+    
   <p><button onClick="en=document.querySelectorAll('[data-lang=en]');for (i=0;i<en.length;i++){en[i].style.display='none';} document.getElementById('languageStyling').textContent='';">Hide English content</button> <button onClick="zh=document.querySelectorAll('[data-lang=zh]');for (i=0;i<zh.length;i++){zh[i].style.display='none';}document.getElementById('languageStyling').textContent='';">Hide Chinese content</button></p>
 </div>
 <section id="introduction">

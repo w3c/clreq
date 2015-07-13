@@ -80,3 +80,12 @@ samp, kbd {
 	font-size: 85%;
 	letter-spacing:0.03em;
 	}
+
+
+#langSwitch {
+	position: fixed;
+    top: 40px;
+    right: 20px;
+    width: 202px;
+    text-align: right;
+	}

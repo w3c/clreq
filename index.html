@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset='utf-8'>
+<meta charset='utf-8'/>
 <title>中文排版需求 Requirements for Chinese Text Layout</title>
+<script src='script.js' type="application/javascript">
+</script>
 <script src='http://www.w3.org/Tools/respec/respec-w3c-common'
             async class='remove'></script>
 <script class='remove'>
@@ -84,7 +86,9 @@
     -->
     </div>
     
-  <p><button onClick="en=document.querySelectorAll('[data-lang=en]');for (i=0;i<en.length;i++){en[i].style.display='none';} document.getElementById('languageStyling').textContent='';">Hide English content</button> <button onClick="zh=document.querySelectorAll('[data-lang=zh]');for (i=0;i<zh.length;i++){zh[i].style.display='none';}document.getElementById('languageStyling').textContent='';">Hide Chinese content</button></p>
+  <!--p><button id="toZH" onClick="en=document.querySelectorAll('[data-lang=en]');for (i=0;i<en.length;i++){en[i].style.display='none';} document.getElementById('languageStyling').textContent='';">Hide English content</button> <button onClick="zh=document.querySelectorAll('[data-lang=zh]');for (i=0;i<zh.length;i++){zh[i].style.display='none';}document.getElementById('languageStyling').textContent='';">Hide Chinese content</button></p-->
+  <p id="langSwitch"><button id="toZH" onClick="switch2zh();">zh</button> 
+  <button onClick="switch2en();">en</button></p>
 </div>
 <section id="introduction">
   <h2><span data-lang="zh">緒論</span>

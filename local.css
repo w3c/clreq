@@ -89,3 +89,18 @@ samp, kbd {
     width: 202px;
     text-align: right;
 	}
+
+.punctuation {
+	border-collapse: collapse;
+	}
+.punctuation td {
+	border: 1px solid #ddd;
+	vertical-align: top;
+	padding: 5px;
+	}
+.punctuation th:lang(en) {
+	font-size: 80%;
+	padding: 5px;
+	vertical-align: bottom;
+	text-align: start;
+	}

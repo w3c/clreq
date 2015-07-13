@@ -161,7 +161,7 @@
       <p data-lang="zh">中文排版主要使用的文字為漢字。</p>
       <p data-lang="en">The majority of the text used in Chinese composition consists of Han characters (hanzi).</p>
       <p data-lang="zh">依照各地的通行標準，中文所使用的漢字主要又分為繁體字與簡體字。前者又作正體字、傳統漢字等，主要通行於台灣、香港、澳門等地；後者又作簡化字，主要通行於中國大陸、星馬地區。本文依筆畫多寡與部件結構為區別，統稱為繁體字與簡體字。</p>
-      <p data-lang="en">Chinese characters include Traditional Chinese and Simplified Chinese alternatives. The former is commonly used in Taiwan, Hong Kong and Macao while the latter is commonly used in Mainland China, Singapore and Malaysia. In this document, the number of strokes and the compositional nature of a character are considered to be the major differences between Simplified Chinese characters and Traditional Chinese characters.</p>
+      <p data-lang="en">Chinese characters include Traditional Chinese and Simplified Chinese alternatives. The former <span class="issue">, which is also knowned as Upright characters or traditional Han,</span> is commonly used in Taiwan, Hong Kong and Macao while the latter is commonly used in Mainland China, Singapore and Malaysia. In this document, the number of strokes and the compositional nature of a character are considered to be the major differences between Simplified Chinese characters and Traditional Chinese characters.</p>
       <p data-lang="zh">不同地区所使用的字形有差异，各种字形与万国码位并不是一一对应关系，需要依赖处理系统和字库来呈现。本文主要探究中文排版，對此不做詳述。</p>
       <p data-lang="en">Different typefaces are used different in regions. The presentational aspects of typefaces do not have a relationship to Unicode, but rather depend on the operating system and the character library. The focus of this document is Chinese composition and we will not discuss typeface presentation. </p>
       <div class="note">
@@ -169,6 +169,7 @@
         <p data-lang="en">In addition to the Chinese (hanzi) characters, various punctuation marks, as well as Western characters such as European numerals, Latin letters and/or Greek letters, may be used in Chinese text. </p>
       </div>
       <div class="note">
+        <p data-lang="zh" class="translateme">一个简体汉字可能对应着多个繁体汉字。例如，简体字“发”，相应的繁体文字可能为“發”或“髮”，具体应由上下文决定。</p>
         <p data-lang="en" class="translateme">One Simplified Chinese character may have more than one corresponding Traditional form. For example, the Simplified Chinese character 发 can be matched to either the Traditional Chinese character 發 or 髮, depending on the context. </p>
       </div>
     </section>
@@ -180,7 +181,7 @@
       <p data-lang="zh">漢字有著正方形的文字外框。於文字外框的正中央，有著比文字外框小的字面（反過來說，字面的上下左右與文字外框之間，有稍微比字面大的若干空白）。中文標點符號的尺寸多與漢字一致，寬高相等，部分標點（如刪節號等）則佔用一個漢字高、二個漢字寬的大小。</p>
       <p data-lang="en">Chinese characters have square <dfn id="endef_characterFrame">character frames</dfn> of equal dimensions. Aligned with the vertical and horizontal center of the character frame, there is a smaller box called the <dfn id="def_letterFace">letter face</dfn>, which contains the actual symbol. (There should be some space left between the letter face and the frame). Most of the punctuation marks for Chinese characters share the same size as the other characters, however some of them differ, such as the ellipsis, which is one-character high and two-characters wide.</p>
       <p data-lang="zh">文字尺寸則為文字外框的尺寸。此外，字幅則是依照文字排列方向的文字外框大小，為文字的寬度。</p>
-      <p data-lang="en">Character size is measured by the size of the character frame. <dfn id="def_characterAdvance">Character advance</dfn> is a term used to describe the advance width of the character frame of a character. The frame of a Chinese character should be a square. </p>
+      <p data-lang="en">Character size is measured by the size of the character frame. <dfn id="def_characterAdvance">Character advance</dfn> is a term used to describe the advance width of the character frame of a character<span class="issue">, which should be the same as the width of the character.</span></p>
     </section>
     
     
@@ -191,7 +192,7 @@
       <p data-lang="en">In principle, when composing a line with Chinese characters, no extra space appears between their character frames. This is called <dfn id="endef_solidSetting">solid setting</dfn>. </p>
       <div class="note">
         <p data-lang="zh">從活字排版時代起，漢字無論直、橫文字外框彼此緊貼配置適於閱讀。但活字排版依照文字尺寸不同，各號數之字型原模不同，字面也隨之不同。目前數位字體僅採取單一原型，當文字尺寸放大時，有時需要調整字距。然而，中文漢字字體面率一般較日文字體小，除非在特殊狀況下，不需特別處理。另當文字尺寸縮小時，若為向量字體，則需要補正資訊來調整文字線幅；但有部分字體在文字尺寸較小時，會以點陣字體呈現，此時就不需另外調整。</p>
-        <p data-lang="en">Unlike the letterpress printing era, when several sizes of the original pattern of a letter were required to create matrices, in today's digital era the same original pattern is used for any size simply by enlargement or reduction. Because of this, it might be necessary to adjust the inter-character space when composing lines at large character sizes. When composing lines at small character sizes, hinting data is used to ensure that the width of the strokes that make up a character look correct.</p>
+        <p data-lang="en">Unlike the letterpress printing era, when several sizes of the original pattern of a letter were required to create matrices<span class="issue">bitmaps?</span>, in today's digital era the same original pattern is used for any size simply by enlargement or reduction. Because of this, it might be necessary to adjust the inter-character space when composing lines at large character sizes. When composing lines at small character sizes, <span class="issue"> if they are vector fonts, </span>hinting data is used to ensure that the width of the strokes that make up a character look correct. <span class="issue"> When only a small portion of the fonts are smaller, they will be displayed in bitmaps, no need to take extra adjustment</span>.</p>
       </div>
       <p data-lang="zh">依照內容的不同，也會採用以下方式排列：</p>
       <p data-lang="zh">Depending on the context, in addition to solid setting several alternative setting methods can be used, as described below.</p>
@@ -200,12 +201,12 @@
         <h5><span data-lang="zh">增加字距</span>
   <span data-lang="en">Increased inter-character spacing</span></h5>
         <p data-lang="zh">於各字之間加入固定量的空白來排列文字，稱作疏排。書籍排版上，遇到以下狀況時，會採用此排列方式：</p>
-        <p data-lang="en"> It is common in books to increase the space between each character frame for the following cases:</p>
+        <p data-lang="en"> It is common in books to increase the space<span class="issue">(i.e. <dfn id="endef_looseSetting">loose setting</dfn>)</span> between each character frame for the following cases:</p>
         <ol>
           <li><p data-lang="zh">為使字數不同的標題間能取得平衡，而加大字距。</p>
-          <p data-lang="en">To achieve a balance between running heads with different numbers of characters. Increased inter-character spacing is used for running heads with few characters.</p></li>
+          <p data-lang="en">To achieve a balance between running heads with different numbers of characters, increased inter-character spacing is used for running heads with few characters.</p></li>
           <li><p data-lang="zh">圖片與表格之說明文字字數少時，為取得平衡，而加大字距。</p>
-          <p data-lang="en">For captions of illustrations and tables, which only have a few characters. Increased inter-character spacing is used to balance with the size of an illustration or table.</p></li>
+          <p data-lang="en">For captions of illustrations and tables, which only have a few characters, increased inter-character spacing is used to balance with the size of an illustration or table.</p></li>
           <li><p data-lang="zh">應用於字數少的詩詞時，為與版面取得平衡，而加大字距。</p>
           <p data-lang="en">In some cases, increased inter-character spacing is used for poetry where one line has only a few characters, so as to maintain the balance of the layout.</p></li>
           <li><p data-lang="zh">針對兒童書籍等，為提升易讀性時，而加大字距。</p>
@@ -232,7 +233,7 @@
         <h5><span data-lang="zh">減少字距</span>
   <span data-lang="en">Reduced inter-character spacing</span></h5>
         <p data-lang="zh">減少字與字間的字距，使得文字外框一部份重疊，稱作紧排。這種處理方式，主要應用於：</p>
-        <p data-lang="en">By reducing the inter-character spacing, a portion of two character frames overlap each other. This method is mainly used in the following cases:</p>
+        <p data-lang="en">By reducing the inter-character spacing, a portion of two character frames overlap each other<span class="issue"> (i.e. <dfn id="endef_solidSetting">solid setting</dfn>). This method is mainly used in the following cases:</p>
         <ol>
           <li><p data-lang="zh">雜誌標題以及廣告文案字數較多，為使其排列於一行，或為求特殊表現時使用。</p>
           <p data-lang="en">For characters in headings in magazines or advertisements, reduced inter-character spacing can be used to keep the characters on one line, or it can also be used to achieve a special effect for presentation.</p></li>
@@ -253,13 +254,13 @@
       <span data-lang="en">Four Frequently-used Typefaces for Chinese Characters</h4>
       <p data-lang="zh">中文排版時，主要使用的四種字體為：</p>
       <ul data-lang="zh">
-        <li>宋體（明體、明朝體）</li>
-        <li>黑體</li>
-        <li>楷體</li>
-        <li>仿宋體</li>
+        <li><span class="issue">Song (Ming)</span>宋體（明體、明朝體）</li>
+        <li><span class="issue">Kai</span>黑體</li>
+        <li><span class="issue">Song</span>楷體</li>
+        <li><span class="issue">Fangsong (Imitation Song)</span>仿宋體</li>
       </ul>
       <p data-lang="zh">這四種字體於書籍排版上有其常見之使用方式，下列各節分別敘述其使用情境。</p>
-      <p data-lang="en">There are four main typefaces in use for Chinese characters: Song, Hei, Kai and Fangsong (Imitation Song). This following sections describe common practice and contexts for use of these four typefaces. </p>
+      <p data-lang="en">This following sections describe common practice and contexts for use of these four typefaces. </p>
     </section>
     <section id="song">
       <h4><span data-lang="zh">宋體（明體、明朝體）</span>
@@ -269,7 +270,7 @@
         <span data-lang="en">Song</span></figcaption>
       </figure>
       <p data-lang="zh">宋體，又稱為明體或明朝體，是中文排版最常使用之字體。</p>
-      <p data-lang="en"><dfn id="en_def-song">Song</dfn>, also known as Songti or Ming, is a category of typefaces used to display Chinese characters, and currently the most common style of type in print for Chinese. In Mainland China, the most common name is Song while in Hong Kong, Taiwan, Japan and Korea, Ming is prevalent. </p>
+      <p data-lang="en"><dfn id="en_def-song">Song</dfn>, also known as Songti or Ming, is currently the most common style of type in print for Chinese.  </p>
       <p data-lang="zh">普遍使用於內文文字、標題與注釋。當應用於標題時，通常會特別加強字重，令其與內文有所差異。</p>
       <p data-lang="en">Song is commonly used in text, headings and annotations. When used in headings, the characters will appear in a bold face, so as to distinguish the heading from the text. </p>
     </section>
@@ -282,7 +283,7 @@
         <span data-lang="en">Kai</span></figcaption>
       </figure>
       <p data-lang="zh">楷體為帶有書法形態、手寫筆觸之字體。</p>
-      <p data-lang="en"><dfn id="en_def-kai">Kai</dfn>, also known as Kaiti or regular script, is another of the major typefaces, and provides calligraphic styles for Chinese characters. It is also the most easily and widely recognized style and shows notable handwriting features. </p>
+      <p data-lang="en"><dfn id="en_def-kai">Kai</dfn>, is another of the major typefaces, and shows notable handwriting features. </p>
       <p data-lang="zh">主要使用於標題、引言、摘句、對話、內容出處等，與內文有所不同的段落上。但因為與宋體近似，故少用於強調。</p>
       <p data-lang="en">Kai is mainly used in text that needs to be differentiated from the rest of the content, for example, headlines, references, quotations, and dialogs. It is rarely used for emphasis, because of its similarity with Song. </p>
       <div class="note">
@@ -299,7 +300,7 @@
         <span data-lang="en">Hei</span></figcaption>
       </figure>
      <p data-lang="zh">黑體主要應用於標題、圖說、對話之人名。內文中也會使用字重較粗的黑體作為特定文字的強調、著重。</p>
-     <p data-lang="en"><dfn id="en_def_hei">Hei</dfn>, also known as Heiti or Gothic, is a type style characterized by strokes of even thickness, reduced curves, and a lack of decoration. It is commonly used in headlines, signs, and personal names in dialogs. For certain types of text, characters in Kai style with thicker strokes typically indicate emphasis. </p>
+     <p data-lang="en"><dfn id="en_def_hei">Hei</dfn>, <span class="issue">is commonly used in headlines, signs, and personal names in dialogs. For certain types of text, characters in Kai style with thicker strokes typically indicate emphasis.</span></p>
       <p data-lang="zh">傳統印刷品少有使用黑體作為內文文字者，但受到萬維網、數位出版的影響，也有少數書籍開始使用黑體作為內文字體。</p>
       <p data-lang="en">Traditional publications rarely apply the Hei style for content, but with the growing influence of the World Wide Web and the digital publishing industry, some publications are starting to experiment Hei in this context.</p>
     </section>
@@ -390,7 +391,7 @@
         <li><p data-lang="zh">配置標題的空間與位置標題所使用空間之文字方向與尺寸，以版心設定的行的位置為基準，採用數行的空間來設計。標題縮排時的處理，以版心所設定的文字尺寸為基準，決定要縮排的量。</p>
         <p data-lang="en"><span class="leadin">Realm and position of headings:</span> The direction and size of the characters of the heading should be based on a number of lines in the type area. The size of the indent is usually specified as a number of characters in the type area. </li>
         <li><p data-lang="zh">圖片之尺寸：橫排時圖片，寬度盡可能地以版心的尺寸一致；若為多欄排版時，則盡可能與版心所設定的一欄寬度一致。排列時多與版心的天或者地對齊配置。直排時亦同，依照版心的天地高度、或者多欄排版下所設計單欄或者多欄的天地尺寸為基準配置。排列時亦多與版心的天或者地對齊配置。</p>
-        <p data-lang="en"><span class="leadin">Size of illustrations:</span> In horizontal writing mode, the width of illustrations should, if at all possible, be the width of the type area; in horizontal writing mode with two columns,  the width of illustrations should, if at all possible, be the width of one type area column. The illustrations are usually set at the head or the foot of the page. Likewise,  in vertical writing mode, the height of illustrations should, if at all possible, be either the height of one type area column or the height of the type area. The illustrations are usually set at the right side or left side of the type area.</li>
+        <p data-lang="en"><span class="leadin">Size of illustrations:</span> In horizontal writing mode, the width of illustrations should, if at all possible, be the width of the type area; in horizontal writing mode with <span class="issue">multiple</span> columns,  the width of illustrations should, if at all possible, be the width of one type area column. The illustrations are usually set at the head or the foot of the page. Likewise,  in vertical writing mode, the height of illustrations should, if at all possible, be either the height of one type area column or the height of the type area. The illustrations are usually set at the right side or left side of the type area.</li>
         <li><p data-lang="zh">目錄、索引、參考書目等頁面目錄、索引、參考書目等頁面以版心之尺寸作為基準設計。但有不少案例會於內文採單欄橫排時，目錄等頁採多欄設計；而目錄頁有時天地側會對文字進行縮排。</p>
         <p data-lang="en"><span class="leadin">Page for Table of Contents, Indexes and References:</span> The size of the type area for the table of contents, indexes and references of books is based on the size of the type area for the main body content. There are many examples of tables of contents in vertical writing mode where the left-to-right size is identical to that of the type area, but the top-to-bottom size is a little bit smaller. </li>
       </ol>
@@ -613,7 +614,7 @@
             <p data-lang="zh"><span class="leadin">冒號與分號</span></p>
             <p data-lang="en"><span class="leadin">Fullwidth colon and fullwith semicolon.</span> </p>
             <p data-lang="zh">冒號<span class="uname">U+FF1A FULLWIDTH COLON</span> [：]、分號<span class="uname">U+FF1B FULLWIDTH SEMICOLON</span> [；]。冒號表示引述語句開始；分號用於語句間，表示意義轉折。</p>
-            <p data-lang="en"><span class="uname">U+FF1A FULLWIDTH COLON</span> [：] consists of two equally sized dots centered on the same vertical line. It is used to explain or start an enumeration and it is also used with ratios, titles and subtitles of books, city and publisher in bibliographies, business letter salutation, hours and minutes, and formal letters. <span class="uname">U+FF1B FULLWIDTH SEMICOLON</span> [；] is a punctuation mark that separates major sentence elements. A semicolon can be used between two closely related independent clauses, provided they are not already joined by a coordinating conjunction. Semicolons can also be used in place of commas to separate items in a list, particularly when the elements of that list contain commas.</p>
+            <p data-lang="en"><span class="uname">U+FF1A FULLWIDTH COLON</span> [：] consists of two equally sized dots centered on the same vertical line. It is used to <span class="issue">start an enumeration.</span> <span class="uname">U+FF1B FULLWIDTH SEMICOLON</span> [；] is a punctuation mark that separates major sentence elements. A semicolon can be used between two closely related independent clauses, provided they are not already joined by a coordinating conjunction.</p>
           </li>
           <li>
             <p data-lang="zh"><span class="leadin">驚嘆號與問號</span></p>
@@ -633,9 +634,9 @@
         <ol>
           <li>
             <p data-lang="zh"><span class="leadin">引號</span></p>
-            <p data-lang="en"><span class="leadin">Bracket/Quotation Mark.</span> </p>
+            <p data-lang="en"><span class="leadin"><span class="issue">Quotation Mark/Brackets</span></span> </p>
             <p data-lang="zh">引號用於強調字詞，或作為引用話語、文獻的起訖邊界。引號中再次使用引號時，使用內引號。外引號與內引號有字形上的差異以便識別。引號屬於括注符號。</p>
-            <p data-lang="en">Brackets, usually used in pairs, are commonly used to emphasize certain characters or words, or to indicate the beginning and ending of the dialog or quoted content. If there is a need to use a bracket within a pair of brackets, the shape of the  inner brackets will differ from the parenting brackets. </p>
+            <p data-lang="en"><span class="issue">Quotation marks</span>, usually used in pairs, are commonly used to emphasize certain characters or words, or to indicate the beginning and ending of the dialog or quoted content. If there is a need to use a bracket within a pair of brackets, the shape of the  inner quotation marks will differ from the parenting quotation marks. <span class="issue">Quotation marks are a kind of brackets.</span></p>
             <p data-lang="zh">繁體中文採用先單、後雙的引號體例。單引號，包含開始單直角引號<span class="uname">U+300C LEFT CORNER BRACKET</span> [「]與結束單直角引號<span class="uname">U+300D RIGHT CORNER BRACKET</span> [」]；雙引號，包含開始雙直角引號<span class="uname">U+300E LEFT WHITE CORNER BRACKET</span> [『]與結束雙直角引號<span class="uname">U+300F RIGHT WHITE CORNER BRACKET</span> [』]。</p>
             <p data-lang="en">When there is a need for quotation marks, Traditional Chinese will apply single quotation marks first and then double quotation marks. Single quotation marks include <span class="uname">U+300C LEFT CORNER BRACKET</span> [「] and <span class="uname">U+300D RIGHT CORNER BRACKET</span> [」]; double quotation marks include <span class="uname">U+300E LEFT WHITE CORNER BRACKET</span> [『] and <span class="uname">U+300F RIGHT WHITE CORNER BRACKET</span> [』].</p>
             <p data-lang="zh">簡體中文採用先雙、後單的引號體例，彎引號用於橫排、直角引號用於直排。雙引號，包含開始雙彎引號<span class="uname">U+201C LEFT DOUBLE QUOTATION MARK</span> [“]、開始雙直角引號<span class="uname">U+300E LEFT WHITE CORNER BRACKET</span> [『]、結束雙彎引號<span class="uname">U+2019 RIGHT SINGLE QUOTATION MARK</span> [”]、結束雙直角引號<span class="uname">U+300F RIGHT WHITE CORNER BRACKET</span> [』]；單引號，包含開始單彎引號<span class="uname">U+2018 LEFT SINGLE QUOTATION MARK</span> [‘]、開始單直角引號<span class="uname">U+300C LEFT CORNER BRACKET</span> [「]、結束單彎引號<span class="uname">U+2019 RIGHT SINGLE QUOTATION MARK</span> [’]、結束單直角引號<span class="uname">U+300D RIGHT CORNER BRACKET</span> [」]。</p>
@@ -672,15 +673,15 @@
             <p data-lang="zh"><span class="leadin">刪節號／省略号</span></p>
             <p data-lang="en"><span class="leadin">Horizontal ellipsis.</span> </p>
             <p data-lang="zh">刪節號又作省略號，表示節略原文、語句未完或語氣的不連續。為佔二個漢字空間、包含六個省略點的<span class="uname">U+2026 HORIZONTAL ELLIPSIS</span> […]（或使用連續二個「……」）。</p>
-            <p data-lang="en">In Chinese, the horizontal ellipsis usually consists of 3 dots, <span class="uname">U+2026 HORIZONTAL ELLIPSIS</span> […], or 6 dots (in two groups of three dots, occupying the same horizontal space as two characters, ie. "……"). They usually indicate an intentional omission of a word, sentence, or whole section from a text. Depending on their context and placement in a sentence, ellipses can also indicate an unfinished thought, a leading statement, a slight pause, a mysterious, echoing voice, or a nervous or awkward silence. </p>
+            <p data-lang="en">In Chinese, the horizontal ellipsis usually consists of 3 dots, <span class="uname">U+2026 HORIZONTAL ELLIPSIS</span> […], or 6 dots (in two groups of three dots, occupying the same horizontal space as two characters, ie. "……"). They usually indicate an intentional omission of a word, sentence, or whole section from a text. <span class="issue">Depending on their context and placement in a sentence, ellipses can also indicate an unfinished thought, a slight pause, or echoing voice.</span> </p>
           </li>
           <li>
             <p data-lang="zh"><span class="leadin">着重號</span></p>
             <p data-lang="en"><span class="leadin">Emphasis Dots.</span></p>
-            <p data-lang="en">Emphasis dots are symbols placed above or beneath characters to emphasize the text, strengthen the tone, or avoid ambiguity. For horizontal writing mode, the emphasis dots are placed under the characters, whereas in vertical writing mode, they are usually placed to the right side of the characters. Both <span class="uname">U+25CF BLACK CIRCLE</span> [●] or <span class="uname">U+2022 BULLET</span> [•] can work as emphasis dots.</p>
             <p data-lang="zh">着重號用於表示相應文本的強調、着重語氣或避免歧義。其形態為標注於文字底端或頂端（橫排多在下方〔底端〕、直排多在右側〔頂端〕）的圓形中黑點，可以為<span class="uname">U+25CF BLACK CIRCLE</span> [●]或<span class="uname">U+2022 BULLET</span> [•]。</p>
-            <p data-lang="en"> Punctuation Guidance (revised edition) issued by The Ministry of Education in Taiwan does not include this mark but it is still seen in some publications.</p>
+            <p data-lang="en">Emphasis dots are symbols placed above or beneath characters to emphasize the text, strengthen the tone, or avoid ambiguity. For horizontal writing mode, the emphasis dots are placed under the characters, whereas in vertical writing mode, they are usually placed to the right side of the characters. Both <span class="uname">U+25CF BLACK CIRCLE</span> [●] or <span class="uname">U+2022 BULLET</span> [•] can work as emphasis dots.</p>
             <p data-lang="zh">台灣教育部的《重訂標點符號手冊》（2008年修訂版）中未收錄此符號，但仍可見於部分繁體中文出版品。</p>
+            <p data-lang="en"> Punctuation Guidance (revised edition) issued by The Ministry of Education in Taiwan does not include this mark but it is still seen in some publications.</p>
           </li>
           <li>
             <p data-lang="zh"><span class="leadin">連接號</span></p>
@@ -714,7 +715,7 @@
             <p data-lang="en"><span class="leadin">Book Title Mark.</span></p>
             <p data-lang="zh">書名號用於標示書名、篇名、歌曲名、影劇名、文件名、字畫名等各種作品名稱。</p>
             <p data-lang="zh">根据台灣教育部的《重訂標點符號手冊》（2008年修訂版），書名號分為甲式及乙式，甲式為波浪底線<span class="uname">U+FE4F WAVY LOW LINE</span> [﹏]，標注在相應文本底端，二個作品名稱相鄰時，甲式書名號間須在視覺上分離予以辨別。乙式有雙書名號<span class="uname">U+300A LEFT DOUBLE ANGLE BRACKET</span> [《]與<span class="uname">U+300B RIGHT DOUBLE ANGLE BRACKET</span> [》]、單書名號<span class="uname">U+3008 LEFT ANGLE BRACKET</span> [〈]與<span class="uname">U+3009 RIGHT ANGLE BRACKET</span> [〉]，前者用於標示書名號、後者用於標示篇名。</p>
-            <p data-lang="en"> <span class="issue">書名號用於標示書名、篇名、歌曲名、影劇名、文件名、字畫名等各種作品名稱。</span> The book title mark is used to indicate the names of works which usually include books, articles, songs, movies, files, calligraphy and paintings. Generally there are two types of book title marks, wavy low lines or angle brackets. <span class="uname">U+FE4F WAVY LOW LINE</span> [﹏] is positioned beneath the corresponding characters. When two works are listed next to each other, the wavy lines for each should be clearly separated. The angle bracket includes <span class="uname">U+300A LEFT DOUBLE ANGLE BRACKET</span> [《], <span class="uname">U+300B RIGHT DOUBLE ANGLE BRACKET</span> [》], <span class="uname">U+3008 LEFT ANGLE BRACKET</span> [〈] and <span class="uname">U+3009 RIGHT ANGLE BRACKET</span> [〉].The former pair is used for the names of books while the latter pair is used for the names of the articles. When two book title marks are positioned next to each other, there should be a clear separation to indicate the difference names. </p>
+            <p data-lang="en"> <span class="issue">書名號用於標示書名、篇名、歌曲名、影劇名、文件名、字畫名等各種作品名稱。</span> The book title mark is used to indicate the names of works which usually include books, articles, songs, movies, files, calligraphy and paintings. Generally there are two types of book title marks, wavy low lines or angle brackets. <span class="uname">U+FE4F WAVY LOW LINE</span> [﹏] is positioned beneath the corresponding characters. When two works are listed next to each other, the wavy lines for each should be clearly separated. The angle bracket includes <span class="uname">U+300A LEFT DOUBLE ANGLE BRACKET</span> [《], <span class="uname">U+300B RIGHT DOUBLE ANGLE BRACKET</span> [》], <span class="uname">U+3008 LEFT ANGLE BRACKET</span> [〈] and <span class="uname">U+3009 RIGHT ANGLE BRACKET</span> [〉].The former pair is used for the names of books while the latter pair is used for the names of the articles. <span class="issue">When two book title marks are positioned next to each other, there should be a clear separation to indicate the difference names</span>. </p>
             <p data-lang="zh">根据中国大陸的《标点符号用法》 （GB/T 15834—2011），无论书名、篇章名都应该使用双书名号[《》]，只有在书名号中还需要书名号时，里面一层用单书名号，外面一层用双书名号。而甲式書名號（波浪底線）僅用於古籍。</p>
             <p data-lang="en">According to the <cite>General Rules for Punctuation (GB/T 15834―2011)</cite>, the names of books as well as  chapters should be quoted using double angle brackets [《》]. When there is a need to indicate the name of another book within the double angle brackets [《》], the ordinary angle brackets [〈〉] should be used.</p>
             <p data-lang="zh">書名號乙式屬於括注符號。</p>
@@ -743,7 +744,7 @@
             <p data-lang="en">Both <span class="uname">U+002F SOLIDUS</span> [/] and <span class="uname">U+FF0F FULLWIDTH SOLIDUS</span> [／] are used to indicate the separation of lines in poetry, syllable beats, and characters which should be separated. </p>
             <div class="note">
               <p data-lang="zh">台灣教育部的《重訂標點符號手冊》（2008年修訂版）中未收錄此符號，但繁體中文出版品中多有使用，其中包含教科書。</p>
-              <p data-lang="en"> Punctuation Guidance (revised edition) issued by The Ministry of Education in Taiwan does not include the SOLIDUS, but it is frequently used in traditional publications, including textbooks. </p>
+              <p data-lang="en"> Punctuation Guidance (revised edition <span class="issue">in 2008</span>) issued by The Ministry of Education in Taiwan does not include the SOLIDUS, but it is frequently used in traditional publications, including textbooks. </p>
             </div>
           </li>
         </ol>
@@ -827,9 +828,9 @@
         <h5><span data-lang="zh">標點符號</span>
   <span data-lang="en">Punctuation Marks</span></h5>
         <p data-lang="zh">以下標點符號佔用二個漢字的空間，在行間應為一體，視作一個字元存在，不得以適配分行之由拆至二行。</p>
-        <p data-lang="en"> The following punctuation marks should be considered as one unit and take two-character widths. They should not be separated into two lines. In the case where multiples of these punctuation marks appear together, it is allowed to separate them into two lines as described in <a href="#h-handling_western_text_in_chinese_text_using_proportional_western_fonts"></a>. If they were forced to remain on one line, it might cause too much space between the characters in the previous line and decrease the aesthetics of the entire composition. </p>
+        <p data-lang="en"> The following punctuation marks should be considered as one unit and take two-character widths. They should not be separated into two lines. <span class="issue">In the case where multiples of these punctuation marks appear together, it is allowed to separate them into two lines as described in <a href="#h-handling_western_text_in_chinese_text_using_proportional_western_fonts"></a>. If they were forced to remain on one line, it might cause too much space between the characters in the previous line and decrease the aesthetics of the entire composition. </span></p>
         <div class="note">
-          <p data-lang="en">In the digital era, these punctuation marks usually take the width of 2 characters but are still considered as one unit. </p>
+          <p data-lang="en"><span class="issue">In the digital era, these punctuation marks usually take the width of 2 characters but are still considered as one unit. </span></p>
         </div>
         <ol>
           <li>
@@ -865,7 +866,7 @@
       <h4><span data-lang="zh">標點符號的擠壓</span>
   <span data-lang="en">Compression Rules for Punctuation Marks</span></h4>
       <p data-lang="zh">中文的標點符號多佔一個（或以上）漢字的空間，使其在字間易於識別、適合配置及排版。然而，在標點前後不為文字時，標點的空白空間將顯突兀。對標點符號的空餘空間進行擠壓，可使文字體裁更加緊湊、易讀。</p>
-      <p data-lang="en">The punctuation marks in Chinese usually have the dimensions of one character (or more), will provides a clear distinction between characters and leaves some room for composition adjustment. However, if there is no character before or after the punctuation mark(s), the empty space around the punctuation mark(s) will seem a bit abrupt. In this case, proper compression for the punctuation mark(s) will make the composition more tightly-knit and  readable.</p>
+      <p data-lang="en">The punctuation marks in Chinese usually have the dimensions of one character (or more), will provides a clear distinction between characters and leaves some room for composition adjustment. However, if there is no character before or after the punctuation mark(s), the empty space around the punctuation mark(s) will seem a bit abrupt. In this case, proper compression for the punctuation mark(s) will make the composition more tightly-knit and readable.</p>
       <p data-lang="zh">標點符號的擠壓通常分為二種——其一，標點符號連續出現時，對符號間相鄰的空隙進行調整；另一種則是符號出現於行首或行尾時，調整該符號字面位置，縮減行首或行尾的空隙。</p>
       <p data-lang="en">Usually there are two ways to compress punctuation mark(s). First, when multiple punctuation marks appear together, the space between the punctuation marks can be adjusted; second, when multiple punctuation marks appear at the line start or line end, the space at the line start or line end can be adjusted. </p>
       
@@ -921,6 +922,7 @@
       <p data-lang="zh">通常，適合行尾懸掛的點號有頓號、逗號及句號三者。簡體中文排版中，其餘點號因其字面分布偏向受注文字一側、字面始端，亦可進行行尾懸掛配置。</p>
       <p data-lang="en">In general, the punctuation marks that can be hung at the line end include slight-pause comma, comma and period. In Simplified Chinese, the rest of the pause or stop punctuation marks can be hung at line end since they are set at at the side of the marked characters or in front of the marked characters. </p>
       <p data-lang="zh">若點號（頓號、逗號或句號）將出現於一行之首，可將其置於前一行的行尾端、突出版心。</p>
+      <p data-lang="en"><span class="issue">If a punctuation mark (slight-pause comma, comma or period) is supposed to be the start of a line, it should be placed in the end of the line before, to fit in the type arae.</span><p>
       <p data-lang="zh">然而，由於繁體中文的點號位於字面正中，若在橫排時使用行尾懸掛，體例可能顯得突兀、不良。故橫排時，繁體中文不做行尾懸掛配置；但可用於直排。</p>
       <p data-lang="en">However, for Traditional Chinese, which sets the punctuation marks at the center of the square space for it, hanging the punctuation marks might make an abrupt affect  on the composition. Therefore, Traditional Chinese does not apply hanging punctuation in horizontal writing mode but only in vertical writing mode. </p>
       <p data-lang="zh">連續多個標點符號的情況下，不作行尾點號懸掛的配置。</p>
@@ -960,7 +962,7 @@
       <p data-lang="zh">過去，因計算機排版技術不甚精良，多使用「全形ASCII字元」以達整齊等視覺排版效果。現今在文本儲存時，應避免使用該區段之拉丁字母及數字字元，交由排版引擎處理比例字體、等寬字體等顯示需求。</p>
       <p data-lang="en">Formerly, fullwidth ASCII characters were often used, either to make the presentation look orderly, or simply due to the poorly developed computer technologies available for text layout. Nowadays, typesetting engines allow for proportional or monospace fonts, as required, rather than forcing the user to resort to the old  fullwidth blocks of Latin letters and European numerals.</p>
       <p data-lang="zh">中西混排中，由于正文是中文，原则上应该使用中文标点，遵守中文标点的习惯用法。但是，科学技术中文图书，如果涉及公式较多，句号可以统一使用西文句号<span class="uname">U+002E FULL STOP</span> [.]，省略号使用英文的三点省略号；中文版西文语法教材之类的图书，西文例句较多且多与中文混排时，句号可以统一使用西文句号[.]。</p>
-      <p data-lang="en">When Western texts are mixed with Han characters, Chinese style punctuation and its common usage should be used in principle since the main text is Chinese,  However, in the case of technical documents, if plenty of formula are contained in the text, the full stop can be unified with the western-style period, <span class="uname">U+002E FULL STOP</span> [.]. Also in text books on grammar of Western languages etc., which contain plenty of example sentences mixed with Chinese, western-style periods can be used.</p>
+      <p data-lang="en">When Western texts are mixed with Han characters, Chinese style punctuation and its common usage should be used in principle since the main text is Chinese,  However, in the case of technical documents, if plenty of formula are contained in the text, the full stop can be unified with the western-style period, <span class="uname">U+002E FULL STOP</span> [.]. Also in text books on grammar of Western languages etc., which contain plenty of example sentences mixed with Chinese, western-style periods [.] can be used.</p>
     </section>
     
     
@@ -983,7 +985,7 @@
       <p data-lang="en">For vertical writing mode, the following list describes methods of setting Western letters and European numerals:</p>
       <ol>
         <li><p data-lang="zh">採用與漢字等寬之字體或全形字元，使用與漢字相同的書寫方向依字母排列，毋須轉向。當文中的西文字母與阿拉伯數字為單獨一字、或為首字母縮寫時（如GDP），多使用這種方式配置。</p>
-        <p data-lang="en"><span class="leadin">Setting Western letters with Han character-width monospace fonts</span>. Letters or European numerals follow each other, one at a time, in the same direction and rotation as the Han characters.  This arrangement is usually adopted where the text contains a single letter or digit, or an acronym.</p></li>
+        <p data-lang="en"><span class="leadin">Setting Western letters with Han character-width monospace fonts</span>. Letters or European numerals follow each other, one at a time, in the same direction and rotation as the Han characters.  This arrangement is usually adopted where the text contains a single letter or digit, or an acronym <span class="issue">(such as GDP)</span>.</p></li>
         <li><p data-lang="zh">採用比例字體，將文字順時針旋轉90度配置。當文中的西字為一般單字詞、語句，或阿拉伯數在四位數以上時，採用此方法配置。漢字與西文字母、數字間使用四分之一個漢字寬的字距或空白。但西文出現在行頭或行尾時，則毋須加入空白。</p>
         <p data-lang="en"><span class="leadin">Setting Western letters with proportional fonts, rotated 90 degrees clockwise.</span> This approach is usually adopted where Latin letters compose a word or sentence. There is tracking or spacing between a Han character and an adjacent Western letter or European numeral, up to a width of one quarter of a Han character, except at the line head or end.</p></li>
         <li><p data-lang="zh">阿拉伯數字使用比例字體，以縱中橫排（保持正常方向，橫排）方式配置。主要應用於二至三位數的阿拉伯數字，其寬度與行幅相當，或稍微切出行幅。</p>
@@ -1073,8 +1075,8 @@
           <li>
             <p data-lang="zh" class="leadin">羅馬拼音</p>
             <p data-lang="en" class="leadin">Romanization.</p>
-            <p data-lang="zh">使用拉丁字母的汉语拼音是中国大陆推行的現代標準漢語（普通话）标音与拉丁转写方案，汉语拼音的全文标音也是中国大陆现代最常见的行间注用例。在中国大陆与台湾，台湾闽南语罗马字拼音等各种汉语方言的拉丁字母标音方案也有与汉语拼音情况类似的行间注用例。</p>
-            <p data-lang="en">Hanyu Pinyin (汉语拼音), now the official standard in Mainland China, uses the Latin alphabet to transcribe the Modern Standard Chinese (Mandarin) pronunciations of Chinese characters. The most common use case in Mainland China is to indicate the pronunciation for all characters of the full text with Hanyu Pinyin. In Taiwan and Hong Kong, the arrangement of the Taiwanese Romanization System for Minnan (台灣閩南語羅馬字), the Romanization System of the Hong Kong Education and Manpower Bureau (教育學院拼音方案) or romanization systems of other Chinese dialects are similar to those of Hanyu Pinyin. </p>
+            <p data-lang="zh">使用拉丁字母的汉语拼音是中国大陆推行的現代標準漢語（普通话）标音与拉丁转写方案，汉语拼音的全文标音也是中国大陆现代最常见的行间注用例。在<span issue="">台湾与中国大陆汉语方言使用地区</span>，台湾闽南语罗马字拼音等各种汉语方言的拉丁字母标音方案也有与汉语拼音情况类似的行间注用例。</p>
+            <p data-lang="en">Hanyu Pinyin (汉语拼音), now the official standard in Mainland China, uses the Latin alphabet to transcribe the Modern Standard Chinese (Mandarin) pronunciations of Chinese characters. The most common use case in Mainland China is to indicate the pronunciation for all characters of the full text with Hanyu Pinyin. In Taiwan and <span class="issue"> areas that use Chinese dialects in China</span>, the arrangement of the Taiwanese Romanization System for Minnan (台灣閩南語羅馬字), or romanization systems of other Chinese dialects are similar to those of Hanyu Pinyin. </p>
             <p data-lang="zh">因拉丁字母的特质，此类标音文本仅横排。针对幼儿母语者的文本以单字作为基文进行标音。针对二语学习者的文本除偶有与前者一致的格式外，大多分词连写，以词作为基文进行标音，基文之间如西文书写般用空格隔开，并且注文有句首大写、专名首字母大写等格式以及与正文对应的标点符号，自成一体。汉语拼音早期印刷品的格式较为多变，一致性不强。大体上，单字标音与分词连写标音都常见，不作详细描述。</p>
             <p data-lang="en">Due to the characteristics of the Latin alphabet, such annotations appear in horizontal writing mode only. Texts for children who are native speakers usually provide reading assistance for each individual character, while texts for those who are learning Chinese as a second language mainly indicate pronunciation for whole words, but occasionally, both of them are set almost the same. There is space between the base text when whole words are annotated, and the interlinear annotation characters will have unique requirements such as sentence case, or punctuation marks corresponding to base characters. Early publications using Pinyin are very varied and lack consistency. Both character-based and word-based annotations are quite common. No further description of the early pinyin will be found in this document.</p>
           </li>
@@ -1106,11 +1108,10 @@
       <h3><span data-lang="zh">行间注排版概述</span>
   <span data-lang="en">Overview of Interlinear Annotation Positioning</span></h3>
       <p data-lang="zh">直排時，注音符號或羅馬拼音、中外文對照常位於受注基文（漢字）右側，行間批語則多位於基文片段左側；橫排時，注音符號可置於受注基文（漢字）的上方及右側，但多見於右側，而羅馬拼音及中外文對照上下皆可，行間批語則位於基文片段的後方。</p>
-      <p data-lang="en">In vertical writing mode, Zhuyin, Romanization or bilingual annotations are usually placed on the right side of the base text (Han characters), while interlinear comments are often placed on the left side.</p>
+      <p data-lang="en">In vertical writing mode, Zhuyin, Romanization or bilingual annotations are usually placed on the right side of the base text (Han characters), while interlinear comments are often placed on the left side. In horizontal writing mode, Zhuyin can be placed above the base text, but in most cases they are still set to the right side of the base text. On the other hand, Romanization and bilingual annotations can appear both above or below the base text, and the interlinear comments are usually placed at the bottom of the base text.</p>
       <p data-lang="zh">注音符号等宽且每个汉字标音的注音符号字数不超过三个，较为可控；而拉丁字母非等宽，拼式长短不一，且相邻拼式相连时应当有词间空格隔开。两类标音行間注的排版差异较大。</p>
-      <p data-lang="en">In horizontal writing mode, Zhuyin can be placed above the base text, but in most cases they are still set to the right side of the base text. On the other hand, Romanization and bilingual annotations can appear both above or below the base text, and the interlinear comments are usually placed at the bottom of the base text.</p>
-      <p data-lang="zh">拼注音共同標注是一種可行的作法，能同時為僅熟悉單一標音系統的二種讀者提供漢字標音，並作為學習、査詢另一種系統拼寫的有效方式。一般情況下，「拼注音共同標注」的注音符號位漢字右側，橫排時羅馬拼音位漢字下方，直排時位漢字左側。</p>
       <p data-lang="en">In principle, Zhuyin Phonetic Symbols are of the same size, and the number of Zhuyin symbols for one Han character is never more than three, which is quite easily manageable. Romanization, however, uses Latin letters whose sizes are proportional, their composed lengths are varied and there should be spaces between the words. Thus, these two kinds of phonetic annotations differ greatly in positioning.</p>
+      <p data-lang="zh">拼注音共同標注是一種可行的作法，能同時為僅熟悉單一標音系統的二種讀者提供漢字標音，並作為學習、査詢另一種系統拼寫的有效方式。一般情況下，「拼注音共同標注」的注音符號位漢字右側，橫排時羅馬拼音位漢字下方，直排時位漢字左側。</p>
       <p data-lang="en">Annotating with both Romanization and Zhuyin is a practical way to indicate the reading to readers who know only one of these systems, as well as helping study of or enquiries about the other one. Normally, when Romanization and Zhuyin are both provided, the Zhuyin are placed on the right side of the Han character while Romanization is set at the bottom of the Han character in horizontal writing mode and to the left side in vertical writing mode.</p>
     </section>
 
@@ -1165,17 +1166,17 @@
         <ol>
           <li>
             <p data-lang="zh" class="translateme">平上去等調號標注於字音最後一個符號外側右上方。直式注音向上回返半個符號空間；橫式注音向右突出半個符號空間。</p>
-            <p data-lang="en">Mandarin non-neutral tones and dialectal non-checked tones, are placed by the upper right corner of the last phonetic symbol.</p>
+            <p data-lang="en">Mandarin non-neutral tones and dialectal non-checked tones, are placed by the upper right corner of the last phonetic symbol. <span class="issue">In vertical writing mode, a tone mark will return a half of space to the top; In horizontal writing mode, a tone mark will take a half of space on the right.</span></p>
             <figure id="zhuyin-1-2-one-symbol-o2"> <img width="300" alt="注音符號及其調號（平上去聲）的排版示例" src="zh/images/zhuyin-1-2-one-symbol-o2.svg"> <img width="300" alt="注音符號及其調號（平上去聲）的排版示例（2）" src="zh/images/zhuyin-2-2-two-symbol-wo3.svg">
               <figcaption><span data-lang="zh">注音符號及其調號（平上去聲）的排版示例。</span>
               <span data-lang="en">An example of positioning for Mandarin non-neutral tones and dialectal non-checked tones.</span></figcaption>
             </figure>
             <div class="note">
-            <p data-lang="en">In Mandarin Chinese there are syllables that, when part of certain words or sentences, are intentionally read in a shorter and less-emphasized way, therefore losing their original tone. When any syllable is read in this way, we say that it has a neutral tone or “toneless.”</p>
+            <p data-lang="en"><span class='issue'>In Mandarin Chinese there are syllables that, when part of certain words or sentences, are intentionally read in a shorter and less-emphasized way, therefore losing their original tone. When any syllable is read in this way, we say that it has a neutral tone or “toneless.”</span></p>
             </div>
           </li>
           <li>
-            <p data-lang="zh" class="translateme">入聲調號標注於字音整體外側右下方。</p>
+            <p data-lang="zh">入聲調號標注於字音整體外側右下方。</p>
             <p data-lang="en">The dialectal checked tones are set alongside the lower right corner of the phonetic symbols.</p>
              <figure id="zhuyin-2-4-two-symbol-lik"> <img width="300" alt="注音符號標注入聲調號的排版示例" src="zh/images/zhuyin-2-4-two-symbol-lik.svg">
               <figcaption><span data-lang="zh">注音符號標注入聲調號的排版示例（圖例以漢字「力」之閩南語發音標注）。</span>
@@ -1184,7 +1185,7 @@
           </li>
           <li>
             <p data-lang="zh" class="translateme">國語輕聲調號標於字音前方。直排注音的輕聲符寬度不變，高度為基字的10%；橫排注音的輕聲符的高度不變，寬度為基字的10%。</p>
-            <p data-lang="en">The Mandarin neutral tone comes on top before the phonetic symbols.</p>
+            <p data-lang="en">The Mandarin neutral tone comes on top before the phonetic symbols. <span class="issue">In vertical writing mode, the height of this tone mark is 10% of its based character, but its width is the same as the based character; In vertical writing mode, the width of this tone mark is 10% of its based character, but its height is the same as the based character.</span></p>
            <figure id="zhuyin-3-3-three-symbol-zuo"> <img width="300" alt="注音符號標注輕聲的排版示例" src="zh/images/zhuyin-3-3-three-symbol-zuo.svg">
               <figcaption><span data-lang="zh">注音符號標注輕聲的排版示例。</span>
               <span data-lang="en">An example of positioning for Mandarin neutral tone.</span></figcaption>
@@ -1331,7 +1332,7 @@
           <li><p data-lang="zh">當注文總長小於其基文的長度時，將注文設置居中（適用西文）或加大注文字距（適用漢字），後者更有「間隔平均分配」及「始末端對齊」二種方式。</p>
           <p data-lang="en"> When  the length of an annotation is shorter than that of its base text, the  annotation can be center-aligned (in the case of Western script) or use larger tracking (in the case of Han characters). There are two methods to satisfy  the latter, one is to equally distribute the spacing while the other is  to align justified.</p></li>
           <li><p data-lang="zh">當注文總長大於其基文的長度時，將基文設置居中（適用西文）或加大基文字距（適用漢字）。</p>
-          <p data-lang="en"> When  the length of an annotation is longer than that of its base text, the  base text can be center-aligned  (in the case of Western script) or use a  larger tracking (in the case of Han characters).</p></li>
+          <p data-lang="en"> When the length of an annotation is longer than that of its base text, the base text can be center-aligned (in the case of Western script) or use a larger tracking (in the case of Han characters).</p></li>
         </ol>
       </section>
     </section>
@@ -1341,7 +1342,7 @@
       <h4><span data-lang="zh">行間批語的排版</span>
   <span data-lang="en">Positioning of Interlinear Comments</span></h4>
       <p data-lang="zh">行間批語的格式多變且內容長度不一，通常位於受注的文本片段底端——直排時位基文左側，橫排時位基文下方。為與正文區隔，有時以不同於正文文字的顏色來顯示。</p>
-      <p data-lang="en">Interlinear comments can have very varied layouts and lengths. They are usually placed at the foot side of the annotated text — to the left side of the base text in vertical writing mode or  below the base text in horizontal writing mode. Sometimes the interlinear comments are in other colors to help the reader tell the  difference from the body text .</p>
+      <p data-lang="en">Interlinear comments can have very varied layouts and lengths. They are usually placed at the foot side of the annotated text — to the left side of the base text in vertical writing mode or  below the base text in horizontal writing mode. Sometimes the interlinear comments are in other colors to help the reader tell the difference from the body text .</p>
       <p data-lang="zh">行間批語可用於解釋一段長文本的整體語境。這種情況下，由於沒有明確的基文，其注文常自一個合適的錨點位置展開並向後延伸，長度不拘，時可超過一行。</p>
       <p data-lang="en">Interlinear comments are also used to explain the context and details of a longer text fragment. In such cases, due to the ambiguity of the base text, the annotation can find a suitable place as an anchor and flow down. There's no strict requirement for its length, and sometimes it can be longer than one line.</p>
     </section>
@@ -1541,7 +1542,7 @@
       </div>
       <div class="note">
         <p data-lang="zh">標題構造結構為何，依照書籍內容而定。有人認為標題層級不應該過多。</p>
-        <p data-lang="en">In multi-column format, block headings sometimes span multiple columns. This style is called &quot;cross column heading&quot;. </p>
+        <p data-lang="en"><span class="issue">The structure of a heading depends on the detail context of the book. It's suggested not to set too many levels for the headings.</span></p>
       </div>
       <div class="note">
         <p data-lang="zh">多欄排列時，有著將換行標題置於複數欄的配置方法。稱為「跨欄標題」。</p>
@@ -1556,20 +1557,24 @@
       <h4><span data-lang="zh">使標題得以突顯的方式</span>
   <span data-lang="en">Font Selection and Heading Font Size</span></h4>
       <p data-lang="zh"><span class="translateme">標題主要是為了呈現階層結構，所以需要以特別的表現體裁來顯示其階層。標題的表現體裁包含以下幾種方式：</span></p>
+      <p data-lang="en"><span class="issue">Aimed to indicate the level structure most of the time, headings have some special way to display their own levels. Here are some rules for the headings: </span></p>
       <ol>
         <li><p data-lang="zh">使用不同的文字尺寸呈現標題的階層，例如，有著大標、中標、小標時，小標比本文文字尺寸（例如：9pt）大一階段（例如：10pt），中標則比小標大一階段（例如：12pt），大標則比中標大一階段（例如：14pt）。</p>
-        <p data-lang="en"><span class="leadin">Character size for the heading:</span> The character size of headings should be selected as appropriate in accordance with the level of headings. For example, when the character size of main text is 9 point, the small-headings are usually set with 10 points, medium-headings are usually set with 12 points and large-headings are usually set with 14 points. The character size of headings is usually larger than main text, and the character size of higher level headings are larger than the size of smaller size headings.</p>
+        <p data-lang="en"><span class="leadin">Character size for the heading:</span> The character size of headings should be selected as appropriate in accordance with the level of headings. For example, when the character size of main text is 9 point, the small-headings are usually set with 10 points, medium-headings are usually set with 12 points and large-headings are usually set with 14 points. </p>
           <div class="note">
             <p data-lang="zh" class="translateme">也有採用將本文文字尺寸依照比例放大的方式，使用這方式時，以10%–20%上下，依階層放大為佳。</p>
+            <p data-lang="en"><span class="issue">The character size of headings is usually larger than main text. When this rule is applied, the characters in the heading should be 10% to 20% larger. And the character size of higher level headings are larger than the size of smaller size headings.</span></p>
           </div>
         </li>
         <li><p data-lang="zh">使用的字體使用黑體，或者採用宋體但加粗。此外，也有使用圓體、楷體的案例。</p>
         <p data-lang="en"><span class="leadin">Type faces for headings:</span> Both Hei or bold Song are usually used. Other type face designs like Yuan and Kai are sometimes used as well.</p>
           <div class="note">
             <p data-lang="zh"><span class="translateme">活版印刷使用作為標題的宋體字，其活字設計時都會因為供標題使用而字重偏重。但使用數位字體時由於是採內文字設計，放大字級後顯得過輕，幾乎都會加重字重為粗體。</span></p>
+            <p data-lang="en"><span class="issue">In letterpress printing, when Song is used as the type face of the heading, it's always designed with larger size; while in digital printing, due to its special typography, simply increasing the font size is not enough, the characters usually use bold style to emphasiss. </span></p>
           </div>
           <div class="note">
             <p data-lang="zh"><span class="translateme">使用黑體作為小標時，也都會加重字重，令標題凸顯。</span></p>
+            <p data-lang="en"><span class="issue">When Hei is used for the type face of the low level headings, font-weight should be increased to emphasis the heading.</span></p>
           </div>
         </li>
         <li><p data-lang="zh">對齊橫排的大標與中標使用置中對齊的案例相當多，但直排時，則多使用對齊行頭或下字。</p>
@@ -1580,7 +1585,7 @@
           </div>
         </li>
         <li><p data-lang="zh">其他加上框線、圖片、記號等。</p>
-        <p data-lang="en"> Whether to decorate with solid lines, or give a symbol on the top of the heading.</p></li>
+        <p data-lang="en"> Whether to decorate with solid lines, images, or give a symbol on the top of the heading.</p></li>
       </ol>
     </section>
     
@@ -1618,7 +1623,7 @@
         <li><p data-lang="zh">換欄時，前一欄末尾後面留空即可。</p>
         <p data-lang="en"> In the case of multiple columns, the remaining space of preceding columns is left as it is.</p></li>
          <li><p data-lang="zh">直排多欄排版時，由上欄往下欄，各行依序排列，行數可不齊。</p>
-         <p data-lang="en"> In the case of vertical writing mode, columns are filled with text lines from upper right to lower left. There
+         <p data-lang="en">In the case of vertical writing mode, columns are filled with text lines from upper right to lower left. There
 is no need to align line numbers of the upper column and lower column, and remaining spaces are left as they are.</p></li>
         <li><p data-lang="zh">橫排多欄排版時，各欄行數原則上需對齊。若無法對齊時，不足的行數於最右欄末留空。</p>
         <p data-lang="en"> In horizontal writing mode and multi-column format, the number of lines for each column is set to be the same, but where the result of the total number of lines divided by the column number chosen for the type area results in an odd number, the last column may have a smaller number of lines and may be followed by blank space.</p></li>

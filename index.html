@@ -337,7 +337,7 @@
     <p data-lang="zh">書籍多數僅使用一種基礎排版體裁，雜誌則會使用上數種。</p>
     <p data-lang="en">Books usually use one basic template for page format, whereas magazines often use several templates.</p>
     <p data-lang="zh">但儘管書籍僅使用一種體裁，在實際頁面的設計上，如：目錄、索引等頁面，會基於基本排版體裁重新設計。索引等頁面採用不同排版體裁設計的案例也相當多，直排書索引也會以橫排或者多欄排版方式設計。但在設計上，版面尺寸等依然不出基礎排版體裁。</p>
-    <p data-lang="en">Although in books, there tends to be one template for the page format, some further design effort based around the basic page format will be needed for pages such as the table of contents and indexes. Furthermore, there are many examples of indexes with a different page format than the basic page format, and vertically set books often have indexes in horizontal writing mode, and sometimes multiple columns. However, while doing actual design for the page, the size of the type area should not exceed the basic page template.<span class="issue"> (have some doubts about the translation of 版面 here)</span>.</p>
+    <p data-lang="en">Although in books, there tends to be one template for the page format, some further design effort based around the basic page format will be needed for pages such as the table of contents and indexes. Furthermore, there are many examples of indexes with a different page format than the basic page format, and vertically set books often have indexes in horizontal writing mode, and sometimes multiple columns. However, while doing actual design for the page, the size of the type area should not exceed the basic page template.<span class="issue"> (some doubts about the translation of 版面 here)</span>.</p>
     <p data-lang="zh">雜誌則因為內容不同，排版體裁多變，文字大小、欄數依照內容不同會有所變化。</p>
     <p data-lang="en">Magazines usually contain various kinds of content, which naturally leads to various designs of templates, different sizes of characters, and varying numbers of columns. </p>
     
@@ -1631,7 +1631,8 @@
       <ol>
         <li><p data-lang="zh">使用不同的文字尺寸呈現標題的階層，例如，有著大標、中標、小標時，小標比本文文字尺寸（例如：9pt）大一階段（例如：10pt），中標則比小標大一階段（例如：12pt），大標則比中標大一階段（例如：14pt）。</p>
         <p data-lang="en"><span class="leadin">Character size for the heading:</span> The character size of headings should be selected as appropriate in accordance with the level of headings. For example, when the character size of main text is 9 point, the small-headings are usually set with 10 points, medium-headings are usually set with 12 points and large-headings are usually set with 14 points. </p>
-          <div class="note"> 也有採用將本文文字尺寸依照比例放大的方式，使用這方式時，以10%–20%上下，依階層放大為佳。
+          <div class="note">
+          <p data-lang="en">也有採用將本文文字尺寸依照比例放大的方式，使用這方式時，以10%–20%上下，依階層放大為佳。</p>
             <p data-lang="en">The character size of headings is usually larger than that of the main text. When this rule is applied, the characters in the heading should be 10% to 20% larger. And the character size of higher level headings is larger than the size of smaller size headings.</p>
           </div>
         </li>
@@ -1731,21 +1732,21 @@ is no need to align line numbers of the upper column and lower column, and remai
   <span data-lang="en">Punctuation marks in Chinese</span></h2>
 <table data-lang="zh" class="punctuation">
     <thead>
-      <tr>
-        <th>名稱</th>
-        <th>字符</th>
-        <th>萬國碼</th>
-        <th>萬國碼<wbr/>
+      <tr lang="zh">
+        <th class="topth">名稱</th>
+        <th class="topth">字符</th>
+        <th class="topth">萬國碼</th>
+        <th class="topth">萬國碼<wbr/>
           名稱</th>
-        <th>直排時<wbr/>
+        <th class="topth">直排時<wbr/>
           順時針旋轉90度</th>
-        <th>禁止出現<wbr/>
+        <th class="topth">禁止出現<wbr/>
           於行首</th>
-        <th>禁止出現<wbr/>
+        <th class="topth">禁止出現<wbr/>
           於行尾</th>
-        <th>不可<wbr/>
+        <th class="topth">不可<wbr/>
           分離</th>
-        <th>說明</th>
+        <th class="topth">說明</th>
       </tr>
     </thead>
     <tbody>
@@ -2204,15 +2205,15 @@ is no need to align line numbers of the upper column and lower column, and remai
   <table class="punctuation" data-lang="en">
     <thead>
       <tr>
-        <th>Name in Chinese</th>
-        <th>Character</th>
-        <th>Unicode</th>
-        <th>Name</th>
-        <th>Rotated 90° clockwise in vertical writing mode</th>
-        <th>Prohibited at line start</th>
-        <th>Prohibited at line end</th>
-        <th>Unbreakable</th>
-        <th>Notes</th>
+        <th class="topth">Name in Chinese</th>
+        <th class="topth">Character</th>
+        <th class="topth">Unicode</th>
+        <th class="topth">Name</th>
+        <th class="topth">Rotated 90° clockwise in vertical writing mode</th>
+        <th class="topth">Prohibited at line start</th>
+        <th class="topth">Prohibited at line end</th>
+        <th class="topth">Unbreakable</th>
+        <th class="topth">Notes</th>
       </tr>
     </thead>
     <tbody>
@@ -2673,8 +2674,8 @@ is no need to align line numbers of the upper column and lower column, and remai
     <p data-lang="en">In some special circumstances, in Traditional Chinese the punctuation marks might sometimes appear at the beginning of a line.</p></li>
     <li><p data-lang="zh">文字直排時通常改用角引號[『』「」]。</p>
     <p data-lang="en">Corner brackets (『』「」) are usually used in vertical writing mode.</p></li>
-    <li><p data-lang="zh">符號不可斷開、分行，唯無法避免時，可視狀況拆至二行。</p></li>
-    <li><p data-lang="en">Punctuation marks should not be broken or separated onto two lines. Only if there is no way to avoid the breaking or separation, can they can be placed across two lines.</p></li>
+    <li><p data-lang="zh">符號不可斷開、分行，唯無法避免時，可視狀況拆至二行。</p>
+    <p data-lang="en">Punctuation marks should not be broken or separated onto two lines. Only if there is no way to avoid the breaking or separation, can they can be placed across two lines.</p></li>
     <li><p data-lang="zh">來自大五碼。</p>
     <p data-lang="en">The content above is from Big-5 code.</p></li>
   </ol>

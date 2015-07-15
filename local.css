@@ -88,6 +88,7 @@ samp, kbd {
     right: 20px;
     width: 202px;
     text-align: right;
+	z-index: 10000;
 	}
 
 .punctuation {

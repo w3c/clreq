@@ -83,14 +83,16 @@
     <p data-lang="en" style="font-weight: bold; font-size: 120%">Sending comments on this document</p>
   	<p data-lang="en">If you wish to make comments regarding this document, please raise them as <a href="https://github.com/w3c/klreq/issues" style="font-size: 120%;">github issues</a> against the <a href="http://www.w3.org/TR/2015/WD-klreq-20150414/" style="font-size: 120%">latest dated version in /TR</a>. Only send comments by email if you are unable to raise issues on github (see links below).   All comments are welcome.</p>
   	<p data-lang="en">To make it easier to track comments, please raise separate issues or emails for each comment, and point to the section you are commenting on&nbsp; using  a URL for the dated version of the document.</p>
+    <p data-lang="zh" style="font-weight: bold; font-size: 120%”>发表对本文档的建议</p>
+ 	<p data-lang="zh”>如果你对<a href="http://www.w3.org/TR/2015/WD-clreq-20150723/" style="font-size: 120%">/TR下最新版本</a>的文档有任何建议和反馈，请把您的想法整理发布为 <a href="https://github.com/w3c/clreq/issues" style="font-size: 120%;">github issues</a>。若您觉得在GitHub上提出issues比较困难，也可以邮件形式进行反馈（请参考下面的链接）。您的任何建议对本文档都很可贵。</p>
+ 	<p data-lang="zh”>为便于跟踪您所反馈的问题，请为您所提出的每一个意见点单独成立一个issue或者邮件，并在其中明确指出您所谈到的章节序号和您所阅读的日期版本的URL。</p>
     -->
     </div>
     
-  <!--p><button id="toZH" onClick="en=document.querySelectorAll('[data-lang=en]');for (i=0;i<en.length;i++){en[i].style.display='none';} document.getElementById('languageStyling').textContent='';">Hide English content</button> <button onClick="zh=document.querySelectorAll('[data-lang=zh]');for (i=0;i<zh.length;i++){zh[i].style.display='none';}document.getElementById('languageStyling').textContent='';">Hide Chinese content</button></p-->
   <p id="langSwitch"><button id="toZH" onClick="switch2zh();">zh</button> 
   <button onClick="switch2en();">en</button></p>
 
-  <p>本章节描述了本文档的发布状态。其它更新版本可能会覆盖本文档。W3C的文档列 表和最新版本可通过<a href="http://www.w3.org/TR/">W3C技术报告</a>索引访问。 </p>
+  <p>本章节描述了本文档的发布状态。其它更新版本可能会覆盖本文档。W3C的文档列表和最新版本可通过<a href="http://www.w3.org/TR/">W3C技术报告</a>索引访问。 </p>
   <p>以编辑草稿方式发布的文档还没有通过<abbr title="World Wide Web Consortium">W3C</abbr>会员流程的认可。这是一份文档草稿并且会被不断更新。请暂时不要正式引用本文档。</p>
 <p>本文档遵循<abbr title="World Wide Web Consortium">W3C</abbr><a id="sotd_patent" property="w3p:patentRules" href="http://www.w3.org/Consortium/Patent-Policy-20040205/">专利政策</a>（2004-02-05）。<abbr title="World Wide Web Consortium">W3C</abbr>为工作组的产出成果维护着一份<a href="http://www.w3.org/2004/01/pp-impl/" rel="disclosure">公开专利披露列表</a>，此页面也同时涵盖了专利披露说明。若个人发现其有包含<a href="http://www.w3.org/Consortium/Patent-Policy-20040205/#def-essential">必须声明</a>的专利信息，必须按照<a href="http://www.w3.org/Consortium/Patent-Policy-20040205/#sec-Disclosure"><abbr title="World Wide Web Consortium">W3C</abbr>专利政策第六章节</a>披露此信息。</p>
   <p>本文档遵循<a id="w3c_process_revision" href="http://www.w3.org/2014/Process-20140801/"><abbr title="World Wide Web Consortium">W3C</abbr>流程文档</a>（2014-08-01）。</p>
@@ -98,22 +100,11 @@
 <section id="introduction">
   <h2><span data-lang="zh">緒論</span>
   <span data-lang="en">Introduction</span></h2>
-  <section id="purpose_of_this_document">
-    <h3><span data-lang="zh">本文書之目的</span>
-  <span data-lang="en">Purpose of this document</span></h3>
-    <p data-lang="zh">每一個文化群體都擁有獨自的語言、文字、書寫系統。將個別書寫系統得以在虛擬空間再現，對文化資產的承繼而言，是資訊傳播技術的重要責任。</p>
-    <p data-lang="en">Each cultural community has its own language, script and writing system. The transfer of each writing system into cyberspace is a task with very high importance for information and communication technology.</p>
-    <p data-lang="zh">作為實現這個責任的基礎，本文書整理了中文（漢字）書寫系統於排版上的需求。一方面說明需求事項以明確描述中文排版之需求與問題；另一方面也提供與既有標準（如萬國碼）的對應，冀求透過本文書能在實作層級更能有效地促進實現。</p>
-    <p data-lang="en">As one of the basic work items of this task force, this document summarizes the text composition requirements in the Chinese writing system. One of the goals of the task force is to describe the issues in Chinese layout requirements, another is to provide satisfactory equivalents to the current standards (i.e. Unicode), and another is to prompt vendors to implement those relevant features correctly.</p>
-    <div class="note">
-    <p data-lang="zh" class="translateme">黄色背景的文字，如本段，是被改写或添加的重要修正，对应语言的文字也因同步更新。</p>
-    <p data-lang="en" class="translateme">Text with a yellow background, like this, has been added or changed in a substantive way, and the parallel language content needs updating.</p>
-  </div>
-  </section>
   
-  <section id="basic_principles_for_development_of_this_document">
-    <h3><span data-lang="zh">本文件之撰寫方針</span>
-  <span data-lang="en">How This Document Was Created</span></h3>
+
+  <section id="basic_features_of_chinese_script">
+    <h3><span data-lang="zh">中文排版的主要特色</span>
+  <span data-lang="en">Basic Features of Chinese Script</span></h3>
     <p data-lang="zh">中文排版有別於其他體系，主要特色在於以下各點：</p>
     <p data-lang="en">Chinese composition exhibits several differences from other writing systems. The major features include: </p>
     <ol>
@@ -130,6 +121,39 @@
       <p data-lang="en"> In principal, the characters, including Chinese (hanzi) characters and punctuation, used in Chinese composition are squares with the ratio of 1:1, and are seamlessly arranged with one another.</p>
       </li>
     </ol>
+    </section>
+
+
+  <section id="purpose_of_this_document">
+    <h3><span data-lang="zh">本文書之目的</span>
+  <span data-lang="en">Purpose of this document</span></h3>
+    <p data-lang="zh">每一個文化群體都擁有獨自的語言、文字、書寫系統。將個別書寫系統得以在虛擬空間再現，對文化資產的承繼而言，是資訊傳播技術的重要責任。</p>
+    <p data-lang="en">Each cultural community has its own language, script and writing system. The transfer of each writing system into cyberspace is a task with very high importance for information and communication technology.</p>
+    <p data-lang="zh">作為實現這個責任的基礎，本文書整理了中文（漢字）書寫系統於排版上的需求。一方面說明需求事項以明確描述中文排版之需求與問題；另一方面也提供與既有標準（如萬國碼）的對應，冀求透過本文書能在實作層級更能有效地促進實現。</p>
+    <p data-lang="en">As one of the basic work items of this task force, this document summarizes the text composition requirements in the Chinese writing system. One of the goals of the task force is to describe the issues in Chinese layout requirements, another is to provide satisfactory equivalents to the current standards (i.e. Unicode), and another is to prompt vendors to implement those relevant features correctly.</p>
+  </section>
+  
+  <section id="basic_principles_for_development_of_this_document">
+    <h3><span data-lang="zh">本文件之撰寫方針</span>
+  <span data-lang="en">How This Document Was Created</span></h3>
+    
+  <section id="chinese_text_in_this_document">
+    <h4><span data-lang="zh">本文档所使用的中文语言</span>
+  <span data-lang="en">Languages Used in this Document</span></h4>
+    <p data-lang="zh">本文档的作者包含繁体中文使用者和简体中文使用者。我们非常感谢来自不同语言文化背景的编辑和合作者对本文档的贡献，以及他们跨越文化差异共同致力完善本文档的美好愿景。 在本工作草稿的早期阶段，文中汉语所使用的版本取决于贡献此内容的编写者。未来的版本会逐步改善整理此混合文本，但在本阶段，原始文本将被保留以快速完成和修正本文档。</p>
+    <p data-lang="en">This document was developed by people working in both Simplified and Traditional Chinese. We very much appreciate the contributions of the editors and collaborators from different linguistic backgrounds, and their willingness to collaborate across linguistic boundaries. In this early version of the Working Draft, the version of the script used for the Chinese text depends on the person who contributed the text. We expect to create separate translations of the Chinese text in future versions of this document, but at this early stage the original contributions are kept as is to enable rapid development of the text.</p>
+    <p data-lang="zh">您可通过本页面右上方的按钮选择阅读文档的单一语言版本。</p>
+    <p data-lang="en">You can view the document in a single language using the buttons at the top right of the window.</p>
+    <div class="note">
+    <p data-lang="zh" class="translateme">带有黄色背景的文字，如本文，意味将需要被更新以匹配另一个语言版本的改动。</p>
+    <p data-lang="en" class="translateme">Text with a yellow background, like this, needs updating to match the latest edits to the document.</p>
+  </div>
+</section>    
+    
+  <section id="design_approach">
+    <h4><span data-lang="zh">设计原则</span>
+  <span data-lang="en">Design Approach</span></h4>
+    
     <p data-lang="zh">本文基於以上前提，主要將中文排版的特徵以下列方針解說。</p>
     <p data-lang="en">This document mainly adopts the following policies to explain the features of Chinese composition:</p>
     <ul>

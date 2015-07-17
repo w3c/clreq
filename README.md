@@ -56,9 +56,11 @@ Here are some tips on how to maintain the parallel language structure in markup.
 下面是一些小提示，通过markup来维护双重语言版本。下面例子里条约可能日后被其它markup覆盖。
 
 The chinese text should always come before the english text.
+
 中文内容将被放在英文内容的前面。
 
 List elements need `p` elements inside them:
+
 list内的元素里面需要放`p`元素。
 ```
 <li>
@@ -68,6 +70,7 @@ list内的元素里面需要放`p`元素。
 ```
 
 Headings should use spans for en and zh versions, and there should be a line break between spans.
+
 标题里应该用spans来显示en和zh版本，并且两者之间应该有一个换行。
 ```
 <h2><span data-lang="zh">我的标题</span>
@@ -75,6 +78,7 @@ Headings should use spans for en and zh versions, and there should be a line bre
 ```
 
 Ids should go on section elements, not `hx` elements.
+
 Ids跟随section元素，而并非`hx`元素。
 ```
 <section id="h_my_heading">
@@ -83,6 +87,7 @@ Ids跟随section元素，而并非`hx`元素。
 ```
 
 Ids on `dfn` elements should start with `xxdef`, where xx is either en or zh.
+
 在`dfn`元素里的ids应该以`xxdef`开始，xx是en或zh。
 ```
 <p data-lang="zh">这个<dfn id="zhdef_term">词语</dfn>是一个技术用语。</p>
@@ -90,6 +95,7 @@ Ids on `dfn` elements should start with `xxdef`, where xx is either en or zh.
 ```
 
 Figcaptions should use spans for the different language versions.
+
 Figcaptions应该用spans来标示不同语言版本。
 ```
 <figure>
@@ -99,6 +105,7 @@ Main figure content here.
 ```
 
 Use the following markup for Unicode codepoint names:
+
 请使用以下markup来标示Unicode codepoint的名字：
 ```
 <span class="uname">U+3002 IDEOGRAPHIC FULL STOP</span> [。]
@@ -106,4 +113,5 @@ Use the following markup for Unicode codepoint names:
 
 For additional ideas about markup and styling in Internationalization Activity documents, especially wrt inline markup conventions, see
 http://www.w3.org/International/docs/styleguide
+
 想了解更多国际化标准计划文档里的markup和样式条约，尤其是wrt行内markup的条约，请查看http://www.w3.org/International/docs/styleguide。

@@ -26,7 +26,7 @@ Example:
 ```
 
 
-If you are able to create text in both English and Chinese, please do so. If you are only able to create text in one language, still create the dual structure in markup, but put the same text in both places. Then add class="translateme" to the text that needs translation.
+If you are able to create text in both English and Chinese, please do so. If you are only able to create text in one language, still create the dual structure in markup, but put the same text in both places. Then add `class="translateme"` to the text that needs translation.
 
 Example:
 ```
@@ -34,7 +34,7 @@ Example:
 <p data-lang="en" class="translateme">这是中国的文字。</p>
 ```
 
-If you change existing text, and if that change requires a change in the parallel translation but you are unable to do so, add class="translateme" to the text that needs to be updated.
+If you change existing text, and if that change requires a change in the parallel translation but you are unable to do so, add `class="translateme"` to the text that needs to be updated.
 
 When text highlighted by the translateme class is updated, and matches the recent changes in the other language, the class should be removed.
 
@@ -45,7 +45,7 @@ Here are some tips on how to maintain the parallel language structure in markup.
 
 The chinese text should always come before the english text.
 
-List elements need p elements inside them:
+List elements need `p` elements inside them:
 ```
 <li>
 <p data-lang="zh">这是中国的文字。</p>
@@ -59,14 +59,14 @@ Headings should use spans for en and zh versions, and there should be  a line br
 <span data-lang="en">My heading</span></h2>
 ```
 
-Ids should go on section elements, not hx elements.
+Ids should go on section elements, not `hx` elements.
 ```
 <section id="h_my_heading">
 <h2><span data-lang="zh">中文标签头</span>
 <span data-lang="en">My heading</span></h2>
 ```
 
-Ids on dfn elements should start with xxdef, where xx is either en or zh.
+Ids on `dfn` elements should start with `xxdef`, where xx is either en or zh.
 ```
 <p data-lang="zh”>这个<dfn id="zhdef_term">词语</dfn>是一个技术用语。</p>
 <p data-lang="en">The <dfn id="endef_term">term</dfn> is a technical word.</p>
@@ -78,6 +78,11 @@ Figcaptions should use spans for the different language versions.
 Main figure content here.
 <figcaption><span data-lang="zh">大写文字</span>
 <span data-lang="en">My caption</span></figcaption>
+```
+
+Use the following markup for Unicode codepoint names:
+```
+<span class="uname">U+3002 IDEOGRAPHIC FULL STOP</span> [。]
 ```
 
 For additional ideas about markup and styling in Internationalization Activity documents, especially wrt inline markup conventions, see

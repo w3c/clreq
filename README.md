@@ -1,12 +1,10 @@
-**中文排版需求 Requirements for Chinese Text Layout** 
+*中文排版需求 Requirements for Chinese Text Layout* 
 
 http://w3c.github.io/clreq/
 
 This document is being developed by the Chinese Layout Task Force and the W3C Internationalization Working Group.
 
 本文档由中文布局任务小组和W3C国际化工作组联合编写。
-
-Feedback about the content of this document can be submitted via issues or a pull request in the GitHub repo. If those approaches are not possible or convenient, you are also welcome to send your comments to public-i18n-cjk@w3.org(subscribe) (for discussion in English), or public-zhreq@w3.org(subscribe) (for discussion in Chinese).
 
 Feedback about the content of this document can be submitted via issues or pull request in the GitHub repo. You are also welcome to send your comments to [public-i18n-cjk@w3.org](mailto:public-i18n-cjk@w3.org)([subscribe](mailto:public-i18n-cjk@w3.org?subject=subscribe)) (for discussion in English), or [public-zhreq@w3.org](mailto:public-zhreq@w3.org)([subscribe](mailto:public-zhreq@w3.org?subject=subscribe)) and [public-html-ig-zh@w3.org](mailto:public-html-ig-zh@w3.org)([subscribe](mailto:public-html-ig-zh@w3.org?subject=subscribe)) (for discussion in Chinese).
 
@@ -23,9 +21,9 @@ Creating or modifying content
 
 When creating new content, you should always create markup for both Chinese and English versions.
 
-Example:
-&lt;p data-lang="zh">这是中国的文字。&lt;/p>
-&lt;p data-lang="en">The same text in English.&lt;/p>
+Example:\
+&lt;p data-lang="zh">这是中国的文字。&lt;/p>\
+&lt;p data-lang="en">The same text in English.&lt;/p>\
 
 
 If you are able to create text in both English and Chinese, please do so. If you are only able to create text in one language, still create the dual structure in markup, but put the same text in both places. Then add class="translateme" to the text that needs translation.

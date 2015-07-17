@@ -14,22 +14,22 @@
           shortName:  "clreq",
 		  noRecTrack: true,
           editors: [
-                {   name:       "Bobby Tung(董福興)",
+                {   name:       "Bobby Tung (董福興)",
                     mailto:     "bobbytung@wanderer.tw",
                     company:    "Invited Expert" },
-                {   name:       "Yijun Chen(陳奕鈞)",
+                {   name:       "Yijun Chen (陳奕鈞)",
                     mailto:     "ethantw@me.com",
                     company:    "Invited Expert" },
-                {   name:       "Hai Liang(梁海)",
+                {   name:       "Hai Liang (梁海)",
                     mailto:     "lianghai@gmail.com",
                     company:    "Invited Expert" },
-                {   name:       "Eric Q. LIU(刘庆)",
+                {   name:       "Eric Q. LIU (刘庆)",
                     mailto:     "ryukeikun@me.com",
                     company:    "Invited Expert" },
-                {   name:       "Xiaoqian Wu(吴小倩)",
+                {   name:       "Xiaoqian Wu (吴小倩)",
                     mailto:     "xiaoqian@w3.org",
                     company:    "W3C" },
-                {   name:       "Angel Li(李安琪)",
+                {   name:       "Angel Li (李安琪)",
                     mailto:     "angel@w3.org",
                     company:    "W3C" },
                 {   name:       "Richard Ishida",
@@ -62,7 +62,7 @@
 [data-lang = en] { border-left: 3px solid #F88A05; padding-left: 10px;  }
 </style>
 </head>
-<body>
+<body onload="addLangAttrs();"><!-- remove the onload event after creating the TR version -->
 <div id='abstract'>
   <p data-lang="zh">本文書整理了中文（漢字）書寫系統於排版上的需求。一方面說明需求事項以明確描述中文排版之需求與問題；另一方面也提與既有標準（如萬國碼）的對應，冀求透過本文書能在實作層級更能有效地促進實現。</p>
   <p data-lang="en"> This document summarizes the text composition requirements in the Chinese writing system. One of the goals of the task force is to describe the issues in the Chinese layout requirements, another one is to provide satisfactory equivalent to the current standards (i.e. Unicode), also to promote vendors to implement those relevant features correctly. </p>

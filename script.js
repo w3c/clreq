@@ -8,6 +8,28 @@ function switch2zh () {
 	document.getElementById('languageStyling').textContent=''
 	document.documentElement.lang = 'zh'
 	switched = true;
+	
+	// change boilerplate text
+	document.getElementById('abstract-1').textContent = '摘要'
+	document.getElementById('h-sotd').textContent = '关于本文档'
+	document.getElementById('h-toc').textContent = '内容大纲'
+	
+	var notes = document.querySelectorAll('.note-title')
+	for (i=0;i<notes.length;i++) notes[i].textContent = '注'
+	var figcaptions = document.querySelectorAll('figcaption')
+	for (i=0;i<figcaptions.length;i++) figcaptions[i].firstChild.textContent = '圖'
+	
+	var dts = document.querySelectorAll('dt')
+	for (i=0;i<dts.length;i++) {
+		switch (dts[i].textContent) {
+		case 'This version:': dts[i].textContent = '本版本：'; break;
+		case 'Latest published version:': dts[i].textContent = '最新发布草稿：'; break;
+		case 'Latest editor\'s draft:': dts[i].textContent = '最新编辑草稿：'; break;
+		case 'Editors:': dts[i].textContent = '编辑：'; break;
+		case 'Bug tracker:': dts[i].textContent = '错误跟踪：'; 
+			dts[i].nextSibling.nextSibling.innerHTML = '<a href="https://github.com/w3c/clreq/issues">反馈错误</a>（<a href="https://github.com/w3c/clreq/issues">修正中的错误</a>）'; break;
+		}
+		}
 	}
 	
 	

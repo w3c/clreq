@@ -115,3 +115,19 @@ For additional ideas about markup and styling in Internationalization Activity d
 http://www.w3.org/International/docs/styleguide
 
 想了解更多国际化标准计划文档里的markup和样式条约，尤其是wrt行内markup的条约，请查看http://www.w3.org/International/docs/styleguide。
+
+
+
+##Last-minute Pre-publication edits##
+
+the following edits should be made to the snapshot of the file that will be published.
+
+[1] remove  onload="addLangAttrs();" from the body tag
+
+[2] convert the contents of the h1 tag to the following:
+```
+Requirements for Chinese Text Layout <span data-lang="zh" lang="zh">中文排版需求</span>
+```
+[3] in the SOTD, change the link on "latest dated version in /TR" to point to the location of the document that is about to be published
+
+(the same change should be made to the respec file)

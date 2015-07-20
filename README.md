@@ -122,9 +122,9 @@ http://www.w3.org/International/docs/styleguide
 
 the following edits should be made to the snapshot of the file that will be published to TR.
 
-[1] remove  onload="addLangAttrs();" from the body tag
+[1] remove  `onload="addLangAttrs();"` from the body tag
 
-[2] convert the contents of the h1 tag to the following:
+[2] convert the contents of the `h1` tag to the following:
 ```
 Requirements for Chinese Text Layout <span data-lang="zh" lang="zh">中文排版需求</span>
 ```

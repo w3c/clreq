@@ -120,7 +120,7 @@ http://www.w3.org/International/docs/styleguide
 
 ##Last-minute Pre-publication edits##
 
-the following edits should be made to the snapshot of the file that will be published.
+the following edits should be made to the snapshot of the file that will be published to TR.
 
 [1] remove  onload="addLangAttrs();" from the body tag
 

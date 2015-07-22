@@ -53,3 +53,6 @@ function addLangAttrs () {
 	var zh = document.querySelectorAll('[data-lang=zh]')
 	for (i=0;i<zh.length;i++) { if (zh[i].lang == '') { zh[i].lang='zh'} }
 	}
+
+document.addEventListener( 'DOMContentLoaded', addLangAttrs );
+

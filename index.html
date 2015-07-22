@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset='utf-8'/>
-<title>中文排版需求 Requirements for Chinese Text Layout</title>
-<script src='script.js' type="application/javascript">
+<meta charset="utf-8"/>
+<title>Requirements for Chinese Text Layout 中文排版需求</title>
+<link rel="canonical" href="http://www.w3.org/TR/2015/WD-clreq-20150723/"/>
+<script src="script.js" type="application/javascript">
 </script>
-<script src='http://www.w3.org/Tools/respec/respec-w3c-common'
-            async class='remove'></script>
-<script class='remove'>
+<script src="http://www.w3.org/Tools/respec/respec-w3c-common"
+            async class="remove"></script>
+<script class="remove">
       var respecConfig = {
-          specStatus: "ED",
-		  //publishDate: "2015-07-23",
+          specStatus: "FPWD",
+		  publishDate: "2015-07-23",
           shortName:  "clreq",
 		  noRecTrack: true,
           editors: [
@@ -63,7 +64,7 @@
 </style>
 </head>
 <body onload="addLangAttrs();"><!-- remove the onload event after creating the TR version -->
-<div id='abstract'>
+<div id="abstract">
   <p data-lang="zh">本文書整理了中文（漢字）書寫系統於排版上的需求。一方面說明需求事項以明確描述中文排版之需求與問題；另一方面也提與既有標準（如萬國碼）的對應，冀求透過本文書能在實作層級更能有效地促進實現。</p>
   <p data-lang="en"> This document summarizes the text composition requirements in the Chinese writing system. One of the goals of the task force is to describe the issues in the Chinese layout requirements, another one is to provide satisfactory equivalent to the current standards (i.e. Unicode), also to promote vendors to implement those relevant features correctly. </p>
 </div>
@@ -425,11 +426,11 @@
       <p data-lang="en">This section explains how to create a real page format based on the type area. </p>
       <ol>
         <li><p data-lang="zh">配置標題的空間與位置標題所使用空間之文字方向與尺寸，以版心設定的行的位置為基準，採用數行的空間來設計。標題縮排時的處理，以版心所設定的文字尺寸為基準，決定要縮排的量。</p>
-        <p data-lang="en"><span class="leadin">Realm and position of headings:</span> The direction and size of the characters of the heading should be based on a number of lines in the type area. The size of the indent is usually specified as a number of characters in the type area. </li>
+        <p data-lang="en"><span class="leadin">Realm and position of headings:</span> The direction and size of the characters of the heading should be based on a number of lines in the type area. The size of the indent is usually specified as a number of characters in the type area.</p></li>
         <li><p data-lang="zh">圖片之尺寸：橫排時圖片，寬度盡可能地以版心的尺寸一致；若為多欄排版時，則盡可能與版心所設定的一欄寬度一致。排列時多與版心的天或者地對齊配置。直排時亦同，依照版心的天地高度、或者多欄排版下所設計單欄或者多欄的天地尺寸為基準配置。排列時亦多與版心的天或者地對齊配置。</p>
-        <p data-lang="en"><span class="leadin">Size of illustrations:</span> In horizontal writing mode, the width of illustrations should, if at all possible, be the width of the type area; in horizontal writing mode with multiple columns, the width of illustrations should, if at all possible, be the width of one type area column. The illustrations are usually set at the head or the foot of the page. Likewise,  in vertical writing mode, the height of illustrations should, if at all possible, be either the height of one type area column or the height of the type area. The illustrations are usually set at the right side or left side of the type area.</li>
+        <p data-lang="en"><span class="leadin">Size of illustrations:</span> In horizontal writing mode, the width of illustrations should, if at all possible, be the width of the type area; in horizontal writing mode with multiple columns, the width of illustrations should, if at all possible, be the width of one type area column. The illustrations are usually set at the head or the foot of the page. Likewise,  in vertical writing mode, the height of illustrations should, if at all possible, be either the height of one type area column or the height of the type area. The illustrations are usually set at the right side or left side of the type area.</p></li>
         <li><p data-lang="zh">目錄、索引、參考書目等頁面目錄、索引、參考書目等頁面以版心之尺寸作為基準設計。但有不少案例會於內文採單欄橫排時，目錄等頁採多欄設計；而目錄頁有時天地側會對文字進行縮排。</p>
-        <p data-lang="en"><span class="leadin">Page for Table of Contents, Indexes and References:</span> The size of the type area for the table of contents, indexes and references of books is based on the size of the type area for the main body content. There are many examples of tables of contents in vertical writing mode where the left-to-right size is identical to that of the type area, but the top-to-bottom size is a little bit smaller. </li>
+        <p data-lang="en"><span class="leadin">Page for Table of Contents, Indexes and References:</span> The size of the type area for the table of contents, indexes and references of books is based on the size of the type area for the main body content. There are many examples of tables of contents in vertical writing mode where the left-to-right size is identical to that of the type area, but the top-to-bottom size is a little bit smaller.</p></li>
       </ol>
     </section>
     
@@ -1009,11 +1010,11 @@
       <p data-lang="zh">通常，適合行尾懸掛的點號有頓號、逗號及句號三者。簡體中文排版中，其餘點號因其字面分布偏向受注文字一側、字面始端，亦可進行行尾懸掛配置。</p>
       <p data-lang="en">In general, the punctuation marks that can be hung at the line end include slight-pause comma, comma and period. In Simplified Chinese, the rest of the pause or stop punctuation marks can be hung at line end since they are set at at the side of the marked characters or in front of the marked characters. </p>
       <p data-lang="zh">若點號（頓號、逗號或句號）將出現於一行之首，可將其置於前一行的行尾端、突出版心。</p>
-      <p data-lang="en">If a punctuation mark (slight-pause comma, comma or period) is expected to be at the start of a line, it should be placed at the end of the line before, to fit in the type area.<p>
+      <p data-lang="en">If a punctuation mark (slight-pause comma, comma or period) is expected to be at the start of a line, it should be placed at the end of the line before, to fit in the type area.</p>
       <p data-lang="zh">然而，由於繁體中文的點號位於字面正中，若在橫排時使用行尾懸掛，體例可能顯得突兀、不良。故橫排時，繁體中文不做行尾懸掛配置；但可用於直排。</p>
       <p data-lang="en">However, for Traditional Chinese, which sets the punctuation marks at the center of the square space for it, hanging the punctuation marks might make an abrupt affect  on the composition. Therefore, Traditional Chinese does not apply hanging punctuation in horizontal writing mode but only in vertical writing mode. </p>
       <p data-lang="zh">連續多個標點符號的情況下，不作行尾點號懸掛的配置。</p>
-      <p data-lang="en">In the case of a succession of punctuation marks, punctuation hanging should not be applied. </p>
+      <p data-lang="en">In the case of a succession of punctuation marks, punctuation hanging should not be applied.</p>
     </section>
   </section>
   
@@ -1351,7 +1352,7 @@
   <span data-lang="en">Words as the Basic Units for Annotating Pronunciation</span></h5>
         <ol>
           <li><p data-lang="zh">基文为一个或多个汉字构成的词语。分词连写规则可依据《汉语拼音正词法基本规则》（GB/T 16159—2012）。</p>
-          <p data-lang="en"> The base text contains one or more Han character. Rules for separating terms can be found in <cite>GB/T 16159—2012 Basic Rules of Hanyu Pinyin Orthography</cite>.</li>
+          <p data-lang="en"> The base text contains one or more Han character. Rules for separating terms can be found in <cite>GB/T 16159—2012 Basic Rules of Hanyu Pinyin Orthography</cite>.</p></li>
           <li><p data-lang="zh">注文有时在下方。</p>
           <p data-lang="en"> Annotations sometimes appear below the Han characters.</p></li>
           <li><p data-lang="zh">正文与标音双方皆分词连写。相邻基文之间有约1/2em的空格隔开，基文内部字距通常正常。</p>
@@ -1647,10 +1648,10 @@
           </div>
         </li>
         <li><p data-lang="zh">對齊橫排的大標與中標使用置中對齊的案例相當多，但直排時，則多使用對齊行頭或下字。</p>
-        <p data-lang="en"><span class="leadin">Alignment of headings (inline direction):</span> In the case of horizontal writing mode, large-headings and medium-headings are in most cases centre-aligned. In the case of vertical writing mode, headings are usually aligned to the line head with some indent.
+        <p data-lang="en"><span class="leadin">Alignment of headings (inline direction):</span> In the case of horizontal writing mode, large-headings and medium-headings are in most cases centre-aligned. In the case of vertical writing mode, headings are usually aligned to the line head with some indent.</p>
           <div class="note">
             <p data-lang="zh">下字時，下字的量一般使用版心設定文字尺寸的二倍漢字之長寬。大標、中標、小標下字量，由各排版者決定，無一定規則。</p>
-            <p data-lang="en"> The number of characters of line head indent for a heading depends on the heading level. If the heading level is higher, the indent character number is less, if the heading level is lower, the number of indent characters is more. The character size is based on the main text of the type area. The differences of character numbers are usually around two characters. </p>
+            <p data-lang="en"> The number of characters of line head indent for a heading depends on the heading level. If the heading level is higher, the indent character number is less, if the heading level is lower, the number of indent characters is more. The character size is based on the main text of the type area. The differences of character numbers are usually around two characters.</p>
           </div>
         </li>
         <li><p data-lang="zh">其他加上框線、圖片、記號等。</p>

@@ -1,6 +1,7 @@
-#中文排版需求 Requirements for Chinese Text Layout#
+#中文排版需求 | Requirements for Chinese Text Layout#
 
 version to review: http://www.w3.org/TR/2015/WD-clreq-20150723/
+
 development version: http://w3c.github.io/clreq/
 
 
@@ -136,3 +137,5 @@ Requirements for Chinese Text Layout <span data-lang="zh" lang="zh">中文排版
 
 [4] remove 
 ```<link rel="canonical" href="http://www.w3.org/TR/2015/WD-clreq-20150723/"/>```
+
+(you should check that the date is correct in both respec and TR files)

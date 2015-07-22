@@ -1,6 +1,8 @@
 #中文排版需求 Requirements for Chinese Text Layout#
 
-http://w3c.github.io/clreq/
+version to review: http://www.w3.org/TR/2015/WD-clreq-20150723/
+development version: http://w3c.github.io/clreq/
+
 
 This document is being developed by the Chinese Layout Task Force and the W3C Internationalization Working Group.
 
@@ -11,7 +13,7 @@ Feedback about the content of this document can be submitted via issues or pull 
 若对本文档有任何建议或反馈，欢迎通过GitHub提交issues或者pull request。同时也欢迎使用[public-zhreq@w3.org](mailto:public-zhreq@w3.org)([订阅](mailto:public-zhreq@w3.org?subject=subscribe))与[public-html-ig-zh@w3.org](mailto:public-html-ig-zh@w3.org)([订阅](mailto:public-html-ig-zh@w3.org?subject=subscribe))进行关于本文档的中文讨论或[public-i18n-cjk@w3.org](mailto:public-i18n-cjk@w3.org)([订阅](mailto:public-i18n-cjk@w3.org?subject=subscribe))进行关于本文档的英文讨论。
 
 
-##编辑指南Editorial guidelines:##
+##编辑指南 | Editorial guidelines:##
 
 Combining the English and Chinese text in one document makes it much easier to develop and maintain content in both languages in parallel. Note that the English version will be the authoritative version, since it is more widely accessible to developers around the world.
 
@@ -49,7 +51,7 @@ When text highlighted by the translateme class is updated, and matches the recen
 当被translateme高亮的文本已被翻译，并且这段翻译与最新修正匹配，请移除这个translateme class。
 
 
-###Markup小提示Markup tips###
+###Markup小提示 | Markup tips###
 
 Here are some tips on how to maintain the parallel language structure in markup. The principles in these example approaches should be extended to other markup as needed.
 
@@ -131,3 +133,6 @@ Requirements for Chinese Text Layout <span data-lang="zh" lang="zh">中文排版
 [3] in the SOTD, change the link on "latest dated version in /TR" to point to the location of the document that is about to be published
 
 (the same change should be made to the respec file)
+
+[4] remove 
+```<link rel="canonical" href="http://www.w3.org/TR/2015/WD-clreq-20150723/"/>```

@@ -30,9 +30,13 @@ del {
 figure { 
 	margin-bottom: 2em; 
 	text-align: center;
+	vertical-align: top;
 	}
+figure img {
+	vertical-align: middle;
+  }
 figcaption {
-	 text-align: center;
+	text-align: center;
 	margin: 0.5em 2em;
 	font-style: italic;
 	font-size: 90%;

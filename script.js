@@ -23,6 +23,8 @@ function switch2zh () {
 	for (i=0;i<notes.length;i++) notes[i].textContent = '注'
 	var figcaptions = document.querySelectorAll('figcaption')
 	for (i=0;i<figcaptions.length;i++) figcaptions[i].firstChild.textContent = '圖'
+	var figcaptions = document.querySelectorAll('.fig-ref')
+	for (i=0;i<figcaptions.length;i++) figcaptions[i].firstChild.textContent = '圖'
 	
 	var dts = document.querySelectorAll('dt')
 	for (i=0;i<dts.length;i++) {
@@ -61,6 +63,8 @@ function switch2zhHans () {
 	for (i=0;i<notes.length;i++) notes[i].textContent = '注'
 	var figcaptions = document.querySelectorAll('figcaption')
 	for (i=0;i<figcaptions.length;i++) figcaptions[i].firstChild.textContent = '图 '
+	var figcaptions = document.querySelectorAll('.fig-ref')
+	for (i=0;i<figcaptions.length;i++) figcaptions[i].firstChild.textContent = '图'
 	
 	var dts = document.querySelectorAll('dt')
 	for (i=0;i<dts.length;i++) {

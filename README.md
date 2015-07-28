@@ -123,19 +123,24 @@ http://www.w3.org/International/docs/styleguide
 
 ##Last-minute Pre-publication edits##
 
-the following edits should be made to the snapshot of the file that will be published to TR.
+make the following changes to the respec file and push to github
 
-[1] remove  `onload="addLangAttrs();"` from the body tag
+[1] in the SOTD, change the link on "latest dated version in /TR" to point to the location of the document that is about to be published
 
-[2] convert the contents of the `h1` tag to the following:
+[2] change  
+```<link rel="canonical" href="http://www.w3.org/TR/2015/WD-clreq-XXXXXXX/"/>```
+to point to the same location
+
+[3] change previousPublishDate to reflect the date of the last publication
+
+
+make the following edits to the snapshot of the file that will be published to TR.
+
+[1]  convert the contents of the `h1` tag to the following:
 ```
 Requirements for Chinese Text Layout <span data-lang="zh" lang="zh">中文排版需求</span>
 ```
-[3] in the SOTD, change the link on "latest dated version in /TR" to point to the location of the document that is about to be published
 
-(the same change should be made to the respec file)
+[2] remove 
+```<link rel="canonical" href="http://www.w3.org/TR/2015/WD-clreq-XXXXXXXX/"/>```
 
-[4] remove 
-```<link rel="canonical" href="http://www.w3.org/TR/2015/WD-clreq-20150723/"/>```
-
-(you should check that the date is correct in both respec and TR files)

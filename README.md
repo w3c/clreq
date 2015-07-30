@@ -121,26 +121,43 @@ http://www.w3.org/International/docs/styleguide
 
 
 
-##Last-minute Pre-publication edits##
+##Last-minute Pre-publication edits 发布前的最后改动备忘录##
 
-make the following changes to the respec file and push to github
+make the following changes to the respec file and push to github 
 
-[1] in the SOTD, change the link on "latest dated version in /TR" to point to the location of the document that is about to be published
+对respec文件做以下改动并发布到github
+
+[1] in the SOTD, change the link on "latest dated version in /TR" to point to the location of the document that is about to be published 
+
+对SoTD，把"latest dated version in /TR"的链接改为指向准备发布的文件
 
 [2] change  
 ```<link rel="canonical" href="http://www.w3.org/TR/2015/WD-clreq-XXXXXXX/"/>```
-to point to the same location
+to point to the same location 
 
-[3] change previousPublishDate to reflect the date of the last publication
+把```<link rel="canonical" href="http://www.w3.org/TR/2015/WD-clreq-XXXXXXX/"/>```改为指向相同的链接
+
+[3] change previousPublishDate to reflect the date of the last publication 
+
+把previousPublishDate改为上一次发布的日期
 
 
-make the following edits to the snapshot of the file that will be published to TR.
+make the following edits to the snapshot of the file that will be published to TR. 
+
+对准备发布到TR的版本作一下编辑：
 
 [1]  convert the contents of the `h1` tag to the following:
+```
+Requirements for Chinese Text Layout <span data-lang="zh" lang="zh">中文排版需求</span>
+``` 
+
+把`h1`标签的内容改为：
 ```
 Requirements for Chinese Text Layout <span data-lang="zh" lang="zh">中文排版需求</span>
 ```
 
 [2] remove 
-```<link rel="canonical" href="http://www.w3.org/TR/2015/WD-clreq-XXXXXXXX/"/>```
+```<link rel="canonical" href="http://www.w3.org/TR/2015/WD-clreq-XXXXXXXX/"/>``` 
+
+去掉```<link rel="canonical" href="http://www.w3.org/TR/2015/WD-clreq-XXXXXXXX/"/>``` 
 

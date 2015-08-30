@@ -1,13 +1,13 @@
 詞彙（繁）,词汇（简）,漢語拼音,英語,定義
 阿拉伯數字,阿拉伯数字,Ālābó shùzì,European numerals,
-版心,版心,bǎnxīn,type area,印刷成品版面中的图文印刷区域（不含出血图像）(GB 9851.2-2008, 3.3)。
+版心,版心,bǎnxīn,type area,"印刷成品版面中的图文印刷区域（不含出血图像）(GB 9851.2-2008, 3.3)。"
 半形／半角,半形/半角,bànxíng/bànjiǎo,half-width/en,
 標點符號,标点符号,biāodiǎn fúhào,punctuation marks,輔助語言文字記錄的各種符號，用於表示停頓、語氣、詞句的性質。
 標點符號擠壓,标点符号挤压,biāodiǎn fúhào jǐyā,compression rules for consecutive punctuation marks,
 標號,标号,biāohào,indication punctuation marks,有標示詞組或語句之特定性質的標點符號類別，相對於點號。
 標音,标音,biāoyīn,phonetic annotation,為漢字標注發音的方式，主要有行間注等。
 比例字體,比例字体,bǐlì zìti,proportional fonts,分類字體的一項特性，此類字體中，各字元的字幅大小不一。
-出血,出血,chūxiě,bleed,超出成品幅面范围而被裁切掉的图像。(GB 9851.2-2008, 3.8)
+出血,出血,chūxiě,bleed,"超出成品幅面范围而被裁切掉的图像。(GB 9851.2-2008, 3.8)"
 大五碼,大五码,Dàwǔmǎ,Big 5,"繁體中文常用的漢字字符集標準之一，共收錄13,060個漢字。"
 地／地腳,地/地脚,dì/dìjiǎo,foot/bottom margin,"a) 書或頁面的底部。
 b) 版心下沿至成品幅面下沿之间的空白区域。(BG 9851.2-2008, 3.5)。"
@@ -65,7 +65,7 @@ b) 版心下沿至成品幅面下沿之间的空白区域。(BG 9851.2-2008, 3.5
 破折號,破折号,pòzhéhào,long dash,
 輕聲,轻声,qīngshēng,neutral tone,現代標準漢語的特殊變調現象，無固定調値，注音符號中，其表示方式異於四聲聲調。
 齊頭尾對齊,齐头尾对齐,qítóuwěi duìqí,justified alignment,
-全形/全角,全角/全形,quánxíng/quánjiao,full-width/em,排字的度量单位，宽度等于所使用的文字的磅数（point），用做拍板宽度水平方向的度量。(GB 9851.2-2008, 2.31)
+全形/全角,全角/全形,quánxíng/quánjiao,full-width/em,"排字的度量单位，宽度等于所使用的文字的磅数（point），用做拍板宽度水平方向的度量。(GB 9851.2-2008, 2.31)"
 入聲,入声,rùshēng,checked tone,古漢語及漢語方言的音節結構，屬四聲之一，其調值之調型短而急促。注音符號中，其表示方式異於其他聲調。
 刪節號,省略号,shānjiéhào/shěnglüèhào,ellipsis,
 聲調,声调,shēngdiào,tone,漢語音韻學的概念，分為平、上、去、入等四聲。

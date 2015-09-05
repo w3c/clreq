@@ -23,7 +23,7 @@ Feedback about the content of this document can be submitted via issues or pull 
 ## Editorial guidelines | 编辑指南
 Combining the English and Chinese text in one document makes it much easier to develop and maintain content in both languages in parallel. Note that the English version will be the authoritative version, since it is more widely accessible to developers around the world.
 
-同時包含了英語及漢語的文檔使平行開發與內容維護得以化繁為簡。需要注意的是，W3C以英文版本为权威版本，因其更能让世界各地的开发者閱讀。
+同時包含英語及漢語的文檔結構使平行開發與內容維護得以化繁為簡。需要注意的是，W3C以英文版本为权威版本，因其更方便让世界各地的开发者閱讀。
 
 ###Creating or modifying content | 添加或修正内容
 
@@ -146,9 +146,9 @@ For additional ideas about markup and styling in Internationalization Activity d
 
 **发布至GitHub前，請对respec文件進行以下改动：**
 
-1. in the SoTD, change the link on "latest dated version in `/TR`" to the location of the document that is about to be published.
+1. in the SoTD, change the link on "latest dated version in /TR" to the location of the document that is about to be published.
 
-    对SoTD，把「latest dated version in `/TR`」的链接改指向至准备发布的文件路徑。
+    对SoTD，把「/TR下最新版本」的链接改指向至准备发布的文件路徑。
 
 2. Change the path in following code to the same location above: 
 
@@ -166,7 +166,7 @@ For additional ideas about markup and styling in Internationalization Activity d
 
 **对准备发布至TR的版本快照進行以下编辑：**
 
-1. Convert the contents of the `h1` tag to the following:
+1. Convert the content of the `h1` tag to the following:
 
     把`h1`标签的内容改为：
 

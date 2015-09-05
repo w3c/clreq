@@ -27,28 +27,28 @@ Combining the English and Chinese text in one document makes it much easier to d
 
 ###Creating or modifying content | 添加或修正内容
 
-When creating new content, you should always create markup for both Chinese and English versions.
+When creating new content, you should always create markup for both English and Chinese versions.
 
-添加新的内容文本時，请務必同時建立中文与英文的元素標記。
+添加新的内容文本時，请務必同時建立英文与中文的元素標記。
 
 For example:  
 例如： 
 
 ```html
-<p data-lang="zh">此為漢語文本。</p>
 <p data-lang="en">The same text in English.</p>
+<p data-lang="zh">此為漢語文本。</p>
 ```
 
 If you are able to create text in both English and Chinese, please do so. If you are only able to create text in one language, still create the dual structure in markup, but put the same text in both places. Then add `class="translateme"` to the text that needs translation.
 
-若您可以書寫中、英文二種語言，請同時創建這二種語言的文本；若您只能書寫其中一種语言，请保持中、英文的元素標記结构，將单一语言添加在这两段標記中，並為該段落添加`class="translateme"`類別来提醒其他志愿者翻译此段落。
+若您可以書寫英、中文二種語言，請同時創建這二種語言的文本；若您只能書寫其中一種语言，请保持英、中文的元素標記结构，將单一语言添加在这两段標記中，並為該段落添加`class="translateme"`類別来提醒其他志愿者翻译此段落。
 
 For example:  
 例如：
 
 ```html
-<p data-lang="zh">此為漢語文本。</p>
 <p data-lang="en" class="translateme">此為漢語文本。</p>
+<p data-lang="zh">此為漢語文本。</p>
 ```
 
 If you change existing text, and if that change requires a change in the parallel translation but you are unable to do so, add `class="translateme"` to the text that needs to be updated.
@@ -65,9 +65,9 @@ Here are some tips on how to maintain the parallel language structure in markup.
 
 此文檔以元素標記来维护双重语言結構，下面是一些協助您依此原則進行編輯的小提示。在需要時，請自行擴展各原則中的範例標記。
 
-- The chinese text should always come before the english text.
+- The English text should always come before its corresponding Chinese text.
 
-    中文内容永遠置於英文内容前方。
+    英文内容永遠置於中文内容前方。
 
 - List elements need `p` elements inside them。
 
@@ -75,8 +75,8 @@ Here are some tips on how to maintain the parallel language structure in markup.
 
     ```html
     <li>
-      <p data-lang="zh">这是中国的文字。</p>
       <p data-lang="en" class="translateme">这是中国的文字。</p>
+      <p data-lang="zh">这是中国的文字。</p>
     </li>
     ```
 
@@ -86,8 +86,8 @@ Here are some tips on how to maintain the parallel language structure in markup.
 
     ```html
     <h2>
-      <span data-lang="zh">我的标题</span>
       <span data-lang="en">My heading</span>
+      <span data-lang="zh">我的标题</span>
     </h2>
     ```
 
@@ -98,8 +98,8 @@ Here are some tips on how to maintain the parallel language structure in markup.
     ```html
     <section id="h_my_heading">
       <h2>
-        <span data-lang="zh">漢語標題</span>
         <span data-lang="en">English heading</span>
+        <span data-lang="zh">漢語標題</span>
       </h2>
       …
     ``` 
@@ -109,8 +109,8 @@ Here are some tips on how to maintain the parallel language structure in markup.
     在`dfn`元素里的屬性`id`应该以`xxdef`开始，`xx`隨語言的不同作`zh`或`en`。
 
     ```html
-    <p data-lang="zh">这个<dfn id="zhdef_term">词汇</dfn>是一个技术用语。</p>
     <p data-lang="en">The <dfn id="endef_term">term</dfn> is a technical word.</p>
+    <p data-lang="zh">这个<dfn id="zhdef_term">词汇</dfn>是一个技术用语。</p>
     ```
 
 - `figcaption`s should use `span`s for the different language versions.
@@ -122,8 +122,8 @@ Here are some tips on how to maintain the parallel language structure in markup.
       <!-- 圖表內容。 -->
       <!-- Figure content. -->
       <figcaption>
-        <span data-lang="zh">漢語說明</span>
         <span data-lang="en">English caption</span>
+        <span data-lang="zh">漢語說明</span>
       </figcaption>
     </figure>
     ```

@@ -1,163 +1,184 @@
-#中文排版需求 | Requirements for Chinese Text Layout#
+# Requirements for Chinese Text Layout | 中文排版需求
 
-version to review: http://www.w3.org/TR/2015/WD-clreq-20150723/
-
-development version: http://w3c.github.io/clreq/
+- <b>Version to review:</b> <http://www.w3.org/TR/2015/WD-clreq-20150723/>
+- <b>Development version:</b> <http://w3c.github.io/clreq/>
 
 
 This document is being developed by the Chinese Layout Task Force and the W3C Internationalization Working Group.
 
 本文档由中文布局任务小组和W3C国际化工作组联合编写。
 
-Feedback about the content of this document can be submitted via issues or pull request in the GitHub repo. You are also welcome to send your comments to [public-i18n-cjk@w3.org](mailto:public-i18n-cjk@w3.org)([subscribe](mailto:public-i18n-cjk@w3.org?subject=subscribe)) (for discussion in English), or [public-zhreq@w3.org](mailto:public-zhreq@w3.org)([subscribe](mailto:public-zhreq@w3.org?subject=subscribe)) and [public-html-ig-zh@w3.org](mailto:public-html-ig-zh@w3.org)([subscribe](mailto:public-html-ig-zh@w3.org?subject=subscribe)) (for discussion in Chinese).
+Feedback about the content of this document can be submitted via issues or pull request in the GitHub repo. You are also welcome to send your comments to: 
 
-若对本文档有任何建议或反馈，欢迎通过GitHub提交issues或者pull request。同时也欢迎使用[public-zhreq@w3.org](mailto:public-zhreq@w3.org)([订阅](mailto:public-zhreq@w3.org?subject=subscribe))与[public-html-ig-zh@w3.org](mailto:public-html-ig-zh@w3.org)([订阅](mailto:public-html-ig-zh@w3.org?subject=subscribe))进行关于本文档的中文讨论或[public-i18n-cjk@w3.org](mailto:public-i18n-cjk@w3.org)([订阅](mailto:public-i18n-cjk@w3.org?subject=subscribe))进行关于本文档的英文讨论。
+- <mailto:public-i18n-cjk@w3.org>([subscribe](mailto:public-i18n-cjk@w3.org?subject=subscribe)) (for discussion in English);
+- Or <mailto:public-zhreq@w3.org>([subscribe](mailto:public-zhreq@w3.org?subject=subscribe)) and <mailto:public-html-ig-zh@w3.org>([subscribe](mailto:public-html-ig-zh@w3.org?subject=subscribe)) (for discussion in Chinese).
+
+若对本文档有任何建议或反馈，欢迎通过GitHub提交issues或者pull request。同时也欢迎使用：
 
 
-##编辑指南 | Editorial guidelines:##
 
+- <mailto:public-zhreq@w3.org>（[订阅](mailto:public-zhreq@w3.org?subject=subscribe)）、<mailto:public-html-ig-zh@w3.org>（[订阅](mailto:public-html-ig-zh@w3.org?subject=subscribe)）进行关于本文档的中文讨论； 
+- 或<mailto:public-i18n-cjk@w3.org>（[订阅](mailto:public-i18n-cjk@w3.org?subject=subscribe)）进行关于本文档的英文讨论。
+
+## Editorial guidelines | 编辑指南
 Combining the English and Chinese text in one document makes it much easier to develop and maintain content in both languages in parallel. Note that the English version will be the authoritative version, since it is more widely accessible to developers around the world.
 
-把中文和英文放置于同一份文档里让内容的多语言同步开发和维护变得更容易。W3C将以英文版本为权威版本，因其更能让世界各地开发者了解相应规范。
+同時包含了英語及漢語的文檔使平行開發與內容維護得以化繁為簡。需要注意的是，W3C以英文版本为权威版本，因其更能让世界各地的开发者閱讀。
 
-###添加或者修正内容Creating or modifying content###
+###Creating or modifying content | 添加或修正内容
 
 When creating new content, you should always create markup for both Chinese and English versions.
 
-在添加新内容时候，请一直保持同时创建中文与英文的makeup。
+添加新的内容文本時，请務必同時建立中文与英文的元素標記。
 
-例如Example:
-```
-<p data-lang="zh">这是中国的文字。</p>
+For example:  
+例如： 
+
+```html
+<p data-lang="zh">此為漢語文本。</p>
 <p data-lang="en">The same text in English.</p>
 ```
 
-
 If you are able to create text in both English and Chinese, please do so. If you are only able to create text in one language, still create the dual structure in markup, but put the same text in both places. Then add `class="translateme"` to the text that needs translation.
 
-如果您能同时添加中英文的文本，请同时添加。如果您暂时只能添加一个语言的版本，请您还是保持中英文的markup结构，但把单一语言添加在这两段markup里面。然后请添加`class="translateme"`来提醒其他志愿者翻译此段落。
+若您可以書寫中、英文二種語言，請同時創建這二種語言的文本；若您只能書寫其中一種语言，请保持中、英文的元素標記结构，將单一语言添加在这两段標記中，並為該段落添加`class="translateme"`類別来提醒其他志愿者翻译此段落。
 
-例如Example:
-```
-<p data-lang="zh">这是中国的文字。</p>
-<p data-lang="en" class="translateme">这是中国的文字。</p>
+For example:  
+例如：
+
+```html
+<p data-lang="zh">此為漢語文本。</p>
+<p data-lang="en" class="translateme">此為漢語文本。</p>
 ```
 
 If you change existing text, and if that change requires a change in the parallel translation but you are unable to do so, add `class="translateme"` to the text that needs to be updated.
 
-如果您打算修正已有的内容，并且被修正的内容的另一个语言版本需要同时更新翻译，请您更新翻译或者添加`class="translateme"`到这段内容，提醒其他志愿者翻译此段落。
+如果您打算修正現有的内容，并且該内容的另一个语言版本需要同时更新翻译，请您更新翻译或添加`class="translateme"`類別，提醒其他志愿者翻译此段落。
 
-When text highlighted by the translateme class is updated, and matches the recent changes in the other language, the class should be removed.
+When text highlighted by the `translateme` class is updated, and matches the recent changes in the other language, the class should be removed.
 
-当被translateme高亮的文本已被翻译，并且这段翻译与最新修正匹配，请移除这个translateme class。
+当標記為`translateme`類別的高亮文本已被翻译，并且这段翻译与最新修正內容匹配，请移除它的`translateme`類別。
 
-
-###Markup小提示 | Markup tips###
+### Markup tips | 標記小提示 
 
 Here are some tips on how to maintain the parallel language structure in markup. The principles in these example approaches should be extended to other markup as needed.
 
-下面是一些小提示，通过markup来维护双重语言版本。下面例子里条约可能日后被其它markup覆盖。
+此文檔以元素標記来维护双重语言結構，下面是一些協助您依此原則進行編輯的小提示。在需要時，請自行擴展各原則中的範例標記。
 
-The chinese text should always come before the english text.
+- The chinese text should always come before the english text.
 
-中文内容将被放在英文内容的前面。
+    中文内容永遠置於英文内容前方。
 
-List elements need `p` elements inside them:
+- List elements need `p` elements inside them。
 
-list内的元素里面需要放`p`元素。
-```
-<li>
-<p data-lang="zh">这是中国的文字。</p>
-<p data-lang="en" class="translateme">这是中国的文字。</p>
-</li>
-```
+    列表元素中，請使用`p`元素。
 
-Headings should use spans for en and zh versions, and there should be a line break between spans.
+    ```html
+    <li>
+      <p data-lang="zh">这是中国的文字。</p>
+      <p data-lang="en" class="translateme">这是中国的文字。</p>
+    </li>
+    ```
 
-标题里应该用spans来显示en和zh版本，并且两者之间应该有一个换行。
-```
-<h2><span data-lang="zh">我的标题</span>
-<span data-lang="en">My heading</span></h2>
-```
+- Headings should use `span`s for `zh` and `en` versions, and there should be a line break between spans.
 
-Ids should go on section elements, not `hx` elements.
+    标题內应以`span`元素来分別包裹`zh`和`en`語言，两者间应有一个换行。
 
-Ids跟随section元素，而并非`hx`元素。
-```
-<section id="h_my_heading">
-<h2><span data-lang="zh">中文标签头</span>
-<span data-lang="en">My heading</span></h2>
-```
+    ```html
+    <h2>
+      <span data-lang="zh">我的标题</span>
+      <span data-lang="en">My heading</span>
+    </h2>
+    ```
 
-Ids on `dfn` elements should start with `xxdef`, where xx is either en or zh.
+- Attribute `id`s should go on `section` elements, not `h[1-6]` elements.
 
-在`dfn`元素里的ids应该以`xxdef`开始，xx是en或zh。
-```
-<p data-lang="zh">这个<dfn id="zhdef_term">词语</dfn>是一个技术用语。</p>
-<p data-lang="en">The <dfn id="endef_term">term</dfn> is a technical word.</p>
-```
+    屬性`id`應跟随`section`元素，而非`h[1-6]`元素。
 
-Figcaptions should use spans for the different language versions.
+    ```html
+    <section id="h_my_heading">
+      <h2>
+        <span data-lang="zh">漢語標題</span>
+        <span data-lang="en">English heading</span>
+      </h2>
+      …
+    ``` 
 
-Figcaptions应该用spans来标示不同语言版本。
-```
-<figure>
-Main figure content here.
-<figcaption><span data-lang="zh">大写文字</span>
-<span data-lang="en">My caption</span></figcaption>
-```
+- Attribute `id`s on `dfn` elements should start with `xxdef`, where `xx` is either `zh` or `en`.
 
-Use the following markup for Unicode codepoint names:
+    在`dfn`元素里的屬性`id`应该以`xxdef`开始，`xx`隨語言的不同作`zh`或`en`。
 
-请使用以下markup来标示Unicode codepoint的名字：
-```
-<span class="uname">U+3002 IDEOGRAPHIC FULL STOP</span> [。]
-```
+    ```html
+    <p data-lang="zh">这个<dfn id="zhdef_term">词汇</dfn>是一个技术用语。</p>
+    <p data-lang="en">The <dfn id="endef_term">term</dfn> is a technical word.</p>
+    ```
 
-For additional ideas about markup and styling in Internationalization Activity documents, especially wrt inline markup conventions, see
-http://www.w3.org/International/docs/styleguide
+- `figcaption`s should use `span`s for the different language versions.
 
-想了解更多国际化标准计划文档里的markup和样式条约，尤其是wrt行内markup的条约，请查看http://www.w3.org/International/docs/styleguide。
+    `figcaption`元素应以`span`元素来标示不同语言。
 
+    ```html
+    <figure>
+      <!-- 圖表內容。 -->
+      <!-- Figure content. -->
+      <figcaption>
+        <span data-lang="zh">漢語說明</span>
+        <span data-lang="en">English caption</span>
+      </figcaption>
+    </figure>
+    ```
 
+- Use the following markup for Unicode codepoint names:
 
-##Last-minute Pre-publication edits 发布前的最后改动备忘录##
+    请使用以下標記来表示Unicode碼位名稱：
 
-make the following changes to the respec file and push to github 
+    ```html
+    <span class="uname">U+3002 IDEOGRAPHIC FULL STOP</span> [。]
+    ```
 
-对respec文件做以下改动并发布到github
+For additional ideas about markup and styling in Internationalization Activity documents, especially wrt inline markup conventions, see <http://www.w3.org/International/docs/styleguide>.
 
-[1] in the SOTD, change the link on "latest dated version in /TR" to point to the location of the document that is about to be published 
+欲了解更多国际化标准计划文档里的標記和样式条约，尤其是wrt行内標記的使用慣例，请查看<http://www.w3.org/International/docs/styleguide>。
 
-对SoTD，把"latest dated version in /TR"的链接改为指向准备发布的文件
+## Last-minute Pre-publication edits | 发布前的最后改动备忘录
 
-[2] change  
-```<link rel="canonical" href="http://www.w3.org/TR/2015/WD-clreq-XXXXXXX/"/>```
-to point to the same location 
+**Make the following changes to the respec file before pushing to GitHub:**
 
-把```<link rel="canonical" href="http://www.w3.org/TR/2015/WD-clreq-XXXXXXX/"/>```改为指向相同的链接
+**发布至GitHub前，請对respec文件進行以下改动：**
 
-[3] change previousPublishDate to reflect the date of the last publication 
+1. in the SoTD, change the link on "latest dated version in `/TR`" to the location of the document that is about to be published.
 
-把previousPublishDate改为上一次发布的日期
+    对SoTD，把「latest dated version in `/TR`」的链接改指向至准备发布的文件路徑。
 
+2. Change the path in following code to the same location above: 
 
-make the following edits to the snapshot of the file that will be published to TR. 
+    將下列代碼內的路徑指向上述的链接：
+    
+    ```html 
+    <link rel="canonical" href="http://www.w3.org/TR/2015/WD-clreq-XXXXXXX/"/>
+    ```
 
-对准备发布到TR的版本作一下编辑：
+3. Change `previousPublishDate` to reflect the date of the last publication. 
 
-[1]  convert the contents of the `h1` tag to the following:
-```
-Requirements for Chinese Text Layout <span data-lang="zh" lang="zh">中文排版需求</span>
-``` 
+    把`previousPublishDate`改为上一次发布的日期。
 
-把`h1`标签的内容改为：
-```
-Requirements for Chinese Text Layout <span data-lang="zh" lang="zh">中文排版需求</span>
-```
+**Make the following edits to the snapshot of the file that will be published to TR.**
 
-[2] remove 
-```<link rel="canonical" href="http://www.w3.org/TR/2015/WD-clreq-XXXXXXXX/"/>``` 
+**对准备发布至TR的版本快照進行以下编辑：**
 
-去掉```<link rel="canonical" href="http://www.w3.org/TR/2015/WD-clreq-XXXXXXXX/"/>``` 
+1. Convert the contents of the `h1` tag to the following:
+
+    把`h1`标签的内容改为：
+
+    ```html
+    Requirements for Chinese Text Layout 
+    <span data-lang="zh" lang="zh">中文排版需求</span>
+    ```
+
+2. Remove:   
+    去除：
+    
+    ```html
+    <link rel="canonical" href="http://www.w3.org/TR/2015/WD-clreq-XXXXXXXX/"/>
+    ``` 
 

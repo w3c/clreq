@@ -14,6 +14,9 @@ h4  {
     color: #005a9c; 
     margin-top: 2em;  
     }
+h5 {
+  font-style: inherit !important;
+}
 .leadin {
 	font-weight: bold;
 	}

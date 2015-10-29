@@ -49,7 +49,7 @@ function switch2zhHans () {
 	for (var i=0;i<en.length;i++) en[i].style.display='none' 
 	document.getElementById('languageStyling').textContent=''
 	
-	var zh = document.querySelectorAll('[data-lang=zh]')
+	var zh = document.querySelectorAll('[data-lang=zh-hant]')
 	for (var i=0;i<zh.length;i++) zh[i].style.display='none' 
 	document.getElementById('languageStyling').textContent=''
 
@@ -64,7 +64,6 @@ function switch2zhHans () {
 	var notes = document.querySelectorAll('.note-title')
 	for (i=0;i<notes.length;i++) notes[i].textContent = '注'
 	var figcaptions = document.querySelectorAll('figcaption')
-	console.log('figcaptions',figcaptions.length)
 	for (i=0;i<figcaptions.length;i++) figcaptions[i].firstChild.textContent = '图 '
 	figcaptions = document.querySelectorAll('.fig-ref')
 	if (figcaptions[1].firstChild) {
@@ -88,7 +87,7 @@ function switch2zhHans () {
 function switch2en () {
 	if (switched) { alert('Refresh the page, then click on this button again.'); return; }
 	
-	var zh = document.querySelectorAll('[data-lang=zh]')
+	var zh = document.querySelectorAll('[data-lang=zh-hant]')
 	for (var i=0;i<zh.length;i++) zh[i].style.display='none' 
 	document.getElementById('languageStyling').textContent=''
 	

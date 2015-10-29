@@ -23,8 +23,10 @@ function switch2zh () {
 	for (i=0;i<notes.length;i++) notes[i].textContent = '注'
 	var figcaptions = document.querySelectorAll('figcaption')
 	for (i=0;i<figcaptions.length;i++) figcaptions[i].firstChild.textContent = '圖'
-	var figcaptions = document.querySelectorAll('.fig-ref')
-	for (i=0;i<figcaptions.length;i++) figcaptions[i].firstChild.textContent = '圖'
+	figcaptions = document.querySelectorAll('.fig-ref')
+	if (figcaptions[1].firstChild) {
+		for (i=0;i<figcaptions.length;i++) { figcaptions[i].firstChild.textContent = '圖' }
+		}
 	
 	var dts = document.querySelectorAll('dt')
 	for (i=0;i<dts.length;i++) {
@@ -62,9 +64,12 @@ function switch2zhHans () {
 	var notes = document.querySelectorAll('.note-title')
 	for (i=0;i<notes.length;i++) notes[i].textContent = '注'
 	var figcaptions = document.querySelectorAll('figcaption')
+	console.log('figcaptions',figcaptions.length)
 	for (i=0;i<figcaptions.length;i++) figcaptions[i].firstChild.textContent = '图 '
-	var figcaptions = document.querySelectorAll('.fig-ref')
-	for (i=0;i<figcaptions.length;i++) figcaptions[i].firstChild.textContent = '图'
+	figcaptions = document.querySelectorAll('.fig-ref')
+	if (figcaptions[1].firstChild) {
+		for (i=0;i<figcaptions.length;i++) { figcaptions[i].replaceChild(document.createTextNode('图'), figcaptions[i].firstChild) }
+		}
 	
 	var dts = document.querySelectorAll('dt')
 	for (i=0;i<dts.length;i++) {

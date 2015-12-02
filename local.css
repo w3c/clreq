@@ -91,11 +91,19 @@ samp, kbd {
 
 #langSwitch {
 	position: fixed;
-    top: 40px;
+    /*
+	top: 40px;
     right: 20px;
     width: 202px;
     text-align: right;
+	*/
+	top: -14px;
 	z-index: 10000;
+	}
+#langSwitch button {
+	background: #FFF none repeat scroll 0% 0%;
+	border: 1px solid #CCC;
+	border-radius: 5px;
 	}
 
 .punctuation {

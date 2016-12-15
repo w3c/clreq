@@ -3,7 +3,6 @@
 - <b>Version to review:</b> <http://www.w3.org/TR/2015/WD-clreq-20150723/>
 - <b>Development version:</b> <http://w3c.github.io/clreq/>
 
-
 This document is being developed by the Chinese Layout Task Force and the W3C Internationalization Working Group.
 
 本文档由中文布局任务小组和W3C国际化工作组联合编写。
@@ -15,8 +14,6 @@ Feedback about the content of this document can be submitted via issues or pull 
 
 若对本文档有任何建议或反馈，欢迎通过GitHub提交issues或者pull request。同时也欢迎使用：
 
-
-
 - <mailto:public-zhreq@w3.org>（[订阅](mailto:public-zhreq@w3.org?subject=subscribe)）、<mailto:public-html-ig-zh@w3.org>（[订阅](mailto:public-html-ig-zh@w3.org?subject=subscribe)）进行关于本文档的中文讨论； 
 - 或<mailto:public-i18n-cjk@w3.org>（[订阅](mailto:public-i18n-cjk@w3.org?subject=subscribe)）进行关于本文档的英文讨论。
 
@@ -25,7 +22,7 @@ Combining the English and Chinese text in one document makes it much easier to d
 
 同時包含英語及漢語的文檔結構使平行開發與內容維護得以化繁為簡。需要注意的是，W3C以英文版本为权威版本，因其更方便让世界各地的开发者閱讀。
 
-###Creating or modifying content | 添加或修正内容
+### Creating or modifying content | 添加或修正内容
 
 When creating new content, you should always create markup for both English and Chinese versions.
 
@@ -175,10 +172,10 @@ For additional ideas about markup and styling in Internationalization Activity d
     <span data-lang="zh" lang="zh">中文排版需求</span>
     ```
 
-2. Remove:   
+2. Remove:
+
     去除：
     
     ```html
     <link rel="canonical" href="http://www.w3.org/TR/2015/WD-clreq-XXXXXXXX/"/>
     ``` 
-

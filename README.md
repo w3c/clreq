@@ -12,7 +12,7 @@ To follow the work, you can 'Watch' this repository using the control above, or 
 
 ###Contributing
 
-All contributors should read and agree with [CONTRIBUTING.md](https://github.com/w3c/hlreq/blob/gh-pages/CONTRIBUTING.md).
+All contributors should read and agree with [CONTRIBUTING.md](https://github.com/w3c/clreq/blob/gh-pages/CONTRIBUTING.md).
 
 **Because the document is multilingual, you need to follow certain steps when creating or modifying the source text.** See [EDITING.md](https://github.com/w3c/clreq/blob/gh-pages/EDITING.md) for details.
 

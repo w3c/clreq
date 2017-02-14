@@ -1,19 +1,28 @@
 # Requirements for Chinese Text Layout | 中文排版需求
 
-- <b>Version to review:</b> <http://www.w3.org/TR/2015/WD-clreq-20150723/>
-- <b>Development version:</b> <http://w3c.github.io/clreq/>
+###Documents
+- [Editor's copy](https://w3c.github.io/clreq/)
+- [FPWD](https://www.w3.org/TR/clreq/)
 
-This document is being developed by the Chinese Layout Task Force and the W3C Internationalization Working Group.
+###Feedback
+Please use the [GitHub issue list](https://github.com/w3c/clreq/issues) to send feedback about this document.
 
-本文档由中文布局任务小组和W3C国际化工作组联合编写。
+###Following
+To follow the work, you can 'Watch' this repository using the control above, or subscribe to the [public-i18n-cjk](https://lists.w3.org/Archives/Public/public-i18n-cjk/) mailing list, which is notified once a day about changes to the repo. The [www-international](https://lists.w3.org/Archives/Public/www-international/) list is also notified daily. (Please use github issues rather than the mailing list to send feedback.) Meeting minutes are sent to public-i18n-cjk.
 
-Feedback about the content of this document can be submitted via issues or pull request in the GitHub repo. You are also welcome to send your comments to: 
+###Contributing
 
-- <mailto:public-i18n-cjk@w3.org>([subscribe](mailto:public-i18n-cjk-request@w3.org?subject=subscribe)) (for discussion in English);
-- Or <mailto:public-zhreq@w3.org>([subscribe](mailto:public-zhreq-request@w3.org?subject=subscribe)) and <mailto:public-html-ig-zh@w3.org>([subscribe](mailto:public-html-ig-zh-request@w3.org?subject=subscribe)) (for discussion in Chinese).
+All contributors should read and agree with [CONTRIBUTING.md](https://github.com/w3c/hlreq/blob/gh-pages/CONTRIBUTING.md).
 
-若对本文档有任何建议或反馈，欢迎通过GitHub提交issues或者pull request。同时也欢迎使用：
+**Because the document is multilingual, you need to follow certain steps when creating or modifying the source text.** See [EDITING.md](https://github.com/w3c/clreq/blob/gh-pages/EDITING.md) for details.
 
-- <mailto:public-zhreq@w3.org>（[订阅](mailto:public-zhreq@w3.org?subject=subscribe)）、<mailto:public-html-ig-zh@w3.org>（[订阅](mailto:public-html-ig-zh@w3.org?subject=subscribe)）进行关于本文档的中文讨论； 
-- 或<mailto:public-i18n-cjk@w3.org>（[订阅](mailto:public-i18n-cjk@w3.org?subject=subscribe)）进行关于本文档的英文讨论。
+Task force _members_ are expert contributors who participate actively in producing the work of the group, regularly contributing text and advice to create the outputs, and participating in meetings. For more information about becoming a task force member contact [Richard Ishida](mailto:ishida@w3.org). We welcome participation requests.
 
+Editors should be familiar with and use the following:
+
+- [Github guidelines for working with i18n documents](http://w3c.github.io/i18n-activity/guidelines/github)
+- [Editorial guidelines for working with i18n documents](http://w3c.github.io/i18n-activity/guidelines/editing)
+
+###Links
+- Task Force Home Page [English](https://www.w3.org/International/groups/chinese-layout/) | [简体汉语](https://www.w3.org/International/groups/chinese-layout/Overview.zh-hans)
+- [Charter](https://www.w3.org/International/groups/chinese-layout/charter.html)

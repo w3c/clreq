@@ -2,7 +2,7 @@
 
 ###Documents
 - [Editor's copy](https://w3c.github.io/clreq/)
-- [FPWD](https://www.w3.org/TR/clreq/)
+- [WD](https://www.w3.org/TR/clreq/)
 
 ###Feedback
 Please use the [GitHub issue list](https://github.com/w3c/clreq/issues) to send feedback about this document.

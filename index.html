@@ -11,12 +11,12 @@
       var respecConfig = {
           useExperimentalStyles: true,
           specStatus: "ED",
-		  //publishDate: "2015-07-30",
+      //publishDate: "2015-07-30",
           previousPublishDate:  "2015-07-23",
           previousMaturity:  "FPWD",
 
           shortName:  "clreq",
-		  noRecTrack: true,
+      noRecTrack: true,
           editors: [
                 {   name:       "<span lang='zh-hant'>董福興</span> (Bobby TUNG)",
                     mailto:     "bobbytung@wanderer.tw",
@@ -43,33 +43,33 @@
                     mailto:     "ishida@w3.org",
                     company:    "W3C" }
           ],
-		wg:           "Internationalization Core Working Group",
-		wgURI:        "https://www.w3.org/International/core/",
-		bugTracker: { new: "https://github.com/w3c/clreq/issues", open: "https://github.com/w3c/clreq/issues" } ,
-		wgPublicList: "public-i18n-cjk",
+    wg:           "Internationalization Core Working Group",
+    wgURI:        "https://www.w3.org/International/core/",
+    bugTracker: { new: "https://github.com/w3c/clreq/issues", open: "https://github.com/w3c/clreq/issues" } ,
+    wgPublicList: "public-i18n-cjk",
         wgPatentURI:  "https://www.w3.org/2004/01/pp-impl/32113/status",
-		edDraftURI: "https://w3c.github.io/clreq/", 
- 		otherLinks: [
-			{
-			key: "GitHub",
-			data: [
-				{
-			  	value: "repository",
-			  	href: "https://github.com/w3c/clreq"
-		 		}
-				]
-			}
-			],     };
+    edDraftURI: "https://w3c.github.io/clreq/",
+    otherLinks: [
+      {
+      key: "GitHub",
+      data: [
+        {
+          value: "repository",
+          href: "https://github.com/w3c/clreq"
+        }
+        ]
+      }
+      ],     };
     </script>
 <link rel="stylesheet" href="local.css" type="text/css" />
 <style id="languageStyling">
 [data-lang = zh-hant] {
-	border-left: 3px solid #40c440;
-	padding-left: 10px;
+  border-left: 3px solid #40c440;
+  padding-left: 10px;
 }
 [data-lang = zh-hans] {
-	border-left: 3px solid #F88A05;
-	padding-left: 10px;
+  border-left: 3px solid #F88A05;
+  padding-left: 10px;
 }
 </style>
 </head>
@@ -83,8 +83,8 @@
   <p data-lang="en">This document was created by the <a href="https://www.w3.org/International/groups/chinese-layout/">Chinese Layout Task Force</a> within the W3C Internationalization Interest Group, and in collaboration with the <a href="https://www.w3.org/html/ig/zh/">W3C HTML5 Chinese Interest Group</a>. The <a href="https://www.w3.org/International/core/">Internationalization Working Group</a> has been a great help during the writing of this document.  The Chinese Layout Task Force will work with Internationalization Working Group to publish Working Drafts of this document, and to widen the exposure and review of the document. </p>
   <p data-lang="zh-hans" class="translateme">本文档由W3C国际化兴趣组下设的<a href="https://www.w3.org/International/groups/chinese-layout/">中文布局任务小组</a> 编写而成，<a href="https://www.w3.org/html/ig/zh/">W3C HTML5中文兴趣组</a>为本文档提供了审阅支持，<a href="https://www.w3.org/International/core/">W3C国际化工作组</a>为文档的编写提供了诸多的帮助。中文版式布局任务小组将与<a href="https://www.w3.org/International/core/">W3C国际化工作组</a>联合发布该文档的工作草案，并邀请业界进行审阅。</p>
   <p data-lang="zh-hant">本文档由W3C国际化兴趣组下设的<a href="https://www.w3.org/International/groups/chinese-layout/">中文布局任务小组</a> 编写而成，<a href="https://www.w3.org/html/ig/zh/">W3C HTML5中文兴趣组</a>为本文档提供了审阅支持，<a href="https://www.w3.org/International/core/">W3C国际化工作组</a>为文档的编写提供了诸多的帮助。中文版式布局任务小组将与<a href="https://www.w3.org/International/core/">W3C国际化工作组</a>联合发布该文档的工作草案，并邀请业界进行审阅。</p>
-  
-  
+
+
   <div class="note">
     <p data-lang="en" style="font-weight: bold; font-size: 120%">Sending comments on this document</p>
     <p data-lang="en">If you wish to make comments regarding this document, please raise them as <a href="https://github.com/w3c/clreq/issues" style="font-size: 120%;">github issues</a>. Only send comments by email if you are unable to raise issues on github (see links below).   All comments are welcome.</p>
@@ -96,14 +96,14 @@
     <p data-lang="zh-hant">如果你对<a href="https://www.w3.org/TR/2015/WD-clreq-20150730/" style="font-size: 120%">/TR下最新版本</a>的文档有任何建议和反馈，请把您的想法整理发布为 <a href="https://github.com/w3c/clreq/issues" style="font-size: 120%;">github issues</a>。若您觉得在GitHub上提出issues比较困难，也可以邮件形式进行反馈（请参考下面的链接）。您的任何建议对本文档都很可贵。</p>
     <p data-lang="zh-hant">为便于跟踪您所反馈的问题，请为您所提出的每一个意见点单独成立一个issue或者邮件，并在其中明确指出您所谈到的章节序号和您所阅读的日期版本的URL。</p>
   </div>
-  
-  
+
+
   <p id="langSwitch">
     <button id="toZHHant" onClick="switch2zh();">zh-hant</button>
     <button id="toZHHans" onClick="switch2zhHans();">zh-hans</button>
     <button onClick="switch2en();">en</button>
   </p>
-  
+
   <p data-lang="zh-hans" class="translateme">本章节描述了本文档的发布状态。其它更新版本可能会覆盖本文档。W3C的文档列表和最新版本可通过<a href="https://www.w3.org/TR/">W3C技术报告</a>索引访问。 </p>
   <p data-lang="zh-hans" class="translateme">以编辑草稿方式发布的文档还没有通过<abbr title="World Wide Web Consortium">W3C</abbr>会员流程的认可。这是一份文档草稿并且会被不断更新。请暂时不要正式引用本文档。</p>
   <p data-lang="zh-hans" class="translateme">本文档遵循<abbr title="World Wide Web Consortium">W3C</abbr><a id="sotd_patent_zh_hans" href="https://www.w3.org/Consortium/Patent-Policy-20040205/">专利政策</a>（2004-02-05）。<abbr title="World Wide Web Consortium">W3C</abbr>为工作组的产出成果维护着一份<a href="https://www.w3.org/2004/01/pp-impl/32113/status" rel="disclosure">公开专利披露列表</a>，此页面也同时涵盖了专利披露说明。若个人发现其有包含<a href="https://www.w3.org/Consortium/Patent-Policy-20040205/#def-essential">必须声明</a>的专利信息，必须按照<a href="https://www.w3.org/Consortium/Patent-Policy-20040205/#sec-Disclosure"><abbr title="World Wide Web Consortium">W3C</abbr>专利政策第六章节</a>披露此信息。</p>
@@ -119,8 +119,8 @@
 <section id="introduction">
   <h2><span data-lang="en">Introduction</span> <span data-lang="zh-hans" class="checkme">绪论</span> <span data-lang="zh-hant">緒論</span></h2>
   <section id="basic_features_of_chinese_script">
-    <h3><span data-lang="en">Basic Features of Chinese Script</span> 
-    <span data-lang="zh-hans" class="checkme">中文排版的主要特色</span> 
+    <h3><span data-lang="en">Basic Features of Chinese Script</span>
+    <span data-lang="zh-hans" class="checkme">中文排版的主要特色</span>
     <span data-lang="zh-hant">中文排版的主要特色</span></h3>
     <p data-lang="en">Chinese composition exhibits several differences from other writing systems. The major features include: </p>
     <p data-lang="zh-hans" class="checkme">中文排版有别于其它书写体系，主要特点如下：
@@ -159,12 +159,12 @@
 
 
   <section id="basic_principles_for_development_of_this_document">
-    <h3><span data-lang="en">How This Document Was Created</span> 
-    <span data-lang="zh-hans" class="checkme">撰写方针</span> 
+    <h3><span data-lang="en">How This Document Was Created</span>
+    <span data-lang="zh-hans" class="checkme">撰写方针</span>
     <span data-lang="zh-hant">本文件之撰寫方針</span></h3>
     <section id="chinese_text_in_this_document">
-      <h4><span data-lang="en">Languages Used in this Document</span> 
-      <span data-lang="zh-hans" class="checkme">本文档所使用的中文语言</span> 
+      <h4><span data-lang="en">Languages Used in this Document</span>
+      <span data-lang="zh-hans" class="checkme">本文档所使用的中文语言</span>
       <span data-lang="zh-hant">本文档所使用的中文语言</span></h4>
       <p data-lang="en">This document was developed by people working in both Simplified and Traditional Chinese. We very much appreciate the contributions of the editors and collaborators from different linguistic backgrounds, and their willingness to collaborate across linguistic boundaries. In this early version of the Working Draft, the version of the script used for the Chinese text depends on the person who contributed the text. We expect to create separate translations of the Chinese text in future versions of this document, but at this early stage the original contributions are kept as is to enable rapid development of the text.</p>
       <p data-lang="zh-hans" class="checkme">文档的作者包含繁体中文使用者和简体中文使用者。我们感谢来自不同语言文化背景的编辑们和合作者们对本文档的贡献，并对他们跨越文化差异、共同致力完善本文档的美好愿景表示钦佩。在本工作草稿的早期阶段，文中汉语所使用的版本取决于贡献此内容的编写者。未来的版本会逐步改善整理此混合文本，但在本阶段，原始文本将被保留以快速完成和修正本文档。</p>
@@ -181,8 +181,8 @@
 
 
     <section id="design_approach">
-      <h4><span data-lang="en">Design Approach</span> 
-      <span data-lang="zh-hans" class="checkme">设计原则</span> 
+      <h4><span data-lang="en">Design Approach</span>
+      <span data-lang="zh-hans" class="checkme">设计原则</span>
       <span data-lang="zh-hant">设计原则</span></h4>
       <p data-lang="en">This document mainly adopts the following policies to explain the features of Chinese composition:</p>
       <p data-lang="zh-hans" class="checkme">本文基于以上前提，主要将中文排版的特征以下列方针解说。</p>
@@ -249,19 +249,19 @@
 
 
 <section id="basics_of_chinese_composition">
-  <h2><span data-lang="en">Basics of Chinese Composition</span> 
-  <span data-lang="zh-hans" class="checkme">中文排版基础</span> 
+  <h2><span data-lang="en">Basics of Chinese Composition</span>
+  <span data-lang="zh-hans" class="checkme">中文排版基础</span>
   <span data-lang="zh-hant">中文排版基礎</span></h2>
   <section id="characters_and_the_principles_of_setting_them_for_chinese_composition">
-    <h3><span data-lang="en">Characters and Principles for Setting them in Chinese Composition</span> 
-    <span data-lang="zh-hans" class="checkme">中文排版所使用的文字和基本原则</span> 
+    <h3><span data-lang="en">Characters and Principles for Setting them in Chinese Composition</span>
+    <span data-lang="zh-hans" class="checkme">中文排版所使用的文字和基本原则</span>
     <span data-lang="zh-hant">中文排版所使用的文字和基本原则</span></h3>
     <section id="characters_used_in_chinese_composition">
-      <h4><span data-lang="en">Characters used for Chinese composition</span> 
-      <span data-lang="zh-hans" class="checkme">中文排版所使用的文字</span> 
+      <h4><span data-lang="en">Characters used for Chinese composition</span>
+      <span data-lang="zh-hans" class="checkme">中文排版所使用的文字</span>
       <span data-lang="zh-hant">中文排版所使用的文字</span></h4>
       <p data-lang="en">The majority of the text used in Chinese composition consists of Han characters (hanzi).</p>
-      <p data-lang="zh-hans">中文排版主要使用的文字為漢字。</p>
+      <p data-lang="zh-hans">中文排版主要使用的文字为汉字。</p>
       <p data-lang="zh-hant">中文排版主要使用的文字為漢字。</p>
       <p data-lang="en">Chinese characters include Traditional Chinese and Simplified Chinese alternatives. The former, which is also known as Upright Characters or Traditional Han, is commonly used in Taiwan, Hong Kong and Macao while the latter is commonly used in Mainland China, Singapore and Malaysia. In this document, the number of strokes and the compositional nature of a character are considered to be the major differences between Simplified Chinese characters and Traditional Chinese characters.</p>
       <p data-lang="zh-hans" class="checkme">依照各地的通行标准，中文所使用的汉字主要分为繁体字与简体字。前者又称正体字、传统汉字等，主要通行于台湾、香港、澳门等地；后者又称简化字，主要通行于中国大陆、新加坡等地。本文依笔画多寡与部件结构为区别，统称为繁体字与简体字。</p>
@@ -283,8 +283,8 @@
 
 
     <section id="han_characters">
-      <h4><span data-lang="en">Chinese Characters</span> 
-      <span data-lang="zh-hans" class="checkme">汉字</span> 
+      <h4><span data-lang="en">Chinese Characters</span>
+      <span data-lang="zh-hans" class="checkme">汉字</span>
       <span data-lang="zh-hant">漢字</span></h4>
       <p data-lang="en">Chinese characters have square <dfn id="endef_characterFrame">character frames</dfn> of equal dimensions. Aligned with the vertical and horizontal center of the character frame, there is a smaller box called the <dfn id="def_letterFace">letter face</dfn>, which contains the actual symbol. (There should be some space left between the letter face and the frame). Most of the punctuation marks for Chinese characters share the same size as the other characters, however some of them differ, such as the ellipsis, which is one-character high and two-characters wide.</p>
       <p data-lang="zh-hans" class="checkme">汉字有正方形的文字外框。在文字外框的正中央有比文字外框小的字面（反过来说，字面的上下左右与文字外框之间有稍微比字面大的若干空白）。中文标点符号的尺寸多与汉字一致，宽高相等，部分标点（如删节号等）则占用一个汉字高、两个汉字宽的大小。</p>
@@ -296,8 +296,8 @@
 
 
     <section id="principles_of_arrangement_of_han_characters">
-      <h4><span data-lang="en">Principles for Arranging Characters during Chinese Composition</span> 
-      <span data-lang="zh-hans" class="checkme">汉字的配置原则</span> 
+      <h4><span data-lang="en">Principles for Arranging Characters during Chinese Composition</span>
+      <span data-lang="zh-hans" class="checkme">汉字的配置原则</span>
       <span data-lang="zh-hant">漢字的配置原則</span></h4>
       <p data-lang="en">In principle, when composing a line with Chinese characters, no extra space appears between their character frames. This is called <dfn id="endef_solidSetting">solid setting</dfn>. </p>
       <p data-lang="zh-hans" class="checkme">汉字按照行排列文字，原则上文字外框彼此紧贴配置，称作密排。</p>
@@ -311,8 +311,8 @@
       <p data-lang="zh-hans" class="checkme">依照内容的不同，也会采用以下方式排列。</p>
       <p data-lang="zh-hant">依照內容的不同，也會採用以下方式排列：</p>
       <section id="increased_inter_character_spacing">
-        <h5><span data-lang="en">Increased inter-character spacing</span> 
-        <span data-lang="zh-hans" class="checkme">增加字距</span> 
+        <h5><span data-lang="en">Increased inter-character spacing</span>
+        <span data-lang="zh-hans" class="checkme">增加字距</span>
         <span data-lang="zh-hant">增加字距</span></h5>
         <p data-lang="en"> It is common in books to increase the space between each character frame (i.e. <dfn id="endef_looseSetting">loose setting</dfn>) for the following cases:</p>
         <p data-lang="zh-hans" class="checkme">在各字之间加入固定量的空白来排列文字，称作疏排。书籍排版上，遇到以下状况时，会采用这种排列方式。</p>
@@ -343,8 +343,8 @@
 
 
       <section id="even_inter_character_spacing">
-        <h5><span data-lang="en">Even inter-character spacing</span> 
-        <span data-lang="zh-hans" class="checkme">平均排列</span> 
+        <h5><span data-lang="en">Even inter-character spacing</span>
+        <span data-lang="zh-hans" class="checkme">平均排列</span>
         <span data-lang="zh-hant">平均排列</span></h5>
         <p data-lang="en">Text may be set with equal inter-character spacing between all characters on a given line, so that each line is aligned to the same line head and line end. Since the Chinese characters and punctuation marks are all in square shapes with almost the same dimensions, it is natural that each line is aligned to the same line head and line end. Even inter-character spacing is mainly used in the following cases:</p>
         <p data-lang="zh-hans" class="checkme">平均分配字距，使文字列两端能够对齐行首与行尾。中文排版时，由于使用的汉字与标点符号皆为正方形，自然会使得文字列对齐行首与行尾。这种排列方式主要应用于以下情况：
@@ -365,8 +365,8 @@
 
 
       <section id="reduced_inter_character_spacing">
-        <h5><span data-lang="en">Reduced inter-character spacing</span> 
-        <span data-lang="zh-hans" class="checkme">减少字距</span> 
+        <h5><span data-lang="en">Reduced inter-character spacing</span>
+        <span data-lang="zh-hans" class="checkme">减少字距</span>
         <span data-lang="zh-hant">減少字距</span></h5>
         <p data-lang="en">By reducing the inter-character spacing, a portion of two character frames overlap each other (i.e. solid setting). This method is mainly used in the following cases:</p>
         <p data-lang="zh-hans" class="checkme">减少字距，使得文字外框一部份重叠，称作紧排。这种处理方式，主要应用于以下情况：</p>
@@ -393,13 +393,13 @@
 
 
   <section id="commonly_used_chinese_typefaces">
-    <h3><span data-lang="en">Typefaces for Chinese Characters</span> 
-    <span data-lang="zh-hans" class="checkme">中文排版常用字体</span> 
+    <h3><span data-lang="en">Typefaces for Chinese Characters</span>
+    <span data-lang="zh-hans" class="checkme">中文排版常用字体</span>
     <span data-lang="zh-hant">中文排版常用字體</span></h3>
-    
+
     <section id="four_commonly_used_typefaces_for_chinese_composition">
-      <h4><span data-lang="en">Four Frequently-used Typefaces for Chinese Characters</span> 
-      <span data-lang="zh-hans" class="checkme">中文排版经常使用的四种字体</span> 
+      <h4><span data-lang="en">Four Frequently-used Typefaces for Chinese Characters</span>
+      <span data-lang="zh-hans" class="checkme">中文排版经常使用的四种字体</span>
       <span data-lang="zh-hant">中文排版經常使用的四種字體</span></h4>
       <p data-lang="en">There are four main typefaces in use for Chinese characters:</p>
       <p data-lang="zh-hans" class="checkme">中文排版时，主要使用的四种字体为：</p>
@@ -417,8 +417,8 @@
 
 
     <section id="song">
-      <h4><span data-lang="en">Song/Ming</span> 
-      <span data-lang="zh-hans" class="checkme">宋体（明体、明朝体）</span> 
+      <h4><span data-lang="en">Song/Ming</span>
+      <span data-lang="zh-hans" class="checkme">宋体（明体、明朝体）</span>
       <span data-lang="zh-hant">宋體（明體、明朝體）</span></h4>
       <figure id="fig-song"><span style="text-align:center;"><img src="images/zh/song.png" alt="Picture of Song Type" width="600"></span>
         <figcaption><span data-lang="en">Song</span> <span data-lang="zh-hans" class="checkme">宋体（明体、明朝体）</span> <span data-lang="zh-hant">宋體（明體、明朝體）</span></figcaption>
@@ -434,7 +434,7 @@
 
     <section id="kai">
       <h4><span data-lang="en">Kai</span>
-      <span data-lang="zh-hans" class="checkme">楷体</span> 
+      <span data-lang="zh-hans" class="checkme">楷体</span>
       <span data-lang="zh-hant">楷體</span></h4>
       <figure id="fig-kai"><span style="text-align:center;"><img src="images/zh/kai.png" width="600" height="215"></span>
         <figcaption><span data-lang="en">Kai</span> <span data-lang="zh-hans" class="checkme">楷体</span> <span data-lang="zh-hant">楷體</span></figcaption>
@@ -455,17 +455,17 @@
 
 
     <section id="hei">
-      <h4><span data-lang="en">Hei</span> 
-      <span data-lang="zh-hans" class="checkme">黑体</span> 
+      <h4><span data-lang="en">Hei</span>
+      <span data-lang="zh-hans" class="checkme">黑体</span>
       <span data-lang="zh-hant">黑體</span></h4>
       <figure id="fig-hei"><span style="text-align:center;"><img src="images/zh/hei.png" alt="Picture of Hei Type" width="600"></span>
-        <figcaption><span data-lang="en">Hei</span> 
-        <span data-lang="zh-hans" class="checkme">黑体</span> 
+        <figcaption><span data-lang="en">Hei</span>
+        <span data-lang="zh-hans" class="checkme">黑体</span>
         <span data-lang="zh-hant">黑體</span></figcaption>
       </figure>
       <p data-lang="en"><dfn id="endef_hei">Hei</dfn>, also known as Heiti or Gothic, is a type style characterized by strokes of even thickness, reduced curves, and a lack of decoration. It is commonly used in headlines, signs, and personal names in dialogs. In body text, characters in Hei style with thicker strokes typically indicate emphasis.</p>
       <p data-lang="zh-hans" class="checkme">黑体的字体特性为笔画宽度平均、弧度较小，不加装饰。主要应用于标题、图说、对话之人名。内文中也会使用字重较粗的黑体作为特定文字的强调、着重。如<a href="#fig-hei"></a>所示。</p>
-      
+
       <p data-lang="zh-hant">黑體的字體特性為筆畫寬度平均、弧度較小，不加裝飾。主要應用於標題、圖說、對話之人名。內文中也會使用字重較粗的黑體作為特定文字的強調、著重。如<a href="#fig-hei"></a>所示。</p>
 
       <p data-lang="en">Traditional publications rarely apply the Hei style for content, but with the growing influence of the World Wide Web and the digital publishing industry, some publications are starting to experiment Hei in this context.</p>
@@ -475,12 +475,12 @@
 
 
     <section id="imitation_song">
-      <h4><span data-lang="en">Fangsong (Imitation Song)</span> 
-      <span data-lang="zh-hans" class="checkme">仿宋体</span> 
+      <h4><span data-lang="en">Fangsong (Imitation Song)</span>
+      <span data-lang="zh-hans" class="checkme">仿宋体</span>
       <span data-lang="zh-hant">仿宋體</span></h4>
       <figure id="fig-fangsong"><span style="text-align:center;"><img src="images/zh/fangsong.png" alt="Picture of Fangsong Type"  width="600"></span>
-        <figcaption><span data-lang="en">Fangsong (Imitation Song)</span> 
-        <span data-lang="zh-hans" class="checkme">仿宋体</span> 
+        <figcaption><span data-lang="en">Fangsong (Imitation Song)</span>
+        <span data-lang="zh-hans" class="checkme">仿宋体</span>
         <span data-lang="zh-hant">仿宋體</span></figcaption>
       </figure>
       <p data-lang="en">The <dfn id="endef_fangsong">Fangsong</dfn> (Imitation Song) style lies between Song and Kai. It is commonly used in isolated paragraphs such as quotations or highlighted sentences.</p>
@@ -518,10 +518,10 @@
     <p data-lang="en">Magazines usually contain various kinds of content, which naturally leads to various designs of templates, different sizes of characters, and varying numbers of columns. </p>
     <p data-lang="zh-hans" class="checkme">杂志则因为内容不同，版式设计多变，文字大小、栏数依照内容不同会有所变化。</p>
     <p data-lang="zh-hant">雜誌則因為內容不同，排版體裁多變，文字大小、欄數依照內容不同會有所變化。</p>
-    
+
     <section id="main_elements_of_basic_composition">
-      <h4><span data-lang="en">Basic Elements of Page Format</span> 
-      <span data-lang="zh-hans" class="checkme">基础版式设计的主要元素</span> 
+      <h4><span data-lang="en">Basic Elements of Page Format</span>
+      <span data-lang="zh-hans" class="checkme">基础版式设计的主要元素</span>
       <span data-lang="zh-hant">基礎排版體裁的主要元素</span></h4>
       <p data-lang="en">The following are the basic elements of a page format.</p>
       <p data-lang="zh-hans" class="checkme">基础版式设计的主要元素如下：</p>
@@ -557,8 +557,8 @@
 
 
     <section id="designing_elements_of_type_area">
-      <h4><span data-lang="en">Design of the Type Area</span> 
-      <span data-lang="zh-hans" class="checkme">版心的设计元素</span> 
+      <h4><span data-lang="en">Design of the Type Area</span>
+      <span data-lang="zh-hans" class="checkme">版心的设计元素</span>
       <span data-lang="zh-hant">版心的設計元素</span></h4>
       <p data-lang="en">The type area defines the basic printing style of a book. The following are the basic elements of the type area.</p>
       <p data-lang="zh-hans" class="checkme">作为书籍基本设计而成的版式设计称为版心，版心的设计元素如下：</p>
@@ -604,8 +604,8 @@
 
 
     <section id="using_type_area_for_composition_in_real_pages">
-      <h4><span data-lang="en">Type Area and Real Page Format</span> 
-      <span data-lang="zh-hans" class="checkme">以版心作为实际页面的排版体裁</span> 
+      <h4><span data-lang="en">Type Area and Real Page Format</span>
+      <span data-lang="zh-hans" class="checkme">以版心作为实际页面的排版体裁</span>
       <span data-lang="zh-hant">以版心作為實際頁面的排版體裁</span></h4>
       <p data-lang="en">This section explains how to create a real page format based on the type area. </p>
       <p data-lang="zh-hans" class="checkme">本部分说明如何以版心作为基本版式来设计各页面。</p>
@@ -631,8 +631,8 @@
 
 
     <section id="procedure_for_defining_type_area">
-      <h4><span data-lang="en">Procedure for Defining the Type Area</span> 
-      <span data-lang="zh-hans" class="checkme">设计版心的顺序</span> 
+      <h4><span data-lang="en">Procedure for Defining the Type Area</span>
+      <span data-lang="zh-hans" class="checkme">设计版心的顺序</span>
       <span data-lang="zh-hant">設計版心的順序</span></h4>
       <ol>
         <li>
@@ -689,8 +689,8 @@
 
 
     <section id="considerations_in_designing_type_area">
-      <h4><span data-lang="en">Considerations when Designing the Type Area</span> 
-      <span data-lang="zh-hans" class="checkme">设计版心的注意事项</span> 
+      <h4><span data-lang="en">Considerations when Designing the Type Area</span>
+      <span data-lang="zh-hans" class="checkme">设计版心的注意事项</span>
       <span data-lang="zh-hant">設計版心的注意點</span></h4>
       <p data-lang="en">The following are considerations that need to be taken into account when designing the type area: </p>
       <p data-lang="zh-hans" class="checkme">在设计版心时需考虑以下事项：</p>
@@ -766,13 +766,13 @@
 
 
   <section id="writing_modes">
-    <h3><span data-lang="en">Writing Modes</span> 
-    <span data-lang="zh-hans" class="checkme">文字书写方向</span> 
+    <h3><span data-lang="en">Writing Modes</span>
+    <span data-lang="zh-hans" class="checkme">文字书写方向</span>
     <span data-lang="zh-hant">文字書寫方向</span></h3>
-    
+
     <section id="writing_modes_in_chinese_composition">
-      <h4><span data-lang="en">Writing Modes in Chinese</span> 
-      <span data-lang="zh-hans" class="checkme">中文的文字书写方向</span> 
+      <h4><span data-lang="en">Writing Modes in Chinese</span>
+      <span data-lang="zh-hans" class="checkme">中文的文字书写方向</span>
       <span data-lang="zh-hant">中文的文字書寫方向</span></h4>
       <p data-lang="en">Chinese composition has two text directions, vertical writing mode and horizontal writing mode. Traditional Chinese can be composed both in vertical writing mode or horizontal writing mode, while Simplified Chinese is mostly composed in horizontal writing mode. There are rare cases where Simplified Chinese is composed in vertical writing mode. </p>
       <p data-lang="zh-hans" class="checkme">中文的文字书写方向分为直排与横排。其中，繁体中文出版品适用直排与横排；简体中文出版品则多为横排，直排书籍的案例极少。</p>
@@ -796,8 +796,8 @@
 
 
     <section id="major_differences_between_horizontal_and_vertical_writing_modes">
-      <h4><span data-lang="en">Major Differences Between Horizontal and Vertical Writing Modes</span> 
-      <span data-lang="zh-hans" class="checkme">横排与直排的主要差异点</span> 
+      <h4><span data-lang="en">Major Differences Between Horizontal and Vertical Writing Modes</span>
+      <span data-lang="zh-hans" class="checkme">横排与直排的主要差异点</span>
       <span data-lang="zh-hant">橫排與直排的主要差異點</span></h4>
       <p data-lang="en">The following are major differences between vertical writing mode and horizontal writing mode:</p>
       <p data-lang="zh-hans" class="checkme">直排与横排的主要差异点，列举如下：</p>
@@ -953,13 +953,13 @@
 
 
 <section id="line_composition">
-  <h2><span data-lang="en">Line composition</span> 
-  <span data-lang="zh-hans" class="checkme">行内文字排版处理</span> 
+  <h2><span data-lang="en">Line composition</span>
+  <span data-lang="zh-hans" class="checkme">行内文字排版处理</span>
   <span data-lang="zh-hant">行內文字排版處理</span></h2>
-  
+
   <section id="line_composition_rules_for_punctuation_marks">
-    <h3><span data-lang="en">Line Composition Rules for Punctuation Marks</span> 
-    <span data-lang="zh-hans" class="checkme">标点符号与其排版</span> 
+    <h3><span data-lang="en">Line Composition Rules for Punctuation Marks</span>
+    <span data-lang="zh-hans" class="checkme">标点符号与其排版</span>
     <span data-lang="zh-hant">標點符號與其排版</span></h3>
     <p data-lang="en">The usage of Chinese punctuation marks differs across different regions in China. One of the major differences is their behavior for composition. Punctuation marks in Traditional Chinese are usually positioned center-aligned  with adjacent Han characters, while punctuation marks in Simplified Chinese should be aligned with the character they follow, and this alignment varies according to whether the composition uses vertical or horizontal writing mode. The differences of composition for punctuation in Traditional Chinese and Simplified Chinese, as well as the correct way to position them, will be introduced in more detail later. </p>
     <p data-lang="zh-hans" class="checkme">中文标点符号的排版在各地区有不同的处理方式，其中较显著的差异是其字面分布——繁体中文多使用符号居中的字形样式，而简体中文多使用符号尾随受注文字末端的字形样式，并根据直、横排有不同的处理。下文将详述繁、简中文标点的异同及准确的配置方式。</p>
@@ -975,15 +975,15 @@
     <p data-lang="en">The content of the following section is mainly based on the content of <cite>General Rules for Punctuation</cite> (GB/T 15834—2011) issued in Mainland China, as well as the <cite>Punctuation Guidance (2008 revised edition)</cite> issued by The Ministry of Education in Taiwan. The former is a recommended national standard while the latter is not mandatory for general publications but mainly used to regulate education materials like textbooks.</p>
     <p data-lang="zh-hans" class="checkme">本节主要基于中国大陆的《标点符号用法》(GB/T 15834–2011)及台湾教育部的《重订标点符号手册》(2008年修订版)。前者属推荐标准，后者主要用于规范教科书等教育书籍，对一般出版物不具强制性。</p>
     <p data-lang="zh-hant">本節主要基於中國大陸的《標點符號用法》（GB/T 15834–2011）及台灣教育部的《重訂標點符號手冊》（2008年修訂版）。前者屬推薦標準，後者主要用於規範教科書等教育書籍，對一般出版品不具強制性。</p>
-    
+
     <section id="categories_and_usage_of_punctuation_marks">
-      <h4><span data-lang="en">Categories and Usage of Punctuation Marks</span> 
-      <span data-lang="zh-hans" class="checkme">标点符号的分类及用法</span> 
+      <h4><span data-lang="en">Categories and Usage of Punctuation Marks</span>
+      <span data-lang="zh-hans" class="checkme">标点符号的分类及用法</span>
       <span data-lang="zh-hant">標點符號的分類及用法</span></h4>
-      
+
       <section id="h-pause-or-stop-punctuation-marks">
-        <h5><span data-lang="en">Pause or Stop Punctuation Marks</span> 
-        <span data-lang="zh-hans" class="checkme">點號</span> 
+        <h5><span data-lang="en">Pause or Stop Punctuation Marks</span>
+        <span data-lang="zh-hans" class="checkme">點號</span>
         <span data-lang="zh-hant">点号</span></h5>
         <p data-lang="en">Pause or stop punctuation marks are used to indicate  pauses or the end of a sentence. Some of the pause or stop punctuation marks appear within a sentence, such as the slight-pause comma, comma, semicolon, colon, etc., while others appear at the end of a sentence, such as period, question mark and exclamation mark.</p>
         <p data-lang="zh-hans" class="checkme">点号相对于标号，用于表示语句的停顿或暂停。分为句内点号，如顿号、逗号、分号、冒号等；以及句末点号，如句号、问号、感叹号等。</p>
@@ -1046,7 +1046,7 @@
               <p data-lang="en">There are vertical blacket codepoints such like <span class="uname">U+FE41 PRESENTATION FORM FOR VERTICAL LEFT CORNER BRACKET</span> in Unicode. But they are not suitable for author to use directly. They should be replaced by other mechanism.</p>
               <p data-lang="zh-hans" class="checkme">万国码编码中有如<span class="uname">U+FE41 PRESENTATION FORM FOR VERTICAL LEFT CORNER BRACKET</span>等直立的符号，但不适宜作者直接使用该符号，而是透过其他机制替代使用。</p>
               <p data-lang="zh-hant">萬國碼編碼中有如<span class="uname">U+FE41 PRESENTATION FORM FOR VERTICAL LEFT CORNER BRACKET</span>等直立的符號，但不適宜作者直接使用該符號，而是透過其他機制替代使用。</p>
-			</div>
+      </div>
 
             <div class="note">
               <p data-lang="en">Some publications in Traditional Chinese might also apply double quotation marks first and then single quotation marks. </p>
@@ -1202,8 +1202,8 @@
 
 
     <section id="glyphs_sizes_and_positions_in_character_faces_of_punctuation_marks">
-      <h4><span data-lang="en">Sizes and positions of Punctuation Marks</span> 
-      <span data-lang="zh-hans" class="checkme">标点符号的字形、尺寸与字面分布</span> 
+      <h4><span data-lang="en">Sizes and positions of Punctuation Marks</span>
+      <span data-lang="zh-hans" class="checkme">标点符号的字形、尺寸与字面分布</span>
       <span data-lang="zh-hant">標點符號的字形、尺寸與字面分布</span></h4>
       <p data-lang="en">Please find the shape and usage of punctuation marks at section <a href="#categories_and_usage_of_punctuation_marks"></a> and <a href="#tables_of_chinese_punctuation_marks"></a>. There are no notable differences between the punctuation used in Traditional Chinese and Simplified Chinese. The major differences between the two are in the dimension and position of the punctuation marks. </p>
       <p data-lang="zh-hans" class="checkme">标点符号的字形及用法请见 3.1.1 标点符号的分类及用法节及<a href="#tables_of_chinese_punctuation_marks">附录 A</a>。繁、简中文的标点符号在字形上未有显著差异，二者间的区别主要是符号的尺寸与字面分布。</p>
@@ -1236,12 +1236,12 @@
 
 
     <section id="atypical_punctuation_marks_and_their_arrangements">
-      <h4><span data-lang="en">Atypical punctuation marks and their composition</span> 
-      <span data-lang="zh-hans" class="checkme">非典型的标点符号及其配置</span> 
+      <h4><span data-lang="en">Atypical punctuation marks and their composition</span>
+      <span data-lang="zh-hans" class="checkme">非典型的标点符号及其配置</span>
       <span data-lang="zh-hant">非典型的標點符號及其配置</span></h4>
       <section id="science_and_technology_literature">
-        <h5><span data-lang="en">Science and technology literature</span> 
-        <span data-lang="zh-hans" class="checkme">科技文献</span> 
+        <h5><span data-lang="en">Science and technology literature</span>
+        <span data-lang="zh-hans" class="checkme">科技文献</span>
         <span data-lang="zh-hant">科技文獻</span></h5>
         <p data-lang="en"> Science and technology literature prefers <span class="uname">U+FF0E FULLWIDTH FULL STOP</span> [．] to <span class="uname">U+3002 IDEOGRAPHIC FULL STOP</span> [。] so as to make a clear distinction from letter [o] or digit [0]. </p>
         <p data-lang="zh-hans" class="checkme">科技文献中的句号多使用<span class="uname" translate="no">U+FF0E FULLWIDTH FULL STOP</span> [．]替代<span class="uname" translate="no">U+3002 IDEOGRAPHIC FULL STOP</span> [。]，以避免同拉丁字母“o”或数字“0”混淆。</p>
@@ -1250,8 +1250,8 @@
 
 
       <section id="special_cases_in_TC_publications">
-        <h5><span data-lang="en">Special cases in Traditional Chinese publications</span> 
-        <span data-lang="zh-hans" class="checkme">繁体中文出版物的特殊情况</span> 
+        <h5><span data-lang="en">Special cases in Traditional Chinese publications</span>
+        <span data-lang="zh-hans" class="checkme">繁体中文出版物的特殊情况</span>
         <span data-lang="zh-hant">繁體中文出版品的特殊情況</span></h5>
         <p data-lang="en">In Traditional Chinese publications such as ancient books, science and technology literatures, textbooks, or the books that have quotations in Western languages, some pause or stop punctuation marks, including slight-pause comma, colon and period, are positioned following the marked characters. The same applies for Simplified Chinese as well as Japanese so as to make the same style for the punctuation marks in both Chinese and Western languages. </p>
         <p data-lang="zh-hans" class="checkme">在繁体中文的古籍、科技文献、科学类教科书或常引西文的书籍中，也可见使用于被标注文字末端、字面始端的点号（顿号、逗号、句号），类似简体中文或日文标点符号，以保持中、西文标点体例一致。</p>
@@ -1263,8 +1263,8 @@
 
 
     <section id="prohibition_rules_for_line_start_end">
-      <h4><span data-lang="en">Prohibition Rules for Line Start and Line End</span> 
-      <span data-lang="zh-hans" class="checkme">行首行尾禁则</span> 
+      <h4><span data-lang="en">Prohibition Rules for Line Start and Line End</span>
+      <span data-lang="zh-hans" class="checkme">行首行尾禁则</span>
       <span data-lang="zh-hant">行首行尾禁則</span></h4>
       <p data-lang="en"> In order to maintain a smooth reading experience and consistency of the style, there are certain constraints for the positioning of most punctuation marks. In most cases, according to its function, a punctuation mark is prohibited from appearing at the line start or line end. This rule was first implemented during the time of letterpress printing. In Mainland China, the national standard <cite>General Rules for Punctuation (GB/T 15834–2011)</cite> sets clear rules about the positioning of punctuation marks. In the regions that use Traditional Chinese, there is not yet a standard for the usage and positioning of punctuation marks, but most of the publications apply the rules described in this document.</p>
       <p data-lang="zh-hans" class="checkme">为了保持阅读顺畅、体例一致，多数标点符号的位置有限制，通常一个标点符号依其性质，禁止出现在行首或行尾。这项规则自活字排版时代开始通行。在中国大陆，《标点符号用法》（GB/T 15834–2011）规定了简体中文标点在行间的位置；繁体中文通行地区虽没有相应的规范，但多数出版品皆按照此处所述规则对标点符号进行配置。</p>
@@ -1297,21 +1297,21 @@
 
 
     <section id="prohibition_rules_for_unbreakable_marks">
-      <h4><span data-lang="en">Prohibition Rules for Unbreakable Marks</span> 
-      <span data-lang="zh-hans" class="checkme">符号分离禁则</span> 
+      <h4><span data-lang="en">Prohibition Rules for Unbreakable Marks</span>
+      <span data-lang="zh-hans" class="checkme">符号分离禁则</span>
       <span data-lang="zh-hant">符號分離禁則</span></h4>
-      
+
       <section id="h-unbreakable_marks_punctuation">
-        <h5><span data-lang="en">Punctuation Marks</span> 
-        <span data-lang="zh-hans" class="checkme">标点符号</span> 
+        <h5><span data-lang="en">Punctuation Marks</span>
+        <span data-lang="zh-hans" class="checkme">标点符号</span>
         <span data-lang="zh-hant">標點符號</span></h5>
         <p data-lang="en"> The following punctuation marks should be considered as one unit and take two-character widths. They should not be separated into two lines. In cases where multiples of these punctuation marks appear together, it is allowed to separate them into two lines as described in <a href="#h-handling_western_text_in_chinese_text_using_proportional_western_fonts"></a>. If they were forced to remain on one line, it might cause too much space between the characters in the previous line and decrease the aesthetics of the entire composition.</p>
         <p data-lang="zh-hans" class="checkme">以下标点符号占用两个汉字的空间，在行间应为一体，视作一个字符存在，不能为了适配分行而拆成两行。</p>
         <p data-lang="zh-hant">以下標點符號佔用二個漢字的空間，在行間應為一體，視作一個字元存在，不得以適配分行之由拆至二行。</p>
         <div class="note">
           <p data-lang="en">In the digital era, these punctuation marks usually take the width of 2 characters but are still considered as one unit.</p>
-          <p data-lang="zh-hans" class="translateme">在数字出版时代，这些标点符号通常占用两个字符的宽度，但是被认做一个整体单元。</p>
-          <p data-lang="zh-hant">在数字出版时代，这些标点符号通常占用两个字符的宽度，但是被认做一个整体单元。</p>
+          <p data-lang="zh-hans">在数字出版时代，这些标点符号通常占用两个字符的宽度，但是被认做一个整体单元。</p>
+          <p data-lang="zh-hant" class="translateme"">在数字出版时代，这些标点符号通常占用两个字符的宽度，但是被认做一个整体单元。</p>
         </div>
         <ol>
           <li>
@@ -1338,15 +1338,15 @@
 
 
       <section id="h-digits_and_their_prefix_and_suffix">
-        <h5><span data-lang="en">Digits and their Prefix and Suffix</span> 
-        <span data-lang="zh-hans" class="checkme">数字及其相应的前后缀单位符号</span> 
+        <h5><span data-lang="en">Digits and their Prefix and Suffix</span>
+        <span data-lang="zh-hans" class="checkme">数字及其相应的前后缀单位符号</span>
         <span data-lang="zh-hant">數字及其相應的前後綴單位符號</span></h5>
       </section>
 
 
       <section id="h-annotation_marks">
-        <h5><span data-lang="en">Annotation Marks</span> 
-        <span data-lang="zh-hans" class="checkme">注释符号</span> 
+        <h5><span data-lang="en">Annotation Marks</span>
+        <span data-lang="zh-hans" class="checkme">注释符号</span>
         <span data-lang="zh-hant">注釋符號</span></h5>
       </section>
 
@@ -1355,8 +1355,8 @@
 
 
     <section id="compression_rules_for_consecutive_punctuation_marks">
-      <h4><span data-lang="en">Compression Rules for Punctuation Marks</span> 
-      <span data-lang="zh-hans" class="checkme">标点符号的挤压</span> 
+      <h4><span data-lang="en">Compression Rules for Punctuation Marks</span>
+      <span data-lang="zh-hans" class="checkme">标点符号的挤压</span>
       <span data-lang="zh-hant">標點符號的擠壓</span></h4>
       <p data-lang="en">Punctuation marks in Chinese usually have the dimensions of one character (or more). This provides a clear distinction between characters and leaves some room for compositional adjustment. However, if there is no character before or after the punctuation mark(s), the empty space around the punctuation mark(s) will seem a bit abrupt. In this case, proper compression for the punctuation mark(s) will make the composition more tightly-knit and readable.</p>
       <p data-lang="zh-hans" class="checkme">中文的标点符号多占一个（或以上）汉字的空间，使其在字间易于识别、适合配置及排版。然而，在标点前后没有文字时，标点的空白空间将显突兀。对标点符号的空余空间进行挤压，可使文字体裁更加紧凑、易读。</p>
@@ -1364,10 +1364,10 @@
       <p data-lang="en">Usually there are two ways to compress punctuation mark(s). First, when multiple punctuation marks appear together, the space between the punctuation marks can be adjusted; second, when multiple punctuation marks appear at the line start or line end, the space at the line start or line end can be adjusted. </p>
       <p data-lang="zh-hans" class="checkme">标点符号的挤压通常分为两种——其一，标点符号连续出现时，对符号间相邻的空隙进行调整；另一种则是符号出现在行首或行尾时，调整该符号字面位置，缩减行首或行尾的空隙。</p>
       <p data-lang="zh-hant">標點符號的擠壓通常分為二種——其一，標點符號連續出現時，對符號間相鄰的空隙進行調整；另一種則是符號出現於行首或行尾時，調整該符號字面位置，縮減行首或行尾的空隙。</p>
-      
+
       <section id="h-compression_of_adjacent_punctuation_marks">
-        <h5><span data-lang="en">Compression of adjacent punctuation marks</span> 
-        <span data-lang="zh-hans" class="checkme">连续标点符号的挤压</span> 
+        <h5><span data-lang="en">Compression of adjacent punctuation marks</span>
+        <span data-lang="zh-hans" class="checkme">连续标点符号的挤压</span>
         <span data-lang="zh-hant">連續標點符號的擠壓</span></h5>
         <p data-lang="en">When opening bracket(s), closing bracket(s), slight-pause comma, comma, period or interpunct appear together, the following rules for space adjustment will make the composition more solid and readable. </p>
         <p data-lang="zh-hans" class="checkme">在开始括注符号、结束括注符号、顿号、逗号、句号及间隔号等连续排列时，以下的空隙调整规则得以使文字体裁更加紧凑、易读。</p>
@@ -1418,8 +1418,8 @@
 
 
       <section id="h-compression_of_punctuation_marks_at_line_start">
-        <h5><span data-lang="en">Compression of punctuation marks at line start</span> 
-        <span data-lang="zh-hans" class="checkme">行首行尾标点挤压</span> 
+        <h5><span data-lang="en">Compression of punctuation marks at line start</span>
+        <span data-lang="zh-hans" class="checkme">行首行尾标点挤压</span>
         <span data-lang="zh-hant">行首行尾標點擠壓</span></h5>
         <p data-lang="en">When a punctuation mark appears at line start or line end, the following rules for space adjustment will make the composition more solid and readable. </p>
         <p data-lang="zh-hans" class="checkme">标点符号出现在行首或行尾时，以下的空隙调整规则使文字体裁更加紧凑、易读。</p>
@@ -1453,8 +1453,8 @@
 
 
     <section id="hanging_punctuation_marks_at_line_end">
-      <h4><span data-lang="en">Hanging Punctuation at Line End</span> 
-      <span data-lang="zh-hans" class="checkme">行尾点号悬挂</span> 
+      <h4><span data-lang="en">Hanging Punctuation at Line End</span>
+      <span data-lang="zh-hans" class="checkme">行尾点号悬挂</span>
       <span data-lang="zh-hant">行尾點號懸掛</span></h4>
       <p data-lang="en">Most Chinese publications do not use hanging punctuation at line end. According to the <a href="https://www.w3.org/TR/jlreq/#positioning_of_punctuation_marks">Japanese Layout Requirements</a> document, hanging punctuation at the line end is a kind of extension of the prohibition rules at line start. This rule helps to avoid moving characters or punctuation marks between lines and avoids inconsistency of space between the characters in different lines. </p>
       <p data-lang="zh-hans" class="checkme">绝大多数的中文出版物没有悬挂行尾点号的惯例。参考<a href="https://www.w3.org/TR/jlreq/#positioning_of_punctuation_marks">日文排版</a>的做法，点号悬挂是行首标点禁则处理方式的延伸，可以避免文字及点号在前后行的移动，近而导致前行字距不一的问题。</p>
@@ -1478,13 +1478,13 @@
 
 
   <section id="chinese_and_western_mixed_text_composition">
-    <h3><span data-lang="en">Composition of Chinese and Western Mixed Texts</span> 
-    <span data-lang="zh-hans" class="checkme">中、西文混排处理</span> 
+    <h3><span data-lang="en">Composition of Chinese and Western Mixed Texts</span>
+    <span data-lang="zh-hans" class="checkme">中、西文混排处理</span>
     <span data-lang="zh-hant">中、西文混排處理</span></h3>
-    
+
     <section id="composition_of_chinese_and_western_mixed_text">
-      <h4><span data-lang="en">Composition of Chinese and Western Mixed Text</span> 
-      <span data-lang="zh-hans" class="checkme">中文与西文的混排</span> 
+      <h4><span data-lang="en">Composition of Chinese and Western Mixed Text</span>
+      <span data-lang="zh-hans" class="checkme">中文与西文的混排</span>
       <span data-lang="zh-hant">中文與西文之混排</span></h4>
       <p data-lang="en">There are many examples in Chinese text where Western characters, such as Latin letters, Greek letters, or European numerals, are found alongside Han characters. The following are just a few examples:</p>
       <p data-lang="zh-hans" class="checkme">中文排版中，汉字与拉丁字母、希腊字母或阿拉伯数字等西文混排的状况经常出现，以下列举部分范例。</p>
@@ -1534,8 +1534,8 @@
 
 
     <section id="mixed_text_composition_in_horizontal_writing_mode">
-      <h4><span data-lang="en">Mixed Text Composition in Horizontal Writing Mode</span> 
-      <span data-lang="zh-hans" class="checkme">横排的中、西文混排配置</span> 
+      <h4><span data-lang="en">Mixed Text Composition in Horizontal Writing Mode</span>
+      <span data-lang="zh-hans" class="checkme">横排的中、西文混排配置</span>
       <span data-lang="zh-hant">橫排的中、西文混排配置</span></h4>
       <p data-lang="en">In horizontal writing mode, the basic approach uses proportional fonts to represent Western text and uses proportional or monospace fonts for European numerals. In principle, there is tracking or spacing between an adjacent Han character and Western character of up to one quarter of a Han character width, except at the line head or end.</p>
       <p data-lang="zh-hans" class="checkme">横排时，西文使用比例字体；阿拉伯数字则常用比例字体或等宽字体。原则上，汉字与西文字母、数字间使用不多于四分之一个汉字宽的字距或空白。但西文出现在行首或行尾时，则无须加入空白。</p>
@@ -1549,8 +1549,8 @@
 
 
     <section id="mixed_text_composition_in_vertical_writing_mode">
-      <h4><span data-lang="en">Mixed Text Composition in Vertical Writing Mode</span> 
-      <span data-lang="zh-hans" class="checkme">直排的中、西文混排配置</span> 
+      <h4><span data-lang="en">Mixed Text Composition in Vertical Writing Mode</span>
+      <span data-lang="zh-hans" class="checkme">直排的中、西文混排配置</span>
       <span data-lang="zh-hant">直排的中、西文混排配置</span></h4>
       <p data-lang="en">For vertical writing mode, the following list describes methods of setting Western letters and European numerals:</p>
       <p data-lang="zh-hans" class="checkme">直排时，西文与阿拉伯数字的配置有以下三种方法：</p>
@@ -1581,8 +1581,8 @@
 
 
     <section id="handling_western_text_in_chinese_text_using_proportional_western_fonts">
-      <h4><span data-lang="en">Handling Western Text in Chinese Text Using Proportional Western Fonts</span> 
-      <span data-lang="zh-hans" class="checkme">西文使用比例字体时的混排处理</span> 
+      <h4><span data-lang="en">Handling Western Text in Chinese Text Using Proportional Western Fonts</span>
+      <span data-lang="zh-hans" class="checkme">西文使用比例字体时的混排处理</span>
       <span data-lang="zh-hant">西文使用比例字體時的混排處理</span></h4>
       <p data-lang="en">The following provides composition rules for handling Western characters and European numerals in horizontal writing mode or in situations in vertical writing mode where the Western words/phrases or European numerals are rotated 90 degrees clockwise:</p>
       <p data-lang="zh-hans" class="checkme">横排中混排的西文、阿拉伯数字及直排中将文字采顺时针旋转90°配置的西文、阿拉 伯数字，其配置方式如下。</p>
@@ -1623,8 +1623,8 @@
 
 
     <section id="handling_of_grid_alignment_in_chinese_and_western_mixed_text_composition">
-      <h4><span data-lang="en">Handling of Grid Alignment in Chinese and Western Mixed Text Composition</span> 
-      <span data-lang="zh-hans" class="checkme">纵横对齐下的中西文混排处理</span> 
+      <h4><span data-lang="en">Handling of Grid Alignment in Chinese and Western Mixed Text Composition</span>
+      <span data-lang="zh-hans" class="checkme">纵横对齐下的中西文混排处理</span>
       <span data-lang="zh-hant">縱橫對齊下的中西文混排處理</span></h4>
       <p data-lang="en">Due to the fact that each Han character is of the same width, not only should characters at the start and end of a line be aligned but it is also a requirement for characters within blocks of Han text to be aligned both vertically and horizontally, whether in vertical or horizontal writing mode.  When Western text or European numerals intervene, this principle is harder to achieve. Possible approaches are listed below:</p>
       <p data-lang="zh-hans" class="checkme">由于汉字各字等宽的性质，无论在直排或横排的情况下，除了行齐首尾对齐外，也要求各行间的各个汉字能够纵横对齐。若遇西文或阿拉伯数字采用比例字体，难以满足这项原则时，处理方式如下：</p>
@@ -1658,22 +1658,22 @@
 
 
   <!-- end 3.2 Composition of Ch and W Mixed tests -->
-  
+
   <section id="interlinear_annotations">
-    <h3><span data-lang="en">Interlinear annotations</span> 
-    <span data-lang="zh-hans" class="checkme">行间注</span> 
+    <h3><span data-lang="en">Interlinear annotations</span>
+    <span data-lang="zh-hans" class="checkme">行间注</span>
     <span data-lang="zh-hant">行间注</span></h3>
-    
+
     <section id="usage_of_interlinear_annotations">
-      <h4><span data-lang="en">Usage of Interlinear Annotations</span> 
-      <span data-lang="zh-hans" class="checkme">行间注的用途</span> 
+      <h4><span data-lang="en">Usage of Interlinear Annotations</span>
+      <span data-lang="zh-hans" class="checkme">行间注的用途</span>
       <span data-lang="zh-hant">行间注的用途</span></h4>
       <p data-lang="en">Chinese <dfn id="def_ruby">interlinear annotation</dfn>, also known as ruby, is small, supplementary text attached to certain characters or words in the main text. Chinese interlinear annotation is usually set in the interlinear space and aligned to the corresponding base text which it annotates. In Chinese typesetting, Chinese interlinear annotation is mainly used to indicate pronunciation or meaning.</p>
       <p data-lang="zh-hans" class="checkme">行间注是标注在字词旁侧的小字号补充文本。行间注的注文通常位于行间，与其所标注的基文对齐，因这一性质而又名为行间注。行间注在中文排版里的用途主要为标音与释义。</p>
       <p data-lang="zh-hant">行間注是標注於字詞旁側的小字號補充文本。行間注的注文通常位於行間，與其所標注的基文對齊，因這一性質而又名為行間注。行間注在中文排版里的用途主要為標音與釋義。</p>
       <section id="h-indicating_pronunciation_for_chinese_characters">
-        <h5><span data-lang="en">Indicating the Pronunciation for Chinese characters</span> 
-        <span data-lang="zh-hans" class="checkme">为汉字标注读音</span> 
+        <h5><span data-lang="en">Indicating the Pronunciation for Chinese characters</span>
+        <span data-lang="zh-hans" class="checkme">为汉字标注读音</span>
         <span data-lang="zh-hant">为汉字标注读音</span></h5>
         <p data-lang="en">In Chinese, interlinear annotation is most commonly used to indicate the pronunciation of Han characters. Presenting the pronunciation alongside the characters is a great help to beginners, especially to children who are native speakers, or to foreigners intending to study Chinese. Therefore, it is rare to annotate isolated Han characters. Instead, phonetic annotations tend to cover the full text. Also, it is not regular practice in Chinese layout to use interlinear annotation for pronunciation outside these educational contexts, even for the pronunciation of rarely used characters, although sometimes pronunciation is provided inline, possibly inside brackets.</p>
         <p data-lang="zh-hans" class="checkme">行间注最常见的用途是为汉字标注读音。汉字标音针对的是汉语初学者，包括母语为汉语的幼儿以及学习汉语的外国人士，因此对个别字标音的情况较少，多为全文标音。常规排版中没有行间注标音的习惯，对生僻字也几乎从不标音，即便标音也只是用行内括号标注。</p>
@@ -1690,8 +1690,8 @@
             <p data-lang="zh-hans" class="checkme">国语注音符号及台湾方音符号（以下统称注音或注音符号）标音系统多用于台湾，其他地区仅见于特定的辞典或教科书中。绝大多数的情况下，注音符号标注于相应汉字（基文）的右侧，例外情况非常少见。</p>
             <p data-lang="zh-hant">國語注音符號及台灣方音符號（以下統稱注音或注音符號）標音系統多用於台灣，其他地區僅見於特定的辭典或教科書中。絕大多數的情況下，注音符號標注於相應漢字（基文）的右側，例外情況非常少見。</p>
             <figure id="zhuyin-use-case"><img height="300" alt="文字直排下，注音符號行間注排版示例" src="images/zh/zhuyin-use-case-vertical.svg"> <img width="300" alt="文字橫排下，注音符號行間注排版示例" src="images/zh/zhuyin-use-case-horizontal.svg">
-              <figcaption><span data-lang="en">An example of positioning for Zhuyin in vertical and horizontal writing modes.</span> 
-              <span data-lang="zh-hans" class="translateme">注音符號在直、橫排下的行間注排版示例。</span> 
+              <figcaption><span data-lang="en">An example of positioning for Zhuyin in vertical and horizontal writing modes.</span>
+              <span data-lang="zh-hans">注音符号在直、橫排下的行间注排版示例。</span>
               <span data-lang="zh-hant">注音符號在直、橫排下的行間注排版示例。</span></figcaption>
             </figure>
           </li>
@@ -1706,7 +1706,7 @@
             <p data-lang="zh-hans" class="checkme">因拉丁字母的特质，此类标音文本仅横排。针对幼儿母语者的文本以单字作为基文进行标音。针对双语学习者的文本除偶有与前者一致的格式外，大多分词连写，以词作为基文进行标音，基文之间如西文书写一般用空格隔开，并且注文有句首大写、专名首字母大写等格式以及与正文对应的标点符号，自成一体。汉语拼音早期印刷品的格式较为多变，一致性不强。大体上，单字标音与分词连写标音都常见，不作详细述。</p>
             <p data-lang="zh-hant">因拉丁字母的特質，此類標音文本僅橫排。針對幼兒母語者的文本以單字作為基文進行標音。針對二語學習者的文本除偶有與前者一致的格式外，大多分詞連寫，以詞作為基文進行標音，基文之間如西文書寫般用空格隔開，並且注文有句首大寫、專名首字母大寫等格式以及與正文對應的標點符號，自成一體。漢語拼音早期印刷品的格式較為多變，一致性不強。大體上，單字標音與分詞連寫標音都常見，不作詳細描述。</p>
             <figure id="pinyin-use-case"><img width="300" alt="羅馬拼音行間注的排版示例" src="images/zh/pinyin-use-case.svg">
-              <figcaption><span data-lang="en">An example of positioning for Romanization.</span> <span data-lang="zh-hans" class="translateme">羅馬拼音行間注的排版示例。</span> <span data-lang="zh-hant">羅馬拼音行間注的排版示例。</span></figcaption>
+              <figcaption><span data-lang="en">An example of positioning for Romanization.</span> <span data-lang="zh-hans" >罗马拼音行间注的排版示例。</span> <span data-lang="zh-hant">羅馬拼音行間注的排版示例。</span></figcaption>
             </figure>
           </li>
         </ol>
@@ -1714,8 +1714,8 @@
 
 
       <section id="h-indicating_meaning_or_other_information">
-        <h5><span data-lang="en">Indicating Meaning or Other Additional Information</span> 
-        <span data-lang="zh-hans" class="checkme">标注释义等非语音信息</span> 
+        <h5><span data-lang="en">Indicating Meaning or Other Additional Information</span>
+        <span data-lang="zh-hans" class="checkme">标注释义等非语音信息</span>
         <span data-lang="zh-hant">标注释义等非语音信息</span></h5>
         <ol>
           <li>
@@ -1726,7 +1726,7 @@
             <p data-lang="zh-hans" class="checkme">为外来语、首字母缩略词标注其中译，或对翻译名词标注其原文，多见于专有名词、作品名及译后概念较难传达的词汇。常见于译作，尤以轻小说为主。</p>
             <p data-lang="zh-hant">為外來語、首字母縮略詞標注其中譯，或對翻譯名詞標注其原文，多見於專有名詞、作品名及譯後概念較難傳達的詞彙。常见于译作，尤以轻小说為主。</p>
             <figure id="billingual-annotation-use-case"><img width="400" alt="中外文對照行間注的排版示例" src="images/zh/billingual-annotation.svg">
-              <figcaption><span data-lang="en">An example of positioning for billingual annotations.</span> <span data-lang="zh-hans" class="translateme">中外文對照行間注的排版示例。</span> <span data-lang="zh-hant">中外文對照行間注的排版示例。</span></figcaption>
+              <figcaption><span data-lang="en">An example of positioning for billingual annotations.</span> <span data-lang="zh-hans">中外文对照行间注的排版示例。</span> <span data-lang="zh-hant">中外文對照行間注的排版示例。</span></figcaption>
             </figure>
           </li>
           <li>
@@ -1745,8 +1745,8 @@
 
 
     <section id="overview_of_positioning_of_interlinear_annotations">
-      <h3><span data-lang="en">Overview of Interlinear Annotation Positioning</span> 
-      <span data-lang="zh-hans" class="checkme">行间注排版概述</span> 
+      <h3><span data-lang="en">Overview of Interlinear Annotation Positioning</span>
+      <span data-lang="zh-hans" class="checkme">行间注排版概述</span>
       <span data-lang="zh-hant">行间注排版概述</span></h3>
       <p data-lang="en">In vertical writing mode, Zhuyin, Romanization or bilingual annotations are usually placed on the right side of the base text (Han characters), while interlinear comments are often placed on the left side. In horizontal writing mode, Zhuyin can be placed above the base text, but in most cases they are still set to the right side of the base text. On the other hand, Romanization and bilingual annotations can appear both above or below the base text, and the interlinear comments are usually placed at the bottom of the base text.</p>
       <p data-lang="zh-hans" class="checkme">直排时，注音符号或罗马拼音、中外文对照常位于（汉字）右侧，行间批语则多位于基文片段左侧；横排时，注音符号可置于（汉字）的上方及右侧，但多见于右侧，而罗马拼音及中外文对照上下皆可，行间批语则位于基文片段的后方。</p>
@@ -1758,19 +1758,19 @@
       <p data-lang="zh-hans" class="checkme">拼注音共同标注是一种可行的作法，能同时为仅熟悉单一标音系统的两种读者提供汉字标音，并作为学习、査询另一种系统拼写的有效方式。一般情况下，「拼注音共同标注」的注音符号位于汉字右侧，横排时罗马拼音位于汉字下方，直排时位于汉字左侧。</p>
       <p data-lang="zh-hant">拼注音共同標注是一種可行的作法，能同時為僅熟悉單一標音系統的二種讀者提供漢字標音，並作為學習、査詢另一種系統拼寫的有效方式。一般情況下，「拼注音共同標注」的注音符號位漢字右側，橫排時羅馬拼音位漢字下方，直排時位漢字左側。</p>
       <figure id="phonetic-in-both"> <img width="300" alt="拼注音共同標注排版示例" src="images/zh/phonetic-in-both.png">
-        <figcaption><span data-lang="en">An example of positioning for both Romanization and Zhuyin</span> <span data-lang="zh-hans" class="translateme">拼注音共同標注排版示例。</span> <span data-lang="zh-hant">拼注音共同標注排版示例。</span></figcaption>
+        <figcaption><span data-lang="en">An example of positioning for both Romanization and Zhuyin</span> <span data-lang="zh-hans">拼注音共同标注排版示例。</span> <span data-lang="zh-hant">拼注音共同標注排版示例。</span></figcaption>
       </figure>
     </section>
 
 
     <section id="positioning_of_zhuyin">
-      <h4><span data-lang="en">Positioning of Zhuyin Interlinear Annotations</span> 
-      <span data-lang="zh-hans" class="checkme">注音符号标音的排版</span> 
+      <h4><span data-lang="en">Positioning of Zhuyin Interlinear Annotations</span>
+      <span data-lang="zh-hans" class="checkme">注音符号标音的排版</span>
       <span data-lang="zh-hant">注音符号標音的排版</span></h4>
-      
+
       <section id="h-positioning_zhuyin_symbols">
-        <h5><span data-lang="en">Positioning of Zhuyin Symbols</span> 
-        <span data-lang="zh-hans" class="checkme">注音符号的位置</span> 
+        <h5><span data-lang="en">Positioning of Zhuyin Symbols</span>
+        <span data-lang="zh-hans" class="checkme">注音符号的位置</span>
         <span data-lang="zh-hant">注音符號的位置</span></h5>
         <p data-lang="en"> According to the <cite>Handbook of Mandarin Phonetic Symbols</cite> (<span lang="zh-hant">國語注音符號手冊</span>) released by the Ministry of Education in Taiwan, there are two standard ways of positioning Zhuyin: above the corresponding Han character (horizontal Zhuyin), or on the right side of the corresponding Han character (vertical Zhuyin). The use cases for putting Zhuyin above the base characters are rarely found in today's textbooks or other publications, and it is rarely used by the public at large. Therefore, it's always better practice to place Zhuyin annotations on the right side of their corresponding Han character, whether in horizontal or vertical writing mode.</p>
         <p data-lang="zh-hans" class="checkme">根据台湾教育部制订的《国语注音符号手册》，将注音符号标注在汉字上方（横式注音）及右方（直式注音）的两种排版格式都属于官方标准，但在现今的教科书或其他印刷品中，将注音标注在汉字上方的格式非常罕见，一般大众也不易接受，因此，无论在直排或横排中，将注音符号标注在汉字右方都是较佳的作法。</p>
@@ -1779,11 +1779,11 @@
 
 
       <section id="h-choice_of_size_and_ratio_for_zhuyin">
-        <h5><span data-lang="en">Choice of Size and Ratio for Zhuyin Symbols</span> 
-        <span data-lang="zh-hans" class="checkme">注音符号的比例与大小</span> 
+        <h5><span data-lang="en">Choice of Size and Ratio for Zhuyin Symbols</span>
+        <span data-lang="zh-hans" class="checkme">注音符号的比例与大小</span>
         <span data-lang="zh-hant">注音符號的比例與大小</span></h5>
         <figure id="zhuyin-ratio"> <img width="400" alt="注音符號行間注下，基字與注文的比例" src="images/zh/zhuyin-rt.svg">
-          <figcaption><span data-lang="en">The ratios of base characters and their Zhuyin annotations.</span> <span data-lang="zh-hans" class="translateme">注音符號行間注下，基字與注文的比例。</span> <span data-lang="zh-hant">注音符號行間注下，基字與注文的比例。</span></figcaption>
+          <figcaption><span data-lang="en">The ratios of base characters and their Zhuyin annotations.</span> <span data-lang="zh-hans">注音符号行间注下，基字与注文的比例。</span> <span data-lang="zh-hant">注音符號行間注下，基字與注文的比例。</span></figcaption>
         </figure>
         <ol>
           <li>
@@ -1831,8 +1831,8 @@
 
 
       <section id="h-positioning_tones_in_zhuyin">
-        <h5><span data-lang="en">Positioning of the Tones in Zhuyin Symbols</span> 
-        <span data-lang="zh-hans" class="checkme">注音符号的声调号位置</span> 
+        <h5><span data-lang="en">Positioning of the Tones in Zhuyin Symbols</span>
+        <span data-lang="zh-hans" class="checkme">注音符号的声调号位置</span>
         <span data-lang="zh-hant">注音符號的聲調號位置</span></h5>
         <ol>
           <li>
@@ -1840,7 +1840,7 @@
             <p data-lang="zh-hans" class="checkme">平上去等调号标注在字音最后一个符号右上角。直式注音向上回返半个符号空间；横式注音向右突出半个符号空间。如<a href="zhuyin-regular-tone"></a>所示。</p>
             <p data-lang="zh-hant">平上去等調號標注於字音最後一個符號外側右上方。直式注音向上回返半個符號空間；橫式注音向右突出半個符號空間。</p>
             <figure id="zhuyin-regular-tone"> <img width="300" alt="一個注音符號及其調號（平上去聲）的排版" src="images/zh/zhuyin-1-0-1-one-symbol.svg"> <img width="300" alt="二個注音符號及其調號（平上去聲）的排版" src="images/zh/zhuyin-2-0-1-two-symbol.svg"> <img width="300" alt="三個注音符號及其調號（平上去聲）的排版" src="images/zh/zhuyin-3-0-1-three-symbol.svg">
-              <figcaption><span data-lang="en">The positioning for Zhuyin in Mandarin non-neutral tones and dialectal non-checked tones.</span> <span data-lang="zh-hans" class="translateme">各種注音符號組合及其調號（平上去聲）的排版。</span> <span data-lang="zh-hant">各種注音符號組合及其調號（平上去聲）的排版。</span></figcaption>
+              <figcaption><span data-lang="en">The positioning for Zhuyin in Mandarin non-neutral tones and dialectal non-checked tones.</span> <span data-lang="zh-hans">各种注音符号组合及其调号（平上去声）的排版。</span> <span data-lang="zh-hant">各種注音符號組合及其調號（平上去聲）的排版。</span></figcaption>
             </figure>
           </li>
           <li>
@@ -1848,7 +1848,7 @@
             <p data-lang="zh-hans" class="checkme">入声调号标注在字音整体外侧右下方，如<a href="zhuyin-checked-tone"></a>所示。</p>
             <p data-lang="zh-hant">入聲調號標注於字音整體外側右下方。</p>
             <figure id="zhuyin-checked-tone"> <img width="300" alt="一個注音符號及其調號（入聲）的排版" src="images/zh/zhuyin-1-0-2-one-symbol-checked-tone.svg"> <img width="300" alt="二個注音符號及其調號（入聲）的排版" src="images/zh/zhuyin-2-0-2-two-symbol-checked-tone.svg"> <img width="300" alt="三個注音符號及其調號（入聲）的排版" src="images/zh/zhuyin-3-0-2-three-symbol-checked-tone.svg">
-              <figcaption><span data-lang="en">The positioning for Zhuyin in dialectal checked tones.</span> <span data-lang="zh-hans" class="translateme">各種注音符號組合及其調號（入聲）的排版。</span> <span data-lang="zh-hant">各種注音符號組合及其調號（入聲）的排版。</span></figcaption>
+              <figcaption><span data-lang="en">The positioning for Zhuyin in dialectal checked tones.</span> <span data-lang="zh-hans">各种注音符号组合及其调号（入声）的排版。</span> <span data-lang="zh-hant">各種注音符號組合及其調號（入聲）的排版。</span></figcaption>
             </figure>
           </li>
           <li>
@@ -1856,7 +1856,7 @@
             <p data-lang="zh-hans" class="checkme">轻声调号标在字音前方。直排注音的轻声符宽度不变,高度为基字的10%；横排注音的轻声符的高度不变，宽度为基字的10%。如<a href="zhuyin-neutral-tone"></a>所示。</p>
             <p data-lang="zh-hant">輕聲調號標於字音前方。直排注音的輕聲符寬度不變，高度為基字的10%；橫排注音的輕聲符的高度不變，寬度為基字的10%。</p>
             <figure id="zhuyin-neutral-tone"> <img width="300" alt="一個注音符號及其調號（輕聲）的排版" src="images/zh/zhuyin-1-0-3-one-symbol-neutral-tone.svg"> <img width="300" alt="二個注音符號及其調號（輕聲）的排版" src="images/zh/zhuyin-2-0-3-two-symbol-neutral-tone.svg"> <img width="300" alt="三個注音符號及其調號（輕聲）的排版" src="images/zh/zhuyin-3-0-3-three-symbol-neutral-tone.svg">
-              <figcaption><span data-lang="en">The positioning for Zhuyin in Mandarin neutral tones.</span> <span data-lang="zh-hans" class="translateme">各種注音符號組合及其調號（輕聲）的排版。</span> <span data-lang="zh-hant">各種注音符號組合及其調號（輕聲）的排版。</span></figcaption>
+              <figcaption><span data-lang="en">The positioning for Zhuyin in Mandarin neutral tones.</span> <span data-lang="zh-hans">各种注音符号组合及其調号（轻声）的排版。</span> <span data-lang="zh-hant">各種注音符號組合及其調號（輕聲）的排版。</span></figcaption>
             </figure>
             <div class="note">
               <p data-lang="en">In Mandarin Chinese there are syllables that, when part of certain words or sentences, are intentionally read in a shorter and less-emphasized way, therefore losing their original tone. When any syllable is read in this way, we say that it has a neutral tone or “toneless”.</p>
@@ -1868,8 +1868,8 @@
       </section>
 
       <section  id="h-examples_of_zhuyin_annotations">
-        <h5><span data-lang="en">Examples of Zhuyin annotations</span> 
-        <span data-lang="zh-hans" class="translateme">注音标音排版用例</span> 
+        <h5><span data-lang="en">Examples of Zhuyin annotations</span>
+        <span data-lang="zh-hans">注音标音排版用例</span>
         <span data-lang="zh-hant">注音標音排版用例</span></h5>
         <ol>
           <li>
@@ -1915,8 +1915,8 @@
       </section>
 
       <section id="h-line_prohibition_rules_for_zhuyin">
-        <h5><span data-lang="en">Line Prohibition Rules for Zhuyin</span> 
-        <span data-lang="zh-hans" class="checkme">注音标音分离禁则</span> 
+        <h5><span data-lang="en">Line Prohibition Rules for Zhuyin</span>
+        <span data-lang="zh-hans" class="checkme">注音标音分离禁则</span>
         <span data-lang="zh-hant">注音標音分離禁則</span></h5>
         <p data-lang="en">Like the line prohibition rules for punctuation, vertical Zhuyin annotations should stick to their base characters in horizontal writing mode. They must not appear in the line head, and must be placed on the right side of their corresponding Han character.</p>
         <p data-lang="zh-hans" class="checkme">如同标点禁则，直式注音在横排文本中应注意其紧随汉字的原则，注音标音不得单独出现在行首，而需永远紧随其标注的汉字右侧。</p>
@@ -1928,13 +1928,13 @@
 
 
     <section id="positioning_of_romanization">
-      <h4><span data-lang="en">Positioning of Romanized Interlinear Annotations</span> 
-      <span data-lang="zh-hans" class="checkme">罗马拼音标音的排版</span> 
+      <h4><span data-lang="en">Positioning of Romanized Interlinear Annotations</span>
+      <span data-lang="zh-hans" class="checkme">罗马拼音标音的排版</span>
       <span data-lang="zh-hant">羅馬拼音標音的排版</span></h4>
-      
+
       <section id="h-basic-requirements">
-        <h5><span data-lang="en">Basic Requirements</span> 
-        <span data-lang="zh-hans" class="checkme">基本规则</span> 
+        <h5><span data-lang="en">Basic Requirements</span>
+        <span data-lang="zh-hans" class="checkme">基本规则</span>
         <span data-lang="zh-hant">基本规则</span></h5>
         <ol>
           <li>
@@ -1990,8 +1990,8 @@
 
 
       <section id="h-characters_as_basic_units_for_annotating_pronunciation">
-        <h5><span data-lang="en">Characters as the Basic Units for Annotating Pronunciation</span> 
-        <span data-lang="zh-hans" class="checkme">单字标音</span> 
+        <h5><span data-lang="en">Characters as the Basic Units for Annotating Pronunciation</span>
+        <span data-lang="zh-hans" class="checkme">单字标音</span>
         <span data-lang="zh-hant">单字标音</span></h5>
         <ol>
           <li>
@@ -2019,8 +2019,8 @@
 
 
       <section id="h-words_as_basic_units_for_annotating_pronunciation">
-        <h5><span data-lang="en">Words as the Basic Units for Annotating Pronunciation</span> 
-        <span data-lang="zh-hans" class="checkme">分词连写标音</span> 
+        <h5><span data-lang="en">Words as the Basic Units for Annotating Pronunciation</span>
+        <span data-lang="zh-hans" class="checkme">分词连写标音</span>
         <span data-lang="zh-hant">分词连写标音</span></h5>
         <ol>
           <li>
@@ -2051,32 +2051,32 @@
 
 
     <section id="atypical_cases_for_chinese_phonetic_annotations">
-      <h4><span data-lang="en">Atypical Cases for Han character Phonetic Annotations</span> 
-      <span data-lang="zh-hans" class="checkme">汉字标音的非典型情况</span> 
+      <h4><span data-lang="en">Atypical Cases for Han character Phonetic Annotations</span>
+      <span data-lang="zh-hans" class="checkme">汉字标音的非典型情况</span>
       <span data-lang="zh-hant">漢字標音的非典型情況</span></h4>
-      
+
       <section id="h-erhuayin">
-        <h5><span data-lang="en">Erhuayin</span> 
-        <span data-lang="zh-hans" class="checkme">儿化音</span> 
+        <h5><span data-lang="en">Erhuayin</span>
+        <span data-lang="zh-hans" class="checkme">儿化音</span>
         <span data-lang="zh-hant">兒化音</span></h5>
         <p data-lang="en"> Erhuayin, also known as rhotacization of syllable finals, is a special phonetic phenomenon in Modern Standard Chinese (Mandarin). Due to the limitations of annotating single Han character, the Zhuyin annotations fail to indicate the continuity of Erhuayin and the change of the final sound, while Romanization shows the features of Erhuayin effectively.</p>
         <p data-lang="zh-hans" class="checkme">对现代标准汉语的特殊语音现象——儿化，注音符号受制于其标注单个汉字的局限，难以准确表达儿化音节的连续性及韵母变音，需要在正文或附注中额外说明；罗马拼音则可有效标注此现象。</p>
         <p data-lang="zh-hant">對現代標準漢語的特殊語音現象——兒化，注音符號受制於其標注單個漢字的局限，難以準確表達兒化音節的連續性及韻母變音，需要在正文或附注中額外說明；羅馬拼音則可有效標注此現象。</p>
         <figure id="phonetic-annotation-erhua"> <img width="300" alt="兒化音的排版示例" src="images/zh/biaoyin-erhua.svg">
-          <figcaption><span data-lang="en">An example of positioning for Zhuyin in Mandarin rhotacization of syllable finals.</span> <span data-lang="zh-hans" class="translateme">兒化音的排版示例。</span> <span data-lang="zh-hant">兒化音的排版示例。</span></figcaption>
+          <figcaption><span data-lang="en">An example of positioning for Zhuyin in Mandarin rhotacization of syllable finals.</span> <span data-lang="zh-hans" class="translateme">儿化音的排版示例。</span> <span data-lang="zh-hant">兒化音的排版示例。</span></figcaption>
         </figure>
       </section>
 
 
       <section id="h-ligatures">
-        <h5><span data-lang="en">Ligatures</span> 
-        <span data-lang="zh-hans" class="checkme">合文</span> 
+        <h5><span data-lang="en">Ligatures</span>
+        <span data-lang="zh-hans" class="checkme">合文</span>
         <span data-lang="zh-hant">合文</span></h5>
         <p data-lang="en">Ligatures are special for their multisyllabic nature, thus its interlinear annotation may be typeset incorrectly. The pronunciation of ligatures should be bracketed inline or given in notes instead. Ligatures are rare in the modern Chinese writing system.</p>
         <p data-lang="zh-hans" class="checkme">由于合文多音节的特殊性，使用行间注的方式标音可能导致文本排版效果不佳，应改在附注、括号内或在正文中说明其读音。目前，合文已少见于现代中文书写系统。</p>
         <p data-lang="zh-hant">由於合文「多音節」的特殊性，使用行間注的方式標音可能導致文本排版效果不佳，應改在附注、括號內或於正文中說明其讀音。目前合文已少見於現代中文書寫系統。</p>
         <figure id="phonetic-annotation-inline"> <img height="300" alt="注音符號位行間時的排版示例（直排）" src="images/zh/zhuyin-inline-vertical.svg"> <img width="300" alt="注音符號位行間時的排版示例（橫排）" src="images/zh/zhuyin-inline-horizontal.svg">
-          <figcaption><span data-lang="en">An example of positioning Zhuyin inline, suitable for circumstances such as ligatures.</span> <span data-lang="zh-hans" class="translateme">注音符號位行間時的排版示例，適用於合文等情況。</span> <span data-lang="zh-hant">注音符號位行間時的排版示例，適用於合文等情況。</span></figcaption>
+          <figcaption><span data-lang="en">An example of positioning Zhuyin inline, suitable for circumstances such as ligatures.</span> <span data-lang="zh-hans">注音符号位行间时的排版示例，适用于合文等情況。</span> <span data-lang="zh-hant">注音符號位行間時的排版示例，適用於合文等情況。</span></figcaption>
         </figure>
       </section>
 
@@ -2085,16 +2085,16 @@
 
 
     <section id="positioning_of_bilingual_annotations">
-      <h4><span data-lang="en">Positioning of Bilingual Annotations</span> 
-      <span data-lang="zh-hans" class="checkme">中外文对照的排版</span> 
+      <h4><span data-lang="en">Positioning of Bilingual Annotations</span>
+      <span data-lang="zh-hans" class="checkme">中外文对照的排版</span>
       <span data-lang="zh-hant">中外文對照的排版</span></h4>
       <p data-lang="en">Typesetting of bilingual annotations is actually quite similar to that of Romanization. Annotations are usually placed to the right of the base text in vertical writing mode, or above the base text in horizontal writing mode.</p>
       <p data-lang="zh-hans" class="checkme">中外文对照的排版方式与罗马拼音标音类似，多位于受注文本片段顶端——直排时在基文右侧，横排时在基文上方。</p>
       <p data-lang="zh-hant">中外文對照的排版方式與羅馬拼音標音類似，多位於受注文本片段頂端——直排時位基文右側，橫排時位基文上方。</p>
-      
+
       <section id="h-word_alignment">
-        <h5><span data-lang="en">Word Alignment</span> 
-        <span data-lang="zh-hans" class="checkme">词的对齐</span> 
+        <h5><span data-lang="en">Word Alignment</span>
+        <span data-lang="zh-hans" class="checkme">词的对齐</span>
         <span data-lang="zh-hant">詞的對齊</span></h5>
         <p data-lang="en"> In order to maintain the integrity of annotations, when the lengths of annotations and their base text are different it is  necessary to adjust the alignment between them to avoid  misunderstandings.</p>
         <p data-lang="zh-hans" class="checkme">为了保证词汇的整体性，在注文总长与其基文的长度不一时，需要调整相互间的对齐关系，以求体例清晰并避免误会。</p>
@@ -2118,8 +2118,8 @@
 
 
     <section id="positioning_of_interlinear_comments">
-      <h4><span data-lang="en">Positioning of Interlinear Comments</span> 
-      <span data-lang="zh-hans" class="checkme">行间批语的排版</span> 
+      <h4><span data-lang="en">Positioning of Interlinear Comments</span>
+      <span data-lang="zh-hans" class="checkme">行间批语的排版</span>
       <span data-lang="zh-hant">行間批語的排版</span></h4>
       <p data-lang="en">Interlinear comments can have very varied layouts and lengths. They are usually placed at the foot side of the annotated text — to the left side of the base text in vertical writing mode or  below the base text in horizontal writing mode. Sometimes the interlinear comments are in other colors to help the reader tell the difference from the body text.</p>
       <p data-lang="zh-hans" class="checkme">行间批语的格式多变且内容长度不一，通常位于受注的文本片段底端——直排时位基文左侧，横排时位基文下方。为与正文区隔，有时以不同于正文文字的颜色来显示。</p>
@@ -2134,15 +2134,15 @@
 
 
   <!-- end of 3.3 Ruby  -->
-  
+
   <section id="paragraph_adjustment_rules">
-    <h3><span data-lang="en">Paragraph Adjustment Rules</span> 
-    <span data-lang="zh-hans" class="checkme">段落调整</span> 
+    <h3><span data-lang="en">Paragraph Adjustment Rules</span>
+    <span data-lang="zh-hans" class="checkme">段落调整</span>
     <span data-lang="zh-hant">段落調整</span></h3>
-    
+
     <section id="line_head_indent_at_the_beginning_of_paragraphs">
-      <h4><span data-lang="en">Line Head Indent at the Beginning of Paragraphs</span> 
-      <span data-lang="zh-hans" class="checkme">段首缩排</span> 
+      <h4><span data-lang="en">Line Head Indent at the Beginning of Paragraphs</span>
+      <span data-lang="zh-hans" class="checkme">段首缩排</span>
       <span data-lang="zh-hant">段首縮排</span></h4>
       <p data-lang="en">A paragraph, a section of a document which consists of one or more sentences to indicate a distinct idea, usually begins on a new line. For the related line head indent at the beginning of paragraphs, the following methods are available. </p>
       <p data-lang="zh-hans" class="checkme">为使不同的文本形成意义上的区隔、构成段落，呈现上，会使用断行以标示一个段落的起始，同时也会在段落首行加上空白进行缩排，原则上以文本的汉字大小作为缩排单位，主要呈现方法如下。</p>
@@ -2187,8 +2187,8 @@
 
 
     <section id="line_head_indent_of_paragraphs">
-      <h4><span data-lang="en">Paragraph Indent</span> 
-      <span data-lang="zh-hans" class="checkme">段落缩排</span> 
+      <h4><span data-lang="en">Paragraph Indent</span>
+      <span data-lang="zh-hans" class="checkme">段落缩排</span>
       <span data-lang="zh-hant">段落縮排</span></h4>
       <p data-lang="en">The paragraph indent is the indentation of the line head by a fixed amount, starting from the line head side of the type area (in the case of one column) or of the column area (in the case of several columns).This method is usually applied for quotations, poetry or subtitles in a paragraph or between the paragraphs. </p>
       <p data-lang="zh-hans" class="checkme">段落缩排是指将版心（单栏排版时）以及栏的范围（多栏排版时）由行头侧以指定的量，将文字开始位置向后移动的处理。此种缩排方式多应用于段落内或段落间引用文章、诗词及标题等。</p>
@@ -2202,8 +2202,8 @@
 
 
     <section id="ways_of_alignments">
-      <h4><span data-lang="en">Line Alignment Processing</span> 
-      <span data-lang="zh-hans" class="checkme">对齐处理</span> 
+      <h4><span data-lang="en">Line Alignment Processing</span>
+      <span data-lang="zh-hans" class="checkme">对齐处理</span>
       <span data-lang="zh-hant">對齊處理</span></h4>
       <p data-lang="en">Line alignment method is a process for setting the alignment of each line of text so that the actual position of the text can be matched with their preset position. The following methods are available. </p>
       <p data-lang="zh-hans" class="checkme">对齐系指使段落间各行文字实际配置位置能够与默认的文字配置位置符合。有着以下作法：</p>
@@ -2261,8 +2261,8 @@
 
 
     <section id="adjustments_of_orphans_and_widows">
-      <h4><span data-lang="en">Handling of Widows and Orphans</span> 
-      <span data-lang="zh-hans" class="checkme">孤行与孤字处理</span> 
+      <h4><span data-lang="en">Handling of Widows and Orphans</span>
+      <span data-lang="zh-hans" class="checkme">孤行与孤字处理</span>
       <span data-lang="zh-hant">孤行與孤字處理</span></h4>
       <p data-lang="en">In the tradition of Chinese composition, an orphan does not make a line, nor does a widow make a page. The principles are as described below. </p>
       <p data-lang="zh-hans" class="checkme">中文排版传统上有着“孤字不成行、孤行不成页”的规则。实际原则如下：</p>
@@ -2373,18 +2373,18 @@
 <!-- end of Line Composition -->
 
 <section id="positioning_of_headings_notes_illustrations_and_tables">
-  <h2><span data-lang="en">Positioning of Headings, Notes, Illustrations, Tables and Expressions</span> 
-  <span data-lang="zh-hans" class="checkme">标题、注释与图片、表格的排版处理</span> 
+  <h2><span data-lang="en">Positioning of Headings, Notes, Illustrations, Tables and Expressions</span>
+  <span data-lang="zh-hans" class="checkme">标题、注释与图片、表格的排版处理</span>
   <span data-lang="zh-hant">標題、注釋與圖片、表格的排版處理</span></h2>
-  
+
   <section id="handling_of_headings">
-    <h3><span data-lang="en">Headings &amp; Page Breaks</span> 
-    <span data-lang="zh-hans" class="checkme">标题处理（包含换页处理）</span> 
+    <h3><span data-lang="en">Headings &amp; Page Breaks</span>
+    <span data-lang="zh-hans" class="checkme">标题处理（包含换页处理）</span>
     <span data-lang="zh-hant">標題處理（包含換頁處理）</span></h3>
-    
+
     <section id="types_of_headings">
-      <h4><span data-lang="en">Types of Headings</span> 
-      <span data-lang="zh-hans" class="checkme">标题的种类</span> 
+      <h4><span data-lang="en">Types of Headings</span>
+      <span data-lang="zh-hans" class="checkme">标题的种类</span>
       <span data-lang="zh-hant">標題的種類</span></h4>
       <p data-lang="en">In terms of text composition, there are three types of headings.</p>
       <p data-lang="zh-hans" class="checkme">标题依照排版处理方式,可分为三种：</p>
@@ -2444,8 +2444,8 @@
 
 
     <section id="styling_of_headings">
-      <h4><span data-lang="en">Font Selection and Heading Font Size</span> 
-      <span data-lang="zh-hans" class="checkme">使标题得以突显的方式</span> 
+      <h4><span data-lang="en">Font Selection and Heading Font Size</span>
+      <span data-lang="zh-hans" class="checkme">使标题得以突显的方式</span>
       <span data-lang="zh-hant">使標題得以突顯的方式</span></h4>
       <p data-lang="en">Since they aim to indicate the structural level, most of the time headings have some special way to indicate their level. Here are some rules for the headings:</p>
       <p data-lang="zh-hans" class="checkme">标题主要是为了呈现阶层结构，所以需要以特别的表现体裁来显示其阶层。标题的表现体裁包含以下几种方式：</p>
@@ -2496,8 +2496,8 @@
 
 
     <section id="handling_of_new_retros">
-      <h4><span data-lang="en">How to Handle Headings with New Recto and Page Break</span> 
-      <span data-lang="zh-hans" class="checkme">单页起、换页处理</span> 
+      <h4><span data-lang="en">How to Handle Headings with New Recto and Page Break</span>
+      <span data-lang="zh-hans" class="checkme">单页起、换页处理</span>
       <span data-lang="zh-hant">單頁起、換頁處理</span></h4>
       <p data-lang="en">A large heading sometimes starts with a new page following a page break, to clarify the separation between sections, in which case the process below should be followed:</p>
       <p data-lang="zh-hans" class="checkme">标题为了做出明确区分，而会使用在新页面开始的方法，此时按照以下原则处理。</p>
@@ -2528,8 +2528,8 @@
 
 
     <section id="handling_of_spaces_before_new_rectos">
-      <h4><span data-lang="en">Handling of Spaces just before the New Recto, Page Breaks and New Edges</span> 
-      <span data-lang="zh-hans" class="checkme">单页起、换页处理时,前一页的处理</span> 
+      <h4><span data-lang="en">Handling of Spaces just before the New Recto, Page Breaks and New Edges</span>
+      <span data-lang="zh-hans" class="checkme">单页起、换页处理时,前一页的处理</span>
       <span data-lang="zh-hant">單頁起、換頁處理時，前一頁的處理</span></h4>
       <p data-lang="en">Spaces just before new rectos, page breaks and new columns are treated as follows (the last pages are treated as the same): </p>
       <p data-lang="zh-hans" class="checkme">单页起、换页处理时，前一页的排版处理会是问题(最终页的处理亦同)，按照以下原则处理：</p>
@@ -2561,8 +2561,8 @@
 
 
     <section id="processing_of_runin_headings">
-      <h4><span data-lang="en">Processing of Run-in Headings</span> 
-      <span data-lang="zh-hans" class="checkme">同行标题的处理方式</span> 
+      <h4><span data-lang="en">Processing of Run-in Headings</span>
+      <span data-lang="zh-hans" class="checkme">同行标题的处理方式</span>
       <span data-lang="zh-hant">同行標題的處理方式</span></h4>
       <p data-lang="en">Run-in headings are usually used for low level headings. The following are some examples of run-in headings. Inter-character space between the run-in heading and following main text is usually a one character space of the base character size decided for the type area. Note that the run-in heading may be set at the last line of the page, or of the column in multi column style.</p>
       <p data-lang="zh-hans" class="checkme">同行标题主要用于小标，以下介绍几个同行标题的配置范例。同行标题与之后接续内文的空白量，一般为版心设定文字尺寸的全角空白。此外，同行标题可以配置于页末。</p>
@@ -2599,8 +2599,8 @@
 
 
 <section class="appendix" id="tables_of_chinese_punctuation_marks">
-  <h2><span data-lang="en">Punctuation marks in Chinese</span> 
-  <span data-lang="zh-hans" class="checkme">中文标点符号表</span> 
+  <h2><span data-lang="en">Punctuation marks in Chinese</span>
+  <span data-lang="zh-hans" class="checkme">中文标点符号表</span>
   <span data-lang="zh-hant">中文標點符號表</span></h2>
   <table class="punctuation" data-lang="en">
     <thead>
@@ -4038,13 +4038,13 @@
 
 
 <section class="appendix" id="glossary">
-  <h2><span data-lang="en">Glossary</span> <span data-lang="zh-hans" class="translateme">詞彙表</span> <span data-lang="zh-hant">詞彙表</span></h2>
+  <h2><span data-lang="en">Glossary</span> <span data-lang="zh-hans">词汇表</span> <span data-lang="zh-hant">詞彙表</span></h2>
   <table class="glossary">
     <thead>
       <tr>
-        <td><span data-lang="en">Term</span> <span data-lang="zh-hans" class="translateme">詞彙</span> <span data-lang="zh-hant">詞彙</span></td>
-        <td><span data-lang="en">Pinyin</span> <span data-lang="zh-hans" class="translateme">漢語拼音</span> <span data-lang="zh-hant">漢語拼音</span></td>
-        <td><span data-lang="en">English</span> <span data-lang="zh-hans" class="translateme">英語</span> <span data-lang="zh-hant">英語</span></td>
+        <td><span data-lang="en">Term</span> <span data-lang="zh-hans">词汇</span> <span data-lang="zh-hant">詞彙</span></td>
+        <td><span data-lang="en">Pinyin</span> <span data-lang="zh-hans">汉语拼音</span> <span data-lang="zh-hant">漢語拼音</span></td>
+        <td><span data-lang="en">English</span> <span data-lang="zh-hans">英语</span> <span data-lang="zh-hant">英語</span></td>
       </tr>
     </thead>
     <tbody>
@@ -4589,8 +4589,8 @@
 
 
 <section class="appendix" id="references">
-  <h2><span data-lang="en">References</span> 
-  <span data-lang="zh-hans">参考文献</span> 
+  <h2><span data-lang="en">References</span>
+  <span data-lang="zh-hans">参考文献</span>
   <span data-lang="zh-hant">參考文獻</span></h2>
   <ul class="references">
     <li>《重訂標點符號手冊》（2008年修訂版）— The Revised Handbook of Punctuation (2008 edition)</li>
@@ -4621,8 +4621,8 @@
 
 
 <section class="appendix" id="acknowledgement">
-  <h2><span data-lang="en">Acknowledgements</span> 
-  <span data-lang="zh-hans" class="checkme">致谢</span> 
+  <h2><span data-lang="en">Acknowledgements</span>
+  <span data-lang="zh-hans" class="checkme">致谢</span>
   <span data-lang="zh-hant">致谢</span></h2>
   <p data-lang="en">Special thanks  to the following people who contributed to this document (Contributors' names listed in in alphabetic order). </p>
   <p data-lang="zh-hans">感谢以下参与者对本文档的建议与补充（依字母及拼音顺序排列）：</p>

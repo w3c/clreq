@@ -1,16 +1,16 @@
 # Requirements for Chinese Text Layout | 中文排版需求
 
-###Documents
+### Documents
 - [Editor's copy](https://w3c.github.io/clreq/)
 - [WD](https://www.w3.org/TR/clreq/)
 
-###Feedback
+### Feedback
 Please use the [GitHub issue list](https://github.com/w3c/clreq/issues) to send feedback about this document.
 
-###Following
+### Following
 To follow the work, you can 'Watch' this repository using the control above, or subscribe to the [public-i18n-cjk](https://lists.w3.org/Archives/Public/public-i18n-cjk/) mailing list, which is notified once a day about changes to the repo. The [www-international](https://lists.w3.org/Archives/Public/www-international/) list is also notified daily. (Please use github issues rather than the mailing list to send feedback.) Meeting minutes are sent to public-i18n-cjk.
 
-###Contributing
+### Contributing
 
 All contributors should read and agree with [CONTRIBUTING.md](https://github.com/w3c/clreq/blob/gh-pages/CONTRIBUTING.md).
 
@@ -23,6 +23,6 @@ Editors should be familiar with and use the following:
 - [Github guidelines for working with i18n documents](http://w3c.github.io/i18n-activity/guidelines/github)
 - [Editorial guidelines for working with i18n documents](http://w3c.github.io/i18n-activity/guidelines/editing)
 
-###Links
+### Links
 - Task Force Home Page [English](https://www.w3.org/International/groups/chinese-layout/) | [简体汉语](https://www.w3.org/International/groups/chinese-layout/Overview.zh-hans)
 - [Charter](https://www.w3.org/International/groups/chinese-layout/charter.html)

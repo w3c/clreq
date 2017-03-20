@@ -1,4 +1,4 @@
-##Contributions
+## Contributions
 
 Contributions to this repository are intended to become part of the Internationalization Interest Group and Internationalization Working Group documents governed by the [Software and Document License](http://www.w3.org/Consortium/Legal/copyright-software). By committing here, you agree to that licensing of your contributions.
 
@@ -20,7 +20,7 @@ If you are making a pull request on behalf of someone else but you had no part i
 
 
 
-##Copyright
+## Copyright
 
 Copyright is a very important part of standardization activities. It allows the standards development organization to maintain vendor neutral control over a specification, and thus protect the consensus found within a Working Group.
 
@@ -31,7 +31,7 @@ Task Force Participants grant to the W3C a perpetual, nonexclusive, royalty-free
 Nothing in this agreement restricts the Task Force Participant from using their individual contributions as they wish, even if those have later been amalgamated into joint works. Where W3C releases materials under a permissive license such as the W3C Software License or CC-BY, nothing in this agreement should be read to restrict the Task Force Participant from exercising the permissions granted by that license. The Task Force Participant represents that they are legally entitled to grant the above license. If their employer(s) have rights to intellectual property that the Task Force Participant creates that includes the contributions, they represent that they have received permission to make contributions on behalf of that employer or that the employer has waived such rights for the contributions to W3C.
 
 
-##Decency
+## Decency
 
 The Task Force Participant will participate in the W3C Group in a decent way. Task Force Participants will refrain from defaming, harassing or otherwise offending other participants. The [Section 3.1 of the Process Document](https://www.w3.org/2015/Process-20150901/#ParticipationCriteria) applies, as does the W3C [Code of Ethics and Professional Conduct](https://www.w3.org/Consortium/cepc/).
 

@@ -25,7 +25,7 @@
 分隔號,分隔号,fēngéhào,solidus,見標點符號附錄。
 分號,分号,fēnhào,semicolon,見標點符號附錄。
 分字連寫,分字连写,fēnzì liánxiě,characters as the base units,以字為單位拼寫羅馬拼音的方式。
-符號分離禁則,符号分离禁则,fúhào fēnlí jìnzé,prohibition rules for unbreakable characters,特定的文字組合或者和符號里不得加入空隙的原則。
+符號分離禁則,符号分离禁则,fúhào fēnlí jìnzé,prohibition rules for unbreakable punctuation,特定的符號里不得加入空隙的原則。
 括號,括号,guāhào,parenthesis,見標點符號附錄。
 括注符號,括注符号,guāzhù fúhào,brackets,為提示或突顯將文本括注起來的一類成對符號的總稱。
 孤行,孤行,gūháng,widow,頁面中首行為前頁最後一個段落的末行者為孤行。
@@ -48,8 +48,6 @@
 驚嘆號,惊叹号,jīngtànhào,exclamation marks,見標點符號附錄。
 基文,基文,jīwén,base text,行間注排版中，受標注的原文字詞或語句。
 句號,句号,jùhào,period,見標點符號附錄。
-句末點號,句末点号,jùmò diǎnhào,post-sentence pause punctuation marks,句號、問號、驚嘆號等點號。
-句中點號,句中点号,jùzhōng diǎnhào,inter-sentence pause punctuation marks,逗號、頓號、分號、冒號等點號。
 開始括注符號,开始括注符号,kāishǐ guāzhù fúhào,opening bracket(s),成對的引號、括號（夾注號）、書名號中，標注起始的字元。
 楷體,楷体,kǎitǐ,Kai,漢字的一種手寫的風格，以及以此風格製作出的一種傳統漢字印刷字體風格。
 拉丁字母,拉丁字母,lādīng zìmǔ,Latin letters,西文常用的字母。
@@ -77,7 +75,7 @@
 問號,问号,wènhào,question mark,見標點符號附錄。
 文字設計／字體排印,文字设计/字体排印,wénzìshèjì/zìtǐpáiyìn,typography,對文字進行合適地排版讓書面語言易認、易讀、有吸引力地展現出來的一種工藝。
 希臘字母,希腊字母,xīlà zìmǔ,Greek letters,希臘語文所用的字母。
-西文,西文,xīwén,Western languages,歐洲的語言文字。
+西文,西文,Xīwén,Western scripts,歐洲的語言文字。
 西文字母,西文字母,xīwén zìmǔ,Western alphabet,歐洲的語言文字所使用的字母系統，常見有拉丁字母、希臘字母等。
 以連字符斷行,以连字符断行,yǐ liánzìfú duànháng,hyphenation,在西文詞組音節間插入連字符來斷行的方式。
 引號,引号,yǐnhào,quotation,見標點符號附錄。
@@ -86,7 +84,7 @@
 直角引號,直角引号,zhíjiǎo yǐnhào,corner quotation mark,見標點符號附錄。
 直排／豎排,直排/竖排,zhípái (shùpái),vertical writing mode,文字由上至下、各行由右至左排列的排版方式。
 中外文對照,中外文对照,Zhōng-wàiwén duìzhào,bilingual annotations,以注文或基文的形式為漢語詞組標注原文或譯文，係行間注排版的一種實作方式。
-中、西文混排處理,中、西文混排处理,Zhōng-xīwén hùnpái chùlǐ,Chinese and Western mixed text composition,在一個排版環境中同時混用中文及西文。
+中、西文混排處理,中、西文混排处理,Zhōng-Xīwén hùnpái chùlǐ,Chinese and Western mixed text composition,在一個排版環境中同時混用中文及西文。
 專名號,专名号,zhuānmínghào,proper name mark,見標點符號附錄。
 著重號,着重号,zhuózhònghào,emphasis dot,見標點符號附錄。
 注文,注文,zhùwén,annotation text,行間注排版中，標注於行間（原文字詞或語句旁側）以標注發音或釋義的文字。

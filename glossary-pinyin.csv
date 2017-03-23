@@ -1,49 +1,48 @@
 詞彙（繁）,词汇（简）,漢語拼音,英語,定義
 阿拉伯數字,阿拉伯数字,Ālābó shùzì,European numerals,印度-阿拉伯數字的統稱。 
 版心,版心,bǎnxīn,type area,"印刷成品版面中的图文印刷区域（不含出血图像）(GB 9851.2-2008, 3.3)。"
-半形／半角,半形/半角,bànxíng/bànjiǎo,half-width/en,"排字的度量单位，宽度等于所使用的文字的磅数（point）的一半，用做排版宽度水平方向的度量。(GB 9851.2-2008, 2.31)"
+半形／半角,半形/半角,bànxíng/bànjiǎo,half-width/en,排字的度量单位，宽度等于所用字号的一半。
 標點符號,标点符号,biāodiǎn fúhào,punctuation marks,輔助語言文字記錄的各種符號，用於表示停頓、語氣、詞句的性質。
-標點符號擠壓,标点符号挤压,biāodiǎn fúhào jǐyā,compression rules for consecutive punctuation marks,標點為於行首、行尾或連續存在時，對其富餘空間進行壓縮的排版方式。
+標點符號擠壓,标点符号挤压,biāodiǎn fúhào jǐyā,compression rules for consecutive punctuation marks,对位于行首、行尾或連續存在標點符号的其富餘空間進行調整的排版方式。
 標號,标号,biāohào,indication punctuation marks,有標示詞組或語句之特定性質的標點符號類別，相對於點號。
 標音,标音,biāoyīn,phonetic annotation,為漢字標注發音的方式，主要有行間注等。
-比例字體,比例字体,bǐlì zìti,proportional fonts,分類字體的一項特性，此類字體中，各字元的字幅大小不一。
+比例字體,比例字体,bǐlì zìti,proportional type,西文字體的一种分类，此類字體中各字元的字幅大小不一。
 出血,出血,chūxiě,bleed,"超出成品幅面范围而被裁切掉的图像。(GB 9851.2-2008, 3.8)"
-大五碼,大五码,Dàwǔmǎ,Big 5,"繁體中文常用的漢字字符集標準之一，共收錄13,060個漢字。"
-地／地腳,地/地脚,dì/dìjiǎo,foot/bottom margin,"a) 書或頁面的底部。
-b) 版心下沿至成品幅面下沿之间的空白区域。(GB 9851.2-2008, 3.5)。"
-點,点,diǎn,point (pt),字号的一种计量单位，常用的英美点制下1点约为0.35146mm。
+大五碼,大五码,Dàwǔmǎ,Big 5,"繁體中文常用的漢字編碼字符集標準之一，共收錄13,060個漢字。"
+地／地腳,地/地脚,dì/dìjiǎo,foot/bottom margin,"a) 書或頁面的底部。b) 版心下沿至成品幅面下沿之间的空白区域。(GB 9851.2-2008, 3.5)。"
+點,点,diǎn,point (pt),字号的一种计量单位，常用的英美点制下1点约为0.35146mm，也被音译作“磅（因）”。
 點號,点号,diǎnhào,pause or stop punctuation marks,可表示語句停頓或暫停之性質的標點符號類別，相對於標號。
 底端,底端,dǐduān,foot side,文本或文字靠近版面結尾的一端。通常，文字直排時底端在左，橫排在下。
 頂端,顶端,dǐngduān,head side,文本或文字靠近版面起始的一端。通常，文字直排時頂端在右，橫排在上。
 逗號,逗号,dòuhào,comma,見標點符號附錄。
 段落,段落,duànlùo,paragraph,由語句組成的句群，一個段落由一至多個語句組成。
-對齊方式,对齐方式,duìqí fāngshì,alignment,行間多餘空間的分布方式。
+對齊方式,对齐方式,duìqí fāngshì,alignment,對字、行等各種元素的分布進行整理的方法。
 頓號,顿号,dùnhào,slight-pause comma,見標點符號附錄。
-兒化音,儿化音,érhuàyīn,rhotacization of syllable finals,現代標準漢語中，兒字附著於前字的發音縮合現象。
-仿宋體,仿宋体,fǎngsòngtǐ,Imitation Song (Fangsong),仿製南宋臨安陳起陳宅書籍鋪出版的書籍的字體而來的一種漢字傳統印刷字體風格。
-繁體中文,繁体中文,fántǐ Zhōngwén,Traditional Chinese,字形及筆畫較複雜的漢字體系，因使用時間較長，又名傳統漢字或正體漢字，與之對應者為簡體中文。
+兒化音,儿化音,érhuàyīn,rhotacization of syllable finals,在現代漢語以及一些方音里，一些詞彙的字音的韻母因捲舌動作而發生的音變現象。
+仿宋體,仿宋体,fǎngsòngtǐ,Imitation Song (Fangsong),採用宋體結構、楷體的筆畫特征，形態清秀挺拔的一種漢字傳統印刷字體風格。
+繁體中文,繁体中文,fántǐ Zhōngwén,Traditional Chinese,字形及筆畫相對較複雜的漢字體系。因使用時間較長，又名傳統漢字或正體漢字，與之對應者為簡體中文。
 分詞連寫,分词连写,fēncí liánxiě,words as the base units,以漢語詞為單位拼寫羅馬拼音的方式。
 分隔號,分隔号,fēngéhào,solidus,見標點符號附錄。
 分號,分号,fēnhào,semicolon,見標點符號附錄。
 分字連寫,分字连写,fēnzì liánxiě,characters as the base units,以字為單位拼寫羅馬拼音的方式。
-符號分離禁則,符号分离禁则,fúhào fēnlí jìnzé,prohibition rules for unbreakable characters,占用二個以上漢字空間的標點符號，不得因換行等理由拆分至二行的原則。
+符號分離禁則,符号分离禁则,fúhào fēnlí jìnzé,prohibition rules for unbreakable characters,特定的文字組合或者和符號里不得加入空隙的原則。
 括號,括号,guāhào,parenthesis,見標點符號附錄。
-括注符號,括注符号,guāzhù fúhào,brackets,一類標號的統稱，通常二個一組，分別將文本括注起來，以為提示或突顯。
+括注符號,括注符号,guāzhù fúhào,brackets,為提示或突顯將文本括注起來的一類成對符號的總稱。
 孤行,孤行,gūháng,widow,頁面中首行為前頁最後一個段落的末行者為孤行。
 孤字,孤字,gūzì,orphan,段落末行僅有一個漢字，或一個漢字加上標點符號，該字即為孤字。
-行高,行高,hánggāo,line-height,一行的高度，指基线到基线的距离。
+行高,行高,hánggāo,line-height,一行的高度，西文里通常指基线到基线的距离。
 行間批語,行间批语,hángjiān pīyǔ,interlinear comments,位於行間的批注，形態自由、長度不拘，時可超過一行。
 行間注,行间注,hángjiānzhù,interlinear annotations,標注於行間的說明或文字讀音。
 行首行尾禁則,行首行尾禁则,hángshǒu hángwěi jìnzé,prohibition rules for line start/end,不同的標點依其性質，不得出現於行首或行尾的排版規則。
 行尾點號懸掛,行尾点号悬挂,hángwěi diǎnhào xuánguà,hanging punctuation marks for line end,將行尾的點號懸掛於版心之外的排版之式。
 漢語拼音,汉语拼音,Hànyǔ pīnyīn,Hanyu Pinyin,《汉语拼音方案》给汉字注音和拼写普通话的一种方案，采用拉丁字母，并用附加符号表示声调，是帮助学习汉字和推广普通话的工具。
-漢字,汉字,Hànzì,Chinese characters/Han characters,中文排版的基本文字。
-黑體,黑体,hēitǐ,Heiti,筆畫無粗細變化、且多不包含襯線部分的傳統漢字印刷字體風格之一。
+漢字,汉字,Hànzì,Chinese characters/Han characters,中文的基本文字。
+黑體,黑体,hēitǐ,Heiti,筆畫無明顯粗細變化的一種傳統漢字印刷字體風格。
 橫排,横排,héngpái,horizontal writing mode,文字由左至右、各行由上至下排列的排版方式。
-合文,合文,héwén,ligature,將二字以上的詞組寫作一個漢字書寫單位的形式，如「瓩」「浬」等。
+合文,合文,héwén,ligature,將二字以上的詞組寫作一個漢字書寫單位的形式。
 活字排版,活字排版,huózì páibǎn,letterpress printing,使用可以移動的字塊進行文字排版及印刷的方式。
 間隔號,间隔号,jiàngéhào,interpunct,見標點符號附錄。
-簡體中文,简体中文,jiǎntǐ Zhōngwén,Simplified Chiense,字形及筆畫較簡單的漢字體系，主要指中國大陸於1964年公布後經數次修訂的簡化漢字，與之對應者為繁體中文。
+簡體中文,简体中文,jiǎntǐ Zhōngwén,Simplified Chiense,字形及筆畫相對較簡單的漢字體系，主要指中國大陸於20世紀60年代左右公布修訂的簡化漢字，與之對應者為繁體中文。
 結束括注符號,结束括注符号,jiéshù guāzhù fúhào,closing bracket(s),成對的引號、括號（夾注號）、書名號中，標注結束的字元。
 介音,介音,jièyīn,medial,漢語音節的構成中，位於輔音和主要元音之間的過渡音。
 驚嘆號,惊叹号,jīngtànhào,exclamation marks,見標點符號附錄。
@@ -52,9 +51,9 @@ b) 版心下沿至成品幅面下沿之间的空白区域。(GB 9851.2-2008, 3.5
 句末點號,句末点号,jùmò diǎnhào,post-sentence pause punctuation marks,句號、問號、驚嘆號等點號。
 句中點號,句中点号,jùzhōng diǎnhào,inter-sentence pause punctuation marks,逗號、頓號、分號、冒號等點號。
 開始括注符號,开始括注符号,kāishǐ guāzhù fúhào,opening bracket(s),成對的引號、括號（夾注號）、書名號中，標注起始的字元。
-楷體,楷体,kǎitǐ,Kai,中文排版四大字體之一，書法風格，常作為手寫標準。
-拉丁字母,拉丁字母,lādīng zìmǔ,Latin letters,西文常用的字母系統之一。
-欄,栏,lán,column,分欄排版中的
+楷體,楷体,kǎitǐ,Kai,漢字的一種手寫的風格，以及以此風格製作出的一種傳統漢字印刷字體風格。
+拉丁字母,拉丁字母,lādīng zìmǔ,Latin letters,西文常用的字母。
+欄,栏,lán,column,將連續一系列的文章放在一頁里，按照文字閱讀方向分割成兩個以上的每一個獨立部分。
 欄間距,栏间距,lán jiānjù,column gap,欄與欄之間的間距。
 連接號,连接号,liánjiēhào,dash,見標點符號附錄。
 羅馬拼音,罗马拼音,luómā pīnyīn,Romanization,將漢字依語言將其發音轉寫為拉丁字母的方式。
@@ -62,28 +61,27 @@ b) 版心下沿至成品幅面下沿之间的空白区域。(GB 9851.2-2008, 3.5
 密排,密排,mìpái,seamless arrangement,將文字依其外框緊密排列的排版方式。
 末端,末端,mòduān,end point,文本或文字靠近該行行尾的一端。通常，文字直排時末端在下，橫排在右。
 破折號,破折号,pòzhéhào,long dash,見標點符號附錄。
-輕聲,轻声,qīngshēng,neutral tone,現代標準漢語的特殊變調現象，無固定調値，注音符號中，其表示方式異於四聲聲調。
-齊頭尾對齊,齐头尾对齐,qítóuwěi duìqí,justified alignment,將行間的多餘空間分散至各漢字、標點與西文詞間的對齊方式。
-全形/全角,全角/全形,quánxíng/quánjiao,full-width/em,"排字的度量单位，宽度等于所使用的文字的磅数（point），用做排版宽度水平方向的度量。(GB 9851.2-2008, 2.31)"
-入聲,入声,rùshēng,checked tone,古漢語及漢語方言的音節結構，屬四聲之一，其調值之調型短而急促。注音符號中，其表示方式異於其他聲調。
+輕聲,轻声,qīngshēng,neutral tone,現代標準漢語的特殊變調現象，無固定調値。
+齊頭尾對齊,齐头尾对齐,qítóuwěi duìqí,justified alignment,一種盡量保證行頭行尾分別對齊的排版方式。
+全形/全角,全角/全形,quánxíng/quánjiao,full-width/em,排字的度量单位，宽度等于所使用的字號，用做排版宽度水平方向的度量。
+入聲,入声,rùshēng,checked tone,漢語及漢語方言的音節結構，屬四聲之一，其調值之調型短而急促。
 刪節號,省略号,shānjiéhào/shěnglüèhào,ellipsis,見標點符號附錄。
-聲調,声调,shēngdiào,tone,漢語音韻學的概念，分為平、上、去、入等四聲。
-聲母,声母,shēngmǔ,initial,韻母前的輔音，同韻母構成一個完整音節。
+聲調,声调,shēngdiào,tone,音節的高低升降變化。漢語傳統音韻學里分為平、上、去、入等四聲。
+聲母,声母,shēngmǔ,initial,漢語字音音節開頭的輔音。
 始端,始端,shǐduān,starting point,文本或文字靠近該行行首的一端。通常，文字直排時末端在上，橫排在左。
 書名號,书名号,shūmínghào,title mark,見標點符號附錄。
-疏排,疏排,shūpái,distributed arrangement,於文本各字之間加入固定量的空白來排列文字的排版方式。
-宋體（明體／明朝體）,宋体（明体/明朝体）,Sòngtǐ (Míngtǐ/Míngcháotǐ),Song,筆畫有粗細變化、且末端有裝飾部分（襯線）或尖端的傳統漢字印刷字體風格之一。
-天／天頭,天／天头,tiān/tiāntóu,head/top margin,"a) 書或頁面的頂部。
-b) 版心與頁面頂邊之間的空間。"
+疏排,疏排,shūpái,distributed arrangement,於文本各字之間加入空白來排列文字的排版方式。
+宋體（明體／明朝體）,宋体（明体/明朝体）,Sòngtǐ (Míngtǐ/Míngcháotǐ),Song,通常為橫細豎粗、且筆畫末端帶有裝飾部分的一種傳統漢字印刷字體風格。
+天／天頭,天／天头,tiān/tiāntóu,head/top margin,"a) 書或頁面的頂部。b) 版心與頁面頂邊之間的空間。"
 彎引號,弯引号,wān-yǐnhào,curve quotation mark,見標點符號附錄。
 問號,问号,wènhào,question mark,見標點符號附錄。
-文字設計／字體排印,文字设计/字体排印,wénzìshèjì/zìtǐpáiyìn,typography,對字體、字號、縮進、行間距、字符間距進行設計與安排等方法來進行排版的一種工藝。
-希臘字母,希腊字母,xīlà zìmǔ,Greek letters,西文常用的字母系統之一。
+文字設計／字體排印,文字设计/字体排印,wénzìshèjì/zìtǐpáiyìn,typography,對文字進行合適地排版讓書面語言易認、易讀、有吸引力地展現出來的一種工藝。
+希臘字母,希腊字母,xīlà zìmǔ,Greek letters,希臘語文所用的字母。
 西文,西文,xīwén,Western languages,歐洲的語言文字。
 西文字母,西文字母,xīwén zìmǔ,Western alphabet,歐洲的語言文字所使用的字母系統，常見有拉丁字母、希臘字母等。
 以連字符斷行,以连字符断行,yǐ liánzìfú duànháng,hyphenation,在西文詞組音節間插入連字符來斷行的方式。
 引號,引号,yǐnhào,quotation,見標點符號附錄。
-韻母,韵母,yùnmŭ,final,一個音節中除聲母外的部分。
+韻母,韵母,yùnmŭ,final,漢語字音中一個音節中除聲母、聲調外的部分。
 製表定位字元,制表定位字元,zhìbiǎodìngwèizìyuán,tab,提供按列對齊文本功能的字元。
 直角引號,直角引号,zhíjiǎo yǐnhào,corner quotation mark,見標點符號附錄。
 直排／豎排,直排/竖排,zhípái (shùpái),vertical writing mode,文字由上至下、各行由右至左排列的排版方式。
@@ -92,12 +90,13 @@ b) 版心與頁面頂邊之間的空間。"
 專名號,专名号,zhuānmínghào,proper name mark,見標點符號附錄。
 著重號,着重号,zhuózhònghào,emphasis dot,見標點符號附錄。
 注文,注文,zhùwén,annotation text,行間注排版中，標注於行間（原文字詞或語句旁側）以標注發音或釋義的文字。
-注音符號,注音符号,zhùyīn fúhào,Zhuyin (Bopomofo),國語注音符號及台灣方音符號的統稱。
+注音符號,注音符号,zhùyīn fúhào,Zhuyin (Bopomofo),「國語注音符號」及「台灣方音符號」的統稱。
 字幅,字幅,zìfú,character advance,依照文字排列方向的文字外框大小，為文字的寬度。
+字号,字號,zìhào,type size,"区别单个字符大小的表示方法(GB 9851.2-2008, 3.3)"
 字距,字距,zìjù,tracking,字元之間的空隙。
-字面,字面,zìmiàn,character face,文字字框中，字圖實際分布的空間。
+字面,字面,zìmiàn,character face,文字的字身框中，字圖實際分布的空間。
 字體,字体,zìtǐ,typeface,字母、文字或符號的一組集合，一個字體通常有一貫的筆畫與字形風格，用於印刷或螢幕渲染中。
 字型,字型,zìxíng,font,一組字體下，其中一個字號大小的字元集合。現多與字體混用。
 字形,字形,zìxíng,glyph,字母、文字或符號在書寫、印刷上的形體。
-縱橫對齊,纵横对齐,zònghéng duìqí,grid alignment,以填補漢字與比例字體字符之間空隙的方式，保證各行的漢字皆可相互對齊於一基線，以求頭尾對齊的方式。
-縱中橫排,纵中横排,zòngzhōnghéngpái,horizonal-in-vertical setting,在直排文本中，插入一組橫排、通常字數較少的字元。
+縱橫對齊,纵横对齐,zònghéng duìqí,grid alignment,盡量保證橫向和縱向的字符皆可相互對齊於一基線，並且行的頭尾也對齊的排版方式。
+縱中橫排,纵中横排,zòngzhōnghéngpái,horizonal-in-vertical setting,在直排文本的行內將字符橫排插入排版方式。

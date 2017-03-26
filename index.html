@@ -21,64 +21,83 @@
 <script src="//www.w3.org/Tools/respec/respec-w3c-common" async class="remove"></script>
 
 <script class="remove">
-      var respecConfig = {
-          specStatus: 			"ED",
-		  //publishDate: 		"2017-02-20",
-          previousPublishDate:  "2015-07-30",
-          previousMaturity:  	"WD",
+var respecConfig = {
+  specStatus: "ED",
+  //publishDate: "2017-02-20",
+  previousPublishDate: "2015-07-30",
+  previousMaturity: "WD",
 
-          shortName:  			"clreq",
-		  noRecTrack: 			true,
-		  copyrightStart: 		"2015",
-		  edDraftURI:			"https://w3c.github.io/clreq/",
-		  
-          editors: [
-                {   name:       "<span lang='zh-hant'>董福興</span> (Bobby TUNG)",
-                    mailto:     "bobbytung@wanderer.tw",
-                    company:    "<span lang='zh-hant'>特邀专家</span> (Invited Expert)", w3cid: 63283 },
-                {   name:       "<span lang='zh-hant'>陳奕鈞</span> (Yijun CHEN)",
-                    mailto:     "ethantw@me.com",
-                    company:    "<span lang='zh-hant'>特邀专家</span> (Invited Expert)", w3cid: 74229 },
-                {   name:       "<span lang='zh-hans'>梁海</span> (Hai LIANG)",
-                    mailto:     "lianghai@gmail.com",
-                    company:    "<span lang='zh-hans'>特邀专家</span> (Invited Expert)" },
-                {   name:       "<span lang='zh-hans'>刘庆</span> (Eric Q. LIU)",
-                    mailto:     "ryukeikun@me.com",
-                    company:    "<span lang='zh-hans'>特邀专家</span> (Invited Expert)" },
-                {   name:       "<span lang='zh-hans'>张爱杰</span> (Aijie ZHANG)",
-                    mailto:     "zhangaijie_yjs@139.com",
-                    company:    "<span lang='zh-hans'>中国移动通信集团公司</span> (China Mobile)" },
-                {   name:       "<span lang='zh-hans'>吴小倩（至2015年8月）</span> (Xiaoqian WU) (until August 2015)",
-                    mailto:     "xiaoqian@w3.org",
-                    company:    "W3C" },
-                {   name:       "<span lang='zh-hans'>李安琪</span> (Angel LI)",
-                    mailto:     "angel@w3.org",
-                    company:    "W3C", w3cid: 40190 },
-                {   name:       "Richard Ishida",
-                    mailto:     "ishida@w3.org",
-                    company:    "W3C", w3cid: 3439 }
-          ],
-		  
-		  
-		wg:           "Internationalization Core Working Group",
-		wgURI:        "https://www.w3.org/International/core/",
-		bugTracker: { new: "https://github.com/w3c/clreq/issues", open: "https://github.com/w3c/clreq/issues" } ,
-		wgPublicList: "public-i18n-cjk",
- 		otherLinks: [
-			{
-			key: "GitHub",
-			data: [
-				{
-			  	value: "repository",
-			  	href: "https://github.com/w3c/clreq"
-		 		}
-				]
-			}
-			], 
+  shortName: "clreq",
+  noRecTrack: true,
+  copyrightStart: "2015",
+  edDraftURI: "https://w3c.github.io/clreq/",
 
-        wgPatentURI:  "https://www.w3.org/2004/01/pp-impl/32113/status"
+  editors: [
+    {
+      name: "<span lang='zh-hant'>董福興</span> (Bobby TUNG)",
+      mailto: "bobbytung@wanderer.tw",
+      company: "<span lang='zh-hant'>特邀专家</span> (Invited Expert)",
+      w3cid: 63283
+    },
+    {
+      name: "<span lang='zh-hant'>陳奕鈞</span> (Yijun CHEN)",
+      mailto: "ethantw@me.com",
+      company: "<span lang='zh-hant'>特邀专家</span> (Invited Expert)",
+      w3cid: 74229
+    },
+    {
+      name: "<span lang='zh-hans'>梁海</span> (Hai LIANG)",
+      mailto: "lianghai@gmail.com",
+      company: "<span lang='zh-hans'>特邀专家</span> (Invited Expert)"
+    },
+    {
+      name: "<span lang='zh-hans'>刘庆</span> (Eric Q. LIU)",
+      mailto: "ryukeikun@me.com",
+      company: "<span lang='zh-hans'>特邀专家</span> (Invited Expert)"
+    },
+    {
+      name: "<span lang='zh-hans'>张爱杰</span> (Aijie ZHANG)",
+      mailto: "zhangaijie_yjs@139.com",
+      company: "<span lang='zh-hans'>中国移动通信集团公司</span> (China Mobile)"
+    },
+    {
+      name: "<span lang='zh-hans'>吴小倩（至2015年8月）</span> (Xiaoqian WU) (until August 2015)",
+      mailto: "xiaoqian@w3.org",
+      company: "W3C"
+    },
+    {
+      name: "<span lang='zh-hans'>李安琪</span> (Angel LI)",
+      mailto: "angel@w3.org",
+      company: "W3C",
+      w3cid: 40190
+    },
+    {
+      name: "Richard Ishida",
+      mailto: "ishida@w3.org",
+      company: "W3C",
+      w3cid: 3439
+    }
+  ],
 
-    };
+  wg: "Internationalization Core Working Group",
+  wgURI: "https://www.w3.org/International/core/",
+  wgPublicList: "public-i18n-cjk",
+
+  bugTracker: {
+    new: "https://github.com/w3c/clreq/issues",
+    open: "https://github.com/w3c/clreq/issues"
+  },
+
+  otherLinks: [{
+    key: "GitHub",
+    data: [{
+      value: "repository",
+      href: "https://github.com/w3c/clreq"
+    }]
+  }],
+
+  wgPatentURI: "https://www.w3.org/2004/01/pp-impl/32113/status"
+}; 
 </script>
 </head>
 
@@ -1159,7 +1178,7 @@
               <p data-lang="en">There are vertical blacket codepoints such like <span class="uname">U+FE41 PRESENTATION FORM FOR VERTICAL LEFT CORNER BRACKET</span> in Unicode. But they are not suitable for author to use directly. They should be replaced by other mechanism.</p>
               <p data-lang="zh-hans" class="checkme">万国码编码中有如<span class="uname">U+FE41 PRESENTATION FORM FOR VERTICAL LEFT CORNER BRACKET</span>等直立的符号，但不适宜作者直接使用该符号，而是透过其他机制替代使用。</p>
               <p data-lang="zh-hant">萬國碼編碼中有如<span class="uname">U+FE41 PRESENTATION FORM FOR VERTICAL LEFT CORNER BRACKET</span>等直立的符號，但不適宜作者直接使用該符號，而是透過其他機制替代使用。</p>
-			</div>
+      </div>
 
             <div class="note">
               <p data-lang="en">Some publications in Traditional Chinese might also apply double quotation marks first and then single quotation marks. </p>

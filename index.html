@@ -325,7 +325,7 @@ var respecConfig = {
       <p data-lang="en">Chinese characters include Traditional Chinese and Simplified Chinese alternatives. The former is commonly used in Taiwan, Hong Kong and Macao while the latter is commonly used in Mainland China, Singapore and Malaysia.</p>
       <p data-lang="zh-hans">依照各地的通行标准，中文所使用的汉字主要分为繁体字与简体字。前者又称正体字、传统汉字等，主要通行于台湾、香港、澳门等地；后者又作简化字，主要通行于中国大陆、星马地区。本文依笔画多寡与部件结构为区别，统称为繁体字与简体字。</p>
       <p data-lang="zh-hant">依照各地的通行標準，中文所使用的漢字主要分為繁體字與簡體字。前者又作正體字、傳統漢字等，主要通行於台灣、香港、澳門等地；後者又作簡化字，主要通行於中國大陸、星馬地區。本文依筆畫多寡與部件結構為區別，統稱為繁體字與簡體字。</p>
-      <p data-lang="en">Different glyphs are used in different regions. One Unicode code point of a Chinese character may have more than one valid glyph, depending on operating system and typeface used. The focus of this document is Chinese composition and will not discuss cover glyph variations in detail.</p>
+      <p data-lang="en">Different glyphs are used in different regions. One Unicode code point of a Chinese character may have more than one valid glyph, depending on operating system and typeface used. The focus of this document is Chinese composition and will not cover glyph variations in detail.</p>
       <p data-lang="zh-hans">不同地区所使用的字形有差异，各种字形与Unicode码位并非一一对应关系，需要依赖处理系统和字体来呈现。本文主要探究中文排版，对此不做详述。</p>
       <p data-lang="zh-hant">不同地區所使用的字形有差異，各種字形與萬國碼碼位並非一一對應關係，需要依賴處理系統和字體來呈現。本文主要探究中文排版，對此不做詳述。</p>
 
@@ -370,7 +370,7 @@ var respecConfig = {
       <p data-lang="zh-hans">汉字依行排列文字，原则上文字外框彼此紧贴配置，称作密排。</p>
       <p data-lang="zh-hant">漢字依行排列文字，原則上文字外框彼此緊貼配置，稱作密排。</p>
       <div class="note">
-        <p data-lang="en" class="checkme">Unlike the letterpress printing era, when several sizes of the original pattern of a letter were required to create matrices, in today's digital era, the same original pattern can be used for any size simply by enlargement or reduction. Because of this, it might be necessary to adjust inter-character spacing when composing lines at large character sizes. When composing lines at small character sizes in outline fonts, hinting data is used to ensure that the width of the strokes that make up a character look correct. When only a small portion of the fonts are smaller, they will be displayed in bitmaps, and there is no need to make extra adjustments.</p>
+        <p data-lang="en" class="checkme">From the advent of moveable type, each character was set to be flush with one another without any gaps, regardless of vertical or horizontal writing mode. However back then, several sizes of the original pattern of a letter were required to create matrices, while in today's digital era, the same original pattern can be used for any size simply by enlargement or reduction. Because of this, it might be necessary to adjust inter-character spacing when composing lines at large character sizes. When composing lines at small character sizes in outline fonts, hinting data is used to ensure that the width of the strokes that make up a character look correct. When only a small portion of the fonts are smaller, they will be displayed in bitmaps, and there is no need to make extra adjustments.</p>
         <p data-lang="zh-hans">从活字排版时代起，汉字无论直、横文字外框彼此紧贴配置适于阅读。但活字排版依照文字尺寸不同，各号数之字型原模不同，字面也随之不同。目前数字字体多仅采取单一原型，当文字尺寸放大时，有时需要调整字距。然而，中文汉字的字面率一般较日文字体小，除非在特殊状况下，不需特别处理。另当文字尺寸缩小时，若为向量字体，则需要补正信息来调整文字线幅；但有部分字体在文字尺寸较小时，会以点阵字体呈现，此时就不需另外调整。</p>
         <p data-lang="zh-hant">從活字排版時代起，漢字無論直、橫文字外框彼此緊貼配置適於閱讀。但活字排版依照文字尺寸不同，各號數之字型原模不同，字面也隨之不同。目前數位字體多僅採取單一原型，當文字尺寸放大時，有時需要調整字距。然而，中文漢字字體面率一般較日文字體小，除非在特殊狀況下，不需特別處理。另當文字尺寸縮小時，若為向量字體，則需要補正訊息來調整文字線幅；但有部分字體在文字尺寸較小時，會以點陣字體呈現，此時就不需另外調整。</p>
       </div>
@@ -399,7 +399,7 @@ var respecConfig = {
             <p data-lang="zh-hant">圖片與表格之說明文字字數较少時，為取得平衡，而加大字距。</p>
           </li>
           <li>
-            <p data-lang="en">In some cases, increased inter-character spacing is used for poetry, where one line has only a few characters, so as to maintain the balance of the layout.</p>
+            <p data-lang="en">In some cases, increased inter-character spacing is used for poetry with lines of only a few characters, so as to maintain the balance of the layout.</p>
             <p data-lang="zh-hans">应用于字数少的诗词时，为与版面取得平衡，而加大字距。</p>
             <p data-lang="zh-hant">應用於字數少的詩詞時，為與版面取得平衡，而加大字距。</p>
           </li>
@@ -631,10 +631,10 @@ var respecConfig = {
     <p data-lang="en">Books usually use one basic template for page format, whereas magazines often use several templates.</p>
     <p data-lang="zh-hans">书籍多数仅使用一种基础版式体裁，杂志则会使用上数种。</p>
     <p data-lang="zh-hant">書籍多數僅使用一種基礎排版體裁，雜誌則會使用上數種。</p>
-    <p data-lang="en">Although books tend to use one template for its page format, some further design effort based will be needed to extend that template for pages such as the table of contents and indexes. Furthermore, there are many examples of indexes with a different page format than the basic page format, and vertically set books often have indexes in horizontal writing mode, and sometimes multiple columns. However, while doing actual design for the page, the size of the type area should not exceed the basic page template.<span class="issue"> (some doubts about the translation of 版面 here)</span>.</p>
+    <p data-lang="en">Although books tend to use one template for their page format, some further design effort will be needed to extend that template for pages such as the table of contents and indexes. Furthermore, there are many examples of indexes with a different page format than the basic page format, and vertically set books often have indexes in horizontal writing mode, and sometimes multiple columns. However, while doing actual design for the page, the size of the type area should not exceed the basic page template.<span class="issue"> (some doubts about the translation of 版面 here)</span>.</p>
     <p data-lang="zh-hans">尽管书籍仅使用一种体裁，在实际页面的设计上，如目录、索引等页面，会基于基本排版体裁重新设计。索引等页面采用不同排版体裁设计的案例也相当多，直排书索引也会以横排或者多栏排版等方式设计。但在设计上，版面尺寸等依然不出基础排版体裁。</p>
     <p data-lang="zh-hant">儘管書籍僅使用一種體裁，在實際頁面的設計上，如目錄、索引等頁面，會基於基本排版體裁重新設計。索引等頁面採用不同排版體裁設計的案例也相當多，直排書索引也會以橫排或者多欄排版等方式設計。但在設計上，版面尺寸等依然不出基礎排版體裁。</p>
-    <p data-lang="en">Magazines usually contain various kinds of content, which naturally leads to a varity of template designs, different sizes of characters, and varying numbers of columns. </p>
+    <p data-lang="en">Magazines usually contain various kinds of content, which naturally leads to a variety of template designs, different sizes of characters, and varying numbers of columns. </p>
     <p data-lang="zh-hans">杂志则因内容不同，排版体裁多变，文字大小、栏数依照内容不同会有所变化。</p>
     <p data-lang="zh-hant">雜誌則因內容不同，排版體裁多變，文字大小、欄數依照內容不同會有所變化。</p>
     
@@ -812,7 +812,7 @@ var respecConfig = {
         </li>
       </ol>
       <div class="note">
-        <p data-lang="en">In most cases the type area is set at the horizontal and vertical center of the trim size, it can then be adjusted depending on its dimensions. This design method is mainly inherited from letter press printing technology. For desktop publishing, the dimensions of the type area are usually calculated based on the space between the type area and the trim size.</p>
+        <p data-lang="en">In most cases the type area is set at the horizontal and vertical center of the trim size, and can then be adjusted depending on its dimensions. This design method is mainly inherited from letter press printing technology. For desktop publishing, the dimensions of the type area are usually calculated based on the space between the type area and the trim size.</p>
         <p data-lang="zh-hans">一般而言，版心多置于印刷版面的的正中央，后依照版心尺寸不同，向上下、左右调整。这种设计方式主要承袭自活字印刷，但在桌上排版，则多以印刷版面计算与版心尺寸四方边界的差为之。</p>
         <p data-lang="zh-hant">一般而言，版心多置於印刷版面的的正中央，後依照版心尺寸不同，向上下、左右調整。這種設計方式主要承襲自活字印刷，但於桌上排版，則多以印刷版面計算與版心尺寸四方邊界之差為之。</p>
       </div>

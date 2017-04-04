@@ -6,19 +6,8 @@
 
 <link rel="stylesheet" href="./local.css" />
 
-<style id="languageStyling">
-[data-lang = zh-hant] {
-  border-left: 3px solid #40c440;
-  padding-left: 10px;
-}
-[data-lang = zh-hans] {
-  border-left: 3px solid #F88A05;
-  padding-left: 10px;
-}
-</style>
-
-<script src="script.js"></script>
-<script src="//www.w3.org/Tools/respec/respec-w3c-common" async class="remove"></script>
+<script async class="remove" src="//www.w3.org/Tools/respec/respec-w3c-common"></script>
+<script defer src="./script.js"></script>
 
 <script class="remove">
 var respecConfig = {
@@ -31,6 +20,8 @@ var respecConfig = {
   noRecTrack: true,
   copyrightStart: "2015",
   edDraftURI: "https://w3c.github.io/clreq/",
+
+  maxTocLevel: 3,
 
   editors: [
     {
@@ -104,13 +95,13 @@ var respecConfig = {
 <body>
 <div id="abstract">
   <p data-lang="en"> This document summarizes the text composition requirements in the Chinese writing system. One of the goals of the task force is to describe the issues in the Chinese layout requirements, another one is to provide satisfactory equivalent to the current standards (i.e. Unicode), also to promote vendors to implement those relevant features correctly.</p>
-  <p data-lang="zh-hans">本文整理了中文（汉字）书写系统于排版上的需求。一方面说明需求事项以明确描述中文排版的需求与问题；另一方面也提出了与现有标准（如Unicode）的对应，冀求本文能更有效地促进实作。</p>
+  <p data-lang="zh-hans">本文整理了中文（汉字）书写系统于排版上的需求。一方面说明需求事项以明确描述中文排版之需求与问题；另一方面也提出与既有标准（如Unicode）的对应，冀求本文能更有效地促进实作。</p>
   <p data-lang="zh-hant">本文整理了中文（漢字）書寫系統於排版上的需求。一方面說明需求事項以明確描述中文排版之需求與問題；另一方面也提出與既有標準（如Unicode）的對應，冀求本文能更有效地促進實作。</p>
 </div>
 <div id="sotd">
   <p data-lang="en">This document was created by the <a href="https://www.w3.org/International/groups/chinese-layout/">Chinese Layout Task Force</a> within the W3C Internationalization Interest Group, and in collaboration with the <a href="https://www.w3.org/html/ig/zh/">W3C HTML5 Chinese Interest Group</a>. The <a href="https://www.w3.org/International/core/">Internationalization Working Group</a> has been a great help during the writing of this document.  The Chinese Layout Task Force will work with Internationalization Working Group to publish Working Drafts of this document, and to widen the exposure and review of the document. </p>
   <p data-lang="zh-hans">本文档由W3C国际化兴趣组下的<a href="https://www.w3.org/International/groups/chinese-layout/">中文布局任务小组</a>编写而成，<a href="https://www.w3.org/html/ig/zh/">W3C HTML5中文兴趣组</a>为本文档提供了审阅支持，<a href="https://www.w3.org/International/core/">W3C国际化工作组</a>为文档的编写提供了诸多帮助。中文排版布局任务小组将与<a href="https://www.w3.org/International/core/">W3C国际化工作组</a>联合发布该文档的工作草案，并邀请业界进行审阅。</p>
-  <p data-lang="zh-hant">本文檔由W3C國際化興趣組下設的<a href="https://www.w3.org/International/groups/chinese-layout/">中文布局任務小組</a>編寫而成，<a href="https://www.w3.org/html/ig/zh/">W3C HTML5中文興趣組</a>為本文檔提供了審閱支持，<a href="https://www.w3.org/International/core/">W3C國際化工作組</a>為文檔的編寫提供了諸多幫助。中文排版布局任務小組將與<a href="https://www.w3.org/International/core/">W3C國際化工作組</a>聯合發布該文檔的工作草案，並邀請業界進行審閱。</p>
+  <p data-lang="zh-hant">本文檔由W3C國際化興趣組下的<a href="https://www.w3.org/International/groups/chinese-layout/">中文布局任務小組</a>編寫而成，<a href="https://www.w3.org/html/ig/zh/">W3C HTML5中文興趣組</a>為本文檔提供了審閱支持，<a href="https://www.w3.org/International/core/">W3C國際化工作組</a>為文檔的編寫提供了諸多幫助。中文排版布局任務小組將與<a href="https://www.w3.org/International/core/">W3C國際化工作組</a>聯合發布該文檔的工作草案，並邀請業界進行審閱。</p>
   
   
   <div class="note">
@@ -129,9 +120,9 @@ var respecConfig = {
   
   
   <p id="langSwitch">
-    <button id="toZHHant" onClick="switch2zh();">zh-hant</button>
-    <button id="toZHHans" onClick="switch2zhHans();">zh-hans</button>
-    <button onClick="switch2en();">en</button>
+    <button onclick="switchLang('zh-hant')">zh-Hant</button>
+    <button onclick="switchLang('zh-hans')">zh-Hans</button>
+    <button onclick="switchLang('en')">en</button>
   </p>
   
   <p data-lang="zh-hans">本章节描述了本文档的发布状态。其他更新版本可能会覆盖本文档。W3C的文档列表和最新版本可通过<a href="https://www.w3.org/TR/">W3C技术报告</a>索引访问。</p>
@@ -336,9 +327,9 @@ var respecConfig = {
       </div>
 
       <div class="note">
-        <p data-lang="en">One Simplified Chinese character may have more than one corresponding Traditional form. For example, the Simplified Chinese character 发 can be mapped to either the Traditional Chinese character 發 or 髮. By contrast, the circumstances where one Traditional Chinese character corresponds to more than one Simplified Chinese character are fairly rare but still worth noting. For example, the Traditional Chinese character 乾 may be mapped to either the Simplified Chinese character 干 or 乾. The mapping relationship between Traditional and Simplified Chinese is not one-to-one and particular character conversion depends on its context.</p>
-        <p data-lang="zh-hans">一个简体字可能对应多个繁体字，如简体字「发」，其相应的繁体字可能为「發」或「髮」；一个繁体汉字对应多个简体汉字的情况与前者相比数量极少但仍需注意，如繁体字「乾」可能对应简体字「干」或「乾」。繁简汉字的对应关系具体应由上下文决定。</p>
-        <p data-lang="zh-hant">一個簡體字可能對應多個繁體字，如簡體字「发」，其相應的繁體字可能為「發」或「髮」；一個繁體漢字對應多個簡體漢字的情況與前者相比數量極少但仍需注意，如繁體字「乾」可能對應簡體字「干」或「乾」。繁簡漢字的對應關係具體應由上下文決定。</p>
+        <p data-lang="en">One Simplified Chinese character may have more than one corresponding Traditional form. For example, the Simplified Chinese character <span lang="zh-hans">发</span> can be mapped to either the Traditional Chinese character <span lang="zh-hant">發</span> or <span lang="zh-hant">髮</span>. By contrast, the circumstances where one Traditional Chinese character corresponds to more than one Simplified Chinese character are fairly rare but still worth noting. For example, the Traditional Chinese character <span lang="zh-hant">乾</span> may be mapped to either the Simplified Chinese character <span lang="zh-hans">干</span> or <span lang="zh-hans">乾</span>. The mapping relationship between Traditional and Simplified Chinese is not one-to-one and particular character conversion depends on its context.</p>
+        <p data-lang="zh-hans">一个简体字可能对应多个繁体字，如简体字「<span lang="zh-hans">发</span>」，其相应的繁体字可能为「<span lang="zh-hant">發</span>」或「<span lang="zh-hant">髮</span>」；一个繁体汉字对应多个简体汉字的情况与前者相比数量极少但仍需注意，如繁体字「<span lang="zh-hant">乾</span>」可能对应简体字「<span lang="zh-hans">干</span>」或「<span lang="zh-hans">乾</span>」。繁简汉字的对应关系具体应由上下文决定。</p>
+        <p data-lang="zh-hant">一個簡體字可能對應多個繁體字，如簡體字「<span lang="zh-hans">发</span>」，其相應的繁體字可能為「<span lang="zh-hant">發</span>」或「<span lang="zh-hant">髮</span>」；一個繁體漢字對應多個簡體漢字的情況與前者相比數量極少但仍需注意，如繁體字「<span lang="zh-hant">乾</span>」可能對應簡體字「<span lang="zh-hans">干</span>」或「<span lang="zh-hans">乾</span>」。繁簡漢字的對應關係具體應由上下文決定。</p>
       </div>
     </section>
 
@@ -751,7 +742,7 @@ var respecConfig = {
         </li>
         <li>
           <p data-lang="en"><span class="leadin">Page for Table of Contents, Indexes and References:</span> The size of the type area for the table of contents, indexes and references of books is based on the size of the type area for the main body content. There are many examples of tables of contents in vertical writing mode where the left-to-right size is identical to that of the type area, but the top-to-bottom size is a little bit smaller.</p>
-          <p data-lang="zh-hans">目录、索引、参考文献等页面以版心的尺寸作为基准设计。但有不少案例会於内文采单栏横排时，目录等页采多栏设计；而目录页有时天地侧会对文字进行缩排。</p>
+          <p data-lang="zh-hans">目录、索引、参考文献等页面以版心的尺寸作为基准设计。但有不少案例会于内文采单栏横排时，目录等页采多栏设计；而目录页有时天地侧会对文字进行缩排。</p>
           <p data-lang="zh-hant">目錄、索引、參考文獻等頁面以版心之尺寸作為基準設計。但有不少案例會於內文採單欄橫排時，目錄等頁採多欄設計；而目錄頁有時天地側會對文字進行縮排。</p>
         </li>
       </ol>
@@ -4321,23 +4312,23 @@ var respecConfig = {
   </table>
   <ol class="punctuation" type="1">
     <li>
-      <p data-lang="en">In some special circumstances, in Traditional Chinese the punctuation marks might sometimes appear at the beginning of a line.</p>
-      <p data-lang="zh-hans" class="checkme">依照出现的状况不同，也有允许出现在行首的案例，以繁体中文出版品为主。</p>
+      <p data-lang="en">In some special circumstances, especially in Traditional Chinese publications, it is sometimes allowed to have the punctuation marks appear at the beginning of a line.</p>
+      <p data-lang="zh-hans">依照出现的状况不同，也有允许出现在行首的案例，以繁体中文出版品为主。</p>
       <p data-lang="zh-hant">依照出現的狀況不同，也有允許出現於行首的案例，以繁體中文出版品為主。</p>
     </li>
     <li>
       <p data-lang="en">Corner brackets (『』「」) are usually used in vertical writing mode.</p>
-      <p data-lang="zh-hans" class="checkme">文字直排时通常改用角引号[『』「」]。</p>
+      <p data-lang="zh-hans">文字直排时通常改用角引号[『』「」]。</p>
       <p data-lang="zh-hant">文字直排時通常改用角引號[『』「」]。</p>
     </li>
     <li>
       <p data-lang="en">Punctuation marks should not be broken or separated onto two lines. Only if there is no way to avoid the breaking or separation, can they can be placed across two lines.</p>
-      <p data-lang="zh-hans" class="checkme">符号不可断开、分行，只有无法避免时，可视状况拆至两行。</p>
+      <p data-lang="zh-hans">符号不可断开、分行，唯无法避免时，可视状况拆至两行。</p>
       <p data-lang="zh-hant">符號不可斷開、分行，唯無法避免時，可視狀況拆至二行。</p>
     </li>
     <li>
-      <p data-lang="en">The content above is from Big-5 code.</p>
-      <p data-lang="zh-hans" class="checkme">来自大五码。</p>
+      <p data-lang="en">The content above is from Big5 encoding.</p>
+      <p data-lang="zh-hans">来自大五码。</p>
       <p data-lang="zh-hant">來自大五碼。</p>
     </li>
   </ol>
@@ -4354,84 +4345,128 @@ var respecConfig = {
   <table class="glossary">
     <thead>
       <tr>
-<th><span data-lang="en">Term (TC)</span> <span data-lang="zh-hant">詞彙（繁）</span> <span data-lang="zh-hans">词汇（繁）</span></th>
-<th><span data-lang="en">Term (SC)</span> <span data-lang="zh-hant">詞彙（簡）</span> <span data-lang="zh-hans">词汇（简）</span></th>
-        <th><span data-lang="en">Pinyin</span> <span data-lang="zh-hant">漢語拼音</span> <span data-lang="zh-hans">汉语拼音</span></th>
-        <th><span data-lang="en">English</span> <span data-lang="zh-hant">英語</span> <span data-lang="zh-hans">英语</span></th>
-        <th><span data-lang="en">Definition</span> <span data-lang="zh-hant">定義</span> <span data-lang="zh-hans">定义</span></th>
-        <th></th>
+        <th class="term"><span data-lang="en">Term (TC)</span> <span data-lang="zh-hant">詞彙（繁）</span> <span data-lang="zh-hans">词汇（繁）</span></th>
+
+        <th class="term"><span data-lang="en">Term (SC)</span> <span data-lang="zh-hant">詞彙（簡）</span> <span data-lang="zh-hans">词汇（简）</span></th>
+
+        <th class="term-pinyin"><span data-lang="en">Pinyin</span> <span data-lang="zh-hant">漢語拼音</span> <span data-lang="zh-hans">汉语拼音</span></th>
+
+        <th class="term-en"><span data-lang="en">English</span> <span data-lang="zh-hant">英語</span> <span data-lang="zh-hans">英语</span></th>
+
+        <th class="definition"><span data-lang="en">Definition</span> <span data-lang="zh-hant">定義</span> <span data-lang="zh-hans">定义</span></th>
       </tr>
     </thead>
+
     <tbody>
       <tr>
         <td>阿拉伯數字</td>
         <td>阿拉伯数字</td>
         <td>Ālābó shùzì</td>
         <td>European numerals</td>
-        <td>印度-阿拉伯數字的統稱。 </td>
+        <td>
+          <p data-lang="en">A general name of Hindu–Arabic numeral system.</p> 
+          <p data-lang="zh-hans">印度-阿拉伯数字的统称。</p>
+          <p data-lang="zh-hant">印度-阿拉伯數字的統稱。</p>
+        </td>
       </tr>
       <tr>
         <td>版心</td>
         <td>版心</td>
         <td>bǎnxīn</td>
         <td>type area</td>
-        <td>印刷成品版面中的图文印刷区域（不含出血图像）(GB 9851.2-2008, 3.3)。</td>
+        <td>
+          <p data-lang="en" class="translateme">Translation needed.</p> 
+          <p data-lang="zh-hans">印刷成品版面中的图文印刷区域（不含出血图像）(GB 9851.2-2008, 3.3)。</p>
+          <p data-lang="zh-hant">印刷成品版面中的圖文印刷區域（不含出血圖像）(GB 9851.2-2008, 3.3)。</p>
+        </td>
       </tr>
       <tr>
         <td>半形／半角</td>
         <td>半形/半角</td>
-        <td>bànxíng/bànjiǎo</td>
+        <td>bànxíng/<wbr>bànjiǎo</td>
         <td>half-width/en</td>
-        <td>排字的度量单位，宽度等于所用字号的一半。</td>
+        <td>
+          <p data-lang="en" class="translateme">Translation needed.</p> 
+          <p data-lang="zh-hans">排字的度量单位，宽度等于所用字号的一半。</p>
+          <p data-lang="zh-hant">排字的度量單位，寬度等於所用字號的一半。</p>
+        </td>
       </tr>
       <tr>
         <td>標點符號</td>
         <td>标点符号</td>
         <td>biāodiǎn fúhào</td>
         <td>punctuation marks</td>
-        <td>輔助語言文字記錄的各種符號，用於表示停頓、語氣、詞句的性質。</td>
+        <td>
+          <p data-lang="en" class="translateme">Translation needed.</p> 
+          <p data-lang="zh-hans">辅助语言文字记录的各种符号，用于表示停顿、语气、词句的性质。</p>
+          <p data-lang="zh-hant">輔助語言文字記錄的各種符號，用於表示停頓、語氣、詞句的性質。</p>
+        </td>
       </tr>
       <tr>
         <td>標點符號擠壓</td>
         <td>标点符号挤压</td>
         <td>biāodiǎn fúhào jǐyā</td>
         <td>compression rules for consecutive punctuation marks</td>
-        <td>对位于行首、行尾或連續存在標點符号的其富餘空間進行調整的排版方式。</td>
+        <td>
+          <p data-lang="en" class="translateme">Translation needed.</p> 
+          <p data-lang="zh-hans">对位于行首、行尾或连续存在标点符号的富余空间进行调整的排版方式。</p>
+          <p data-lang="zh-hant">對位於行首、行尾或連續存在標點符號的富餘空間進行調整的排版方式。</p>
+        </td>
       </tr>
       <tr>
         <td>標號</td>
         <td>标号</td>
         <td>biāohào</td>
         <td>indication punctuation marks</td>
-        <td>有標示詞組或語句之特定性質的標點符號類別，相對於點號。</td>
+        <td>
+          <p data-lang="en" class="translateme">Translation needed.</p> 
+          <p data-lang="zh-hans">有标示词组或语句之特定性质的标点符号类别，相对于点号。</p>
+          <p data-lang="zh-hant">有標示詞組或語句之特定性質的標點符號類別，相對於點號。</p>
+        </td>
       </tr>
       <tr>
         <td>標音</td>
         <td>标音</td>
         <td>biāoyīn</td>
         <td>phonetic annotation</td>
-        <td>為漢字標注發音的方式，主要有行間注等。</td>
+        <td>
+          <p data-lang="en" class="translateme">Translation needed.</p> 
+          <p data-lang="zh-hans">为汉字标注发音的方式，主要有行间注等。</p>
+          <p data-lang="zh-hant">為漢字標注發音的方式，主要有行間注等。</p>
+        </td>
       </tr>
       <tr>
         <td>比例字體</td>
         <td>比例字体</td>
         <td>bǐlì zìti</td>
         <td>proportional type</td>
-        <td>西文字體的一种分类，此類字體中各字元的字幅大小不一。</td>
+        <td>
+          <p data-lang="en" class="translateme">Translation needed.</p> 
+          <p data-lang="zh-hans">西文字体的一种分类，此类字体中各字元的字幅大小不一。</p>
+          <p data-lang="zh-hant">西文字體的一種分類，此類字體中各字元的字幅大小不一。</p>
+        </td>
       </tr>
       <tr>
         <td>出血</td>
         <td>出血</td>
         <td>chūxiě</td>
         <td>bleed</td>
-        <td>超出成品幅面范围而被裁切掉的图像。(GB 9851.2-2008, 3.8)</td>
+        <td>
+          <p data-lang="en" class="translateme">Translation needed.</p> 
+          <p data-lang="zh-hans">超出成品幅面范围而被裁切掉的图像。(GB 9851.2-2008, 3.8)</p>
+          <p data-lang="zh-hant">超出成品幅面範圍而被裁切掉的圖像。(GB 9851.2-2008, 3.8)</p>
+        </td>
       </tr>
       <tr>
         <td>大五碼</td>
         <td>大五码</td>
         <td>Dàwǔmǎ</td>
-        <td>Big 5</td>
-        <td>繁體中文常用的漢字編碼字符集標準之一，共收錄13,060個漢字。</td>
+        <td>Big5</td>
+        <td>
+          <p data-lang="en" class="translateme">Translation needed.</p> 
+          <p data-lang="zh-hans">繁体中文常用的汉字编码字符集标准之一，共收录13,060个汉字。</p>
+          <p data-lang="zh-hant">繁體中文常用的漢字編碼字符集標準之一，共收錄13,060個漢字。</p>
+        </td>
       </tr>
       <tr>
         <td>地／地腳</td>
@@ -4439,10 +4474,19 @@ var respecConfig = {
         <td>dì/dìjiǎo</td>
         <td>foot/bottom margin</td>
         <td>
-          <ol type="a">
-            <li>書或頁面的底部。
-            <li>版心下沿至成品幅面下沿之间的空白区域。(GB 9851.2-2008, 3.5)。
+          <ol type="a" data-lang="en" class="translateme">
+            <li>Translation needed.
           </ol>
+
+          <ol type="a" data-lang="zh-hans">
+            <li>书或页面的底部。
+            <li>版心下沿至成品幅面下沿之间的空白区域。(GB 9851.2-2008, 3.5)。
+          </ol> 
+
+          <ol type="a" data-lang="zh-hant">
+            <li>書或頁面的底部。
+            <li>版心下沿至成品幅面下沿之間的空白區域。(GB 9851.2-2008, 3.5)。
+          </ol> 
         </td>
       </tr>
       <tr>
@@ -4450,621 +4494,766 @@ var respecConfig = {
         <td>点</td>
         <td>diǎn</td>
         <td>point (pt)</td>
-        <td>字号的一种计量单位，常用的英美点制下1点约为0.35146mm，也被音译作「磅（因）」。</td>
+        <td>
+          <p data-lang="en" class="translateme">Translation needed.</p> 
+          <p data-lang="zh-hans">字号的一种计量单位，常用的英美点制下1点约为0.35146mm，也被音译作「磅（因）」。</p>
+          <p data-lang="zh-hant">字號的一種計量單位，常用的英美點制下1點約為0.35146mm，也被音譯作「磅（因）」。</p>
+        </td>
       </tr>
       <tr>
         <td>點號</td>
         <td>点号</td>
         <td>diǎnhào</td>
         <td>pause or stop punctuation marks</td>
-        <td>可表示語句停頓或暫停之性質的標點符號類別，相對於標號。</td>
+        <td>
+          <p data-lang="en" class="translateme">Translation needed.</p> 
+          <p data-lang="zh-hans">可表示语句停顿或暂停之性质的标点符号类别，相对于标号。</p>
+          <p data-lang="zh-hant">可表示語句停頓或暫停之性質的標點符號類別，相對於標號。</p>
+        </td>
       </tr>
       <tr>
         <td>底端</td>
         <td>底端</td>
         <td>dǐduān</td>
         <td>foot side</td>
-        <td>文本或文字靠近版面結尾的一端。通常，文字直排時底端在左，橫排在下。</td>
+        <td>
+          <p data-lang="en" class="translateme">Translation needed.</p> 
+          <p data-lang="zh-hans">可表示语句停顿或暂停之性质的标点符号类别，相对于标号。</p>
+          <p data-lang="zh-hant">可表示語句停頓或暫停之性質的標點符號類別，相對於標號。</p>
+        </td>
       </tr>
       <tr>
         <td>頂端</td>
         <td>顶端</td>
         <td>dǐngduān</td>
         <td>head side</td>
-        <td>文本或文字靠近版面起始的一端。通常，文字直排時頂端在右，橫排在上。</td>
-      </tr>
-      <tr>
-        <td>逗號</td>
-        <td>逗号</td>
-        <td>dòuhào</td>
-        <td>comma</td>
-        <td>見標點符號附錄。</td>
+        <td>
+          <p data-lang="en" class="translateme">Translation needed.</p> 
+          <p data-lang="zh-hans">文本或文字靠近版面近起始的一端。通常，文字直排时顶端在右，横排在上。</p>
+          <p data-lang="zh-hant">文本或文字靠近版面近起始的一端。通常，文字直排時頂端在右，橫排在上。</p>
+        </td>
       </tr>
       <tr>
         <td>段落</td>
         <td>段落</td>
         <td>duànlùo</td>
         <td>paragraph</td>
-        <td>由語句組成的句群，一個段落由一至多個語句組成。</td>
+        <td>
+          <p data-lang="en" class="translateme">Translation needed.</p> 
+          <p data-lang="zh-hans">由语句组成的句群，一个段落由一至多个语句组成。</p>
+          <p data-lang="zh-hant">由語句組成的句群，一個段落由一至多個語句組成。</p>
+        </td>
       </tr>
       <tr>
         <td>對齊方式</td>
         <td>对齐方式</td>
         <td>duìqí fāngshì</td>
         <td>alignment</td>
-        <td>對字、行等各種元素的分布進行整理的方法。</td>
-      </tr>
-      <tr>
-        <td>頓號</td>
-        <td>顿号</td>
-        <td>dùnhào</td>
-        <td>slight-pause comma</td>
-        <td>見標點符號附錄。</td>
+        <td>
+          <p data-lang="en" class="translateme">Translation needed.</p> 
+          <p data-lang="zh-hans">对字、行等各种元素的分布进行整理的方法。</p>
+          <p data-lang="zh-hant">對字、行等各種元素的分布進行整理的方法。</p>
+        </td>
       </tr>
       <tr>
         <td>兒化音</td>
         <td>儿化音</td>
         <td>érhuàyīn</td>
         <td>rhotacization of syllable finals</td>
-        <td>在現代漢語以及一些方音里，一些詞彙的字音的韻母因捲舌動作而發生的音變現象。</td>
+        <td>
+          <p data-lang="en" class="translateme">Translation needed.</p> 
+          <p data-lang="zh-hans">在现代汉语以及一些方音里，一些词汇字音的韵母因卷舌动作而发生的音变现象。</p>
+          <p data-lang="zh-hant">在現代漢語以及一些方音裡，一些詞彙字音的韻母因捲舌動作而發生的音變現象。</p>
+        </td>
       </tr>
       <tr>
         <td>仿宋體</td>
         <td>仿宋体</td>
         <td>fǎngsòngtǐ</td>
         <td>Imitation Song (Fangsong)</td>
-        <td>採用宋體結構、楷體的筆畫特征，形態清秀挺拔的一種漢字傳統印刷字體風格。</td>
+        <td>
+          <p data-lang="en" class="translateme">Translation needed.</p> 
+          <p data-lang="zh-hans">采用宋体结构、楷体的笔画特征，形态清秀挺拔的一种汉字传统印刷字体风格。</p>
+          <p data-lang="zh-hant">採用宋體結構、楷體的筆畫特征，形態清秀挺拔的一種漢字傳統印刷字體風格。</p>
+        </td>
       </tr>
       <tr>
         <td>繁體中文</td>
         <td>繁体中文</td>
         <td>fántǐ Zhōngwén</td>
         <td>Traditional Chinese</td>
-        <td>字形及筆畫相對較複雜的漢字體系。因使用時間較長，又名傳統漢字或正體漢字，與之對應者為簡體中文。</td>
+        <td>
+          <p data-lang="en" class="translateme">Translation needed.</p> 
+          <p data-lang="zh-hans">字形及笔画相对较复杂的汉字体系。因使用时间较长，又名传统汉字或正体汉字，与之对应者为简体中文。</p>
+          <p data-lang="zh-hant">字形及筆畫相對較複雜的漢字體系。因使用時間較長，又名傳統漢字或正體漢字，與之對應者為簡體中文。</p>
+        </td>
       </tr>
       <tr>
         <td>分詞連寫</td>
         <td>分词连写</td>
         <td>fēncí liánxiě</td>
         <td>words as the base units</td>
-        <td>以漢語詞為單位拼寫羅馬拼音的方式。</td>
-      </tr>
-      <tr>
-        <td>分隔號</td>
-        <td>分隔号</td>
-        <td>fēngéhào</td>
-        <td>solidus</td>
-        <td>見標點符號附錄。</td>
-      </tr>
-      <tr>
-        <td>分號</td>
-        <td>分号</td>
-        <td>fēnhào</td>
-        <td>semicolon</td>
-        <td>見標點符號附錄。</td>
+        <td>
+          <p data-lang="en" class="translateme">Translation needed.</p> 
+          <p data-lang="zh-hans">以汉语词为单位拼写罗马拼音的方式。</p>
+          <p data-lang="zh-hant">以漢語詞為單位拼寫羅馬拼音的方式。</p>
+        </td>
       </tr>
       <tr>
         <td>分字連寫</td>
         <td>分字连写</td>
         <td>fēnzì liánxiě</td>
         <td>characters as the base units</td>
-        <td>以字為單位拼寫羅馬拼音的方式。</td>
+        <td>
+          <p data-lang="en" class="translateme">Translation needed.</p> 
+          <p data-lang="zh-hans">以字为单位拼写罗马拼音的方式。</p>
+          <p data-lang="zh-hant">以字為單位拼寫羅馬拼音的方式。</p>
+        </td>
       </tr>
       <tr>
         <td>符號分離禁則</td>
         <td>符号分离禁则</td>
         <td>fúhào fēnlí jìnzé</td>
         <td>prohibition rules for unbreakable punctuation</td>
-        <td>特定的符號里不得加入空隙的原則。</td>
-      </tr>
-      <tr>
-        <td>括號</td>
-        <td>括号</td>
-        <td>guāhào</td>
-        <td>parenthesis</td>
-        <td>見標點符號附錄。</td>
+        <td>
+          <p data-lang="en" class="translateme">Translation needed.</p> 
+          <p data-lang="zh-hans">特定的符号里不得加入空隙的原则。</p>
+          <p data-lang="zh-hant">特定的符號里不得加入空隙的原則。</p>
+        </td>
       </tr>
       <tr>
         <td>括注符號</td>
         <td>括注符号</td>
         <td>guāzhù fúhào</td>
         <td>brackets</td>
-        <td>為提示或突顯將文本括注起來的一類成對符號的總稱。</td>
+        <td>
+          <p data-lang="en" class="translateme">Translation needed.</p> 
+          <p data-lang="zh-hans">为提示或突显将文本括注起来的一类成对符号的总称。</p>
+          <p data-lang="zh-hant">為提示或突顯將文本括注起來的一類成對符號的總稱。</p>
+        </td>
       </tr>
       <tr>
         <td>孤行</td>
         <td>孤行</td>
         <td>gūháng</td>
         <td>widow</td>
-        <td>頁面中首行為前頁最後一個段落的末行者為孤行。</td>
+        <td>
+          <p data-lang="en" class="translateme">Translation needed.</p> 
+          <p data-lang="zh-hans">页面中首行为前页最后一个段落的末行者为孤行。</p>
+          <p data-lang="zh-hant">頁面中首行為前頁最後一個段落的末行者為孤行。</p>
+        </td>
       </tr>
       <tr>
         <td>孤字</td>
         <td>孤字</td>
         <td>gūzì</td>
         <td>orphan</td>
-        <td>段落末行僅有一個漢字，或一個漢字加上標點符號，該字即為孤字。</td>
+        <td>
+          <p data-lang="en" class="translateme">Translation needed.</p> 
+          <p data-lang="zh-hans">段落末行仅有一个汉字，或一个汉字加上标点符号，该字即为孤字。</p>
+          <p data-lang="zh-hant">段落末行僅有一個漢字，或一個漢字加上標點符號，該字即為孤字。</p>
+        </td>
       </tr>
       <tr>
         <td>行高</td>
         <td>行高</td>
         <td>hánggāo</td>
         <td>line-height</td>
-        <td>一行的高度，西文里通常指基线到基线的距离。</td>
+        <td>
+          <p data-lang="en" class="translateme">Translation needed.</p> 
+          <p data-lang="zh-hans">一行的高度，西文里通常指基线到基线的距离。</p>
+          <p data-lang="zh-hant">一行的高度，西文裡通常指基線到基線的距離。</p>
+        </td>
       </tr>
       <tr>
         <td>行間批語</td>
         <td>行间批语</td>
         <td>hángjiān pīyǔ</td>
         <td>interlinear comments</td>
-        <td>位於行間的批注，形態自由、長度不拘，時可超過一行。</td>
+        <td>
+          <p data-lang="en" class="translateme">Translation needed.</p> 
+          <p data-lang="zh-hans">位于行间的批注，形态自由、长度不拘，时可超过一行。</p>
+          <p data-lang="zh-hant">位於行間的批注，形態自由、長度不拘，時可超過一行。</p>
+        </td>
       </tr>
       <tr>
         <td>行間注</td>
         <td>行间注</td>
         <td>hángjiānzhù</td>
         <td>interlinear annotations</td>
-        <td>標注於行間的說明或文字讀音。</td>
+        <td>
+          <p data-lang="en" class="translateme">Translation needed.</p> 
+          <p data-lang="zh-hans">标注于行间的说明或文字读音。</p>
+          <p data-lang="zh-hant">標注於行間的說明或文字讀音。</p>
+        </td>
       </tr>
       <tr>
         <td>行首行尾禁則</td>
         <td>行首行尾禁则</td>
         <td>hángshǒu hángwěi jìnzé</td>
         <td>prohibition rules for line start/end</td>
-        <td>不同的標點依其性質，不得出現於行首或行尾的排版規則。</td>
+        <td>
+          <p data-lang="en" class="translateme">Translation needed.</p> 
+          <p data-lang="zh-hans">不同的标点依其性质，不得出现于行首或行尾的排版规则。</p>
+          <p data-lang="zh-hant">不同的標點依其性質，不得出現於行首或行尾的排版規則。</p>
+        </td>
       </tr>
       <tr>
         <td>行尾點號懸掛</td>
         <td>行尾点号悬挂</td>
         <td>hángwěi diǎnhào xuánguà</td>
         <td>hanging punctuation marks for line end</td>
-        <td>將行尾的點號懸掛於版心之外的排版之式。</td>
+        <td>
+          <p data-lang="en" class="translateme">Translation needed.</p> 
+          <p data-lang="zh-hans">将行尾的点号悬挂于版心之外的排版方式。</p>
+          <p data-lang="zh-hant">將行尾的點號懸掛於版心之外的排版方式。</p>
+        </td>
       </tr>
       <tr>
         <td>漢語拼音</td>
         <td>汉语拼音</td>
         <td>Hànyǔ pīnyīn</td>
         <td>Hanyu Pinyin</td>
-        <td>《汉语拼音方案》给汉字注音和拼写普通话的一种方案，采用拉丁字母，并用附加符号表示声调，是帮助学习汉字和推广普通话的工具。</td>
+        <td>
+          <p data-lang="en" class="translateme">Translation needed.</p> 
+          <p data-lang="zh-hans">《汉语拼音方案》给汉字注音和拼写普通话的一种方案，采用拉丁字母，并用附加符号表示声调，是帮助学习汉字和推广普通话的工具。</p>
+          <p data-lang="zh-hant">《漢語拼音方案》給漢字注音和拼寫普通話的一種方案，採用拉丁字母，並用附加符號表示聲調，是幫助學習漢字和推廣普通話的工具。</p>
+        </td>
       </tr>
       <tr>
         <td>漢字</td>
         <td>汉字</td>
         <td>Hànzì</td>
-        <td>Chinese characters/Han characters</td>
-        <td>中文的基本文字。</td>
+        <td>Chinese characters/<wbr>Han characters</td>
+        <td>
+          <p data-lang="en" class="translateme">Translation needed.</p> 
+          <p data-lang="zh-hans">中文的基本文字。</p>
+          <p data-lang="zh-hant">中文的基本文字。</p>
+        </td>
       </tr>
       <tr>
         <td>黑體</td>
         <td>黑体</td>
         <td>hēitǐ</td>
-        <td>Heiti</td>
-        <td>筆畫無明顯粗細變化的一種傳統漢字印刷字體風格。</td>
+        <td>Hei</td>
+        <td>
+          <p data-lang="en" class="translateme">Translation needed.</p> 
+          <p data-lang="zh-hans">笔画无明显粗细变化的一种传统汉字印刷字体风格。</p>
+          <p data-lang="zh-hant">筆畫無明顯粗細變化的一種傳統漢字印刷字體風格。</p>
+        </td>
       </tr>
       <tr>
         <td>橫排</td>
         <td>横排</td>
         <td>héngpái</td>
         <td>horizontal writing mode</td>
-        <td>文字由左至右、各行由上至下排列的排版方式。</td>
+        <td>
+          <p data-lang="en" class="translateme">Translation needed.</p> 
+          <p data-lang="zh-hans">文字由左至右、各行由上至下排列的排版方式。</p>
+          <p data-lang="zh-hant">文字由左至右、各行由上至下排列的排版方式。</p>
+        </td>
       </tr>
       <tr>
         <td>合文</td>
         <td>合文</td>
         <td>héwén</td>
         <td>ligature</td>
-        <td>將二字以上的詞組寫作一個漢字書寫單位的形式。</td>
+        <td>
+          <p data-lang="en" class="translateme">Translation needed.</p> 
+          <p data-lang="zh-hans">将二字以上的词组写作一个汉字书写单位的形式。</p>
+          <p data-lang="zh-hant">將二字以上的詞組寫作一個漢字書寫單位的形式。</p>
+        </td>
       </tr>
       <tr>
         <td>活字排版</td>
         <td>活字排版</td>
         <td>huózì páibǎn</td>
         <td>letterpress printing</td>
-        <td>使用可以移動的字塊進行文字排版及印刷的方式。</td>
-      </tr>
-      <tr>
-        <td>間隔號</td>
-        <td>间隔号</td>
-        <td>jiàngéhào</td>
-        <td>interpunct</td>
-        <td>見標點符號附錄。</td>
+        <td>
+          <p data-lang="en" class="translateme">Translation needed.</p> 
+          <p data-lang="zh-hans">使用可以移动的字块进行文字排版及印刷的方式。</p>
+          <p data-lang="zh-hant">使用可以移動的字塊進行文字排版及印刷的方式。</p>
+        </td>
       </tr>
       <tr>
         <td>簡體中文</td>
         <td>简体中文</td>
         <td>jiǎntǐ Zhōngwén</td>
         <td>Simplified Chiense</td>
-        <td>字形及筆畫相對較簡單的漢字體系，主要指中國大陸於20世紀60年代左右公布修訂的簡化漢字，與之對應者為繁體中文。</td>
+        <td>
+          <p data-lang="en" class="translateme">Translation needed.</p> 
+          <p data-lang="zh-hans">字形及笔画相对较简单的汉字体系，主要指中国大陆于20世纪60年代左右公布修订的简化汉字，与之对应者为繁体中文。</p>
+          <p data-lang="zh-hant">字形及筆畫相對較簡單的漢字體系，主要指中國大陸於20世紀60年代左右公布修訂的簡化漢字，與之對應者為繁體中文。</p>
+        </td>
       </tr>
       <tr>
         <td>結束括注符號</td>
         <td>结束括注符号</td>
         <td>jiéshù guāzhù fúhào</td>
         <td>closing bracket(s)</td>
-        <td>成對的引號、括號（夾注號）、書名號中，標注結束的字元。</td>
+        <td>
+          <p data-lang="en" class="translateme">Translation needed.</p> 
+          <p data-lang="zh-hans">成对的引号、括号（夹注号）、书名号中，标注结束的字元。</p>
+          <p data-lang="zh-hant">成對的引號、括號（夾注號）、書名號中，標注結束的字元。</p>
+        </td>
       </tr>
       <tr>
         <td>介音</td>
         <td>介音</td>
         <td>jièyīn</td>
         <td>medial</td>
-        <td>漢語音節的構成中，位於輔音和主要元音之間的過渡音。</td>
-      </tr>
-      <tr>
-        <td>驚嘆號</td>
-        <td>惊叹号</td>
-        <td>jīngtànhào</td>
-        <td>exclamation marks</td>
-        <td>見標點符號附錄。</td>
+        <td>
+          <p data-lang="en" class="translateme">Translation needed.</p> 
+          <p data-lang="zh-hans">汉语音节的构成中，位于辅音和主要元音之间的过渡音。</p>
+          <p data-lang="zh-hant">漢語音節的構成中，位於輔音和主要元音之間的過渡音。</p>
+        </td>
       </tr>
       <tr>
         <td>基文</td>
         <td>基文</td>
         <td>jīwén</td>
         <td>base text</td>
-        <td>行間注排版中，受標注的原文字詞或語句。</td>
-      </tr>
-      <tr>
-        <td>句號</td>
-        <td>句号</td>
-        <td>jùhào</td>
-        <td>period</td>
-        <td>見標點符號附錄。</td>
+        <td>
+          <p data-lang="en" class="translateme">Translation needed.</p> 
+          <p data-lang="zh-hans">行间注排版中，受标注的原文字词或语句。</p>
+          <p data-lang="zh-hant">行間注排版中，受標注的原文字詞或語句。</p>
+        </td>
       </tr>
       <tr>
         <td>開始括注符號</td>
         <td>开始括注符号</td>
         <td>kāishǐ guāzhù fúhào</td>
         <td>opening bracket(s)</td>
-        <td>成對的引號、括號（夾注號）、書名號中，標注起始的字元。</td>
+        <td>
+          <p data-lang="en" class="translateme">Translation needed.</p> 
+          <p data-lang="zh-hans">成对的引号、括号（夹注号）、书名号中，标注起始的字元。</p>
+          <p data-lang="zh-hant">成對的引號、括號（夾注號）、書名號中，標注起始的字元。</p>
+        </td>
       </tr>
       <tr>
         <td>楷體</td>
         <td>楷体</td>
         <td>kǎitǐ</td>
         <td>Kai</td>
-        <td>漢字的一種手寫的風格，以及以此風格製作出的一種傳統漢字印刷字體風格。</td>
+        <td>
+          <p data-lang="en" class="translateme">Translation needed.</p> 
+          <p data-lang="zh-hans">汉字的一种手写风格，以及以此风格制作的一种传统的汉字印刷字体风格。</p>
+          <p data-lang="zh-hant">漢字的一種手寫風格，以及以此風格製作的一種傳統的漢字印刷字體風格。</p>
+        </td>
       </tr>
       <tr>
         <td>拉丁字母</td>
         <td>拉丁字母</td>
         <td>lādīng zìmǔ</td>
         <td>Latin letters</td>
-        <td>西文常用的字母。</td>
+        <td>
+          <p data-lang="en" class="translateme">Translation needed.</p> 
+          <p data-lang="zh-hans">西文常用的字母。</p>
+          <p data-lang="zh-hant">西文常用的字母。</p>
+        </td>
       </tr>
       <tr>
         <td>欄</td>
         <td>栏</td>
         <td>lán</td>
         <td>column</td>
-        <td>將連續一系列的文章放在一頁里，按照文字閱讀方向分割成兩個以上的每一個獨立部分。</td>
+        <td>
+          <p data-lang="en" class="translateme">Translation needed.</p> 
+          <p data-lang="zh-hans">将连续一系列的文章放在一页里，按照文字阅读方向分割成两个以上的每一个独立部分。</p>
+          <p data-lang="zh-hant">將連續一系列的文章放在一頁里，按照文字閱讀方向分割成兩個以上的每一個獨立部分。</p>
+        </td>
       </tr>
       <tr>
         <td>欄間距</td>
         <td>栏间距</td>
         <td>lán jiānjù</td>
         <td>column gap</td>
-        <td>欄與欄之間的間距。</td>
-      </tr>
-      <tr>
-        <td>連接號</td>
-        <td>连接号</td>
-        <td>liánjiēhào</td>
-        <td>dash</td>
-        <td>見標點符號附錄。</td>
+        <td>
+          <p data-lang="en" class="translateme">Translation needed.</p> 
+          <p data-lang="zh-hans">将连续一系列的文章放在一页里，按照文字阅读方向分割成两个以上的每一个独立部分。</p>
+          <p data-lang="zh-hant">將連續一系列的文章放在一頁里，按照文字閱讀方向分割成兩個以上的每一個獨立部分。</p>
+        </td>
       </tr>
       <tr>
         <td>羅馬拼音</td>
         <td>罗马拼音</td>
         <td>luómā pīnyīn</td>
         <td>Romanization</td>
-        <td>將漢字依語言將其發音轉寫為拉丁字母的方式。</td>
-      </tr>
-      <tr>
-        <td>冒號</td>
-        <td>冒号</td>
-        <td>màohào</td>
-        <td>colon</td>
-        <td>見標點符號附錄。</td>
+        <td>
+          <p data-lang="en" class="translateme">Translation needed.</p> 
+          <p data-lang="zh-hans">将汉字依语言将其发音转写为拉丁字母的方式。</p>
+          <p data-lang="zh-hant">將漢字依語言將其發音轉寫為拉丁字母的方式。</p>
+        </td>
       </tr>
       <tr>
         <td>密排</td>
         <td>密排</td>
         <td>mìpái</td>
         <td>seamless arrangement</td>
-        <td>將文字依其外框緊密排列的排版方式。</td>
+        <td>
+          <p data-lang="en" class="translateme">Translation needed.</p> 
+          <p data-lang="zh-hans">将文字依其外框紧密排列的排版方式。</p>
+          <p data-lang="zh-hant">將文字依其外框緊密排列的排版方式。</p>
+        </td>
       </tr>
       <tr>
         <td>末端</td>
         <td>末端</td>
         <td>mòduān</td>
         <td>end point</td>
-        <td>文本或文字靠近該行行尾的一端。通常，文字直排時末端在下，橫排在右。</td>
-      </tr>
-      <tr>
-        <td>破折號</td>
-        <td>破折号</td>
-        <td>pòzhéhào</td>
-        <td>long dash</td>
-        <td>見標點符號附錄。</td>
+        <td>
+          <p data-lang="en" class="translateme">Translation needed.</p> 
+          <p data-lang="zh-hans">文本或文字靠近其所在行行尾的一端。通常，文字直排时末端在下，横排在右。</p>
+          <p data-lang="zh-hant">文本或文字靠近其所在行行尾的一端。通常，文字直排時末端在下，橫排在右。</p>
+        </td>
       </tr>
       <tr>
         <td>輕聲</td>
         <td>轻声</td>
         <td>qīngshēng</td>
         <td>neutral tone</td>
-        <td>現代標準漢語的特殊變調現象，無固定調値。</td>
+        <td>
+          <p data-lang="en" class="translateme">Translation needed.</p> 
+          <p data-lang="zh-hans">现代标准汉语的特殊变调现象，无固定调値。</p>
+          <p data-lang="zh-hant">現代標準漢語的特殊變調現象，無固定調値。</p>
+        </td>
       </tr>
       <tr>
         <td>齊頭尾對齊</td>
         <td>齐头尾对齐</td>
         <td>qítóuwěi duìqí</td>
         <td>justified alignment</td>
-        <td>一種盡量保證行頭行尾分別對齊的排版方式。</td>
+        <td>
+          <p data-lang="en" class="translateme">Translation needed.</p> 
+          <p data-lang="zh-hans">一种尽量保证行头行尾分别对齐的排版方式。</p>
+          <p data-lang="zh-hant">一種盡量保證行頭行尾分別對齊的排版方式。</p>
+        </td>
       </tr>
       <tr>
         <td>全形/全角</td>
         <td>全角/全形</td>
-        <td>quánxíng/quánjiao</td>
+        <td>quánxíng/<wbr>quánjiao</td>
         <td>full-width/em</td>
-        <td>排字的度量单位，宽度等于所使用的字號，用做排版宽度水平方向的度量。</td>
+        <td>
+          <p data-lang="zh-hans">排字的度量单位，宽度等于所使用的字号，用做排版宽度水平方向的度量。</p>
+          <p data-lang="zh-hant">排字的度量單位，寬度等於所使用的字號，用做排版寬度水平方向的度量。</p>
+        </td>
       </tr>
       <tr>
         <td>入聲</td>
         <td>入声</td>
         <td>rùshēng</td>
         <td>checked tone</td>
-        <td>漢語及漢語方言的音節結構，屬四聲之一，其調值之調型短而急促。</td>
-      </tr>
-      <tr>
-        <td>刪節號</td>
-        <td>省略号</td>
-        <td>shānjiéhào/shěnglüèhào</td>
-        <td>ellipsis</td>
-        <td>見標點符號附錄。</td>
+        <td>
+          <p data-lang="en" class="translateme">Translation needed.</p> 
+          <p data-lang="zh-hans">汉语及汉语方言的音节结构，属四声之一，其调值之调型短而急促。</p>
+          <p data-lang="zh-hant">漢語及漢語方言的音節結構，屬四聲之一，其調值之調型短而急促。</p>
+        </td>
       </tr>
       <tr>
         <td>聲調</td>
         <td>声调</td>
         <td>shēngdiào</td>
         <td>tone</td>
-        <td>音節的高低升降變化。漢語傳統音韻學里分為平、上、去、入等四聲。</td>
+        <td>
+          <p data-lang="en" class="translateme">Translation needed.</p> 
+          <p data-lang="zh-hans">音节的高低升降变化。汉语传统音韵学里分为平、上、去、入等四声。</p>
+          <p data-lang="zh-hant">音節的高低升降變化。漢語傳統音韻學裡分為平、上、去、入等四聲。</p>
+        </td>
       </tr>
       <tr>
         <td>聲母</td>
         <td>声母</td>
         <td>shēngmǔ</td>
         <td>initial</td>
-        <td>漢語字音音節開頭的輔音。</td>
+        <td>
+          <p data-lang="en" class="translateme">Translation needed.</p> 
+          <p data-lang="zh-hans">汉语字音音节开头的辅音。</p>
+          <p data-lang="zh-hant">漢語字音音節開頭的輔音。</p>
+        </td>
       </tr>
       <tr>
         <td>始端</td>
         <td>始端</td>
         <td>shǐduān</td>
         <td>starting point</td>
-        <td>文本或文字靠近該行行首的一端。通常，文字直排時末端在上，橫排在左。</td>
-      </tr>
-      <tr>
-        <td>書名號</td>
-        <td>书名号</td>
-        <td>shūmínghào</td>
-        <td>title mark</td>
-        <td>見標點符號附錄。</td>
+        <td>
+          <p data-lang="en" class="translateme">Translation needed.</p> 
+          <p data-lang="zh-hans">文本或文字靠近该行行首的一端。通常，文字直排时末端在上，横排在左。</p>
+          <p data-lang="zh-hant">文本或文字靠近該行行首的一端。通常，文字直排時末端在上，橫排在左。</p>
+        </td>
       </tr>
       <tr>
         <td>疏排</td>
         <td>疏排</td>
         <td>shūpái</td>
         <td>distributed arrangement</td>
-        <td>於文本各字之間加入空白來排列文字的排版方式。</td>
+        <td>
+          <p data-lang="en" class="translateme">Translation needed.</p> 
+          <p data-lang="zh-hans">于文本各字之间加入空白来排列文字的排版方式。</p>
+          <p data-lang="zh-hant">於文本各字之間加入空白來排列文字的排版方式。</p>
+        </td>
       </tr>
       <tr>
         <td>宋體（明體／明朝體）</td>
         <td>宋体（明体/明朝体）</td>
-        <td>Sòngtǐ (Míngtǐ/Míngcháotǐ)</td>
+        <td>Sòngtǐ (Míngtǐ/<wbr>Míngcháotǐ)</td>
         <td>Song</td>
-        <td>通常為橫細豎粗、且筆畫末端帶有裝飾部分的一種傳統漢字印刷字體風格。</td>
-      </tr>
-      <tr>
-        <td>天／天頭</td>
-        <td>天／天头</td>
-        <td>tiān/tiāntóu</td>
-        <td>head/top margin</td>
         <td>
-          <ol type="a">
-            <li>書或頁面的頂部。
-            <li>版心與頁面頂邊之間的空間。
-          </ol>
+          <p data-lang="en" class="translateme">Translation needed.</p> 
+          <p data-lang="zh-hans">通常为横细竖粗、且笔画末端带有装饰部分的一种汉字传统印刷字体风格。</p>
+          <p data-lang="zh-hant">通常為橫細豎粗、且筆畫末端帶有裝飾部分的一種漢字傳統印刷字體風格。</p>
         </td>
       </tr>
       <tr>
-        <td>彎引號</td>
-        <td>弯引号</td>
-        <td>wān-yǐnhào</td>
-        <td>curve quotation mark</td>
-        <td>見標點符號附錄。</td>
-      </tr>
-      <tr>
-        <td>問號</td>
-        <td>问号</td>
-        <td>wènhào</td>
-        <td>question mark</td>
-        <td>見標點符號附錄。</td>
+        <td>天／天頭</td>
+        <td>天/天头</td>
+        <td>tiān/tiāntóu</td>
+        <td>head/top margin</td>
+        <td>
+          <ol type="a" data-lang="en" class="translateme">
+            <li>Translation needed.
+          </ol>
+          <ol type="a" data-lang="zh-hans">
+            <li>书或页面的顶部。
+            <li>版心与页面顶边之间的空间。
+          </ol>
+          <ol type="a" data-lang="zh-hant">
+            <li>書或頁面的頂部。
+            <li>版心與頁面頂邊之間的空間。
+          </ol> 
+        </td>
       </tr>
       <tr>
         <td>文字設計／字體排印</td>
         <td>文字设计/字体排印</td>
-        <td>wénzìshèjì/zìtǐpáiyìn</td>
+        <td>wénzìshèjì/<wbr>zìtǐpáiyìn</td>
         <td>typography</td>
-        <td>對文字進行合適地排版讓書面語言易認、易讀、有吸引力地展現出來的一種工藝。</td>
+        <td>
+          <p data-lang="en" class="translateme">Translation needed.</p> 
+          <p data-lang="zh-hans">对文字进行合适地排版让书面语言易认、易读、有吸引力地展现出来的一种工艺。</p>
+          <p data-lang="zh-hant">對文字進行合適地排版讓書面語言易認、易讀、有吸引力地展現出來的一種工藝。</p>
+        </td>
       </tr>
       <tr>
         <td>希臘字母</td>
         <td>希腊字母</td>
         <td>xīlà zìmǔ</td>
         <td>Greek letters</td>
-        <td>希臘語文所用的字母。</td>
+        <td>
+          <p data-lang="en" class="translateme">Translation needed.</p> 
+          <p data-lang="zh-hans">希腊语文所用的字母。</p>
+          <p data-lang="zh-hant">希臘語文所用的字母。</p>
+        </td>
       </tr>
       <tr>
         <td>西文</td>
         <td>西文</td>
         <td>Xīwén</td>
         <td>Western scripts</td>
-        <td>歐洲的語言文字。</td>
+        <td>
+          <p data-lang="en" class="translateme">Translation needed.</p> 
+          <p data-lang="zh-hans">欧洲的语言文字。</p>
+          <p data-lang="zh-hant">歐洲的語言文字。</p>
+        </td>
       </tr>
       <tr>
         <td>西文字母</td>
         <td>西文字母</td>
         <td>xīwén zìmǔ</td>
         <td>Western alphabet</td>
-        <td>歐洲的語言文字所使用的字母系統，常見有拉丁字母、希臘字母等。</td>
+        <td>
+          <p data-lang="en" class="translateme">Translation needed.</p> 
+          <p data-lang="zh-hans">欧洲的语言文字所使用的字母系统，常见有拉丁字母、希腊字母等。</p>
+          <p data-lang="zh-hant">歐洲的語言文字所使用的字母系統，常見有拉丁字母、希臘字母等。</p>
+        </td>
       </tr>
       <tr>
         <td>以連字符斷行</td>
         <td>以连字符断行</td>
         <td>yǐ liánzìfú duànháng</td>
         <td>hyphenation</td>
-        <td>在西文詞組音節間插入連字符來斷行的方式。</td>
-      </tr>
-      <tr>
-        <td>引號</td>
-        <td>引号</td>
-        <td>yǐnhào</td>
-        <td>quotation</td>
-        <td>見標點符號附錄。</td>
+        <td>
+          <p data-lang="en" class="translateme">Translation needed.</p> 
+          <p data-lang="zh-hans">在西文词组音节间插入连字符来断行的方式。</p>
+          <p data-lang="zh-hant">在西文詞組音節間插入連字符來斷行的方式。</p>
+        </td>
       </tr>
       <tr>
         <td>韻母</td>
         <td>韵母</td>
         <td>yùnmŭ</td>
         <td>final</td>
-        <td>漢語字音中一個音節中除聲母、聲調外的部分。</td>
+        <td>
+          <p data-lang="en" class="translateme">Translation needed.</p> 
+          <p data-lang="zh-hans">汉语字音中一个音节中除声母、声调外的部分。</p>
+          <p data-lang="zh-hant">漢語字音中一個音節中除聲母、聲調外的部分。</p>
+        </td>
       </tr>
       <tr>
         <td>製表定位字元</td>
         <td>制表定位字元</td>
-        <td>zhìbiǎodìngwèizìyuán</td>
+        <td>zhìbiǎo<wbr>dìngwèi<wbr>zìyuán</td>
         <td>tab</td>
-        <td>提供按列對齊文本功能的字元。</td>
-      </tr>
-      <tr>
-        <td>直角引號</td>
-        <td>直角引号</td>
-        <td>zhíjiǎo yǐnhào</td>
-        <td>corner quotation mark</td>
-        <td>見標點符號附錄。</td>
+        <td>
+          <p data-lang="en" class="translateme">Translation needed.</p> 
+          <p data-lang="zh-hans">提供按列对齐文本功能的字元。</p>
+          <p data-lang="zh-hant">提供按列對齊文本功能的字元。</p>
+        </td>
       </tr>
       <tr>
         <td>直排／豎排</td>
         <td>直排/竖排</td>
         <td>zhípái (shùpái)</td>
         <td>vertical writing mode</td>
-        <td>文字由上至下、各行由右至左排列的排版方式。</td>
+        <td>
+          <p data-lang="en" class="translateme">Translation needed.</p> 
+          <p data-lang="zh-hans">文字由上至下、各行由右至左排列的排版方式。</p>
+          <p data-lang="zh-hant">文字由上至下、各行由右至左排列的排版方式。</p>
+        </td>
       </tr>
       <tr>
         <td>中外文對照</td>
         <td>中外文对照</td>
         <td>Zhōng-wàiwén duìzhào</td>
         <td>bilingual annotations</td>
-        <td>以注文或基文的形式為漢語詞組標注原文或譯文，係行間注排版的一種實作方式。</td>
+        <td>
+          <p data-lang="en" class="translateme">Translation needed.</p> 
+          <p data-lang="zh-hans">以注文或基文的形式为汉语词组标注原文或译文，系行间注排版的一种实作方式。</p>
+          <p data-lang="zh-hant">以注文或基文的形式為漢語詞組標注原文或譯文，係行間注排版的一種實作方式。</p>
+        </td>
       </tr>
       <tr>
         <td>中、西文混排處理</td>
         <td>中、西文混排处理</td>
         <td>Zhōng-Xīwén hùnpái chùlǐ</td>
         <td>Chinese and Western mixed text composition</td>
-        <td>在一個排版環境中同時混用中文及西文。</td>
-      </tr>
-      <tr>
-        <td>專名號</td>
-        <td>专名号</td>
-        <td>zhuānmínghào</td>
-        <td>proper name mark</td>
-        <td>見標點符號附錄。</td>
-      </tr>
-      <tr>
-        <td>著重號</td>
-        <td>着重号</td>
-        <td>zhuózhònghào</td>
-        <td>emphasis dot</td>
-        <td>見標點符號附錄。</td>
+        <td>
+          <p data-lang="en" class="translateme">Translation needed.</p> 
+          <p data-lang="zh-hans">在一个排版环境中同时混用中文及西文。</p>
+          <p data-lang="zh-hant">在一個排版環境中同時混用中文及西文。</p>
+        </td>
       </tr>
       <tr>
         <td>注文</td>
         <td>注文</td>
         <td>zhùwén</td>
         <td>annotation text</td>
-        <td>行間注排版中，標注於行間（原文字詞或語句旁側）以標注發音或釋義的文字。</td>
+        <td>
+          <p data-lang="en" class="translateme">Translation needed.</p> 
+          <p data-lang="zh-hans">行间注排版中，标注于行间（原文字词或语句旁侧）以标注发音或释义的文字。</p>
+          <p data-lang="zh-hant">行間注排版中，標注於行間（原文字詞或語句旁側）以標注發音或釋義的文字。</p>
+        </td>
       </tr>
       <tr>
         <td>注音符號</td>
         <td>注音符号</td>
         <td>zhùyīn fúhào</td>
         <td>Zhuyin (Bopomofo)</td>
-        <td>「國語注音符號」及「台灣方音符號」的統稱。</td>
+        <td>
+          <p data-lang="en" class="translateme">Translation needed.</p> 
+          <p data-lang="zh-hans">「国语注音符号」及「台湾方音符号」的统称。</p>
+          <p data-lang="zh-hant">「國語注音符號」及「台灣方音符號」的統稱。</p>
+        </td>
       </tr>
       <tr>
         <td>字幅</td>
         <td>字幅</td>
         <td>zìfú</td>
         <td>character advance</td>
-        <td>依照文字排列方向的文字外框大小，為文字的寬度。</td>
+        <td>
+          <p data-lang="en" class="translateme">Translation needed.</p> 
+          <p data-lang="zh-hans">文字外框中，与文字排列方向平行一侧的大小，为文字的宽度。</p>
+          <p data-lang="zh-hant">文字外框中，與文字排列方向平行一側的大小，為文字的寬度。</p>
+        </td>
       </tr>
       <tr>
         <td>字号</td>
         <td>字號</td>
         <td>zìhào</td>
         <td>type size</td>
-        <td>区别单个字符大小的表示方法(GB 9851.2-2008, 3.3)</td>
+        <td>
+          <p data-lang="en" class="translateme">Translation needed.</p> 
+          <p data-lang="zh-hans">区别单个字符大小的表示方法。(GB 9851.2-2008, 3.3)</p>
+          <p data-lang="zh-hant">區別單個字符大小的表示方法。(GB 9851.2-2008, 3.3)</p>
+        </td>
       </tr>
       <tr>
         <td>字距</td>
         <td>字距</td>
         <td>zìjù</td>
         <td>tracking</td>
-        <td>字元之間的空隙。</td>
+        <td>
+          <p data-lang="en" class="translateme">Translation needed.</p> 
+          <p data-lang="zh-hans">字元之间的空隙。</p>
+          <p data-lang="zh-hant">字元之間的空隙。</p>
+        </td>
       </tr>
       <tr>
         <td>字面</td>
         <td>字面</td>
         <td>zìmiàn</td>
         <td>character face</td>
-        <td>文字的字身框中，字圖實際分布的空間。</td>
+        <td>
+          <p data-lang="en" class="translateme">Translation needed.</p> 
+          <p data-lang="zh-hans">文字的字身框中，字图实际分布的空间。</p>
+          <p data-lang="zh-hant">文字的字身框中，字圖實際分布的空間。</p>
+        </td>
       </tr>
       <tr>
         <td>字體</td>
         <td>字体</td>
         <td>zìtǐ</td>
         <td>typeface</td>
-        <td>字母、文字或符號的一組集合，一個字體通常有一貫的筆畫與字形風格，用於印刷或螢幕渲染中。</td>
+        <td>
+          <p data-lang="en" class="translateme">Translation needed.</p> 
+          <p data-lang="zh-hans">字母、文字或符号的一组集合，一个字体通常有一贯的笔画与字形风格，用于印刷或屏幕渲染中。</p>
+          <p data-lang="zh-hant">字母、文字或符號的一組集合，一個字體通常有一貫的筆畫與字形風格，用於印刷或螢幕渲染中。</p>
+        </td>
       </tr>
       <tr>
         <td>字型</td>
         <td>字型</td>
         <td>zìxíng</td>
         <td>font</td>
-        <td>一組字體下，其中一個字號大小的字元集合。現多與字體混用。</td>
+        <td>
+          <p data-lang="en" class="translateme">Translation needed.</p> 
+          <p data-lang="zh-hans">一组字体下，其中一个字号大小的字元集合。现多与字体混用。</p>
+          <p data-lang="zh-hant">一組字體下，其中一個字號大小的字元集合。現多與字體混用。</p>
+        </td>
       </tr>
       <tr>
         <td>字形</td>
         <td>字形</td>
         <td>zìxíng</td>
         <td>glyph</td>
-        <td>字母、文字或符號在書寫、印刷上的形體。</td>
+        <td>
+          <p data-lang="en" class="translateme">Translation needed.</p> 
+          <p data-lang="zh-hans">字母、文字或符号在书写、印刷上的形体。</p>
+          <p data-lang="zh-hant">字母、文字或符號在書寫、印刷上的形體。</p>
+        </td>
       </tr>
       <tr>
         <td>縱橫對齊</td>
         <td>纵横对齐</td>
         <td>zònghéng duìqí</td>
         <td>grid alignment</td>
-        <td>盡量保證橫向和縱向的字符皆可相互對齊於一基線，並且行的頭尾也對齊的排版方式。</td>
+        <td>
+          <p data-lang="en" class="translateme">Translation needed.</p> 
+          <p data-lang="zh-hans">尽量保证横向和纵向的字符皆可相互对齐于一基线，并且行的头尾也对齐的排版方式。</p>
+          <p data-lang="zh-hant">盡量保證橫向和縱向的字符皆可相互對齊於一基線，並且行的頭尾也對齊的排版方式。</p>
+        </td>
       </tr>
       <tr>
         <td>縱中橫排</td>
         <td>纵中横排</td>
-        <td>zòngzhōnghéngpái</td>
+        <td>zòng<wbr>zhōng<wbr>héng<wbr>pái</td>
         <td>horizonal-in-vertical setting</td>
-        <td>在直排文本的行內將字符橫排插入排版方式。</td>
+        <td>
+          <p data-lang="en" class="translateme">Translation needed.</p> 
+          <p data-lang="zh-hans">在直排文本的行内将字符横排插入排版方式。</p>
+          <p data-lang="zh-hant">在直排文本的行內將字符橫排插入排版方式。</p>
+        </td>
       </tr>
     </tbody>
   </table>

@@ -123,7 +123,88 @@ samp, kbd {
 
 .translateme {
 	background-color: #F3F3C3;
+	background-clip: content-box;
 }
 .checkme {
 	background-color: #BBEFFC;
+	background-clip: content-box;
 }
+
+.is-multilingual [data-lang^="zh"] {
+  padding-left: .4em;
+  border-left: 3px solid;
+}
+.is-multilingual [data-lang="zh-hant"] {
+  border-color: rgba(64,196,64,.5);
+}
+.is-multilingual [data-lang="zh-hans"] {
+  border-color: rgba(248,138,5,.5);
+}
+
+.is-multilingual h2[data-lang^="zh"],
+.is-multilingual h3[data-lang^="zh"],
+.is-multilingual h4[data-lang^="zh"],
+.is-multilingual h5[data-lang^="zh"],
+.is-multilingual h6[data-lang^="zh"],
+.is-multilingual p[data-lang^="zh"],
+.is-multilingual ol[data-lang^="zh"],
+.is-multilingual ul[data-lang^="zh"] {
+  margin-left: calc(-.4em - 2px);
+}
+.is-multilingual .secno ~ span[data-lang^="zh"] {
+	display: inline-block;
+	margin-left: .3em;
+	padding-left: .3em;
+}
+
+.note h6 {
+	margin-top: 1em;
+	margin-bottom: 0;
+	font-weight: bold;
+}
+
+h2 + table,
+table + table {
+	margin-top: 1rem;
+}
+
+table thead span[data-lang] {
+	display: block;
+	margin-top: .1em;
+	text-align: start;
+}
+table thead span[data-lang='en']:first-child {
+	margin-top: 0;
+}
+
+.is-multilingual table thead span[data-lang='en'] {
+	padding-left: calc(.4em + 3px);
+}
+
+/**
+ * Table of glossary
+ */
+table.glossary { border-collapse: collapse; }
+table.glossary tr { border-bottom: 1px solid #ddd; }
+table.glossary th.term { width: 6.25em; }
+table.glossary th.term-pinyin { width: 5.25em; }
+table.glossary th.term-en { width: 5.25em; }
+
+table.glossary th { padding: .25em 0 .5em .25em; }
+
+table.glossary tbody td:not(:last-child) {
+	padding: .75em .25em .75em 0;
+	vertical-align: top;
+}
+
+table.glossary tbody td p {
+	margin-top: .5em;
+	margin-bottom: .5em;
+}
+
+.is-multilingual table.glossary ol,
+.is-multilingual table.glossary ul { padding-left: 2em; }
+
+.is-multilingual table.glossary tbody td:last-child { padding-left: calc(.4em + 3px + .25em); }
+.is-multilingual table.glossary ol[data-lang="en"] { margin-left: -.4em; }
+.isnt-multilingual table.glossary th { padding-left: 0; }

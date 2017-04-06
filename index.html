@@ -2901,1438 +2901,1121 @@ var respecConfig = {
     <span data-lang="zh-hant">中文標點符號表</span>
   </h2>
 
-  <table class="punctuation" data-lang="en">
-    <thead>
-      <tr>
-        <th class="topth">Name in Chinese</th>
-        <th class="topth">Character</th>
-        <th class="topth">Unicode</th>
-        <th class="topth">Name</th>
-        <th class="topth">Rotated 90° clockwise in vertical writing mode</th>
-        <th class="topth">Prohibited at line start</th>
-        <th class="topth">Prohibited at line end</th>
-        <th class="topth">Unbreakable</th>
-        <th class="topth">Notes</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th rowspan="2">句號</th>
-        <td>。</td>
-        <td>3002</td>
-        <td>IDEOGRAPHIC FULL STOP</td>
-        <td>N</td>
-        <td>Y</td>
-        <td>N</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>．</td>
-        <td>FF0E</td>
-        <td>FULLWIDTH FULL STOP</td>
-        <td></td>
-        <td>Y</td>
-        <td>N</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <th>逗號</th>
-        <td>，</td>
-        <td>FF0C</td>
-        <td>FULLWIDTH COMMA</td>
-        <td>N</td>
-        <td>Y</td>
-        <td>N</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <th>頓號</th>
-        <td>、</td>
-        <td>3001</td>
-        <td>IDEOGRAPHIC COMMA</td>
-        <td>N</td>
-        <td>Y</td>
-        <td>N</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <th>冒號</th>
-        <td>：</td>
-        <td>FF1A</td>
-        <td>FULLWIDTH COLON</td>
-        <td>N</td>
-        <td>Y</td>
-        <td>N</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <th>分號</th>
-        <td>；</td>
-        <td>FF1B</td>
-        <td>FULLWIDTH SEMICOLON</td>
-        <td>N</td>
-        <td>Y</td>
-        <td>N</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <th rowspan="2">驚嘆號</th>
-        <td>！</td>
-        <td>FF01</td>
-        <td>FULLWIDTH EXCLAMATION MARK</td>
-        <td>N</td>
-        <td>Y*1</td>
-        <td>N</td>
-        <td></td>
-        <td><p>Three exclamation marks used sequentially should take a two-character width.</p></td>
-      </tr>
-      <tr>
-        <td>‼</td>
-        <td>203C</td>
-        <td></td>
-        <td>N</td>
-        <td>Y</td>
-        <td>N</td>
-        <td></td>
-        <td><p>Takes one character width.</p></td>
-      </tr>
-      <tr>
-        <th rowspan="2">問號</th>
-        <td>？</td>
-        <td>FF1F</td>
-        <td>FULLWIDTH QUESTION MARK</td>
-        <td>N</td>
-        <td>Y*1</td>
-        <td>N</td>
-        <td></td>
-        <td><p>Three question marks used sequentially should take a two-character width.</p></td>
-      </tr>
-      <tr>
-        <td>⁇</td>
-        <td>2047</td>
-        <td>DOUBLE QUESTION MARK</td>
-        <td>N</td>
-        <td>Y*1</td>
-        <td>N</td>
-        <td></td>
-        <td><p>Takes one character width.</p></td>
-      </tr>
-      <tr>
-        <th rowspan="8">引號</th>
-        <td>「</td>
-        <td>300C</td>
-        <td>LEFT CORNER BRACKET</td>
-        <td>Y</td>
-        <td>N</td>
-        <td>Y</td>
-        <td></td>
-        <td rowspan="4"><p>Mainly used in Traditional Chinese.</p></td>
-      </tr>
-      <tr>
-        <td>」</td>
-        <td>300D</td>
-        <td>RIGHT CORNER BRACKET</td>
-        <td>Y</td>
-        <td>Y</td>
-        <td>N</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>『</td>
-        <td>300E</td>
-        <td>LEFT WHITE CORNER BRACKET</td>
-        <td>Y</td>
-        <td>N</td>
-        <td>Y</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>』</td>
-        <td>300F</td>
-        <td>RIGHT WHITE CORNER BRACKET</td>
-        <td>Y</td>
-        <td>Y</td>
-        <td>N</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>“</td>
-        <td>201C</td>
-        <td>LEFT DOUBLE QUOTATION MARK</td>
-        <td>Y*2</td>
-        <td>N</td>
-        <td>Y</td>
-        <td></td>
-        <td rowspan="4"><p>Takes one character width, and usually used with Traditional Chinese.</p></td>
-      </tr>
-      <tr>
-        <td>”</td>
-        <td>201D</td>
-        <td>RIGHT DOUBLE QUOTATION MARK</td>
-        <td>Y*2</td>
-        <td>Y</td>
-        <td>N</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>‘</td>
-        <td>2018</td>
-        <td>LEFT SINGLE QUOTATION MARK</td>
-        <td>Y*2</td>
-        <td>N</td>
-        <td>Y</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>’</td>
-        <td>2019</td>
-        <td>RIGHT SINGLE QUOTATION MARK</td>
-        <td>Y*2</td>
-        <td>Y</td>
-        <td>N</td>
-        <td></td>
-      </tr>
-      <tr>
-        <th rowspan="2">括號</th>
-        <td>（</td>
-        <td>FF08</td>
-        <td>FULLWIDTH LEFT PARENTHESIS</td>
-        <td>Y</td>
-        <td>N</td>
-        <td>Y</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>）</td>
-        <td>FF09</td>
-        <td>FULLWIDTH RIGHT PARENTHESIS</td>
-        <td>Y</td>
-        <td>Y</td>
-        <td>N</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <th>破折號</th>
-        <td>⸺ or ——</td>
-        <td>2E3A or 2014</td>
-        <td>TWO-EM DASH or EM DASH</td>
-        <td>Y</td>
-        <td>N</td>
-        <td>N</td>
-        <td>Y*3</td>
-        <td><p>Takes a two-character width, in the shape of a single line without a break.</p></td>
-      </tr>
-      <tr>
-        <th rowspan="4">書名號</th>
-        <td>《</td>
-        <td>300A</td>
-        <td>LEFT DOUBLE ANGLE BRACKET</td>
-        <td>Y</td>
-        <td>N</td>
-        <td>Y</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>》</td>
-        <td>300B</td>
-        <td>RIGHT DOUBLE ANGLE BRACKET</td>
-        <td>Y</td>
-        <td>Y</td>
-        <td>N</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>〈</td>
-        <td>3008</td>
-        <td>LEFT ANGLE BRACKET</td>
-        <td>Y</td>
-        <td>N</td>
-        <td>Y</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>〉</td>
-        <td>3009</td>
-        <td>RIGHT ANGLE BRACKET</td>
-        <td>Y</td>
-        <td>Y</td>
-        <td>N</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <th>刪節號／省略號</th>
-        <td>……</td>
-        <td>2026</td>
-        <td>HORIZONTAL ELLIPSIS</td>
-        <td>Y</td>
-        <td>N</td>
-        <td>N</td>
-        <td>Y*3</td>
-        <td><p>Two-character width, center-aligned both vertically and horizontally.</p></td>
-      </tr>
-      <tr>
-        <th rowspan="4">連接號</th>
-        <td>～</td>
-        <td>FF5E</td>
-        <td>FULLWIDTH TILDE</td>
-        <td>Y</td>
-        <td>Y*1</td>
-        <td>N</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>-</td>
-        <td>002D</td>
-        <td>HYPHEN-MINUS</td>
-        <td>Y</td>
-        <td>Y*1</td>
-        <td>N</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>–</td>
-        <td>2013</td>
-        <td>EN DASH</td>
-        <td>Y</td>
-        <td>Y*1</td>
-        <td>N</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>—</td>
-        <td>2014</td>
-        <td>EM DASH</td>
-        <td>Y</td>
-        <td>Y*1</td>
-        <td>N</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <th rowspan="2">間隔號</th>
-        <td>·</td>
-        <td>00B7</td>
-        <td>MIDDLE DOT</td>
-        <td>N</td>
-        <td>Y*1</td>
-        <td>N</td>
-        <td></td>
-        <td><p>Takes one character width, and can be adjusted to half a character width in some cases.</p></td>
-      </tr>
-      <tr>
-        <td>‧</td>
-        <td>2027</td>
-        <td>HYPHENATION POINT*4</td>
-        <td>N</td>
-        <td>Y*1</td>
-        <td>N</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <th rowspan="2">分隔號</th>
-        <td>/</td>
-        <td>002F</td>
-        <td>SOLIDUS</td>
-        <td></td>
-        <td>Y</td>
-        <td>Y</td>
-        <td></td>
-        <td><p>Mainly used in Traditional Chinese.</p></td>
-      </tr>
-      <tr>
-        <td>／</td>
-        <td>FF0F</td>
-        <td>FULLWIDTH SOLIDUS</td>
-        <td>N</td>
-        <td>Y</td>
-        <td>N</td>
-        <td></td>
-        <td><p>Mainly used in Traditional Chinese.</p></td>
-      </tr>
-      <tr>
-        <th rowspan="10">括號類</th>
-        <td>【</td>
-        <td>3010</td>
-        <td>LEFT BLACK LENTICULAR BRACKET</td>
-        <td>Y</td>
-        <td>N</td>
-        <td>Y</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>】</td>
-        <td>3011</td>
-        <td>RIGHT BLACK LENTICULAR BRACKET</td>
-        <td>Y</td>
-        <td>Y</td>
-        <td>N</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>〖</td>
-        <td>3016</td>
-        <td>LEFT WHITE LENTICULAR BRACKET</td>
-        <td>Y</td>
-        <td>N</td>
-        <td>Y</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>〗</td>
-        <td>3017</td>
-        <td>RIGHT WHITE LENTICULAR BRACKET</td>
-        <td>Y</td>
-        <td>Y</td>
-        <td>N</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>〔</td>
-        <td>3014</td>
-        <td>LEFT TORTOISE SHELL BRACKET</td>
-        <td>Y</td>
-        <td>N</td>
-        <td>Y</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>〕</td>
-        <td>3015</td>
-        <td>RIGHT TORTOISE SHELL BRACKET</td>
-        <td>Y</td>
-        <td>Y</td>
-        <td>N</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>［</td>
-        <td>FF3B</td>
-        <td>FULLWIDTH LEFT SQUARE BRACKET</td>
-        <td>Y</td>
-        <td>N</td>
-        <td>Y</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>］</td>
-        <td>FF3D</td>
-        <td>FULLWIDTH RIGHT SQUARE BRACKET</td>
-        <td>Y</td>
-        <td>Y</td>
-        <td>N</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>｛</td>
-        <td>FF5B</td>
-        <td>FULLWIDTH LEFT CURLY BRACKET</td>
-        <td>Y</td>
-        <td>N</td>
-        <td>Y</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>｝</td>
-        <td>FF5D</td>
-        <td>FULLWIDTH RIGHT CURLY BRACKET</td>
-        <td>Y</td>
-        <td>Y</td>
-        <td>N</td>
-        <td></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <table data-lang="zh-hans" class="punctuation">
-    <thead>
-      <tr lang="zh-hant">
-        <th class="topth">名称</th>
-        <th class="topth">字符</th>
-        <th class="topth">Unicode</th>
-        <th class="topth">Unicode名称</th>
-        <th class="topth">直排时
-          顺时针旋转90度</th>
-        <th class="topth">禁止出现<wbr/>
-        在行首</th>
-        <th class="topth">禁止出现<wbr/>
-          在行尾</th>
-        <th class="topth">不可<wbr/>
-          分离</th>
-        <th class="topth">说明</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th rowspan="2">句号</th>
-        <td>。</td>
-        <td>3002</td>
-        <td>IDEOGRAPHIC FULL STOP</td>
-        <td>否</td>
-        <td>是</td>
-        <td>否</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>．</td>
-        <td>FF0E</td>
-        <td>FULLWIDTH FULL STOP</td>
-        <td></td>
-        <td>是</td>
-        <td>否</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <th>逗号</th>
-        <td>，</td>
-        <td>FF0C</td>
-        <td>FULLWIDTH COMMA</td>
-        <td>否</td>
-        <td>是</td>
-        <td>否</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <th>顿号</th>
-        <td>、</td>
-        <td>3001</td>
-        <td>IDEOGRAPHIC COMMA</td>
-        <td>否</td>
-        <td>是</td>
-        <td>否</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <th>冒号</th>
-        <td>：</td>
-        <td>FF1A</td>
-        <td>FULLWIDTH COLON</td>
-        <td>否</td>
-        <td>是</td>
-        <td>否</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <th>分号</th>
-        <td>；</td>
-        <td>FF1B</td>
-        <td>FULLWIDTH SEMICOLON</td>
-        <td>否</td>
-        <td>是</td>
-        <td>否</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <th rowspan="2">惊叹号</th>
-        <td>！</td>
-        <td>FF01</td>
-        <td>FULLWIDTH EXCLAMATION MARK</td>
-        <td>否</td>
-        <td>是*1</td>
-        <td>否</td>
-        <td></td>
-        <td>3 个惊叹号迭用 时应占 2 个汉字 大小</td>
-      </tr>
-      <tr>
-        <td>‼</td>
-        <td>203C</td>
-        <td></td>
-        <td>否</td>
-        <td>是</td>
-        <td>否</td>
-        <td></td>
-        <td>占一个汉字大小</td>
-      </tr>
-      <tr>
-        <th rowspan="2">问号</th>
-        <td>？</td>
-        <td>FF1F</td>
-        <td>FULLWIDTH QUESTION MARK</td>
-        <td>否</td>
-        <td>是*1</td>
-        <td>否</td>
-        <td></td>
-        <td>3 个问号迭用时 应占 2 个汉字大 小</td>
-      </tr>
-      <tr>
-        <td>⁇</td>
-        <td>2047</td>
-        <td>DOUBLE QUESTION MARK</td>
-        <td>否</td>
-        <td>是*1</td>
-        <td>否</td>
-        <td></td>
-        <td>占一个汉字大小</td>
-      </tr>
-      <tr>
-        <th rowspan="8">引号</th>
-        <td>「</td>
-        <td>300C</td>
-        <td>LEFT CORNER BRACKET</td>
-        <td>是</td>
-        <td>否</td>
-        <td>是</td>
-        <td></td>
-        <td rowspan="4">主要用于繁体</td>
-      </tr>
-      <tr>
-        <td>」</td>
-        <td>300D</td>
-        <td>RIGHT CORNER BRACKET</td>
-        <td>是</td>
-        <td>是</td>
-        <td>否</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>『</td>
-        <td>300E</td>
-        <td>LEFT WHITE CORNER BRACKET</td>
-        <td>是</td>
-        <td>否</td>
-        <td>是</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>』</td>
-        <td>300F</td>
-        <td>RIGHT WHITE CORNER BRACKET</td>
-        <td>是</td>
-        <td>是</td>
-        <td>否</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>“</td>
-        <td>201C</td>
-        <td>LEFT DOUBLE QUOTATION MARK</td>
-        <td>是*2</td>
-        <td>否</td>
-        <td>是</td>
-        <td></td>
-        <td rowspan="4">占一个汉字大 小，主要用于简 体</td>
-      </tr>
-      <tr>
-        <td>”</td>
-        <td>201D</td>
-        <td>RIGHT DOUBLE QUOTATION MARK</td>
-        <td>是*2</td>
-        <td>是</td>
-        <td>否</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>‘</td>
-        <td>2018</td>
-        <td>LEFT SINGLE QUOTATION MARK</td>
-        <td>是*2</td>
-        <td>否</td>
-        <td>是</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>’</td>
-        <td>2019</td>
-        <td>RIGHT SINGLE QUOTATION MARK</td>
-        <td>是*2</td>
-        <td>是</td>
-        <td>否</td>
-        <td></td>
-      </tr>
-      <tr>
-        <th rowspan="2">括号</th>
-        <td>（</td>
-        <td>FF08</td>
-        <td>FULLWIDTH LEFT PARENTHESIS</td>
-        <td>是</td>
-        <td>否</td>
-        <td>是</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>）</td>
-        <td>FF09</td>
-        <td>FULLWIDTH RIGHT PARENTHESIS</td>
-        <td>是</td>
-        <td>是</td>
-        <td>否</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <th>破折号</th>
-        <td>⸺或——</td>
-        <td>2E3A或2014</td>
-        <td>TWO-EM DASH或EM DASH</td>
-        <td>是</td>
-        <td>否</td>
-        <td>否</td>
-        <td>是*3</td>
-        <td>占二个汉字大 小，呈一直线、 中间不断开</td>
-      </tr>
-      <tr>
-        <th rowspan="4">书名号</th>
-        <td>《</td>
-        <td>300B</td>
-        <td>LEFT DOUBLE ANGLE BRACKET</td>
-        <td>是</td>
-        <td>否</td>
-        <td>是</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>》</td>
-        <td>300B</td>
-        <td>RIGHT DOUBLE ANGLE BRACKET</td>
-        <td>是</td>
-        <td>是</td>
-        <td>否</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>〈</td>
-        <td>3009</td>
-        <td>LEFT ANGLE BRACKET</td>
-        <td>是</td>
-        <td>否</td>
-        <td>是</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>〉</td>
-        <td>3009</td>
-        <td>RIGHT ANGLE BRACKET</td>
-        <td>是</td>
-        <td>是</td>
-        <td>否</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <th>删节号／省略号</th>
-        <td>……</td>
-        <td>2026</td>
-        <td>HORIZONTAL ELLIPSIS</td>
-        <td>是</td>
-        <td>否</td>
-        <td>否</td>
-        <td>是*3</td>
-        <td>占二个汉字大 小，应将省略点 置于字面中央</td>
-      </tr>
-      <tr>
-        <th rowspan="4">连接号</th>
-        <td>～</td>
-        <td>FF5E</td>
-        <td>FULLWIDTH TILDE</td>
-        <td>是</td>
-        <td>是*1</td>
-        <td>否</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>-</td>
-        <td>002D</td>
-        <td>HYPHEN-MINUS</td>
-        <td>是</td>
-        <td>是*1</td>
-        <td>否</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>–</td>
-        <td>2013</td>
-        <td>EN DASH</td>
-        <td>是</td>
-        <td>是*1</td>
-        <td>否</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>—</td>
-        <td>2014</td>
-        <td>EM DASH</td>
-        <td>是</td>
-        <td>是*1</td>
-        <td>否</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <th rowspan="2">间隔号</th>
-        <td>·</td>
-        <td>00B7</td>
-        <td>MIDDLE DOT</td>
-        <td>否</td>
-        <td>是*1</td>
-        <td>否</td>
-        <td></td>
-        <td>占一个汉字大 小，可视情况改 用半个汉字大小</td>
-      </tr>
-      <tr>
-        <td>‧</td>
-        <td>2027</td>
-        <td>HYPHENATION POINT*4</td>
-        <td>否</td>
-        <td>是*1</td>
-        <td>否</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <th rowspan="2">分隔号</th>
-        <td>/</td>
-        <td>002F</td>
-        <td>SOLIDUS</td>
-        <td></td>
-        <td>是</td>
-        <td>是</td>
-        <td></td>
-        <td>主要用于简体</td>
-      </tr>
-      <tr>
-        <td>／</td>
-        <td>FF0F</td>
-        <td>FULLWIDTH SOLIDUS</td>
-        <td>否</td>
-        <td>是</td>
-        <td>否</td>
-        <td></td>
-        <td>主要用于繁体</td>
-      </tr>
-      <tr>
-        <th rowspan="10">括号类</th>
-        <td>【</td>
-        <td>3010</td>
-        <td>LEFT BLACK LENTICULAR BRACKET</td>
-        <td>是</td>
-        <td>否</td>
-        <td>是</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>】</td>
-        <td>3011</td>
-        <td>RIGHT BLACK LENTICULAR BRACKET</td>
-        <td>是</td>
-        <td>是</td>
-        <td>否</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>〖</td>
-        <td>3016</td>
-        <td>LEFT WHITE LENTICULAR BRACKET</td>
-        <td>是</td>
-        <td>否</td>
-        <td>是</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>〗</td>
-        <td>3017</td>
-        <td>RIGHT WHITE LENTICULAR BRACKET</td>
-        <td>是</td>
-        <td>是</td>
-        <td>否</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>〔</td>
-        <td>3014</td>
-        <td>LEFT TORTOISE SHELL BRACKET</td>
-        <td>是</td>
-        <td>否</td>
-        <td>是</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>〕</td>
-        <td>3015</td>
-        <td>RIGHT TORTOISE SHELL BRACKET</td>
-        <td>是</td>
-        <td>是</td>
-        <td>否</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>［</td>
-        <td>FF3B</td>
-        <td>FULLWIDTH LEFT SQUARE BRACKET</td>
-        <td>是</td>
-        <td>否</td>
-        <td>是</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>］</td>
-        <td>FF3D</td>
-        <td>FULLWIDTH RIGHT SQUARE BRACKET</td>
-        <td>是</td>
-        <td>是</td>
-        <td>否</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>｛</td>
-        <td>FF5B</td>
-        <td>FULLWIDTH LEFT CURLY BRACKET</td>
-        <td>是</td>
-        <td>否</td>
-        <td>是</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>｝</td>
-        <td>FF5D</td>
-        <td>FULLWIDTH RIGHT CURLY BRACKET</td>
-        <td>是</td>
-        <td>是</td>
-        <td>否</td>
-        <td></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <table data-lang="zh-hant" class="punctuation">
-    <thead>
-      <tr lang="zh-hant">
-        <th class="topth">名稱</th>
-        <th class="topth">字符</th>
-        <th class="topth">Unicode</th>
-        <th class="topth">Unicode名稱<wbr/>
-          名稱</th>
-        <th class="topth">直排時<wbr/>
-          順時針旋轉90度</th>
-        <th class="topth">禁止出現<wbr/>
-          於行首</th>
-        <th class="topth">禁止出現<wbr/>
-          於行尾</th>
-        <th class="topth">不可<wbr/>
-          分離</th>
-        <th class="topth">說明</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th rowspan="2">句號</th>
-        <td>。</td>
-        <td>3002</td>
-        <td>IDEOGRAPHIC FULL STOP</td>
-        <td>否</td>
-        <td>是</td>
-        <td>否</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>．</td>
-        <td>FF0E</td>
-        <td>FULLWIDTH FULL STOP</td>
-        <td></td>
-        <td>是</td>
-        <td>否</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <th>逗號</th>
-        <td>，</td>
-        <td>FF0C</td>
-        <td>FULLWIDTH COMMA</td>
-        <td>否</td>
-        <td>是</td>
-        <td>否</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <th>頓號</th>
-        <td>、</td>
-        <td>3001</td>
-        <td>IDEOGRAPHIC COMMA</td>
-        <td>否</td>
-        <td>是</td>
-        <td>否</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <th>冒號</th>
-        <td>：</td>
-        <td>FF1A</td>
-        <td>FULLWIDTH COLON</td>
-        <td>否</td>
-        <td>是</td>
-        <td>否</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <th>分號</th>
-        <td>；</td>
-        <td>FF1B</td>
-        <td>FULLWIDTH SEMICOLON</td>
-        <td>否</td>
-        <td>是</td>
-        <td>否</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <th rowspan="2">驚嘆號</th>
-        <td>！</td>
-        <td>FF01</td>
-        <td>FULLWIDTH EXCLAMATION MARK</td>
-        <td>否</td>
-        <td>是*1</td>
-        <td>否</td>
-        <td></td>
-        <td>三驚嘆號疊用時應佔二個漢字大小</td>
-      </tr>
-      <tr>
-        <td>‼</td>
-        <td>203C</td>
-        <td></td>
-        <td>否</td>
-        <td>是</td>
-        <td>否</td>
-        <td></td>
-        <td>佔一個漢字大小</td>
-      </tr>
-      <tr>
-        <th rowspan="2">問號</th>
-        <td>？</td>
-        <td>FF1F</td>
-        <td>FULLWIDTH QUESTION MARK</td>
-        <td>否</td>
-        <td>是*1</td>
-        <td>否</td>
-        <td></td>
-        <td>三問號疊用時應佔二個漢字大小</td>
-      </tr>
-      <tr>
-        <td>⁇</td>
-        <td>2047</td>
-        <td>DOUBLE QUESTION MARK</td>
-        <td>否</td>
-        <td>是*1</td>
-        <td>否</td>
-        <td></td>
-        <td>佔一個漢字大小</td>
-      </tr>
-      <tr>
-        <th rowspan="8">引號</th>
-        <td>「</td>
-        <td>300C</td>
-        <td>LEFT CORNER BRACKET</td>
-        <td>是</td>
-        <td>否</td>
-        <td>是</td>
-        <td></td>
-        <td rowspan="4">主要用於繁體</td>
-      </tr>
-      <tr>
-        <td>」</td>
-        <td>300D</td>
-        <td>RIGHT CORNER BRACKET</td>
-        <td>是</td>
-        <td>是</td>
-        <td>否</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>『</td>
-        <td>300E</td>
-        <td>LEFT WHITE CORNER BRACKET</td>
-        <td>是</td>
-        <td>否</td>
-        <td>是</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>』</td>
-        <td>300F</td>
-        <td>RIGHT WHITE CORNER BRACKET</td>
-        <td>是</td>
-        <td>是</td>
-        <td>否</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>“</td>
-        <td>201C</td>
-        <td>LEFT DOUBLE QUOTATION MARK</td>
-        <td>是*2</td>
-        <td>否</td>
-        <td>是</td>
-        <td></td>
-        <td rowspan="4">佔一個漢字大小，主要用於簡體</td>
-      </tr>
-      <tr>
-        <td>”</td>
-        <td>201D</td>
-        <td>RIGHT DOUBLE QUOTATION MARK</td>
-        <td>是*2</td>
-        <td>是</td>
-        <td>否</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>‘</td>
-        <td>2018</td>
-        <td>LEFT SINGLE QUOTATION MARK</td>
-        <td>是*2</td>
-        <td>否</td>
-        <td>是</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>’</td>
-        <td>2019</td>
-        <td>RIGHT SINGLE QUOTATION MARK</td>
-        <td>是*2</td>
-        <td>是</td>
-        <td>否</td>
-        <td></td>
-      </tr>
-      <tr>
-        <th rowspan="2">括號</th>
-        <td>（</td>
-        <td>FF08</td>
-        <td>FULLWIDTH LEFT PARENTHESIS</td>
-        <td>是</td>
-        <td>否</td>
-        <td>是</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>）</td>
-        <td>FF09</td>
-        <td>FULLWIDTH RIGHT PARENTHESIS</td>
-        <td>是</td>
-        <td>是</td>
-        <td>否</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <th>破折號</th>
-        <td>⸺或——</td>
-        <td>2E3A或2014</td>
-        <td>TWO-EM DASH或EM DASH</td>
-        <td>是</td>
-        <td>否</td>
-        <td>否</td>
-        <td>是*3</td>
-        <td>佔二個漢字大小，呈一直線、中間不斷開</td>
-      </tr>
-      <tr>
-        <th rowspan="4">書名號</th>
-        <td>《</td>
-        <td>300B</td>
-        <td>LEFT DOUBLE ANGLE BRACKET</td>
-        <td>是</td>
-        <td>否</td>
-        <td>是</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>》</td>
-        <td>300B</td>
-        <td>RIGHT DOUBLE ANGLE BRACKET</td>
-        <td>是</td>
-        <td>是</td>
-        <td>否</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>〈</td>
-        <td>3009</td>
-        <td>LEFT ANGLE BRACKET</td>
-        <td>是</td>
-        <td>否</td>
-        <td>是</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>〉</td>
-        <td>3009</td>
-        <td>RIGHT ANGLE BRACKET</td>
-        <td>是</td>
-        <td>是</td>
-        <td>否</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <th>刪節號／省略號</th>
-        <td>……</td>
-        <td>2026</td>
-        <td>HORIZONTAL ELLIPSIS</td>
-        <td>是</td>
-        <td>否</td>
-        <td>否</td>
-        <td>是*3</td>
-        <td>佔二個漢字大小，應將省略點置於字面中央</td>
-      </tr>
-      <tr>
-        <th rowspan="4">連接號</th>
-        <td>～</td>
-        <td>FF5E</td>
-        <td>FULLWIDTH TILDE</td>
-        <td>是</td>
-        <td>是*1</td>
-        <td>否</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>-</td>
-        <td>002D</td>
-        <td>HYPHEN-MINUS</td>
-        <td>是</td>
-        <td>是*1</td>
-        <td>否</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>–</td>
-        <td>2013</td>
-        <td>EN DASH</td>
-        <td>是</td>
-        <td>是*1</td>
-        <td>否</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>—</td>
-        <td>2014</td>
-        <td>EM DASH</td>
-        <td>是</td>
-        <td>是*1</td>
-        <td>否</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <th rowspan="2">間隔號</th>
-        <td>·</td>
-        <td>00B7</td>
-        <td>MIDDLE DOT</td>
-        <td>否</td>
-        <td>是*1</td>
-        <td>否</td>
-        <td></td>
-        <td>佔一個漢字大小，可視情況改用半個漢字大小</td>
-      </tr>
-      <tr>
-        <td>‧</td>
-        <td>2027</td>
-        <td>HYPHENATION POINT*4</td>
-        <td>否</td>
-        <td>是*1</td>
-        <td>否</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <th rowspan="2">分隔號</th>
-        <td>/</td>
-        <td>002F</td>
-        <td>SOLIDUS</td>
-        <td></td>
-        <td>是</td>
-        <td>是</td>
-        <td></td>
-        <td>主要用於簡體</td>
-      </tr>
-      <tr>
-        <td>／</td>
-        <td>FF0F</td>
-        <td>FULLWIDTH SOLIDUS</td>
-        <td>否</td>
-        <td>是</td>
-        <td>否</td>
-        <td></td>
-        <td>主要用於繁體</td>
-      </tr>
-      <tr>
-        <th rowspan="10">括號類</th>
-        <td>【</td>
-        <td>3010</td>
-        <td>LEFT BLACK LENTICULAR BRACKET</td>
-        <td>是</td>
-        <td>否</td>
-        <td>是</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>】</td>
-        <td>3011</td>
-        <td>RIGHT BLACK LENTICULAR BRACKET</td>
-        <td>是</td>
-        <td>是</td>
-        <td>否</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>〖</td>
-        <td>3016</td>
-        <td>LEFT WHITE LENTICULAR BRACKET</td>
-        <td>是</td>
-        <td>否</td>
-        <td>是</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>〗</td>
-        <td>3017</td>
-        <td>RIGHT WHITE LENTICULAR BRACKET</td>
-        <td>是</td>
-        <td>是</td>
-        <td>否</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>〔</td>
-        <td>3014</td>
-        <td>LEFT TORTOISE SHELL BRACKET</td>
-        <td>是</td>
-        <td>否</td>
-        <td>是</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>〕</td>
-        <td>3015</td>
-        <td>RIGHT TORTOISE SHELL BRACKET</td>
-        <td>是</td>
-        <td>是</td>
-        <td>否</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>［</td>
-        <td>FF3B</td>
-        <td>FULLWIDTH LEFT SQUARE BRACKET</td>
-        <td>是</td>
-        <td>否</td>
-        <td>是</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>］</td>
-        <td>FF3D</td>
-        <td>FULLWIDTH RIGHT SQUARE BRACKET</td>
-        <td>是</td>
-        <td>是</td>
-        <td>否</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>｛</td>
-        <td>FF5B</td>
-        <td>FULLWIDTH LEFT CURLY BRACKET</td>
-        <td>是</td>
-        <td>否</td>
-        <td>是</td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>｝</td>
-        <td>FF5D</td>
-        <td>FULLWIDTH RIGHT CURLY BRACKET</td>
-        <td>是</td>
-        <td>是</td>
-        <td>否</td>
-        <td></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <ol class="punctuation" type="1">
-    <li>
-      <p data-lang="en">In some special circumstances, especially in Traditional Chinese publications, it is sometimes allowed to have the punctuation marks appear at the beginning of a line.</p>
-      <p data-lang="zh-hans">依照出现的状况不同，也有允许出现在行首的案例，以繁体中文出版品为主。</p>
-      <p data-lang="zh-hant">依照出現的狀況不同，也有允許出現於行首的案例，以繁體中文出版品為主。</p>
-    </li>
-    <li>
-      <p data-lang="en">Corner brackets (『』「」) are usually used in vertical writing mode.</p>
-      <p data-lang="zh-hans">文字直排时通常改用角引号[『』「」]。</p>
-      <p data-lang="zh-hant">文字直排時通常改用角引號[『』「」]。</p>
-    </li>
-    <li>
-      <p data-lang="en">Punctuation marks should not be broken or separated onto two lines. Only if there is no way to avoid the breaking or separation, can they can be placed across two lines.</p>
-      <p data-lang="zh-hans">符号不可断开、分行，唯无法避免时，可视状况拆至两行。</p>
-      <p data-lang="zh-hant">符號不可斷開、分行，唯無法避免時，可視狀況拆至二行。</p>
-    </li>
-    <li>
-      <p data-lang="en">The content above is from Big5 encoding.</p>
-      <p data-lang="zh-hans">来自大五码。</p>
-      <p data-lang="zh-hant">來自大五碼。</p>
-    </li>
-  </ol>
+  <section id="table_of_pause_or_stop_punctuation_marks">
+    <h3>
+      <span data-lang="en">Pause or stop punctuation marks</span> 
+      <span data-lang="zh-hans">点号</span> 
+      <span data-lang="zh-hant">點號</span>
+    </h3>
+
+    <table class="appendix punctuation">
+      <thead>
+        <tr>
+          <th class="name">
+            <span data-lang="en">Name (TC)</span>
+            <span data-lang="zh-hant">名稱（繁）</span>
+            <span data-lang="zh-hans">名称（繁）</span>
+          </th>
+          <th class="name">
+            <span data-lang="en">Name (SC)</span>
+            <span data-lang="zh-hant">名稱（簡）</span>
+            <span data-lang="zh-hans">名称（简）</span>
+          </th>
+          <th class="character">
+            <span data-lang="en">Character</span>
+            <span data-lang="zh-hant">字符</span>
+            <span data-lang="zh-hans">字符</span>
+          </th>
+          <th class="unicode">
+            <span data-lang="en">Unicode</span>
+            <span data-lang="zh-hans">Unicode</span>
+            <span data-lang="zh-hant">Unicode</span>
+          </th>
+          <th class="unicode-name">
+            <span data-lang="en">Name</span>
+            <span data-lang="zh-hant">Unicode名稱</span>
+            <span data-lang="zh-hans">Unicode名称</span>
+          </th>
+          <th>
+            <span data-lang="en">Note</span>
+            <span data-lang="zh-hant">注</span>
+            <span data-lang="zh-hans">注</span>
+          </th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td rowspan="2" lang="zh-Hant">句號</td>
+          <td rowspan="2" lang="zh-Hans">句号</td>
+          <td>。</td>
+          <td>3002</td>
+          <td>IDEOGRAPHIC FULL STOP</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>．</td>
+          <td>FF0E</td>
+          <td>FULLWIDTH FULL STOP</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td lang="zh-Hant">逗號</td>
+          <td lang="zh-Hans">逗号</td>
+          <td>，</td>
+          <td>FF0C</td>
+          <td>FULLWIDTH COMMA</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td lang="zh-Hant">頓號</td>
+          <td lang="zh-Hans">顿号</td>
+          <td>、</td>
+          <td>3001</td>
+          <td>IDEOGRAPHIC COMMA</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td lang="zh-Hant">冒號</td>
+          <td lang="zh-Hans">冒号</td>
+          <td>：</td>
+          <td>FF1A</td>
+          <td>FULLWIDTH COLON</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td lang="zh-Hant">分號</td>
+          <td lang="zh-Hans">分号</td>
+          <td>；</td>
+          <td>FF1B</td>
+          <td>FULLWIDTH SEMICOLON</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td rowspan="2" lang="zh-Hant">驚嘆號</td>
+          <td rowspan="2" lang="zh-Hans">叹号</td>
+          <td>！</td>
+          <td>FF01</td>
+          <td>FULLWIDTH EXCLAMATION MARK</td>
+          <td>
+            <p data-lang="en">Three exclamation marks used sequentially should take space of two characters.
+            <p data-lang="zh-hans">三个叹号叠用时应占二个汉字大小。
+            <p data-lang="zh-hant">三個驚嘆號疊用時應佔二個漢字大小。
+          </td>
+        </tr>
+        <tr>
+          <td>‼</td>
+          <td>203C</td>
+          <td>DOUBLE EXCLAMATION MARK</td>
+          <td>
+            <p data-lang="en">Takes one character width.
+            <p data-lang="zh-hans">占一个汉字大小。
+            <p data-lang="zh-hant">佔一個漢字大小。
+          </td>
+        </tr>
+        <tr>
+          <td rowspan="2" lang="zh-Hant">問號</td>
+          <td rowspan="2" lang="zh-Hans">问号</td>
+          <td>？</td>
+          <td>FF1F</td>
+          <td>FULLWIDTH QUESTION MARK</td>
+          <td>
+            <p data-lang="en">Three exclamation marks used sequentially should take space of two characters.
+            <p data-lang="zh-hans">三个问号叠用时应占二个汉字大小。
+            <p data-lang="zh-hant">三個問號疊用時應佔二個漢字大小。
+          </td>
+        </tr>
+        <tr>
+          <td>⁇</td>
+          <td>2047</td>
+          <td>DOUBLE QUESTION MARK</td>
+          <td>
+            <p data-lang="en">Takes one character width.
+            <p data-lang="zh-hans">占一个汉字大小。
+            <p data-lang="zh-hant">佔一個漢字大小。
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <ol class="punctuation" type="1">
+      <li>
+        <p data-lang="en" class="translateme">Translation needed.</p>
+        <p data-lang="zh-hans">所有点号皆不可出现于行首，但可出现于行尾。</p>
+        <p data-lang="zh-hant">所有點號皆不可出現於行首，但可出現於行尾。</p>
+      </li>
+      <li>
+        <p data-lang="en" class="translateme">Translation needed.</p>
+        <p data-lang="zh-hans">分别于直排、横排时，点号的字面分布可能有所差异，但皆毋需转向。具体差别详见正文。</p>
+        <p data-lang="zh-hant">分別於直排、橫排時，點號的字面分布可能有所差異，但皆毋需轉向。具體差別詳見正文。</p>
+      </li>
+      <li>
+        <p data-lang="en">In some special circumstances, especially in Traditional Chinese publications, it is sometimes allowed to have the pause or stop punctuation marks appear at the beginning of a line.</p>
+        <p data-lang="zh-hans">依照出现的状况不同，也有允许点号出现于行首的案例，以繁体中文出版品为主。</p>
+        <p data-lang="zh-hant">依照出現的狀況不同，也有允許點號出現於行首的案例，以繁體中文出版品為主。</p>
+      </li>
+    </ol> 
+  </section>
+
+  <section id="table_of_non-bracket_indication_punctuation_marks">
+    <h3>
+      <span data-lang="en">Non-bracket indication punctuation marks</span> 
+      <span data-lang="zh-hans">非括注型标号</span> 
+      <span data-lang="zh-hant">非括注型標號<span>
+    </h3>
+
+    <table class="appendix punctuation">
+      <thead>
+        <tr>
+          <th class="name">
+            <span data-lang="en">Name (TC)</span>
+            <span data-lang="zh-hant">名稱（繁）</span>
+            <span data-lang="zh-hans">名称（繁）</span>
+          </th>
+          <th class="name">
+            <span data-lang="en">Name (SC)</span>
+            <span data-lang="zh-hant">名稱（簡）</span>
+            <span data-lang="zh-hans">名称（简）</span>
+          </th>
+          <th class="character">
+            <span data-lang="en">Character</span>
+            <span data-lang="zh-hant">字符</span>
+            <span data-lang="zh-hans">字符</span>
+          </th>
+          <th class="unicode">
+            <span data-lang="en">Unicode</span>
+            <span data-lang="zh-hans">Unicode</span>
+            <span data-lang="zh-hant">Unicode</span>
+          </th>
+          <th class="unicode-name">
+            <span data-lang="en">Name</span>
+            <span data-lang="zh-hant">Unicode名稱</span>
+            <span data-lang="zh-hans">Unicode名称</span>
+          </th>
+          <th>
+            <span data-lang="en">Note</span>
+            <span data-lang="zh-hant">注</span>
+            <span data-lang="zh-hans">注</span>
+          </th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td rowspan="2" lang="zh-Hant">破折號<small>*1</small><small>*2</small></td>
+          <td rowspan="2" lang="zh-Hans">破折号<small>*1</small><small>*2</small></td>
+          <td>⸺</td>
+          <td>2E3A</td>
+          <td>TWO-EM DASH</td>
+          <td rowspan="2">
+            <p data-lang="en">Takes space of two characters, in the shape of a single line without a break.
+            <p data-lang="zh-hans">占二个汉字大小，呈一直线、中间不断开。
+            <p data-lang="zh-hant">佔二個漢字大小，呈一直線、中間不斷開。
+          </td>
+        </tr>
+        <tr>
+          <td>——</td>
+          <td>2014</td>
+          <td>EM DASH</td>
+        </tr>
+        <tr>
+          <td lang="zh-Hant">刪節號<small>*1</small><small>*2</small></td>
+          <td lang="zh-Hans">省略号<small>*1</small><small>*2</small></td>
+          <td>……</td>
+          <td>2026</td>
+          <td>HORIZONTAL ELLIPSIS</td>
+          <td>
+            <p data-lang="en">Takes space of two characters, in the shape of a single line without a break, center-aligned both vertically and horizontally.
+            <p data-lang="zh-hans">占二个汉字大小，呈一点线、中间不断开，应将省略点置于字面中央。
+            <p data-lang="zh-hant">佔二個漢字大小，呈一点線、中間不斷開，應將省略點置於字面中央。
+          </td>
+        </tr>
+        <tr>
+          <td rowspan="4" lang="zh-Hant">連接號<small>*2</small><small>*3</small><small>*4</small></td>
+          <td rowspan="4" lang="zh-Hans">连接号<small>*2</small><small>*3</small><small>*4</small></td>
+          <td>～</td>
+          <td>FF5E</td>
+          <td>FULLWIDTH TILDE</td>
+          <td rowspan="4"></td>
+        </tr>
+        <tr>
+          <td>-</td>
+          <td>002D</td>
+          <td>HYPHEN-MINUS</td>
+        </tr>
+        <tr>
+          <td>–</td>
+          <td>2013</td>
+          <td>EN DASH</td>
+        </tr>
+        <tr>
+          <td>—</td>
+          <td>2014</td>
+          <td>EM DASH</td>
+        </tr>
+        <tr>
+          <td rowspan="3" lang="zh-Hant">間隔號<small>*3</small><small>*4</small></td>
+          <td rowspan="3" lang="zh-Hans">间隔号<small>*3</small><small>*4</small></td>
+          <td>·</td>
+          <td>00B7</td>
+          <td>MIDDLE DOT</td>
+          <td rowspan="2">
+            <p data-lang="en">Takes space of one character, and can be adjusted to half a character width in some cases.
+            <p data-lang="zh-hans">占一个汉字大小，可视情况改用半个汉字大小。
+            <p data-lang="zh-hant">佔一個漢字大小，可視情況改用半個漢字大小。
+          </td>
+        </tr>
+        <tr>
+          <td>・</td>
+          <td>30FB</td>
+          <td>KATAKANA MIDDLE DOT</td>
+        </tr>
+        <tr>
+          <td>‧</td>
+          <td>2027</td>
+          <td>HYPHENATION POINT</td>
+          <td>
+            <p data-lang="en" lang="en">The content above is from Big5 encoding.</p>
+            <p data-lang="zh-hans" lang="zh-hans">来自大五码。</p>
+            <p data-lang="zh-hant" lang="zh-hant">來自大五碼。</p>
+          </td>
+        </tr>
+        <tr>
+          <td rowspan="2" lang="zh-Hant">分隔號<small>*3</small><small>*4</small></td>
+          <td rowspan="2" lang="zh-Hans">分隔号<small>*3</small><small>*4</small></td>
+          <td>/</td>
+          <td>002F</td>
+          <td>SOLIDUS</td>
+          <td>
+            <p data-lang="en">Mainly used in Simplified Chinese.
+            <p data-lang="zh-hans">主要用于简体中文。
+            <p data-lang="zh-hant">主要用於簡體中文。
+          </td>
+        </tr>
+        <tr>
+          <td>／</td>
+          <td>FF0F</td>
+          <td>FULLWIDTH SOLIDUS</td>
+          <td>
+            <p data-lang="en">Mainly used in Traditional Chinese.
+            <p data-lang="zh-hans">主要用于繁体中文。
+            <p data-lang="zh-hant">主要用於繁體中文。
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <ol class="punctuation" type="1">
+      <li>
+        <p data-lang="en" class="translateme">Translation needed.</p>
+        <p data-lang="zh-hans">破折号及省略号可出现于行首、行尾。</p>
+        <p data-lang="zh-hant">破折號及刪節號可出現於行首、行尾。</p>
+      </li>
+
+      <li>
+        <p data-lang="en" class="translateme">Translation needed.</p>
+        <p data-lang="zh-hans">破折号、省略号及连接号于直排时，需顺时针旋转90°。</p>
+        <p data-lang="zh-hant">破折號、刪節號及連接號於直排時，需順時針旋轉90°。</p>
+      </li>
+
+      <li>
+        <p data-lang="en" class="translateme">Translation needed.</p>
+        <p data-lang="zh-hans">连接号、间隔号及分隔号不可出现于行首、但可出现于行尾。</p>
+        <p data-lang="zh-hant">連接號、間隔號及分隔號不可出現於行首、但可出現於行尾。</p>
+      </li>
+
+      <li>
+        <p data-lang="en" class="checkme">In some special circumstances, especially in Traditional Chinese publications, it is sometimes allowed to have the indication punctuation marks appear at the beginning of a line.</p>
+        <p data-lang="zh-hans">依照出现的状况不同，也有允许连接号、间隔号及分隔号等標號出现于行首的案例，以繁体中文出版品为主。</p>
+        <p data-lang="zh-hant">依照出現的狀況不同，也有允許連接號、間隔號及分隔號等標號出現於行首的案例，以繁體中文出版品為主。</p>
+      </li>
+    </ol> 
+  </section>
+
+  <section id="table_of_bracket_indication_punctuation_marks">
+    <h3>
+      <span data-lang="en">Bracket indication punctuation marks</span> 
+      <span data-lang="zh-hans">括注符号</span> 
+      <span data-lang="zh-hant">括注符號<span>
+    </h3>
+
+    <table class="appendix punctuation">
+      <thead>
+        <tr>
+          <th class="name">
+            <span data-lang="en">Name (TC)</span>
+            <span data-lang="zh-hant">名稱（繁）</span>
+            <span data-lang="zh-hans">名称（繁）</span>
+          </th>
+          <th class="name">
+            <span data-lang="en">Name (SC)</span>
+            <span data-lang="zh-hant">名稱（簡）</span>
+            <span data-lang="zh-hans">名称（简）</span>
+          </th>
+          <th class="character">
+            <span data-lang="en">Character</span>
+            <span data-lang="zh-hant">字符</span>
+            <span data-lang="zh-hans">字符</span>
+          </th>
+          <th class="unicode">
+            <span data-lang="en">Unicode</span>
+            <span data-lang="zh-hans">Unicode</span>
+            <span data-lang="zh-hant">Unicode</span>
+          </th>
+          <th class="unicode-name">
+            <span data-lang="en">Name</span>
+            <span data-lang="zh-hant">Unicode名稱</span>
+            <span data-lang="zh-hans">Unicode名称</span>
+          </th>
+          <th>
+            <span data-lang="en">Note</span>
+            <span data-lang="zh-hant">注</span>
+            <span data-lang="zh-hans">注</span>
+          </th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td rowspan="8" lang="zh-Hant">引號</td>
+          <td rowspan="8" lang="zh-Hans">引号</td>
+          <td>「</td>
+          <td>300C</td>
+          <td>LEFT CORNER BRACKET</td>
+          <td rowspan="4">
+            <p data-lang="en">Mainly used in Traditional Chinese.
+            <p data-lang="zh-hans">主要用于繁体中文。
+            <p data-lang="zh-hant">主要用於繁體中文。
+          </td>
+        </tr>
+        <tr>
+          <td>」</td>
+          <td>300D</td>
+          <td>RIGHT CORNER BRACKET</td>
+        </tr>
+        <tr>
+          <td>『</td>
+          <td>300E</td>
+          <td>LEFT WHITE CORNER BRACKET</td>
+        </tr>
+        <tr>
+          <td>』</td>
+          <td>300F</td>
+          <td>RIGHT WHITE CORNER BRACKET</td>
+        </tr>
+        <tr>
+          <td>“</td>
+          <td>201C</td>
+          <td>LEFT DOUBLE QUOTATION MARK</td>
+          <td rowspan="4">
+            <p data-lang="en">Takes space of one character, and usually used in Simplified Chinese. Corner brackets (『』「」) are usually used in vertical writing mode. 
+            <p data-lang="zh-hans">占一个汉字大小，主要用于简体中文。文字直排时通常改用角引号（『』「」）。
+            <p data-lang="zh-hant">佔一個漢字大小，主要用於簡體中文。文字直排時通常改用角引號（『』「」）。
+          </td>
+        </tr>
+        <tr>
+          <td>”</td>
+          <td>201D</td>
+          <td>RIGHT DOUBLE QUOTATION MARK</td>
+        </tr>
+        <tr>
+          <td>‘</td>
+          <td>2018</td>
+          <td>LEFT SINGLE QUOTATION MARK</td>
+        </tr>
+        <tr>
+          <td>’</td>
+          <td>2019</td>
+          <td>RIGHT SINGLE QUOTATION MARK</td>
+        </tr>
+        <tr>
+          <td rowspan="2" lang="zh-Hant">夾注號</td>
+          <td rowspan="2" lang="zh-Hans">括号</td>
+          <td>（</td>
+          <td>FF08</td>
+          <td>FULLWIDTH LEFT PARENTHESIS</td>
+          <td rowspan="2"></td>
+        </tr>
+        <tr>
+          <td>）</td>
+          <td>FF09</td>
+          <td>FULLWIDTH RIGHT PARENTHESIS</td>
+        </tr>
+        <tr>
+          <td lang="zh-Hant" rowspan="2">書名號乙式</td>
+          <td lang="zh-Hans" rowspan="2">书名号</td>
+          <td>《</td>
+          <td>300A</td>
+          <td>LEFT DOUBLE ANGLE BRACKET</td>
+          <td rowspan="4"></td>
+        </tr>
+        <tr>
+          <td>》</td>
+          <td>300B</td>
+          <td>RIGHT DOUBLE ANGLE BRACKET</td>
+        </tr>
+        <tr>
+          <td lang="zh-Hant" rowspan="2">篇名號</td>
+          <td lang="zh-Hans" rowspan="2">书名号</td>
+          <td>〈</td>
+          <td>3008</td>
+          <td>LEFT ANGLE BRACKET</td>
+        </tr>
+        <tr>
+          <td>〉</td>
+          <td>3009</td>
+          <td>RIGHT ANGLE BRACKET</td>
+        </tr>
+        <tr>
+          <td rowspan="10">其他</td>
+          <td rowspan="10">其他</td>
+          <td>【</td>
+          <td>3010</td>
+          <td>LEFT BLACK LENTICULAR BRACKET</td>
+          <td rowspan="10"></td>
+        </tr>
+        <tr>
+          <td>】</td>
+          <td>3011</td>
+          <td>RIGHT BLACK LENTICULAR BRACKET</td>
+        </tr>
+        <tr>
+          <td>〖</td>
+          <td>3016</td>
+          <td>LEFT WHITE LENTICULAR BRACKET</td>
+        </tr>
+        <tr>
+          <td>〗</td>
+          <td>3017</td>
+          <td>RIGHT WHITE LENTICULAR BRACKET</td>
+        </tr>
+        <tr>
+          <td>〔</td>
+          <td>3014</td>
+          <td>LEFT TORTOISE SHELL BRACKET</td>
+        </tr>
+        <tr>
+          <td>〕</td>
+          <td>3015</td>
+          <td>RIGHT TORTOISE SHELL BRACKET</td>
+        </tr>
+        <tr>
+          <td>［</td>
+          <td>FF3B</td>
+          <td>FULLWIDTH LEFT SQUARE BRACKET</td>
+        </tr>
+        <tr>
+          <td>］</td>
+          <td>FF3D</td>
+          <td>FULLWIDTH RIGHT SQUARE BRACKET</td>
+        </tr>
+        <tr>
+          <td>｛</td>
+          <td>FF5B</td>
+          <td>FULLWIDTH LEFT CURLY BRACKET</td>
+        </tr>
+        <tr>
+          <td>｝</td>
+          <td>FF5D</td>
+          <td>FULLWIDTH RIGHT CURLY BRACKET</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <ol class="punctuation" type="1">
+      <li>
+        <p data-lang="en" class="translateme">Translation needed.</p>
+        <p data-lang="zh-hans">括注符号于直排时，需顺时针旋转90°。</p>
+        <p data-lang="zh-hant">括注符號於直排時，需順時針旋轉90°。</p>
+      </li>
+
+      <li>
+        <p data-lang="en" class="translateme">Translation needed.</p>
+        <p data-lang="zh-hans">括注符号通常成组出现，其前半部分为开始括注符号，不得出现于行尾；后半部分为结束括注符号，不得出现于行首。</p>
+        <p data-lang="zh-hant">括注符號通常成組出現，其前半部分為開始括注符號，不得出現於行尾；後半部分為結束括注符號，不得出現於行首。</p>
+      </li>
+    </ol> 
+  </section>
+
+  <section id="table_of_interlinear_indication_punctuation_marks">
+    <h3>
+      <span data-lang="en">Interlinear indication punctuation marks</span> 
+      <span data-lang="zh-hans">行间标号</span> 
+      <span data-lang="zh-hant">行間標號<span>
+    </h3>
+
+    <table class="appendix punctuation">
+      <thead>
+        <tr>
+          <th class="name">
+            <span data-lang="en">Name (TC)</span>
+            <span data-lang="zh-hant">名稱（繁）</span>
+            <span data-lang="zh-hans">名称（繁）</span>
+          </th>
+          <th class="name">
+            <span data-lang="en">Name (SC)</span>
+            <span data-lang="zh-hant">名稱（簡）</span>
+            <span data-lang="zh-hans">名称（简）</span>
+          </th>
+          <th class="character">
+            <span data-lang="en">Character</span>
+            <span data-lang="zh-hant">字符</span>
+            <span data-lang="zh-hans">字符</span>
+          </th>
+          <th class="unicode">
+            <span data-lang="en">Unicode</span>
+            <span data-lang="zh-hans">Unicode</span>
+            <span data-lang="zh-hant">Unicode</span>
+          </th>
+          <th class="unicode-name">
+            <span data-lang="en">Name</span>
+            <span data-lang="zh-hant">Unicode名稱</span>
+            <span data-lang="zh-hans">Unicode名称</span>
+          </th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td lang="zh-Hant">專名號</td>
+          <td lang="zh-Hans">专名号</td>
+          <td>＿</td>
+          <td>FF3F</td>
+          <td>LOW LINE</td>
+        </tr>
+        <tr>
+          <td lang="zh-Hant">書名號甲式</td>
+          <td lang="zh-Hans">书名号</td>
+          <td>﹏</td>
+          <td>FE4F</td>
+          <td>WAVY LOW LINE</td>
+        </tr>
+        <tr>
+          <td rowspan="2" lang="zh-Hant">著重號</td>
+          <td rowspan="2" lang="zh-Hans">着重号</td>
+          <td>●</td>
+          <td>25CF</td>
+          <td>BLACK CIRCLE</td>
+        </tr>
+        <tr>
+          <td>•</td>
+          <td>2022</td>
+          <td>BULLET</td>
+        </tr>
+       </tbody>
+    </table>
+
+    <ol class="punctuation" type="1">
+      <li>
+        <p data-lang="en" class="translateme">Translation needed.</p>
+        <p data-lang="zh-hans">行间标号于直排时，需顺时针旋转90°。</p>
+        <p data-lang="zh-hant">行間標號於直排時，需順時針旋轉90°。</p>
+      </li>
+    </ol> 
+  </section>
+
+  <section id="table_of_punctuation_marks">
+    <h3>
+      <span data-lang="en">Table of punctuation marks</span> 
+      <span data-lang="zh-hans">标点符号全表</span> 
+      <span data-lang="zh-hant">標點符號全表<span>
+    </h3>
+
+    <table class="appendix punctuation full">
+      <thead>
+        <tr>
+          <th class="character">
+            <span data-lang="en">Character</span>
+            <span data-lang="zh-hant">字符</span>
+            <span data-lang="zh-hans">字符</span>
+          </th>
+          <th class="unicode">
+            <span data-lang="en">Unicode</span>
+            <span data-lang="zh-hans">Unicode</span>
+            <span data-lang="zh-hant">Unicode</span>
+          </th>
+          <th class="unicode-name">
+            <span data-lang="en">Name</span>
+            <span data-lang="zh-hant">Unicode名稱</span>
+            <span data-lang="zh-hans">Unicode名称</span>
+          </th>
+          <th class="true-or-false">
+            <span data-lang="en">Prohibited at line start</span>
+            <span data-lang="zh-hant">禁止出現於行首</span>
+            <span data-lang="zh-hans">禁止出现于行首</span>
+          </th>
+          <th class="true-or-false">
+            <span data-lang="en">Prohibited at line end</span>
+            <span data-lang="zh-hant">禁止出現於行尾</span>
+            <span data-lang="zh-hans">禁止出现于行尾</span>
+          </th>
+          <th class="true-or-false">
+            <span data-lang="en">Unbreakable</span>
+            <span data-lang="zh-hant">不可分離</span>
+            <span data-lang="zh-hans">不可分离</span>
+          </th>
+          <th class="true-or-false">
+            <span data-lang="en">Rotated 90° clockwise in vertical writing mode</span>
+            <span data-lang="zh-hant">直排時右旋90°</span>
+            <span data-lang="zh-hans">直排时右旋90°</span>
+          </th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>。</td>
+          <td>3002</td>
+          <td>IDEOGRAPHIC FULL STOP</td>
+          <td>✓</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>．</td>
+          <td>FF0E</td>
+          <td>FULLWIDTH FULL STOP</td>
+          <td>✓</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>，</td>
+          <td>FF0C</td>
+          <td>FULLWIDTH COMMA</td>
+          <td>✓</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>、</td>
+          <td>3001</td>
+          <td>IDEOGRAPHIC COMMA</td>
+          <td>✓</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>：</td>
+          <td>FF1A</td>
+          <td>FULLWIDTH COLON</td>
+          <td>✓</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>；</td>
+          <td>FF1B</td>
+          <td>FULLWIDTH SEMICOLON</td>
+          <td>✓</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>！</td>
+          <td>FF01</td>
+          <td>FULLWIDTH EXCLAMATION MARK</td>
+          <td>✓</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>‼</td>
+          <td>203C</td>
+          <td>DOUBLE EXCLAMATION MARK</td>
+          <td>✓</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>？</td>
+          <td>FF1F</td>
+          <td>FULLWIDTH QUESTION MARK</td>
+          <td>✓</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>⁇</td>
+          <td>2047</td>
+          <td>DOUBLE QUESTION MARK</td>
+          <td>✓</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>⸺</td>
+          <td>2E3A</td>
+          <td>TWO-EM DASH</td>
+          <td></td>
+          <td></td>
+          <td>✓</td>
+          <td>✓</td>
+        </tr>
+        <tr>
+          <td>&mdash;&mdash;</td>
+          <td>2014</td>
+          <td>EM DASH</td>
+          <td></td>
+          <td></td>
+          <td>✓</td>
+          <td>✓</td>
+        </tr>
+        <tr>
+          <td>&hellip;&hellip;</td>
+          <td>2026</td>
+          <td>HORIZONTAL ELLIPSIS</td>
+          <td></td>
+          <td></td>
+          <td>✓</td>
+          <td>✓</td>
+        </tr>
+        <tr>
+          <td>～</td>
+          <td>FF5E</td>
+          <td>FULLWIDTH TILDE</td>
+          <td>✓</td>
+          <td></td>
+          <td></td>
+          <td>✓</td>
+        </tr>
+        <tr>
+          <td>-</td>
+          <td>002D</td>
+          <td>HYPHEN-MINUS</td>
+          <td>✓</td>
+          <td></td>
+          <td></td>
+          <td>✓</td>
+        </tr>
+        <tr>
+          <td>&ndash;</td>
+          <td>2013</td>
+          <td>EN DASH</td>
+          <td>✓</td>
+          <td></td>
+          <td></td>
+          <td>✓</td>
+        </tr>
+        <tr>
+          <td>&mdash;</td>
+          <td>2014</td>
+          <td>EM DASH</td>
+          <td>✓</td>
+          <td></td>
+          <td></td>
+          <td>✓</td>
+        </tr>
+        <tr>
+          <td>&middot;</td>
+          <td>00B7</td>
+          <td>MIDDLE DOT</td>
+          <td>✓</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>・</td>
+          <td>30FB</td>
+          <td>KATAKANA MIDDLE DOT</td>
+          <td>✓</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>‧</td>
+          <td>2027</td>
+          <td>HYPHENATION POINT</td>
+          <td>✓</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>/</td>
+          <td>002F</td>
+          <td>SOLIDUS</td>
+          <td>✓</td>
+          <td></td>
+          <td></td>
+          <td>✓</td>
+        </tr>
+        <tr>
+          <td>／</td>
+          <td>FF0F</td>
+          <td>FULLWIDTH SOLIDUS</td>
+          <td>✓</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>「</td>
+          <td>300C</td>
+          <td>LEFT CORNER BRACKET</td>
+          <td></td>
+          <td>✓</td>
+          <td></td>
+          <td>✓</td>
+        </tr>
+        <tr>
+          <td>」</td>
+          <td>300D</td>
+          <td>RIGHT CORNER BRACKET</td>
+          <td>✓</td>
+          <td></td>
+          <td></td>
+          <td>✓</td>
+        </tr>
+        <tr>
+          <td>『</td>
+          <td>300E</td>
+          <td>LEFT WHITE CORNER BRACKET</td>
+          <td></td>
+          <td>✓</td>
+          <td></td>
+          <td>✓</td>
+        </tr>
+        <tr>
+          <td>』</td>
+          <td>300F</td>
+          <td>RIGHT WHITE CORNER BRACKET</td>
+          <td>✓</td>
+          <td></td>
+          <td></td>
+          <td>✓</td>
+        </tr>
+        <tr>
+          <td>&ldquo;</td>
+          <td>201C</td>
+          <td>LEFT DOUBLE QUOTATION MARK</td>
+          <td></td>
+          <td>✓</td>
+          <td></td>
+          <td>✓</td>
+        </tr>
+        <tr>
+          <td>&rdquo;</td>
+          <td>201D</td>
+          <td>RIGHT DOUBLE QUOTATION MARK</td>
+          <td>✓</td>
+          <td></td>
+          <td></td>
+          <td>✓</td>
+        </tr>
+        <tr>
+          <td>&lsquo;</td>
+          <td>2018</td>
+          <td>LEFT SINGLE QUOTATION MARK</td>
+          <td></td>
+          <td>✓</td>
+          <td></td>
+          <td>✓</td>
+        </tr>
+        <tr>
+          <td>&rsquo;</td>
+          <td>2019</td>
+          <td>RIGHT SINGLE QUOTATION MARK</td>
+          <td>✓</td>
+          <td></td>
+          <td></td>
+          <td>✓</td>
+        </tr>
+        <tr>
+          <td>（</td>
+          <td>FF08</td>
+          <td>FULLWIDTH LEFT PARENTHESIS</td>
+          <td></td>
+          <td>✓</td>
+          <td></td>
+          <td>✓</td>
+        </tr>
+        <tr>
+          <td>）</td>
+          <td>FF09</td>
+          <td>FULLWIDTH RIGHT PARENTHESIS</td>
+          <td>✓</td>
+          <td></td>
+          <td></td>
+          <td>✓</td>
+        </tr>
+        <tr>
+          <td>《</td>
+          <td>300A</td>
+          <td>LEFT DOUBLE ANGLE BRACKET</td>
+          <td></td>
+          <td>✓</td>
+          <td></td>
+          <td>✓</td>
+        </tr>
+        <tr>
+          <td>》</td>
+          <td>300B</td>
+          <td>RIGHT DOUBLE ANGLE BRACKET</td>
+          <td>✓</td>
+          <td></td>
+          <td></td>
+          <td>✓</td>
+        </tr>
+        <tr>
+          <td>〈</td>
+          <td>3008</td>
+          <td>LEFT ANGLE BRACKET</td>
+          <td></td>
+          <td>✓</td>
+          <td></td>
+          <td>✓</td>
+        </tr>
+        <tr>
+          <td>〉</td>
+          <td>3009</td>
+          <td>RIGHT ANGLE BRACKET</td>
+          <td>✓</td>
+          <td></td>
+          <td></td>
+          <td>✓</td>
+        </tr>
+        <tr>
+          <td>【</td>
+          <td>3010</td>
+          <td>LEFT BLACK LENTICULAR BRACKET</td>
+          <td></td>
+          <td>✓</td>
+          <td></td>
+          <td>✓</td>
+        </tr>
+        <tr>
+          <td>】</td>
+          <td>3011</td>
+          <td>RIGHT BLACK LENTICULAR BRACKET</td>
+          <td>✓</td>
+          <td></td>
+          <td></td>
+          <td>✓</td>
+        </tr>
+        <tr>
+          <td>〖</td>
+          <td>3016</td>
+          <td>LEFT WHITE LENTICULAR BRACKET</td>
+          <td></td>
+          <td>✓</td>
+          <td></td>
+          <td>✓</td>
+        </tr>
+        <tr>
+          <td>〗</td>
+          <td>3017</td>
+          <td>RIGHT WHITE LENTICULAR BRACKET</td>
+          <td>✓</td>
+          <td></td>
+          <td></td>
+          <td>✓</td>
+        </tr>
+        <tr>
+          <td>〔</td>
+          <td>3014</td>
+          <td>LEFT TORTOISE SHELL BRACKET</td>
+          <td></td>
+          <td>✓</td>
+          <td></td>
+          <td>✓</td>
+        </tr>
+        <tr>
+          <td>〕</td>
+          <td>3015</td>
+          <td>RIGHT TORTOISE SHELL BRACKET</td>
+          <td>✓</td>
+          <td></td>
+          <td></td>
+          <td>✓</td>
+        </tr>
+        <tr>
+          <td>［</td>
+          <td>FF3B</td>
+          <td>FULLWIDTH LEFT SQUARE BRACKET</td>
+          <td></td>
+          <td>✓</td>
+          <td></td>
+          <td>✓</td>
+        </tr>
+        <tr>
+          <td>］</td>
+          <td>FF3D</td>
+          <td>FULLWIDTH RIGHT SQUARE BRACKET</td>
+          <td>✓</td>
+          <td></td>
+          <td></td>
+          <td>✓</td>
+        </tr>
+        <tr>
+          <td>｛</td>
+          <td>FF5B</td>
+          <td>FULLWIDTH LEFT CURLY BRACKET</td>
+          <td></td>
+          <td>✓</td>
+          <td></td>
+          <td>✓</td>
+        </tr>
+        <tr>
+          <td>｝</td>
+          <td>FF5D</td>
+          <td>FULLWIDTH RIGHT CURLY BRACKET</td>
+          <td>✓</td>
+          <td></td>
+          <td></td>
+          <td>✓</td>
+        </tr>
+        <tr>
+          <td>＿</td>
+          <td>FF3F</td>
+          <td>LOW LINE</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>✓</td>
+        </tr>
+        <tr>
+          <td>﹏</td>
+          <td>FE4F</td>
+          <td>WAVY LOW LINE</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>✓</td>
+        </tr>
+        <tr>
+          <td>●</td>
+          <td>25CF</td>
+          <td>BLACK CIRCLE</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>&bull;</td>
+          <td>2022</td>
+          <td>BULLET</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table> 
+  </section>
 </section>
 
 
@@ -4343,18 +4026,34 @@ var respecConfig = {
     <span data-lang="zh-hant">詞彙表</span>
   </h2>
 
-  <table class="glossary">
+  <table class="appendix glossary">
     <thead>
       <tr>
-        <th class="term"><span data-lang="en">Term (TC)</span> <span data-lang="zh-hant">詞彙（繁）</span> <span data-lang="zh-hans">词汇（繁）</span></th>
-
-        <th class="term"><span data-lang="en">Term (SC)</span> <span data-lang="zh-hant">詞彙（簡）</span> <span data-lang="zh-hans">词汇（简）</span></th>
-
-        <th class="term-pinyin"><span data-lang="en">Pinyin</span> <span data-lang="zh-hant">漢語拼音</span> <span data-lang="zh-hans">汉语拼音</span></th>
-
-        <th class="term-en"><span data-lang="en">English</span> <span data-lang="zh-hant">英語</span> <span data-lang="zh-hans">英语</span></th>
-
-        <th class="definition"><span data-lang="en">Definition</span> <span data-lang="zh-hant">定義</span> <span data-lang="zh-hans">定义</span></th>
+        <th class="term">
+          <span data-lang="en">Term (TC)</span>
+          <span data-lang="zh-hant">詞彙（繁）</span>
+          <span data-lang="zh-hans">词汇（繁）</span>
+        </th>
+        <th class="term">
+          <span data-lang="en">Term (SC)</span>
+          <span data-lang="zh-hant">詞彙（簡）</span>
+          <span data-lang="zh-hans">词汇（简）</span>
+        </th>
+        <th class="term-pinyin">
+          <span data-lang="en">Pinyin</span>
+          <span data-lang="zh-hant">漢語拼音</span>
+          <span data-lang="zh-hans">汉语拼音</span>
+        </th>
+        <th class="term-en">
+          <span data-lang="en">English</span>
+          <span data-lang="zh-hant">英語</span>
+          <span data-lang="zh-hans">英语</span>
+        </th>
+        <th class="definition">
+          <span data-lang="en">Definition</span>
+          <span data-lang="zh-hant">定義</span>
+          <span data-lang="zh-hans">定义</span>
+        </th>
       </tr>
     </thead>
 
@@ -4980,8 +4679,8 @@ var respecConfig = {
         <td>starting point</td>
         <td>
           <p data-lang="en" class="translateme">Translation needed.</p> 
-          <p data-lang="zh-hans">文本或文字靠近该行行首的一端。通常，文字直排时末端在上，横排在左。</p>
-          <p data-lang="zh-hant">文本或文字靠近該行行首的一端。通常，文字直排時末端在上，橫排在左。</p>
+          <p data-lang="zh-hans">文本或文字靠近该行行首的一端。通常，文字直排时始端在上，横排在左。</p>
+          <p data-lang="zh-hant">文本或文字靠近該行行首的一端。通常，文字直排時始端在上，橫排在左。</p>
         </td>
       </tr>
       <tr>

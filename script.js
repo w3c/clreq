@@ -1,119 +1,183 @@
-var switched = false;
+void function() {
 
-function switch2zh () {
-	if (switched) { alert('Refresh the page, then click on this button again.'); return; }
-	
-	var en = document.querySelectorAll('[data-lang=en]')
-	for (var i=0;i<en.length;i++) en[i].style.display='none' 
-	document.getElementById('languageStyling').textContent=''
-	
-	var zhHans = document.querySelectorAll('[data-lang=zh-hans]')
-	for (var i=0;i<zhHans.length;i++) zhHans[i].style.display='none' 
-	document.getElementById('languageStyling').textContent=''
+var LANG_LIST = ['en', 'zh-hant', 'zh-hans']
 
-	document.documentElement.lang = 'zh'
-	switched = true;
-	
-	// change boilerplate text
-	document.getElementById('abstract-1').textContent = '摘要'
-	document.getElementById('h-sotd').textContent = '关于本文档'
-	document.getElementById('h-toc').textContent = '内容大纲'
-	
-	var notes = document.querySelectorAll('.note-title')
-	for (i=0;i<notes.length;i++) notes[i].textContent = '注'
-	var figcaptions = document.querySelectorAll('figcaption')
-	for (i=0;i<figcaptions.length;i++) figcaptions[i].firstChild.textContent = '圖'
-	var figrefs = document.querySelectorAll('.fig-ref')
-	for (i=0;i<figrefs.length;i++) { 
-		if (figrefs[i].firstChild) {
-			figrefs[i].replaceChild(document.createTextNode('图'), figrefs[i].firstChild) }
-		}
-	
-	var dts = document.querySelectorAll('dt')
-	for (i=0;i<dts.length;i++) {
-		switch (dts[i].textContent) {
-		case 'This version:': dts[i].textContent = '本版本：'; break;
-		case 'Latest published version:': dts[i].textContent = '最新发布草稿：'; break;
-		case 'Latest editor\'s draft:': dts[i].textContent = '最新编辑草稿：'; break;
-		case 'Editors:': dts[i].textContent = '编辑：'; break;
-		case 'Bug tracker:': dts[i].textContent = '错误跟踪：'; 
-			dts[i].nextSibling.nextSibling.innerHTML = '<a href="https://github.com/w3c/clreq/issues">反馈错误</a>（<a href="https://github.com/w3c/clreq/issues">修正中的错误</a>）'; break;
-		}
-		}
+var L10N = {
+	'en': {
+    selector: {
+      '#abstract-1': 'Abstract',
+      '#h-sotd': 'Status of This Document',
+      '#table-of-contents': 'Table of Contents',
+      '.note-title': 'Note',
+    },
+
+    'fig': 'Fig. ',
+
+    dt: {},
+
+    dd: {
+      'Bug tracker:': '<a href="https://github.com/w3c/clreq/issues">file a bug</a> (<a href="https://github.com/w3c/clreq/issues">open bugs</a>)',
+    },
+  },
+
+  'zh-hant': {
+    selector: {
+      '#abstract-1': '摘要',
+      '#h-sotd': '關於本文檔',
+      '#table-of-contents': '內容大綱',
+      '.note-title': '注',
+    },
+
+    'fig': '圖',
+
+    dt: {
+      'This version:': '本版本：',
+      'Latest published version:': '最新發佈草稿：',
+      'Latest editor\'s draft:': '最新編輯草稿：',
+      'Editors:': '編輯：',
+      'Bug tracker:': '錯誤跟蹤：',
+      'GitHub:': 'GitHub：',
+    },
+
+    dd: {
+      'Bug tracker:': '<a href="https://github.com/w3c/clreq/issues">反饋錯誤</a>（<a href="https://github.com/w3c/clreq/issues">修正中的錯誤</a>）',
+    }
+  },
+
+  'zh-hans': {
+    selector: {
+      '#abstract-1': '摘要',
+      '#h-sotd': '关于本文档',
+      '#table-of-contents': '内容大纲',
+      '.note-title': '注',
+    },
+
+    'fig': '图',
+
+    dt: {
+      'This version:': '本版本：',
+      'Latest published version:': '最新发布草稿：',
+      'Latest editor\'s draft:': '最新编辑草稿：',
+      'Editors:': '编辑：',
+      'Bug tracker:': '错误跟踪：',
+      'GitHub:': 'GitHub：',
+    },
+
+    dd: {
+      'Bug tracker:': '<a href="https://github.com/w3c/clreq/issues">反馈错误</a>（<a href="https://github.com/w3c/clreq/issues">修正中的错误</a>）',
+    }
+  },
+}
+
+var $root = document.documentElement
+var $$hidden = []
+
+function arrayify(obj) {
+	return Array.from ? Array.from(obj) : Array.prototype.slice.call(obj)
+}
+
+function $(selector, context) {
+  return (context || document).querySelector(selector)
+}
+
+function $$(selector, context) {
+	return arrayify((context || document).querySelectorAll(selector))
+}
+
+function toggle$rootClass(lang) {
+  $root.lang = lang === 'all' ? 'en' : lang
+
+	if (lang === 'all') {
+	  $root.classList.add('is-multilingual')
+	  $root.classList.remove('isnt-multilingual')
+	} else {
+	  $root.classList.remove('is-multilingual')
+	  $root.classList.add('isnt-multilingual')
 	}
-	
-	
-function switch2zhHans () {
-	if (switched) { alert('Refresh the page, then click on this button again.'); return; }
-	
-	var en = document.querySelectorAll('[data-lang=en]')
-	for (var i=0;i<en.length;i++) en[i].style.display='none' 
-	document.getElementById('languageStyling').textContent=''
-	
-	var zh = document.querySelectorAll('[data-lang=zh-hant]')
-	for (var i=0;i<zh.length;i++) zh[i].style.display='none' 
-	document.getElementById('languageStyling').textContent=''
+}
 
-	document.documentElement.lang = 'zh-hans'
-	switched = true;
-	
-	// change boilerplate text
-	document.getElementById('abstract-1').textContent = '摘要'
-	document.getElementById('h-sotd').textContent = '关于本文档'
-	document.getElementById('h-toc').textContent = '内容大纲'
-	
-	var notes = document.querySelectorAll('.note-title')
-	for (i=0;i<notes.length;i++) notes[i].textContent = '注'
-	var figcaptions = document.querySelectorAll('figcaption')
-	for (i=0;i<figcaptions.length;i++) figcaptions[i].firstChild.textContent = '图 '
-	var figrefs = document.querySelectorAll('.fig-ref')
-	for (i=0;i<figrefs.length;i++) { 
-		if (figrefs[i].firstChild) {
-			figrefs[i].replaceChild(document.createTextNode('图'), figrefs[i].firstChild) }
-		}
-	
-	var dts = document.querySelectorAll('dt')
-	for (i=0;i<dts.length;i++) {
-		switch (dts[i].textContent) {
-		case 'This version:': dts[i].textContent = '本版本：'; break;
-		case 'Latest published version:': dts[i].textContent = '最新发布草稿：'; break;
-		case 'Latest editor\'s draft:': dts[i].textContent = '最新编辑草稿：'; break;
-		case 'Editors:': dts[i].textContent = '编辑们：'; break;
-		case 'Bug tracker:': dts[i].textContent = '错误跟踪：'; 
-			dts[i].nextSibling.nextSibling.innerHTML = '<a href="https://github.com/w3c/clreq/issues">反馈错误</a>（<a href="https://github.com/w3c/clreq/issues">修正中的错误</a>）'; break;
-		}
-		}
-	}
-	
-	
-function switch2en () {
-	if (switched) { alert('Refresh the page, then click on this button again.'); return; }
-	
-	var zh = document.querySelectorAll('[data-lang=zh-hant]')
-	for (var i=0;i<zh.length;i++) zh[i].style.display='none' 
-	document.getElementById('languageStyling').textContent=''
-	
-	var zhHans = document.querySelectorAll('[data-lang=zh-hans]')
-	for (var i=0;i<zhHans.length;i++) zhHans[i].style.display='none' 
-	document.getElementById('languageStyling').textContent=''
+function showAndHideLang(lang) {
+  // Show previously hidden parts:
+  $$hidden
+  .forEach(function($elmt) { Object.assign($elmt, { hidden: false }) })
 
-	document.documentElement.lang = 'en'
-	switched = true;
-	}
+  if (lang === 'all') {
+  	return
+  }
 
+  // Hide parts of other languages:
+  $$hidden = (
+    LANG_LIST
+    .filter(function(it) { return it !== lang })
+    .reduce(function(result, it) { return result.concat($$('[data-lang="' + it + '"]')) }, [])
+    .map(function($elmt) { return Object.assign($elmt, { hidden: true }) })
+  )
+}
 
-function addLangAttrs () {
-	// adds lang attributes wherever there is a data-lang attribute
-	// this is done by js to reduce burden on editors
-	// if there's already a lang attribute in the tag, that tag is skipped
-	// note that this may still produce temporarily incorrect labelling where text is awaiting translation
-	
-	var zh = document.querySelectorAll('[data-lang=zh]')
-	for (i=0;i<zh.length;i++) { if (zh[i].lang == '') { zh[i].lang='zh'} }
-	
-	var zhHans = document.querySelectorAll('[data-lang=zh-hans]')
-	for (i=0;i<zhHans.length;i++) { if (zhHans[i].lang == '') { zhHans[i].lang='zh-hans'} }
-	}
+function replaceBoilerplateText(lang) {
+  var l10n = L10N[lang === 'all' ? 'en' : lang]
 
-document.addEventListener( 'DOMContentLoaded', addLangAttrs );
+  // Alter some basic headings, etc:
+  Object.keys(l10n.selector)
+  .forEach(function(s) {
+    $$(s)
+    .forEach(function($elmt) {
+    	Object.assign($elmt, { textContent: l10n.selector[s] })
+    })
+  })
 
+  $$('figcaption, .fig-ref')
+  .forEach(function($elmt) {
+  	Object.assign($elmt.firstChild, { textContent: l10n['fig'] })
+	})
+
+  $$('h1 + h2 + dl dt')
+  .forEach(function($dt) {
+    var originalText = $dt.dataset.originalText || $dt.textContent
+    var text = l10n.dt[originalText] || originalText
+
+    if (text) {
+      $dt.textContent = text
+      $dt.dataset.originalText = originalText
+    }
+
+    if (originalText === 'Bug tracker:') {
+      $dt.nextElementSibling.innerHTML = l10n.dd['Bug tracker:']
+    }
+  })
+}
+
+/**
+ * Expose to global for now since respec will re-parse the entire document
+ * and event bound will be lost.
+ */
+window.switchLang = function(lang) {
+  toggle$rootClass(lang)
+  showAndHideLang(lang)
+  replaceBoilerplateText(lang)
+}
+
+/**
+ * Add `lang` attribute wherever there is a data-lang attribute.
+ * This is done by js to reduce burden on editors
+ * If there's already a lang attribute in the tag, that tag is skipped.
+ *
+ * Note that this may still produce temporarily incorrect labelling
+ * where text is awaiting translation.
+ */
+function addLangAttr() {
+  toggle$rootClass('all')
+
+  LANG_LIST
+  .forEach(function(lang) {
+    $$('[data-lang="' + lang + '"]')
+    .forEach(function($elmt) {
+      if (!$elmt.lang) {
+        $elmt.lang = lang
+      }
+    })
+  })
+}
+
+addLangAttr()
+}()

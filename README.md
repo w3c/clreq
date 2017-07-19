@@ -26,3 +26,4 @@ Editors should be familiar with and use the following:
 ### Links
 - Task Force Home Page [English](https://www.w3.org/International/groups/chinese-layout/) | [简体汉语](https://www.w3.org/International/groups/chinese-layout/Overview.zh-hans)
 - [Charter](https://www.w3.org/International/groups/chinese-layout/charter.html)
+- [Practical tips for task forces](https://w3c.github.io/i18n-activity/guidelines/process.html)

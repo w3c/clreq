@@ -20,9 +20,10 @@ Task force _members_ are expert contributors who participate actively in produci
 
 Editors should be familiar with and use the following:
 
-- [Github guidelines for working with i18n documents](http://w3c.github.io/i18n-activity/guidelines/github)
-- [Editorial guidelines for working with i18n documents](http://w3c.github.io/i18n-activity/guidelines/editing)
+- [Github guidelines for working with i18n documents](https://w3c.github.io/i18n-activity/guidelines/github)
+- [Editorial guidelines for working with i18n documents](https://w3c.github.io/i18n-activity/guidelines/editing)
 
 ### Links
 - Task Force Home Page [English](https://www.w3.org/International/groups/chinese-layout/) | [简体汉语](https://www.w3.org/International/groups/chinese-layout/Overview.zh-hans)
 - [Charter](https://www.w3.org/International/groups/chinese-layout/charter.html)
+- [Practical tips for task forces](https://w3c.github.io/i18n-activity/guidelines/process.html)

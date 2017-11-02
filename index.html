@@ -833,7 +833,7 @@ var respecConfig = {
           <p data-lang="zh-hant">以成人為目標讀者製作書籍時，文字尺寸一般為10.5pt（≒3.7mm）與9pt（≒3.2mm）為多。除了特殊書籍外，最小也要有8pt（≒2.8mm）。</p>
           <div class="note">
             <p data-lang="en">There are two traditional size systems for Chinese characters, an old one and a new one. The following tables shows the equivalence of the old size system and the new size system in the Western point system respectively.</p>
-            <table class="charsize" id="oldsize-en" data-lang="en" style="font-size:95%;">
+            <table class="charsize" id="oldsize-en" data-lang="en">
               <thead>
                 <tr>
                   <th>Old size system</th>
@@ -876,7 +876,7 @@ var respecConfig = {
               </tbody>
             </table>
 
-            <table class="charsize" id="newsize-en" data-lang="en" style="font-size:95%;">
+            <table class="charsize" id="newsize-en" data-lang="en">
               <thead>
                 <tr>
                   <th>New size system</th>
@@ -1250,7 +1250,7 @@ var respecConfig = {
                   <p data-lang="zh-hant">文字以順時針方向旋轉90°，主要用於西文的單字詞、語句等。</p>
                 </li>
                 <li>
-                  <p data-lang="en">Set horizontally without changing orientation. This is usually applied to numbers comprising two or more digits.</p>
+                  <p data-lang="en">Set horizontally without changing orientation. This is usually applied to numbers comprising two to three digits.</p>
                   <p data-lang="zh-hans">保持正常方向，横排处理（如日文的纵中横排）。主要应用于两到三位数字。</p>
                   <p data-lang="zh-hant">保持正常方向，橫排處理（如日文的縱中橫排）。主要應用於二至三位數字。</p>
                   <div class="note">
@@ -1279,7 +1279,7 @@ var respecConfig = {
               <p data-lang="zh-hant">直排時，表格橫列的標題列位上方，直行的標題列位右側。</p>
             </li>
             <li>
-              <p data-lang="en" class="checkme">In horizontal writing mode, align the top of tables/illustrations to the left of the page but list the headers on the left side.</p>
+              <p data-lang="en">In horizontal writing mode, align the top of tables/illustrations to the left of the page but list the headers on the left side.</p>
               <p data-lang="zh-hans">横排时，表格横列的标题列位上方，直行的标题列位左侧。</p>
               <p data-lang="zh-hant">橫排時，表格橫列的標題列位上方，直行之標題列位左側。</p>
             </li>
@@ -1331,7 +1331,7 @@ var respecConfig = {
       <span data-lang="zh-hant">標點符號與其排版</span>
     </h3>
 
-    <p data-lang="en" class="checkme">The usage of Chinese punctuation marks differs across different regions. One of the major differences is their behavior for composition. Punctuation marks in Traditional Chinese are usually positioned center-aligned, while punctuation marks in Simplified Chinese should be aligned with the character they follow, and this alignment varies according to whether the composition uses vertical or horizontal writing mode. The differences of composition for punctuation in Traditional Chinese and Simplified Chinese, as well as the correct way to position them, will be introduced in more detail later.</p>
+    <p data-lang="en">The usage of Chinese punctuation marks differs across different regions. One major difference is how the glyphs are distributed in the character dimension and are handled differently in vertical and horizontal writing modes. Glyphs for Traditional Chinese punctuation marks are usually center-aligned in the character dimension, while glyphs for Simplified Chinese punctuation marks are distributed in the corner side closest to their annotated text in the character dimension. The differences and the correct ways to layout punctuation marks in Traditional and Simplified Chinese, will be introduced in detail later.</p>
     <p data-lang="zh-hans">中文标点符号的排版在各地区有不同的处理方式，其中较显著的差异是其字面分布——繁体中文多使用符号居中的字形样式，而简体中文多使用符号尾随受注文字端的字形样式，并依直、横排有不同的处理。下文将详述繁、简中文标点的异同及准确的配置方式。</p>
     <p data-lang="zh-hant">中文標點符號的排版在各地區有不同的處理方式，其中較顯著的差異係其字面分布——繁體中文多使用符號居中的字形樣式，而簡體中文多使用符號尾隨受注文字端的字形樣式，並依直、橫排有不同的處理。下文將詳述繁、簡中文標點的異同及準確的配置方式。</p>
     <p data-lang="en">Major typesetting differences between Traditional Chinese and Simplified Chinese include the positioning of punctuation and terminological variations. (See more at <a href="#glyphs_sizes_and_positions_in_character_faces_of_punctuation_marks"></a>). </p>
@@ -1339,7 +1339,7 @@ var respecConfig = {
     <p data-lang="zh-hant">在繁、簡中文排版中，標點符號於字面上的位置與形狀差異為二者主要的分歧點（詳見<a href="#glyphs_sizes_and_positions_in_character_faces_of_punctuation_marks"></a>節）。進行版式配置時，需要多加留意。</p>
 
     <div class="note">
-      <p data-lang="en" class="checkme">There are differences between the punctuation marks used in China, Japan, Korea and Vietnam, but Unicode does not distinguish them using different codes. A number of punctuation marks are shared among Traditional Chinese, Simplified Chinese and Japanese. Usually the font used for the Han characters will determine the style of the punctuation marks, or they will be adjusted by the composition engine automatically.</p>
+      <p data-lang="en" class="checkme">CJKV punctuation marks use different glyphs which are visually distinct between languages. Unicode currently does not distinguish each of them with unique codepoints. Usually, we use typefaces corresponding to the locale of the written text or have the layout engines adjust the punctuation marks according to the languages automatically.</p>
       <p data-lang="zh-hans">中日韩越意音文字标点符号有地区上的字形与形态差异，但Unicode并未对其区分码位，标点多有共用。通常，排版时使用相应的字体进行配置，或由排版引擎自动调适。</p>
       <p data-lang="zh-hant">中日韓越意音文字標點符號有地區上的字形與形態差異，但Unicode並未對其區分碼位，標點多有共用。通常，排版時使用相應的字體進行配置，或由排版引擎自動調適。</p>
     </div>
@@ -1362,7 +1362,7 @@ var respecConfig = {
           <span data-lang="zh-hant">點號</span>
         </h5>
 
-        <p data-lang="en">Pause or stop punctuation marks are used to indicate pauses or the end of a sentence. Some of the pause or stop punctuation marks appear within a sentence, such as the slight-pause comma, comma, semicolon, colon, etc., while others appear at the end of a sentence, such as the period, question mark and exclamation mark.</p>
+        <p data-lang="en">Pause or stop punctuation marks are used to indicate pauses or the end of a sentence. Some of the pause or stop punctuation marks appear within a sentence, such as slight-pause commas, commas, semicolons, colons, etc., while others appear at the end of a sentence, such as periods, question marks and exclamation marks.</p>
         <p data-lang="zh-hans">点号相对于标号，用于表示语句的停顿或暂停。分为句内点号，如顿号、逗号、分号、冒号等；以及句末点号，如句号、问号、感叹号等。</p>
         <p data-lang="zh-hant">點號相對於標號，用於表示語句的停頓或暫停。分為句內點號，如頓號、逗號、分號、冒號等；以及句末點號，如句號、問號、驚嘆號等。</p>
         <ol>
@@ -1427,7 +1427,7 @@ var respecConfig = {
             <p data-lang="zh-hant">簡體中文採用先雙、後單的引號體例，彎引號用於橫排、直角引號用於直排。雙引號，包含開始雙彎引號<span class="uname">U+201C LEFT DOUBLE QUOTATION MARK</span> [“]、開始雙直角引號<span class="uname">U+300E LEFT WHITE CORNER BRACKET</span> [『]、結束雙彎引號<span class="uname">U+201D RIGHT DOUBLE QUOTATION MARK</span> [”]、結束雙直角引號<span class="uname">U+300F RIGHT WHITE CORNER BRACKET</span> [』]；單引號，包含開始單彎引號<span class="uname">U+2018 LEFT SINGLE QUOTATION MARK</span> [‘]、開始單直角引號<span class="uname">U+300C LEFT CORNER BRACKET</span> [「]、結束單彎引號<span class="uname">U+2019 RIGHT SINGLE QUOTATION MARK</span> [’]、結束單直角引號<span class="uname">U+300D RIGHT CORNER BRACKET</span> [」]。</p>
 
             <div class="note">
-              <p data-lang="en">There are vertical bracket codepoints such as <span class="uname">U+FE41 PRESENTATION FORM FOR VERTICAL LEFT CORNER BRACKET</span> in Unicode. But they are not suitable for authors to use directly. They should be replaced by via some other mechanism.</p>
+              <p data-lang="en">There are vertical bracket codepoints such as <span class="uname">U+FE41 PRESENTATION FORM FOR VERTICAL LEFT CORNER BRACKET</span> in Unicode. But they are not suitable for authors to use directly. They should be replaced via some other mechanism.</p>
               <p data-lang="zh-hans" class="checkme">Unicode编码中有如<span class="uname">U+FE41 PRESENTATION FORM FOR VERTICAL LEFT CORNER BRACKET</span>等直立的符号，但不适宜作者直接使用该符号，而是透过其他机制替代使用。</p>
               <p data-lang="zh-hant">Unicode編碼中有如<span class="uname">U+FE41 PRESENTATION FORM FOR VERTICAL LEFT CORNER BRACKET</span>等直立的符號，但不適宜作者直接使用該符號，而是透過其他機制替代使用。</p>
       </div>
@@ -1453,7 +1453,7 @@ var respecConfig = {
             <p data-lang="en">According to <cite>Punctuation Guidance</cite> (2008 revised edition) issued by The Ministry of Education in Taiwan, parentheses used in Chinese include <span class="uname">U+FF08 FULLWIDTH LEFT PARENTHESIS</span> [（], <span class="uname">U+FF09 FULLWIDTH RIGHT PARENTHESIS</span> [）] and <span class="uname">U+2E3A TWO-EM DASH</span> [⸺] or <span class="uname">U+2014 EM DASH</span> [—]. Either one two-em dash (<span class="uname">U+2E3A TWO-EM DASH</span> [⸺]) or two consecutive em dashes can be used.</p>
             <p data-lang="zh-hans" class="checkme">台湾教育部的《重订标点符号手册》(2008年修订版)称括号为夹注号，分甲式及乙式，甲式为 <span class="uname" translate="no">U+FF08 FULLWIDTH LEFT PARENTHESIS </span>[（ ]与 <span class="uname" translate="no">U+FF09 FULLWIDTH RIGHT PARENTHESIS</span> [）]， 乙式则为一对各占两个汉字空间的 <span class="uname" translate="no">U+2014 EM DASH</span> [—](或使用连续两个「——」)。括号 属于括注符号。</p>
             <p data-lang="zh-hant">台灣教育部的《重訂標點符號手冊》（2008年修訂版）稱括號為夾注號，分甲式及乙式，甲式為<span class="uname">U+FF08 FULLWIDTH LEFT PARENTHESIS</span> [（]與<span class="uname">U+FF09 FULLWIDTH RIGHT PARENTHESIS</span> [）]，乙式則為一對各佔二個漢字空間的<span class="uname">U+2E3A TWO-EM DASH</span> [⸺]或<span class="uname">U+2014 EM DASH</span> [—]。括號屬於括注符號。</p>
-            <p data-lang="en">General Rules for Punctuation (GB/T 15834–2011), the national standard issued by China Central Government, lists em dash as one type of dash.</p>
+            <p data-lang="en"><cite>General Rules for Punctuation</cite> (GB/T 15834–2011), the national standard issued by China Central Government, lists em dash as one type of dash.</p>
             <p data-lang="zh-hans" class="checkme">中国大陆《标点符号用法》（GB/T 15834–2011）的括号基本与上述一致，但将乙式括号视为破折号的一种形式。</p>
             <p data-lang="zh-hant">中國大陸《標點符號用法》（GB/T 15834–2011）的括號基本與上述一致，但將乙式括號視為破折號的一種形式。</p>
             <div class="note">
@@ -1474,7 +1474,7 @@ var respecConfig = {
             <p data-lang="en"><span class="leadin">Horizontal ellipsis.</span> </p>
             <p data-lang="zh-hans" class="checkme"><span class="leadin">删节号／省略号</span></p>
             <p data-lang="zh-hant"><span class="leadin">刪節號／省略号</span></p>
-            <p data-lang="en">In Chinese, the horizontal ellipsis usually consists of 3 dots, <span class="uname">U+2026 HORIZONTAL ELLIPSIS</span> […], or 6 dots (in two groups of three dots, occupying the same horizontal space as two characters, i.e. "……"). They usually indicate an intentional omission of a word, sentence, or whole section from a text. Depending on their context and placement in a sentence, ellipses can also indicate an unfinished thought, a slight pause, or echoing voice.</p>
+            <p data-lang="en">Ellipses are used to indicate an truncation of text, an unfinished sentence or a break in speech. They consist of two <span class="uname">U+2026 HORIZONTAL ELLIPSIS</span>, making up a series of six dots and take up two character widths.</p>
             <p data-lang="zh-hans" class="checkme">删节号又称省略号，表示节省原文、语句未完或语气的不连续。是占两个汉字空间、包含六个省略点的 <span class="uname" translate="no">U+2026 HORIZONTAL ELLIPSIS</span> […](或使用连续两个「……」)。</p>
             <p data-lang="zh-hant">刪節號又作省略號，表示節略原文、語句未完或語氣的不連續。為佔二個漢字空間、包含六個省略點的<span class="uname">U+2026 HORIZONTAL ELLIPSIS</span> […]（或使用連續二個「……」）。</p>
           </li>
@@ -1499,11 +1499,11 @@ var respecConfig = {
             <p data-lang="en">According to the <cite>Punctuation Guidance</cite> (revised edition) issued by The Ministry of Education in Taiwan, connector symbols include <span class="uname">U+2013 EN DASH</span> [–] and <span class="uname">U+FF5E FULLWIDTH TILDE</span> [～] or <span class="uname">U+007E TILDE</span> [~].</p>
             <p data-lang="zh-hans" class="checkme">根据台湾教育部的《重订标点符号手册》，连接号分为甲式及乙式，甲式为<span class="uname" translate="no">U+2013 EN DASH</span> [–]、乙式为 <span class="uname" translate="no">U+FF5E FULLWIDTH TILDE</span> [～]或 <span class="uname" translate="no">U+007E TILDE</span> [~]。</p>
             <p data-lang="zh-hant">根据台灣教育部的《重訂標點符號手冊》，連接號分為甲式及乙式，甲式為<span class="uname">U+2013 EN DASH</span> [–]、乙式為<span class="uname">U+FF5E FULLWIDTH TILDE</span> [～]或<span class="uname">U+007E TILDE</span> [~]。</p>
-            <p data-lang="en">According to the <cite>General Rules for Punctuation (GB/T 15834—2011)</cite>, there are three types of connector marks, namely, the short connector mark [–], the long connector mark [—], and tilde [~].</p>
+            <p data-lang="en">According to the <cite>General Rules for Punctuation</cite> (GB/T 15834—2011), there are three types of connector marks, namely, the short connector mark [–], the long connector mark [—], and tilde [~].</p>
             <p data-lang="zh-hans" class="checkme">根据中国大陆的《标点符号用法》(GB/T 15834—2011)，连接号的形式有短横线[–]、一字线[—]和浪纹线[～]3 种。</p>
             <p data-lang="zh-hant">根据中国大陸的《标点符号用法》 （GB/T 15834—2011），连接号的形式有短横线[–]、一字线[—]和浪纹线[～]三种。</p>
             <div class="note">
-              <p data-lang="en">The <cite>General Rules for Punctuation (GB/T 15834—2011)</cite> does not state the corresponding Unicode code point for the three types of connector marks. However, we can make the deduction that the long connector mark [—] is <span class="uname">U+2014 EM DASH</span> [—] and the tilde [~] is <span class="uname">U+FF5E FULLWIDTH TILDE</span> [～]. Since the short connector mark should take half the width of the long connector mark, it should be <span class="uname">U+2013 EN DASH</span> [–]. The actual length of these connector marks may depend on the writing system as well as the typeface.</p>
+              <p data-lang="en">The <cite>General Rules for Punctuation</cite> (GB/T 15834—2011) does not state the corresponding Unicode code point for the three types of connector marks. However, we can make the deduction that the long connector mark [—] is <span class="uname">U+2014 EM DASH</span> [—] and the tilde [~] is <span class="uname">U+FF5E FULLWIDTH TILDE</span> [～]. Since the short connector mark should take half the width of the long connector mark, it should be <span class="uname">U+2013 EN DASH</span> [–]. The actual length of these connector marks may depend on the writing system as well as the typeface.</p>
               <p data-lang="zh-hans" class="checkme">《标点符号用法》(GB/T 15834—2011)中没有指定这三个符号的码位，但是基本上可以推断一字线是 <span class="uname" translate="no">U+2014 EM DASH</span> [—]，浪纹线是 <span class="uname" translate="no">U+FF5E FULLWIDTH TILDE</span> [～]。但是对于短横线，该标准5.1.6节规定：短横线比汉字『一』略短，占半个字位置，因此可以是 <span class="uname" translate="no">U+2013 EN DASH</span> [–]。这些连接号的实际长短根据所用处理系统和使用字体会有区别。</p>
               <p data-lang="zh-hant">《标点符号用法》 （GB/T 15834—2011）中没有指定这三个符号的码位，但是基本上可以推断一字线是<span class="uname">U+2014 EM DASH</span> [—]，浪纹线是<span class="uname">U+FF5E FULLWIDTH TILDE</span> [～]。但是对于「短横线」，该标准5.1.6節规定「横短线比汉字『一』略短，占半个字位置」，因此可以是<span class="uname">U+2013 EN DASH</span> [–]。这些连接号的实际长短根据所用处理系统和使用字體会有区别。</p>
             </div>
@@ -1515,14 +1515,14 @@ var respecConfig = {
             <p data-lang="en"><span class="uname">U+00B7 MIDDLE DOT</span> [·], also known as interpoint, middot or centered dot, is a punctuation mark consisting of a vertically-centered dot, and is used to separate the first name and family name in names translated from a foreign language, or minority groups' names. It is also used with double quotation marks to separate chapters, articles and volumes in publications.</p>
             <p data-lang="zh-hans" class="checkme">间隔号为 <span class="uname" translate="no">U+00B7 MIDDLE DOT</span> [·]。用于书名号乙式(双书名号)分隔篇、章、卷，以及外国人名中文译名、少数民族音译名，分隔姓名使用。</p>
             <p data-lang="zh-hant">間隔號為<span class="uname">U+00B7 MIDDLE DOT</span> [·]。用於書名號乙式（雙書名號）分隔篇、章、卷，以及外國人名中文譯名、少數民族音譯名，分隔姓名使用。</p>
-            <p data-lang="en">The middle dot applies to Chinese only. When a translated foreign name contains a Latin character, the full stop should be used rather than the middle dot. For example, <span lang="zh-hant">「比尔·盖茨」</span> but <span lang="zh-hant">「B. 盖茨」</span>.</p>
+            <p data-lang="en">Middle dots apply to Chinese only. When a translated foreign name contains a Latin character, the full stop should be used rather than the middle dot. For example, <span lang="zh-hant">「比尔·盖茨」</span> but <span lang="zh-hant">「B. 盖茨」</span>.</p>
             <p data-lang="zh-hans" class="checkme">间隔号为中文标点，当外语姓名包含西文首字母缩写作为单节时，原则上西文字母后面应该使用西文句点，如“比尔·盖茨”、“B. 盖茨”。</p>
             <p data-lang="zh-hant">间隔号为中文标点，当外语姓名包含西文首字母缩写作为单节时，原则上西文字母后面应该使用西文句点，如「比尔·盖茨」「B. 盖茨」。</p>
-            <p data-lang="en">Usage of the middle dot differs between Traditional Chinese and Simplified Chinese. In principle, the middle dot, either in vertical writing mode or horizontal writing mode, should have the same dimensions as a character; however, in Simplified Chinese, the middle dot sometimes has half the width of a character when it is used to separate the month and the date, e.g. 9·11. </p>
+            <p data-lang="en">Usage of middle dots differs between Traditional Chinese and Simplified Chinese. In principle, the middle dot, either in vertical writing mode or horizontal writing mode, should have the same dimensions as a character; however, in Simplified Chinese, the middle dot sometimes has half the width of a character when it is used to separate the month and the date, e.g. 9·11. </p>
             <p data-lang="zh-hans" class="checkme">间隔号在繁、简中文间的用法有所不同，原则上繁体中文无论直排或横排，都占用一个汉字的大小；简体中文用于分隔日期（如 9·11）等情况时，可用半个汉字的大小。</p>
             <p data-lang="zh-hant">間隔號在繁、簡中文間的用法有所不同，原則上繁體中文無論直排或橫排，都佔用一個漢字的大小；簡體中文用於分隔日期（如9·11）等情況時，可用半個漢字的大小。</p>
             <div class="note">
-              <p data-lang="en">Due to the fact that BIG-5 code does not give a detailed definition of the middle dot, sometimes <span class="uname">U+FF0E FULLWIDTH FULL STOP</span> [．], <span class="uname">U+2027 HYPHENATION POINT</span> [‧] and <span class="uname">U+2022 BULLET</span> [•] are used as replacements for the middle dot. <span class="uname">U+30FB KATAKANA MIDDLE DOT</span> [・] is tightly connected to the JIS code system, and it is not recommended to use this.</p>
+              <p data-lang="en">Due to the fact that BIG-5 code does not give a detailed definition of the middle dot, sometimes <span class="uname">U+FF0E FULLWIDTH FULL STOP</span> [．], <span class="uname">U+2027 HYPHENATION POINT</span> [‧] and <span class="uname">U+2022 BULLET</span> [•] are used as replacements for the middle dot. <span class="uname">U+30FB KATAKANA MIDDLE DOT</span> [・] is unique to the JIS code system, and it is not recommended to use this.</p>
               <p data-lang="zh-hans" class="checkme">过去因大五码未有详细的语意定义，所以有时混用 <span class="uname" translate="no">U+FF0E FULLWIDTH FULL STOP</span> [．]、<span class="uname" translate="no">U+2027 HYPHENATION POINT </span>[‧]、<span class="uname" translate="no">U+2022 BULLET </span>[•]等字符作为间隔号的例子，建议使用<span class="uname" translate="no">U+00B7 MIDDLE DOT</span> [·]。而 <span class="uname" translate="no">U+30FB KATAKANA MIDDLE DOT</span> [・]来自日文JIS编码，并非中文编码，不建议使用。</p>
               <p data-lang="zh-hant">過去因大五碼未有詳細的語意定義，所以時有混用<span class="uname">U+FF0E FULLWIDTH FULL STOP</span> [．]、<span class="uname">U+2027 HYPHENATION POINT</span> [‧]、<span class="uname">U+2022 BULLET</span> [•]等字元作為間隔號的例子，建議使用<span class="uname">U+00B7 MIDDLE DOT</span> [·]。而<span class="uname">U+30FB KATAKANA MIDDLE DOT</span> [・]來自日文JIS編碼，並非中文編碼，不建議使用。</p>
             </div>
@@ -1531,16 +1531,16 @@ var respecConfig = {
             <p data-lang="en"><span class="leadin">Book Title Mark.</span></p>
             <p data-lang="zh-hans" class="checkme"><span class="leadin">书名号</span></p>
             <p data-lang="zh-hant"><span class="leadin">書名號</span></p>
-            <p data-lang="en">The book title mark is used to indicate the names of works which usually include books, articles, songs, movies, files, calligraphy and paintings. Generally there are two types of book title marks, wavy low lines or angle brackets. <span class="uname">U+FE4F WAVY LOW LINE</span> [﹏] is positioned beneath the corresponding characters. When two works are listed next to each other, the wavy lines for each should be clearly separated. The angle bracket includes <span class="uname">U+300A LEFT DOUBLE ANGLE BRACKET</span> [《], <span class="uname">U+300B RIGHT DOUBLE ANGLE BRACKET</span> [》], <span class="uname">U+3008 LEFT ANGLE BRACKET</span> [〈] and <span class="uname">U+3009 RIGHT ANGLE BRACKET</span> [〉].The former pair is used for the names of books while the latter pair is used for the names of articles.</p>
+            <p data-lang="en">Book title marks are used to indicate the names of works which usually include books, articles, songs, movies, files, calligraphy and paintings. Generally, there are two types of book title marks, wavy low lines or angle brackets. <span class="uname">U+FE4F WAVY LOW LINE</span> [﹏] is positioned at the foot end of the annotated text. When two works are listed adjacent to each other, the wavy lines should be visually separated. Angle brackets include <span class="uname">U+300A LEFT DOUBLE ANGLE BRACKET</span> [《], <span class="uname">U+300B RIGHT DOUBLE ANGLE BRACKET</span> [》], <span class="uname">U+3008 LEFT ANGLE BRACKET</span> [〈] and <span class="uname">U+3009 RIGHT ANGLE BRACKET</span> [〉]. The former pair is used for the names of books while the latter pair is used for the names of articles.</p>
             <p data-lang="zh-hans" class="checkme">根据台湾教育部的《重订标点符号手册》(2008 年修订版)，书名号分为甲式及乙式，甲式为波浪底线 <span class="uname" translate="no">U+FE4F WAVY LOW LINE</span> [_]，标注在相应文本底端，两个作品名称相邻时， 甲式书名号间须在视觉上分离予以辨别。乙式有双书名号 <span class="uname" translate="no">U+300A LEFT DOUBLE ANGLE BRACKET</span> [《]与 <span class="uname" translate="no">U+300B RIGHT DOUBLE ANGLE BRACKET</span> [》]、单书名号 <span class="uname" translate="no">U+3008 LEFT ANGLE BRACKET</span> [〈]与 <span class="uname" translate="no">U+3009 RIGHT ANGLE BRACKET</span> [〉]，前者用于标示书名号、后者用于标示篇名。</p>
             <p data-lang="zh-hant">根据台灣教育部的《重訂標點符號手冊》（2008年修訂版），書名號分為甲式及乙式，甲式為波浪底線<span class="uname">U+FE4F WAVY LOW LINE</span> [﹏]，標注在相應文本底端，二個作品名稱相鄰時，甲式書名號間須在視覺上分離予以辨別。乙式有雙書名號<span class="uname">U+300A LEFT DOUBLE ANGLE BRACKET</span> [《]與<span class="uname">U+300B RIGHT DOUBLE ANGLE BRACKET</span> [》]、單書名號<span class="uname">U+3008 LEFT ANGLE BRACKET</span> [〈]與<span class="uname">U+3009 RIGHT ANGLE BRACKET</span> [〉]，前者用於標示書名號、後者用於標示篇名。</p>
-            <p data-lang="en">When two book title marks are positioned next to each other, there should be a clear separation to indicate the different names.</p>
+            <p data-lang="en">Book title marks are used to indicate titles of books, articles, songs, films, documents, artworks and so on.</p>
             <p data-lang="zh-hans" class="checkme">书名号用于标示书名、篇名、歌曲名、影剧名、文件名、字画名等各种作品名称。</p>
             <p data-lang="zh-hant">書名號用於標示書名、篇名、歌曲名、影劇名、文件名、字畫名等各種作品名稱。</p>
-            <p data-lang="en">According to the <cite>General Rules for Punctuation (GB/T 15834―2011)</cite>, the names of books as well as chapters should be quoted using double angle brackets [《》]. When there is a need to indicate the name of another book within the double angle brackets [《》], the ordinary angle brackets [〈〉] should be used.</p>
+            <p data-lang="en">According to the <cite>General Rules for Punctuation</cite> (GB/T 15834―2011), the names of books as well as chapters should be quoted using double angle brackets [《》]. When there is a need to indicate the name of another book within the double angle brackets [《》], the ordinary angle brackets [〈〉] should be used.</p>
             <p data-lang="zh-hans" class="checkme">根据中国大陆的《标点符号用法》（GB/T 15834—2011），无论书名、篇章名都应该使用双书名号[《》]，只有在书名号中还需要书名号时，里面一层用单书名号，外面一层用双书名号。甲式书名号(波浪底线)仅用于古籍。乙式书名号属于括注符号。</p>
             <p data-lang="zh-hant">根据中国大陸的《标点符号用法》 （GB/T 15834—2011），无论书名、篇章名都应该使用双书名号[《》]，只有在书名号中还需要书名号时，里面一层用单书名号，外面一层用双书名号。而甲式書名號（波浪底線）僅用於古籍。</p>
-            <p data-lang="en">Book title marks are a kind of brackets. </p>
+            <p data-lang="en">Book title marks are a kind of bracket.</p>
             <p data-lang="zh-hans" class="checkme">書名號乙式屬於括注符號。</p>
             <p data-lang="zh-hant">書名號乙式屬於括注符號。</p>
             <div class="note">
@@ -1550,13 +1550,13 @@ var respecConfig = {
             </div>
           </li>
           <li>
-            <p data-lang="en"><span class="leadin">Fullwidth low line.</span></p>
+            <p data-lang="en"><span class="leadin">Proper noun marks.</span></p>
             <p data-lang="zh-hans" class="checkme">专名号</p>
             <p data-lang="zh-hant"><span class="leadin">專名號</span></p>
             <p data-lang="en"> <span class="uname">U+FF3F FULLWIDTH LOW LINE</span> [＿] is positioned underneath proper nouns such as a person's name, the name of a place, etc.</p>
             <p data-lang="zh-hans" class="checkme">专名号为 <span class="uname" translate="no">U+FF3F FULLWIDTH LOW LINE</span> [＿]，标示专有名词——如人名、地名等——底端的符号。</p>
             <p data-lang="zh-hant">專名號為<span class="uname">U+FF3F FULLWIDTH LOW LINE</span> [＿]，標示於專有名詞——如人名、地名等——底端之符號。</p>
-            <p data-lang="en"> When two proper nouns are listed together, the <span class="uname">FULLWIDTH LOW LINE</span> should provide a visual distinction between them.</p>
+            <p data-lang="en">When two proper nouns are adjacent to each other, the lines of the marks should be visually separated by a <span class="uname">FULLWIDTH LOW LINE</span>.</p>
             <p data-lang="zh-hans" class="checkme">在两个专有名词相邻时，专名号间须在视觉上分离予以辨别。</p>
             <p data-lang="zh-hant">在二個專有名詞相鄰時，專名號間須在視覺上分離予以辨別。</p>
             <div class="note">
@@ -1592,7 +1592,7 @@ var respecConfig = {
         <span data-lang="zh-hant">標點符號的字形、尺寸與字面分布</span>
       </h4>
 
-      <p data-lang="en">Please find the shape and usage of punctuation marks at section <a href="#categories_and_usage_of_punctuation_marks"></a> and <a href="#tables_of_chinese_punctuation_marks"></a>. There are no notable differences between the punctuation used in Traditional Chinese and Simplified Chinese. The major differences between the two are in the dimension and position of the punctuation marks.</p>
+      <p data-lang="en">Please find the glyphs and usage of punctuation marks at section <a href="#categories_and_usage_of_punctuation_marks"></a> and <a href="#tables_of_chinese_punctuation_marks"></a>. There are no notable differences between the glyphs of Traditional and Simplified Chinese punctuation marks. The major differences between Traditional and Simplified Chinese punctuation marks are their sizes and how glyphs are distributed in the character dimension.</p>
       <p data-lang="zh-hans" class="checkme">标点符号的字形及用法请见 3.1.1 标点符号的分类及用法节及<a href="#tables_of_chinese_punctuation_marks">附录 A</a>。繁、简中文的标点符号在字形上未有显著差异，二者间的区别主要是符号的尺寸与字面分布。</p>
       <p data-lang="zh-hant">標點符號的字形及用法請見<a href="#categories_and_usage_of_punctuation_marks"></a>節及<a href="#tables_of_chinese_punctuation_marks">附錄A</a>。繁、簡中文的標點符號在字形上未有顯著差異，二者間的區別主要係符號的尺寸與字面分布。</p>
       <p data-lang="en">Punctuation marks used in Traditional Chinese are usually positioned in the vertical and horizontal center of the square space left for them; while in vertical writing mode and horizontal writing mode, some of the punctuation marks are positioned in different directions so as to mark the corresponding characters more accurately. For Simplified Chinese, the punctuation marks are usually positioned following the characters they are supposed to mark; while some punctuation marks might be positioned in different directions due to the vertical or horizontal writing mode. Also, different writing modes might require different punctuation marks to fulfill the same function, e.g. horizontal writing mode requires curved quotation marks while vertical writing mode requires angle brackets.</p>
@@ -1604,19 +1604,19 @@ var respecConfig = {
       <p data-lang="en">Bracket marks include quotation marks, parentheses, title marks, etc. They should be positioned in pairs at either side of the marked character(s), have the same dimensions as a character, and the same direction as the characters. Bracket quotation marks have different positioning rules in Traditional Chinese and Simplified Chinese. In Traditional Chinese, single quotation marks will be used first and then double quotation marks, whereas in Simplified Chinese, double quotation marks will be used first and then single quotation marks. Also, the writing mode should be taken into consideration as well. Horizontal writing mode requires curved quotation marks while vertical writing mode requires angle brackets.</p>
       <p data-lang="zh-hans" class="checkme">括注符号，包括：引号、括号、书名号及篇名号(乙式)等，位于文本的两侧，占一个汉字的大小、依文字书写方向使用相应的标注方向。其中，引号在繁、简中文分别采用不同的形式，繁体中文排版多使用先单、后双（依此类推）的配对形式;简体中文排版则使用先双、后单（依此类推）的配对形式，并按照文字书写方向采用相应的符号（横排使用弯引号，直排使用直角引号）。</p>
       <p data-lang="zh-hant">括注符號，包括：引號、括號、書名號及篇名號（乙式）等，位受注文本的二側，佔一個漢字的大小、依文字書寫方向使用相應的標注方向。其中，引號在繁、簡中文分別採用不同的形式，繁體中文排版多使用先單、後雙（依此類推）的配對形式； 簡體中文排版則使用先雙、後單（依此類推）的配對形式，並依文字書寫方向採用相應的符號（橫排使用彎引號，直排使用直角引號）。</p>
-      <p data-lang="en">Ellipsis and long dash, should be vertically and horizontally centered within its square frame, and should be one character in height and two characters in width. They are not supposed to be separated from one line to the next and should be positioned in the same direction as the characters.</p>
+      <p data-lang="en">Ellipses and long dashes, should be vertically and horizontally centered within their square frame, and should be one character in height and two characters in width. They are not supposed to be separated from one line to the next and should be positioned in the same direction as the characters.</p>
       <p data-lang="zh-hans" class="checkme">省略号、破折号等标号，位于字面正中，占两个汉字的空间，并且不能因为适配分行断开或拆至两行，根据文字书写方向使用相应的标注方向。</p>
       <p data-lang="zh-hant">包括：刪節號、破折號等標號，位字面正中，佔二個漢字的空間，並不得以適配分行之由斷開或拆至二行，依文字書寫方向使用相應的標注方向。</p>
-      <p data-lang="en">Dashes should take up the same dimensions as a single character, and be vertically and horizontally centered within its square frame. Among the dash marks, the EN DASH should have a short length to distinguish it from the Chinese character [一], which means one. And they should be positioned in the same direction as the characters they mark.</p>
+      <p data-lang="en">Connector marks should take up the same dimensions as a single character, and be vertically and horizontally centered within its square frame. Among the connector marks, the EN DASH should have a short length to distinguish it from the Chinese character [一], which means one. And they should be positioned in the same direction as the characters they mark.</p>
       <p data-lang="zh-hans" class="checkme">连接号位于字面正中，占一个汉字的大小，其中，甲式连接号在横排时，符号的直线长度应稍小于汉字“一”以避免歧义，按照文字书写方向使用相应的标注方向。</p>
       <p data-lang="zh-hant">連接號位字面正中，佔一個漢字的大小，其中，甲式連接號在橫排時，符號的直線長度應稍小於漢字「一」以避免歧義，依文字書寫方向使用相應的標注方向。</p>
-      <p data-lang="en">Solidus, should have the same dimensions and direction as the character it follows, and be vertically and horizontally centered within its square frame. To make more economical use of the available space, or to tighten the overall spacing, sometimes the solidus can have a half character width.</p>
+      <p data-lang="en">Middle dots should be vertically and horizontally centered within their square frame. To make more economical use of the available space, or to tighten the overall spacing, sometimes the solidus can have a half character width.</p>
       <p data-lang="zh-hans" class="checkme">间隔号位于字面正中，占一个汉字的大小，直、横排方向一致。为了节省排版空间、使词组或数字较紧凑地排列，可以使用半个汉字大小的间隔号。</p>
       <p data-lang="zh-hant">間隔號位於字面正中，佔一個漢字的大小，直、橫排方向一致。為了節省排版空間、使詞組或數字較緊湊地排列，可以使用半個漢字大小的間隔號。</p>
-      <p data-lang="en">Inline marks like title marks, wavy low lines, and emphasis dots should be positioned underneath the marked characters in horizontal writing mode. In vertical writing mode, emphasis dots should be positioned to the right side of the marked characters so as not to affect the characters above and beneath them.</p>
+      <p data-lang="en">Interlinear marks like title marks, wavy low lines, and emphasis dots should be positioned underneath the marked characters in horizontal writing mode. In vertical writing mode, emphasis dots should be positioned to the right side of the marked characters so as not to affect the characters above and beneath them.</p>
       <p data-lang="zh-hans" class="checkme">标注在行间的标号需以不影响上下行文字为原则进行配置。包括：专名号、甲式书名号等两个符号，位于被标注文字底端（横排位于文字下方、直排位文字左侧）；着重号横排时位于文字底端（下方）、直排时位于文字顶端（右侧）。</p>
       <p data-lang="zh-hant">標注於行間的標號需以不影響上下行文字為原則進行配置。包括：專名號、甲式書名號等二個符號，位受注文字底端（橫排位文字下方、直排位文字左側）；着重號橫排時位受注文字底端（下方）、直排時位在受注文字頂端（右側）。</p>
-      <p data-lang="en">Solidus should be vertically and horizontally centered within its square frame. In Simplified Chinese, it should take half a character width, whereas in Traditional Chinese, there is no clear rule about its dimensions but most publications will give them the same dimensions as a single character.</p>
+      <p data-lang="en">Solidi should be vertically and horizontally centered within their square frame. In Simplified Chinese, it should take half a character width, whereas in Traditional Chinese, there is no clear rule about its dimensions but most publications will give them the same dimensions as a single character.</p>
       <p data-lang="zh-hans" class="checkme">分隔号位于字面正中，简体中文排版时占半个汉字的大小；繁体中文通行地区未有相关的规定，但多数出版品多使用一个汉字的大小。</p>
       <p data-lang="zh-hant">分隔號位字面正中，簡體中文排版時佔半個漢字的大小；繁體中文通行地區未有相關的規定，但多數出版品多使用一個漢字的大小。</p>
     </section>
@@ -1665,7 +1665,7 @@ var respecConfig = {
         <span data-lang="zh-hant">行首行尾禁則</span>
       </h4>
 
-      <p data-lang="en"> In order to maintain a smooth reading experience and consistency of style, there are certain constraints for the positioning of most punctuation marks. In most cases, according to its function, a punctuation mark is prohibited from appearing at the line start or line end. This rule was first implemented during the time of letterpress printing. In Mainland China, the national standard <cite>General Rules for Punctuation (GB/T 15834–2011)</cite> sets clear rules about the positioning of punctuation marks. In the regions that use Traditional Chinese, there is not yet a standard for the usage and positioning of punctuation marks, but most of the publications apply the rules described in this document.</p>
+      <p data-lang="en"> In order to maintain a smooth reading experience and consistency of style, there are certain constraints for the positioning of most punctuation marks. In most cases, according to its function, a punctuation mark is prohibited from appearing at the line start or line end. This rule was first implemented during the time of letterpress printing. In Mainland China, the national standard <cite>General Rules for Punctuation</cite> (GB/T 15834–2011) sets clear rules about the positioning of punctuation marks. In the regions that use Traditional Chinese, there is not yet a standard for the usage and positioning of punctuation marks, but most of the publications apply the rules described in this document.</p>
       <p data-lang="zh-hans" class="checkme">为了保持阅读顺畅、体例一致，多数标点符号的位置有限制，通常一个标点符号依其性质，禁止出现在行首或行尾。这项规则自活字排版时代开始通行。在中国大陆，《标点符号用法》（GB/T 15834–2011）规定了简体中文标点在行间的位置；繁体中文通行地区虽没有相应的规范，但多数出版品皆按照此处所述规则对标点符号进行配置。</p>
       <p data-lang="zh-hant">為了保持閱讀順暢、體例一致，多數標點符號的位置有其限制，通常一個標點符號依其性質，禁止出現在一行之首或之末。這項規則自活字排版時代開始通行。在中國大陸，《標點符號用法》（GB/T 15834–2011）規定了簡體中文標點在行間的位置；繁體中文通行地區雖未有相應的規範，但多數出版品皆以此處所述規則對標點符號進行配置。</p>
       <div class="note">
@@ -1683,13 +1683,13 @@ var respecConfig = {
         <p data-lang="zh-hans" class="checkme">排版时，若不希望标点符号出现在行首时，仅能从前一行取最后一个字至下一行，前行多出来的空间采平均排列的方式处理。但若遇连续标点符号，如[。』」]等状况，可能取一个字会造成前行字距过大， 这时则采宽松处理，允许标点出现在行首，以避免字距过松造成体例不良。</p>
         <p data-lang="zh-hant">排版時，若不希望標點符號出現於行頭時，僅能由前行取末字至下一行，前行多出來的空間採平均排列的方式處理。但若遇連續標點符號，如[。』」]等狀況，可能取一字會造成前行字距過大，這時則採寬鬆處理，允許標點出現於行頭，以避免字距過鬆造成體例不良。</p>
       </div>
-      <p data-lang="en">Pause or stop punctuation marks, including the slight-pause comma, comma, semicolon, colon, period, question mark, exclamation mark, as well as right quotation marks, right parentheses, right angle brackets, ellipsis, dash, etc, should not appear at the line start.</p>
+      <p data-lang="en">Pause or stop punctuation marks, like slight-pause commas, commas, semicolons, colons, periods, question marks, exclamation marks, as well as right quotation marks, right parentheses, right angle brackets, ellipsis, dashes, etc, should not appear at the line start.</p>
       <p data-lang="zh-hans" class="checkme">点号（顿号、逗号、句号、冒号、分号、惊叹号、问号）、结束引号、结束括号、结束乙式书名号（篇名号）、删节号、连接号、间隔号等符号，不能出现在一行的开头。</p>
       <p data-lang="zh-hant">包括：點號（頓號、逗號、句號、冒號、分號、驚嘆號、問號）、結束引號、結束括號、結束乙式書名號（篇名號）、刪節號、連接號、間隔號等符號，不得出現於一行之首。</p>
       <p data-lang="en">Left parentheses, left quotation marks, left angle brackets and left title marks should not appear at the line end.</p>
       <p data-lang="zh-hans" class="checkme">开始引号、开始括号、开始单双书名号等符号，不能出现在一行的结尾。</p>
       <p data-lang="zh-hant">包括：開始引號等、開始括號、開始單雙書名號等符號，不得出現於一行之尾。</p>
-      <p data-lang="en">For Prohibition Rules and Glyphs, please see <a href="#tables_of_chinese_punctuation_marks">A. Puctuation marks in Chinese</a></p>
+      <p data-lang="en">For prohibition rules and glyphs, please see <a href="#tables_of_chinese_punctuation_marks">A. Puctuation marks in Chinese</a></p>
       <p data-lang="zh-hans">详细标点禁则规则请见<a href="#tables_of_chinese_punctuation_marks">附录A中文标点符号表</a></p>
       <p data-lang="zh-hant">詳細標點禁則規則請見<a href="#tables_of_chinese_punctuation_marks">附錄A中文標點符號表</a></p>
     </section>
@@ -1733,7 +1733,7 @@ var respecConfig = {
             <p data-lang="en"><span class="uname">U+2026 HORIZONTAL ELLIPSIS</span> […] takes one character height and two character widths. Two horizontal ellipses can be used together 「……] .</p>
             <p data-lang="zh-hans" class="checkme">删节号／省略号是占两个汉字空间、包含六个省略点的 <span class="uname" translate="no">U+2026 HORIZONTAL ELLIPSIS</span> […] （或使用连续二个「……]」）。</p>
             <p data-lang="zh-hant">刪節號／省略號為佔二個漢字空間、包含六個省略點的<span class="uname">U+2026 HORIZONTAL ELLIPSIS</span> […]（或使用連續二個「……]」）。</p>
-            <p data-lang="en">According to section 5.1.5 of the <cite>General Rules for Punctuation (GB/T 15834―2011)</cite>, when two horizontal ellipses are used together, they should be four characters wide and occupy an independent line.</p>
+            <p data-lang="en">According to section 5.1.5 of the <cite>General Rules for Punctuation</cite> (GB/T 15834―2011), when two horizontal ellipses are used together, they should be four characters wide and occupy an independent line.</p>
             <p data-lang="zh-hans" class="checkme">《标点符号用法》（GB/T 15834–2011）5.1.5节还规定，两个省略号连用时，占四个汉字位置并须单独占一行。</p>
             <p data-lang="zh-hant">《標點符號用法》（GB/T 15834–2011）5.1.5節还规定，两个省略号连用时，占四个漢字位置并须单独占一行。</p>
           </li>
@@ -1877,7 +1877,7 @@ var respecConfig = {
       <p data-lang="en">Most Chinese publications do not use hanging punctuation at line end. According to the <a href="https://www.w3.org/TR/jlreq/#positioning_of_punctuation_marks">Japanese Layout Requirements</a> document, hanging punctuation at the line end is a kind of extension of the prohibition rules at line start. This rule helps to avoid moving characters or punctuation marks between lines and avoids inconsistency of space between the characters in different lines.</p>
       <p data-lang="zh-hans" class="checkme">绝大多数的中文出版物没有悬挂行尾点号的惯例。参考<a href="https://www.w3.org/TR/jlreq/#positioning_of_punctuation_marks">日文排版</a>的做法，点号悬挂是行首标点禁则处理方式的延伸，可以避免文字及点号在前后行的移动，近而导致前行字距不一的问题。</p>
       <p data-lang="zh-hant">絕多數的中文出版品沒有懸掛行尾點號的慣例。參考<a href="https://www.w3.org/TR/jlreq/#positioning_of_punctuation_marks">日文排版</a>的做法，點號懸掛是行首標點禁則處理方式的延伸，可以避免文字及點號在前後行的移動，甚而導致前行字距不一的問題。</p>
-      <p data-lang="en">In general, the punctuation marks that can be hung at the line end include slight-pause comma, comma and period. In Simplified Chinese, the rest of the pause or stop punctuation marks can be hung at line end since they are set beside the marked characters or in front of the marked characters.</p>
+      <p data-lang="en">In general, the punctuation marks that can be hung at the line end include slight-pause comma, comma and period. In Simplified Chinese, all the pause or stop punctuation marks can be hung at line end since they are positioned at the starting point of the character dimension.</p>
       <p data-lang="zh-hans" class="checkme">通常，适合行尾悬挂的点号有顿号、逗号及句号。简体中文排版中，其余点号因其字面分布偏向被标注文字的一侧、字面始端，也可进行行尾悬挂配置。</p>
       <p data-lang="zh-hant">通常，適合行尾懸掛的點號有頓號、逗號及句號三者。簡體中文排版中，其餘點號因其字面分布偏向受注文字一側、字面始端，亦可進行行尾懸掛配置。</p>
       <p data-lang="en">If a punctuation mark (slight-pause comma, comma or period) is expected to be at the start of a line, it should be placed at the end of the previous line, to fit in the type area.</p>
@@ -2016,7 +2016,7 @@ var respecConfig = {
         <span data-lang="zh-hant">西文使用比例字體時的混排處理</span>
       </h4>
 
-      <p data-lang="en">The following provide composition rules for handling Western characters and European numerals in horizontal writing mode or for situations in vertical writing mode where the Western words/phrases or European numerals are rotated 90 degrees clockwise:</p>
+      <p data-lang="en">The following provides composition rules for handling Western characters and European numerals in horizontal writing mode or for situations in vertical writing mode where the Western words/phrases or European numerals are rotated 90 degrees clockwise:</p>
       <p data-lang="zh-hans" class="checkme">横排中混排的西文、阿拉伯数字及直排中将文字采顺时针旋转90°配置的西文、阿拉 伯数字，其配置方式如下。</p>
       <p data-lang="zh-hant">橫排中混排的西文、阿拉伯數字，及直排中將文字採順時針旋轉90度配置的西文、阿拉伯數字，其配置方式如下：</p>
       <ol>
@@ -2501,7 +2501,7 @@ var respecConfig = {
 
         <ol>
           <li>
-            <p data-lang="en">The base text contains one or more Han characters. Rules for separating terms can be found in <cite>GB/T 16159—2012 Basic Rules of Hanyu Pinyin Orthography</cite>.</p>
+            <p data-lang="en">The base text contains one or more Han characters. Rules for separating terms can be found in <cite>Basic Rules of Hanyu Pinyin Orthography</cite> (GB/T 16159—2012).</p>
             <p data-lang="zh-hans" class="checkme">基文为一个或多个汉字构成的词语。分词连写规则可依据《汉语拼音正词法基本规则》（GB/T 16159—2012）。</p>
             <p data-lang="zh-hant">基文为一个或多个汉字构成的词语。分词连写规则可依据《汉语拼音正词法基本规则》（GB/T 16159—2012）。</p>
           </li>
@@ -2673,7 +2673,7 @@ var respecConfig = {
           <p data-lang="zh-hant">原則上，部分語氣未完的段落予以斷行、而不縮排。語氣未完的段落前可能出現對話、引言，及為與正文有所區隔，由編輯所下的標題等。</p>
         </li>
       </ol>
-      <p data-lang="en">In principle, there is no extra space between paragraphs in Chinese books. The space between the last line of the previous paragraph and the first line of the next paragraph stays the same as the space between the rest of the lines in the paragraph. If a blank line is inserted after a paragraph, usually it indicates the end of the session or chapter. If there is no indent but extra space is added among the lines as an indication of separation, no blank line should be inserted so as to avoid unnecessary amounts of space between the lines. </p>
+      <p data-lang="en">In principle, there is no extra space between paragraphs in Chinese books. The space between the last line of the previous paragraph and the first line of the next paragraph stays the same as the space between the rest of the lines in the paragraph. If a blank line is inserted after a paragraph, usually it indicates the end of the section or chapter. If there is no indent but extra space is added among the lines as an indication of separation, no blank line should be inserted to indicate the end of the section or chapter.</p>
       <p data-lang="zh-hans" class="checkme">原则上，在中文书籍排版中各段落间不使用间距，前段落末行、后段落首行与段落内行距一致。若段落间加入空白行，则表示一节的结束。但段落首行不缩排时所加入的段落间距则与传统排版有所差异，不适合加入空行做节的区分，避免过多的留空造成体例不良。</p>
       <p data-lang="zh-hant">原則上，在中文書籍排版中各段落間不使用間距，前段落末行、後段落首行與段落內行距一致。若段落間加入空白行，則表示一節的結束。但段落首行不縮排時所加入的段落間距則與傳統排版有所差異，不適合加入空行做節的區分，避免過多的留空造成體裁不良。</p>
       <p data-lang="en">Alongside the case of applying indents to the beginning of all lines, there is also the method that indents the second and following lines of the paragraph, called <span class="foreignterm">aopai</span> [<span lang="zh-hant">凸排</span>] or itemization, used in cases such as dramatic script lines and lines starting with the name of a person. Numbered lists of items, questions and answers (Q&amp;A), and legal provisions utilise this method as well. Though called aopai [<span lang="zh-hant">凸排</span>] or itemization, the beginning of the line should not go beyond the type area.</p>
@@ -2718,7 +2718,7 @@ var respecConfig = {
           <p data-lang="en" class="leadin">Centering</p>
           <p data-lang="zh-hans" class="leadin checkme">居中对齐</p>
           <p data-lang="zh-hant" class="leadin">置中對齊</p>
-          <p data-lang="en">The space between adjacent characters is, in principle, set solid. Also, if there is an explicit instruction to insert spaces, such spaces are inserted. This is used if characters are not tightly set, but have a fixed space between characters; the amount of space at the line head and line end is made equal, and the center of the character sequence is unified with the center of the line.</p>
+          <p data-lang="en">The space between adjacent characters is, in principle, set solid. Also, if there is an explicit instruction to insert spaces, such spaces are inserted. This is used if characters are not set solid, but have a fixed space between characters; the amount of space at the line head and line end is made equal, and the center of the character sequence is unified with the center of the line.</p>
           <p data-lang="zh-hans" class="checkme">行内文字原则上紧贴配置，文字列的中央与行的中央对齐排列，未满一行时，该行文字列对行首与行尾的空白量均等。</p>
           <p data-lang="zh-hant">行內文字原則上緊貼配置，文字列的中央與行的中央對齊排列，未滿一行時，該行文字列對行頭與行尾的空白量均等。</p>
         </li>
@@ -2726,7 +2726,7 @@ var respecConfig = {
           <p data-lang="en" class="leadin">Line head alignment</p>
           <p data-lang="zh-hans" class="leadin checkme">行首对齐</p>
           <p data-lang="zh-hant" class="leadin">行首對齊</p>
-          <p data-lang="en">The space between adjacent characters is, in principle, set solid. Also, if there is an explicit instruction to insert spaces, such spaces are inserted. This is used if characters are not tightly set, but have a fixed space between characters; the start of the character sequence is unified with the line head, and if the line is not full, the line end is kept empty.</p>
+          <p data-lang="en">The space between adjacent characters is, in principle, set solid. Also, if there is an explicit instruction to insert spaces, such spaces are inserted. This is used if characters are not set solid, but have a fixed space between characters; the start of the character sequence is unified with the line head, and if the line is not full, the line end is kept empty.</p>
           <p data-lang="zh-hans" class="checkme">行内文字原则上紧贴配置，文字列开头与行首位置对齐，未满一行时，该行末字至行尾使用空白。</p>
           <p data-lang="zh-hant">行內文字原則上緊貼配置，文字列開頭與行首位置對齊，未滿一行時，該行末字至行尾使用空白。</p>
         </li>
@@ -2734,7 +2734,7 @@ var respecConfig = {
           <p data-lang="en" class="leadin">Line end alignment</p>
           <p data-lang="zh-hans" class="leadin checkme">行尾对齐</p>
           <p data-lang="zh-hant" class="leadin">行尾對齊</p>
-          <p data-lang="en">The space between adjacent characters is, in principle, set solid. Also, if there is an explicit instruction to insert spaces, such spaces are inserted. This is used if characters are not tightly set, but have a fixed space between characters; the end of the character sequence is unified with the line end, and if the line is not full, the line head is kept empty.</p>
+          <p data-lang="en">The space between adjacent characters is, in principle, set solid. Also, if there is an explicit instruction to insert spaces, such spaces are inserted. This is used if characters are not set solid, but have a fixed space between characters; the end of the character sequence is unified with the line end, and if the line is not full, the line head is kept empty.</p>
           <p data-lang="zh-hans" class="checkme">行内文字原则上紧贴配置，文字列末尾与行尾位置对齐，未满一行时，该行首字至行首使用空白。</p>
           <p data-lang="zh-hant">行內文字原則上緊貼配置，文字列末尾與行尾位置對齊，未滿一行時，該行首字至行首使用空白。</p>
         </li>

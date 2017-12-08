@@ -56,7 +56,7 @@
 連接號,连接号,liánjiēhào,dash,見標點符號附錄。,
 羅馬拼音,罗马拼音,luómā pīnyīn,Romanization,將漢字依語言將其發音轉寫為拉丁字母的方式。,
 冒號,冒号,màohào,colon,見標點符號附錄。,
-密排,密排,mìpái,seamless arrangement,將文字依其外框緊密排列的排版方式。,
+密排,密排,mìpái,seamless arrangement,將文字依其外框緊密排列的排版方式。,"To arrange characters with no inter-character space between adjacent character frames."
 末端,末端,mòduān,end point,文本或文字靠近該行行尾的一端。通常，文字直排時末端在下，橫排在右。,
 破折號,破折号,pòzhéhào,long dash,見標點符號附錄。,
 輕聲,轻声,qīngshēng,neutral tone,現代標準漢語的特殊變調現象，無固定調値。,"A kind of special tone phenomenon in modern standard Chinese, with no fixed tone."
@@ -70,7 +70,7 @@
 書名號,书名号,shūmínghào,title mark,見標點符號附錄。,
 疏排,疏排,shūpái,distributed arrangement,於文本各字之間加入空白來排列文字的排版方式。,
 宋體（明體／明朝體）,宋体（明体/明朝体）,Sòngtǐ (Míngtǐ/Míngcháotǐ),Song,通常為橫細豎粗、且筆畫末端帶有裝飾部分的一種傳統漢字印刷字體風格。,
-天／天頭,天／天头,tiān/tiāntóu,head/top margin,版心上沿至成品幅面上沿之间的空白区域 (GB/T 9851.2-2008, 3.4)
+天／天頭,天／天头,tiān/tiāntóu,head/top margin,"版心上沿至成品幅面上沿之间的空白区域 (GB/T 9851.2-2008, 3.4)",
 彎引號,弯引号,wān-yǐnhào,curve quotation mark,見標點符號附錄。,
 問號,问号,wènhào,question mark,見標點符號附錄。,
 文字設計／字體排印,文字设计/字体排印,wénzìshèjì/zìtǐpáiyìn,typography,對文字進行合適地排版讓書面語言易認、易讀、有吸引力地展現出來的一種工藝。,
@@ -94,7 +94,7 @@
 字距,字距,zìjù,tracking,字符之間的空隙。,
 字面,字面,zìmiàn,character face,文字的字身框中，字圖實際分布的空間。,
 字體,字体,zìtǐ,typeface,字母、文字或符號的一組集合，一個字體通常有一貫的筆畫與字形風格，用於印刷或螢幕渲染中。,
-字型,字型,zìxíng,font,具有同一的基本设计的字形图像集合(GB/T 16964.1-1997, 3.6)現多與字體混用。,
+字型,字型,zìxíng,font,"具有同一的基本设计的字形图像集合(GB/T 16964.1-1997, 3.6) 現多與字體混用。",
 字形,字形,zìxíng,glyph,一个可辨认的抽象的图形符号，它不易腊鱼任何特定的设计(GB/T 16964.1-1997, 3.12),
 縱橫對齊,纵横对齐,zònghéng duìqí,grid alignment,盡量保證橫向和縱向的字符皆可相互對齊於一基線，並且行的頭尾也對齊的排版方式。,
 縱中橫排,纵中横排,zòngzhōnghéngpái,horizonal-in-vertical setting,在直排文本的行內將字符橫排插入排版方式。,

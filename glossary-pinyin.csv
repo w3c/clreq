@@ -97,4 +97,4 @@
 字型,字型,zìxíng,font,"具有同一的基本设计的字形图像集合(GB/T 16964.1-1997, 3.6) 現多與字體混用。",
 字形,字形,zìxíng,glyph,"一个可辨认的抽象的图形符号，它不依赖于任何特定的设计(GB/T 16964.1-1997, 3.12)",
 縱橫對齊,纵横对齐,zònghéng duìqí,grid alignment,盡量保證橫向和縱向的字符皆可相互對齊於一基線，並且行的頭尾也對齊的排版方式。,
-縱中橫排,纵中横排,zòngzhōnghéngpái,horizonal-in-vertical setting,在直排文本的行內將字符橫排插入排版方式。,
+縱中橫排,纵中横排,zòngzhōnghéngpái,horizontal-in-vertical setting,在直排文本的行內將字符橫排插入排版方式。,

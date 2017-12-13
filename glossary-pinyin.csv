@@ -77,24 +77,24 @@
 希臘字母,希腊字母,xīlà zìmǔ,Greek letters,希臘語文所用的字母。,The letters used to write the Greek language.
 西文,西文,Xīwén,Western scripts,西歐通行的文字。,
 西文字母,西文字母,xīwén zìmǔ,Western alphabet,歐洲的語言文字所使用的字母系統，常見有拉丁字母、希臘字母等。,
-以連字符斷行,以连字符断行,yǐ liánzìfú duànháng,hyphenation,在西文詞組音節間插入連字符來斷行的方式。,"Use of the hyphen to join words and to separate syllables of a single word."
+以連字符斷行,以连字符断行,yǐ liánzìfú duànháng,hyphenation,在西文詞組音節間插入連字符來斷行的方式。,Use of the hyphen to join words and to separate syllables of a single word.
 引號,引号,yǐnhào,quotation,見標點符號附錄。,
-韻母,韵母,yùnmŭ,final,漢語字音中一個音節中除聲母、聲調外的部分。,
-製表定位字元,制表定位字元,zhìbiǎodìngwèizìyuán,tab,提供按列對齊文本功能的字元。,
+韻母,韵母,yùnmŭ,final,漢語字音中一個音節中除聲母、聲調外的部分。,The part in a Chinese syllable without initial and tone.
+製表定位字元,制表定位字元,zhìbiǎodìngwèizìyuán,tab,提供按列對齊文本功能的字元。,Characters with the feature of tabulation.
 直角引號,直角引号,zhíjiǎo yǐnhào,corner quotation mark,見標點符號附錄。,
-直排／豎排,直排/竖排,zhípái (shùpái),vertical writing mode,文字由上至下、各行由右至左排列的排版方式。,"Text laid out from top to bottom, each line arranged from right to left."
-中外文對照,中外文对照,Zhōng-wàiwén duìzhào,bilingual annotations,以注文或基文的形式為漢語詞組標注原文或譯文，係行間注排版的一種實作方式。,
-中、西文混排處理,中、西文混排处理,Zhōng-Xīwén hùnpái chùlǐ,Chinese and Western mixed text composition,在一個排版環境中同時混用中文及西文。,Mixing Chinese and Western scripts in the same typographic environment.
+直排／豎排,直排/竖排,zhípái (shùpái),vertical writing mode,文字由上至下、各行由右至左排列的排版方式。,"The process of arranging characters on a line from top to bottom, of lines on a page from right to left."
+中外文對照,中外文对照,Zhōng-wàiwén duìzhào,bilingual annotations,以注文或基文的形式為漢語詞組提示原文或譯文，係行間注排版的一種實作方式。,"To prompt a Chinese term with its original or translation in the form of annotation text or base text, an instance of interlinear annotation."
+中、西文混排處理,中、西文混排处理,Zhōng-Xīwén hùnpái chùlǐ,Chinese and Western mixed text composition,在中文文本中，包含部分西文時的處理方式。,The process of interleaving Chinese text with Western text.
 專名號,专名号,zhuānmínghào,proper name mark,見標點符號附錄。,
 著重號,着重号,zhuózhònghào,emphasis dot,見標點符號附錄。,
-注文,注文,zhùwén,annotation text,行間注排版中，標注於行間（原文字詞或語句旁側）以標注發音或釋義的文字。,
-注音符號,注音符号,zhùyīn fúhào,Zhuyin (Bopomofo),「國語注音符號」及「台灣方音符號」的統稱。,
-字幅,字幅,zìfú,character advance,依照文字排列方向的文字外框大小，為文字的寬度。,
-字号,字號,zìhào,type size,"区别单个字符大小的表示方法(GB 9851.2-2008, 3.3)",
-字距,字距,zìjù,tracking,字符之間的空隙。,"The space between characters."
-字面,字面,zìmiàn,character face,文字的字身框中，字圖實際分布的空間。,
-字體,字体,zìtǐ,typeface,字母、文字或符號的一組集合，一個字體通常有一貫的筆畫與字形風格，用於印刷或螢幕渲染中。,
-字型,字型,zìxíng,font,"具有同一的基本设计的字形图像集合(GB/T 16964.1-1997, 3.6) 現多與字體混用。",
-字形,字形,zìxíng,glyph,"一个可辨认的抽象的图形符号，它不依赖于任何特定的设计(GB/T 16964.1-1997, 3.12)",
-縱橫對齊,纵横对齐,zònghéng duìqí,grid alignment,盡量保證橫向和縱向的字符皆可相互對齊於一基線，並且行的頭尾也對齊的排版方式。,
-縱中橫排,纵中横排,zòngzhōnghéngpái,horizontal-in-vertical setting,在直排文本的行內將字符橫排插入排版方式。,
+注文,注文,zhùwén,annotation text,行間注排版中，標注於行間（原文字詞或語句旁側）以標注發音或釋義的文字。,Interlinear text run indicating pronunciation or definitions.
+注音符號,注音符号,zhùyīn fúhào,Zhuyin (Bopomofo),「國語注音符號」及「台灣方音符號」的統稱。,The general name of Mandarin Phonetic Symbols and Taiwanese Phonetic Symbols.
+字幅,字幅,zìfú,character advance,字符在行方向上的大小。,Size of a character frame in the inline direction.
+字号,字號,zìhào,type size,"区别单个字符大小的表示方法(GB 9851.2-2008, 3.3)",Dimensions of a character.
+字距,字距,zìjù,tracking,字符之間的空隙。,The space between characters.
+字面,字面,zìmiàn,character face,文字的字身框中，字圖實際分布的空間。,Area in which glyph is drawn.
+字體,字体,zìtǐ,typeface,字母、文字或符號的一組集合，一個字體通常有一貫的筆畫與字形風格，用於印刷或螢幕渲染中。,"A set of letters, characters or symbols, which are designed to have coherent patterns to be used for printing or rendering to a computer screen."
+字型,字型,zìxíng,font,"具有相同基本设计的字形图像集合(GB/T 16964.1-1997, 3.6)，現多與字體混用。","A set of glyphs with the same design, often referred to as typeface nowadays."
+字形,字形,zìxíng,glyph,"一个可辨认的抽象的图形符号，它不依赖于任何特定的设计(GB/T 16964.1-1997, 3.12)","A symbol of identifiable abstraction, depending on no specific design. "
+縱橫對齊,纵横对齐,zònghéng duìqí,grid alignment,頭尾對齊的前提下，保證各行文字在橫、縱軸二方向皆相互對齊排列於網格中的排版方式。,"The process, under the premise of justification, of arranging characters within grids to make sure that they are aligned in both horizontal and vertical axes."
+縱中橫排,纵中横排,zòngzhōnghéngpái,horizontal-in-vertical setting,在直排文本中，將成（小）組的字符橫排插入排版方式。,To typeset a (small) group of characters horizontally within a vertical line of main text.

@@ -38,7 +38,7 @@
 漢語拼音,汉语拼音,Hànyǔ pīnyīn,Hanyu Pinyin,《汉语拼音方案》给汉字注音和拼写普通话的一种方案，采用拉丁字母，并用附加符号表示声调，是帮助学习汉字和推广普通话的工具。,Hanyu Pinyin provides a method of using Latin characters with diacritics to indicate tone. It is often used to teach Standard Chinese and encourage its use as a common language for communication.
 漢字,汉字,Hànzì,Chinese characters/Han characters,中文的基本文字。,Characters that form the basis of the Chinese language.
 黑體,黑体,hēitǐ,Heiti,筆畫無明顯粗細變化的一種傳統漢字印刷字體風格。,A script with minimal line contrast in character strokes and is one of the traditional scripts used in Chinese printing.
-橫排,横排,héngpái,horizontal writing mode,文字由左至右、各行由上至下排列的排版方式。,"The process or the result of arranging characters on a line from left to right, of lines on a page from top to bottom, and/or of columns on a page from left to right. "
+橫排,横排,héngpái,horizontal writing mode,文字由左至右、各行由上至下排列的排版方式。,"The process or the result of arranging characters on a line from left to right, of lines on a page from top to bottom, and/or of columns on a page from left to right."
 合文,合文,héwén,ligature,將二字以上的詞組寫作一個漢字書寫單位的形式。,
 活字排版,活字排版,huózì páibǎn,letterpress printing,使用可以移動的字塊進行文字排版及印刷的方式。,The traditional printing method using movable type.
 間隔號,间隔号,jiàngéhào,interpunct,見標點符號附錄。,
@@ -82,7 +82,7 @@
 韻母,韵母,yùnmŭ,final,漢語字音中一個音節中除聲母、聲調外的部分。,
 製表定位字元,制表定位字元,zhìbiǎodìngwèizìyuán,tab,提供按列對齊文本功能的字元。,
 直角引號,直角引号,zhíjiǎo yǐnhào,corner quotation mark,見標點符號附錄。,
-直排／豎排,直排/竖排,zhípái (shùpái),vertical writing mode,文字由上至下、各行由右至左排列的排版方式。,
+直排／豎排,直排/竖排,zhípái (shùpái),vertical writing mode,文字由上至下、各行由右至左排列的排版方式。,"Text laid out from top to bottom, each line arranged from right to left."
 中外文對照,中外文对照,Zhōng-wàiwén duìzhào,bilingual annotations,以注文或基文的形式為漢語詞組標注原文或譯文，係行間注排版的一種實作方式。,
 中、西文混排處理,中、西文混排处理,Zhōng-Xīwén hùnpái chùlǐ,Chinese and Western mixed text composition,在一個排版環境中同時混用中文及西文。,Mixing Chinese and Western scripts in the same typographic environment.
 專名號,专名号,zhuānmínghào,proper name mark,見標點符號附錄。,

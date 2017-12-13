@@ -80,7 +80,7 @@
 以連字符斷行,以连字符断行,yǐ liánzìfú duànháng,hyphenation,在西文詞組音節間插入連字符來斷行的方式。,"Use of the hyphen to join words and to separate syllables of a single word."
 引號,引号,yǐnhào,quotation,見標點符號附錄。,
 韻母,韵母,yùnmŭ,final,漢語字音中一個音節中除聲母、聲調外的部分。,
-製表定位字元,制表定位字元,zhìbiǎodìngwèizìyuán,tab,提供按列對齊文本功能的字元。,
+製表定位字元,制表定位字元,zhìbiǎodìngwèizìyuán,tab,提供按列對齊文本功能的字元。,"A space character that extends to the next aligned column, traditionally used for tabulation."
 直角引號,直角引号,zhíjiǎo yǐnhào,corner quotation mark,見標點符號附錄。,
 直排／豎排,直排/竖排,zhípái (shùpái),vertical writing mode,文字由上至下、各行由右至左排列的排版方式。,"Text laid out from top to bottom, each line arranged from right to left."
 中外文對照,中外文对照,Zhōng-wàiwén duìzhào,bilingual annotations,以注文或基文的形式為漢語詞組標注原文或譯文，係行間注排版的一種實作方式。,

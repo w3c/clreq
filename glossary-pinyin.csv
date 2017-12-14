@@ -32,7 +32,7 @@
 孤字,孤字,gūzì,orphan,段落末行僅有一個漢字，或一個漢字加上標點符號，該字即為孤字。,"When a paragraph of text ends with a line that contains only a single character, with or without punctuation, that character is known as an orphan."
 行高,行高,hánggāo,line-height,一行的高度，西文里通常指基线到基线的距离。,The height of a single line. Western scripts refer to this as the vertical distance between lines of text measured from base line to base line.
 行間批語,行间批语,hángjiān pīyǔ,interlinear comments,位於行間的批注，形態自由、長度不拘，時可超過一行。,"Comments included between lines, generally free-form with no restrictions on line length. These can exceed the length of a single line."
-行間注,行间注,hángjiānzhù,interlinear annotations,標注於行間的說明或文字讀音。,Annotations between lines used to indicate the pronounciation of a word or an explanation of a word
+行間注,行间注,hángjiānzhù,interlinear annotations,標注於行間的說明或文字讀音。,Annotations between lines used to indicate the pronounciation of a word or an explanation of a word.
 行首行尾禁則,行首行尾禁则,hángshǒu hángwěi jìnzé,prohibition rules for line start/end,不同的標點依其性質，不得出現於行首或行尾的排版規則。,"Due to the varied nature of the different punctuation marks, punctuation rules for the start of a line differ from that for the end of a line."
 行尾點號懸掛,行尾点号悬挂,hángwěi diǎnhào xuánguà,hanging punctuation marks for line end,將行尾的點號懸掛於版心之外的排版之式。,"Typesetting punctuation for line endings outside the margin of alignment, also known as hanging punctuation or exdentation."
 漢語拼音,汉语拼音,Hànyǔ pīnyīn,Hanyu Pinyin,《汉语拼音方案》给汉字注音和拼写普通话的一种方案，采用拉丁字母，并用附加符号表示声调，是帮助学习汉字和推广普通话的工具。,Hanyu Pinyin provides a method of using Latin characters with diacritics to indicate tone. It is often used to teach Standard Chinese and encourage its use as a common language for communication.

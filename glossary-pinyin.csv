@@ -1,7 +1,7 @@
 詞彙（繁）,词汇（简）,漢語拼音,英語,定義,Definitions
 阿拉伯數字,阿拉伯数字,Ālābó shùzì,European numerals/Arabic numerals/Hindu–Arabic numerals/European digits (in Unicode),印度-阿拉伯數字的統稱。,A general name of Hindu–Arabic numeral system.
 版心,版心,bǎnxīn,type area,"印刷成品版面中的图文印刷区域（不含出血图像）(GB 9851.2-2008, 3.3)。",
-半形／半角,半形/半角,bànxíng/bànjiǎo,half-width/en,排字的度量单位，宽度等于同样字号全角的一半。,
+半形／半角,半形/半角,bànxíng/bànjiǎo,halfwidth,排字的度量单位，宽度等于同样字号全角的一半。,
 標點符號,标点符号,biāodiǎn fúhào,punctuation marks,辅助文字记录语言的符号，是书面语的有机组成部分，用来表示语句的停顿、语气以及表示某成分（主要是词语）的特定性质和作用。(GB/T 15834-2011)。,
 標點符號擠壓,标点符号挤压,biāodiǎn fúhào jǐyā,compression rules for consecutive punctuation marks,对位于行首、行尾或連續存在標點符号的其富餘空間進行調整的排版方式。,
 標號,标号,biāohào,indication punctuation marks,有標示詞組或語句之特定性質的標點符號類別，相對於點號。,
@@ -61,7 +61,7 @@
 破折號,破折号,pòzhéhào,long dash,見標點符號附錄。,
 輕聲,轻声,qīngshēng,neutral tone,現代標準漢語的特殊變調現象，無固定調値。,"A kind of special tone phenomenon in modern standard Chinese, with no fixed tone."
 齊頭尾對齊,齐头尾对齐,qítóuwěi duìqí,justified alignment,一種盡量保證行頭行尾分別對齊的排版方式。,
-全形/全角,全角/全形,quánxíng/quánjiao,full-width/em,排字的度量单位，宽度等于所使用的字號，用做排版宽度水平方向的度量。,
+全形/全角,全角/全形,quánxíng/quánjiao,fullwidth,排字的度量单位，宽度等于所使用的字號，用做排版宽度水平方向的度量。,
 入聲,入声,rùshēng,checked tone,漢語及漢語方言的音節結構，屬四聲之一，其調值之調型短而急促。,
 刪節號,省略号,shānjiéhào/shěnglüèhào,ellipsis,見標點符號附錄。,
 聲調,声调,shēngdiào,tone,音節的高低升降變化。漢語傳統音韻學里分為平、上、去、入等四聲。,

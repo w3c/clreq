@@ -149,6 +149,17 @@ code { color: #A52A2A; }
   font-weight: bold;
 }
 
+table { border-collapse: collapse; }
+table tr { border-bottom: 1px solid #ddd; }
+table th { padding: .25em .25em .5em .25em; }
+table th:last-child { padding-left: .5em; }
+table th span { font-size: .815em; }
+
+table td {
+  padding: .75em .25em .75em .25em;
+  vertical-align: top;
+}
+
 h2 + table,
 table + table {
   margin-top: 1rem;
@@ -168,19 +179,18 @@ table thead span[data-lang='en']:first-child { margin-top: 0; }
 }
 
 /**
- * Tables in appendix
+ * Table for character sizes
  */
-table.appendix { border-collapse: collapse; }
-table.appendix tr { border-bottom: 1px solid #ddd; }
-table.appendix th { padding: .25em .25em .5em .25em; }
-table.appendix th:last-child { padding-left: .5em; }
-table.appendix th span { font-size: .815em; }
-
-table.appendix td {
-  padding: .75em .25em .75em .25em;
-  vertical-align: top;
+table.charsize {
+  display: inline-table;
+  margin-right: 1em;
+  margin-top: 0;
+  font-size: 95%;
 }
 
+/**
+ * Tables in appendix
+ */
 table.appendix td p { margin: .5em 0; }
 table.appendix td p:first-child { margin-top: 0; }
 table.appendix td p:last-child { margin-bottom: 0; }
@@ -205,8 +215,8 @@ table.full.punctuation td:nth-child(4),
 table.full.punctuation td:nth-child(5),
 table.full.punctuation td:nth-child(6),
 table.full.punctuation td:nth-child(7) {
-	text-align: center;
-	vertical-align: middle;
+  text-align: center;
+  vertical-align: middle;
 }
 
 /**

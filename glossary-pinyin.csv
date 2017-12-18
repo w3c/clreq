@@ -1,17 +1,17 @@
 詞彙（繁）,词汇（简）,漢語拼音,英語,定義,Definitions
 阿拉伯數字,阿拉伯数字,Ālābó shùzì,European numerals/Arabic numerals/Hindu–Arabic numerals/European digits (in Unicode),印度-阿拉伯數字的統稱。,A general name of Hindu–Arabic numeral system.
 版心,版心,bǎnxīn,type area,"印刷成品版面中的图文印刷区域（不含出血图像）(GB 9851.2-2008, 3.3)。",
-半形／半角,半形/半角,bànxíng/bànjiǎo,halfwidth,排字的度量单位，宽度等于同样字号全角的一半。,
-標點符號,标点符号,biāodiǎn fúhào,punctuation marks,辅助文字记录语言的符号，是书面语的有机组成部分，用来表示语句的停顿、语气以及表示某成分（主要是词语）的特定性质和作用。(GB/T 15834-2011)。,
+半形／半角,半形/半角,bànxíng/bànjiǎo,halfwidth,排字的度量单位，宽度等于同样字号全角的一半。,"Character frame which has a character advance of a half em."
+標點符號,标点符号,biāodiǎn fúhào,punctuation marks,辅助文字记录语言的符号，是书面语的有机组成部分，用来表示语句的停顿、语气以及表示某成分（主要是词语）的特定性质和作用。(GB/T 15834-2011),"The marks that aid texts to record language, they are organic part of wrtting language, expressing pause, mood and special nature and functions of some parts (mainly words) in a sentence."
 標點符號擠壓,标点符号挤压,biāodiǎn fúhào jǐyā,compression rules for consecutive punctuation marks,对位于行首、行尾或連續存在標點符号的其富餘空間進行調整的排版方式。,
-標號,标号,biāohào,indication punctuation marks,有標示詞組或語句之特定性質的標點符號類別，相對於點號。,
+標號,标号,biāohào,indication punctuation marks,標號的作用是標明，主要標示某些成分（主要是詞語）的特定性質和作用。(GB/T 15834-2011),"Puctuation marks for indication, mainly for marking the special nature and function of a part (mainly words) of a sentence."
 標音,标音,biāoyīn,phonetic annotation,為漢字標注發音的方式，主要有行間注等。,"The way to indicate the pronunciation of the Chinese characters, e.g. interlinear annotations."
 比例字體,比例字体,bǐlì zìti,proportional type,西文字體的一种分类，此類字體中各字元的字幅大小不一。,
-出血,出血,chūxiě,bleed,"超出成品幅面范围而被裁切掉的图像。(GB 9851.2-2008, 3.8)",
+出血,出血,chūxiě,bleed,"超出成品幅面范围而被裁切掉的图像。(GB 9851.2-2008, 3.8)","The part of graphics that goes beyond the edge of final page that will be trimmed off."
 大五碼,大五码,Dàwǔmǎ,Big 5,"繁體中文常用的漢字編碼字符集標準之一，共收錄13,060個漢字。",
-地／地腳,地/地脚,dì/dìjiǎo,foot/bottom margin,"版心下沿至成品幅面下沿之间的空白区域。(GB 9851.2-2008, 3.5)。",
+地／地腳,地/地脚,dì/dìjiǎo,foot/bottom margin,"版心下沿至成品幅面下沿之间的空白区域。(GB 9851.2-2008, 3.5)。","The bottom margin between the edge of a trimmed page and the type area."
 點,点,diǎn,point (pt),字号的一种计量单位，常用的英美点制下1点约为0.35146mm，也被音译作“磅（因）”。,
-點號,点号,diǎnhào,pause or stop punctuation marks,可表示語句停頓或暫停之性質的標點符號類別，相對於標號。,
+點號,点号,diǎnhào,pause or stop punctuation marks,點號的作用是點斷，主要表示停頓和語氣。分為句末點號和句內點號。(GB/T 15834-2011),"Punctuation marks for breaking, mainly for pause and mood, including marks at end-sentence and in-sentence."
 底端,底端,dǐduān,foot side,文本或文字靠近版面結尾的一端。通常，文字直排時底端在左，橫排在下。,
 頂端,顶端,dǐngduān,head side,文本或文字靠近版面起始的一端。通常，文字直排時頂端在右，橫排在上。,
 逗號,逗号,dòuhào,comma,見標點符號附錄。,
@@ -60,9 +60,9 @@
 末端,末端,mòduān,end point,文本或文字靠近該行行尾的一端。通常，文字直排時末端在下，橫排在右。,"The ending point of a line, meaning the bottom side in vertical writing mode, or the right side in horizontal writing mode."
 破折號,破折号,pòzhéhào,long dash,見標點符號附錄。,
 輕聲,轻声,qīngshēng,neutral tone,現代標準漢語的特殊變調現象，無固定調値。,"A kind of special tone phenomenon in modern standard Chinese, with no fixed tone."
-齊頭尾對齊,齐头尾对齐,qítóuwěi duìqí,justified alignment,一種盡量保證行頭行尾分別對齊的排版方式。,
-全形/全角,全角/全形,quánxíng/quánjiao,fullwidth,排字的度量单位，宽度等于所使用的字號，用做排版宽度水平方向的度量。,
-入聲,入声,rùshēng,checked tone,漢語及漢語方言的音節結構，屬四聲之一，其調值之調型短而急促。,
+齊頭尾對齊,齐头尾对齐,qítóuwěi duìqí,justified alignment,一種段落每行的行頭行尾分別對齊的排版方式。,"The alignment method to align on both the left and right ends of each line of one paragraph text."
+全形/全角,全角/全形,quánxíng/quánjiao,fullwidth,排字的一種相對度量單位，宽度等于所使用的字號，用做排版宽度水平方向的度量。,"Relative index for the length which is equal to a given character size, or the sqare character frame which character advance that is equal to character size."
+入聲,入声,rùshēng,checked tone,漢語及漢語方言的音節結構，屬四聲之一，其調值之調型短而急促。,"One of four tones in Historical Chinese phonology, which has short and brief pitch."
 刪節號,省略号,shānjiéhào/shěnglüèhào,ellipsis,見標點符號附錄。,
 聲調,声调,shēngdiào,tone,音節的高低升降變化。漢語傳統音韻學里分為平、上、去、入等四聲。,
 聲母,声母,shēngmǔ,initial,漢語字音音節開頭的輔音。,

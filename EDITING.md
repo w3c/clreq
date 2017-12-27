@@ -126,19 +126,15 @@ For additional ideas about markup and styling in Internationalization Activity d
 
 **发布至GitHub前，請对respec文件進行以下改动：**
 
-1. in the SoTD, change the link on "latest dated version in /TR" to the location of the document that is about to be published.
+1. Change the path in following code to the location of the document that is about to be published:
 
-    对SoTD，把「/TR下最新版本」的链接改指向至准备发布的文件路徑。
-
-2. Change the path in following code to the same location above: 
-
-    將下列代碼內的路徑指向上述的链接：
+    將下列代碼內的路徑指向准备发布的文件路徑：
     
     ```html 
     <link rel="canonical" href="http://www.w3.org/TR/2015/WD-clreq-XXXXXXX/"/>
     ```
 
-3. Change `previousPublishDate` to reflect the date of the last publication. 
+2. Change `previousPublishDate` to reflect the date of the last publication. 
 
     把`previousPublishDate`改为上一次发布的日期。
 

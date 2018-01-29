@@ -24,6 +24,6 @@ Editors should be familiar with and use the following:
 - [Editorial guidelines for working with i18n documents](https://w3c.github.io/i18n-activity/guidelines/editing)
 
 ### Links 链接
-- Task Force Home Page [English](https://www.w3.org/International/groups/chinese-layout/) | [简体中文](https://www.w3.org/International/groups/chinese-layout/Overview.zh-hans)
-- [Charter](https://www.w3.org/International/groups/chinese-layout/charter.html)
+- Task Force Home Page [English](https://w3c.github.io/clreq/homepage/) | [简体中文](https://w3c.github.io/clreq/homepage/index.zh-hans.html)
+- [Charter](https://w3c.github.io/clreq/charter/)
 - [Practical tips for task forces](https://w3c.github.io/i18n-activity/guidelines/process.html)

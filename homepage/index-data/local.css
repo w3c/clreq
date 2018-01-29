@@ -1,0 +1,32 @@
+table {
+	border-collapse: collapse;
+	width: 100%;
+	}
+th {
+	background-color: #eee;
+	border: 1px solid #ccc;
+	}
+.date {
+	white-space:nowrap;
+	width: 8em;
+	}
+td {
+	font-size: 90%;
+	padding: 0 .3em;
+	border: 1px solid #ccc;
+	}
+.labels {
+	float: right;
+	height: 11px;
+	width: 11px;
+	border-radius: 2px;
+	margin: 3px;
+	font-size: .2em;
+	color: rgba(0,0,0,0.00);
+	}
+#internal-links {
+	display: none;
+	}
+.hidden {
+	display: none;
+	}

@@ -46,6 +46,14 @@
           ]
         }
       ],
+      
+      
+      // langs array lists languages addressed by this document, in order of speaker (highest first)
+      // it is used to generate the javascript needed for the matrix
+      langs: ['SChinese', 'TChinese'],
+      gapDocPath: 'https://w3c.github.io/clreq/gap-analysis/',
+
+
 
       // URI of the patent status for this WG, for Rec-track documents
       // !!!! IMPORTANT !!!!
@@ -439,6 +447,63 @@
     </section>
     
 </section>
+
+
+
+
+<details>
+<summary style="margin-top:4em; cursor: pointer;">Show summary</summary>
+<pre id="summaryPlaceholder" style="white-space: pre-wrap;"></pre>
+</details>
+<script>
+var out = ''
+for (let i=0;i<respecConfig.langs.length;i++) {
+    out += '{lang: "'+respecConfig.langs[i]+'"'
+    out += ', url:"'+respecConfig.gapDocPath+'"'
+    out += ', tentative:' + true
+    out += ', encoding:"'+document.getElementById('encoding').className+'"'   
+    out += ', fonts:"'+document.getElementById('fonts').className+'"'
+    out += ', fontstyle:"'+document.getElementById('fontstyle').className+'"'
+    out += ', glyphcontrol:"'+document.getElementById('glyphs').className+'"'
+    out += ', cursive:"'+document.getElementById('cursive').className+'"'
+    out += ', transforms:"'+document.getElementById('transforms').className+'"'
+    out += ', digits:"'+document.getElementById('numbers').className+'"'
+    out += ', boundaries:"'+document.getElementById('boundaries').className+'"'
+    out += ', quotations:"'+document.getElementById('quotations').className+'"'
+    out += ', spacing:"'+document.getElementById('spacing').className+'"'
+    out += ', ruby:"'+document.getElementById('ruby').className+'"'
+    out += ', textdecor:"'+document.getElementById('textdecoration').className+'"'
+    out += ', emphasis:"'+document.getElementById('emphasis').className+'"'
+    out += ', bidi:"'+document.getElementById('bidi').className+'"'
+    out += ', otherinline:"'+document.getElementById('otherinline').className+'"'
+    out += ', linebreak:"'+document.getElementById('linebreak').className+'"'
+    out += ', hyphenation:"'+document.getElementById('hyphenation').className+'"'
+    out += ', justification:"'+document.getElementById('justification').className+'"'
+    out += ', counters:"'+document.getElementById('counters').className+'"'
+    out += ', initialletter:"'+document.getElementById('initialletter').className+'"'
+    out += ', baselines:"'+document.getElementById('baselines').className+'"'
+    out += ', otherpara:"'+document.getElementById('otherpara').className+'"'
+    out += ', bidilayout:"'+document.getElementById('bidilayout').className+'"'
+    out += ', vertical:"'+document.getElementById('vertical').className+'"'
+    out += ', notes:"'+document.getElementById('notes').className+'"'
+    out += ', pagehead:"'+document.getElementById('pageheaders').className+'"'
+    out += ', otherpage:"'+document.getElementById('morepage').className+'"'
+    out += '},\n'
+
+    out = out.replace(/tbd/g,'')
+    out = out.replace(/ok/g,'3')
+    out = out.replace(/advanced/g,'2')
+    out = out.replace(/basic/g,'1')
+    out = out.replace(/broken/g,'0')
+    out = out.replace(/"na/g,'"-')
+    }
+document.getElementById('summaryPlaceholder').textContent = out
+
+var temp = document.querySelectorAll('section')
+for (let x=0;x<temp.length;x++) {
+    console.log(temp[x].id)
+    }
+</script>
 
 
 

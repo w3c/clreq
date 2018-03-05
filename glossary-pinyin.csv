@@ -6,7 +6,7 @@
 標點符號擠壓,标点符号挤压,biāodiǎn fúhào jǐyā,compression rules for consecutive punctuation marks,对位于行首、行尾或連續存在標點符号的其富餘空間進行調整的排版方式。,
 標號,标号,biāohào,indication punctuation marks,標號的作用是標明，主要標示某些成分（主要是詞語）的特定性質和作用。(GB/T 15834-2011),"Puctuation marks for indication, mainly for marking the special nature and function of a part (mainly words) of a sentence."
 標音,标音,biāoyīn,phonetic annotation,為漢字標注發音的方式，主要有行間注等。,"The way to indicate the pronunciation of the Chinese characters, e.g. interlinear annotations."
-比例字體,比例字体,bǐlì zìti,proportional type,西文字體的一种分类，此類字體中各字元的字幅大小不一。,
+比例字體,比例字体,bǐlì zìtǐ,proportional type,西文字體的一种分类，此類字體中各字元的字幅大小不一。,
 出血,出血,chūxiě,bleed,"超出成品幅面范围而被裁切掉的图像。(GB 9851.2-2008, 3.8)","The part of graphics that goes beyond the edge of final page that will be trimmed off."
 大五碼,大五码,Dàwǔmǎ,Big 5,"繁體中文常用的漢字編碼字符集標準之一，共收錄13,060個漢字。",
 地／地腳,地/地脚,dì/dìjiǎo,foot/bottom margin,"版心下沿至成品幅面下沿之间的空白区域。(GB 9851.2-2008, 3.5)。","The bottom margin between the edge of a trimmed page and the type area."
@@ -51,14 +51,14 @@
 欄,栏,lán,column,將連續一系列的文章放在一頁里，按照文字閱讀方向分割成兩個以上的每一個獨立部分。,A partition on a page in multi-column format.
 欄間距,栏间距,lán jiānjù,column gap,欄與欄之間的間距。,Amount of space between columns on a page.
 連接號,连接号,liánjiēhào,dash,見標點符號附錄。,
-羅馬拼音,罗马拼音,luómā pīnyīn,Romanization,將漢字依語言將其發音轉寫為拉丁字母的方式。,"The conversion system of writing from Chinese pronunciation into Roman/Latin script."
+羅馬拼音,罗马拼音,luómǎ pīnyīn,Romanization,將漢字依語言將其發音轉寫為拉丁字母的方式。,"The conversion system of writing from Chinese pronunciation into Roman/Latin script."
 冒號,冒号,màohào,colon,見標點符號附錄。,
 密排,密排,mìpái,Solid setting,將文字依其外框緊密排列的排版方式。,To arrange characters with no inter-character space between adjacent character frames.
 末端,末端,mòduān,end point,文本或文字靠近該行行尾的一端。通常，文字直排時末端在下，橫排在右。,"The ending point of a line, meaning the bottom side in vertical writing mode, or the right side in horizontal writing mode."
 破折號,破折号,pòzhéhào,long dash,見標點符號附錄。,
 輕聲,轻声,qīngshēng,neutral tone,現代標準漢語的特殊變調現象，無固定調値。,"A kind of special tone phenomenon in modern standard Chinese, with no fixed tone."
 齊頭尾對齊,齐头尾对齐,qítóuwěi duìqí,justified alignment,一種段落每行的行頭行尾分別對齊的排版方式。,"The alignment method to align on both the left and right ends of each line of one paragraph text."
-全形/全角,全角/全形,quánxíng/quánjiao,fullwidth,排字的一種相對度量單位，宽度等于所使用的字號，用做排版宽度水平方向的度量。,
+全形／全角,全形/全角,quánxíng/quánjiao,fullwidth,排字的一種相對度量單位，宽度等于所使用的字號，用做排版宽度水平方向的度量。,
 入聲,入声,rùshēng,checked tone,漢語及漢語方言的音節結構，屬四聲之一，其調值之調型短而急促。,"One of four tones in Historical Chinese phonology, which has short and brief pitch."
 刪節號,省略号,shānjiéhào/shěnglüèhào,ellipsis,見標點符號附錄。,
 聲調,声调,shēngdiào,tone,音節的高低升降變化。漢語傳統音韻學里分為平、上、去、入等四聲。,"The pitch contours in language to distinguish lexical or grammatical meaning in one syllable. There are 4 tones, e.g. Ping (level), Shang (rising), Qu (departing), Ru (entering) in Historical Chinese phonology."
@@ -78,7 +78,7 @@
 直角引號,直角引号,zhíjiǎo yǐnhào,corner quotation mark,見標點符號附錄。,
 直排／豎排,直排/竖排,zhípái (shùpái),vertical writing mode,行内每字按垂直方向由上至下，页内每行从右至左、每栏由上至下的排列方法，或者按此方法的排列状态。,"The process or the result of arranging characters on a line from top to bottom, of lines on a page from right to left, and/or of columns on a page from top to bottom."
 中外文對照,中外文对照,Zhōng-wàiwén duìzhào,bilingual annotations,以注文或基文的形式為漢語詞組提示原文或譯文，係行間注排版的一種實作方式。,"To prompt a Chinese term with its original or translation in the form of annotation text or base text, an instance of interlinear annotation."
-中、西文混排處理,中、西文混排处理,Zhōng-Xīwén hùnpái chùlǐ,Chinese and Western mixed text composition,在中文文本中，包含部分西文時的處理方式。,The process of interleaving Chinese text with Western text.
+中、西文混排處理,中、西文混排处理,Zhōng-Xīwén hùnpái chǔlǐ,Chinese and Western mixed text composition,在中文文本中，包含部分西文時的處理方式。,The process of interleaving Chinese text with Western text.
 專名號,专名号,zhuānmínghào,proper name mark,見標點符號附錄。,
 著重號,着重号,zhuózhònghào,emphasis dot,見標點符號附錄。,
 注文,注文,zhùwén,annotation text,行間注排版中，標注於行間（原文字詞或語句旁側）以標注發音或釋義的文字。,Interlinear text run indicating pronunciation or definitions.

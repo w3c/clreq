@@ -7,9 +7,9 @@
 標號,标号,biāohào,indication punctuation marks,標號的作用是標明，主要標示某些成分（主要是詞語）的特定性質和作用。(GB/T 15834-2011),"Puctuation marks for indication, mainly for marking the special nature and function of a part (mainly words) of a sentence."
 標音,标音,biāoyīn,phonetic annotation,為漢字標注發音的方式，主要有行間注等。,"The way to indicate the pronunciation of the Chinese characters, e.g. interlinear annotations."
 比例字體,比例字体,bǐlì zìtǐ,proportional type,西文字體的一种分类，此類字體中各字元的字幅大小不一。,
-出血,出血,chūxiě,bleed,"超出成品幅面范围而被裁切掉的图像。(GB 9851.2-2008, 3.8)","The part of graphics that goes beyond the edge of final page that will be trimmed off."
+出血,出血,chūxiě,bleed,"超出成品幅面范围而被裁切掉的图像。(GB 9851.2-2008, 3.8)",The part of graphics that goes beyond the edge of final page that will be trimmed off.
 大五碼,大五码,Dàwǔmǎ,Big 5,"繁體中文常用的漢字編碼字符集標準之一，共收錄13,060個漢字。",
-地／地腳,地/地脚,dì/dìjiǎo,foot/bottom margin,"版心下沿至成品幅面下沿之间的空白区域。(GB 9851.2-2008, 3.5)。","The bottom margin between the edge of a trimmed page and the type area."
+地／地腳,地/地脚,dì/dìjiǎo,foot/bottom margin,"版心下沿至成品幅面下沿之间的空白区域。(GB 9851.2-2008, 3.5)。",The bottom margin between the edge of a trimmed page and the type area.
 點,点,diǎn,point (pt),字号的一种计量单位，常用的英美点制下1点约为0.35146mm，也被音译作“磅（因）”。,
 點號,点号,diǎnhào,pause or stop punctuation marks,點號的作用是點斷，主要表示停頓和語氣。分為句末點號和句內點號。(GB/T 15834-2011),"Punctuation marks for breaking, mainly for pause and mood, including marks at end-sentence and in-sentence."
 底端,底端,dǐduān,foot side,文本或文字靠近版面結尾的一端。通常，文字直排時底端在左，橫排在下。,
@@ -19,14 +19,13 @@
 對齊方式,对齐方式,duìqí fāngshì,alignment,對字、行等各種元素的分布進行整理的方法。,
 頓號,顿号,dùnhào,slight-pause comma,見標點符號附錄。,
 兒化音,儿化音,érhuàyīn,rhotacization of syllable finals,在現代漢語以及一些方音里，一些詞彙的字音的韻母因捲舌動作而發生的音變現象。,"In standard Chinese and certain dialects, some words have rhotacized endings that result in phonetic changes to how the word sounds."
-繁體中文,繁体中文,fántǐ Zhōngwén,Traditional Chinese,字形及筆畫相對較複雜的漢字體系。因使用時間較長，又名傳統漢字或正體漢字，與之對應者為簡體中文。,"The writing system of Chinese using characters that are relatively more complex in structure and stroke count. Known as Traditional Chinese because of its long history of use. Cf. Simplified Chinese."
+繁體中文,繁体中文,fántǐ Zhōngwén,Traditional Chinese,字形及筆畫相對較複雜的漢字體系。因使用時間較長，又名傳統漢字或正體漢字，與之對應者為簡體中文。,The writing system of Chinese using characters that are relatively more complex in structure and stroke count. Known as Traditional Chinese because of its long history of use. Cf. Simplified Chinese.
 分詞連寫,分词连写,fēncí liánxiě,words as the base units,以漢語詞為單位拼寫羅馬拼音的方式。,The usage of words as the segmentation unit for the romanisation of Chinese.
 分隔號,分隔号,fēngéhào,solidus,見標點符號附錄。,See appendix on punctuation.
 分號,分号,fēnhào,semicolon,見標點符號附錄。,See appendix on punctuation.
 分字連寫,分字连写,fēnzì liánxiě,characters as the base units,以字為單位拼寫羅馬拼音的方式。,The usage of characters as the segmentation unit for the romanisation of Chinese.
 符號分離禁則,符号分离禁则,fúhào fēnlí jìnzé,prohibition rules for unbreakable punctuation,特定的符號里不得加入空隙的原則。,The rules for certain punctuation marks that do not allow any spaces between them.
 括號,括号,guāhào,parenthesis,見標點符號附錄。,See appendix on punctuation.
-括注符號,括注符号,guāzhù fúhào,brackets,為提示或突顯將文本括注起來的一類成對符號的總稱。,General term for punctuation marks used within a sentence that to include additional information for clarification or for emphasis.
 孤行,孤行,gūháng,widow,頁面中首行為前頁最後一個段落的末行者為孤行。,"Literally ""orphan line"", the paragraph-ending line that falls at the beginning of a new page or column, or the paragraph-opening line that appears by itself at the end of a page or column; both separated from the rest of the text."
 孤字,孤字,gūzì,orphan,段落末行僅有一個漢字，或一個漢字加上標點符號，該字即為孤字。,"Literally ""orphan character"", the paragraph-ending single character, with or without punctuation, became the last line of a paragraph."
 行高,行高,hánggāo,line-height,一行的高度，西文里通常指基线到基线的距离。,The height of a single line. Western scripts refer to this as the vertical distance between lines of text measured from base line to base line.
@@ -37,40 +36,41 @@
 漢語拼音,汉语拼音,Hànyǔ pīnyīn,Hanyu Pinyin,《汉语拼音方案》给汉字注音和拼写普通话的一种方案，采用拉丁字母，并用附加符号表示声调，是帮助学习汉字和推广普通话的工具。,Hanyu Pinyin provides a method of using Latin characters with diacritics to indicate tone. It is often used to teach Standard Chinese and encourage its use as a common language for communication.
 漢字,汉字,Hànzì,Chinese characters/Han characters,中文的基本文字。,Characters that form the basis of the Chinese language.
 橫排,横排,héngpái,horizontal writing mode,行内每字按水平方向由左至右，页内每行从上至下、每栏由左至右的排列方法，或者按此方法的排列状态。,"The process or the result of arranging characters on a line from left to right, of lines on a page from top to bottom, and/or of columns on a page from left to right."
-合文,合文,héwén,ligature,將二字以上的詞組寫作一個漢字書寫單位的形式。,"A glyph form that combines two or more letters or ideographs."
+合文,合文,héwén,ligature,將二字以上的詞組寫作一個漢字書寫單位的形式。,A glyph form that combines two or more letters or ideographs.
 活字排版,活字排版,huózì páibǎn,letterpress printing,使用可以移動的字塊進行文字排版及印刷的方式。,The traditional printing method using movable type.
 間隔號,间隔号,jiàngéhào,interpunct,見標點符號附錄。,
 簡體中文,简体中文,jiǎntǐ Zhōngwén,Simplified Chiense,字形及筆畫相對較簡單的漢字體系，主要指中國大陸於20世紀60年代左右公布修訂的簡化漢字，與之對應者為繁體中文。,"The writing system of Chinese using characters that are relatively simpler in structure and stroke count, mainly refer to Jianhuazi (Simplified Character) published and revised in 1960s in Mainland China. Cf. Traditional Chinese."
-結束括注符號,结束括注符号,jiéshù guāzhù fúhào,closing bracket(s),成對的引號、括號（夾注號）、書名號中，標注結束的字元。,"The ending character of the paired brackets, which include quotations, parentheses, Book Title Marks etc."
-介音,介音,jièyīn,medial,漢語音節的構成中，位於輔音和主要元音之間的過渡音。,"The semivowel between initial and main vowel in Chinese syllable."
+夾注符號,夾注符号,jiázhù fúhào,brackets,為提示或突顯將文本括注起來的一類成對符號的總稱。,General term for punctuation marks used within a sentence that to include additional information for clarification or for emphasis.
+結束夾注符號,结束夾注符号,jiéshù jiázhù fúhào,closing bracket(s),成對的引號、括號（夾注號）、書名號中，標注結束的字元。,"The ending character of the paired brackets, which include quotations, parentheses, Book Title Marks etc."
+介音,介音,jièyīn,medial,漢語音節的構成中，位於輔音和主要元音之間的過渡音。,The semivowel between initial and main vowel in Chinese syllable.
 驚嘆號,叹号,jīngtànhào,exclamation mark,見標點符號附錄。,
 基文,基文,jīwén,base text,行間注排版中，受標注的原文字詞或語句。,"A character to be annotated by ruby, ornament characters, or emphasis dots."
 句號,句号,jùhào,period,見標點符號附錄。,
-開始括注符號,开始括注符号,kāishǐ guāzhù fúhào,opening bracket(s),成對的引號、括號（夾注號）、書名號中，標注起始的字元。,"The opening character of the paired brackets, which include quotations, parentheses, Book Title Marks etc."
-拉丁字母,拉丁字母,lādīng zìmǔ,Latin letters,西文常用的字母。,"The letters of Latin alphabet."
+開始夾注符號,开始夾注符号,kāishǐ jiázhù fúhào,opening bracket(s),成對的引號、括號（夾注號）、書名號中，標注起始的字元。,"The opening character of the paired brackets, which include quotations, parentheses, Book Title Marks etc."
+拉丁字母,拉丁字母,lādīng zìmǔ,Latin letters,西文常用的字母。,The letters of Latin alphabet.
 欄,栏,lán,column,將連續一系列的文章放在一頁里，按照文字閱讀方向分割成兩個以上的每一個獨立部分。,A partition on a page in multi-column format.
 欄間距,栏间距,lán jiānjù,column gap,欄與欄之間的間距。,Amount of space between columns on a page.
 連接號,连接号,liánjiēhào,dash,見標點符號附錄。,
-羅馬拼音,罗马拼音,luómǎ pīnyīn,Romanization,將漢字依語言將其發音轉寫為拉丁字母的方式。,"The conversion system of writing from Chinese pronunciation into Roman/Latin script."
+羅馬拼音,罗马拼音,luómǎ pīnyīn,Romanization,將漢字依語言將其發音轉寫為拉丁字母的方式。,The conversion system of writing from Chinese pronunciation into Roman/Latin script.
 冒號,冒号,màohào,colon,見標點符號附錄。,
 密排,密排,mìpái,Solid setting,將文字依其外框緊密排列的排版方式。,To arrange characters with no inter-character space between adjacent character frames.
 末端,末端,mòduān,end point,文本或文字靠近該行行尾的一端。通常，文字直排時末端在下，橫排在右。,"The ending point of a line, meaning the bottom side in vertical writing mode, or the right side in horizontal writing mode."
 破折號,破折号,pòzhéhào,long dash,見標點符號附錄。,
 輕聲,轻声,qīngshēng,neutral tone,現代標準漢語的特殊變調現象，無固定調値。,"A kind of special tone phenomenon in modern standard Chinese, with no fixed tone."
-齊頭尾對齊,齐头尾对齐,qítóuwěi duìqí,justified alignment,一種段落每行的行頭行尾分別對齊的排版方式。,"The alignment method to align on both the left and right ends of each line of one paragraph text."
+齊頭尾對齊,齐头尾对齐,qítóuwěi duìqí,justified alignment,一種段落每行的行頭行尾分別對齊的排版方式。,The alignment method to align on both the left and right ends of each line of one paragraph text.
 全形／全角,全形/全角,quánxíng/quánjiao,fullwidth,排字的一種相對度量單位，宽度等于所使用的字號，用做排版宽度水平方向的度量。,
 入聲,入声,rùshēng,checked tone,漢語及漢語方言的音節結構，屬四聲之一，其調值之調型短而急促。,"One of four tones in Historical Chinese phonology, which has short and brief pitch."
 刪節號,省略号,shānjiéhào/shěnglüèhào,ellipsis,見標點符號附錄。,
 聲調,声调,shēngdiào,tone,音節的高低升降變化。漢語傳統音韻學里分為平、上、去、入等四聲。,"The pitch contours in language to distinguish lexical or grammatical meaning in one syllable. There are 4 tones, e.g. Ping (level), Shang (rising), Qu (departing), Ru (entering) in Historical Chinese phonology."
-聲母,声母,shēngmǔ,initial,漢語字音音節開頭的輔音。,"The initial consonants of Chinese syllable."
+聲母,声母,shēngmǔ,initial,漢語字音音節開頭的輔音。,The initial consonants of Chinese syllable.
 始端,始端,shǐduān,starting point,文本或文字靠近該行行首的一端。通常，文字直排時末端在上，橫排在左。,"The text or character that is near the beginning of the line. Normally, when the text is in vertical writing mode, the starting point is on the top; in horizontal writing mode, the starting point is on the left."
 書名號,书名号,shūmínghào,title mark,見標點符號附錄。,
-疏排,疏排,shūpái,"Fixed inter-character spacing setting",於各字之間加入均匀空白的排版方式。,"A text setting with a uniform inter-character spacing."
-天／天頭,天／天头,tiān/tiāntóu,head/top margin,"版心上沿至成品幅面上沿之间的空白区域 (GB/T 9851.2-2008, 3.4)","The top margin between the top edge of a trimmed page and the type area."
+疏排,疏排,shūpái,Fixed inter-character spacing setting,於各字之間加入均匀空白的排版方式。,A text setting with a uniform inter-character spacing.
+天／天頭,天／天头,tiān/tiāntóu,head/top margin,"版心上沿至成品幅面上沿之间的空白区域 (GB/T 9851.2-2008, 3.4)",The top margin between the top edge of a trimmed page and the type area.
 彎引號,弯引号,wān-yǐnhào,curve quotation mark,見標點符號附錄。,
 問號,问号,wènhào,question mark,見標點符號附錄。,
 文字設計／字體排印,文字设计/字体排印,wénzìshèjì/zìtǐpáiyìn,typography,對文字進行合適地排版讓書面語言易認、易讀、有吸引力地展現出來的一種工藝。,"The art and technique of arranging type to make written language legible, readable, and appealing when displayed."
-西文,西文,Xīwén,Western scripts,歐洲、美洲和大洋洲通行的文字。,"Writing systems derived from Greek and Latin."
+西文,西文,Xīwén,Western scripts,歐洲、美洲和大洋洲通行的文字。,Writing systems derived from Greek and Latin.
 以連字符斷行,以连字符断行,yǐ liánzìfú duànháng,hyphenation,在西文詞組音節間插入連字符來斷行的方式。,Use of the hyphen to join words and to separate syllables of a single word.
 引號,引号,yǐnhào,quotation,見標點符號附錄。,
 韻母,韵母,yùnmŭ,final,漢語字音中一個音節中除聲母、聲調外的部分。,The part in a Chinese syllable without initial and tone.

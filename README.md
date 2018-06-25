@@ -16,7 +16,7 @@ Topics for discussion are suggested by [the gap-analysis template](http://w3c.gi
 Please use the [GitHub issue list](https://github.com/w3c/clreq/issues) to report issues for language support, for discussions, and to send feedback about documents.
 
 ### Following 跟踪
-Rather than just 'Watch' this repository, it is best to subscribe to the [public-i18n-cjk](https://lists.w3.org/Archives/Public/public-i18n-arabic/) mailing list. That list is notified once a day (in digest form) about not only changes to this repository, but also about other W3C Working Group issues related to the Chinese writing systems. (Please use github issues rather than the mailing list to send feedback.)  Meeting minutes are also sent to public-i18n-cjk.
+Rather than just 'Watch' this repository, it is best to subscribe to the [public-i18n-cjk](https://lists.w3.org/Archives/Public/public-i18n-cjk/) mailing list. That list is notified once a day (in digest form) about not only changes to this repository, but also about other W3C Working Group issues related to the Chinese writing systems. (Please use github issues rather than the mailing list to send feedback.)  Meeting minutes are also sent to public-i18n-cjk.
 
 You can find a list of open issues, including those from W3C Working Groups, on the [Layout Tracker](http://w3c.github.io/i18n-activity/textlayout/?filter=han) page. (That link applies a `han` filter.)
 

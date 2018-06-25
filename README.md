@@ -31,7 +31,7 @@ Group _members_ are expert contributors who participate actively in producing th
 - [Issue tracker](http://w3c.github.io/i18n-activity/textlayout/?filter=han)
 - [Github issues](https://github.com/w3c/clreq/issues)
 - Home Page [English](https://w3c.github.io/clreq/homepage/) | [简体中文](https://w3c.github.io/clreq/homepage/index.zh-hans.html)
-- [Charter](http://w3c.github.io/clreq/charter/)
+- [Charter](https://w3c.github.io/clreq/charter/)
 - [Action tracker](https://www.w3.org/International/groups/chinese-layout/track/actions/open)
 - [Practical tips for task forces](https://w3c.github.io/i18n-activity/guidelines/process.html) (See also the github and editorial guidelines below)
 - [Meeting info](https://www.w3.org/2017/07/alreq-meeting-info.html)
@@ -47,12 +47,12 @@ If you edit a document, you should also be familiar with and use the following:
 - [Editorial guidelines for working with i18n documents](http://w3c.github.io/i18n-activity/guidelines/editing)
 
 The following templates are available:
-- [Gap analysis template](http://w3c.github.io/i18n-activity/templates/gap-analysis/gap-analysis_template.html)
-- [Requirements document template](http://w3c.github.io/i18n-activity/templates/lreq_doc/gap-analysis_template.html)
+- [Gap analysis template](https://w3c.github.io/i18n-activity/templates/gap-analysis/gap-analysis_template.html)
+- [Requirements document template](https://w3c.github.io/i18n-activity/templates/lreq_doc/lreq_template.html)
 
 ### Links to background information
 The following information describes work going on at the W3C to support languages on the Web.
-- [Language support heatmap](http://w3c.github.io/typography/gap-analysis/language-matrix.html)
+- [Language support heatmap](https://w3c.github.io/typography/gap-analysis/language-matrix.html)
 - [Analysing support for text layout on the Web](https://github.com/w3c/i18n-discuss/wiki/Analysing-support-for-text-layout-on-the-Web)
 - [Overview of language enablement work in progress](https://www.w3.org/International/layout)
 - [Setting up a Gap Analysis Project](https://github.com/w3c/typography/wiki/Setting-up-a-Gap-Analysis-Project)

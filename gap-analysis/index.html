@@ -46,8 +46,8 @@
           ]
         }
       ],
-      
-      
+
+
       // langs array lists languages addressed by this document, in order of speaker (highest first)
       // it is used to generate the javascript needed for the matrix
       langs: ['SChinese', 'TChinese'],
@@ -88,24 +88,24 @@
 
   <section id="h_introduction">
     <h2>Introduction</h2>
-    
+
     <p>The W3C needs to make sure that the text layout and typographic needs of scripts and languages around the world are built in to technologies such as HTML, CSS, SVG, etc. so that Web pages and eBooks can look and behave as people expect around the world.</p>
-    
+
   <p>This page documents issues for a given script or language in terms of support by specifications or user agents (browsers, e-readers, etc.). </p>
 <p>A summary of this report and others can be found as part of the <a href="https://w3c.github.io/typography/gap-analysis/language-matrix.html">language matrix</a>.</p>
 <p><span style="font-weight:bold; font-size: 140%;">This version of the document is a preliminary analysis</span>.</p>
-    
+
     <section id="workflow">
     <h3>Work flow</h3>
     <p>Gap analysis work usually starts with a <strong>preliminary analysis</strong>, conducted quickly by one or a small group of experts. Then a more <strong>detailed analysis</strong> is carried out, involving a wider range of experts. The detailed analysis may involve the development of tests, in order to illustrate issues and track results for browsers. The next phase is <strong>ongoing maintenance</strong>. It is expected that the resulting document will not be frozen: as gaps are fixed, this should be noted in the document. It is also possible that new gaps are noticed or arise, and they can be added to this document when that happens.</p>
-    
+
     <p>As the gap analysis develops, the requirements for features that are problematic should be described in the companion document, <a href="https://w3c.github.io/clreq/">Requirements for Chinese Text Layout</a>. Links to the appropriate part of that document should be added to this document as the material is created. Note that the requirements document should not contain any technology-specific information: all of that belongs here.</p>
     </section>
-    
+
     <section id="prioritization">
     <h3>Prioritization</h3>
     <p>This document not only describes gaps, it also attempts to prioritise them in terms of the impact on the local user. The prioritisation is indicated by colour.</p>
-        
+
         <p>Key:</p>
   <ul style="list-style-type: none;">
         <li class="ok"></li>
@@ -115,23 +115,23 @@
         <li class="broken"></li>
         <li class="tbd"></li>
         </ul>
-    
+
     <p>It is important to note that these colours do not indicate to what extent a particular features is broken. They indicate the impact of a broken or missing feature on the content author or end user.</p>
     <p>Basic styling is the level that would be generally accepted as sufficient for most Web pages. Advanced level support would include additional features one might expect to include in ebooks or other advanced typographic formats. There may be features of a script or language that are not supported on the Web, but that are not generally regarded as necessary (usually archaic or obscure features). In this case, the feature can be described here, but the status should be marked as OK.</p>
     <p>The decision as to what priority level is assigned to a described gap is down to the experts doing the gap analysis. It may not always be straightforward to decide. If a given section in this document refers to more than one feature that is broken, each with different impacts on Web users, the priority for the section should be the lowest denominator.</p>
     <p>A cell can be scored as OK if the feature in question is specified in an appropriate specification, and is supported by user agents. A specification that is in CR or later and has two implementations in 'major' browsers will count. This means that the feature may not be supported in all browsers yet. (At some point in the future we may try to distinguish, visually, whether support is available in a specification but still pending in major browsers or applications.) </p>
     </section>
 </section>
-    
-    
-    
+
+
+
 
 
 <section id="h_characters_and_phrases">
 <h2>Characters and phrases</h2>
-    
-    
-    
+
+
+
 <section id="encoding" class="ok">
     <h3>Encoding considerations</h3>
     <p class="status_prompt">Are there any character repertoire issues preventing use of this script on the Web? Do variation selectors need attention?</p>
@@ -141,11 +141,13 @@
 
 
 
-<section id="fonts" class="tbd">
+<section id="fonts" class="advanced">
     <h3>Fonts</h3>
     <p class="status_prompt">Do the standard fallback fonts used in browsers (eg. serif, sans-serif, cursive, etc.) match expectations? Are special font or OpenType features needed for this script that are not available?  <a href="https://w3c.github.io/typography/index#font-style">See available information</a> or <a href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20is%3Aopen%20label%3Afont-style%20label%3Atype-info-request%20label%3Ahan">check for currently needed data</a>.</p>
 
-    <p></p>
+    <p>
+        Font matching/fallback for variation sequences is <a href="https://github.com/w3c/csswg-drafts/issues/1710">not implemented correctly</a>.
+    </p>
 </section>
 
 
@@ -235,8 +237,13 @@
     <p class="status_prompt">The ruby spec currently specifies an initial subset of requirements for fine-tuning the typography of phonetic and semantic annotations of East Asian text, including furigana, pinyin and zhuyin fuhao systems.  Is is adequate for what it sets out to do?  What other controls will be needed in the future? <a href="https://w3c.github.io/typography/index#ruby_annotation">See available information</a> or <a href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20is%3Aopen%20label%3Aruby%20label%3Atype-info-request%20label%3Ahan">check for currently needed data</a>.</p>
 
 
-    <p></p>
-    </section>
+    <p>
+        Bopomofo ruby is not supported.
+    </p>
+    <p>
+        There are difficulties in selecting ruby text in <a href="https://github.com/w3c/i18n-issues/issues/3">some browsers</a>.
+    </p>
+</section>
 
 
 
@@ -245,12 +252,12 @@
     <p class="status_prompt">Some aspects related to the drawing of lines alongside or through text involve local typographic considerations. Do underlines need to be broken in special ways for this script? Do you need support for additional line shapes or widths? Does the distance or position of the lines relative to the text need to vary in ways that are not achievable? Are lines correctly drawn relative to vertical text? <a href="https://w3c.github.io/typography/index#text_decoration">See available information</a> or <a href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20is%3Aopen%20label%3Atext-decoration%20label%3Atype-info-request%20label%3Ahan">check for currently needed data</a>.</p>
 
 
-    <p></p>
+    <p>Punctuations are not skipped by default for emphasis marks.</p>
     </section>
 
 
 
-<section id="emphasis" class="ok">
+<section id="emphasis" class="advanced">
     <h3>Emphasis &amp; highlights</h3>
     <p class="status_prompt">Bold and italic are not always appropriate for expressing emphasis, and some scripts have their own unique ways of doing it, that are not in the Western tradition at all. Does this script require support for emphasising or highlighting text that cannot be achieved currently?  <a href="https://w3c.github.io/typography/index#emphasis">See available information</a> or <a href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20is%3Aopen%20label%3Aemphasis%20label%3Atype-info-request%20label%3Ahan">check for currently needed data</a>.</p>
 
@@ -288,13 +295,18 @@
 <section id="h_lines_and_paragraphs">
 <h2>Lines and Paragraphs</h2>
 
- 
+
 <section id="linebreak" class="advanced">
     <h3>Line breaking</h3>
     <p class="status_prompt">Does the browser capture the rules about the way text in your script wraps when it hits the end of a line?  What characters should not appear at the end or start of a line, and what should be done to prevent that? Does line-breaking wrap whole 'words' at a time, or characters, or something else (such as syllables in Tibetan)? <a href="https://w3c.github.io/typography/index#line_breaking">See available information</a> or <a href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20is%3Aopen%20label%3Aline-break%20label%3Atype-info-request%20label%3Ahan">check for currently needed data</a>.</p>
 
 
-    <p></p>
+    <p>
+        Browsers differ in how they handle line breaks for <code>IDEOGRAPHIC SPACE (U+3000)</code>.
+    </p>
+    <p>
+        <a href="https://www.unicode.org/reports/tr14/">UAX #14</a> doesn't make sense for quotation marks in Chinese: <a href="https://www.w3.org/2018/05/14-clreq-minutes.html#x02">https://www.w3.org/2018/05/14-clreq-minutes.html#x02</a>
+    </p>
     </section>
 
 
@@ -324,7 +336,9 @@
     <p class="status_prompt">The CSS Counter Styles specification describes a limited set of simple and complex styles for counters to be used in list numbering, chapter heading numbering, etc. Are the details correct? We have another document that provides over 120 templates for user-defined counter styles in over 30 scripts. Are there more? Are there other aspects related to counters and lists that need to be addressed? <a href="https://w3c.github.io/typography/index#counters">See available information</a> or <a href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20is%3Aopen%20label%3Acounter-styles%20label%3Atype-info-request%20label%3Ahan">check for currently needed data</a>.</p>
 
 
-    <p></p>
+    <p>
+        <code>@counter-style</code> is only supported in Firefox...
+    </p>
     </section>
 
 
@@ -404,8 +418,7 @@
     <p class="status_prompt">Are there special conventions for page numbering, or the way that running headers and the like are handled? <a href="https://w3c.github.io/typography/index#page_numbering_running_headers">See available information</a> or <a href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20is%3Aopen%20label%3Apage-numbering%20label%3Atype-info-request%20label%3Ahan">check for currently needed data</a>.</p>
 
 
-    <p>We're not quite familiar with specifications like <a href="https://drafts.csswg.org/css-break/">CSS Fragmentation</a>, <a href="https://drafts.csswg.org/css-gcpm/">CSS Generated Content for Paged Media</a>, or CSS Paged Media, so we need help from the CSS Working Group and the publishing WG/IG/BG/CGs.</p>
-<p>We mark it as &quot;unknown&quot; for now.</p>
+    <p>Although there exist software that supports page numbers and running headers, none of the browsers do. Complex running headers (containing math, tables or other complex content) are not supported anywhere.</p>
     </section>
 
 
@@ -445,7 +458,7 @@
 
     <p></p>
     </section>
-    
+
 </section>
 
 
@@ -461,7 +474,7 @@ for (let i=0;i<respecConfig.langs.length;i++) {
     out += '{lang: "'+respecConfig.langs[i]+'"'
     out += ', url:"'+respecConfig.gapDocPath+'"'
     out += ', tentative:' + true
-    out += ', encoding:"'+document.getElementById('encoding').className+'"'   
+    out += ', encoding:"'+document.getElementById('encoding').className+'"'
     out += ', fonts:"'+document.getElementById('fonts').className+'"'
     out += ', fontstyle:"'+document.getElementById('fontstyle').className+'"'
     out += ', glyphcontrol:"'+document.getElementById('glyphs').className+'"'

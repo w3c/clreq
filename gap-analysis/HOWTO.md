@@ -10,7 +10,7 @@ The basic structure of a section in the template looks like this:
 ```
 <section id="emphasis" class="tbd">
     <h3>Emphasis &amp; highlights</h3>
-    <p class="status_prompt">Bold and italic are not always appropriate for expressing emphasis, and some scripts have their own unique ways of doing it, that are not in the Western tradition at all. Does this script require support for emphasising or highlighting text that cannot be achieved currently?  <a href="http://w3c.github.io/typography/index#emphasis">See available information</a> or <a href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20is%3Aopen%20label%3Aemphasis%20label%3Atype-info-request">check for currently needed data</a>.</p>
+    <p class="status_prompt">Bold and italic are not always appropriate for expressing emphasis, and some scripts have their own unique ways of doing it, that are not in the Western tradition at all. Does this script require support for emphasising or highlighting text that cannot be achieved currently?  <a href="https://w3c.github.io/typography/index#emphasis">See available information</a> or <a href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20is%3Aopen%20label%3Aemphasis%20label%3Atype-info-request">check for currently needed data</a>.</p>
 
 
     <p></p>
@@ -45,7 +45,7 @@ Having described the gaps, you need to assign a priority to this section.  To do
 
 The class tag will affect the colour of the block alongside the section, and add some summary text at the end of the section.
 
-Note that this priority labelling is NOT about how badly broken the feature is – it's about how the lack of the feature affects the use of the Web in this language.  
+Note that this priority labelling is NOT about how badly broken the feature is – it's about how the lack of the feature affects the use of the Web in this language.
 
 Basic styling is the level that would be generally accepted as sufficient for most Web pages. Advanced level support would include additional features one might expect to include in ebooks or other advanced typographic formats. There may be features of a script or language that are not supported on the Web, but that are not generally regarded as necessary (usually archaic or obscure features). In this case, the feature can be described here, but the status should be marked as OK.
 

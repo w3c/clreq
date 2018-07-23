@@ -6,7 +6,7 @@ It aims to address the problem that experts often don't know how to tell the W3C
 
 Some experts may go a step further, and contribute to a gap-analysis or requirements document.
 
-Topics for discussion are suggested by [the gap-analysis template](http://w3c.github.io/i18n-activity/templates/gap-analysis/gap-analysis_template.html). This work feeds into the [language matrix](http://w3c.github.io/typography/gap-analysis/language-matrix.html) which gives an overview of languages needing attention.
+Topics for discussion are suggested by [the gap-analysis template](https://w3c.github.io/i18n-activity/templates/gap-analysis/gap-analysis_template.html). This work feeds into the [language matrix](https://w3c.github.io/typography/gap-analysis/language-matrix.html) which gives an overview of languages needing attention.
 
 ### Documents 文档
 - [Chinese Layout Gap Analysis](https://w3c.github.io/clreq/gap-analysis/)
@@ -18,7 +18,7 @@ Please use the [GitHub issue list](https://github.com/w3c/clreq/issues) to repor
 ### Following 跟踪
 Rather than just 'Watch' this repository, it is best to subscribe to the [public-i18n-cjk](https://lists.w3.org/Archives/Public/public-i18n-cjk/) mailing list. That list is notified once a day (in digest form) about not only changes to this repository, but also about other W3C Working Group issues related to the Chinese writing systems. (Please use github issues rather than the mailing list to send feedback.)  Meeting minutes are also sent to public-i18n-cjk.
 
-You can find a list of open issues, including those from W3C Working Groups, on the [Layout Tracker](http://w3c.github.io/i18n-activity/textlayout/?filter=han) page. (That link applies a `han` filter.)
+You can find a list of open issues, including those from W3C Working Groups, on the [Layout Tracker](https://w3c.github.io/i18n-activity/textlayout/?filter=han) page. (That link applies a `han` filter.)
 
 ### Contributing 贡献
 
@@ -28,7 +28,7 @@ Group _members_ are expert contributors who participate actively in producing th
 
 
 ### Links
-- [Issue tracker](http://w3c.github.io/i18n-activity/textlayout/?filter=han)
+- [Issue tracker](https://w3c.github.io/i18n-activity/textlayout/?filter=han)
 - [Github issues](https://github.com/w3c/clreq/issues)
 - Home Page [English](https://w3c.github.io/clreq/homepage/) | [简体中文](https://w3c.github.io/clreq/homepage/index.zh-hans.html)
 - [Charter](https://w3c.github.io/clreq/charter/)
@@ -43,8 +43,8 @@ Group _members_ are expert contributors who participate actively in producing th
 
 If you edit a document, you should also be familiar with and use the following:
 
-- [Github guidelines for working with i18n documents](http://w3c.github.io/i18n-activity/guidelines/github)
-- [Editorial guidelines for working with i18n documents](http://w3c.github.io/i18n-activity/guidelines/editing)
+- [Github guidelines for working with i18n documents](https://w3c.github.io/i18n-activity/guidelines/github)
+- [Editorial guidelines for working with i18n documents](https://w3c.github.io/i18n-activity/guidelines/editing)
 
 The following templates are available:
 - [Gap analysis template](https://w3c.github.io/i18n-activity/templates/gap-analysis/gap-analysis_template.html)

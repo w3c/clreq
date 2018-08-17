@@ -1,3 +1,11 @@
+[lang=zh-hant] {
+  font-family: 'PingFang TC', 'Noto Sans CJK TC', 'Heiti TC', 'Microsoft JhengHei', Helvetica, Segoe UI, Arial, sans-serif;
+}
+
+[lang=zh-hans] {
+  font-family: 'PingFang SC', 'Noto Sans CJK SC', 'Heiti SC', 'DengXian', 'Microsoft YaHei', Helvetica, Segoe UI, Arial, sans-serif;
+}
+
 h2 {
   margin-top: 3em;
   margin-bottom: 0em;

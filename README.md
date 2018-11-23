@@ -2,13 +2,20 @@
 
 This group exists to explore gaps and requirements for support of languages using Simplified and Traditional Chinese on the Web and in eBooks.
 
+该小组提供了一个讨论在 Web 和电子书中使用简体中文和繁体中文支持语言的支持情况和排版需求的平台。
+
 It aims to address the problem that experts often don't know how to tell the W3C what problems exist for support of their script on the Web, and the W3C often doesn't know how to contact people who can help when questions arise.
 
+小组旨在解决人们不了解如何反馈 Web 上中文支持存在的问题的情况，以及当问题出现时，W3C 缺少语言专家的反馈的情况。
+
 Some experts may go a step further, and contribute to a gap-analysis or requirements document.
+
+一些语言和排版专家除了回答问题之外，也会更深入地参与小组工作，为差距分析或需求文档做出贡献。
 
 Topics for discussion are suggested by [the gap-analysis template](https://w3c.github.io/i18n-activity/templates/gap-analysis/gap-analysis_template.html). This work feeds into the [language matrix](https://w3c.github.io/typography/gap-analysis/language-matrix.html) which gives an overview of languages needing attention.
 
 ### Documents 文档
+
 - [Chinese Layout Gap Analysis](https://w3c.github.io/clreq/gap-analysis/)
 - [Requirements for Chinese Text Layout | 中文排版需求 (ED)](https://w3c.github.io/clreq/) ([WD](https://www.w3.org/TR/clreq/))
 
@@ -27,7 +34,8 @@ All contributors should read and agree with [CONTRIBUTING.md](https://github.com
 Group _members_ are expert contributors who participate actively in producing the work of the group, regularly contributing text and advice to create the outputs, and participating in meetings. For more information about becoming a task force member contact [Richard Ishida](mailto:ishida@w3.org). We welcome participation requests.
 
 
-### Links
+### Links 链接
+
 - [Issue tracker](https://w3c.github.io/i18n-activity/textlayout/?filter=han)
 - [Github issues](https://github.com/w3c/clreq/issues)
 - Home Page [English](https://w3c.github.io/clreq/homepage/) | [简体中文](https://w3c.github.io/clreq/homepage/index.zh-hans.html)
@@ -39,6 +47,7 @@ Group _members_ are expert contributors who participate actively in producing th
 - Contacts: Bobby Tung, Ethan Chen, [Fuqiao Xue](mailto:xfq@w3.org)
 
 ### Links for editors
+
 **Because the document is multilingual, you need to follow certain steps when creating or modifying the source text.** See [EDITING.md](https://github.com/w3c/clreq/blob/gh-pages/EDITING.md) for details.
 
 If you edit a document, you should also be familiar with and use the following:
@@ -51,6 +60,7 @@ The following templates are available:
 - [Requirements document template](https://w3c.github.io/i18n-activity/templates/lreq_doc/lreq_template.html)
 
 ### Links to background information
+
 The following information describes work going on at the W3C to support languages on the Web.
 - [Language support heatmap](https://w3c.github.io/typography/gap-analysis/language-matrix.html)
 - [Analysing support for text layout on the Web](https://github.com/w3c/i18n-discuss/wiki/Analysing-support-for-text-layout-on-the-Web)

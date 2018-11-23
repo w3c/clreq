@@ -2,11 +2,11 @@
 
 This group explores gaps and requirements for support of languages using Simplified and Traditional Chinese on the Web and in eBooks.
 
-该小组提供了一个讨论在 Web 和电子书中使用简体中文和繁体中文支持语言的支持情况和排版需求的平台。
+该小组提供了一个讨论在 Web 和电子书中简体中文和繁体中文支持情况和排版需求的平台。
 
 It aims to address the problem that experts often don't know how to tell the W3C what problems exist for support of their script on the Web, and the W3C often doesn't know how to contact people who can help when questions arise.
 
-小组旨在解决人们不了解如何反馈 Web 上中文支持存在的问题的情况，以及当问题出现时，W3C 缺少语言专家的反馈的情况。
+小组旨在解决人们不了解如何反馈 Web 上中文支持问题的情况，以及当问题出现时，W3C 缺少语言专家的反馈的情况。
 
 Some experts go a step further, and contribute to a gap-analysis or requirements document.
 

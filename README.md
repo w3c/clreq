@@ -2,17 +2,19 @@
 
 This group explores gaps and requirements for support of languages using Simplified and Traditional Chinese on the Web and in eBooks.
 
-该小组提供了一个讨论在 Web 和电子书中简体中文和繁体中文支持情况和排版需求的平台。
+本小组探讨在网页和电子书中使用简体、繁体中文时的各语言、文种支持的需求以及目前差距。
 
 It aims to address the problem that experts often don't know how to tell the W3C what problems exist for support of their script on the Web, and the W3C often doesn't know how to contact people who can help when questions arise.
 
-小组旨在解决人们不了解如何反馈 Web 上中文支持问题的情况，以及当问题出现时，W3C 缺少语言专家的反馈的情况。
+很多语言专家往往不知道如何告诉 W3C 在网页上支持自己语言、文种；而 W3C 也不知道如何联系到能回答问题的人，本小组的目标就是在于解决这种情况。
 
 Some experts go a step further, and contribute to a gap-analysis or requirements document.
 
-一些语言和排版专家除了回答问题之外，也会更深入地参与小组工作，为差距分析或需求文档做出贡献。
+一些语言和排版专家会更深入地参与小组工作，为差距分析和需求文档做出贡献。
 
 Topics for discussion are suggested by [the gap-analysis template](https://w3c.github.io/i18n-activity/templates/gap-analysis/gap-analysis_template.html). This work feeds into the [language matrix](https://w3c.github.io/typography/gap-analysis/language-matrix.html) which gives an overview of languages needing attention.  The focus is especially on typographic features for which information in English is typically hard to find, such as justification, letter-spacing, vertical text, text decoration, page layout, emphasis, etc. We want to ensure that we have captured local user needs in CSS, HTML, Timed Text, Web Payments, Web Publishing, and the many other specifications that the W3C produces.
+
+讨论的议题写在[差距分析模板（英文）](https://w3c.github.io/i18n-activity/templates/gap-analysis/gap-analysis_template.html)中。这项工作源自列出了需要关注文种概要的[文种矩阵](https://w3c.github.io/typography/gap-analysis/language-matrix.html) 。特别关注于一些用英文撰写的、其他地方难以找到的字体排印特性，比如分词连写、字距、竖排、文本装饰、排版、强调方式等等。我们希望保证我们要能覆盖用户在 CSS、HTML、时间轴文本、网页支付、网页出版等的需要，以及其他 W3C 出台的规范。
 
 ### Documents 文档
 

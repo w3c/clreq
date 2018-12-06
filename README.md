@@ -23,7 +23,7 @@ Topics for discussion are suggested by [the gap-analysis template](https://w3c.g
 
 ### Following 跟踪
 
-Rather than just 'Watch' this repository, it is best to subscribe to the [public-i18n-cjk](https://lists.w3.org/Archives/Public/public-i18n-cjk/) mailing list. That list is notified once a day (in digest form) about not only changes to this repository, but also about other W3C Working Group issues related to the Chinese writing systems. (Please use github issues rather than the mailing list to send feedback. The main purpose of the public-i18n-mongolian mailing list is for notifications; meeting minutes are also sent to public-i18n-cjk.)
+Rather than just 'Watch' this repository, it is best to subscribe to the [public-i18n-cjk](https://lists.w3.org/Archives/Public/public-i18n-cjk/) mailing list. That list is notified once a day (in digest form) about not only changes to this repository, but also about other W3C Working Group issues related to the Chinese writing systems. (Please use github issues rather than the mailing list to send feedback. The main purpose of the public-i18n-cjk mailing list is for notifications; meeting minutes are also sent to public-i18n-cjk.)
 
 You can find a list of open issues, including those from W3C Working Groups, on the [Layout Tracker](https://w3c.github.io/i18n-activity/textlayout/?filter=clreq) page. (That link applies a `clreq` filter.)
 

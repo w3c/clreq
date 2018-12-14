@@ -29,7 +29,7 @@ Rather than just 'Watch' this repository, it is best to subscribe to the [public
 
 You can find a list of open issues, including those from W3C Working Groups, on the [Layout Tracker](https://w3c.github.io/i18n-activity/textlayout/?filter=clreq) page. (That link applies a `clreq` filter.)
 
-您可以在[排版问题跟踪器](https://w3c.github.io/i18n-activity/textlayout/?filter=clreq)页面上找到尚未解决的问题列表，包括来自W3C工作组的问题。
+您可以在[排版问题跟踪器](https://w3c.github.io/i18n-activity/textlayout/?filter=clreq)页面上找到尚未解决的问题列表，包括来自 W3C 工作组的问题。
 
 ### Contributing 贡献
 

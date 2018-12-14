@@ -25,7 +25,7 @@ Topics for discussion are suggested by [the gap-analysis template](https://w3c.g
 
 Rather than just 'Watch' this repository, it is best to subscribe to the [public-i18n-cjk](https://lists.w3.org/Archives/Public/public-i18n-cjk/) mailing list. That list is notified once a day (in digest form) about not only changes to this repository, but also about other W3C Working Group issues related to the Chinese writing systems. (Please use github issues rather than the mailing list to send feedback. The main purpose of the public-i18n-mongolian mailing list is for notifications; meeting minutes are also sent to public-i18n-cjk.)
 
-除了“Watch”此仓库，还可以订阅 [public-i18n-cjk](https://lists.w3.org/Archives/Public/public-i18n-cjk/) 邮件列表，该列表每天以摘要形式通知此仓库的活动以及其他W3C工作组中与中文相关的问题。（请使用 GitHub Issues 而不是邮件列表发送反馈，因为 public-i18n-cjk 邮件列表的主要作用是提醒邮件及发布会议纪要。）
+相比于“Watch”此仓库，订阅 [public-i18n-cjk](https://lists.w3.org/Archives/Public/public-i18n-cjk/) 邮件列表会更好。该列表每天以摘要形式通知此仓库的活动以及其他W3C工作组中与中文书写系统相关的问题。（请使用 GitHub Issues 而不是邮件列表发送反馈，因为 public-i18n-cjk 邮件列表的主要作用是提醒邮件及发布会议纪要。）
 
 You can find a list of open issues, including those from W3C Working Groups, on the [Layout Tracker](https://w3c.github.io/i18n-activity/textlayout/?filter=clreq) page. (That link applies a `clreq` filter.)
 
@@ -39,11 +39,11 @@ All contributors should read and agree with [CONTRIBUTING.md](https://github.com
 
 Please use the [GitHub issue list](https://github.com/w3c/clreq/issues) to report issues for language support, for discussions, and to send feedback about documents.  (Learn [how GitHub issues work](http://w3c.github.io/i18n-activity/guidelines/issues.html).)
 
-请使用 [GitHub Issue](https://github.com/w3c/clreq/issues) 提出中文支持的问题、讨论以及对有关文档的反馈。 [学习如何使用GitHub（英文）](https://w3c.github.io/i18n-activity/guidelines/issues.html)
+请使用 [GitHub Issue](https://github.com/w3c/clreq/issues) 提出中文支持的问题、讨论以及对有关文档的反馈。 学习[如何使用GitHub（英文）](https://w3c.github.io/i18n-activity/guidelines/issues.html)。
 
 **You may raise issues in Chinese, however any substantive discussions should be summarised in English at some point, so that non-Chinese speakers can follow the rationale and contribute comments.**
 
-**您可以用中文提出问题，但任何实质性讨论都应该用英语进行总结，以便非汉语使用者理解该问题并发表意见。**
+**您可以用中文提出问题，但任何实质性讨论都应该在某一阶段用英语进行总结，以便非汉语使用者理解该问题并发表意见。**
 
 Group _members_ are expert contributors who participate actively in producing the work of the group, regularly contributing text and advice to create the outputs, and participating in meetings. For more information about becoming a task force member contact [Richard Ishida](mailto:ishida@w3.org). We welcome participation requests.
 

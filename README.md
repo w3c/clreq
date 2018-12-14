@@ -78,7 +78,7 @@ The following information describes work going on at the W3C to support language
 - [Setting up a Gap Analysis Project](https://github.com/w3c/typography/wiki/Setting-up-a-Gap-Analysis-Project)
 - [Internationalization Sponsorship Program](https://www.w3.org/International/sponsorship/)
 
-### Links for editors 关于编辑文档
+### Links for editors
 
 **Because the document is multilingual, you need to follow certain steps when creating or modifying the source text.** See [EDITING.md](https://github.com/w3c/clreq/blob/gh-pages/EDITING.md) for details.
 

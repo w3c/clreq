@@ -212,12 +212,28 @@
 
 
 
-<section id="quotations" class="ok">
+<section id="quotations" class="advanced">
     <h3>Quotations</h3>
     <p class="status_prompt">Are there any issues when dealing with quotations marks, especially when nested? Should block quotes be indented or handled specially? <a href="https://w3c.github.io/typography/index#quotations">See available information</a> or <a href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20is%3Aopen%20label%3Aquotations%20label%3Atype-info-request%20label%3Ahan">check for currently needed data</a>.</p>
 
+    <section id="q_defaults">
+    <h4><a href="#q_defaults">Default quotation marks for q element</a></h4>
+    <p>If the <code class="kw" translate="no">html</code> tag sets the language of a page, the HTML specification says that  the <code class="kw" translate="no">q</code> element should by default produce quotation marks according to the information in CLDR for that language.</p>
+    <p>For Traditional Chinese, according to CLDR the default quote marks should be 「...」, and embedded quote marks 『...』; for Simplified Chinese, according to CLDR the default quote marks should be “...”, and embedded quote marks ‘...’. Some browsers don't change default quote marks based on language setting. See <a href="https://w3c.github.io/i18n-tests/results/the-q-element.html#language">tests and results</a>.</p>
+    </section>
 
-    <p></p>
+
+    <section id="q_section">
+    <h4><a href="#q_section">Default quotation marks in a new language section</a></h4>
+    <p>In addition, the default quotation marks for the <code class="kw" translate="no">q</code> element  are not set to the appropriate characters by the browser  when the element appears inside a Chinese section of a page that has a different overall language. This is currently per the HTML specification (both W3C and WHATWG).  There is <a href="https://github.com/whatwg/html/issues/3636">an issue</a> raised against the WHATWG version for this to be changed.</p>
+    </section>
+
+    <section id="q_multilingual">
+        <h4><a href="#q_multilingual">Embedded quotations in a different language</a></h4>
+        <p>Chinese quotes embedded in text in another language can also be problematic if the outer language uses different quotation marks. This is due to the browsers choosing default quotation marks based on the language of the <em>quotation</em>, rather than that of the surrounding text. See <a href="https://w3c.github.io/i18n-tests/results/the-q-element.html#ml_nesting">a test</a>. This behaviour is specified in the WHATWG version of the HTML spec, but no longer in the W3C version. There is <a href="https://github.com/whatwg/html/issues/3636">an issue</a> raised against the WHATWG version for this to be changed.</p>
+    </section>
+
+    <p>Marking all the above as advanced, because use of the <code class="kw" translate="no">q</code> element is optional (quote characters can be used instead), and it can be styled using CSS for the general case.</p>
     </section>
 
 
@@ -262,7 +278,11 @@
     <p class="status_prompt">Bold and italic are not always appropriate for expressing emphasis, and some scripts have their own unique ways of doing it, that are not in the Western tradition at all. Does this script require support for emphasising or highlighting text that cannot be achieved currently?  <a href="https://w3c.github.io/typography/index#emphasis">See available information</a> or <a href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20is%3Aopen%20label%3Aemphasis%20label%3Atype-info-request%20label%3Ahan">check for currently needed data</a>.</p>
 
 
-    <p></p>
+    <p>Chrome, Firefox, and Safari support emphasis dots. However, in Chrome the text emphasis properties needs to be prefixed by <code>-webkit-</code>.
+    </p>
+
+    <p>Also, as mentioned in <a href="#textdecoration">Text decoration</a>, punctuations are not skipped by default for emphasis marks currently.
+    </p>
     </section>
 
 

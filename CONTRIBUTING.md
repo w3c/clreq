@@ -72,6 +72,6 @@ The Task Force Participant will refrain from sending unsolicited commercial mess
 
 ## 得体
 
-任务团成员须以得体的方式参与 W3C 小组，避免诽谤、骚扰或以其他方式冒犯其他参与者。参与任务团的工作适用 [W3C 流程文档第 3.1 节](https://www.w3.org/2015/Process-20150901/#ParticipationCriteria)与 [W3C 职业道德与行为守则](https://www.w3.org/Consortium/cepc/)。
+任务团成员须以得体的方式参与 W3C 小组，避免诽谤、骚扰或以其他方式冒犯其他参与者。参与任务团的工作适用 [W3C 流程文档第 3.1 节](https://www.w3.org/2015/Process-20150901/#ParticipationCriteria)与 [W3C 职业道德与行为守则](https://www.w3.org/Consortium/cepc/)。
 
-任务团成员不允许向 W3C 的邮件列表等平台因个人或第三方原因发送未经许可的商业信息，尤其是向 W3C 工作组的公共邮件列表。
+任务团成员不允许向 W3C 的邮件列表等平台因个人或第三方原因发送未经许可的商业信息，尤其是向 W3C 工作组的公共邮件列表。

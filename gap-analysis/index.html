@@ -157,9 +157,9 @@
 
 <section id="h_characters_and_phrases">
 <h2>Characters and phrases</h2>
-    
-    
-    
+
+
+
 <section id="encoding" class="ok">
     <h3>Characters &amp; encoding</h3>
     <p class="status_prompt">Are there any character repertoire issues preventing use of this script on the Web? Do variation selectors need attention? Are there any other encoding-related issues?</p>
@@ -228,9 +228,9 @@
 
     <p></p>
     </section>
-    
-    
-    
+
+
+
 <section id="textdecor" class="advanced">
     <h3>Text decoration</h3>
     <p class="status_prompt">This is about  ways of marking text (see also specific sections dedicated to quotations and inline notes/annotations). Is it possible to express emphasis or highlight content as expected? Bold, italic and under-/over-lines are not always appropriate, and some scripts have their own unique ways of doing things, that are not in the Western tradition at all. Text delimiters mark certain items or sections off from the main text, such as book names in Chinese, quotations, head markers in Tibetan, etc, and often involve the use of punctuation. Is there any behaviour that isn't well supported, such as overlines for numeric digits in Syriac?    Are there issues about the positioning or use of underlines? Some aspects related to the drawing of lines alongside or through text involve local typographic considerations. Do underlines need to be broken in special ways for this script? Do you need support for additional line shapes or widths? Does the distance or position of the lines relative to the text need to vary in ways that are not achievable? Are lines correctly drawn relative to vertical text?  <a href="https://w3c.github.io/typography/index#text_decoration">See available information</a> or <a href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20is%3Aopen%20label%3Atext-decoration%20label%3Atype-info-request">check for currently needed data</a>.</p>
@@ -238,9 +238,6 @@
 
     <p>Punctuations are not skipped by default for emphasis marks.</p>
     <p>Chrome, Firefox, and Safari support emphasis dots. However, in Chrome the text emphasis properties needs to be prefixed by <code>-webkit-</code>.
-    </p>
-
-    <p>Also, as mentioned in <a href="#textdecoration">Text decoration</a>, punctuations are not skipped by default for emphasis marks currently.
     </p>
 </section>
 
@@ -317,7 +314,7 @@
 <section id="h_lines_and_paragraphs">
 <h2>Lines and Paragraphs</h2>
 
- 
+
 <section id="linebreak" class="advanced">
     <h3>Line breaking</h3>
     <p class="status_prompt">Does the browser capture the rules about the way text in your script wraps when it hits the end of a line? Does line-breaking wrap whole 'words' at a time, or characters, or something else (such as syllables in Tibetan and Javanese)?  What characters should not appear at the end or start of a line, and what should be done to prevent that? <a href="https://w3c.github.io/typography/index#line_breaking">See available information</a> or <a href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20is%3Aopen%20label%3Aline-break%20label%3Atype-info-request">check for currently needed data</a>.</p>
@@ -489,7 +486,7 @@
 
     <p></p>
     </section>
-    
+
 </section>
 
 
@@ -508,7 +505,7 @@ for (let i=0;i<respecConfig.langs.length;i++) {
     out += ', vertical:"'+document.getElementById('vertical').className+'"'
     out += ', bidi:"'+document.getElementById('bidi').className+'"'
 
-    out += ', encoding:"'+document.getElementById('encoding').className+'"'   
+    out += ', encoding:"'+document.getElementById('encoding').className+'"'
     out += ', fonts:"'+document.getElementById('fonts').className+'"'
     out += ', fontstyle:"'+document.getElementById('fontstyle').className+'"'
     out += ', glyphcontrol:"'+document.getElementById('glyphs').className+'"'

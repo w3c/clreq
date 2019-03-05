@@ -62,6 +62,7 @@ Chairs: Bobby TUNG, Yijun CHEN • W3C staff: [Fuqiao Xue](mailto:xfq@w3.org), [
 - Home Page [English](https://w3c.github.io/clreq/homepage/) | [简体中文](https://w3c.github.io/clreq/homepage/index.zh-hans.html)
 - [Charter](https://w3c.github.io/clreq/charter/)
 - [Action tracker](https://www.w3.org/International/groups/chinese-layout/track/actions/open)
+- [Writing i18n tests](https://github.com/w3c/i18n-activity/wiki/Writing-i18n-tests)
 - [Practical tips for task forces](https://w3c.github.io/i18n-activity/guidelines/process.html) (See also the github and editorial guidelines below)
 - [Meeting info](https://www.w3.org/2017/07/alreq-meeting-info.html)
 - [Mail archive](https://lists.w3.org/Archives/Public/public-i18n-cjk/)

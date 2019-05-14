@@ -97,22 +97,27 @@ code { color: #A52A2A; }
 }
 
 #langSwitch {
-  position: fixed;
-  /*
-  top: 40px;
-  right: 20px;
-  width: 202px;
-  text-align: right;
-  */
-  top: -14px;
-  z-index: 10000;
-}
-
+	position: fixed;
+	top: -14px;
+	z-index: 10000;
+	top: 100px;
+	right: 10px;
+	width: 5em;
+	text-align: right;
+	}
 #langSwitch button {
-  background: #FFF none repeat scroll 0% 0%;
-  border: 1px solid #CCC;
-  border-radius: 5px;
-}
+	background: #FFF none repeat scroll 0% 0%;
+	border: 1px solid #CCC;
+	border-radius: 5px;
+	}
+#langSwitch button:lang(zh-hans) {
+	background-color: #fbc481;
+	}
+
+#langSwitch button:lang(zh-hant) {
+	background-color: #9fe19f;
+	}
+
 
 .translateme, .retranslateme {
   background-color: #F3F3C3;

@@ -165,7 +165,7 @@ var respecConfig = {
     <p its-locale-filter-list="zh-hant" lang="zh-hant">中文排版有別於其他書寫體系，主要特點如下：</p>
     <ol>
       <li id="id3">
-        <p its-locale-filter-list="en" lang="en">Chinese writing system can be broadly classified into two: Traditional Chinese and Simplified Chinese. Chinese communities in different regions (e.g. Mainland China, Taiwan, Hong Kong, Macau, Singapore, Malaysia etc) may have their own regional standards, in which they have different specifications on which glyph is orthodox or alternative variant, or how many strokes in one character. They may also have typographic layout rules specific to their own region.</p>
+        <p its-locale-filter-list="en" lang="en">The Chinese writing system can be broadly classified into either Traditional Chinese or Simplified Chinese. Chinese communities in different regions (e.g. Mainland China, Taiwan, Hong Kong, Macau, Singapore, Malaysia etc) may have their own regional standards. These differ with respect to which glyph represents a canonical vs. a variant shape, or how many strokes are contained in a given character. They may also have typographic layout rules specific to their own region.</p>
         <p its-locale-filter-list="zh-hans" lang="zh-hans">中文的书写系统可以大致分为「繁体字」「简体字」系统，但是，使用中文的各个地区（中国大陆、台湾、香港、澳门、新加坡、马来西亚等）对汉字各自分别有不同的规范化形式，其具体字形、笔画多少存在差异，也会采用与其他地区不尽相同的排版规则。</p>
         <p its-locale-filter-list="zh-hant" lang="zh-hant">中文的書寫系統可以大致分為「繁體字」「簡體字」系統，但是，使用中文的各個地區（中國大陸、台灣、香港、澳門、新加坡、馬來西亞等）對漢字各自分別有不同的規範化形式，其具體字形、筆劃多少存在差異，也會採用與其他地區不盡相同的排版規則。</p>
       </li>
@@ -829,248 +829,194 @@ var respecConfig = {
           <p its-locale-filter-list="zh-hant" lang="zh-hant">決定版心尺寸時，須先考量到印刷版面尺寸與留白後進行。一般而言，版心與印刷版面會呈相似形的設計。</p>
         </li>
         <li id="id51">
+          <p its-locale-filter-list="en" lang="en">There have been different size systems for Chinese characters. The size system in traditional metal type utilized hào (literally number) units, while in the phototypesetting era, Q was used as the sizing unit instead. When it came to desktop publishing, font sizes were determined by the DTP point system which was built into the software itself. Currently, the traditional hào-system is still used for typesetting in many Chinese publications.</p>
+          <p its-locale-filter-list="en" lang="en">These hào-systems were not standardized by the various foundries in the past. In addition, point-systems were also different in Anglo-American point systems, Europe Continental point systems, DTP point systems and other systems, which resulted in numerous conversion methods between the hào-system and the point-system. The following table lists their most common corresponding conversions as a reference. It is not normative information.</p>
+          <table class="charsize" its-locale-filter-list="en" lang="en">
+            <thead>
+              <tr>
+                <th>Chinese size system</th>
+                <th>Western point system</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Size 0</td>
+                <td>42 pt</td>
+              </tr>
+              <tr>
+                <td>Size 1</td>
+                <td>27.5/28 pt</td>
+              </tr>
+              <tr>
+                <td>Size Small 1</td>
+                <td>24 pt</td>
+              </tr>
+              <tr>
+                <td>Size 2</td>
+                <td>21/22 pt</td>
+              </tr>
+              <tr>
+                <td>Size Small 2</td>
+                <td>18 pt</td>
+              </tr>
+              <tr>
+                <td>Size 3</td>
+                <td>15.75/16 pt</td>
+              </tr>
+              <tr>
+                <td>Size 4</td>
+                <td>13.75/14 pt</td>
+              </tr>
+              <tr>
+                <td>Size Small 4</td>
+                <td>12 pt</td>
+              </tr>
+              <tr>
+                <td>Size 5</td>
+                <td>10.5 pt</td>
+              </tr>
+              <tr>
+                <td>Size Small 5</td>
+                <td>9 pt</td>
+              </tr>
+              <tr>
+                <td>Size 6</td>
+                <td>7.875/8 pt</td>
+              </tr>
+              <tr>
+                <td>Size 7</td>
+                <td>5.25 pt</td>
+              </tr>
+            </tbody>
+          </table>
+          <p its-locale-filter-list="zh-hans" lang="zh-hans">中文活字大小有不同单位。在金属活字时代，传统中文活字尺寸以「号」为单位，故称作「字号」；在照相排版时代沿用照排机尺寸的单位「级」，故称作「字级」；在桌面排版时代，直接使用桌面排版软件中的「点」（DTP point）。目前，很多场合的中文排版依旧习惯沿用「号」。</p>
+          <p its-locale-filter-list="zh-hans" lang="zh-hans"></p>「号」由于当年金属活字各地厂家的规范不一而不尽相同，「号」也有英美、欧陆、DTP等多种制式，导致「号」与「点」的换算有不同方法。下表仅列出常见的一些换算数值，仅供参考，不作为规范性规定：</p>
+          <table class="charsize" its-locale-filter-list="zh-hans" lang="zh-hans">
+            <thead>
+              <tr>
+                <th>号数</th>
+                <th>点数</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>初号</td>
+                <td>42 pt</td>
+              </tr>
+              <tr>
+                <td>一号</td>
+                <td>27.5/28 pt</td>
+              </tr>
+              <tr>
+                <td>小（新）一号</td>
+                <td>24 pt</td>
+              </tr>
+              <tr>
+                <td>二号</td>
+                <td>21/22 pt</td>
+              </tr>
+              <tr>
+                <td>小（新）二号</td>
+                <td>18 pt</td>
+              </tr>
+              <tr>
+                <td>三号</td>
+                <td>15.75/16 pt</td>
+              </tr>
+              <tr>
+                <td>四号</td>
+                <td>13.75/14 pt</td>
+              </tr>
+              <tr>
+                <td>小（新）四号</td>
+                <td>12 pt</td>
+              </tr>
+              <tr>
+                <td>五号</td>
+                <td>10.5 pt</td>
+              </tr>
+              <tr>
+                <td>小（新）五号</td>
+                <td>9 pt</td>
+              </tr>
+              <tr>
+                <td>六号</td>
+                <td>7.875/8 pt</td>
+              </tr>
+              <tr>
+                <td>七号</td>
+                <td>5.25pt</td>
+              </tr>
+            </tbody>
+          </table>
 
-            <p its-locale-filter-list="en" lang="en">There are two traditional size systems for Chinese characters, an old one and a new one. The following tables shows the equivalence of the old size system and the new size system in the Western point system respectively.</p>
-            <table class="charsize" id="oldsize-en" its-locale-filter-list="en" lang="en">
-              <thead>
-                <tr>
-                  <th>Old size system</th>
-                  <th>Western point system</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Size 0</td>
-                  <td>42pt</td>
-                </tr>
-                <tr>
-                  <td>Size 1</td>
-                  <td>27.5pt</td>
-                </tr>
-                <tr>
-                  <td>Size 2</td>
-                  <td>21pt</td>
-                </tr>
-                <tr>
-                  <td>Size 3</td>
-                  <td>15.75pt</td>
-                </tr>
-                <tr>
-                  <td>Size 4</td>
-                  <td>13.75pt</td>
-                </tr>
-                <tr>
-                  <td>Size 5</td>
-                  <td>10.5pt</td>
-                </tr>
-                <tr>
-                  <td>Size 6</td>
-                  <td>7.875pt</td>
-                </tr>
-                <tr>
-                  <td>Size 7</td>
-                  <td>5.25pt</td>
-                </tr>
-              </tbody>
-            </table>
+          <p its-locale-filter-list="zh-hant" lang="zh-hant">中文活字大小有不同單位。在金屬活字時代，傳統中文活字尺寸以「號」為單位，故稱作「字號」；在照相排版時代沿用照排機尺寸的單位「級」，故稱作「字級」；在桌面排版時代，直接使用桌面排版軟件中的「點」（DTP point）。目前，很多場合的中文排版依舊習慣沿用「號」。</p>
+          <p its-locale-filter-list="zh-hant" lang="zh-hant">「號」由於當年金屬活字各地廠家的規範不一而不盡相同，「號」也有英美、歐陸、DTP等多種制式，導致「號」與「點」的換算有不同方法。下表僅列出常見的一些換算數值，僅供參考，不作為規範性規定：</p>
+          <table class="charsize" its-locale-filter-list="zh-hant" lang="zh-hant">
+            <thead>
+              <tr>
+                <th>號數</th>
+                <th>點數</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>初號</td>
+                <td>42 pt</td>
+              </tr>
+              <tr>
+                <td>一號</td>
+                <td>27.5/28 pt</td>
+              </tr>
+              <tr>
+                <td>小（新）一號</td>
+                <td>24 pt</td>
+              </tr>
+              <tr>
+                <td>二號</td>
+                <td>21/22 pt</td>
+              </tr>
+              <tr>
+                <td>小（新）二號</td>
+                <td>18 pt</td>
+              </tr>
+              <tr>
+                <td>三號</td>
+                <td>15.75/16 pt</td>
+              </tr>
+              <tr>
+                <td>四號</td>
+                <td>13.75/14 pt</td>
+              </tr>
+              <tr>
+                <td>小（新）四號</td>
+                <td>12 pt</td>
+              </tr>
+              <tr>
+                <td>五號</td>
+                <td>10.5 pt</td>
+              </tr>
+              <tr>
+                <td>小（新）五號</td>
+                <td>9 pt</td>
+              </tr>
+              <tr>
+                <td>六號</td>
+                <td>7.875/8 pt</td>
+              </tr>
+              <tr>
+                <td>七號</td>
+                <td>5.25pt</td>
+              </tr>
+            </tbody>
+          </table>
 
-            <table class="charsize" id="newsize-en" its-locale-filter-list="en" lang="en">
-              <thead>
-                <tr>
-                  <th>New size system</th>
-                  <th>Western point system</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>New Size 0</td>
-                  <td>36pt</td>
-                </tr>
-                <tr>
-                  <td>New Size 1</td>
-                  <td>24pt</td>
-                </tr>
-                <tr>
-                  <td>New Size 2</td>
-                  <td>18pt</td>
-                </tr>
-                <tr>
-                  <td>New Size 3</td>
-                  <td>16pt</td>
-                </tr>
-                <tr>
-                  <td>New Size 4</td>
-                  <td>12pt</td>
-                </tr>
-                <tr>
-                  <td>New Size 5</td>
-                  <td>9pt</td>
-                </tr>
-              </tbody>
-            </table>
-            <p its-locale-filter-list="zh-hans" lang="zh-hans">传统中文活字尺寸以「号」为单位，又分新旧两种寸法。对应美制的「点」（point）如下：</p>
-            <table class="charsize" id="oldsize-zhhans" its-locale-filter-list="zh-hans" lang="zh-hans">
-              <thead>
-                <tr>
-                  <th>旧印刷字号</th>
-                  <th>点数</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>初号</td>
-                  <td>42pt</td>
-                </tr>
-                <tr>
-                  <td>一号</td>
-                  <td>27.5pt</td>
-                </tr>
-                <tr>
-                  <td>二号</td>
-                  <td>21pt</td>
-                </tr>
-                <tr>
-                  <td>三号</td>
-                  <td>15.75pt</td>
-                </tr>
-                <tr>
-                  <td>四号</td>
-                  <td>13.75pt</td>
-                </tr>
-                <tr>
-                  <td>五号</td>
-                  <td>10.5pt</td>
-                </tr>
-                <tr>
-                  <td>六号</td>
-                  <td>7.875pt</td>
-                </tr>
-                <tr>
-                  <td>七号</td>
-                  <td>5.25pt</td>
-                </tr>
-              </tbody>
-            </table>
-
-            <table class="charsize" id="newsize-zhhans" its-locale-filter-list="zh-hans" lang="zh-hans">
-              <thead>
-                <tr>
-                  <th>新印刷字号</th>
-                  <th>点数</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>新五号四行</td>
-                  <td>36pt</td>
-                </tr>
-                <tr>
-                  <td>新一号</td>
-                  <td>24pt</td>
-                </tr>
-                <tr>
-                  <td>新二号</td>
-                  <td>18pt</td>
-                </tr>
-                <tr>
-                  <td>新三号字</td>
-                  <td>16pt</td>
-                </tr>
-                <tr>
-                  <td>新四号</td>
-                  <td>12pt</td>
-                </tr>
-                <tr>
-                  <td>新五号</td>
-                  <td>9pt</td>
-                </tr>
-              </tbody>
-            </table>
-            <p its-locale-filter-list="zh-hant" lang="zh-hant">傳統中文活字尺寸以「號」為單位，又分新舊兩種寸法。對應美制的「點」（point）如下：</p>
-            <table class="charsize" id="oldsize-zhhant" its-locale-filter-list="zh-hant" lang="zh-hant">
-              <thead>
-                <tr>
-                  <th>舊印刷字號</th>
-                  <th>點數</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>初號</td>
-                  <td>42pt</td>
-                </tr>
-                <tr>
-                  <td>一號</td>
-                  <td>27.5pt</td>
-                </tr>
-                <tr>
-                  <td>二號</td>
-                  <td>21pt</td>
-                </tr>
-                <tr>
-                  <td>三號</td>
-                  <td>15.75pt</td>
-                </tr>
-                <tr>
-                  <td>四號</td>
-                  <td>13.75pt</td>
-                </tr>
-                <tr>
-                  <td>五號</td>
-                  <td>10.5pt</td>
-                </tr>
-                <tr>
-                  <td>六號</td>
-                  <td>7.875pt</td>
-                </tr>
-                <tr>
-                  <td>七號</td>
-                  <td>5.25pt</td>
-                </tr>
-              </tbody>
-            </table>
-
-            <table class="charsize" id="newsize-zhhant" its-locale-filter-list="zh-hant" lang="zh-hant">
-              <thead>
-                <tr>
-                  <th>新印刷字號</th>
-                  <th>點數</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>新五號四行</td>
-                  <td>36pt</td>
-                </tr>
-                <tr>
-                  <td>新一號</td>
-                  <td>24pt</td>
-                </tr>
-                <tr>
-                  <td>新二號</td>
-                  <td>18pt</td>
-                </tr>
-                <tr>
-                  <td>新三號字</td>
-                  <td>16pt</td>
-                </tr>
-                <tr>
-                  <td>新四號</td>
-                  <td>12pt</td>
-                </tr>
-                <tr>
-                  <td>新五號</td>
-                  <td>9pt</td>
-                </tr>
-              </tbody>
-            </table>
-
-            <p its-locale-filter-list="en" lang="en">Size 5 is usually used for text content. Newspapers and magazines use both Size 5 and New Size 5. The acceptable minimum size for the text in content is Size 6  (7.875pt≒2.8mm). If a smaller size is used, it will be difficult to read due to the complex structure of Chinese characters.</p>
-            <p its-locale-filter-list="zh-hans" lang="zh-hans">一般内文主要使用五号字（10.5pt≒3.7mm），而报纸、杂志则使用新五号字（9pt≒3.2mm），两种皆常用。而一般内文字最小使用到六号字（7.875pt≒2.8mm），若小于此尺寸，由于汉字结构复杂，较难阅读。</p>
-            <p its-locale-filter-list="zh-hant" lang="zh-hant">一般內文主要使用五號字（10.5pt≒3.7mm），而報紙、雜誌則使用新五號字（9pt≒3.2mm），兩種皆常用。而一般內文字最小使用到六號字（7.875pt≒2.8mm），若小於此尺寸，由於漢字結構複雜，較難閱讀。</p>
-           </li>
+          <p its-locale-filter-list="en" lang="en">Size 5 is usually used for text content. Newspapers and magazines use both Size 5 and New Size 5. The acceptable minimum size for the text in content is Size 6  (7.875pt≒2.8mm). If a smaller size is used, it will be difficult to read due to the complex structure of Chinese characters.</p>
+          <p its-locale-filter-list="zh-hans" lang="zh-hans">一般内文主要使用五号字（10.5pt≒3.7mm），而报纸、杂志则使用新五号字（9pt≒3.2mm），两种皆常用。而一般内文字最小使用到六号字（7.875pt≒2.8mm），若小于此尺寸，由于汉字结构复杂，较难阅读。</p>
+          <p its-locale-filter-list="zh-hant" lang="zh-hant">一般內文主要使用五號字（10.5pt≒3.7mm），而報紙、雜誌則使用新五號字（9pt≒3.2mm），兩種皆常用。而一般內文字最小使用到六號字（7.875pt≒2.8mm），若小於此尺寸，由於漢字結構複雜，較難閱讀。</p>
+        </li>
         <li id="id52">
-          <p its-locale-filter-list="en" lang="en">Line length should be multiples of the character size and each line should be in alignment with one another. </p>
+          <p its-locale-filter-list="en" lang="en">Line length should be multiples of the character size and the line ends should be aligned with each other.</p>
           <p its-locale-filter-list="zh-hans" lang="zh-hans">一行的行长应为文字尺寸的整数倍，各行的位置尽可能头尾对齐。</p>
           <p its-locale-filter-list="zh-hant" lang="zh-hant">一行的行長應為文字尺寸的整數倍，各行的位置盡可能頭尾對齊。</p>
           <div class="note" id="n007">

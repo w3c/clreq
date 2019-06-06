@@ -109,7 +109,7 @@ function showAndHideLang(lang) {
   $$hidden = (
     LANG_LIST
     .filter(function(it) { return it !== lang })
-    .reduce(function(result, it) { return result.concat($$('[data-lang="' + it + '"]')) }, [])
+    .reduce(function(result, it) { return result.concat($$('[its-locale-filter-list="' + it + '"]')) }, [])
     .map(function($elmt) { return Object.assign($elmt, { hidden: true }) })
   )
 }
@@ -158,7 +158,7 @@ window.switchLang = function(lang) {
 }
 
 /**
- * Add `lang` attribute wherever there is a data-lang attribute.
+ * Add `lang` attribute wherever there is a its-locale-filter-list attribute.
  * This is done by js to reduce burden on editors
  * If there's already a lang attribute in the tag, that tag is skipped.
  *
@@ -170,7 +170,7 @@ function addLangAttr() {
 
   LANG_LIST
   .forEach(function(lang) {
-    $$('[data-lang="' + lang + '"]')
+    $$('[its-locale-filter-list="' + lang + '"]')
     .forEach(function($elmt) {
       if (!$elmt.lang) {
         $elmt.lang = lang

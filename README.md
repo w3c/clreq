@@ -1,6 +1,6 @@
-# Requirements for Chinese Text Layout | 中文排版需求
+# Chinese Text Layout task force (clreq) | 中文排版需求
 
-This group explores gaps and requirements for support of languages using Simplified and Traditional Chinese on the Web and in eBooks.
+This group allows a network of experts to share information about gaps and requirements for support of Simplified and Traditional Chinese on the Web and in eBooks. 
 
 本小组探讨在网页和电子书中使用简体、繁体中文时的各语言、文种支持的需求以及目前差距。
 
@@ -12,14 +12,29 @@ Some experts go a step further, and contribute to a gap-analysis or requirements
 
 一些语言和排版专家会更深入地参与小组工作，为差距分析和需求文档做出贡献。
 
-Topics for discussion are suggested by [the gap-analysis template](https://w3c.github.io/i18n-activity/templates/gap-analysis/gap-analysis_template.html). This work feeds into the [language matrix](https://w3c.github.io/typography/gap-analysis/language-matrix.html) which gives an overview of languages needing attention.  The focus is especially on typographic features for which information in English is typically hard to find, such as justification, letter-spacing, vertical text, text decoration, page layout, emphasis, etc. We want to ensure that we have captured local user needs in CSS, HTML, Timed Text, Web Payments, Web Publishing, and the many other specifications that the W3C produces.
+Topics for discussion are suggested by [the gap-analysis template](https://w3c.github.io/i18n-activity/templates/gap-analysis/gap-analysis_template.html). This work feeds into the [language matrix](https://w3c.github.io/typography/gap-analysis/language-matrix.html) which gives an overview of languages needing attention.   You can find a list of open issues, including those from W3C Working Groups, on the [Layout Tracker](http://w3c.github.io/i18n-activity/textlayout/?filter=clreq) page. (That link applies a `clreq` filter.)
 
-讨论的议题写在[差距分析模板（英文）](https://w3c.github.io/i18n-activity/templates/gap-analysis/gap-analysis_template.html)中。这项工作源自列出了需要关注文种概要的[文种矩阵](https://w3c.github.io/typography/gap-analysis/language-matrix.html) 。特别关注于一些用英文撰写的、其他地方难以找到的字体排印特性，比如分词连写、字距、竖排、文本装饰、排版、强调方式等等。我们希望保证我们要能覆盖用户在 CSS、HTML、时间轴文本、网页支付、网页出版等的需要，以及其他 W3C 出台的规范。
+讨论的议题写在[差距分析模板（英文）](https://w3c.github.io/i18n-activity/templates/gap-analysis/gap-analysis_template.html)中。这项工作源自列出了需要关注文种概要的[文种矩阵](https://w3c.github.io/typography/gap-analysis/language-matrix.html) 。
+
+The focus is especially on typographic features for which information in English is typically hard to find, such as justification, letter-spacing, vertical text, text decoration, page layout, emphasis, etc. We want to ensure that we have captured local user needs in CSS, HTML, Timed Text, Web Payments, Web Publishing, and the many other specifications that the W3C produces.
+
+特别关注于一些用英文撰写的、其他地方难以找到的字体排印特性，比如分词连写、字距、竖排、文本装饰、排版、强调方式等等。我们希望保证我们要能覆盖用户在 CSS、HTML、时间轴文本、网页支付、网页出版等的需要，以及其他 W3C 出台的规范。
 
 ### Documents 文档
 
 - [Chinese Layout Gap Analysis | 中文支持差距分析](https://w3c.github.io/clreq/gap-analysis/)
 - [Requirements for Chinese Text Layout | 中文排版需求 (ED)](https://w3c.github.io/clreq/) ([WD](https://www.w3.org/TR/clreq/))
+
+
+### Feedback
+Please use the [GitHub issue list](https://github.com/w3c/clreq/issues) to report issues for language support, for discussions, and to send feedback about documents. (Learn [how GitHub issues work](http://w3c.github.io/i18n-activity/guidelines/issues.html).)
+
+Note: The public-i18n-cjk mailing list is used to send notification digests & meeting minutes. It is **not** for technical discussion.
+
+**You may raise issues in Chinese, however any substantive discussions should be summarised in English at some point, so that non-Chinese speakers can follow the rationale and contribute comments.**
+
+**您可以用中文提出问题，但任何实质性讨论都应该在某一阶段用英语进行总结，以便非汉语使用者理解该问题并发表意见。**
+
 
 ### Following 跟踪
 

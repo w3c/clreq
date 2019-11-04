@@ -18,7 +18,7 @@ Topics for discussion are suggested by [the gap-analysis template](https://w3c.g
 
 The focus is especially on typographic features for which information in English is typically hard to find, such as justification, letter-spacing, vertical text, text decoration, page layout, emphasis, etc. We want to ensure that we have captured local user needs in CSS, HTML, Timed Text, Web Payments, Web Publishing, and the many other specifications that the W3C produces.
 
-特别关注于一些用英文撰写的、其他地方难以找到的字体排印特性，比如分词连写、字距、竖排、文本装饰、排版、强调方式等等。我们希望保证我们要能覆盖用户在 CSS、HTML、时间轴文本、网页支付、网页出版等的需要，以及其他 W3C 出台的规范。
+讨论特别关注于一些用英文资料难以找到的字体排印特性，比如对齐方式、字距、竖排、文本装饰、排版、强调方式等等。我们希望保证我们要能覆盖用户在 CSS、HTML、时间轴文本、网页支付、网页出版等的需要，以及其他 W3C 出台的规范。
 
 ### Documents 文档
 

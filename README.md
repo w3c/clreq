@@ -36,33 +36,25 @@ Note: The public-i18n-cjk mailing list is used to send notification digests & me
 **您可以用中文提出问题，但任何实质性讨论都应该在某一阶段用英语进行总结，以便非汉语使用者理解该问题并发表意见。**
 
 
-### Following 跟踪
+### Participate 参与
 
-Rather than just 'Watch' this repository, it is best to subscribe to the [public-i18n-cjk](https://lists.w3.org/Archives/Public/public-i18n-cjk/) mailing list. That list is notified once a day (in digest form) about not only changes to this repository, but also about other W3C Working Group issues related to the Chinese writing systems. (Please use github issues rather than the mailing list to send feedback. The main purpose of the public-i18n-cjk mailing list is for notifications; meeting minutes are also sent to public-i18n-cjk.)
+You can participate in the task force work at various levels. In order of increasing commitment, these include Follower, Contributor, Participant, Editor, and Chair. [Find your level](https://github.com/w3c/i18n-activity/wiki/Layout-task-force-roles).
 
-相比于“Watch”此仓库，订阅 [public-i18n-cjk](https://lists.w3.org/Archives/Public/public-i18n-cjk/) 邮件列表会更好。该列表每天以摘要形式通知此仓库的活动以及其他W3C工作组中与中文书写系统相关的问题。（请使用 GitHub Issues 而不是邮件列表发送反馈，因为 public-i18n-cjk 邮件列表的主要作用是提醒邮件及发布会议纪要。）
+您可以以不同程度参加小组的工作，包含关注者、贡献者、参与者、编辑和主席，[在这里找到您的角色](https://github.com/w3c/i18n-activity/wiki/Layout-task-force-roles)。
 
-You can find a list of open issues, including those from W3C Working Groups, on the [Layout Tracker](https://w3c.github.io/i18n-activity/textlayout/?filter=clreq) page. (That link applies a `clreq` filter.)
+**To just follow the work:** Rather than 'Watch' this repository, subscribe to the [public-i18n-cjk](https://lists.w3.org/Archives/Public/public-i18n-cjk/) mailing list. That list is notified (no more than once a day, and in digest form), about changes to issues in this repository, but also about other W3C Working Group issues related to the Japanese, Chinese, & Korean writing systems.
 
-您可以在[排版问题跟踪器](https://w3c.github.io/i18n-activity/textlayout/?filter=clreq)页面上找到尚未解决的问题列表，包括来自 W3C 工作组的问题。
+如果只是关注小组工作：相比于“Watch”此仓库，订阅 [public-i18n-cjk](https://lists.w3.org/Archives/Public/public-i18n-cjk/) 邮件列表会更好。该列表每天以摘要形式通知此仓库的活动以及其他 W3C 工作组中与中日韩书写系统相关的问题。
 
-### Contributing 贡献
+**To contribute content:** All contributors should read and agree with [CONTRIBUTING.md](CONTRIBUTING.md).
 
-All contributors should read and agree with [CONTRIBUTING.md](https://github.com/w3c/clreq/blob/gh-pages/CONTRIBUTING.md).
+如果有意向向文档贡献内容：所有贡献者均应阅读并同意 [CONTRIBUTING.md](CONTRIBUTING.md)。
 
-所有贡献者都应阅读并同意[CONTRIBUTING.md](https://github.com/w3c/clreq/blob/gh-pages/CONTRIBUTING.md)。
+**To become a participant, editor, or chair:** contact [Richard Ishida](mailto:ishida@w3.org) or [薛富侨 (Fuqiao Xue)](mailto:xfq@w3.org). We welcome participation requests.
 
-Please use the [GitHub issue list](https://github.com/w3c/clreq/issues) to report issues for language support, for discussions, and to send feedback about documents.  (Learn [how GitHub issues work](http://w3c.github.io/i18n-activity/guidelines/issues.html).)
+如果有意向成为参与者、编辑或主席，请与 [Richard Ishida](mailto:ishida@w3.org) 或[薛富侨](mailto:xfq@w3.org)联系，欢迎加入我们的工作。
 
-请使用 [GitHub Issue](https://github.com/w3c/clreq/issues) 提出中文支持的问题、讨论以及对有关文档的反馈。 学习[如何使用GitHub（英文）](https://w3c.github.io/i18n-activity/guidelines/issues.html)。
 
-**You may raise issues in Chinese, however any substantive discussions should be summarised in English at some point, so that non-Chinese speakers can follow the rationale and contribute comments.**
-
-**您可以用中文提出问题，但任何实质性讨论都应该在某一阶段用英语进行总结，以便非汉语使用者理解该问题并发表意见。**
-
-Group _members_ are expert contributors who participate actively in producing the work of the group, regularly contributing text and advice to create the outputs, and participating in meetings. For more information about becoming a task force member contact [Richard Ishida](mailto:ishida@w3.org). We welcome participation requests.
-
-小组*成员*是积极参与小组工作、定期提供文本和建议并参加会议的专家。有关成为小组成员的更多信息，请联系 [Richard Ishida](mailto:ishida@w3.org)，我们欢迎更多人的参与。
 
 ### Contacts 联系我们
 

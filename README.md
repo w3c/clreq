@@ -27,9 +27,14 @@ The focus is especially on typographic features for which information in English
 
 
 ### Feedback
+
 Please use the [GitHub issue list](https://github.com/w3c/clreq/issues) to report issues for language support, for discussions, and to send feedback about documents. (Learn [how GitHub issues work](http://w3c.github.io/i18n-activity/guidelines/issues.html).)
 
+请使用 [GitHub Issue](https://github.com/w3c/clreq/issues) 提出中文支持的问题、讨论以及对有关文档的反馈。学习[如何使用GitHub（英文）](https://w3c.github.io/i18n-activity/guidelines/issues.html)。
+
 Note: The public-i18n-cjk mailing list is used to send notification digests & meeting minutes. It is **not** for technical discussion.
+
+注意：public-i18n-cjk 邮件列表用于发送通知摘要和会议记录，不用于技术讨论。
 
 **You may raise issues in Chinese, however any substantive discussions should be summarised in English at some point, so that non-Chinese speakers can follow the rationale and contribute comments.**
 

@@ -119,13 +119,43 @@
     <h2>Text direction</h2>
 <p>See also General page layout &amp; progression for features such as column layout, page turning direction, etc. that are affected by text direction.</p>
 
-<section id="vertical" class="advanced">
+<section id="vertical" class="basic">
 <h3>Vertical text</h3>
     <p class="status_prompt">Are the script requirements for vertically oriented text met?  What about if you mix vertical text with scripts that are normally only horizontal? Do you need a switch to use different characters in vertical vs. horizontal text? Does the browser support short runs of horizontal text in vertical lines (tate-chu-yoko in Japanese) as expected? Is the orientation of characters and the directional ordering of characters supported as needed? <a href="https://w3c.github.io/typography/index#vertical_text">See available information</a> or <a href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20is%3Aopen%20label%3Avertical-text%20label%3Atype-info-request">check for currently needed data</a>.</p>
 
 
 
-    <p></p>
+    <section>
+        <h4>Vertical form controls</h4>
+        <p>One major gap is handling of vertical text in forms. Only the <span class="pass">Firefox</span> desktop browser does a good job of this. <a href="https://www.w3.org/International/tests/repo/results/writing-mode-vertical#rl_forms">See test results</a>. <span class="fail">Other browsers</span> fail resoundingly in terms of orienting form controls vertically and displaying text vertically inside them. More Tests: <a href="https://w3c.github.io/i18n-drafts/articles/vertical-text/index-data/vertical-form.html" target="text">standard syntax</a> • <a href="https://w3c.github.io/i18n-drafts/articles/vertical-text/index-data/vertical-form-pref.html" target="text">proprietary syntax</a></p>
+        <p>This has a significant impact for creation of general web sites.</p>
+    </section>
+
+    <section>
+        <h4>Upright text orientation</h4>
+        <p>Another gap is the CSS <code class="kw" translate="no">text-orientation</code> property. It is only supported as standard by <span class="pass">Firefox</span>. <span class="partial">Safari</span> has buggy support if you use the <code class="kw" translate="no">-webkit</code> proprietary extension: it has  a problem centering the letter in the vertical line. Tests:  <a href="https://w3c.github.io/i18n-drafts/articles/vertical-text/index-data/upright-i.html" target="text">standard syntax</a> • <a href="https://w3c.github.io/i18n-drafts/articles/vertical-text/index-data/upright-i-pref.html" target="text">proprietary syntax</a></p>
+        <p>Upright-oriented Latin text, especially, is used commonly for acronyms in Chinese vertical text, so this is a significant gap for general web content.</p>
+    </section>
+
+    <section>
+        <h4>Horizontal-in-vertical (tate-chu-yoko)</h4>
+        <p>The CSS <code class="kw" translate="no">text-combine-upright</code> property works with the <code class="kw" translate="no">all</code> value in all major browsers, although for <span class="partial">Edge</span> you need to use the proprietary property <code class="kw" translate="no">-ms-text-combine-horizontal</code>. Tests:  <a href="https://w3c.github.io/i18n-drafts/articles/vertical-text/index-data/tcu-all.html" target="text">standard syntax</a> • <a href="https://w3c.github.io/i18n-drafts/articles/vertical-text/index-data/tcu-all-pref.html" target="text">proprietary syntax</a></p>
+        <p>With the <code class="kw" translate="no">digits</code> value, it is only supported by <span class="partial">Edge</span> (with it's proprietary property name), but Edge stretches single digits to fit the width of the (vertical) line. Tests: <a href="https://w3c.github.io/i18n-drafts/articles/vertical-text/index-data/digits.html" target="text">standard syntax</a> • <a href="https://w3c.github.io/i18n-drafts/articles/vertical-text/index-data/digits-pref.html" target="text">proprietary syntax</a></p>
+        <p>The unavailability of the <code class="kw" translate="no">digits</code> value is an inconvenience, since more interventions and markup are needed when using the <code class="kw" translate="no">all</code> value.</p>
+    </section>
+
+    <section>
+        <h4>Lists</h4>
+        <p>To be written.</p>
+    </section>
+
+    <section>
+        <h4>Logical properties and values</h4>
+        <p>A great deal of time and confusion can be saved by using 'logical' properties, rather than right, left, top and bottom, for things such as alignment. </p>
+        <p>CSS is developing the necessary keywords in the <a href="https://drafts.csswg.org/css-logical/">Logical Properties and Values</a> specification, which at the time of writing is still an editor's draft. Some of the properties described there, however, are already supported by browsers.</p>
+        <p>Unfortunately, Microsoft <span class="fail">Edge</span> still doesn't support the start and end values for text-align</p>
+        <p>Tests: <a href="https://w3c.github.io/i18n-drafts/articles/vertical-text/index-data/text-align-end.html" target="text">standard syntax</a> • <a href="https://w3c.github.io/i18n-drafts/articles/vertical-text/index-data/text-align-end-pref.html" target="text">proprietary syntax</a></p>
+    </section>
 </section>
 
 

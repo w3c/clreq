@@ -1,6 +1,6 @@
-# Requirements for Chinese Text Layout | 中文排版需求
+# Chinese Text Layout task force (clreq) | 中文排版需求
 
-This group explores gaps and requirements for support of languages using Simplified and Traditional Chinese on the Web and in eBooks.
+This group allows a network of experts to share information about gaps and requirements for support of Simplified and Traditional Chinese on the Web and in eBooks. 
 
 本小组探讨在网页和电子书中使用简体、繁体中文时的各语言、文种支持的需求以及目前差距。
 
@@ -12,42 +12,54 @@ Some experts go a step further, and contribute to a gap-analysis or requirements
 
 一些语言和排版专家会更深入地参与小组工作，为差距分析和需求文档做出贡献。
 
-Topics for discussion are suggested by [the gap-analysis template](https://w3c.github.io/i18n-activity/templates/gap-analysis/gap-analysis_template.html). This work feeds into the [language matrix](https://w3c.github.io/typography/gap-analysis/language-matrix.html) which gives an overview of languages needing attention.  The focus is especially on typographic features for which information in English is typically hard to find, such as justification, letter-spacing, vertical text, text decoration, page layout, emphasis, etc. We want to ensure that we have captured local user needs in CSS, HTML, Timed Text, Web Payments, Web Publishing, and the many other specifications that the W3C produces.
+Topics for discussion are suggested by [the gap-analysis template](https://w3c.github.io/i18n-activity/templates/gap-analysis/gap-analysis_template.html). This work feeds into the [language matrix](https://w3c.github.io/typography/gap-analysis/language-matrix.html) which gives an overview of languages needing attention.   You can find a list of open issues, including those from W3C Working Groups, on the [Layout Tracker](http://w3c.github.io/i18n-activity/textlayout/?filter=clreq) page. (That link applies a `clreq` filter.)
 
-讨论的议题写在[差距分析模板（英文）](https://w3c.github.io/i18n-activity/templates/gap-analysis/gap-analysis_template.html)中。这项工作源自列出了需要关注文种概要的[文种矩阵](https://w3c.github.io/typography/gap-analysis/language-matrix.html) 。特别关注于一些用英文撰写的、其他地方难以找到的字体排印特性，比如分词连写、字距、竖排、文本装饰、排版、强调方式等等。我们希望保证我们要能覆盖用户在 CSS、HTML、时间轴文本、网页支付、网页出版等的需要，以及其他 W3C 出台的规范。
+讨论的议题写在[差距分析模板（英文）](https://w3c.github.io/i18n-activity/templates/gap-analysis/gap-analysis_template.html)中。这项工作源自列出了需要关注文种概要的[文种矩阵](https://w3c.github.io/typography/gap-analysis/language-matrix.html) 。
+
+The focus is especially on typographic features for which information in English is typically hard to find, such as justification, letter-spacing, vertical text, text decoration, page layout, emphasis, etc. We want to ensure that we have captured local user needs in CSS, HTML, Timed Text, Web Payments, Web Publishing, and the many other specifications that the W3C produces.
+
+讨论特别关注于一些用英文资料难以找到的字体排印特性，比如对齐方式、字距、竖排、文本装饰、排版、强调方式等等。我们希望保证我们要能覆盖用户在 CSS、HTML、时间轴文本、网页支付、网页出版等的需要，以及其他 W3C 出台的规范。
 
 ### Documents 文档
 
 - [Chinese Layout Gap Analysis | 中文支持差距分析](https://w3c.github.io/clreq/gap-analysis/)
 - [Requirements for Chinese Text Layout | 中文排版需求 (ED)](https://w3c.github.io/clreq/) ([WD](https://www.w3.org/TR/clreq/))
 
-### Following 跟踪
 
-Rather than just 'Watch' this repository, it is best to subscribe to the [public-i18n-cjk](https://lists.w3.org/Archives/Public/public-i18n-cjk/) mailing list. That list is notified once a day (in digest form) about not only changes to this repository, but also about other W3C Working Group issues related to the Chinese writing systems. (Please use github issues rather than the mailing list to send feedback. The main purpose of the public-i18n-cjk mailing list is for notifications; meeting minutes are also sent to public-i18n-cjk.)
+### Feedback
 
-相比于“Watch”此仓库，订阅 [public-i18n-cjk](https://lists.w3.org/Archives/Public/public-i18n-cjk/) 邮件列表会更好。该列表每天以摘要形式通知此仓库的活动以及其他W3C工作组中与中文书写系统相关的问题。（请使用 GitHub Issues 而不是邮件列表发送反馈，因为 public-i18n-cjk 邮件列表的主要作用是提醒邮件及发布会议纪要。）
+Please use the [GitHub issue list](https://github.com/w3c/clreq/issues) to report issues for language support, for discussions, and to send feedback about documents. (Learn [how GitHub issues work](http://w3c.github.io/i18n-activity/guidelines/issues.html).)
 
-You can find a list of open issues, including those from W3C Working Groups, on the [Layout Tracker](https://w3c.github.io/i18n-activity/textlayout/?filter=clreq) page. (That link applies a `clreq` filter.)
+请使用 [GitHub Issue](https://github.com/w3c/clreq/issues) 提出中文支持的问题、讨论以及对有关文档的反馈。学习[如何使用GitHub（英文）](https://w3c.github.io/i18n-activity/guidelines/issues.html)。
 
-您可以在[排版问题跟踪器](https://w3c.github.io/i18n-activity/textlayout/?filter=clreq)页面上找到尚未解决的问题列表，包括来自 W3C 工作组的问题。
+Note: The public-i18n-cjk mailing list is used to send notification digests & meeting minutes. It is **not** for technical discussion.
 
-### Contributing 贡献
-
-All contributors should read and agree with [CONTRIBUTING.md](https://github.com/w3c/clreq/blob/gh-pages/CONTRIBUTING.md).
-
-所有贡献者都应阅读并同意[CONTRIBUTING.md](https://github.com/w3c/clreq/blob/gh-pages/CONTRIBUTING.md)。
-
-Please use the [GitHub issue list](https://github.com/w3c/clreq/issues) to report issues for language support, for discussions, and to send feedback about documents.  (Learn [how GitHub issues work](http://w3c.github.io/i18n-activity/guidelines/issues.html).)
-
-请使用 [GitHub Issue](https://github.com/w3c/clreq/issues) 提出中文支持的问题、讨论以及对有关文档的反馈。 学习[如何使用GitHub（英文）](https://w3c.github.io/i18n-activity/guidelines/issues.html)。
+注意：public-i18n-cjk 邮件列表用于发送通知摘要和会议记录，不用于技术讨论。
 
 **You may raise issues in Chinese, however any substantive discussions should be summarised in English at some point, so that non-Chinese speakers can follow the rationale and contribute comments.**
 
 **您可以用中文提出问题，但任何实质性讨论都应该在某一阶段用英语进行总结，以便非汉语使用者理解该问题并发表意见。**
 
-Group _members_ are expert contributors who participate actively in producing the work of the group, regularly contributing text and advice to create the outputs, and participating in meetings. For more information about becoming a task force member contact [Richard Ishida](mailto:ishida@w3.org). We welcome participation requests.
 
-小组*成员*是积极参与小组工作、定期提供文本和建议并参加会议的专家。有关成为小组成员的更多信息，请联系 [Richard Ishida](mailto:ishida@w3.org)，我们欢迎更多人的参与。
+### Participate 参与
+
+You can participate in the task force work at various levels. In order of increasing commitment, these include Follower, Contributor, Participant, Editor, and Chair. [Find your level](https://github.com/w3c/i18n-activity/wiki/Layout-task-force-roles).
+
+您可以以不同程度参加小组的工作，包含关注者、贡献者、参与者、编辑和主席，[在这里找到您的角色](https://github.com/w3c/i18n-activity/wiki/Layout-task-force-roles)。
+
+**To just follow the work:** Rather than 'Watch' this repository, subscribe to the [public-i18n-cjk](https://lists.w3.org/Archives/Public/public-i18n-cjk/) mailing list. That list is notified (no more than once a day, and in digest form), about changes to issues in this repository, but also about other W3C Working Group issues related to the Japanese, Chinese, & Korean writing systems.
+
+如果只是关注小组工作：相比于“Watch”此仓库，订阅 [public-i18n-cjk](https://lists.w3.org/Archives/Public/public-i18n-cjk/) 邮件列表会更好。该列表每天以摘要形式通知此仓库的活动以及其他 W3C 工作组中与中日韩书写系统相关的问题。
+
+**To contribute content:** All contributors should read and agree with [CONTRIBUTING.md](CONTRIBUTING.md).
+
+如果有意向向文档贡献内容：所有贡献者均应阅读并同意 [CONTRIBUTING.md](CONTRIBUTING.md)。
+
+**To become a participant, editor, or chair:** contact [Richard Ishida](mailto:ishida@w3.org) or [薛富侨 (Fuqiao Xue)](mailto:xfq@w3.org). We welcome participation requests.
+
+如果有意向成为参与者、编辑或主席，请与 [Richard Ishida](mailto:ishida@w3.org) 或[薛富侨](mailto:xfq@w3.org)联系，欢迎加入我们的工作。
+
+
 
 ### Contacts 联系我们
 

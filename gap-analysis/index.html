@@ -2,10 +2,12 @@
 
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+<meta charset="utf-8">
 
-  <title>Chinese Layout Gap Analysis</title>
-  <script src="https://www.w3.org/Tools/respec/respec-w3c-common" async="" class="remove">
+<title>Chinese Layout Gap Analysis</title>
+<script src="../../i18n-activity/textlayout/resources/gap-analysis-github.js"> </script>
+
+<script src="https://www.w3.org/Tools/respec/respec-w3c-common" async="" class="remove">
 </script>
   <script class="remove">
   var respecConfig = {
@@ -56,7 +58,7 @@
 <link rel="stylesheet" href="https://w3c.github.io/typography/gap-analysis/gapanalysis.css">
 </head>
 
-<body>
+<body onLoad="printSummary(false)">
   <div id="abstract">
     <p>This document describes and prioritises gaps for the support of Simplified and Traditional Chinese on the Web and in eBooks. In particular, it is concerned with text layout. It checks that needed features are supported in W3C specifications, in particular HTML and CSS and those relating to digital publications. It also checks whether the features have been implemented in browsers and ereaders. <strong>This is a preliminary analysis.</strong></p>
   </div>
@@ -111,15 +113,12 @@
 <h2>Text direction</h2>
 <p>See also General page layout &amp; progression for features such as column layout, page turning direction, etc. that are affected by text direction.</p>
 
-<section id="vertical_text" class="advanced">
+
+<section id="vertical_text" class="tbd">
 <h3>Vertical text</h3>
 <p id="prompt-vertical_text" class="status_prompt promptStub"></p>
 
-
-<!--section id="xxxxxx">
-<h4>xxxxxx</h4>
-<p></p>
-</section-->
+<div id="insert-vertical_text"></div>
 </section>
 
 
@@ -129,11 +128,8 @@
 <h3>Bidirectional text</h3>
 <p id="prompt-bidi_text" class="status_prompt promptStub"></p>
 
+<div id="insert-bidi_text"></div>
 
-<!--section id="xxxxxx">
-<h4>xxxxxx</h4>
-<p></p>
-</section-->
 </section>
 </section>
 
@@ -149,195 +145,127 @@
 <h3>Characters &amp; encoding</h3>
 <p id="prompt-charset" class="status_prompt promptStub"></p>
 
-<!--section id="xxxxxx">
-<h4>xxxxxx</h4>
-<p></p>
-</section-->
+<div id="insert-charset"></div>
 </section>
 
 
 
-<section id="fonts" class="advanced">
+<section id="fonts" class="tbd">
 <h3>Fonts</h3>
 <p id="prompt-fonts" class="status_prompt promptStub"></p>
-<section id="font_fallback">
-<h4>Issues with variation sequence font fallback</h4>
-<p>Font matching/fallback for variation sequences is <a href="https://github.com/w3c/csswg-drafts/issues/1710">not implemented correctly</a>.</p>
+
+
+<div id="insert-fonts"></div>
 </section>
-</section>
 
 
 
-<section id="font_style" class="ok">
+<section id="font_style" class="tbd">
 <h3>Font  styles, weight, etc</h3>
 <p id="prompt-font_style" class="status_prompt promptStub"></p>
 
 
-<!--section id="xxxxxx">
-<h4>xxxxxx</h4>
-<p></p>
-</section-->
+<div id="insert-font_style"></div>
 </section>
 
 
 
-<section id="glyphs" class="na">
+<section id="glyphs" class="tbd">
 <h3>Glyph shaping and positioning</h3>
 <p id="prompt-glyphs" class="status_prompt promptStub"></p>
 
 
-<!--section id="xxxxxx">
-<h4>xxxxxx</h4>
-<p></p>
-</section-->
+<div id="insert-glyphs"></div>
 </section>
 
 
 
-<section id="cursive" class="na">
+<section id="cursive" class="tbd">
 <h3>Cursive text</h3>
 <p id="prompt-cursive" class="status_prompt promptStub"></p>
 
 
-<!--section id="xxxxxx">
-<h4>xxxxxx</h4>
-<p></p>
-</section-->
+<div id="insert-cursive"></div>
 </section>
 
 
 
-<section id="transforms" class="na">
+<section id="baselines" class="tbd">
+<h3>Baselines, line-height, etc</h3>
+<p id="prompt-baselines" class="status_prompt promptStub"></p>
+
+
+<div id="insert-baselines"></div>
+</section>
+
+
+
+
+<section id="transforms" class="tbd">
 <h3>Transforming characters</h3>
 <p id="prompt-transforms" class="status_prompt promptStub"></p>
 
 
-<!--section id="xxxxxx">
-<h4>xxxxxx</h4>
-<p></p>
-</section-->
+<div id="insert-transforms"></div>
 </section>
 
 
 
 
-<section id="baselines" class="advanced">
-<h3>Baselines &amp; inline alignment</h3>
-<p id="prompt-baselines" class="status_prompt promptStub"></p>
-
-
-<!--section id="xxxxxx">
-<h4>xxxxxx</h4>
-<p></p>
-</section-->
-</section>
-
-
-
-
-<section id="segmentation" class="ok">
+<section id="segmentation" class="tbd">
 <h3>Grapheme/word segmentation &amp; selection</h3>
 <p id="prompt-segmentation" class="status_prompt promptStub"></p>
 
 
-<!--section id="xxxxxx">
-<h4>xxxxxx</h4>
-<p></p>
-</section-->
+<div id="insert-segmentation"></div>
 </section>
  
 
 
 <section id="punctuation_etc" class="tbd">
-<h3>Punctuation &amp; other inline features</h3>
-<p id="prompt-punctuation_etc" class="status_prompt promptStub"></p>
+<h3>Inline features &amp; punctuation</h3><p id="prompt-punctuation_etc" class="status_prompt promptStub"></p>
 
 
-<!--section id="xxxxxx">
-<h4>xxxxxx</h4>
-<p></p>
-</section-->
+<div id="insert-punctuation_etc"></div>
 </section>
    
     
     
-<section id="text_decoration" class="advanced">
+<section id="text_decoration" class="tbd">
 <h3>Text decoration</h3>
 <p id="prompt-text_decoration" class="status_prompt promptStub"></p>
 
 
-<section id="emphasis_punctation">
-<h4>Punctuation not skipped by default for emphasis marks</h4>
-<p>Punctuations are not skipped by default for emphasis marks.</p>
-</section>
-
-<section id="emphasis_dot_support">
-<h4>Emphasis mark support not interoperable</h4>
-    <p>Chrome, Firefox, and Safari support emphasis dots. However, in Chrome the text emphasis properties needs to be prefixed by <code>-webkit-</code>.</p>
-</section>
+<div id="insert-text_decoration"></div>
 </section>
 
 
 
-<section id="quotations" class="advanced">
+<section id="quotations" class="tbd">
 <h3>Quotations</h3>
 <p id="prompt-quotations" class="status_prompt promptStub"></p>
-
-
-    <section id="q_defaults">
-    <h4><a href="#q_defaults">Default quotation marks for q element</a></h4>
-    <p>If the <code class="kw" translate="no">html</code> tag sets the language of a page, the HTML specification says that  the <code class="kw" translate="no">q</code> element should by default produce quotation marks according to the information in CLDR for that language.</p>
-    <p>For Traditional Chinese, according to CLDR the default quote marks should be 「...」, and embedded quote marks 『...』; for Simplified Chinese, according to CLDR the default quote marks should be “...”, and embedded quote marks ‘...’. Some browsers don't change default quote marks based on language setting. See <a href="https://w3c.github.io/i18n-tests/results/the-q-element.html#language">tests and results</a>.</p>
-    </section>
-
-
-    <section id="q_section">
-    <h4><a href="#q_section">Default quotation marks in a new language section</a></h4>
-    <p>In addition, the default quotation marks for the <code class="kw" translate="no">q</code> element  are not set to the appropriate characters by the browser  when the element appears inside a Chinese section of a page that has a different overall language. This is currently per the HTML specification (both W3C and WHATWG).  There is <a href="https://github.com/whatwg/html/issues/3636">an issue</a> raised against the WHATWG version for this to be changed.</p>
-    </section>
-
-    <section id="q_multilingual">
-        <h4><a href="#q_multilingual">Embedded quotations in a different language</a></h4>
-        <p>Chinese quotes embedded in text in another language can also be problematic if the outer language uses different quotation marks. This is due to the browsers choosing default quotation marks based on the language of the <em>quotation</em>, rather than that of the surrounding text. See <a href="https://w3c.github.io/i18n-tests/results/the-q-element.html#ml_nesting">a test</a>. This behaviour is specified in the WHATWG version of the HTML spec, but no longer in the W3C version. There is <a href="https://github.com/whatwg/html/issues/3636">an issue</a> raised against the WHATWG version for this to be changed.</p>
-    </section>
-
-    <p>Marking all the above as advanced, because use of the <code class="kw" translate="no">q</code> element is optional (quote characters can be used instead), and it can be styled using CSS for the general case.</p>
+	
+	
+<div id="insert-quotations"></div>
 </section>
 
 
-<section id="inline_notes" class="advanced">
+<section id="inline_notes" class="tbd">
 <h3>Inline notes &amp; annotations</h3>
 <p id="prompt-inline_notes" class="status_prompt promptStub"></p>
 
 
-<section id="bopomofo">
-<h4>No bopomofo ruby support</h4>
-    <p>Bopomofo ruby is not supported.</p>
-</section>
-
-<section id="ruby_selection">
-<h4>Difficulties selecting ruby</h4>
-    <p>There are difficulties in selecting ruby text in <a href="https://github.com/w3c/i18n-issues/issues/3">some browsers</a>.</p>
-</section>
-
-<section id="warichu">
-<h4>Cutting Note not supported</h4>
-    <p>Support needed for <a href="https://www.w3.org/TR/jlreq/#inline_cutting_note">Inline Cutting Note (Warichu)</a>.</p>
-</section>
-
+<div id="insert-inline_notes"></div>
 </section>
 
 
 
-<section id="data_formats" class="ok">
+<section id="data_formats" class="tbd">
 <h3>Data formats &amp; numbers</h3>
 <p id="prompt-data_formats" class="status_prompt promptStub"></p>
 
 
-<!--section id="xxxxxx">
-<h4>xxxxxx</h4>
-<p></p>
-</section-->
+<div id="insert-data_formats"></div>
 </section>
 
 
@@ -361,89 +289,65 @@
 <h2>Lines and Paragraphs</h2>
 
  
-<section id="line_breaking" class="advanced">
+<section id="line_breaking" class="tbd">
 <h3>Line breaking</h3>
 <p id="prompt-line_breaking" class="status_prompt promptStub"></p>
 
 
-    <p>
-        Browsers differ in how they handle line breaks for <code>IDEOGRAPHIC SPACE (U+3000)</code>.
-    </p>
-    <p>
-        <a href="https://www.unicode.org/reports/tr14/">UAX #14</a> doesn't make sense for quotation marks in Chinese: <a href="https://www.w3.org/2018/05/14-clreq-minutes.html#x02">https://www.w3.org/2018/05/14-clreq-minutes.html#x02</a>
-    </p>
-<!--section id="xxxxxx">
-<h4>xxxxxx</h4>
-<p></p>
-</section-->
+<div id="insert-line_breaking"></div>
+
+<p>See also <a href="#hyphenation">hyphenation</a> below. </p>
 </section>
 
 
 
-<section id="hyphenation" class="na">
+<section id="hyphenation" class="tbd">
 <h3>Hyphenation</h3>
 <p id="prompt-hyphenation" class="status_prompt promptStub"></p>
 
 
-<!--section id="xxxxxx">
-<h4>xxxxxx</h4>
-<p></p>
-</section-->
+<div id="insert-hyphenation"></div>
 </section>
 
 
 
-<section id="justification" class="advanced">
+<section id="justification" class="tbd">
 <h3>Text alignment &amp; justification</h3>
 <p id="prompt-justification" class="status_prompt promptStub"></p>
 
 
-<!--section id="xxxxxx">
-<h4>xxxxxx</h4>
-<p></p>
-</section-->
+<div id="insert-justification"></div>
 </section>
 
 
 
-<section id="spacing" class="advanced">
+<section id="spacing" class="tbd">
 <h3>Letter spacing</h3>
 <p id="prompt-spacing" class="status_prompt promptStub"></p>
 
 
-<!--section id="xxxxxx">
-<h4>xxxxxx</h4>
-<p></p>
-</section-->
+
+<div id="insert-spacing"></div>
 </section>
 
 
 
-<section id="lists" class="advanced">
+<section id="lists" class="tbd">
 <h3>Lists, counters, etc.</h3>
 <p id="prompt-lists" class="status_prompt promptStub"></p>
 
 
-<section id="at_counter_style">
-<h4>Lack of support for @counter-style</h4>
-    <p>
-        <code>@counter-style</code> is only supported in Firefox...
-    </p>
-
-</section>
+<div id="insert-lists"></div>
 </section>
 
 
 
-<section id="initials" class="advanced">
+<section id="initials" class="tbd">
 <h3>Styling initials</h3>
 <p id="prompt-initials" class="status_prompt promptStub"></p>
 
 
-<!--section id="xxxxxx">
-<h4>xxxxxx</h4>
-<p></p>
-</section-->
+<div id="insert-initials"></div>
 </section>
 
 
@@ -467,55 +371,43 @@
 <section id="h_pages">
 <h2>Page &amp; book layout</h2>
 
-<section id="page_layout" class="tbd">
+<section id="page_layout" class="ok">
 <h3>General page layout &amp; progression</h3>
 <p id="prompt-page_layout" class="status_prompt promptStub"></p>
 
 
-<!--section id="xxxxxx">
-<h4>xxxxxx</h4>
-<p></p>
-</section-->
+<div id="insert-page-layout"></div>
 </section>
 
 
 
-<section id="footnotes_etc" class="advanced">
+<section id="footnotes_etc" class="ok">
 <h3>Footnotes, endnotes, etc.</h3>
 <p id="prompt-footnotes_etc" class="status_prompt promptStub"></p>
 
 
-<!--section id="xxxxxx">
-<h4>xxxxxx</h4>
-<p></p>
-</section-->
+<div id="insert-footnotes_etc"></div>
 </section>
 
 
 
-<section id="headers_footers" class="tbd">
+<section id="headers_footers" class="ok">
 <h3>Page headers, footers, etc.</h3>
 <p id="prompt-headers_footers" class="status_prompt promptStub"></p>
 
 
 
-<!--section id="xxxxxx">
-<h4>xxxxxx</h4>
-<p></p>
-</section-->
+<div id="insert-headers_footers"></div>
 </section>
 
 
 
-<section id="interaction" class="tbd">
+<section id="interaction" class="ok">
 <h3>Forms &amp; user interaction</h3>
 <p id="prompt-interaction" class="status_prompt promptStub"></p>
 
 
-<!--section id="xxxxxx">
-<h4>xxxxxx</h4>
-<p></p>
-</section-->
+<div id="insert-interaction"></div>
 </section>
 
 
@@ -542,7 +434,7 @@
     <p class="status_prompt">Sometimes a script or language does things that are not common outside of its sphere of influence. This is a loose bag of additional items that weren't previously mentioned. This section may also be relevant for observations related to locale formats (such as number, date, currency, format support).</p>
 
 
-    <p></p>
+<div id="insert-culturespecific"></div>
     </section>
 
 
@@ -552,7 +444,7 @@
     <p class="status_prompt">There are many other CSS modules which may need review for script-specific requirements, not to mention the SVG, HTML, Speech, MathML and other specifications. What else is likely to cause problems for worldwide deployment of the Web, and what requirements need to be addressed to make the Web function well locally?</p>
 
 
-    <p></p>
+<div id="insert-other"></div>
     </section>
     
 </section>
@@ -564,65 +456,14 @@
 <summary style="margin-top:4em; cursor: pointer;">Show summary</summary>
 <pre id="summaryPlaceholder" style="white-space: pre-wrap;"></pre>
 </details>
+
+
+
+
 <script>
-var out = ''
-for (let i=0;i<respecConfig.langs.length;i++) {
-    out += '{lang: "'+respecConfig.langs[i]+'"'
-    out += ', url:"'+respecConfig.gapDocPath+'"'
-    out += ', tentative:' + true
-    out += ', vertical_text:"'+document.getElementById('vertical_text').className+'"'
-    out += ', bidi_text:"'+document.getElementById('bidi_text').className+'"'
-
-    out += ', charset:"'+document.getElementById('charset').className+'"'   
-    out += ', fonts:"'+document.getElementById('fonts').className+'"'
-    out += ', font_style:"'+document.getElementById('font_style').className+'"'
-    out += ', glyphs:"'+document.getElementById('glyphs').className+'"'
-    out += ', cursive:"'+document.getElementById('cursive').className+'"'
-    out += ', transforms:"'+document.getElementById('transforms').className+'"'
-    out += ', baselines:"'+document.getElementById('baselines').className+'"'
-    out += ', segmentation:"'+document.getElementById('segmentation').className+'"'
-    out += ', punctuation_etc:"'+document.getElementById('punctuation_etc').className+'"'
-    out += ', text_decoration:"'+document.getElementById('text_decoration').className+'"'
-    out += ', quotations:"'+document.getElementById('quotations').className+'"'
-    out += ', inline_notes:"'+document.getElementById('inline_notes').className+'"'
-    out += ', data_formats:"'+document.getElementById('data_formats').className+'"'
-
-    out += ', line_breaking:"'+document.getElementById('line_breaking').className+'"'
-    out += ', hyphenation:"'+document.getElementById('hyphenation').className+'"'
-    out += ', justification:"'+document.getElementById('justification').className+'"'
-    out += ', spacing:"'+document.getElementById('spacing').className+'"'
-    out += ', lists:"'+document.getElementById('lists').className+'"'
-    out += ', initials:"'+document.getElementById('initials').className+'"'
-
-    out += ', page_layout:"'+document.getElementById('page_layout').className+'"'
-    out += ', footnotes_etc:"'+document.getElementById('footnotes_etc').className+'"'
-    out += ', headers_footers:"'+document.getElementById('headers_footers').className+'"'
-    out += ', interaction:"'+document.getElementById('interaction').className+'"'
-    out += '},\n'
-
-    out = out.replace(/tbd/g,'')
-    out = out.replace(/broken/g,'0')
-    out = out.replace(/ok/g,'3')
-    out = out.replace(/advanced/g,'2')
-    out = out.replace(/basic/g,'1')
-    out = out.replace(/"na/g,'"-')
-    }
-document.getElementById('summaryPlaceholder').textContent = out
-
-var temp = document.querySelectorAll('section')
-for (let x=0;x<temp.length;x++) {
-    console.log(temp[x].id)
-    }
-
-
-
-
-
-
-
+setUpSummary()
 addPrompts() 
-
-
+getAllData('clreq','doc:clreq')
 </script>
 
 

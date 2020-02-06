@@ -2,12 +2,14 @@
 
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+<meta charset="utf-8">
 
-  <title>Chinese Layout Gap Analysis</title>
-  <script src="https://www.w3.org/Tools/respec/respec-w3c-common" async="" class="remove" type="text/javascript">
+<title>Chinese Layout Gap Analysis</title>
+<script src="../../i18n-activity/textlayout/resources/gap-analysis-github.js"> </script>
+
+<script src="https://www.w3.org/Tools/respec/respec-w3c-common" async="" class="remove">
 </script>
-  <script class="remove" type="text/javascript">
+  <script class="remove">
   var respecConfig = {
       // specification status (e.g. WD, LCWD, WG-NOTE, etc.). If in doubt use ED.
       specStatus:           "ED",
@@ -32,7 +34,7 @@
 
       wg:           "Internationalization Working Group",
       wgURI:        "https://www.w3.org/International/core/",
-      wgPublicList: "public-i18n-cjk",
+	  
 
       github: "w3c/clreq",
 
@@ -52,7 +54,8 @@
       // !!!! IMPORTANT !!!! MAKE THE ABOVE BLINK IN YOUR HEAD
     };
   </script>
-  <link rel="stylesheet" href="https://w3c.github.io/typography/gap-analysis/gapanalysis.css" type="text/css">
+<script src="/i18n-activity/templates/gap-analysis/prompts.js"> </script>
+<link rel="stylesheet" href="https://w3c.github.io/typography/gap-analysis/gapanalysis.css">
 </head>
 
 <body>
@@ -62,38 +65,29 @@
 
   <div id="sotd">
     <p>This document describes and prioritises gaps for the support of Simplified and Traditional Chinese on the Web and in eBooks. In particular, it is concerned with text layout. It checks that needed features are supported in W3C specifications, in particular HTML and CSS and those relating to digital publications. It also checks whether the features have been implemented in browsers and ereaders. This document complements the document <a href="https://w3c.github.io/clreq/">Requirements for Chinese Text Layout</a>, which describes the requirements for areas where gaps appear. It is linked to from the <a href="https://w3c.github.io/typography/gap-analysis/language-matrix.html">language matrix</a> that tracks Web support for many languages.</p>
-
-    <p>The editor's draft of this document is being developed by the <a href="https://w3c.github.io/clreq/">Chinese Layout Task Force</a>, part of the W3C <a href="https://www.w3.org/International/ig/">Internationalization Interest Group</a>. It is published by the <a href="https://www.w3.org/International/core/">Internationalization Working Group</a>. The end target for this document is a Working Group Note.</p>
-
-    <div class="note">
-      <p data-lang="en" style="font-weight: bold; font-size: 120%">Sending comments on this document</p>
-
-      <p data-lang="en">If you wish to make comments regarding this document, please raise them as <a href="https://github.com/w3c/clreq/issues" style="font-size: 120%;">github issues</a>. Only send comments by email if you are unable to raise issues on github (see links below). All comments are welcome.</p>
-
-      <p data-lang="en">To make it easier to track comments, please raise separate issues or emails for each comment, and point to the section you are commenting on using a URL.</p>
-    </div>
-  </div>
+<p>The editor's draft of this document is being developed by the <a href="https://w3c.github.io/clreq/">Chinese Layout Task Force</a>, part of the W3C <a href="https://www.w3.org/International/ig/">Internationalization Interest Group</a>. It is published by the <a href="https://www.w3.org/International/core/">Internationalization Working Group</a>. The end target for this document is a Working Group Note.</p>
+</div>
 
   <section id="h_introduction">
     <h2>Introduction</h2>
-
-    <p>The W3C needs to make sure that the text layout and typographic needs of scripts and languages around the world are built in to technologies such as HTML, CSS, SVG, etc. so that Web pages and eBooks can look and behave as people expect around the world.</p>
-
-  <p>This page documents issues for a given script or language in terms of support by specifications or user agents (browsers, e-readers, etc.). </p>
-<p>A summary of this report and others can be found as part of the <a href="https://w3c.github.io/typography/gap-analysis/language-matrix.html">language matrix</a>.</p>
-<p><span style="font-weight:bold; font-size: 140%;">This version of the document is a preliminary analysis</span>.</p>
-
+    <p>The W3C needs to make sure that the  needs of scripts and languages around the world are built in to technologies such as HTML, CSS, SVG, etc. so that Web pages and eBooks can look and behave as people expect around the world.</p>
+<p>This page documents difficulties people encounter when trying to use the Chinese languagein both Simplified and Traditional scripts on the Web. </p>
+<p>Having identified an issue, it investigates the current status with regards to web specifications and implementations by user agents (browsers, e-readers, etc.), and attempts to prioritise the severity of the issue for web users.  </p>
+<p>A summary of this report and others can be found as part of the <a href="https://w3c.github.io/typography/gap-analysis/language-matrix.html" style="font-size: 140%;">language matrix</a>.</p>
+    
     <section id="workflow">
     <h3>Work flow</h3>
-    <p>Gap analysis work usually starts with a <strong>preliminary analysis</strong>, conducted quickly by one or a small group of experts. Then a more <strong>detailed analysis</strong> is carried out, involving a wider range of experts. The detailed analysis may involve the development of tests, in order to illustrate issues and track results for browsers. The next phase is <strong>ongoing maintenance</strong>. It is expected that the resulting document will not be frozen: as gaps are fixed, this should be noted in the document. It is also possible that new gaps are noticed or arise, and they can be added to this document when that happens.</p>
+    <p><span style="font-weight:bold; font-size: 140%;">This version of the document is a preliminary analysis</span></p>
 
+    <p>Gap analysis work usually starts with a <strong>preliminary analysis</strong>, conducted quickly by one or a small group of experts. Then a more <strong>detailed analysis</strong> is carried out, involving a wider range of experts. The detailed analysis may involve the development of tests, in order to illustrate issues and track results for browsers. The next phase is <strong>ongoing maintenance</strong>. It is expected that the resulting document will not be frozen: as gaps are fixed, this should be noted in the document. It is also possible that new gaps are noticed or arise, and they can be added to this document when that happens.</p>
+    
     <p>As the gap analysis develops, the requirements for features that are problematic should be described in the companion document, <a href="https://w3c.github.io/clreq/">Requirements for Chinese Text Layout</a>. Links to the appropriate part of that document should be added to this document as the material is created. Note that the requirements document should not contain any technology-specific information: all of that belongs here.</p>
     </section>
-
+    
     <section id="prioritization">
     <h3>Prioritization</h3>
     <p>This document not only describes gaps, it also attempts to prioritise them in terms of the impact on the local user. The prioritisation is indicated by colour.</p>
-
+        
         <p>Key:</p>
   <ul style="list-style-type: none;">
         <li class="ok"></li>
@@ -103,195 +97,186 @@
         <li class="broken"></li>
         <li class="tbd"></li>
         </ul>
-
+    
     <p>It is important to note that these colours do not indicate to what extent a particular features is broken. They indicate the impact of a broken or missing feature on the content author or end user.</p>
     <p>Basic styling is the level that would be generally accepted as sufficient for most Web pages. Advanced level support would include additional features one might expect to include in ebooks or other advanced typographic formats. There may be features of a script or language that are not supported on the Web, but that are not generally regarded as necessary (usually archaic or obscure features). In this case, the feature can be described here, but the status should be marked as OK.</p>
     <p>The decision as to what priority level is assigned to a described gap is down to the experts doing the gap analysis. It may not always be straightforward to decide. If a given section in this document refers to more than one feature that is broken, each with different impacts on Web users, the priority for the section should be the lowest denominator.</p>
     <p>A cell can be scored as OK if the feature in question is specified in an appropriate specification, and is supported by user agents. A specification that is in CR or later and has two implementations in 'major' browsers will count. This means that the feature may not be supported in all browsers yet. (At some point in the future we may try to distinguish, visually, whether support is available in a specification but still pending in major browsers or applications.) </p>
     </section>
 </section>
-
-
-
+    
+    
+    
 
 
 <section id="direction">
-    <h2>Text direction</h2>
+<h2>Text direction</h2>
 <p>See also General page layout &amp; progression for features such as column layout, page turning direction, etc. that are affected by text direction.</p>
 
-<section id="vertical" class="advanced">
+
+<section id="vertical_text" class="tbd">
 <h3>Vertical text</h3>
-    <p class="status_prompt">Are the script requirements for vertically oriented text met?  What about if you mix vertical text with scripts that are normally only horizontal? Do you need a switch to use different characters in vertical vs. horizontal text? Does the browser support short runs of horizontal text in vertical lines (tate-chu-yoko in Japanese) as expected? Is the orientation of characters and the directional ordering of characters supported as needed? <a href="https://w3c.github.io/typography/index#vertical_text">See available information</a> or <a href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20is%3Aopen%20label%3Avertical-text%20label%3Atype-info-request">check for currently needed data</a>.</p>
+<p id="prompt-vertical_text" class="status_prompt promptStub"></p>
 
-
-
-    <p></p>
+<div id="insert-vertical_text"></div>
 </section>
 
 
 
 
-<section id="bidi" class="na">
-    <h3>Bidirectional text</h3>
-    <p class="status_prompt">If this script runs right-to-left, are there any issues when handling that? Is bidirectional text adequately supported? What about numbers and expressions? Do the Unicode bidi controls and HTML markup provide the support needed? Is isolation of directional runs problematic? <a href="https://w3c.github.io/typography/index#bidirectional_text_direction">See available information</a> or <a href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20is%3Aopen%20label%3Abidi%20label%3Atype-info-request">check for currently needed data</a>.</p>
+<section id="bidi_text" class="na">
+<h3>Bidirectional text</h3>
+<p id="prompt-bidi_text" class="status_prompt promptStub"></p>
 
+<div id="insert-bidi_text"></div>
 
-    <p></p>
 </section>
 </section>
-
 
 
 
 
 <section id="h_characters_and_phrases">
 <h2>Characters and phrases</h2>
+    
+    
+    
+<section id="charset" class="ok">
+<h3>Characters &amp; encoding</h3>
+<p id="prompt-charset" class="status_prompt promptStub"></p>
 
-
-
-<section id="encoding" class="ok">
-    <h3>Characters &amp; encoding</h3>
-    <p class="status_prompt">Are there any character repertoire issues preventing use of this script on the Web? Do variation selectors need attention? Are there any other encoding-related issues?</p>
-
-    <p></p>
-    </section>
-
-
-
-<section id="fonts" class="advanced">
-    <h3>Fonts</h3>
-    <p class="status_prompt">Do the standard fallback fonts used in browsers (eg. serif, sans-serif, cursive, etc.) match expectations? Are special font or OpenType features needed for this script that are not available?  <a href="https://w3c.github.io/typography/index#font-style">See available information</a> or <a href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20is%3Aopen%20label%3Afont-style%20label%3Atype-info-request">check for currently needed data</a>.</p>
-
-    <p>
-        Font matching/fallback for variation sequences is <a href="https://github.com/w3c/csswg-drafts/issues/1710">not implemented correctly</a>.
-    </p>
+<div id="insert-charset"></div>
 </section>
 
 
 
-<section id="fontstyle" class="na">
-    <h3>Font  styles, weight, etc</h3>
-    <p id="fontstylePrompt" class="status_prompt"> This covers ways of modifying the glyphs, such as for italicisation, bolding, oblique, etc. Do italic fonts lean in the right direction? Is synthesised italicisation problematic? Are there other problems relating to bolding or italicisation - perhaps relating to generalised assumptions of applicability? <a href="https://w3c.github.io/typography/index#font-style">See available information</a> or <a href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20is%3Aopen%20label%3Afont-style%20label%3Atype-info-request">check for currently needed data</a>.</p>
+<section id="fonts" class="tbd">
+<h3>Fonts</h3>
+<p id="prompt-fonts" class="status_prompt promptStub"></p>
 
 
-    <p></p>
-    </section>
+<div id="insert-fonts"></div>
+</section>
+
+
+
+<section id="font_style" class="ok">
+<h3>Font  styles, weight, etc</h3>
+<p id="prompt-font_style" class="status_prompt promptStub"></p>
+
+
+<div id="insert-font_style"></div>
+</section>
 
 
 
 <section id="glyphs" class="na">
-    <h3>Glyph shaping and positioning</h3>
-    <p class="status_prompt">Does the script in question require additional user control features to support alterations to the position or shape of glyphs, for example adjusting the distance between the base text and diacritics, or changing the glyphs used in a systematic way? Do you need to be able to compose/decompose conjuncts, or show characters that are otherwise hidden, etc? <a href="../index#glyphs_diacritics">See available information</a> or <a href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20is%3Aopen%20label%3Aglyphs-diacritics%20label%3Atype-info-request">check for currently needed data</a>.</p>
+<h3>Glyph shaping and positioning</h3>
+<p id="prompt-glyphs" class="status_prompt promptStub"></p>
 
 
-
-    <p></p>
-    </section>
+<div id="insert-glyphs"></div>
+</section>
 
 
 
 <section id="cursive" class="na">
-    <h3>Cursive text</h3>
-    <p class="status_prompt"> If this script is cursive (eg. Arabic, N'Ko, Syriac, etc), are there problems or needed features related to the handling of cursive text? Do cursive links break if parts of a word are marked up or styled? Do Unicode joiner and non-joiner characters behave as expected?   <a href="https://w3c.github.io/typography/index#cursive">See available information</a> or <a href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20is%3Aopen%20label%3Acursive%20label%3Atype-info-request">check for currently needed data</a>.</p>
+<h3>Cursive text</h3>
+<p id="prompt-cursive" class="status_prompt promptStub"></p>
 
 
-    <p></p>
-    </section>
+<div id="insert-cursive"></div>
+</section>
+
+
+
+<section id="baselines" class="na">
+<h3>Baselines, line-height, etc</h3>
+<p id="prompt-baselines" class="status_prompt promptStub"></p>
+
+
+<div id="insert-baselines"></div>
+</section>
+
 
 
 
 <section id="transforms" class="na">
-    <h3>Transforming characters</h3>
-    <p class="status_prompt">Does your script need special text transforms that are not supported? Does your script convert letters to uppercase, capitalised and lowercase alternatives according to your typographic needs? Do you need to to convert between half-width and full-width presentation forms? <a href="https://w3c.github.io/typography/index#transforming_characters">See available information</a> or <a href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20is%3Aopen%20label%3Atext-transform%20label%3Atype-info-request">check for currently needed data</a>.</p>
+<h3>Transforming characters</h3>
+<p id="prompt-transforms" class="status_prompt promptStub"></p>
 
-    <p></p>
+
+<div id="insert-transforms"></div>
 </section>
 
 
 
 
-<section id="boundaries" class="ok">
-    <h3>Text segmentation &amp; selection</h3>
-    <p class="status_prompt">This is about how text is divided into graphemes, words, sentences, etc., and behaviour associated with that. Do Unicode grapheme clusters appropriately segment character units for your script? When you double- or triple-click on the text, is the expected range of characters highlighted? When you move through the text with the cursor, or backspace, etc. do you see the expected behaviour?  (Some of the answers to these questions may be picker up in other sections, such as line-breaking, or initial-letter styling.)   <a href="https://w3c.github.io/typography/index#graphemes">See available information</a>  or <a href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20is%3Aopen%20label%3Aboundaries%20label%3Atype-info-request">check for currently needed data</a>.</p>
+<section id="segmentation" class="ok">
+<h3>Grapheme/word segmentation &amp; selection</h3>
+<p id="prompt-segmentation" class="status_prompt promptStub"></p>
 
 
-    <p></p>
-    </section>
+<div id="insert-segmentation"></div>
+</section>
+ 
 
 
-
-<section id="textdecor" class="advanced">
-    <h3>Text decoration</h3>
-    <p class="status_prompt">This is about  ways of marking text (see also specific sections dedicated to quotations and inline notes/annotations). Is it possible to express emphasis or highlight content as expected? Bold, italic and under-/over-lines are not always appropriate, and some scripts have their own unique ways of doing things, that are not in the Western tradition at all. Text delimiters mark certain items or sections off from the main text, such as book names in Chinese, quotations, head markers in Tibetan, etc, and often involve the use of punctuation. Is there any behaviour that isn't well supported, such as overlines for numeric digits in Syriac?    Are there issues about the positioning or use of underlines? Some aspects related to the drawing of lines alongside or through text involve local typographic considerations. Do underlines need to be broken in special ways for this script? Do you need support for additional line shapes or widths? Does the distance or position of the lines relative to the text need to vary in ways that are not achievable? Are lines correctly drawn relative to vertical text?  <a href="https://w3c.github.io/typography/index#text_decoration">See available information</a> or <a href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20is%3Aopen%20label%3Atext-decoration%20label%3Atype-info-request">check for currently needed data</a>.</p>
+<section id="punctuation_etc" class="tbd">
+<h3>Inline features &amp; punctuation</h3><p id="prompt-punctuation_etc" class="status_prompt promptStub"></p>
 
 
-    <p>Punctuations are not skipped by default for emphasis marks.</p>
-    <p>Chrome, Firefox, and Safari support emphasis dots. However, in Chrome the text emphasis properties needs to be prefixed by <code>-webkit-</code>.
-    </p>
+<div id="insert-punctuation_etc"></div>
+</section>
+   
+    
+    
+<section id="text_decoration" class="tbd">
+<h3>Text decoration</h3>
+<p id="prompt-text_decoration" class="status_prompt promptStub"></p>
+
+
+<div id="insert-text_decoration"></div>
 </section>
 
 
 
-<section id="quotations" class="advanced">
-    <h3>Quotations</h3>
-    <p class="status_prompt">Are there any issues when dealing with quotations marks, especially when nested? Should block quotes be indented or handled specially? <a href="https://w3c.github.io/typography/index#quotations">See available information</a> or <a href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20is%3Aopen%20label%3Aquotations%20label%3Atype-info-request">check for currently needed data</a>.</p>
+<section id="quotations" class="tbd">
+<h3>Quotations</h3>
+<p id="prompt-quotations" class="status_prompt promptStub"></p>
+	
+	
+<div id="insert-quotations"></div>
+</section>
 
 
-    <section id="q_defaults">
-    <h4><a href="#q_defaults">Default quotation marks for q element</a></h4>
-    <p>If the <code class="kw" translate="no">html</code> tag sets the language of a page, the HTML specification says that  the <code class="kw" translate="no">q</code> element should by default produce quotation marks according to the information in CLDR for that language.</p>
-    <p>For Traditional Chinese, according to CLDR the default quote marks should be 「...」, and embedded quote marks 『...』; for Simplified Chinese, according to CLDR the default quote marks should be “...”, and embedded quote marks ‘...’. Some browsers don't change default quote marks based on language setting. See <a href="https://w3c.github.io/i18n-tests/results/the-q-element.html#language">tests and results</a>.</p>
-    </section>
+<section id="inline_notes" class="tbd">
+<h3>Inline notes &amp; annotations</h3>
+<p id="prompt-inline_notes" class="status_prompt promptStub"></p>
 
 
-    <section id="q_section">
-    <h4><a href="#q_section">Default quotation marks in a new language section</a></h4>
-    <p>In addition, the default quotation marks for the <code class="kw" translate="no">q</code> element  are not set to the appropriate characters by the browser  when the element appears inside a Chinese section of a page that has a different overall language. This is currently per the HTML specification (both W3C and WHATWG).  There is <a href="https://github.com/whatwg/html/issues/3636">an issue</a> raised against the WHATWG version for this to be changed.</p>
-    </section>
-
-    <section id="q_multilingual">
-        <h4><a href="#q_multilingual">Embedded quotations in a different language</a></h4>
-        <p>Chinese quotes embedded in text in another language can also be problematic if the outer language uses different quotation marks. This is due to the browsers choosing default quotation marks based on the language of the <em>quotation</em>, rather than that of the surrounding text. See <a href="https://w3c.github.io/i18n-tests/results/the-q-element.html#ml_nesting">a test</a>. This behaviour is specified in the WHATWG version of the HTML spec, but no longer in the W3C version. There is <a href="https://github.com/whatwg/html/issues/3636">an issue</a> raised against the WHATWG version for this to be changed.</p>
-    </section>
-
-    <p>Marking all the above as advanced, because use of the <code class="kw" translate="no">q</code> element is optional (quote characters can be used instead), and it can be styled using CSS for the general case.</p>
+<div id="insert-inline_notes"></div>
 </section>
 
 
 
-<section id="inlinenotes" class="advanced">
-    <h3>Inline notes &amp; annotations</h3>
-    <p class="status_prompt">The ruby spec currently specifies an initial subset of requirements for fine-tuning the typography of phonetic and semantic annotations of East Asian text, including furigana, pinyin and zhuyin fuhao systems.  Is is adequate for what it sets out to do?  What other controls will be needed in the future? What about other types of inline annotation, such as warichu? (For referent-type notes such as footnotes, see below.) <a href="https://w3c.github.io/typography/index#ruby_annotation">See available information</a> or <a href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20is%3Aopen%20label%3Aruby%20label%3Atype-info-request">check for currently needed data</a>.</p>
+<section id="data_formats" class="ok">
+<h3>Data formats &amp; numbers</h3>
+<p id="prompt-data_formats" class="status_prompt promptStub"></p>
 
 
-    <p>
-        Bopomofo ruby is not supported.
-    </p>
-    <p>
-        There are difficulties in selecting ruby text in <a href="https://github.com/w3c/i18n-issues/issues/3">some browsers</a>.
-    </p>
-    <p>Support needed for <a href="https://www.w3.org/TR/jlreq/#inline_cutting_note">Inline Cutting Note (Warichu)</a>.</p>
-    </section>
+<div id="insert-data_formats"></div>
+</section>
 
 
 
-<section id="numbers" class="ok">
-    <h3>Numbers, dates, etc.</h3>
-    <p class="status_prompt">If  the script has its own set of number digits, are there any issues in how they are used? Does the script or language use special format patterns that are problematic (eg. 12,34,000 in India)? What about date/time formats and selection - and are non-Gregorian calendars needed?  Do percent signs and other symbols associated with number work correctly, and do numbers need special decorations, (like in Ethiopic or Syriac)? <a href="https://w3c.github.io/typography/index#numbers">See available information</a> or <a href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20is%3Aopen%20label%3Anumbers%20label%3Atype-info-request">check for currently needed data</a>.</p>
-
-
-    <p></p>
-    </section>
-
-
-
-<section id="otherinline" class="ok">
+<!--section id="otherinline" class="tbd">
     <h3>Other inline features</h3>
     <p class="status_prompt">Does the script have special ways of representing inline notes (such as  kumimoji in Japanese) or other inline features that need to be supported? <a href="https://w3c.github.io/typography/index#other_inline_features">See available information</a> or <a href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20is%3Aopen%20label%3Ainline-features%20label%3Atype-info-request">check for currently needed data</a>.</p>
 
 
     <p></p>
-    </section>
+    </section-->
 
 </section>
 
@@ -303,91 +288,77 @@
 <section id="h_lines_and_paragraphs">
 <h2>Lines and Paragraphs</h2>
 
+ 
+<section id="line_breaking" class="tbd">
+<h3>Line breaking</h3>
+<p id="prompt-line_breaking" class="status_prompt promptStub"></p>
 
-<section id="linebreak" class="advanced">
-    <h3>Line breaking</h3>
-    <p class="status_prompt">Does the browser capture the rules about the way text in your script wraps when it hits the end of a line? Does line-breaking wrap whole 'words' at a time, or characters, or something else (such as syllables in Tibetan and Javanese)?  What characters should not appear at the end or start of a line, and what should be done to prevent that? <a href="https://w3c.github.io/typography/index#line_breaking">See available information</a> or <a href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20is%3Aopen%20label%3Aline-break%20label%3Atype-info-request">check for currently needed data</a>.</p>
 
+<div id="insert-line_breaking"></div>
 
-    <p>
-        Browsers differ in how they handle line breaks for <code>IDEOGRAPHIC SPACE (U+3000)</code>.
-    </p>
-    <p>
-        <a href="https://www.unicode.org/reports/tr14/">UAX #14</a> doesn't make sense for quotation marks in Chinese: <a href="https://www.w3.org/2018/05/14-clreq-minutes.html#x02">https://www.w3.org/2018/05/14-clreq-minutes.html#x02</a>
-    </p>
+<p>See also <a href="#hyphenation">hyphenation</a> below. </p>
 </section>
 
 
 
-<section id="hyphenation" class="ok">
-    <h3>Hyphenation</h3>
-    <p class="status_prompt">Is hyphenation used for your script, or something else? If hyphenation is used, does it work as expected? (Note, this is about line-end hyphenation when text is wrapped, rather than use of the hyphen and related characters as punctuation marks.) <a href="https://w3c.github.io/typography/index#hyphenation">See available information</a> or <a href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20is%3Aopen%20label%3Ahyphenation%20label%3Atype-info-request">check for currently needed data</a>.</p>
+<section id="hyphenation" class="na">
+<h3>Hyphenation</h3>
+<p id="prompt-hyphenation" class="status_prompt promptStub"></p>
 
 
-    <p>Chinese characters don't use hyphenation, but pinyin might use it.</p>
+<div id="insert-hyphenation"></div>
 </section>
 
 
 
-<section id="justification" class="advanced">
-    <h3>Text alignment &amp; justification</h3>
-    <p class="status_prompt"> When text in a paragraph needs to have flush lines down both sides, does it follow the rules for your script? Does the script need assistance to conform to a grid pattern? Does your script allow punctuation to hang outside the text box at the start or end of a line? Where adjustments are need to make a line flush, how is that done? Do you shrink/stretch space between words and/or letters? Are word baselines stretched, as in Arabic? What about paragraph indents, or the need for logical alignment keywords, such as start/end, rather than left/right? <a href="https://w3c.github.io/typography/index#justification">See available information</a> or <a href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20is%3Aopen%20label%3Ajustification%20label%3Atype-info-request">check for currently needed data</a>.</p>
+<section id="justification" class="tbd">
+<h3>Text alignment &amp; justification</h3>
+<p id="prompt-justification" class="status_prompt promptStub"></p>
 
 
-    <p></p>
+<div id="insert-justification"></div>
 </section>
 
 
 
-<section id="spacing" class="advanced">
-    <h3>Word &amp; letter spacing</h3>
-    <p class="status_prompt">Some scripts create emphasis or other effects by spacing out the words, letters or syllables in a word. Are there requirements for this script/language that are unsupported? (For justification related spacing, see below.) See <a href="https://w3c.github.io/typography/index#letter_spacing">available information</a> or <a href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20is%3Aopen%20label%3Ainline-spacing%20label%3Atype-info-request">check for currently needed data</a>.</p>
+<section id="spacing" class="tbd">
+<h3>Letter spacing</h3>
+<p id="prompt-spacing" class="status_prompt promptStub"></p>
 
 
-    <p></p>
+
+<div id="insert-spacing"></div>
 </section>
 
 
 
-<section id="counters" class="advanced">
-    <h3>Counters, lists, etc.</h3>
-    <p class="status_prompt">The CSS Counter Styles specification describes a limited set of simple and complex styles for counters to be used in list numbering, chapter heading numbering, etc.The rules plus more counter styles (totalling around 120 for over 30 scripts) are listed in the document <a href="https://w3c.github.io/predefined-counter-styles/">Ready-made Counter Styles</a>. Do these cover your needs?  Are the details correct? Are there other aspects related to counters and lists that need to be addressed? <a href="https://w3c.github.io/typography/index#counters">See available information</a> or <a href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20is%3Aopen%20label%3Acounter-styles%20label%3Atype-info-request">check for currently needed data</a>.</p>
+<section id="lists" class="tbd">
+<h3>Lists, counters, etc.</h3>
+<p id="prompt-lists" class="status_prompt promptStub"></p>
 
 
-    <p>
-        <code>@counter-style</code> is only supported in Firefox...
-    </p>
+<div id="insert-lists"></div>
 </section>
 
 
 
-<section id="initialletter" class="advanced">
-    <h3>Styling initials</h3>
-    <p class="status_prompt">Does the browser or ereader correctly handle special styling of the initial letter of a line or paragraph, such as for drop caps or similar? How about  the size relationship between the large letter and the lines alongide? where does the large letter anchor relative to the lines alongside? is it normal to include initial quote marks in the large letter? is the large letter really a syllable? etc. Are all of these things working as expected? .<a href="https://w3c.github.io/typography/index#initial_letter">See available information</a> or <a href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20is%3Aopen%20label%3Ainitial-letter%20label%3Atype-info-request">check for currently needed data</a>.</p>
+<section id="initials" class="tbd">
+<h3>Styling initials</h3>
+<p id="prompt-initials" class="status_prompt promptStub"></p>
 
 
-    <p></p>
+<div id="insert-initials"></div>
 </section>
 
 
 
-<section id="baselines" class="advanced">
-    <h3>Baselines &amp; inline alignment</h3>
-    <p class="status_prompt">Does the browser support  requirements for baseline alignment between mixed scripts and in general? <a href="https://w3c.github.io/typography/index#baselines_inline_alignment">See available information</a> or <a href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20is%3Aopen%20label%3Abaselines%20label%3Atype-info-request">check for currently needed data</a>.</p>
-
-
-    <p></p>
-</section>
-
-
-
-<section id="otherpara" class="ok">
+<!--section id="otherpara" class="tbd">
     <h3>Other paragraph features</h3>
-    <p class="status_prompt">In your script, is the first line of text typically indented at the start of a paragraph? Are there other features of paragraph design that are peculiar to your script? <a href="https://w3c.github.io/typography/index#other_para_features">See available information</a> or <a href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20is%3Aopen%20label%3Aparagraph-features%20label%3Atype-info-request">check for currently needed data</a>.</p>
+    <p class="status_prompt">IAre there other features of paragraph design that are peculiar to your script? <a href="https://w3c.github.io/typography/index#other_para_features">See available information</a> or <a href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20is%3Aopen%20label%3Aparagraph-features%20label%3Atype-info-request">check for currently needed data</a>.</p>
 
 
     <p></p>
-</section>
+</section-->
 
 </section>
 
@@ -400,53 +371,53 @@
 <section id="h_pages">
 <h2>Page &amp; book layout</h2>
 
-<section id="pagelayout" class="tbd">
-    <h3>General page layout &amp; progression</h3>
-    <p class="status_prompt">How are the main text area and ancilliary areas positioned and defined? Are there any special requirements here, such as dimensions in characters for the Japanese kihon hanmen? The book cover for scripts that are read right-to-left scripts is on the right of the spine, rather than the left. Is that provided for? When content can flow vertically and to the left or right, how do you specify the location of objects, text, etc. relative to the flow? For example, keywords 'left' and 'right' are likely to need to be reversed for pages written in English and page written in Arabic. Do tables and grid layouts work as expected? How do columns work in vertical text? Can you mix block of vertical and horizontal text correctly? Does text scroll in the expected direction? <a href="https://w3c.github.io/typography/index#direction_agnostic">See available information</a> or <a href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20is%3Aopen%20label%3Abidi%20label%3Atype-info-request">check for currently needed data</a>.</p>
+<section id="page_layout" class="tbd">
+<h3>General page layout &amp; progression</h3>
+<p id="prompt-page_layout" class="status_prompt promptStub"></p>
 
 
-    <p></p>
-    </section>
-
-
-
-<section id="notes" class="advanced">
-    <h3>Notes, footnotes, etc.</h3>
-    <p class="status_prompt">Does your script have special requirements for notes, footnotes, endnotes or other necessary annotations of this kind in the way needed for your culture? (There is a section above for purely inline annotations, such as ruby or warichu. This section is more about annotation systems that separate the reference marks and the content of the notes.) <a href="https://w3c.github.io/typography/index#notes_footnotes">See available information</a> or <a href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20is%3Aopen%20label%3Anotes-footnotes%20label%3Atype-info-request">check for currently needed data</a>.</p>
-
-
-    <p></p>
-    </section>
-
-
-
-<section id="pageheaders" class="tbd">
-    <h3>Page numbering, running headers, etc.</h3>
-    <p class="status_prompt">Are there special conventions for page numbering, or the way that running headers and the like are handled? <a href="https://w3c.github.io/typography/index#page_numbering_running_headers">See available information</a> or <a href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20is%3Aopen%20label%3Apage-numbering%20label%3Atype-info-request">check for currently needed data</a>.</p>
-
-
-    <p>Although there exist software that supports page numbers and running headers, none of the browsers do. Complex running headers (containing math, tables or other complex content) are not supported anywhere.</p>
-    </section>
-
-
-
-<section id="interaction" class="tbd">
-    <h3>Forms &amp; user interaction</h3>
-    <p class="status_prompt">Are vertical form controls well supported? In right-to-left scripts, is it possible to set the base direction for a form field? Is the scroll bar on the correct side? etc. <a href="https://w3c.github.io/typography/index#page_numbering_running_headers">See available information</a> or <a href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20is%3Aopen%20label%3Apage-numbering%20label%3Atype-info-request">check for currently needed data</a>.</p>
-
-
-    <p></p>
+<div id="insert-page-layout"></div>
 </section>
 
 
 
-<section id="morepage" class="ok">
+<section id="footnotes_etc" class="tbd">
+<h3>Footnotes, endnotes, etc.</h3>
+<p id="prompt-footnotes_etc" class="status_prompt promptStub"></p>
+
+
+<div id="insert-footnotes_etc"></div>
+</section>
+
+
+
+<section id="headers_footers" class="tbd">
+<h3>Page headers, footers, etc.</h3>
+<p id="prompt-headers_footers" class="status_prompt promptStub"></p>
+
+
+
+<div id="insert-headers_footers"></div>
+</section>
+
+
+
+<section id="interaction" class="tbd">
+<h3>Forms &amp; user interaction</h3>
+<p id="prompt-interaction" class="status_prompt promptStub"></p>
+
+
+<div id="insert-interaction"></div>
+</section>
+
+
+
+<!--section id="morepage" class="ok">
     <h3>Other page layout &amp; pagination features</h3>
-    <p class="status_prompt">Some cultures define text areas and page progression direction very differently from those in the West (eg. kihon hanmen in Japanese). Is this an issue for you? Are widows and orphans relevant? If pages progress RTL, are there issues for support with paged media? What about things such as cross-references, bookmarks, columns, printer marks,  tables of contents and indexes? <a href="https://w3c.github.io/typography/index#more_page_layout_and_pagination">See available information</a> or <a href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20is%3Aopen%20label%3Apagination%20label%3Atype-info-request">check for currently needed data</a>.</p>
 
 
     <p></p>
-    </section>
+    </section-->
 </section>
 
 
@@ -463,7 +434,7 @@
     <p class="status_prompt">Sometimes a script or language does things that are not common outside of its sphere of influence. This is a loose bag of additional items that weren't previously mentioned. This section may also be relevant for observations related to locale formats (such as number, date, currency, format support).</p>
 
 
-    <p></p>
+<div id="insert-culturespecific"></div>
     </section>
 
 
@@ -473,75 +444,31 @@
     <p class="status_prompt">There are many other CSS modules which may need review for script-specific requirements, not to mention the SVG, HTML, Speech, MathML and other specifications. What else is likely to cause problems for worldwide deployment of the Web, and what requirements need to be addressed to make the Web function well locally?</p>
 
 
-    <p></p>
+<div id="insert-other"></div>
     </section>
-
+    
 </section>
 
 
 
 
 <details>
-<summary style="margin-top:4em; cursor: pointer;">Show summary</summary>
+<summary style="margin-top:4em; cursor: pointer;" onClick="printSummary(false)">Show summary</summary>
 <pre id="summaryPlaceholder" style="white-space: pre-wrap;"></pre>
 </details>
+
+
+
+
 <script>
-var out = ''
-for (let i=0;i<respecConfig.langs.length;i++) {
-    out += '{lang: "'+respecConfig.langs[i]+'"'
-    out += ', url:"'+respecConfig.gapDocPath+'"'
-    out += ', tentative:' + true
-    out += ', vertical:"'+document.getElementById('vertical').className+'"'
-    out += ', bidi:"'+document.getElementById('bidi').className+'"'
-
-    out += ', encoding:"'+document.getElementById('encoding').className+'"'
-    out += ', fonts:"'+document.getElementById('fonts').className+'"'
-    out += ', fontstyle:"'+document.getElementById('fontstyle').className+'"'
-    out += ', glyphcontrol:"'+document.getElementById('glyphs').className+'"'
-    out += ', cursive:"'+document.getElementById('cursive').className+'"'
-    out += ', transforms:"'+document.getElementById('transforms').className+'"'
-    out += ', boundaries:"'+document.getElementById('boundaries').className+'"'
-    out += ', textdecor:"'+document.getElementById('textdecor').className+'"'
-    out += ', quotations:"'+document.getElementById('quotations').className+'"'
-    out += ', inlinenotes:"'+document.getElementById('inlinenotes').className+'"'
-    out += ', digits:"'+document.getElementById('numbers').className+'"'
-    out += ', otherinline:"'+document.getElementById('otherinline').className+'"'
-
-    out += ', linebreak:"'+document.getElementById('linebreak').className+'"'
-    out += ', hyphenation:"'+document.getElementById('hyphenation').className+'"'
-    out += ', justification:"'+document.getElementById('justification').className+'"'
-    out += ', spacing:"'+document.getElementById('spacing').className+'"'
-    out += ', counters:"'+document.getElementById('counters').className+'"'
-    out += ', initialletter:"'+document.getElementById('initialletter').className+'"'
-    out += ', baselines:"'+document.getElementById('baselines').className+'"'
-    out += ', otherpara:"'+document.getElementById('otherpara').className+'"'
-
-    out += ', pagelayout:"'+document.getElementById('pagelayout').className+'"'
-    out += ', notes:"'+document.getElementById('notes').className+'"'
-    out += ', pagehead:"'+document.getElementById('pageheaders').className+'"'
-    out += ', interaction:"'+document.getElementById('interaction').className+'"'
-    out += ', otherpage:"'+document.getElementById('morepage').className+'"'
-    out += '},\n'
-
-    out = out.replace(/tbd/g,'')
-    out = out.replace(/broken/g,'0')
-    out = out.replace(/ok/g,'3')
-    out = out.replace(/advanced/g,'2')
-    out = out.replace(/basic/g,'1')
-    out = out.replace(/"na/g,'"-')
-    }
-document.getElementById('summaryPlaceholder').textContent = out
-
-var temp = document.querySelectorAll('section')
-for (let x=0;x<temp.length;x++) {
-    console.log(temp[x].id)
-    }
+setUpSummary()
+addPrompts() 
+getAllData('clreq','doc:clreq')
 </script>
 
 
 
-
-<section class="appendix" id="acknowledgements">
+<!--section class="appendix" id="acknowledgements">
 <h2>Acknowledgements</h2>
 
     <p>Special thanks to the following people who contributed to this document (contributors' names listed in in alphabetic order).</p>
@@ -549,6 +476,6 @@ for (let x=0;x<temp.length;x++) {
     <p class="acknowledgement">This Person, That Person, etc</p>
 
     <p data-lang="en">Please find the latest info of the contributors at the <a href="https://github.com/w3c/hlreq/graphs/contributors">GitHub contributors list</a>.</p>
-  </section>
+  </section-->
 </body>
 </html>

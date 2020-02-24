@@ -15,8 +15,8 @@ For example:
 例如： 
 
 ```html
-<p data-lang="en">The same text in English.</p>
-<p data-lang="zh">此為漢語文本。</p>
+<p its-locale-filter-list="en">The same text in English.</p>
+<p its-locale-filter-list="zh">此為漢語文本。</p>
 ```
 
 If you are able to create text in both English and Chinese, please do so. If you are only able to create text in one language, still create the dual structure in markup, but put the same text in both places. Then add `class="translateme"` to the text that needs translation.
@@ -27,17 +27,41 @@ For example:
 例如：
 
 ```html
-<p data-lang="en" class="translateme">此為漢語文本。</p>
-<p data-lang="zh">此為漢語文本。</p>
+<p its-locale-filter-list="en" class="translateme">此為漢語文本。</p>
+<p its-locale-filter-list="zh">此為漢語文本。</p>
 ```
 
-If you change existing text, and if that change requires a change in the parallel translation but you are unable to do so, add `class="translateme"` to the text that needs to be updated.
+If you change existing text, and if that change requires a change in the parallel translation but you are unable to do so, add `class="retranslateme"` to the text that needs to be updated.
 
-如果您打算修正現有的内容，并且該内容的另一个语言版本需要同时更新翻译，请您更新翻译或添加`class="translateme"`類別，提醒其他志愿者翻译此段落。
+如果您打算修正現有的内容，并且該内容的另一个语言版本需要同时更新翻译，请您更新翻译或添加`class="retranslateme"`類別，提醒其他志愿者翻译此段落。
 
-When text highlighted by the `translateme` class is updated, and matches the recent changes in the other language, the class should be removed.
+For example:  
+例如：
 
-当標記為`translateme`類別的高亮文本已被翻译，并且这段翻译与最新修正內容匹配，请移除它的`translateme`類別。
+```html
+<p its-locale-filter-list="en" class="retranslateme">Text in English.</p>
+<p its-locale-filter-list="zh">此為更新後的漢語文本。</p>
+```
+
+If you need someone to check the translation you provided, add `class="checkme"` to the relevant tag.
+
+如果您需要其他人检查您提供的翻译，请在相关标签中添加`class="checkme"`類別。
+
+For example:  
+例如：
+
+```html
+<p its-locale-filter-list="en" class="checkme">Text in English.</p>
+<p its-locale-filter-list="zh">此為漢語文本。</p>
+```
+
+The class names listed above produce special colouring effects in the displayed document.
+
+上面列出的类所标记的元素在网页中会用特殊的颜色显示。
+
+When text highlighted by the `translateme`, `retranslateme`, or `checkme` class is updated to a final translation, the class should be removed.
+
+当标记为`translateme`、`retranslateme`或`checkme`的高亮文本更新为最终翻译时，请移除该类。
 
 ### Markup tips | 標記小提示 
 
@@ -49,14 +73,14 @@ Here are some tips on how to maintain the parallel language structure in markup.
 
     英文内容永遠置於中文内容前方。
 
-- List elements need `p` elements inside them。
+- List elements need `p` elements inside them, and link anchors must go on the `li` tag.
 
-    列表元素中，請使用`p`元素。
+    列表元素中，請使用`p`元素。链接锚点必须位于`li`标签上。
 
     ```html
-    <li>
-      <p data-lang="en" class="translateme">这是中国的文字。</p>
-      <p data-lang="zh">这是中国的文字。</p>
+    <li id="abcd">
+      <p its-locale-filter-list="en" class="translateme">这是中国的文字。</p>
+      <p its-locale-filter-list="zh">这是中国的文字。</p>
     </li>
     ```
 
@@ -66,8 +90,8 @@ Here are some tips on how to maintain the parallel language structure in markup.
 
     ```html
     <h2>
-      <span data-lang="en">My heading</span>
-      <span data-lang="zh">我的标题</span>
+      <span its-locale-filter-list="en">My heading</span>
+      <span its-locale-filter-list="zh">我的标题</span>
     </h2>
     ```
 
@@ -78,8 +102,8 @@ Here are some tips on how to maintain the parallel language structure in markup.
     ```html
     <section id="h_my_heading">
       <h2>
-        <span data-lang="en">English heading</span>
-        <span data-lang="zh">漢語標題</span>
+        <span its-locale-filter-list="en">English heading</span>
+        <span its-locale-filter-list="zh">漢語標題</span>
       </h2>
       …
     ``` 
@@ -89,8 +113,8 @@ Here are some tips on how to maintain the parallel language structure in markup.
     在`dfn`元素里的屬性`id`应该以`xxdef`开始，`xx`隨語言的不同作`zh`或`en`。
 
     ```html
-    <p data-lang="en">The <dfn id="endef_term">term</dfn> is a technical word.</p>
-    <p data-lang="zh">这个<dfn id="zhdef_term">词汇</dfn>是一个技术用语。</p>
+    <p its-locale-filter-list="en">The <dfn id="endef_term">term</dfn> is a technical word.</p>
+    <p its-locale-filter-list="zh">这个<dfn id="zhdef_term">词汇</dfn>是一个技术用语。</p>
     ```
 
 - `figcaption`s should use `span`s for the different language versions.
@@ -102,8 +126,8 @@ Here are some tips on how to maintain the parallel language structure in markup.
       <!-- 圖表內容。 -->
       <!-- Figure content. -->
       <figcaption>
-        <span data-lang="en">English caption</span>
-        <span data-lang="zh">漢語說明</span>
+        <span its-locale-filter-list="en">English caption</span>
+        <span its-locale-filter-list="zh">漢語說明</span>
       </figcaption>
     </figure>
     ```
@@ -148,7 +172,7 @@ For additional ideas about markup and styling in Internationalization Activity d
 
     ```html
     Requirements for Chinese Text Layout 
-    <span data-lang="zh" lang="zh">中文排版需求</span>
+    <span its-locale-filter-list="zh" lang="zh">中文排版需求</span>
     ```
 
 2. Remove:

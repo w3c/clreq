@@ -31,15 +31,23 @@ For example:
 <p its-locale-filter-list="zh">此為漢語文本。</p>
 ```
 
-If you change existing text, and if that change requires a change in the parallel translation but you are unable to do so, add `class="translateme"` to the text that needs to be updated.
+If you change existing text, and if that change requires a change in the parallel translation but you are unable to do so, add `class="retranslateme"` to the text that needs to be updated.
 
-如果您打算修正現有的内容，并且該内容的另一个语言版本需要同时更新翻译，请您更新翻译或添加`class="translateme"`類別，提醒其他志愿者翻译此段落。
+如果您打算修正現有的内容，并且該内容的另一个语言版本需要同时更新翻译，请您更新翻译或添加`class="retranslateme"`類別，提醒其他志愿者翻译此段落。
+
+For example:  
+例如：
+
+```html
+<p its-locale-filter-list="en" class="retranslateme">Text in English.</p>
+<p its-locale-filter-list="zh">此為更新後的漢語文本。</p>
+```
 
 If you need someone to check the translation you provided, add `class="checkme"` to the relevant tag.
 
 如果您需要其他人检查您提供的翻译，请在相关标签中添加`class="checkme"`類別。
 
-For example:
+For example:  
 例如：
 
 ```html
@@ -51,9 +59,9 @@ The class names listed above produce special colouring effects in the displayed 
 
 上面列出的类所标记的元素在网页中会用特殊的颜色显示。
 
-When text highlighted by the `translateme` or `checkme` class is updated to a final translation, the class should be removed.
+When text highlighted by the `translateme`, `retranslateme`, or `checkme` class is updated to a final translation, the class should be removed.
 
-当标记为`translateme`或`checkme`的高亮文本更新为最终翻译时，请移除该类。
+当标记为`translateme`、`retranslateme`或`checkme`的高亮文本更新为最终翻译时，请移除该类。
 
 ### Markup tips | 標記小提示 
 

@@ -1628,27 +1628,113 @@ var respecConfig = {
       <p its-locale-filter-list="en" lang="en"> In order to maintain a smooth reading experience and consistency of style, there are certain constraints for the positioning of most punctuation marks. In most cases, according to its function, a punctuation mark is prohibited from appearing at the line start or line end. This rule was first implemented during the time of letterpress printing. In Mainland China, the national standard <cite>General Rules for Punctuation</cite> (GB/T 15834–2011) sets clear rules about the positioning of punctuation marks. In Taiwan and Hong Kong, there is not yet a standard for the usage and positioning of punctuation marks, but most of the publications apply the rules described in this document.</p>
       <p its-locale-filter-list="zh-hans" lang="zh-hans">为了保持阅读顺畅、体例一致，多数标点符号的位置有限制，通常一个标点符号依其性质，禁止出现在行首或行尾。这项规则自活字排版时代开始通行。在中国大陆，《标点符号用法》（GB/T 15834–2011）规定了简体中文标点在行间的位置；在港台，虽没有相应的规范，但多数出版品皆按照此处所述规则对标点符号进行配置。</p>
       <p its-locale-filter-list="zh-hant" lang="zh-hant">為了保持閱讀順暢、體例一致，多數標點符號的位置有其限制，通常一個標點符號依其性質，禁止出現在一行之首或之末。這項規則自活字排版時代開始通行。在中國大陸，《標點符號用法》（GB/T 15834–2011）規定了簡體中文標點在行間的位置；在港台，雖未有相應的規範，但多數出版品皆以此處所述規則對標點符號進行配置。</p>
-      <div class="note" id="n031">
-        <p its-locale-filter-list="en" lang="en"> In Taiwan and Hong Kong, there is no strict rule indicating that a punctuation mark must not appear at the line start. In the time of letterpress printing, there were quite a few publications which ignored the prohibition rules for punctuation marks.</p>
-        <p its-locale-filter-list="zh-hans" lang="zh-hans">港台的一些排版风格并不禁止标点符号出现在行首，在活字排版时代，完全不处理标点禁则的出版品也相当多见。</p>
-        <p its-locale-filter-list="zh-hant" lang="zh-hant">港台的一些排版風格並不禁止標點符號出現於行首，於活字排版時代，完全不處理標點禁則的出版品也相當多見。</p>
-      </div>
-      <div class="note" id="n032">
-        <p its-locale-filter-list="en" lang="en">In publications in Taiwan and Hong Kong like newspapers and magazines, columns are often used in the layout, which leads to fewer characters in each line, and prohibition rules of punctuation marks are sometimes ignored under these circumstances.</p>
-        <p its-locale-filter-list="zh-hans" lang="zh-hans">港台出版品中，报纸、杂志多采用分栏式排版，此时由于一行字数较少，也有完全不使用行首行尾禁则的作法。</p>
-        <p its-locale-filter-list="zh-hant" lang="zh-hant">港台出版品中，報紙、雜誌多採分欄式排版，此時由於一行字數較少，也有完全不使用行首行尾禁則的作法。</p>
-      </div>
+      <p its-locale-filter-list="en" lang="en">
+        There are four sets of line-breaking rules with different strictness:
+      </p>
+      <p its-locale-filter-list="zh-hans" lang="zh-hans">
+        具体地，可以分为四种级别：
+      </p>
+      <p its-locale-filter-list="zh-hant" lang="zh-hant">
+        具體地，可以分為四種級別：
+      </p>
+      <dl>
+        <dt id="prohibition-rules-none">
+          <span its-locale-filter-list="en" lang="en">none</span>
+          <span its-locale-filter-list="zh-hans" lang="zh-hans">不处理</span>
+          <span its-locale-filter-list="zh-hant" lang="zh-hant">不處理</span>
+        </dt>
+        <dd>
+          <p its-locale-filter-list="en" lang="en">
+            Ignore all prohibition against line breaks. Commonly used in newspapers in Taiwan and Hong Kong.
+          </p>
+          <p its-locale-filter-list="zh-hans" lang="zh-hans">
+            完全不处理行首行尾禁则。常见于台湾香港等地报刊。
+          </p>
+          <p its-locale-filter-list="zh-hant" lang="zh-hant" class="checkme">
+            完全不處理行首行尾禁則。常見於台灣香港等地報刊。
+          </p>
+        </dd>
+        <dt id="prohibition-rules-basic">
+          <span its-locale-filter-list="en" lang="en">basic</span>
+          <span its-locale-filter-list="zh-hans" lang="zh-hans">基本处理</span>
+          <span its-locale-filter-list="zh-hant" lang="zh-hant">基本處理</span>
+        </dt>
+        <dd>
+          <p its-locale-filter-list="en" lang="en">
+            Pause or stop punctuation marks (secondary commas, commas, semicolons, colons, periods, exclamation marks, and question marks), closing quotation marks, closing parentheses, closing angle brackets, connector marks, and interpuncts should not appear at the line start. Opening quotation marks, opening parentheses, and opening angle brackets should not appear at the line end. This is the most recommended method.
+          </p>
+          <p its-locale-filter-list="zh-hans" lang="zh-hans">
+            点号（顿号、逗号、句号、冒号、分号、叹号、问号）、结束引号、结束括号、结束乙式书名号（篇名号）、连接号、间隔号、分隔号不能出现在一行的开头。开始引号、开始括号、开始单双书名号等符号，不能出现在一行的结尾。这是最推荐的方法。
+          </p>
+          <p its-locale-filter-list="zh-hant" lang="zh-hant" class="checkme">
+            點號（頓號、逗號、句號、冒號、分號、嘆號、問號）、結束引號、結束括號、結束乙式書名號（篇名號）、連接號、間隔號、分隔號不能出現在一行的開頭。開始引號、開始括號、開始單雙書名號等符號，不能出現在一行的結尾。這是最推薦的方法。
+          </p>
+        </dd>
+        <dt id="prohibition-rules-guobiao">
+          <span its-locale-filter-list="en" lang="en"><abbr title="Guobiao standards">GB</abbr>-style</span>
+          <span its-locale-filter-list="zh-hans" lang="zh-hans">GB法</span>
+          <span its-locale-filter-list="zh-hant" lang="zh-hant">GB法</span>
+        </dt>
+        <dd>
+          <p its-locale-filter-list="en" lang="en">
+            The set of rules in <a href="#prohibition-rules-basic">basic</a>, and solidi should not appear at the line end.
+          </p>
+          <p its-locale-filter-list="zh-hans" lang="zh-hans">
+            在执行<a href="#prohibition-rules-basic">基本处理</a>的基础上增加规定分隔号也不能出现在一行的结尾。
+          </p>
+          <p its-locale-filter-list="zh-hant" lang="zh-hant" class="checkme">
+            在執行<a href="#prohibition-rules-basic">基本處理</a>的基礎上增加規定分隔號也不能出現在一行的結尾。
+          </p>
+        </dd>
+        <dt id="prohibition-rules-strict">
+          <span its-locale-filter-list="en" lang="en">strict</span>
+          <span its-locale-filter-list="zh-hans" lang="zh-hans">严格处理</span>
+          <span its-locale-filter-list="zh-hant" lang="zh-hant">嚴格處理</span>
+        </dt>
+        <dd>
+          <p its-locale-filter-list="en" lang="en">
+            The set of rules in <a href="#prohibition-rules-guobiao">GB-style</a>, and em dashes and horizontal ellipses should not appear at the line start.
+          </p>
+          <p its-locale-filter-list="zh-hans" lang="zh-hans">
+            在执行<a href="#prohibition-rules-guobiao">GB法</a>的基础上再增加规定破折号、省略号不能出现在一行的开头。
+          </p>
+          <p its-locale-filter-list="zh-hant" lang="zh-hant" class="checkme">
+            在執行<a href="#prohibition-rules-guobiao">GB法</a>的基礎上再增加規定破折號、省略號不能出現在一行的開頭。
+          </p>
+        </dd>
+      </dl>
+      <p its-locale-filter-list="en" lang="en">
+        Prior to processing the prohibition rules, [[[#compression_rules_for_consecutive_punctuation_marks]]] according to the typesetting style should be processed first, because compression of the punctuation marks will affect the line break position.
+      </p>
+      <p its-locale-filter-list="zh-hans" lang="zh-hans">
+        在处理禁则之前，应优先按照排版风格处理[[[#compression_rules_for_consecutive_punctuation_marks]]]，因为标点挤压处理会影响换行位置。
+      </p>
+      <p its-locale-filter-list="zh-hant" lang="zh-hant" class="checkme">
+        在處理禁則之前，應優先按照排版風格處理[[[#compression_rules_for_consecutive_punctuation_marks]]]，因為標點擠壓處理會影響換行位置。
+      </p>
+      <p its-locale-filter-list="zh-hans" lang="zh-hans" class="translateme">排版时如果进行禁则处理，应遵守「先挤进，后推出」原则，即不希望标点符号出现在行首时，应在已经标点挤压的基础上再次检讨是否有机会将其挤到前一行，最后没有挤压机会再从前一行取最后一个字至下一行。前行多出来的空间需按照优先顺序拉伸，最后没有拉伸机会再按平均拉大字距的方式处理。</p>
       <div class="note" id="n033">
-        <p its-locale-filter-list="en" lang="en">In order to avoid a punctuation mark appearing at the line start, the last character from the previous line can be moved to the beginning of next line and the extra space left for the previous line will be divided and inserted equally between the characters of previous line. However, in the case where several punctuation marks appear together, for example [。』」], moving one character from previous line might cause too much space left between the characters. In this case, the punctuation marks might be allowed to appear at the line start so as to keep a reasonable space between characters in each line.</p>
-        <p its-locale-filter-list="zh-hans" lang="zh-hans">排版时，若不希望标点符号出现在行首时，仅能从前一行取最后一个字至下一行，前行多出来的空间采平均排列的方式处理。但若遇连续标点符号，如[。』」]等状况，可能取一个字会造成前行字距过大， 这时则采宽松处理，允许标点出现在行首，以避免字距过松造成体例不良。</p>
-        <p its-locale-filter-list="zh-hant" lang="zh-hant">排版時，若不希望標點符號出現於行頭時，僅能由前行取末字至下一行，前行多出來的空間採平均排列的方式處理。但若遇連續標點符號，如[。』」]等狀況，可能取一字會造成前行字距過大，這時則採寬鬆處理，允許標點出現於行頭，以避免字距過鬆造成體例不良。</p>
+        <p its-locale-filter-list="en" lang="en">
+          In principle, line-breaking rules within a single document should be consistent. However, in the case where three punctuation marks appear together, such as [。』」], prohibition against line break can be <a href="#prohibition-rules-none">ignored</a> to keep a reasonable spacing between characters in each line. This should be considered as a remedial measure and is not recommended generally.
+        </p>
+        <p its-locale-filter-list="zh-hans" lang="zh-hans">
+          原则上，一份文档内的级别应该统一。但若遇连续三个标点符号，如[。』」]等个别特殊状况局部采用「不处理」以避免字距过松造成体例不良，应该视为救济措施的个例，不作为推荐。
+        </p>
+        <p its-locale-filter-list="zh-hant" lang="zh-hant" class="checkme">
+          原則上，一份文檔內的級別應該統一。但若遇連續三個標點符號，如[。』」]等個別特殊狀況局部采用「不處理」以避免字距過松造成體例不良，應該視為救濟措施的個例，不作為推薦。
+        </p>
       </div>
-      <p its-locale-filter-list="en" lang="en">Pause or stop punctuation marks, like slight-pause commas, commas, semicolons, colons, periods, question marks, exclamation marks, as well as right quotation marks, right parentheses, right angle brackets, dashes, etc, should not appear at the line start.</p>
-      <p its-locale-filter-list="zh-hans" lang="zh-hans" class="checkme">点号（顿号、逗号、句号、冒号、分号、叹号、问号）、结束引号、结束括号、结束乙式书名号（篇名号）、连接号、间隔号等符号，不能出现在一行的开头。</p>
-      <p its-locale-filter-list="zh-hant" lang="zh-hant">包括：點號（頓號、逗號、句號、冒號、分號、驚嘆號、問號）、結束引號、結束括號、結束乙式書名號（篇名號）、連接號、間隔號等符號，不得出現於一行之首。</p>
-      <p its-locale-filter-list="en" lang="en">Left parentheses, left quotation marks, left angle brackets and left title marks should not appear at the line end.</p>
-      <p its-locale-filter-list="zh-hans" lang="zh-hans" class="checkme">开始引号、开始括号、开始单双书名号等符号，不能出现在一行的结尾。</p>
-      <p its-locale-filter-list="zh-hant" lang="zh-hant">包括：開始引號等、開始括號、開始單雙書名號等符號，不得出現於一行之尾。</p>
+      <div class="note" id="tbd1">
+        <p its-locale-filter-list="en" lang="en">
+          Prohibition rules for line start and line end are styling issues. The user agent can choose or customize the rules to become more or less restrictive when needed.
+        </p>
+        <p its-locale-filter-list="zh-hans" lang="zh-hans">
+          行首行尾禁则规定属于排版风格，用户代理实现时可以根据自身实际情况，选择或者自定义适合自己的、更宽松或者严格的禁则。
+        </p>
+        <p its-locale-filter-list="zh-hant" lang="zh-hant" class="checkme">
+          行首行尾禁則規定屬於排版風格，用戶代理實現時可以根據自身實際情況，選擇或者自定義適合自己的、更寬松或者嚴格的禁則。
+        </p>
+      </div>
       <p its-locale-filter-list="en" lang="en">For prohibition rules and glyphs, please see [[[#tables_of_chinese_punctuation_marks]]]</p>
       <p its-locale-filter-list="zh-hans" lang="zh-hans">详细标点禁则规则请见[[[#tables_of_chinese_punctuation_marks]]]</p>
       <p its-locale-filter-list="zh-hant" lang="zh-hant">詳細標點禁則規則請見[[[#tables_of_chinese_punctuation_marks]]]</p>

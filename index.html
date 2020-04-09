@@ -165,7 +165,7 @@ var respecConfig = {
     <p its-locale-filter-list="zh-hant" lang="zh-hant">中文排版有別於其他書寫體系，主要特點如下：</p>
     <ol>
       <li id="id3">
-        <p its-locale-filter-list="en" lang="en">The Chinese writing system can be broadly classified into either Traditional Chinese or Simplified Chinese. Chinese communities in different regions (e.g. Mainland China, Taiwan, Hong Kong, Macau, Singapore, Malaysia etc) may have their own regional standards. These differ with respect to which glyph represents a canonical vs. a variant shape, or how many strokes are contained in a given character. They may also have typographic layout rules specific to their own region.</p>
+        <p its-locale-filter-list="en" lang="en">The Chinese writing system can be broadly classified into either Traditional Chinese or Simplified Chinese. Chinese communities in different regions (e.g. Mainland China, Taiwan, Hong Kong, Macau, Singapore, Malaysia etc.) may have their own regional standards. These differ with respect to which glyph represents a canonical vs. a variant shape, or how many strokes are contained in a given character. They may also have typographic layout rules specific to their own region.</p>
         <p its-locale-filter-list="zh-hans" lang="zh-hans">中文的书写系统可以大致分为「繁体字」「简体字」系统，但是，使用中文的各个地区（中国大陆、台湾、香港、澳门、新加坡、马来西亚等）对汉字各自分别有不同的规范化形式，其具体字形、笔画多少存在差异，也会采用与其他地区不尽相同的排版规则。</p>
         <p its-locale-filter-list="zh-hant" lang="zh-hant">中文的書寫系統可以大致分為「繁體字」「簡體字」系統，但是，使用中文的各個地區（中國大陸、台灣、香港、澳門、新加坡、馬來西亞等）對漢字各自分別有不同的規範化形式，其具體字形、筆劃多少存在差異，也會採用與其他地區不盡相同的排版規則。</p>
       </li>
@@ -180,8 +180,10 @@ var respecConfig = {
         <p its-locale-filter-list="zh-hant" lang="zh-hant">原則上，中文排版所使用的漢字與標點符號比例皆為1:1的正方形，將其無縫隙並列排成版面。</p>
       </li>
     </ol>
-	      <div class="note translateme">
-          <p its-locale-filter-list="zh-hans" lang="zh-hans">对于本文叙述重点的排版规则来说，「地区差异」大于「繁简差异」。比如，虽然中国大陆的大多数出版物均采用简体字、横排，但仍有少数采用繁体字横排或者简体字直排；中国大陆的排版规则，如 GB/T 15834―2011《标点符号用法》中规定的标点符号位置同时也适用于中国大陆出版的竖排、繁体字出版物。而台湾出版的竖排、繁体字出版物则采用台湾的排版规则。因此建议各种用户代理处理排版规则时，应通过「区域」设置，而非「繁简」文本设置进行区分。</p>
+	      <div class="note">
+          <p its-locale-filter-list="en" lang="en">For most of the typographic rules described in this document, "regional differences" are more than "differences between Simplified and Traditional Chinese". For example, although most publications in Mainland China use Simplified Chinese characters in horizontal writing mode, a few publications use Traditional Chinese characters in horizontal or vertical writing mode, or Simplified characters in vertical writing mode. The typographical rules in Mainland China, such as the punctuation position rules specified in <cite>General Rules for Punctuation</cite> (GB/T 15834—2011) also apply to vertical or Traditional Chinese publications published in Mainland China. For vertical and Traditional Chinese publications published in Taiwan, Taiwan's typographic rules are used. Therefore, it is recommended that the user agents distinguish typographical rules by "region" rather than "Traditional or Simplified".</p>
+          <p its-locale-filter-list="zh-hans" lang="zh-hans">对于本文叙述重点的排版规则来说，「地区差异」大于「繁简差异」。比如，虽然中国大陆的大多数出版物均采用简体字、横排，但仍有少数采用繁体字横排、直排或者简体字直排；中国大陆的排版规则，如 GB/T 15834―2011《标点符号用法》中规定的标点符号位置同时也适用于中国大陆出版的直排、繁体字出版物。而台湾出版的直排、繁体字出版物则采用台湾的排版规则。因此建议各种用户代理处理排版规则时，应通过「区域」设置，而非「繁简」文本设置进行区分。</p>
+          <p its-locale-filter-list="zh-hant" lang="zh-hant">對於本文敘述重點的排版規則來說，「地區差異」大於「繁簡差異」。比如，雖然中國大陸的大多數出版物均採用簡體字、橫排，但仍有少數採用繁體字橫排、直排或者簡體字直排；中國大陸的排版規則，如 GB/T 15834―2011《標點符號用法》中規定的標點符號位置同時也適用於中國大陸出版的直排、繁體字出版物。而臺灣出版的直排、繁體字出版物則採用臺灣的排版規則。因此建議各種用戶代理處理排版規則時，應通過「區域」設置，而非「繁簡」文本設置進行區分。</p>
          </div>
   </section>
 
@@ -377,6 +379,15 @@ var respecConfig = {
           <span its-locale-filter-list="zh-hant" lang="zh-hant">增加字距</span>
         </h5>
 
+        <figure id="fig-loose-setting">
+          <span style="text-align:center;"><img src="images/en/increased-inter-character-spacing.svg" alt="Examples of loose setting in horizontal writing mode." width="600"></span>
+          <figcaption>
+            <span its-locale-filter-list="en" lang="en">Examples of loose setting in horizontal writing mode.</span>
+            <span its-locale-filter-list="zh-hans" lang="zh-hans">疏排</span>
+            <span its-locale-filter-list="zh-hant" lang="zh-hant">疏排</span>
+          </figcaption>
+        </figure>
+
         <p its-locale-filter-list="en" lang="en"> It is common in books to increase the space between each character frame (i.e. <dfn id="endef_looseSetting">loose setting</dfn>) for the following cases:</p>
         <p its-locale-filter-list="zh-hans" lang="zh-hans">在各字之间加入固定量的空白来排列文字，称作疏排。书籍排版上，遇到以下状况时，会采用这种排列方式。</p>
         <p its-locale-filter-list="zh-hant" lang="zh-hant">在各字之間加入固定量的空白來排列文字，稱作疏排。書籍排版上，遇到以下狀況時，會採用這種排列方式。</p>
@@ -436,6 +447,15 @@ var respecConfig = {
           <span its-locale-filter-list="zh-hans" lang="zh-hans">减少字距</span>
           <span its-locale-filter-list="zh-hant" lang="zh-hant">減少字距</span>
         </h5>
+
+        <figure id="fig-negative-tracking">
+          <span style="text-align:center;"><img src="images/zh/negative-tracking.svg" alt="Example of reduced inter-character spacing in horizontal writing mode." width="600"></span>
+          <figcaption>
+            <span its-locale-filter-list="en" lang="en">Reduced inter-character spacing</span>
+            <span its-locale-filter-list="zh-hans" lang="zh-hans">紧排</span>
+            <span its-locale-filter-list="zh-hant" lang="zh-hant">紧排</span>
+          </figcaption>
+        </figure>
 
         <p its-locale-filter-list="en" lang="en">By reducing the inter-character spacing, a portion of two character frames overlap each other (i.e. solid setting). This method is mainly used in the following cases:</p>
         <p its-locale-filter-list="zh-hans" lang="zh-hans">减少字距，使得文字外框一部分重叠，称作紧排。这种处理方式，主要应用于：</p>
@@ -590,9 +610,9 @@ var respecConfig = {
         </figcaption>
       </figure>
 
-      <p its-locale-filter-list="en" lang="en">The <dfn id="endef_fangsong">Fangsong</dfn> (Imitation Song) style lies between Song and Kai. It is commonly used in isolated paragraphs such as quotations or highlighted sentences. As seen in [[[#fig-fangsong]]].</p>
-      <p its-locale-filter-list="zh-hans" lang="zh-hans">仿宋体的字体形态介于宋体与楷体之间。常用于引言、摘句等区隔于内文的段落上。如[[[#fig-fangsong]]]所示。</p>
-      <p its-locale-filter-list="zh-hant" lang="zh-hant">仿宋體的字體形態介於宋體與楷體之間。常用於引言、摘句等區隔於內文的段落上。如[[[#fig-fangsong]]]所示。</p>
+      <p its-locale-filter-list="en" lang="en">The <dfn id="endef_fangsong">Fangsong</dfn> (Imitation Song) style lies between Song and Kai. It is commonly used in secondary titles and isolated paragraphs such as quotations or highlighted sentences. As seen in [[[#fig-fangsong]]].</p>
+      <p its-locale-filter-list="zh-hans" lang="zh-hans">仿宋体的字体形态介于宋体与楷体之间。常用于副标题和引言、摘句等区隔于内文的段落上。如[[[#fig-fangsong]]]所示。</p>
+      <p its-locale-filter-list="zh-hant" lang="zh-hant">仿宋體的字體形態介於宋體與楷體之間。常用於副標題和引言、摘句等區隔於內文的段落上。如[[[#fig-fangsong]]]所示。</p>
     </section>
 
 
@@ -1344,7 +1364,7 @@ var respecConfig = {
           <span its-locale-filter-list="zh-hant" lang="zh-hant">標號</span>
         </h5>
 
-        <p its-locale-filter-list="en" lang="en">In contrast with pause or stop punctuation marks, indicator punctuation marks usually indicate a specific feature of the phrase or sentence. They include brackets, parentheses, em dashes, horizontal ellipsis, black circles or bullets, tildes, middle dots, angle brackets, low lines, and solidus.</p>
+        <p its-locale-filter-list="en" lang="en">In contrast with pause or stop punctuation marks, indicator punctuation marks usually indicate a specific feature of the phrase or sentence. They include brackets, parentheses, em dashes, horizontal ellipses, black circles or bullets, tildes, middle dots, angle brackets, low lines, and solidus.</p>
         <p its-locale-filter-list="zh-hans" lang="zh-hans">标号相对于点号，有标示词组或语句特定性质的作用。包含引号、括号（夹注号）、破折号、省略号（删节号）、着重号、连接号、间隔号、书名号、专名号、分隔号。</p>
         <p its-locale-filter-list="zh-hant" lang="zh-hant">標號相對於點號，有標示詞組或語句特定性質的作用。包含引號、括號（夾注號）、破折號、刪節號（省略號）、著重號、連接號、間隔號、書名號、專名號、分隔號。</p>
         <ol>
@@ -1614,6 +1634,49 @@ var respecConfig = {
         <p its-locale-filter-list="zh-hans" lang="zh-hans">在港台的古籍、科技文献、科学类教科书或常引西文的书籍中，也可见使用于被标注文字末端、字面始端的点号（顿号、逗号、句号），类似简体中文或日文标点符号，以保持中、西文标点体例一致。</p>
         <p its-locale-filter-list="zh-hant" lang="zh-hant">在港台的古籍、科技文獻、科學類教科書或常引西文的書籍中，亦可見使用位受注文字末端、字面始端的點號（頓號、逗號、句號），類似簡體中文或日文標點符號，以保持中、西文標點體例一致。</p>
       </section>
+
+
+      <section id="exclamatory_question_marks">
+        <h5>
+          <span its-locale-filter-list="en" lang="en">Exclamatory question mark, repeating question marks and repeating exclamation marks</span>
+          <span its-locale-filter-list="zh-hans" lang="zh-hans">叹问号与问、叹号叠加</span>
+          <span its-locale-filter-list="zh-hant" lang="zh-hant">嘆問號與問、嘆號疊加</span>
+        </h5>
+
+        <p its-locale-filter-list="en" lang="en">Exclamatory question marks are defined in the General Rules for Punctuation (GB/T 15834-2011) as an extended usage of exclamation marks. For questions with a strong exclamatory tone of voice, it is appropriate to add an exclamation mark after the question mark (?!). However, it is common to see a question mark added after an exclamation mark (!?) in numerous publications as well. In addition, GB rules indicate that it is acceptable to chain up to 3 exclamation marks or question marks in succession (!!!, ???) for exclamatory statements or interrogative sentences which require greater emphasis.</p>
+        <p its-locale-filter-list="zh-hans" lang="zh-hans">叹问号于中国大陆《标点符号用法》（GB/T 15834–2011）中作为叹号的延伸用法，当语气同时具备强烈的疑问与感叹时，可于问号后加上叹号（?!）。然而在许多作品中，也常见在叹号后加上问号（!?）的用法。此外，在同标准的问号与叹号用法也指明在语气加重时可叠用问号或者叹号，最多可叠用到三个（!!!、???）。</p>
+        <p its-locale-filter-list="zh-hant" lang="zh-hant">嘆問號於中國大陸《標點符號用法》（GB/T 15834–2011）中作為嘆號的延伸用法，當語氣同時具備強烈的疑問與感嘆時，可於問號後加上嘆號（?!）。然而在許多作品中，也常見在嘆號後加上問號（!?）的用法。此外，在同標準的問號與嘆號用法也指明在語氣加重時可疊用問號或者嘆號，最多可疊用到三個（!!!、???）。</p>
+        <p its-locale-filter-list="en" lang="en">In print publications, GB rules state that when question marks and exclamation marks are chained, they are considered one character width. Double question marks or double exclamation marks also one character width. Triple question marks or triple exclamation marks are two character widths. In addition, for vertical writing mode in Taiwan, chained question marks or exclamation marks are upright and take up one character width.</p>
+        <p its-locale-filter-list="zh-hans" lang="zh-hans">排版上，《标点符号用法》规定问号与叹号连用时，占一个字位置；两个问号或叹号叠用时，占一个字位置；三个问号或叹号叠用时，占两个字位置。此外，在台湾直排的习惯中，叹问号连用与问号、叹号叠用时，符号多直立，并且占一个字的位置。</p>
+        <p its-locale-filter-list="zh-hant" lang="zh-hant">排版上，《標點符號用法》規定問號與嘆號連用時，佔一個字位置；兩個問號或嘆號疊用時，佔一個字位置；三個問號或嘆號疊用時，佔兩個字位置。此外，在台灣直排的習慣中，嘆問號連用與問號、嘆號疊用時，符號多直立，並且佔一個字的位置。</p>
+        <div class="note">
+          <p its-locale-filter-list="en" lang="en">The following punctuation marks already exist in Unicode: U+2047 DOUBLE QUESTION MARK [⁇]、U+203C DOUBLE EXCLAMATION MARK [‼ ]、U+2048 QUESTION EXCLAMATION MARK [⁈]、U+2049 EXCLAMATION QUESTION MARK [⁉]. They should be used with discretion.</p>
+          <p its-locale-filter-list="zh-hans" lang="zh-hans">在Unicode中已编有U+2047 DOUBLE QUESTION MARK [⁇]、U+203C DOUBLE EXCLAMATION MARK [‼ ]、U+2048 QUESTION EXCLAMATION MARK [⁈]、U+2049 EXCLAMATION QUESTION MARK [⁉]等符号，在考量字体支援下可斟酌使用。</p>
+          <p its-locale-filter-list="zh-hant" lang="zh-hant">在Unicode中已編有U+2047 DOUBLE QUESTION MARK [⁇]、U+203C DOUBLE EXCLAMATION MARK [‼]、U+2048 QUESTION EXCLAMATION MARK [⁈]、U+2049 EXCLAMATION QUESTION MARK [⁉]等符號，在考量字體支援下可斟酌使用。</p>
+        </div>
+      </section>
+
+
+      <section id="symbol_of_death">
+        <h5>
+          <span its-locale-filter-list="en" lang="en">Symbol of death</span>
+          <span its-locale-filter-list="zh-hans" lang="zh-hans">示亡号</span>
+          <span its-locale-filter-list="zh-hant" lang="zh-hant">示亡號</span>
+        </h5>
+
+        <p its-locale-filter-list="en" lang="en">The symbol of death is not defined in the GB rules, but is a punctuation mark which is widely used by the commons. The symbol of death is a solid black border outside the character frame of a person's name to indicate the person is deceased. It's Western counterpart would be the dagger punctuation mark (U+2020 DAGGER † and U+2021 DOUBLE DAGGER ‡).</p>
+        <p its-locale-filter-list="zh-hans" lang="zh-hans">示亡号并未列于标点符号相关标准文件，但却是民间经常使用的俗用符号。示亡号亦称示殁号，为在人名文字外框描上实心的黑色边线表示已经过世，类似西文中剑标（U+2020 DAGGER †与U+2021 DOUBLE DAGGER ‡）之用法。</p>
+        <p its-locale-filter-list="zh-hant" lang="zh-hant">示亡號並未列於標點符號相關標準文件，但卻是民間經常使用的俗用符號。示亡號亦稱示殁号，為在人名文字外框描上實心的黑色邊線表示已經過世，類似西文中劍標（U+2020 DAGGER †與U+2021 DOUBLE DAGGER ‡）之用法。</p>
+        <figure id="death-symbol-use-case"><img width="600" alt="示亡号示例" src="images/zh/symbol-of-death.png">
+          <figcaption><span its-locale-filter-list="en" lang="en">An example of the usage of symbol of death</span>
+          <span its-locale-filter-list="zh-hans" lang="zh-hans">示亡号用法的示例。</span>
+          <span its-locale-filter-list="zh-hant" lang="zh-hant">示亡號用法的示例。</span></figcaption>
+        </figure>
+        <p its-locale-filter-list="en" lang="en">The symbol of death is used to indicate a person who had been recently deceased, and is often seen in name lists, official reports, genealogy records and so on. It is not used for people who have passed away for some time or well-known deceased individuals.</p>
+        <p its-locale-filter-list="zh-hans" lang="zh-hans">示亡号主要标示于近年过世的人名，常出现在名单、公报、族谱等人名列表上，用以告知此人已亡殁。而过世已久或众所皆知的历史人物不再加注。</p>
+        <p its-locale-filter-list="zh-hant" lang="zh-hant">示亡號主要標示於近年過世的人名，常出現在名單、公報、族譜等人名列表上，用以告知此人已亡歿。而過世已久或眾所皆知的歷史人物不再加註。</p>
+      </section>
+
 
     </section>
 
@@ -4704,13 +4767,24 @@ var respecConfig = {
           <p its-locale-filter-list="zh-hant" lang="zh-hant">漢語音節的構成中，位於輔音和主要元音之間的過渡音。</p>
         </td>
       </tr>
+      <tr id="term.reduced-inter-character-spacing">
+        <td>紧排</td>
+        <td>紧排</td>
+        <td>jǐnpái</td>
+        <td>reduced inter-character spacing</td>
+        <td>
+          <p its-locale-filter-list="en" lang="en">Adjustment of inter-character spacing by making the distance between the letter face of adjacent characters shorter than that produced by solid setting.</p>
+          <p its-locale-filter-list="zh-hans" lang="zh-hans">减少字距，使文字外框一部分重叠的排版方式。</p>
+          <p its-locale-filter-list="zh-hant" lang="zh-hant">減少字距，使文字外框一部分重疊的排版方式。</p>
+        </td>
+      </tr>
       <tr id="term.base-text">
         <td>基文</td>
         <td>基文</td>
         <td>jīwén</td>
         <td>base text</td>
         <td>
-          <p its-locale-filter-list="en" lang="en">A character to be annotated by ruby, ornament characters, or emphasis dots.</p>
+          <p its-locale-filter-list="en" lang="en">Text to be annotated by ruby, ornament characters, or emphasis dots.</p>
           <p its-locale-filter-list="zh-hans" lang="zh-hans">行间注排版中，受标注的原文字词或语句。</p>
           <p its-locale-filter-list="zh-hant" lang="zh-hant">行間注排版中，受標注的原文字詞或語句。</p>
         </td>

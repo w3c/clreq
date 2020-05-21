@@ -2,15 +2,19 @@
 index.html?specStatus=WD;shortName=clreq respec
 local.css
 script.js
+images/en/increased-inter-character-spacing.svg
 images/zh/biaoyin-erhua.svg
 images/zh/billingual-annotation.svg
 images/zh/fangsong.png
+images/zh/group-ruby.png
 images/zh/heiti.png
 images/zh/kaiti.png
 images/zh/locale_punctuation.png
+images/zh/negative-tracking.svg
 images/zh/phonetic-in-both.png
 images/zh/pinyin-use-case.svg
 images/zh/songti.png
+images/zh/symbol-of-death.png
 images/zh/zhuyin-1-0-1-one-symbol.svg
 images/zh/zhuyin-1-0-2-one-symbol-checked-tone.svg
 images/zh/zhuyin-1-0-3-one-symbol-neutral-tone.svg

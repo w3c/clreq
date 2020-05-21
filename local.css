@@ -258,3 +258,6 @@ table.full.punctuation td:nth-child(7) {
 table.glossary th.term { width: 6.25em; }
 table.glossary th.term-pinyin { width: 5.25em; }
 table.glossary th.term-en { width: 5.25em; }
+
+/* Override the display property */
+[its-locale-filter-list][hidden] { display: none; }

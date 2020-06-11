@@ -1770,13 +1770,13 @@ var respecConfig = {
         </dd>
       </dl>
       <p its-locale-filter-list="en" lang="en">
-        Prior to processing the prohibition rules, [[[#compression_rules_for_consecutive_punctuation_marks]]] according to the typesetting style should be processed first, because compression of the punctuation marks will affect the line break position.
+        Prior to processing the prohibition rules, [[[#punctuation_width_adjustment]]] according to the typesetting style should be processed first, because compression of the punctuation marks will affect the line break position.
       </p>
       <p its-locale-filter-list="zh-hans" lang="zh-hans">
-        在处理禁则之前，应优先按照排版风格处理[[[#compression_rules_for_consecutive_punctuation_marks]]]，因为标点挤压处理会影响换行位置。
+        在处理禁则之前，应优先按照排版风格处理[[[#punctuation_width_adjustment]]]，因为标点挤压处理会影响换行位置。
       </p>
       <p its-locale-filter-list="zh-hant" lang="zh-hant" class="checkme">
-        在處理禁則之前，應優先按照排版風格處理[[[#compression_rules_for_consecutive_punctuation_marks]]]，因為標點擠壓處理會影響換行位置。
+        在處理禁則之前，應優先按照排版風格處理[[[#punctuation_width_adjustment]]]，因為標點擠壓處理會影響換行位置。
       </p>
       <p its-locale-filter-list="zh-hans" lang="zh-hans" class="translateme">排版时如果进行禁则处理，应遵守「先挤进，后推出」原则，即不希望标点符号出现在行首时，应在已经标点挤压的基础上再次检讨是否有机会将其挤到前一行，最后没有挤压机会再从前一行取最后一个字至下一行。前行多出来的空间需按照优先顺序拉伸，最后没有拉伸机会再按平均拉大字距的方式处理。</p>
       <div class="note" id="n033">
@@ -1869,72 +1869,67 @@ var respecConfig = {
     </section>
 
 
-    <section id="compression_rules_for_consecutive_punctuation_marks">
+    <section id="punctuation_width_adjustment">
       <h4>
-        <span its-locale-filter-list="en" lang="en">Compression Rules for Punctuation Marks</span>
-        <span its-locale-filter-list="zh-hans" lang="zh-hans">标点符号的挤压</span>
-        <span its-locale-filter-list="zh-hant" lang="zh-hant">標點符號的擠壓</span>
+        <span its-locale-filter-list="en" lang="en">Punctuation Width Adjustment</span>
+        <span its-locale-filter-list="zh-hans" lang="zh-hans">标点符号的宽度调整</span>
+        <span its-locale-filter-list="zh-hant" lang="zh-hant">標點符號的寬度調整</span>
       </h4>
 
-      <p its-locale-filter-list="en" lang="en">Punctuation marks in Chinese usually have the dimensions of one character (or more). This provides a clear distinction between characters and leaves some room for compositional adjustment. However, if there is no character before or after the punctuation mark(s), the empty space around the punctuation mark(s) will seem a bit abrupt. In this case, proper compression for the punctuation mark(s) will make the composition tighter and more readable.</p>
-      <p its-locale-filter-list="zh-hans" lang="zh-hans" class="checkme">中文的标点符号多占一个（或以上）汉字的空间，使其在字间易于识别、适合配置及排版。然而，在标点前后没有文字时，标点的空白空间将显突兀。对标点符号的空余空间进行挤压，可使文字体裁更加紧凑、易读。</p>
-      <p its-locale-filter-list="zh-hant" lang="zh-hant">中文的標點符號多佔一個（或以上）漢字的空間，使其在字間易於識別、適合配置及排版。然而，在標點前後不為文字時，標點的空白空間將顯突兀。對標點符號的空餘空間進行擠壓，可使文字體裁更加緊湊、易讀。</p>
-      <p its-locale-filter-list="en" lang="en">Usually there are two ways to compress punctuation mark(s). First, when multiple punctuation marks appear together, the space between the punctuation marks can be adjusted; second, when multiple punctuation marks appear at the line start or line end, the space at the line start or line end can be adjusted.</p>
-      <p its-locale-filter-list="zh-hans" lang="zh-hans" class="checkme">标点符号的挤压通常分为两种——其一，标点符号连续出现时，对符号间相邻的空隙进行调整；另一种则是符号出现在行首或行尾时，调整该符号字面位置，缩减行首或行尾的空隙。</p>
-      <p its-locale-filter-list="zh-hant" lang="zh-hant">標點符號的擠壓通常分為二種——其一，標點符號連續出現時，對符號間相鄰的空隙進行調整；另一種則是符號出現於行首或行尾時，調整該符號字面位置，縮減行首或行尾的空隙。</p>
+      <!-- oldid -->
+      <span id="compression_rules_for_consecutive_punctuation_marks"></span>
 
-      <section id="h-compression_of_adjacent_punctuation_marks">
+      <p its-locale-filter-list="en" lang="en">Punctuation marks between characters (except for em dashes and horizontal ellipsis) usually occupy two character widths, making it easy to recognize and lay out. Some layout styles do not adjust the punctuation width at all. However, in order to make the the composition tighter and more readable, and when implementing [[[#prohibition_rules_for_line_start_end]]], the width of the punctuation marks needs to be adjusted. Whether to adjust depends on the judgment of the typesetting style. Many publications in Taiwan do not adjust punctuation width, while most publications in Mainland China and Hong Kong do adjust punctuation width. Punctuation width adjustment is usually divided into two situations: 1) when consecutive punctuation marks appear 2) when the punctuation mark appears at the beginning or end of a line. There are more than one style of width adjustment, and only the basic principles are explained below.</p>
+      <p its-locale-filter-list="zh-hans" lang="zh-hans">标注在字间的标点符号（除乙式括号、破折号、省略号以外）通常占一个汉字宽度，使其易于识别、适合配置及排版，有些排版风格完全不对标点宽度进行任何调整。但是为了让文字体裁更加紧凑易读，以及执行[[[#prohibition_rules_for_line_start_end]]]时，就需要对标点符号的宽度进行调整。是否调整取决于对排版风格的判断，台湾的很多印刷品都采用不调整的风格；而在中国大陆和香港的出版物中，多数采取调整的风格。标点符号宽度调整通常分为两种情形：1. 标点符号连续出现 2.标点出现在行首或行尾。调整时的风格不尽相同，下文仅阐述基本原则。</p>
+      <p its-locale-filter-list="zh-hant" lang="zh-hant" class="checkme">標註在字間的標點符號（除乙式括號、破折號、省略號以外）通常占壹個漢字寬度，使其易於識別、適合配置及排版，有些排版風格完全不對標點寬度進行任何調整。但是為了讓文字體裁更加緊湊易讀，以及執行[[[#prohibition_rules_for_line_start_end]]]時，就需要對標點符號的寬度進行調整。是否調整取決於對排版風格的判斷，臺灣的很多印刷品都采用不調整的風格；而在中國大陸和香港的出版物中，多數采取調整的風格。標點符號寬度調整通常分為兩種情形：1. 標點符號連續出現 2.標點出現在行首或行尾。調整時的風格不盡相同，下文僅闡述基本原則。</p>
+
+      <section id="h-punctuation_adjustment_space">
         <h5>
-          <span its-locale-filter-list="en" lang="en">Compression of adjacent punctuation marks</span>
+          <span its-locale-filter-list="en" lang="en">Punctuation Adjustment Space</span>
+          <span its-locale-filter-list="zh-hans" lang="zh-hans">标点符号的调整空间</span>
+          <span its-locale-filter-list="zh-hant" lang="zh-hant">標點符號的調整空間</span>
+        </h5>
+        <p its-locale-filter-list="en" lang="en">Punctuation marks are divided into two types: "unadjustable" and "adjustable", and "adjustable" is divided into six categories according to the position of the adjustable space: left of character face in horizontal writing mode, right of character face in horizontal writing mode, left and right of character face in horizontal writing modes; top of character face in vertical writing mode, bottom of character face in vertical writing mode, top and bottom of character face in vertical writing mode.</p>
+        <p its-locale-filter-list="zh-hans" lang="zh-hans">标点符号分为「不可调整」和「可调整」两类，「可调整」再根据调整空间分为六类：横排字面左、横排字面右、横排左右两侧；直排字面上、直排字面下、直排上下两侧。
+        </p>
+        <p its-locale-filter-list="zh-hant" lang="zh-hant" class="checkme">標點符號分為「不可調整」和「可調整」兩類，「可調整」再根據調整空間分為六類：橫排字面左、橫排字面右、橫排左右兩側；直排字面上、直排字面下、直排上下兩側。</p>
+
+        <figure id="fig_punctuation_adjustment_space"><img height="300" alt="Punctuation adjustment space" src="images/zh/punctuation-adjustment-space.png">
+          <figcaption><span its-locale-filter-list="en" lang="en">Adjustment space of punctuation marks.</span>
+          <span its-locale-filter-list="zh-hans" lang="zh-hans">标点符号的调整空间。</span>
+          <span its-locale-filter-list="zh-hant" lang="zh-hant">標點符號的調整空間。</span></figcaption>
+        </figure>
+
+        <p its-locale-filter-list="en" lang="en">Unadjustable punctuations include: GB-style short connector marks, interpuncts, and solidi, because these punctuation points are always take half the width of a character; exclamation marks and question marks in horizontal writing mode in Hong Kong and Taiwan, and colons, semicolons, question marks, exclamation marks in vertical writing mode in Chinese Mainland, Hong Kong, and Taiwan, because these punctuations always take the width of a character.</p>
+        <p its-locale-filter-list="zh-hans" lang="zh-hans">
+          不可调整的标点包括：中国大陆GB式的半字连接号、间隔号、分隔号，因为这几个标点固定半个字宽；横排的港台式问号、感叹号和直排的冒号、分号、问号、感叹号（包括GB偏靠式和港台居中式），因为这几个标点固定一个字宽。
+        </p>
+        <p its-locale-filter-list="zh-hant" lang="zh-hant" class="checkme">
+          不可調整的標點包括：中國大陸GB式的半字連接號、間隔號、分隔號，因為這幾個標點固定半個字寬；橫排的港臺式問號、感嘆號和直排的冒號、分號、問號、感嘆號（包括GB偏靠式和港臺居中式），因為這幾個標點固定壹個字寬。
+        </p>
+      </section>
+
+      <section id="h-adjustment_of_adjacent_punctuation_marks">
+        <h5>
+          <span its-locale-filter-list="en" lang="en">Adjustment of adjacent punctuation marks</span>
           <span its-locale-filter-list="zh-hans" lang="zh-hans">连续标点符号的挤压</span>
           <span its-locale-filter-list="zh-hant" lang="zh-hant">連續標點符號的擠壓</span>
         </h5>
 
-        <p its-locale-filter-list="en" lang="en">When opening bracket(s), closing bracket(s), slight-pause comma, comma, period or interpunct appear together, the following rules for space adjustment will make the composition tighter and more readable.</p>
-        <p its-locale-filter-list="zh-hans" lang="zh-hans" class="checkme">在开始夹注符号、结束夹注符号、顿号、逗号、句号及间隔号等连续排列时，以下的空隙调整规则得以使文字体裁更加紧凑、易读。</p>
-        <p its-locale-filter-list="zh-hant" lang="zh-hant">在開始夾注符號、結束夾注符號、頓號、逗號、句號及間隔號等連續排列時，以下的空隙調整規則得以使文字體裁更加緊湊、易讀。</p>
-        <ol>
-          <li id="id92">
-            <p its-locale-filter-list="en" lang="en"> In common rules of Chinese Mainland, when one or more closing brackets appear behind a slight-pause comma, comma or period, the space can be reduced by half a character width. Such adjustments will not be done in Taiwan and Hong Kong.</p>
-            <p its-locale-filter-list="zh-hans" lang="zh-hans" class="checkme">依照中国大陆的常见的排版规则，当结束夹注符号出现在顿号、逗号、句号之后时，缩减两者间二分之一个汉字大小的空白；而在港台则不会做此调整。</p>
-            <p its-locale-filter-list="zh-hant" lang="zh-hant">依照中國大陸的常見的排版規則，當結束夾注符號出現於頓號、逗號、句號之後，縮減二者間二分之一個漢字大小的空白；而在港台則不會做此調整。</p>
-          </li>
-          <li id="id93">
-            <p its-locale-filter-list="en" lang="en">When a slight-pause comma, comma or period appears after a closing bracket, the space can be reduced by half a character width.</p>
-            <p its-locale-filter-list="zh-hans" lang="zh-hans" class="checkme">当顿号、逗号、句号出现在结束夹注符号之后时，缩减其间二分之一个汉字大小的空白。</p>
-            <p its-locale-filter-list="zh-hant" lang="zh-hant">當頓號、逗號、句號出現在結束夾注符號之後，縮減其間二分之一個漢字大小的空白。</p>
-          </li>
-          <li id="id94">
-            <p its-locale-filter-list="en" lang="en">When an opening bracket appears after a slight-pause comma, comma or period, the space can be reduced by half a character width.</p>
-            <p its-locale-filter-list="zh-hans" lang="zh-hans" class="checkme">当开始夹注符号出现在顿号、逗号、句号之后时，缩减其间二分之一个汉字大小的空白。</p>
-            <p its-locale-filter-list="zh-hant" lang="zh-hant">當開始夾注符號出現於頓號、逗號、句號之後，縮減其間二分之一個漢字大小的空白。</p>
-          </li>
-          <li id="id95">
-            <p its-locale-filter-list="en" lang="en">When an opening bracket appears after a closing bracket, the space can be reduced by half a character width.</p>
-            <p its-locale-filter-list="zh-hans" lang="zh-hans" class="checkme">当开始夹注符号出现在结束夹注符号之后时，缩减其间二分之一个汉字大小的空白。</p>
-            <p its-locale-filter-list="zh-hant" lang="zh-hant">當開始夾注符號出現於結束夾注符號之後，縮減其間二分之一個漢字大小的空白。</p>
-          </li>
-          <li id="id96">
-            <p its-locale-filter-list="en" lang="en"> When two or more opening brackets appear together, the space can be reduced by half a character width.</p>
-            <p its-locale-filter-list="zh-hans" lang="zh-hans" class="checkme">当两个（或以上）开始夹注符号连续排列时，缩减其间二分之一个汉字大小的空白。</p>
-            <p its-locale-filter-list="zh-hant" lang="zh-hant">當二個（或以上）開始夾注符號連續排列時，縮減其間二分之一個漢字大小的空白。</p>
-          </li>
-          <li id="id97">
-            <p its-locale-filter-list="en" lang="en"> When two or more closing brackets appear together, the space can be reduced by half a character width.</p>
-            <p its-locale-filter-list="zh-hans" lang="zh-hans" class="checkme">当两个（或以上）结束夹注符号连续排列时，缩减其间二分之一个汉字大小的空白。</p>
-            <p its-locale-filter-list="zh-hant" lang="zh-hant">當二個（或以上）結束夾注符號連續排列時，縮減其間二分之一個漢字大小的空白。</p>
-          </li>
-          <li id="id98">
-            <p its-locale-filter-list="en" lang="en"> When a solidus appears after a closing bracket, the space can be reduced by a quarter of a character width.</p>
-            <p its-locale-filter-list="zh-hans" lang="zh-hans" class="checkme">当间隔号出现于结束夹注符号之后时，缩减其间四分之一个汉字大小的空白。</p>
-            <p its-locale-filter-list="zh-hant" lang="zh-hant">當間隔號出現於結束夾注符號之後，縮減其間四分之一個漢字大小的空白。</p>
-          </li>
-          <li id="id99">
-            <p its-locale-filter-list="en" lang="en"> When a solidus appears before an opening bracket, the space can be reduced by a quarter of a character width.</p>
-            <p its-locale-filter-list="zh-hans" lang="zh-hans" class="checkme">当间隔号出现于开始夹注符号之前时，缩减其间四分之一个汉字大小的空白。</p>
-            <p its-locale-filter-list="zh-hant" lang="zh-hant">當間隔號出現於開始夾注符號之前，縮減其間四分之一個漢字大小的空白。</p>
-          </li>
-        </ol>
+        <!-- oldid -->
+        <span id="h-compression_of_adjacent_punctuation_marks"></span>
+
+        <p its-locale-filter-list="zh-hans" lang="zh-hans" class="translateme">
+          无论文本整体采用何种风格，当夹注符号与其他符号连续排列时，或者夹注符号重复出现（如开始+开始，结束+结束，或者结束+开始）时，都应该进行「基本挤压」调整，以使文字体裁更加紧凑、易读。
+        </p>
+
+        <p its-locale-filter-list="zh-hans" lang="zh-hans" class="translateme">
+          原则上的调整度应为：如果两个符号占用2个字宽，应当缩减成1.5个字宽。在此原则上，允许排版风格进一步调整让两个符号只占1个字宽。
+        </p>
+
+        <p its-locale-filter-list="zh-hans" lang="zh-hans" class="translateme">
+          挤压方向判定原则上应该让开始、结束夹注符号应紧靠被夹注的内容。
+        </p>
       </section>
 
 

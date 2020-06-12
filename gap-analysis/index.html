@@ -5,7 +5,7 @@
 <meta charset="utf-8">
 
 <title>Chinese Layout Gap Analysis</title>
-<script src="../../i18n-activity/textlayout/resources/gap-analysis-github.js"> </script>
+<script class="remove" src="../../i18n-activity/textlayout/resources/gap-analysis-github.js"> </script>
 
 <script src="https://www.w3.org/Tools/respec/respec-w3c-common" async="" class="remove">
 </script>
@@ -13,7 +13,7 @@
   var respecConfig = {
       // specification status (e.g. WD, LCWD, WG-NOTE, etc.). If in doubt use ED.
       specStatus:           "ED",
-      //publishDate:  		"2015-07-21",
+      //publishDate:  		"2020-06-16",
       //previousPublishDate:  "2014-12-16",
       //previousMaturity:  "FPWD",
 
@@ -29,6 +29,7 @@
       // only "name" is required
       editors:  [
         { name: "Fuqiao Xue", company: "W3C" },
+        { name: "Richard Ishida", company: "W3C" },
       ],
 
 
@@ -37,11 +38,23 @@
 	  
 
       github: "w3c/clreq",
+	  
+	  postProcess: [
+    	function importStyleSheet() {
+			[...document.querySelectorAll("link[rel='stylesheet'][data-import]")].forEach(l => {
+				const style = document.createElement("style");
+				fetch(l.href).then(r => r.text()).then(t => {
+					style.textContent = t;
+					l.replaceWith(style);
+					});
+      			});
+    		}
+   		],
 
       // langs array lists languages addressed by this document, in order of speaker (highest first)
       // it is used to generate the javascript needed for the matrix
       langs: ['SChinese', 'TChinese'],
-      gapDocPath: 'https://w3c.github.io/clreq/gap-analysis/',
+      gapDocPath: 'https://www.w3.org/TR/clreq-gap/',
 
 
 
@@ -54,8 +67,8 @@
       // !!!! IMPORTANT !!!! MAKE THE ABOVE BLINK IN YOUR HEAD
     };
   </script>
-<script src="/i18n-activity/templates/gap-analysis/prompts.js"> </script>
-<link rel="stylesheet" href="https://w3c.github.io/typography/gap-analysis/gapanalysis.css">
+<script class="remove" src="/i18n-activity/templates/gap-analysis/prompts.js"> </script>
+<link rel="stylesheet" data-import href="https://w3c.github.io/typography/gap-analysis/gapanalysis.css">
 </head>
 
 <body>
@@ -64,7 +77,7 @@
   </div>
 
   <div id="sotd">
-    <p>This document describes and prioritises gaps for the support of Simplified and Traditional Chinese on the Web and in eBooks. In particular, it is concerned with text layout. It checks that needed features are supported in W3C specifications, in particular HTML and CSS and those relating to digital publications. It also checks whether the features have been implemented in browsers and ereaders. This document complements the document <a href="https://w3c.github.io/clreq/">Requirements for Chinese Text Layout</a>, which describes the requirements for areas where gaps appear. It is linked to from the <a href="https://w3c.github.io/typography/gap-analysis/language-matrix.html">language matrix</a> that tracks Web support for many languages.</p>
+    <p>This document describes and prioritises gaps for the support of Simplified and Traditional Chinese on the Web and in eBooks. In particular, it is concerned with text layout. It checks that needed features are supported in W3C specifications, in particular HTML and CSS and those relating to digital publications. It also checks whether the features have been implemented in browsers and ereaders. This document complements the document <a href="https://www.w3.org/TR/clreq/">Requirements for Chinese Text Layout</a>, which describes the requirements for areas where gaps appear. It is linked to from the <a href="https://w3c.github.io/typography/gap-analysis/language-matrix.html">language matrix</a> that tracks Web support for many languages.</p>
 <p>The editor's draft of this document is being developed by the <a href="https://w3c.github.io/clreq/">Chinese Layout Task Force</a>, part of the W3C <a href="https://www.w3.org/International/ig/">Internationalization Interest Group</a>. It is published by the <a href="https://www.w3.org/International/core/">Internationalization Working Group</a>. The end target for this document is a Working Group Note.</p>
 </div>
 
@@ -81,7 +94,7 @@
 
     <p>Gap analysis work usually starts with a <strong>preliminary analysis</strong>, conducted quickly by one or a small group of experts. Then a more <strong>detailed analysis</strong> is carried out, involving a wider range of experts. The detailed analysis may involve the development of tests, in order to illustrate issues and track results for browsers. The next phase is <strong>ongoing maintenance</strong>. It is expected that the resulting document will not be frozen: as gaps are fixed, this should be noted in the document. It is also possible that new gaps are noticed or arise, and they can be added to this document when that happens.</p>
     
-    <p>As the gap analysis develops, the requirements for features that are problematic should be described in the companion document, <a href="https://w3c.github.io/clreq/">Requirements for Chinese Text Layout</a>. Links to the appropriate part of that document should be added to this document as the material is created. Note that the requirements document should not contain any technology-specific information: all of that belongs here.</p>
+    <p>As the gap analysis develops, the requirements for features that are problematic should be described in the companion document, <a href="https://www.w3.org/TR/clreq/">Requirements for Chinese Text Layout</a>. Links to the appropriate part of that document should be added to this document as the material is created. Note that the requirements document should not contain any technology-specific information: all of that belongs here.</p>
     </section>
     
     <section id="prioritization">
@@ -267,17 +280,6 @@
 
 <div id="insert-data_formats"></div>
 </section>
-
-
-
-<!--section id="otherinline" class="tbd">
-    <h3>Other inline features</h3>
-    <p class="status_prompt">Does the script have special ways of representing inline notes (such as  kumimoji in Japanese) or other inline features that need to be supported? <a href="https://w3c.github.io/typography/index#other_inline_features">See available information</a> or <a href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20is%3Aopen%20label%3Ainline-features%20label%3Atype-info-request">check for currently needed data</a>.</p>
-
-
-    <p></p>
-    </section-->
-
 </section>
 
 
@@ -349,17 +351,6 @@
 
 <div id="insert-initials"></div>
 </section>
-
-
-
-<!--section id="otherpara" class="tbd">
-    <h3>Other paragraph features</h3>
-    <p class="status_prompt">IAre there other features of paragraph design that are peculiar to your script? <a href="https://w3c.github.io/typography/index#other_para_features">See available information</a> or <a href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20is%3Aopen%20label%3Aparagraph-features%20label%3Atype-info-request">check for currently needed data</a>.</p>
-
-
-    <p></p>
-</section-->
-
 </section>
 
 
@@ -409,15 +400,6 @@
 
 <div id="insert-interaction"></div>
 </section>
-
-
-
-<!--section id="morepage" class="ok">
-    <h3>Other page layout &amp; pagination features</h3>
-
-
-    <p></p>
-    </section-->
 </section>
 
 
@@ -460,10 +442,11 @@
 
 
 
-<script>
+<script class="remove">
 setUpSummary()
 addPrompts() 
 getAllData('clreq','doc:clreq')
+printSummary(true)
 </script>
 
 

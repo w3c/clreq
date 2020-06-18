@@ -68,14 +68,12 @@ build/
 *.tlb
 *.tli
 *.tlh
-*.tmp
 *.tmp_proj
 *.log
 *.vspscc
 *.vssscc
 .builds
 *.pidb
-*.log
 *.scc
 
 # Visual C++ cache files
@@ -193,7 +191,6 @@ $RECYCLE.BIN/
 *.egg
 *.egg-info
 dist/
-build/
 eggs/
 parts/
 var/
@@ -216,3 +213,6 @@ pip-log.txt
 
 respec-*
 base.css
+/flat.html
+/local-for-publishing.css
+/local-for_editing.css

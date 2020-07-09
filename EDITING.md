@@ -15,8 +15,8 @@ For example:
 例如： 
 
 ```html
-<p its-locale-filter-list="en">The same text in English.</p>
-<p its-locale-filter-list="zh">此為漢語文本。</p>
+<p its-locale-filter-list="en" lang="en">The same text in English.</p>
+<p its-locale-filter-list="zh" lang="zh">此為漢語文本。</p>
 ```
 
 If you are able to create text in both English and Chinese, please do so. If you are only able to create text in one language, still create the dual structure in markup, but put the same text in both places. Then add `class="translateme"` to the text that needs translation.
@@ -27,8 +27,8 @@ For example:
 例如：
 
 ```html
-<p its-locale-filter-list="en" class="translateme">此為漢語文本。</p>
-<p its-locale-filter-list="zh">此為漢語文本。</p>
+<p its-locale-filter-list="en" lang="en" class="translateme">此為漢語文本。</p>
+<p its-locale-filter-list="zh" lang="zh">此為漢語文本。</p>
 ```
 
 If you change existing text, and if that change requires a change in the parallel translation but you are unable to do so, add `class="retranslateme"` to the text that needs to be updated.
@@ -39,8 +39,8 @@ For example:
 例如：
 
 ```html
-<p its-locale-filter-list="en" class="retranslateme">Text in English.</p>
-<p its-locale-filter-list="zh">此為更新後的漢語文本。</p>
+<p its-locale-filter-list="en" lang="en" class="retranslateme">Text in English.</p>
+<p its-locale-filter-list="zh" lang="zh">此為更新後的漢語文本。</p>
 ```
 
 If you need someone to check the translation you provided, add `class="checkme"` to the relevant tag.
@@ -51,8 +51,8 @@ For example:
 例如：
 
 ```html
-<p its-locale-filter-list="en" class="checkme">Text in English.</p>
-<p its-locale-filter-list="zh">此為漢語文本。</p>
+<p its-locale-filter-list="en" lang="en" class="checkme">Text in English.</p>
+<p its-locale-filter-list="zh" lang="zh">此為漢語文本。</p>
 ```
 
 The class names listed above produce special colouring effects in the displayed document.
@@ -79,8 +79,8 @@ Here are some tips on how to maintain the parallel language structure in markup.
 
     ```html
     <li id="abcd">
-      <p its-locale-filter-list="en" class="translateme">这是中国的文字。</p>
-      <p its-locale-filter-list="zh">这是中国的文字。</p>
+      <p its-locale-filter-list="en" lang="en" class="translateme">这是中国的文字。</p>
+      <p its-locale-filter-list="zh" lang="zh">这是中国的文字。</p>
     </li>
     ```
 
@@ -90,8 +90,8 @@ Here are some tips on how to maintain the parallel language structure in markup.
 
     ```html
     <h2>
-      <span its-locale-filter-list="en">My heading</span>
-      <span its-locale-filter-list="zh">我的标题</span>
+      <span its-locale-filter-list="en" lang="en">My heading</span>
+      <span its-locale-filter-list="zh" lang="zh">我的标题</span>
     </h2>
     ```
 
@@ -102,8 +102,8 @@ Here are some tips on how to maintain the parallel language structure in markup.
     ```html
     <section id="h_my_heading">
       <h2>
-        <span its-locale-filter-list="en">English heading</span>
-        <span its-locale-filter-list="zh">漢語標題</span>
+        <span its-locale-filter-list="en" lang="en">English heading</span>
+        <span its-locale-filter-list="zh" lang="zh">漢語標題</span>
       </h2>
       …
     ``` 
@@ -113,8 +113,8 @@ Here are some tips on how to maintain the parallel language structure in markup.
     在`dfn`元素里的屬性`id`应该以`xxdef`开始，`xx`隨語言的不同作`zh`或`en`。
 
     ```html
-    <p its-locale-filter-list="en">The <dfn id="endef_term">term</dfn> is a technical word.</p>
-    <p its-locale-filter-list="zh">这个<dfn id="zhdef_term">词汇</dfn>是一个技术用语。</p>
+    <p its-locale-filter-list="en" lang="en">The <dfn id="endef_term">term</dfn> is a technical word.</p>
+    <p its-locale-filter-list="zh" lang="zh">这个<dfn id="zhdef_term">词汇</dfn>是一个技术用语。</p>
     ```
 
 - `figcaption`s should use `span`s for the different language versions.
@@ -126,8 +126,8 @@ Here are some tips on how to maintain the parallel language structure in markup.
       <!-- 圖表內容。 -->
       <!-- Figure content. -->
       <figcaption>
-        <span its-locale-filter-list="en">English caption</span>
-        <span its-locale-filter-list="zh">漢語說明</span>
+        <span its-locale-filter-list="en" lang="en">English caption</span>
+        <span its-locale-filter-list="zh" lang="zh">漢語說明</span>
       </figcaption>
     </figure>
     ```
@@ -172,7 +172,7 @@ For additional ideas about markup and styling in Internationalization Activity d
 
     ```html
     Requirements for Chinese Text Layout 
-    <span its-locale-filter-list="zh" lang="zh">中文排版需求</span>
+    <span its-locale-filter-list="zh" lang="zh" lang="zh">中文排版需求</span>
     ```
 
 2. Remove:

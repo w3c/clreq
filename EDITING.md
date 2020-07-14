@@ -140,7 +140,7 @@ Here are some tips on how to maintain the parallel language structure in markup.
     <span class="uname">U+3002 IDEOGRAPHIC FULL STOP</span> [。]
     ```
 
-- To link to a section, use the ReSpec feature, ie. link to the id on the `section` tag and leave the link text empty.
+- To link to a section, use the ReSpec feature, ie. link to the id on the `section` tag using the [[[ ]]] syntax.
 
     要链接到某个章节，请使用ReSpec特性，也就是链接到`section`标签上的id，并将链接文本留空。
 
@@ -148,7 +148,7 @@ Here are some tips on how to maintain the parallel language structure in markup.
     [[[#mySectionId]]]
     ```
 
-- To link to a figure, use the ReSpec feature, ie. link to the id on the `figure` tag and leave the link text empty.
+- To link to a figure, use the ReSpec feature, ie. link to the id on the `figure` tag using the [[[ ]]] syntax.
 
     要链接到某个图片，请使用ReSpec特性，也就是链接到`figure`标签上的id，并将链接文本留空。
 

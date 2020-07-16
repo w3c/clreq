@@ -140,6 +140,22 @@ Here are some tips on how to maintain the parallel language structure in markup.
     <span class="uname">U+3002 IDEOGRAPHIC FULL STOP</span> [。]
     ```
 
+- To link to a section, use the ReSpec feature, ie. link to the id on the `section` tag using the [[[ ]]] syntax.
+
+    要链接到某个章节，请使用ReSpec特性，也就是使用[[[ ]]]语法链接到`section`标签上的id。
+
+    ```html
+    [[[#mySectionId]]]
+    ```
+
+- To link to a figure, use the ReSpec feature, ie. link to the id on the `figure` tag using the [[[ ]]] syntax.
+
+    要链接到某个图片，请使用ReSpec特性，也就是使用[[[ ]]]语法链接到`figure`标签上的id。
+
+    ```html
+    [[[#myFigureId]]]
+    ```
+
 For additional ideas about markup and styling in Internationalization Activity documents, especially wrt inline markup conventions, see <https://www.w3.org/International/docs/styleguide>.
 
 欲了解更多国际化标准计划文档里的標記和样式条约，尤其是wrt行内標記的使用慣例，请查看<https://www.w3.org/International/docs/styleguide>。

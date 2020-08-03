@@ -35,8 +35,8 @@ var L10N = {
       'Latest published version:': '最新發佈草稿：',
       'Latest editor\'s draft:': '最新編輯草稿：',
       'Editors:': '編輯：',
-      'Bug tracker:': '錯誤跟蹤：',
-      'GitHub:': 'GitHub：',
+      'Former editors:': '原編輯：',
+      'Participate:': '參與：',
     },
 
     dd: {
@@ -59,8 +59,8 @@ var L10N = {
       'Latest published version:': '最新发布草稿：',
       'Latest editor\'s draft:': '最新编辑草稿：',
       'Editors:': '编辑：',
-      'Bug tracker:': '错误跟踪：',
-      'GitHub:': 'GitHub：',
+      'Former editors:': '原编辑：',
+      'Participate:': '参与：',
     },
 
     dd: {

@@ -25,6 +25,9 @@ The focus is especially on typographic features for which information in English
 - [Chinese Layout Gap Analysis | 中文支持差距分析](https://w3c.github.io/clreq/gap-analysis/)
 - [Requirements for Chinese Text Layout | 中文排版需求 (ED)](https://w3c.github.io/clreq/) ([WD](https://www.w3.org/TR/clreq/))
 
+### Related documents
+- [Ready-made Counter Styles](https://www.w3.org/TR/predefined-counter-styles/)
+
 
 ### Feedback
 

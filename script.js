@@ -32,6 +32,7 @@ var L10N = {
 
     dt: {
       'This version:': '本版本：',
+      'Previous version:': '上一版：',
       'Latest published version:': '最新發佈草稿：',
       'Latest editor\'s draft:': '最新編輯草稿：',
       'Editors:': '編輯：',
@@ -56,6 +57,7 @@ var L10N = {
 
     dt: {
       'This version:': '本版本：',
+      'Previous version:': '上一版：',
       'Latest published version:': '最新发布草稿：',
       'Latest editor\'s draft:': '最新编辑草稿：',
       'Editors:': '编辑：',

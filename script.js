@@ -37,7 +37,7 @@ var L10N = {
       'Latest editor\'s draft:': '最新編輯草稿：',
       'Editors:': '編輯：',
       'Former editors:': '原編輯：',
-      'Participate:': '參與：',
+      'Participate:': '協助參與：',
     },
 
     dd: {
@@ -62,7 +62,7 @@ var L10N = {
       'Latest editor\'s draft:': '最新编辑草稿：',
       'Editors:': '编辑：',
       'Former editors:': '原编辑：',
-      'Participate:': '参与：',
+      'Participate:': '协助参与：',
     },
 
     dd: {

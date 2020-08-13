@@ -32,11 +32,12 @@ var L10N = {
 
     dt: {
       'This version:': '本版本：',
+      'Previous version:': '上一版：',
       'Latest published version:': '最新發佈草稿：',
       'Latest editor\'s draft:': '最新編輯草稿：',
       'Editors:': '編輯：',
-      'Bug tracker:': '錯誤跟蹤：',
-      'GitHub:': 'GitHub：',
+      'Former editors:': '原編輯：',
+      'Participate:': '協助參與：',
     },
 
     dd: {
@@ -56,11 +57,12 @@ var L10N = {
 
     dt: {
       'This version:': '本版本：',
+      'Previous version:': '上一版：',
       'Latest published version:': '最新发布草稿：',
       'Latest editor\'s draft:': '最新编辑草稿：',
       'Editors:': '编辑：',
-      'Bug tracker:': '错误跟踪：',
-      'GitHub:': 'GitHub：',
+      'Former editors:': '原编辑：',
+      'Participate:': '协助参与：',
     },
 
     dd: {

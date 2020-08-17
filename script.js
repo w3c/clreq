@@ -135,7 +135,7 @@ function replaceBoilerplateText(lang) {
 
   $$('h1 + h2 + dl dt')
   .forEach(function($dt) {
-    var originalText = $dt.dataset.originalText || $dt.textContent
+    var originalText = $dt.dataset.originalText || $dt.textContent.trim()
     var text = l10n.dt[originalText] || originalText
 
     if (text) {

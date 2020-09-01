@@ -3,6 +3,7 @@ index.html?specStatus=WD&shortName=clreq respec
 local.css
 script.js
 images/en/increased-inter-character-spacing.svg
+images/en/punctuation-adjustment-space.png
 images/zh/biaoyin-erhua.svg
 images/zh/billingual-annotation.svg
 images/zh/fangsong.png
@@ -13,6 +14,8 @@ images/zh/locale_punctuation.png
 images/zh/negative-tracking.svg
 images/zh/phonetic-in-both.png
 images/zh/pinyin-use-case.svg
+images/zh/punctuation-adjustment-space-hans.png
+images/zh/punctuation-adjustment-space-hant.png
 images/zh/songti.png
 images/zh/symbol-of-death.png
 images/zh/zhuyin-1-0-1-one-symbol.svg

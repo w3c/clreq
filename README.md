@@ -2,7 +2,7 @@
 
 This group allows a network of experts to share information about gaps and requirements for support of Simplified and Traditional Chinese on the Web and in eBooks. 
 
-本小组探讨在网页和电子书中使用简体、繁体中文时的各语言、文种支持的需求以及目前差距。
+本小组探讨在网页和电子书中使用简体、繁体中文时的需求以及目前差距。
 
 It aims to address the problem that experts often don't know how to tell the W3C what problems exist for support of their script on the Web, and the W3C often doesn't know how to contact people who can help when questions arise.
 

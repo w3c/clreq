@@ -1881,7 +1881,7 @@ var respecConfig = {
           不可调整的标点包括：中国大陆GB式的半字连接号、间隔号、分隔号，因为这几个标点固定半个字宽；横排的港台式问号、感叹号和直排的冒号、分号、问号、感叹号（包括GB偏靠式和港台居中式），因为这几个标点固定一个字宽。
         </p>
         <p its-locale-filter-list="zh-hant" lang="zh-hant">
-          不可調整的標點包括：中國大陸GB式的半字連接號、間隔號、分隔號，因為這幾個標點固定半個字寬；橫排的港台式問號、感嘆號和直排的冒號、分號、問號、感嘆號（包括GB偏靠式和港台居中式），因為這幾個標點固定一個字寬。
+          不可調整的標點包括：中國大陸GB式的半字連接號、間隔號、分隔號，因為這幾個標點固定半個字寬；橫排的港台式問號、驚嘆號和直排的冒號、分號、問號、驚嘆號（包括GB偏靠式和港台居中式），因為這幾個標點固定一個字寬。
         </p>
       </section>
 
@@ -2959,6 +2959,396 @@ var respecConfig = {
 
   </section>
 
+  <section id="line_adjustment">
+    <h3>
+      <span its-locale-filter-list="en" lang="en">Line Adjustment</span>
+      <span its-locale-filter-list="zh-hans" lang="zh-hans">行内调整</span>
+      <span its-locale-filter-list="zh-hant" lang="zh-hant">行內調整</span>
+    </h3>
+
+    <section id="necessity_for_line_adjustment">
+      <h4>
+        <span its-locale-filter-list="en" lang="en">Necessity for Line Adjustment</span>
+        <span its-locale-filter-list="zh-hans" lang="zh-hans">行内调整的必要性</span>
+        <span its-locale-filter-list="zh-hant" lang="zh-hant">行內調整的必要性</span>
+      </h4>
+
+      <p its-locale-filter-list="en" lang="en">
+        There are numerous reasons, e.g. [[[#prohibition_rules_for_line_start_end]]], that result in line lengths being uneven. Under such circumstances, line adjustment is required. With the exception of [[[#prohibition_rules_for_unbreakable_marks]]], a run of text may be broken at the specified line length, allowing the text to be arranged into even rows. Other than the last line of a paragraph, the start and end of a line must be placed at the specified line start and line end position respectively. The last line of the paragraph will be adjusted accordingly to the overall flow of the text with adjustments made to the width of its punctuation. It is not necessary for the end of the last line to be aligned with the rest of the text. Please refer to [[[#adjustments_of_orphans_and_widows]]]. If the text only comprises of 1 line, please refer to [[[#ways_of_alignments]]].
+      </p>
+      <p its-locale-filter-list="zh-hans" lang="zh-hans">
+        由于[[[#prohibition_rules_for_line_start_end]]]等原因造成行的长度长短不一，这时需要进行「行内调整」。在除了[[[#prohibition_rules_for_unbreakable_marks]]]以外的的地方，先将整段文字按照指定的行长断开，排列成行。对于除了段落最后一行以外的各行，其行首、行尾必须分别放到指定行长的位置。对于段落最后一行，原则上按照排版风格进行标点宽度调整即可，末尾没有必要与指定行长的行尾对齐；最后一行需要调整的特殊情况，请参照[[[#adjustments_of_orphans_and_widows]]]。而当段落有且仅有一行时，请参照[[[#ways_of_alignments]]]。
+      </p>
+      <p its-locale-filter-list="zh-hant" lang="zh-hant" class="checkme">
+        由於[[[#prohibition_rules_for_line_start_end]]]等原因造成行的長度長短不一，這時需要進行「行內調整」。在除了[[[#prohibition_rules_for_unbreakable_marks]]]以外的的地方，先將整段文字按照指定的行長斷開，排列成行。對於除了段落最後一行以外的各行，其行首、行尾必須分別放到指定行長的位置。對於段落最後一行，原則上按照排版風格進行標點寬度調整即可，末尾沒有必要與指定行長的行尾對齊；最後一行需要調整的特殊情況，請參照[[[#adjustments_of_orphans_and_widows]]]。而當段落有且僅有一行時，請參照[[[#ways_of_alignments]]]。
+      </p>
+
+      <p its-locale-filter-list="en" lang="en">
+        There are a number of reasons for line adjustment, mainly:
+      </p>
+      <p its-locale-filter-list="zh-hans" lang="zh-hans">
+        造成需要行内调整的原因有很多，主要有：
+      </p>
+      <p its-locale-filter-list="zh-hant" lang="zh-hant" class="checkme">
+        造成需要行內調整的原因有很多，主要有：
+      </p>
+
+      <ol type="a">
+        <li>
+          <p its-locale-filter-list="en" lang="en">
+            Lines which are interspersed with many <a href="#term.european-numerals" class="termref">European numerals</a>, Latin letters or other non-full width characters;
+          </p>
+          <p its-locale-filter-list="zh-hans" lang="zh-hans">
+            行内夹杂了<a href="#term.european-numerals" class="termref">阿拉伯数字</a>、西文等非一个汉字字宽的字符；
+          </p>
+          <p its-locale-filter-list="zh-hant" lang="zh-hant" class="checkme">
+            行內夾雜了<a href="#term.european-numerals" class="termref">阿拉伯數字</a>、西文等非一個漢字字寬的字符；
+          </p>
+        </li>
+        <li>
+          <p its-locale-filter-list="en" lang="en">
+            Instances where punctuation marks occur consecutively and still remain uneven after [[[#h-adjustment_of_adjacent_punctuation_marks]]];
+          </p>
+          <p its-locale-filter-list="zh-hans" lang="zh-hans">
+            标点符号连续出现，且按照[[[#h-adjustment_of_adjacent_punctuation_marks]]]的原则性调整之后与事先设定的行长不一致；
+          </p>
+          <p its-locale-filter-list="zh-hant" lang="zh-hant" class="checkme">
+            標點符號連續出現，且按照[[[#h-adjustment_of_adjacent_punctuation_marks]]]的原則性調整之後與事先設定的行長不一致；
+          </p>
+        </li>
+        <li>
+          <p its-locale-filter-list="en" lang="en">
+            Lines containing characters of different font sizes;
+          </p>
+          <p its-locale-filter-list="zh-hans" lang="zh-hans">
+            行内混用不同字号，比如该行有「行内夹注」并使用了小一些的字号；
+          </p>
+          <p its-locale-filter-list="zh-hant" lang="zh-hant" class="checkme">
+            行內混用不同字號，比如該行有「行內夾註」並使用了小一些的字號；
+          </p>
+        </li>
+        <li>
+          <p its-locale-filter-list="en" lang="en">
+            After the processing of punctuation in accordance with [[[#prohibition_rules_for_line_start_end]]].
+          </p>
+          <p its-locale-filter-list="zh-hans" lang="zh-hans">
+            标点符号依照[[[#prohibition_rules_for_line_start_end]]]进行了处理。
+          </p>
+          <p its-locale-filter-list="zh-hant" lang="zh-hant" class="checkme">
+            標點符號依照[[[#prohibition_rules_for_line_start_end]]]進行了處理。
+          </p>
+        </li>
+      </ol>
+
+      <p its-locale-filter-list="en" lang="en">
+        In contrast to Western typesetting, the body text in Chinese books are rarely left-aligned, and instead should be justified. Justification of Western texts hinges on the adjustment of space between the words on a line, whereas there are more options for line justification when it comes to Chinese typesetting.
+      </p>
+      <p its-locale-filter-list="zh-hans" lang="zh-hans">
+        与西文排版不同，中文排版特别是书籍正文排版极少使用左齐右不齐，原则上应该进行两端对齐。西文排版两端对齐（justification）时，主要是调整单词之间的间隙（词距），而中文排版在两端对齐时，能调整的地方更多，具体如下所述。
+      </p>
+      <p its-locale-filter-list="zh-hant" lang="zh-hant" class="checkme">
+        與西文排版不同，中文排版特別是書籍正文排版極少使用左齊右不齊，原則上應該進行兩端對齊。西文排版兩端對齊（justification）時，主要是調整單詞之間的間隙（詞距），而中文排版在兩端對齊時，能調整的地方更多，具體如下所述。
+      </p>
+
+    </section>
+
+    <section id="reduction_and_expansion_of_inter-character_spacing">
+      <h4>
+        <span its-locale-filter-list="en" lang="en">Reduction and Expansion of Inter-Character Spacing</span>
+        <span its-locale-filter-list="zh-hans" lang="zh-hans">挤压处理和拉伸处理</span>
+        <span its-locale-filter-list="zh-hant" lang="zh-hant">擠壓處理和拉伸處理</span>
+      </h4>
+
+      <p its-locale-filter-list="en" lang="en">
+        Line adjustments are predicated upon the amount of available space, for example, spacing between Western words, [[[#h-punctuation_adjustment_space]]], and so on. There are two methods for line adjustment:
+      </p>
+      <p its-locale-filter-list="zh-hans" lang="zh-hans">
+        行内调整的对象是需要按照预先定义的可调整空间，如西文词距、[[[#h-punctuation_adjustment_space]]]等等。行内调整有以下两种方法：
+      </p>
+      <p its-locale-filter-list="zh-hant" lang="zh-hant" class="checkme">
+        行內調整的對象是需要按照預先定義的可調整空間，如西文詞距、[[[#h-punctuation_adjustment_space]]]等等。行內調整有以下兩種方法：
+      </p>
+
+      <ol type="a">
+        <li>
+          <p its-locale-filter-list="en" lang="en">
+            <span class="leadin">Reduction of Inter-Character Spacing:</span>
+            Inter-character spacing like those between Western words, mixed texts, or as described in [[[#h-punctuation_adjustment_space]]], should be reduced in accordance to the prevailing typesetting style.
+          </p>
+          <p its-locale-filter-list="zh-hans" lang="zh-hans">
+            <span class="leadin">挤压处理：</span>「挤压处理」是指按照预先规定的排版风格，压缩西文词距、中西间距和[[[#h-punctuation_adjustment_space]]]等处的做法。
+          </p>
+          <p its-locale-filter-list="zh-hant" lang="zh-hant" class="checkme">
+            <span class="leadin">擠壓處理：</span>「擠壓處理」是指按照預先規定的排版風格，壓縮西文詞距、中西間距和[[[#h-punctuation_adjustment_space]]]等處的做法。
+          </p>
+        </li>
+
+        <li>
+          <p its-locale-filter-list="en" lang="en">
+            <span class="leadin">Expansion of Inter-Character Spacing:</span>
+            Inter-character spacing like those between Western words, mixed texts or scenarios that are not limited by prohibition rules should be added in accordance to the prevailing typesetting style.
+          </p>
+          <p its-locale-filter-list="zh-hans" lang="zh-hans">
+            <span class="leadin">拉伸处理：</span>「拉伸处理」是指按照预先规定的排版风格，拉伸西文词距、中西间距以及其他未被特殊规定禁止调整等处的做法。
+          </p>
+          <p its-locale-filter-list="zh-hant" lang="zh-hant" class="checkme">
+            <span class="leadin">拉伸處理：</span>「拉伸處理」是指按照預先規定的排版風格，拉伸西文詞距、中西間距以及其他未被特殊規定禁止調整等處的做法。
+          </p>
+        </li>
+      </ol>
+
+      <p its-locale-filter-list="en" lang="en">
+        In order to make the composition tighter and more readable, the guiding principle is to attempt to implement space reduction first. In the event that is insufficient, then space can be added where acceptable to achieve justification.
+      </p>
+      <p its-locale-filter-list="zh-hans" lang="zh-hans">
+        出于紧凑易读、节约版面的思路，行内调整要遵循「先挤压、后拉伸」的原则，即应该先挤压处理，仍旧无法满足需求之后再进行拉伸处理。
+      </p>
+      <p its-locale-filter-list="zh-hant" lang="zh-hant" class="checkme">
+        出於緊湊易讀、節約版面的思路，行內調整要遵循「先擠壓、後拉伸」的原則，即應該先擠壓處理，仍舊無法滿足需求之後再進行拉伸處理。
+      </p>
+
+      <div class="note">
+        <p its-locale-filter-list="en" lang="en">
+          The word spacing in Western texts described here only pertains to situations which involve compositions of mixed Western and Han characters. The expected behaviour is different from that for purely Western texts, which will take into account the typeface, font size and letter spacing when doing text justification. In general, Western texts will add to word spacing and rarely uses space reduction.
+        </p>
+        <p its-locale-filter-list="zh-hans" lang="zh-hans">
+          本文涉及到行内的「西文词距」调整，仅是针对「在中文排版内混排的西文」，因此，与纯西文排版的习惯不尽相同。一般的西文排版中的词距，需要依照所用字体、字号、字距进行不同判断，而且一般只拉伸、不挤压。
+        </p>
+        <p its-locale-filter-list="zh-hant" lang="zh-hant" class="checkme">
+          本文涉及到行內的「西文詞距」調整，僅是針對「在中文排版內混排的西文」，因此，與純西文排版的習慣不盡相同。一般的西文排版中的詞距，需要依照所用字體、字號、字距進行不同判斷，而且一般只拉伸、不擠壓。
+        </p>
+      </div>
+
+    </section>
+
+    <section id="procedures_for_inter-character_spacing_reduction">
+      <h4>
+        <span its-locale-filter-list="en" lang="en">Procedures for Inter-Character Spacing Reduction</span>
+        <span its-locale-filter-list="zh-hans" lang="zh-hans">挤压处理的优先顺序</span>
+        <span its-locale-filter-list="zh-hant" lang="zh-hant">擠壓處理的優先順序</span>
+      </h4>
+
+      <p its-locale-filter-list="en" lang="en">
+        Inter-character spacing reduction should be processed according to the following steps, in order of precedence:
+      </p>
+      <p its-locale-filter-list="zh-hans" lang="zh-hans">
+        行内调整的挤压处理，应该按照下述步骤，确定挤压的优先顺序后依次进行处理：
+      </p>
+      <p its-locale-filter-list="zh-hant" lang="zh-hant" class="checkme">
+        行內調整的擠壓處理，應該按照下述步驟，確定擠壓的優先順序後依次進行處理：
+      </p>
+
+      <ol type="a">
+        <li>
+          <p its-locale-filter-list="en" lang="en">
+            At the end of a line: adjusted to fixed half a character width.
+          </p>
+          <p its-locale-filter-list="zh-hans" lang="zh-hans">
+            位于行末的标点。调成固定的半个汉字宽。
+          </p>
+          <p its-locale-filter-list="zh-hant" lang="zh-hant" class="checkme">
+            位於行末的標點。調成固定的半個漢字寬。
+          </p>
+          <aside class="note">
+            <p its-locale-filter-list="en" lang="en">
+              In Japanese texts, periods at the end of a line typically do not have their space reduced, but Chinese texts do. This is especially important in Mainland China where the <cite>General Rules for Punctuation</cite> (GB/T 15834—2011) defines in 5.1.10 that if a full-width punctuation occurs at the end of a line, it should take up half a character width for a more pleasing aesthetic.
+            </p>
+            <p its-locale-filter-list="zh-hans" lang="zh-hans">
+              行末的句号，在日文排版中往往不进行挤压处理。但是对于中文排版，一般要进行处理，这对于中国大陆的排版规范尤其重要。《标点符号用法》（GB/T 15834-2011）有明确规定「5.1.10 标点符号排在一行末尾时，若为全角字符则应占半角字符的宽度（即半个字位置），以使视觉效果更美观。」
+            </p>
+            <p its-locale-filter-list="zh-hant" lang="zh-hant" class="checkme">
+              行末的句號，在日文排版中往往不進行擠壓處理。但是對於中文排版，一般要進行處理，這對於中國大陸的排版規範尤其重要。《標點符號用法》（GB/T 15834-2011）有明確規定「5.1.10 標點符號排在一行末尾時，若為全角字符則應占半角字符的寬度（即半個字位置），以使視覺效果更美觀。」
+            </p>
+          </aside>
+        </li>
+
+        <li>
+          <p its-locale-filter-list="en" lang="en">
+            Spacing between Western texts: for lines with numerous instances of Western text, their spacing should be processed at the same time, with equal treatment. The minimum space between each Western text should be quarter of a character width.
+          </p>
+          <p its-locale-filter-list="zh-hans" lang="zh-hans">
+            位于行内的西文词距。一行内若有多处西文词距，应该同时、同等量处理，每个西文词距最小可以挤压到四分之一汉字宽。
+          </p>
+          <p its-locale-filter-list="zh-hant" lang="zh-hant" class="checkme">
+            位於行內的西文詞距。一行內若有多處西文詞距，應該同時、同等量處理，每個西文詞距最小可以擠壓到四分之一漢字寬。
+          </p>
+        </li>
+
+        <li>
+          <p its-locale-filter-list="en" lang="en">
+            Interpuncts: space reduction must take place equally on both sides of the character. The minimum space is 0, whereby the interpunct ends up being half a character width.
+          </p>
+          <p its-locale-filter-list="zh-hans" lang="zh-hans">
+            位于行内的间隔号。挤压时必须同时从字面两侧、同等量处理，最小挤到0，即变成半个汉字字宽。
+          </p>
+          <p its-locale-filter-list="zh-hant" lang="zh-hant" class="checkme">
+            位於行內的間隔號。擠壓時必須同時從字面兩側、同等量處理，最小擠到0，即變成半個漢字字寬。
+          </p>
+        </li>
+
+        <li>
+          <p its-locale-filter-list="en" lang="en">
+            Brackets: space reduction can take place before the opening bracket and after the closing bracket. If multiple brackets occur within the same line, their space reduction should be processed at the same time, with equal treatment. Space can be reduced until the bracket is half a character width.
+          </p>
+          <p its-locale-filter-list="zh-hans" lang="zh-hans">
+            位于行内的夹注符号。可以对开始夹注符号的前侧、结束夹注符号的后侧进行挤压，最小可以挤压到半个汉字字宽。一行内如有多处，应该同时、同等量处理。
+          </p>
+          <p its-locale-filter-list="zh-hant" lang="zh-hant" class="checkme">
+            位於行內的夾註符號。可以對開始夾註符號的前側、結束夾註符號的後側進行擠壓，最小可以擠壓到半個漢字字寬。壹行內如有多處，應該同時、同等量處理。
+          </p>
+        </li>
+
+        <li>
+          <p its-locale-filter-list="en" lang="en">
+            Commas, secondary commas and semi-colons: space reduction should follow [[[#h-punctuation_adjustment_space]]]. Spacing can be reduced at the end of the punctuation mark or equally on either side. If multiple of such punctuations occur within the same line, their space reduction should be processed at the same time, with equal treatment. Space can be reduced until the punctuation mark is half a character width.
+          </p>
+          <p its-locale-filter-list="zh-hans" lang="zh-hans">
+            位于行内的逗号、顿号、分号。挤压空间依照[[[#h-punctuation_adjustment_space]]]，可以是后侧，也可以是字面两侧同时，最小可以挤压到半个汉字字宽。一行内如有多处，应该同时、同等量处理。
+          </p>
+          <p its-locale-filter-list="zh-hant" lang="zh-hant" class="checkme">
+            位於行內的逗號、頓號、分號。擠壓空間依照[[[#h-punctuation_adjustment_space]]]，可以是後側，也可以是字面兩側同時，最小可以擠壓到半個漢字字寬。一行內如有多處，應該同時、同等量處理。
+          </p>
+        </li>
+
+        <li>
+          <p its-locale-filter-list="en" lang="en">
+            Spacing between Han characters and Western texts: if there are numerous instances of mixed texts, space reduction should be processed at the same time, with equal treatment, with the minimum space being one-eighth of a character width.
+          </p>
+          <p its-locale-filter-list="zh-hans" lang="zh-hans">
+            行内的中西间距，最小挤为八分之一汉字宽。一行内若有多处，应该同时、同等量处理。
+          </p>
+          <p its-locale-filter-list="zh-hant" lang="zh-hant" class="checkme">
+            行內的中西間距，最小擠為八分之一漢字寬。一行內若有多處，應該同時、同等量處理。
+          </p>
+          <aside class="note">
+            <p its-locale-filter-list="en" lang="en">
+              Certain typesetting styles have a fixed default spacing between Han characters and Western texts, for example a quarter of a character width, in such cases, adjustment is not allowed.
+            </p>
+            <p its-locale-filter-list="zh-hans" lang="zh-hans">
+              在一些排版风格中，中西间距固定默认宽度（如四分之一汉字宽），被排除在行内调整对象之外，不允许被挤压。
+            </p>
+            <p its-locale-filter-list="zh-hant" lang="zh-hant" class="checkme">
+              在一些排版風格中，中西間距固定默認寬度（如四分之一漢字寬），被排除在行內調整對象之外，不允許被擠壓。
+            </p>
+          </aside>
+        </li>
+
+        <li>
+          <p its-locale-filter-list="en" lang="en">
+            Periods, question marks and exclamation marks: in accordance to [[[#h-punctuation_adjustment_space]]], if there is available space, spacing can be reduced up until the minimum size of half a character width.
+          </p>
+          <p its-locale-filter-list="zh-hans" lang="zh-hans">
+            位于行内的句号、问号、感叹号。依照[[[#h-punctuation_adjustment_space]]]，如果有调整空间则可以挤压，最小挤为半个汉字字宽。
+          </p>
+          <p its-locale-filter-list="zh-hant" lang="zh-hant" class="checkme">
+            位於行內的句號、問號、驚嘆號。依照[[[#h-punctuation_adjustment_space]]]，如果有調整空間則可以擠壓，最小擠為半個漢字字寬。
+          </p>
+          <aside class="note">
+            <p its-locale-filter-list="en" lang="en">
+              As these punctuation marks indicate a longer pause at the end of a sentence, certain typesetting styles do not allow line adjustment to be made on them, maintaining their width to be one character width.
+            </p>
+            <p its-locale-filter-list="zh-hans" lang="zh-hans">
+              由于句末标点表示停顿较大，因此有些排版风格禁止此项调整，而保持句号、问号、感叹号固定一个字宽。
+            </p>
+            <p its-locale-filter-list="zh-hant" lang="zh-hant" class="checkme">
+              由於句末標點表示停頓較大，因此有些排版風格禁止此項調整，而保持句號、問號、驚嘆號固定一個字寬。
+            </p>
+          </aside>
+        </li>
+      </ol>
+    </section>
+
+    <section id="procedures_for_inter-character_space_expansion">
+      <h4>
+        <span its-locale-filter-list="en" lang="en">Procedures for Inter-Character Space Expansion</span>
+        <span its-locale-filter-list="zh-hans" lang="zh-hans">拉伸处理的优先顺序</span>
+        <span its-locale-filter-list="zh-hant" lang="zh-hant">拉伸處理的優先順序</span>
+      </h4>
+
+      <p its-locale-filter-list="en" lang="en">
+        Inter-character space expansion should be processed according to the following steps, in order of precedence:
+      </p>
+      <p its-locale-filter-list="zh-hans" lang="zh-hans">
+        行内调整的拉伸处理，应该按照下述步骤，确定拉伸的优先顺序后依次进行处理：
+      </p>
+      <p its-locale-filter-list="zh-hant" lang="zh-hant" class="checkme">
+        行內調整的拉伸處理，應該按照下述步驟，確定拉伸的優先順序後依次進行處理：
+      </p>
+
+      <ol type="a">
+        <li>
+          <p its-locale-filter-list="en" lang="en">
+            Word spacing between Western texts: for lines with several Western word spaces, these should be processed at the same time, with equal treatment. Each word space can be expanded to a maximum of half a character width.
+          </p>
+          <p its-locale-filter-list="zh-hans" lang="zh-hans">
+            西文词距。一行内若有多处西文词距，应该同时、同等量处理，每个西文词距最大可以拉伸到半个汉字字宽。
+          </p>
+          <p its-locale-filter-list="zh-hant" lang="zh-hant" class="checkme">
+            西文詞距。一行內若有多處西文詞距，應該同時、同等量處理，每個西文詞距最大可以拉伸到半個漢字字寬。
+          </p>
+        </li>
+
+        <li>
+          <p its-locale-filter-list="en" lang="en">
+            Space between Han characters and Western texts can be expanded from the default width (e.g., a quarter character width). They should be processed at the same time, with equal treatment.
+          </p>
+          <p its-locale-filter-list="zh-hans" lang="zh-hans">
+            行内的中西间距，从默认宽度（如四分之一汉字宽）开始拉伸，一行内若有多处，应该同时、同等量处理，最大可拉大到半个汉字字宽。
+          </p>
+          <p its-locale-filter-list="zh-hant" lang="zh-hant" class="checkme">
+            行內的中西間距，從默認寬度（如四分之一漢字寬）開始拉伸，一行內若有多處，應該同時、同等量處理，最大可拉大到半個漢字字寬。
+          </p>
+          <aside class="note">
+            <p its-locale-filter-list="en" lang="en">
+              Numerous typesetting styles practically only allow expansion of space up to a third of a character width. Similar to space reduction, there are certain typesetting styles where the spacing between Han characters and Western texts are fixed at a default width, for example a quarter of a character width, in such cases, adjustments are not allowed.
+            </p>
+            <p its-locale-filter-list="zh-hans" lang="zh-hans">
+              很多排版风格在实际处理上，只允许最大拉伸到三分之一汉字宽。与上述挤压处理一样，在一些排版风格中，中西间距固定默认宽度（如四分之一汉字宽），被排除在行内调整对象之外，不允许被拉伸。
+            </p>
+            <p its-locale-filter-list="zh-hant" lang="zh-hant" class="checkme">
+              很多排版風格在實際處理上，只允許最大拉伸到三分之一漢字寬。與上述擠壓處理一樣，在一些排版風格中，中西間距固定默認寬度（如四分之壹漢字寬），被排除在行內調整對象之外，不允許被拉伸。
+            </p>
+          </aside>
+        </li>
+      </ol>
+
+          <p its-locale-filter-list="en" lang="en">
+            If all the aforementioned adjustments are not applicable, or the desired line length cannot be achieved, only the remaining inter-character spacing may be expanded at the same time, with equal treatment, to achieve text justification. However, there are two exceptions:
+          </p>
+          <p its-locale-filter-list="zh-hans" lang="zh-hans">
+            若上述所有项目均无法调整，或调整之后依旧无法达到预设行长，则只能针对剩余所有字符间距，进行同时、同等量拉伸，但是：
+          </p>
+          <p its-locale-filter-list="zh-hant" lang="zh-hant" class="checkme">
+            若上述所有項目均無法調整，或調整之後依舊無法達到預設行長，則只能針對剩余所有字符間距，進行同時、同等量拉伸，但是：
+          </p>
+          <ol type="a">
+            <li>
+              <p its-locale-filter-list="en" lang="en">
+                Spacing should not be added to characters stated in [[[#prohibition_rules_for_unbreakable_marks]]].
+              </p>
+              <p its-locale-filter-list="zh-hans" lang="zh-hans">
+                禁止对[[[#prohibition_rules_for_unbreakable_marks]]]规定的字间距进行拉伸处理。
+              </p>
+              <p its-locale-filter-list="zh-hant" lang="zh-hant" class="checkme">
+                禁止對[[[#prohibition_rules_for_unbreakable_marks]]]規定的字間距進行拉伸處理。
+              </p>
+            </li>
+            <li>
+              <p its-locale-filter-list="en" lang="en">
+                Avoid adding spacing to connector marks, solidi, and the characters immediately before and after these marks.
+              </p>
+              <p its-locale-filter-list="zh-hans" lang="zh-hans">
+                避免对连接号、分隔号与其前后的字符进行拉伸处理。
+              </p>
+              <p its-locale-filter-list="zh-hant" lang="zh-hant" class="checkme">
+                避免對連接號、分隔號與其前後的字符進行拉伸處理。
+              </p>
+            </li>
+          </ol>
+    
+    </section>
+
+  </section>
 
 </section>
 

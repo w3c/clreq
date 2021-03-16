@@ -12,12 +12,12 @@ Topics for discussion are suggested by [the gap-analysis template](https://www.w
 
 
 ### Documents 文档
-- [**Chinese Gap Analysis | 中文支持差距分析**](https://www.w3.org/TR/clreq-gap) • [*Editor's draft*](https://www.w3.org/International/clreq/gap-analysis/) • [*Latest commits*](https://github.com/w3c/clreq/commits/gh-pages/gap-analysis/index.html) • [*Edit on GitHub*](https://github.com/w3c/clreq/labels/doc%3Aclreq)
-- [**Chinese Layout Requirements | 中文排版需求**](https://www.w3.org/TR/clreq) • [*Editor's draft*](https://www.w3.org/International/clreq/) • [*Latest commits*](https://github.com/w3c/clreq/commits/gh-pages/index.html)
+- [**Chinese Gap Analysis 中文支持差距分析**](https://www.w3.org/TR/clreq-gap) • [*Editor's draft*](https://www.w3.org/International/clreq/gap-analysis/) • [*Latest commits*](https://github.com/w3c/clreq/commits/gh-pages/gap-analysis/index.html) • [*Edit on GitHub*](https://github.com/w3c/clreq/labels/doc%3Aclreq)
+- [**Chinese Layout Requirements 中文排版需求**](https://www.w3.org/TR/clreq) • [*Editor's draft*](https://www.w3.org/International/clreq/) • [*Latest commits*](https://github.com/w3c/clreq/commits/gh-pages/index.html)
 
 
 ### Related documents 相关文档
-- [Ready-made Counter Styles | 现成的计数器样式](https://www.w3.org/TR/predefined-counter-styles/)
+- [Ready-made Counter Styles 现成的计数器样式](https://www.w3.org/TR/predefined-counter-styles/)
 
 
 ### Feedback

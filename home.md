@@ -1,13 +1,18 @@
-# Chinese Language Enablement (clreq)
+# Chinese Language Enablement (clreq) | 中文语言支持
 
 This is the place to explore gaps in support for the Chinese Simplified and Traditional scripts on the Web and in eBooks, and to document requirements.
 
+本小组旨在探讨 Web 和电子书中使用简体、繁体中文时的差距，并且记录相关需求。
+
 We aim to address the problem that local users don't know how to tell the W3C what problems exist for support of their language on the Web, and the W3C doesn't know how to contact people who can help when questions arise.
+
+很多语言专家往往不知道如何告诉 W3C 在网页上支持自己的语言；而 W3C 也不知道如何联系到能回答问题的人，我们的目标就是解决这个问题。
 
 Topics for discussion are suggested by [the gap-analysis template](https://www.w3.org/International/i18n-activity/templates/gap-analysis/gap-analysis_template.html). This work feeds into the [language matrix](https://www.w3.org/International/typography/gap-analysis/language-matrix.html) which provides a heat-map for language issues on the Web.
 
+讨论的议题写在[差距分析模板（英文）](https://www.w3.org/International/i18n-activity/templates/gap-analysis/gap-analysis_template.html)中。这项工作源自列出了需要关注文种概要的[文种矩阵](https://www.w3.org/International/typography/gap-analysis/language-matrix.html)。
 
-### Key links
+### Key links 关键链接
 [GitHub repo](https://github.com/w3c/clreq) • [Discussion threads](https://github.com/w3c/clreq/issues) • [Issue tracker](https://www.w3.org/International/i18n-activity/textlayout/?filter=clreq) (with clreq filter) • [Charter](https://www.w3.org/International/clreq/charter/)
 
 
@@ -20,7 +25,7 @@ Topics for discussion are suggested by [the gap-analysis template](https://www.w
 - [Ready-made Counter Styles 现成的计数器样式](https://www.w3.org/TR/predefined-counter-styles/)
 
 
-### Feedback
+### Feedback 反馈
 Please use the [GitHub issue list](https://github.com/w3c/clreq/issues) to report issues for language support, for discussions, and to send feedback about documents. (Learn [how GitHub issues work](https://www.w3.org/International/i18n-activity/guidelines/issues.html).)
 
 请使用 [GitHub Issue](https://github.com/w3c/clreq/issues) 提出中文支持的问题、讨论以及对有关文档的反馈。学习[如何使用GitHub（英文）](https://www.w3.org/International/i18n-activity/guidelines/issues.html)。
@@ -59,11 +64,12 @@ To get an idea about what's involved, see  [Get involved with Language Enablemen
 
 - Chairs: Bobby TUNG, Yijun CHEN
 - W3C staff: [Fuqiao Xue](mailto:xfq@w3.org), [Richard Ishida](mailto:ishida@w3.org)
-- 主席：董福興、陳奕鈞 • W3C 员工：[薛富侨](mailto:xfq@w3.org)、[Richard Ishida](mailto:ishida@w3.org)
+- 主席：董福興、陳奕鈞
+- W3C 员工：[薛富侨](mailto:xfq@w3.org)、[Richard Ishida](mailto:ishida@w3.org)
 - [Group participants](https://www.w3.org/groups/tf/i18n-clreq/participants)
 
 
-### Links to practical information
+### Links to practical information 实用信息链接
 - [Mail archive](https://lists.w3.org/Archives/Public/public-i18n-cjk/)
 - [Writing i18n tests](https://github.com/w3c/i18n-activity/wiki/Writing-i18n-tests)
 - [Practical tips for task forces](https://www.w3.org/International/i18n-activity/guidelines/process.html) (See also the github and editorial guidelines below)
@@ -71,7 +77,7 @@ To get an idea about what's involved, see  [Get involved with Language Enablemen
 - Meeting info (tbd)
 
 
-### Links to background information
+### Links to background information 背景信息链接
 The following information describes work going on at the W3C to support languages on the Web.
 
 以下信息描述了 W3C 正在进行的 Web 语言支持方面的工作。

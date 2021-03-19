@@ -58,7 +58,7 @@ You can participate in the task force work at various levels. In order of increa
 
 To get an idea about what's involved, see  [Get involved with Language Enablement!](https://www.w3.org/International/i18n-drafts/pages/languagedev_participation). 
 
-
+如果想了解参与的内容，请参阅[参与语言支持项目（英文）]。
 
 ### Contacts 联系我们
 

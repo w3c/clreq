@@ -62,11 +62,12 @@ To get an idea about what's involved, see  [Get involved with Language Enablemen
 
 ### Contacts 联系我们
 
-- Chairs: Bobby TUNG, Yijun CHEN
+- Chairs: Yijun CHEN, Eric Q. LIU
 - W3C staff: [Fuqiao Xue](mailto:xfq@w3.org), [Richard Ishida](mailto:ishida@w3.org)
-- 主席：董福興、陳奕鈞
+- 主席：陳奕鈞、刘庆
 - W3C 员工：[薛富侨](mailto:xfq@w3.org)、[Richard Ishida](mailto:ishida@w3.org)
 - [Group participants](https://www.w3.org/groups/tf/i18n-clreq/participants)
+- [小组成员](https://www.w3.org/groups/tf/i18n-clreq/participants)
 
 
 ### Links to practical information 实用信息链接

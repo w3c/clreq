@@ -1,8 +1,8 @@
-# Chinese Language Enablement (clreq) | 中文语言支持
+# Chinese Language Enablement (clreq) | 中文支持
 
 This is the place to explore gaps in support for the Chinese Simplified and Traditional scripts on the Web and in eBooks, and to document requirements.
 
-本小组旨在探讨 Web 和电子书中使用简体、繁体中文时的差距，并且记录相关需求。
+本小组旨在探讨 Web 和电子书在简体和繁体中文支持方面的不足，并且记录相关需求。
 
 We aim to address the problem that local users don't know how to tell the W3C what problems exist for support of their language on the Web, and the W3C doesn't know how to contact people who can help when questions arise.
 

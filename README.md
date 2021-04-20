@@ -30,9 +30,9 @@ Please use the [GitHub issue list](https://github.com/w3c/clreq/issues) to repor
 
 请使用 [GitHub Issue](https://github.com/w3c/clreq/issues) 提出中文支持的问题、讨论以及对有关文档的反馈。学习[如何使用GitHub（英文）](https://www.w3.org/International/i18n-activity/guidelines/issues.html)。
 
-Note that the public-i18n-cjk mailing list is used to send notification digests & meeting minutes. It is **not** for technical discussion.
+Note that the public-i18n-chinese mailing list is used to send notification digests & meeting minutes. It is **not** for technical discussion.
 
-注意：public-i18n-cjk 邮件列表用于发送通知摘要和会议记录，不用于技术讨论。
+注意：public-i18n-chinese 邮件列表用于发送通知摘要和会议记录，不用于技术讨论。
 
 **You may raise issues in Chinese, however any substantive discussions should be summarised in English at some point, so that non-Chinese speakers can follow the rationale and contribute comments.**
 
@@ -44,9 +44,9 @@ You can participate in the task force work at various levels. In order of increa
 
 您可以以不同程度参加小组的工作，包含关注者、贡献者、参与者、编辑和主席，[在这里找到您的角色](https://www.w3.org/International/i18n-drafts/pages/task_force_roles)。
 
-**To just follow the work:** Rather than 'Watch' this repository, [subscribe](mailto:public-i18n-cjk-request@w3.org?subject=subscribe) to the [public-i18n-cjk](https://lists.w3.org/Archives/Public/public-i18n-cjk/) mailing list. That list is notified (no more than once a day, and in digest form), about changes to issues in this repository, but also about other W3C Working Group issues related to the Chinese writing systems.
+**To just follow the work:** Rather than 'Watch' this repository, [subscribe](mailto:public-i18n-chinese-request@w3.org?subject=subscribe) to the [public-i18n-chinese](https://lists.w3.org/Archives/Public/public-i18n-chinese/) mailing list. That list is notified (no more than once a day, and in digest form), about changes to issues in this repository, but also about other W3C Working Group issues related to the Chinese writing systems.
 
-如果只是关注小组工作：相比于“Watch”此仓库，订阅 [public-i18n-cjk](https://lists.w3.org/Archives/Public/public-i18n-cjk/) 邮件列表会更好。该列表每天以摘要形式通知此仓库的活动以及其他 W3C 工作组中与中日韩书写系统相关的问题。
+如果只是关注小组工作：相比于“Watch”此仓库，订阅 [public-i18n-chinese](https://lists.w3.org/Archives/Public/public-i18n-chinese/) 邮件列表会更好。该列表每天以摘要形式通知此仓库的活动以及其他 W3C 工作组中与中日韩书写系统相关的问题。
 
 **To contribute content:** All contributors should read and agree with [CONTRIBUTING.md](CONTRIBUTING.md).
 
@@ -71,7 +71,7 @@ To get an idea about what's involved, see  [Get involved with Language Enablemen
 
 
 ### Links to practical information 实用信息链接
-- [Mail archive](https://lists.w3.org/Archives/Public/public-i18n-cjk/)
+- [Mail archive](https://lists.w3.org/Archives/Public/public-i18n-chinese/)
 - [Writing i18n tests](https://github.com/w3c/i18n-activity/wiki/Writing-i18n-tests)
 - [Practical tips for task forces](https://www.w3.org/International/i18n-activity/guidelines/process.html) (See also the github and editorial guidelines below)
 - Action tracker (tbd)

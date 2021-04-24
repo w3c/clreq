@@ -46,7 +46,7 @@ You can participate in the task force work at various levels. In order of increa
 
 **To just follow the work:** Rather than 'Watch' this repository, [subscribe](mailto:public-i18n-chinese-request@w3.org?subject=subscribe) to the [public-i18n-chinese](https://lists.w3.org/Archives/Public/public-i18n-chinese/) mailing list. That list is notified (no more than once a day, and in digest form), about changes to issues in this repository, but also about other W3C Working Group issues related to the Chinese writing systems.
 
-如果只是关注小组工作：相比于“Watch”此仓库，订阅 [public-i18n-chinese](https://lists.w3.org/Archives/Public/public-i18n-chinese/) 邮件列表会更好。该列表每天以摘要形式通知此仓库的活动以及其他 W3C 工作组中与中日韩书写系统相关的问题。
+如果只是关注小组工作：相比于“Watch”此仓库，订阅 [public-i18n-chinese](https://lists.w3.org/Archives/Public/public-i18n-chinese/) 邮件列表会更好。该列表每天以摘要形式通知此仓库的活动以及其他 W3C 工作组中与中文相关的问题。
 
 **To contribute content:** All contributors should read and agree with [CONTRIBUTING.md](CONTRIBUTING.md).
 

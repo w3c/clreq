@@ -6,7 +6,7 @@ This is the place to explore gaps in support for the Chinese Simplified and Trad
 
 We aim to address the problem that local users don't know how to tell the W3C what problems exist for support of their language on the Web, and the W3C doesn't know how to contact people who can help when questions arise.
 
-很多语言专家往往不知道如何让 W3C 在网页上支持自己的语言；而 W3C 也不知道如何联系到熟悉如何使用某种语言的人，我们的目标就是解决这个问题。
+很多语言的使用者不知道如何让 W3C 在网页上支持自己的语言；而 W3C 也不知道如何联系到熟悉如何使用某种语言的人，我们的目标就是解决这个问题。
 
 Topics for discussion are suggested by [the gap-analysis template](https://www.w3.org/International/i18n-activity/templates/gap-analysis/gap-analysis_template.html). This work feeds into the [language matrix](https://www.w3.org/International/typography/gap-analysis/language-matrix.html) which provides a heat-map for language issues on the Web.
 

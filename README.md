@@ -6,19 +6,19 @@ This is the place to explore gaps in support for the Chinese Simplified and Trad
 
 We aim to address the problem that local users don't know how to tell the W3C what problems exist for support of their language on the Web, and the W3C doesn't know how to contact people who can help when questions arise.
 
-很多语言专家往往不知道如何告诉 W3C 在网页上支持自己的语言；而 W3C 也不知道如何联系到能回答问题的人，我们的目标就是解决这个问题。
+很多语言的使用者不知道如何让 W3C 在网页上支持自己的语言；而 W3C 也不知道如何联系到熟悉如何使用某种语言的人，我们的目标就是解决这个问题。
 
 Topics for discussion are suggested by [the gap-analysis template](https://www.w3.org/International/i18n-activity/templates/gap-analysis/gap-analysis_template.html). This work feeds into the [language matrix](https://www.w3.org/International/typography/gap-analysis/language-matrix.html) which provides a heat-map for language issues on the Web.
 
 讨论的议题写在[差距分析模板（英文）](https://www.w3.org/International/i18n-activity/templates/gap-analysis/gap-analysis_template.html)中。这项工作源自列出了需要关注文种概要的[文种矩阵](https://www.w3.org/International/typography/gap-analysis/language-matrix.html)。
 
 ### Key links 关键链接
-[GitHub repo](https://github.com/w3c/clreq) • [Discussion threads](https://github.com/w3c/clreq/issues) • [Issue tracker](https://www.w3.org/International/i18n-activity/textlayout/?filter=clreq) (with clreq filter) • [Charter](https://www.w3.org/International/clreq/charter/)
+[GitHub repo](https://github.com/w3c/clreq) • [Discussion threads](https://github.com/w3c/clreq/issues) • [Issue tracker](https://www.w3.org/International/i18n-activity/textlayout/?filter=clreq) (with clreq filter) • [Charter 章程](https://www.w3.org/International/clreq/charter/)
 
 
 ### Documents 文档
-- [**Chinese Gap Analysis 中文支持差距分析**](https://www.w3.org/TR/clreq-gap) • [*Editor's draft*](https://www.w3.org/International/clreq/gap-analysis/) • [*Latest commits*](https://github.com/w3c/clreq/commits/gh-pages/gap-analysis/index.html) • [*Edit on GitHub*](https://github.com/w3c/clreq/labels/doc%3Aclreq)
-- [**Chinese Layout Requirements 中文排版需求**](https://www.w3.org/TR/clreq) • [*Editor's draft*](https://www.w3.org/International/clreq/) • [*Latest commits*](https://github.com/w3c/clreq/commits/gh-pages/index.html)
+- [**Chinese Gap Analysis 中文支持差距分析**](https://www.w3.org/TR/clreq-gap) • [*Editor's draft 编辑草案*](https://www.w3.org/International/clreq/gap-analysis/) • [*Latest commits*](https://github.com/w3c/clreq/commits/gh-pages/gap-analysis/index.html) • [*Edit on GitHub*](https://github.com/w3c/clreq/labels/doc%3Aclreq)
+- [**Chinese Layout Requirements 中文排版需求**](https://www.w3.org/TR/clreq) • [*Editor's draft 编辑草案*](https://www.w3.org/International/clreq/) • [*Latest commits*](https://github.com/w3c/clreq/commits/gh-pages/index.html)
 
 
 ### Related documents 相关文档
@@ -30,9 +30,9 @@ Please use the [GitHub issue list](https://github.com/w3c/clreq/issues) to repor
 
 请使用 [GitHub Issue](https://github.com/w3c/clreq/issues) 提出中文支持的问题、讨论以及对有关文档的反馈。学习[如何使用GitHub（英文）](https://www.w3.org/International/i18n-activity/guidelines/issues.html)。
 
-Note that the public-i18n-chinese mailing list is used to send notification digests & meeting minutes. It is **not** for technical discussion.
+Note that the [public-i18n-chinese](https://lists.w3.org/Archives/Public/public-i18n-chinese/) mailing list is used to send notification digests & meeting minutes. It is **not** for technical discussion.
 
-注意：public-i18n-chinese 邮件列表用于发送通知摘要和会议记录，不用于技术讨论。
+注意：[public-i18n-chinese](https://lists.w3.org/Archives/Public/public-i18n-chinese/) 邮件列表用于发送通知摘要和会议记录，不用于技术讨论。
 
 **You may raise issues in Chinese, however any substantive discussions should be summarised in English at some point, so that non-Chinese speakers can follow the rationale and contribute comments.**
 
@@ -58,7 +58,7 @@ You can participate in the task force work at various levels. In order of increa
 
 To get an idea about what's involved, see  [Get involved with Language Enablement!](https://www.w3.org/International/i18n-drafts/pages/languagedev_participation). 
 
-如果想了解参与的内容，请参阅[参与语言支持项目（英文）]。
+如果想了解参与的内容，请参阅[参与语言支持项目（英文）](https://www.w3.org/International/i18n-drafts/pages/languagedev_participation)。
 
 ### Contacts 联系我们
 

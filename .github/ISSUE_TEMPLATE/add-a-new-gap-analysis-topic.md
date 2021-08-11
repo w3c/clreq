@@ -35,5 +35,10 @@ describe_the_results
 <b class="subhead">Priority:</b>
 Why_you_chose_the_priority
 
-_The first comment in this issue contains text that will automatically appear in [the Chinese gap-analysis document](https://www.w3.org/International/clreq/gap-analysis/#XXX) as a topic with the same title as this issue. Any edits made to that comment will be immediately available in the Editor's draft of the document. Proposals for changes or discussion of the content can be made in comments below this point._
-_The first comment in this issue contains text that will automatically appear in several gap-analysis documents in the Vertical Text section, as a topic with the same title as this issue. Any edits made to that comment will be immediately available in the Editor's draft of the document. Proposals for changes or discussion of the content can be made in comments below this point._
+
+
+TEXT FOR THE SECOND COMMENT FIELD: ADAPT THE LINKS AS NEEDED; IF THE DOCS SPAN REPOS, BOLD THE ONE THAT IS REFERRED TO FROM THE PIPELINE
+_The first comment in this issue contains text that will automatically appear in one or more gap-analysis documents as a subsection with the same title as this issue. Any edits made to that comment will be immediately available in the document. Proposals for changes or discussion of the content can be made in comments below this point._
+
+_Relevant gap analysis documents include:_
+_[Adlam](https://w3c.github.io/afrlreq/gap-analysis/adlm-gap#issue11_vertical_text) • [Arabic/Persian](https://w3c.github.io/alreq/gap-analysis/#issue242_vertical_text) • [Canadian Syllabics](https://w3c.github.io/amlreq/gap-analysis/iu-cr-gap#issue5_vertical_text) • [Cherokee](https://w3c.github.io/amlreq/gap-analysis/chr-gap#issue5_vertical_text) • [**Georgian**](https://w3c.github.io/eurlreq/gap-analysis/geor-gap#issue11_vertical_text) • [Greek](https://w3c.github.io/eurlreq/gap-analysis/grek-gap#issue11_vertical_text) • [German](https://w3c.github.io/eurlreq/gap-analysis/latn-de-gap#issue11_vertical_text) • [French](https://w3c.github.io/eurlreq/gap-analysis/latn-fr-gap#issue11_vertical_text) • [Hungarian](https://w3c.github.io/eurlreq/gap-analysis/latn-nl-gap#issue11_vertical_text) • [N'Ko](https://w3c.github.io/afrlreq/gap-analysis/nkoo-gap#issue11_vertical_text) • [Osage](https://w3c.github.io/amlreq/gap-analysis/osge-osa-gap#issue5_vertical_text)_

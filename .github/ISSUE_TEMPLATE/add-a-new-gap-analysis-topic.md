@@ -1,6 +1,6 @@
 ---
-name: Add a new gap-analysis topic 添加新的差距分析主题
-about: Only those in the clreq group should use this template. 只有 clreq 小组中的人才能使用此模板。
+name: Add a new gap-analysis topic / 添加新的差距分析主题
+about: Only those in the clreq group should use this template. / 只有 clreq 小组中的人才能使用此模板。
 title: Brief_description_of_the_problem
 labels: doc:clreq, gap
 assignees: ''

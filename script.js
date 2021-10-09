@@ -30,14 +30,18 @@ var L10N = {
 
     'fig': '圖',
 
+    'summary': '關於此文檔',
+
     dt: {
       'This version:': '本版本：',
+      'History:': '歷史：',
       'Previous version:': '上一版：',
       'Latest published version:': '最新發佈草稿：',
       'Latest editor\'s draft:': '最新編輯草稿：',
       'Editors:': '編輯：',
       'Former editors:': '原編輯：',
       'Participate:': '協助參與：',
+      'Feedback:': '反饋：',
     },
 
     dd: {
@@ -55,14 +59,18 @@ var L10N = {
 
     'fig': '图',
 
+    'summary': '关于此文档',
+
     dt: {
       'This version:': '本版本：',
+      'History:': '历史：',
       'Previous version:': '上一版：',
       'Latest published version:': '最新发布草稿：',
       'Latest editor\'s draft:': '最新编辑草稿：',
       'Editors:': '编辑：',
       'Former editors:': '原编辑：',
       'Participate:': '协助参与：',
+      'Feedback:': '反馈：',
     },
 
     dd: {
@@ -133,7 +141,18 @@ function replaceBoilerplateText(lang) {
   	Object.assign($elmt.firstChild, { textContent: l10n['fig'] })
 	})
 
-  $$('h1 + h2 + dl dt')
+  $$('h1 + h2 + details summary')
+  .forEach(function($summary) {
+  	var originalText = $summary.dataset.originalText || $summary.textContent.trim()
+    var text = l10n['summary'] || originalText
+
+    if (text) {
+      $summary.textContent = text
+      $summary.dataset.originalText = originalText
+    }
+	})
+
+  $$('h1 + h2 + details dl dt')
   .forEach(function($dt) {
     var originalText = $dt.dataset.originalText || $dt.textContent.trim()
     var text = l10n.dt[originalText] || originalText

@@ -11,9 +11,7 @@ h2 {
   margin-bottom: 0em;
 }
 
-.head h2,
-#abstract h2,
-#sotd h2 {
+:is(.head, #abstract, #sotd) h2 {
   margin-top: 0;
 }
 

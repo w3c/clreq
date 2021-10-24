@@ -2104,14 +2104,34 @@ var respecConfig = {
       <p its-locale-filter-list="zh-hant" lang="zh-hant">直排時，西文與<a href="#term.european-numerals" class="termref">阿拉伯數字</a>的配置有以下三種方法：</p>
       <ol>
         <li id="id110">
-          <p its-locale-filter-list="en" lang="en"><span class="leadin">Setting Western letters with Han character width monospace fonts</span>. Letters or European numerals follow each other, one at a time, in the same direction and orientation as the Han characters. This arrangement is usually adopted where the text contains a single letter or digit, or an acronym (such as <abbr title="Gross Domestic Product">GDP</abbr>).</p>
-          <p its-locale-filter-list="zh-hans" lang="zh-hans" class="checkme">采用与汉字等宽的字体或全角文字，使用与汉字相同的书写方向按照字母排列，无须转向。当文中的西文字母与阿拉伯数字为单独一字或为首字母缩写时（如GDP），多使用这种方式配置。</p>
+          <p its-locale-filter-list="en" lang="en" class="checkme"><span class="leadin">Setting Western letters with Han character width monospace fonts</span>. Letters or European numerals follow each other, one at a time, in the same direction and orientation as the Han characters. This arrangement is usually adopted where the text contains a single letter or digit, or an acronym (such as <abbr title="Gross Domestic Product">GDP</abbr>).</p>
+          <p its-locale-filter-list="zh-hans" lang="zh-hans">采用与汉字等宽的字体或全角文字，使用与汉字相同的书写方向按照字母排列，无须转向。当文中的西文字母与阿拉伯数字为单独一字或为首字母缩写时（如GDP），多使用这种方式配置。</p>
           <p its-locale-filter-list="zh-hant" lang="zh-hant">採用與漢字等寬之字體或全形字元，使用與漢字相同的書寫方向依字母排列，毋須轉向。當文中的西文字母與阿拉伯數字為單獨一字、或為首字母縮寫時（如GDP），多使用這種方式配置。</p>
+          <figure id="latin-normal-orientation">
+            <img its-locale-filter-list="en" lang="en" src="images/en/latin-one-by-one.svg" alt="Example of Latin letters in normal orientation." width="123" height="181">
+            <img its-locale-filter-list="zh-hans" lang="zh-hans" src="images/zh/latin-one-by-one-Hans.svg" alt="没有转向的西文字母示例" width="123" height="181">
+            <img its-locale-filter-list="zh-hant" lang="zh-hant" src="images/zh/latin-one-by-one-Hant.svg" alt="沒有轉向的西文字母示例" width="123" height="181">
+              <figcaption>
+              <span its-locale-filter-list="en" lang="en">Example of Latin letters in normal orientation.</span>
+              <span its-locale-filter-list="zh-hans" lang="zh-hans">没有转向的西文字母示例</span>
+              <span its-locale-filter-list="zh-hant" lang="zh-hant">沒有轉向的西文字母示例</span>
+              </figcaption>
+          </figure>
         </li>
         <li id="id111">
           <p its-locale-filter-list="en" lang="en"><span class="leadin">Setting Western letters with proportional fonts, rotated 90 degrees clockwise.</span> This approach is usually adopted where Latin letters compose a word or sentence. There is tracking or spacing between a Han character and an adjacent Western letter or European numeral, up to a width of one quarter of a Han character, except at the line start or end.</p>
-          <p its-locale-filter-list="zh-hans" lang="zh-hans" class="checkme">采用比例字体，将文字顺时针旋转90°配置。当文中的西文为一般单词、语句或四位数以上的阿拉伯数时，采用此方法配置。汉字与西文字母、数字间使用不多于四分之一个汉字宽的字距或空白。但西文出现在行首或行尾时，则无须加入空白。</p>
+          <p its-locale-filter-list="zh-hans" lang="zh-hans">采用比例字体，将文字顺时针旋转90°配置。当文中的西文为一般单词、语句或四位数以上的阿拉伯数字时，采用此方法配置。汉字与西文字母、数字间使用不多于四分之一个汉字宽的字距或空白。但西文出现在行首或行尾时，则无须加入空白。</p>
           <p its-locale-filter-list="zh-hant" lang="zh-hant">採用比例字體，將文字順時針旋轉90度配置。當文中的西字為一般單字詞、語句，或阿拉伯數在四位數以上時，採用此方法配置。漢字與西文字母、數字間使用不多於四分之一個漢字寬的字距或空白。但西文出現在行頭或行尾時，則毋須加入空白。</p>
+          <figure id="latin-90-clockwise-2">
+            <img its-locale-filter-list="en" lang="en" src="images/en/latin-90-clockwise.svg" alt="Example of Latin letters rotated 90 degrees clockwise." width="124" height="188">
+            <img its-locale-filter-list="zh-hans" lang="zh-hans" src="images/zh/latin-90-clockwise-Hans.svg" alt="顺时针旋转90°的西文字母示例" width="124" height="188">
+            <img its-locale-filter-list="zh-hant" lang="zh-hant" src="images/zh/latin-90-clockwise-Hant.svg" alt="順時針旋轉90°的西文字母示例" width="124" height="188">
+              <figcaption>
+              <span its-locale-filter-list="en" lang="en">Example of Latin letters rotated 90 degrees clockwise.</span>
+              <span its-locale-filter-list="zh-hans" lang="zh-hans">顺时针旋转90°的西文字母示例</span>
+              <span its-locale-filter-list="zh-hant" lang="zh-hant">順時針旋轉90°的西文字母示例</span>
+              </figcaption>
+          </figure>
         </li>
         <li id="id112">
           <p its-locale-filter-list="en" lang="en"><span class="leadin">Setting European numerals with proportional fonts in horizontal-in-vertical orientation.</span> This style is usually adopted when dealing with a two to three digit number whose width is equal to the default line advance or slightly wider (within an acceptable range).</p>

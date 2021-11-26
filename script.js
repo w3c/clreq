@@ -5,8 +5,8 @@ var LANG_LIST = ['en', 'zh-hant', 'zh-hans']
 var L10N = {
 	'en': {
     selector: {
-      '#abstract-1': 'Abstract',
-      '#h-sotd': 'Status of This Document',
+      '#abstract > h2': 'Abstract',
+      '#sotd > h2': 'Status of This Document',
       '#table-of-contents': 'Table of Contents',
       '.note-title': 'Note',
     },
@@ -22,8 +22,8 @@ var L10N = {
 
   'zh-hant': {
     selector: {
-      '#abstract-1': '摘要',
-      '#h-sotd': '關於本文檔',
+      '#abstract > h2': '摘要',
+      '#sotd > h2': '關於本文檔',
       '#table-of-contents': '內容大綱',
       '.note-title': '注',
     },
@@ -51,8 +51,8 @@ var L10N = {
 
   'zh-hans': {
     selector: {
-      '#abstract-1': '摘要',
-      '#h-sotd': '关于本文档',
+      '#abstract > h2': '摘要',
+      '#sotd > h2': '关于本文档',
       '#table-of-contents': '内容大纲',
       '.note-title': '注',
     },
@@ -141,7 +141,7 @@ function replaceBoilerplateText(lang) {
   	Object.assign($elmt.firstChild, { textContent: l10n['fig'] })
 	})
 
-  $$('h1 + h2 + details summary')
+  $$('body > div.head > details > summary')
   .forEach(function($summary) {
   	var originalText = $summary.dataset.originalText || $summary.textContent.trim()
     var text = l10n['summary'] || originalText
@@ -152,7 +152,7 @@ function replaceBoilerplateText(lang) {
     }
 	})
 
-  $$('h1 + h2 + details dl dt')
+  $$('body > div.head > details > dl > dt')
   .forEach(function($dt) {
     var originalText = $dt.dataset.originalText || $dt.textContent.trim()
     var text = l10n.dt[originalText] || originalText

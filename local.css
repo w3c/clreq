@@ -180,6 +180,8 @@ code { color: #A52A2A; }
   font-weight: bold;
 }
 
+.appendix { overflow-x: scroll }
+
 table { border-collapse: collapse; }
 table tr { border-bottom: 1px solid #ddd; }
 table th { padding: .25em .25em .5em .25em; }

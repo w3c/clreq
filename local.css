@@ -180,7 +180,7 @@ code { color: #A52A2A; }
   font-weight: bold;
 }
 
-.appendix { overflow-x: scroll }
+.appendix { overflow-x: auto }
 
 table { border-collapse: collapse; }
 table tr { border-bottom: 1px solid #ddd; }

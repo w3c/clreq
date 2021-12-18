@@ -1,16 +1,23 @@
 # ECHIDNA configuration
-index.html?specStatus=WD;shortName=clreq respec
+index.html?specStatus=WD&shortName=clreq respec
 local.css
 script.js
+images/en/increased-inter-character-spacing.svg
+images/en/punctuation-adjustment-space.png
 images/zh/biaoyin-erhua.svg
 images/zh/billingual-annotation.svg
 images/zh/fangsong.png
+images/zh/group-ruby.png
 images/zh/heiti.png
 images/zh/kaiti.png
 images/zh/locale_punctuation.png
+images/zh/negative-tracking.svg
 images/zh/phonetic-in-both.png
 images/zh/pinyin-use-case.svg
+images/zh/punctuation-adjustment-space-hans.png
+images/zh/punctuation-adjustment-space-hant.png
 images/zh/songti.png
+images/zh/symbol-of-death.png
 images/zh/zhuyin-1-0-1-one-symbol.svg
 images/zh/zhuyin-1-0-2-one-symbol-checked-tone.svg
 images/zh/zhuyin-1-0-3-one-symbol-neutral-tone.svg
@@ -32,8 +39,6 @@ images/zh/zhuyin-3-1-three-symbol-xin1.svg
 images/zh/zhuyin-3-2-three-symbol-zui3.svg
 images/zh/zhuyin-3-3-three-symbol-tioh.svg
 images/zh/zhuyin-3-4-three-symbol-zuo.svg
-images/zh/zhuyin-inline-horizontal.svg
-images/zh/zhuyin-inline-vertical.svg
 images/zh/zhuyin-rt.svg
 images/zh/zhuyin-use-case-horizontal.svg
 images/zh/zhuyin-use-case-vertical.svg

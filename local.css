@@ -11,9 +11,7 @@ h2 {
   margin-bottom: 0em;
 }
 
-.head h2,
-#abstract h2,
-#sotd h2 {
+:is(.head, #abstract, #sotd) h2 {
   margin-top: 0;
 }
 
@@ -182,6 +180,8 @@ code { color: #A52A2A; }
   font-weight: bold;
 }
 
+.appendix { overflow-x: auto }
+
 table { border-collapse: collapse; }
 table tr { border-bottom: 1px solid #ddd; }
 table th { padding: .25em .25em .5em .25em; }
@@ -258,3 +258,6 @@ table.full.punctuation td:nth-child(7) {
 table.glossary th.term { width: 6.25em; }
 table.glossary th.term-pinyin { width: 5.25em; }
 table.glossary th.term-en { width: 5.25em; }
+
+/* Override the display property */
+[its-locale-filter-list][hidden] { display: none; }

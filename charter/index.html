@@ -10,6 +10,44 @@
   <link rel="stylesheet" type="text/css"
   href="https://www.w3.org/2006/02/charter-style.css" />
   <style>
+      main {
+        max-width: 60em;
+        margin: 0 auto;
+      }
+
+      ul#navbar {
+        font-size: small;
+      }
+
+      dt.spec {
+        font-weight: bold;
+      }
+
+      dt.spec new {
+        background: yellow;
+      }
+
+      ul.out-of-scope > li {
+        font-weight: bold;
+      }
+
+      ul.out-of-scope > li > ul > li{
+        font-weight: normal;
+      }
+
+      .issue {
+        background: cornsilk;
+        font-style: italic;
+      }
+
+      .todo {
+        color: #900;
+      }
+
+      footer {
+        font-size: small;
+      }
+  
   ins { background-color: #FF6; }
   del { color: gray; }
   </style>
@@ -17,261 +55,282 @@
 
 <body>
 
-<div id="template">
-<ul id="navbar" style="font-size: small">
-  <li><a href="#scope">Scope</a></li>
-  <li><a href="#deliverables">Deliverables</a></li>
-  <li><a href="#coordination">Relationships to external groups</a></li>
-  <li><a href="#participation">Participation</a></li>
-  <li><a href="#communication">Communication</a></li>
-  <li><a href="#decisions">Decision Policy</a></li>
-  <li><a href="#patentpolicy">Patent Policy </a></li>
-  <li><a href="#about">About this Charter</a></li>
-</ul>
+  <header id="header">
+    <aside>
+      <ul id="navbar">
+        <li><a href="#scope">Scope</a></li>
+        <li><a href="#deliverables">Deliverables</a></li>
+        <li><a href="#success-criteria">Success Criteria</a></li>
+        <li><a href="#coordination">Relationships to external groups</a></li>
+        <li><a href="#participation">Participation</a></li>
+        <li><a href="#communication">Communication</a></li>
+        <li><a href="#decisions">Decision Policy</a></li>
+        <li><a href="#patentpolicy">Patent Policy</a></li>
+        <li><a href="#licensing">Licensing</a></li>
+        <li><a href="#about">About this Charter</a></li>
+      </ul>
+    </aside>
+    <p>
+      <a href="https://www.w3.org/"><img alt="W3C" height="48" src="https://www.w3.org/Icons/w3c_home" width="72"></a>
+    </p>
+  </header>
 
-<p><a href="https://www.w3.org/"><img alt="W3C" height="48"
-src="https://www.w3.org/Icons/w3c_home" width="72" /></a> <a class="domainlogo"
-href="https://www.w3.org/Architecture/"><img src="https://www.w3.org/Icons/interaction"
-alt="Architecture Domain" /></a> </p>
+  <main>
 
 <h1 id="title">Chinese Text Layout Task Force Charter</h1>
-<p class="mission">The <strong>mission</strong> of this task force  is to  document requirements for the layout and presentation of text in the major languages of China when those languages are used by Web standards such as HTML,  CSS, Mobile Web and Unicode. </p>
-<p class="mission">The documents will provide requirements for the development of W3C standards affected by  languages used in China and will therefore address scripts that include not only Hanzi, but also  scripts used by minority linguistic groups in China<del>)</del>. In particular, the task force will include work on Mongolian, Tibetan and Uighur scripts. These scripts are also used by communities outside of China, and participation in this work by those communities is welcomed. This task force will gather and integrate feedback from the participating members about the need  for and technical feasibility of various requirements.</p>
+<p class="mission">The <strong>mission</strong> of this task force  is to  document gaps and requirements for support of Simplified and Traditional Chinese on the Web and in eBooks. </p>
+<p class="mission">The documents will provide requirements for the development of W3C standards affected by Simplified and Traditional Chinese. This task force will gather and integrate feedback from the participating members about the need  for and technical feasibility of various requirements.</p>
 <p class="mission">The Task Force is part of the Internationalization Interest Group.</p>
 
 <p class="mission">The aim of this task force is to follow the example of <a href="https://www.w3.org/TR/jlreq/">Requirements for Japanese Text Layout</a> and collect information about specific use cases for technologies defined in various Web specifications as they relate to the aforementioned scripts, and to report the results of its activities as a group back to the Internationalization Working Group, as well as to other relevant groups and to the W3C membership and community.</p>
+
+<p class="mission">
+  This charter is intended to reflect the current direction of the group, so that there is common agreement. It may be altered at any point in order to reflect new priorities or work items.
+</p>
 <div class="noprint">
   <p class="join"><a href="https://www.chinaw3c.org/clreq-home.html#join">Join the Chinese Text Layout Task Force</a>.</p>
 </div>
-<table class="summary-table">
+
+<section id="details">
+  <table class="summary-table">
   <tbody>
     <tr id="Duration">
       <th rowspan="1" colspan="1">End date</th>
-      <td rowspan="1" colspan="1">31 December 2016</td>
+      <td rowspan="1" colspan="1">2023-04-30</td>
     </tr>
     <tr>
       <th rowspan="1" colspan="1">Confidentiality</th>
       <td rowspan="1" colspan="1">Proceedings are <a
-        href="https://www.w3.org/2005/10/Process-20051014/comm.html#confidentiality-levels"
+        href="https://www.w3.org/2020/Process-20200915/#confidentiality-levels"
        >public </a></td>
     </tr>
     <tr>
-      <th rowspan="1" colspan="1">Initial Chair</th>
-      <td rowspan="1" colspan="1">Zhuang Chen (CESI)<BR/>
-                                  Bobby Tung (Invited Expert)<br/> 
-                                  Nashun-urt (University of Inner Mongolia)
+      <th rowspan="1" colspan="1">Chairs</th>
+      <td rowspan="1" colspan="1">Yijun Chen (Invited Expert)<br/> 
+        Eric Q. Liu (Invited Expert)
       </td>
     </tr>
     <tr>
-      <th rowspan="1" colspan="1">Initial Team Contacts<br />
+      <th rowspan="1" colspan="1">Team Contacts<br />
         (FTE %: 2)</th>
-      <td rowspan="1" colspan="1">Richard Ishida<br/>Anqi Li<br/>Xiaoqian Wu<br/></td>
+      <td rowspan="1" colspan="1">Richard Ishida<br/>Fuqiao Xue<br/></td>
     </tr>
     <tr>
       <th rowspan="1" colspan="1">Usual Meeting Schedule</th>
-      <td rowspan="1" colspan="1">Teleconferences: On an as-needed basis.<br/>
-         Face-to-face meetings: On an as-needed basis.<br/>
-        Video Conferences: On an as-needed basis.<br/></td>
+      <td rowspan="1" colspan="1">
+          <strong>Teleconferences:</strong> on an as-needed basis
+          <br>
+          <strong>Face-to-face:</strong> on an as-needed basis
+      </td>
     </tr>
   </tbody>
 </table>
+</section>
 
-<div class="scope">
-<h2 id="scope">Scope</h2>
+<section id="scope" class="scope">
+<h2>Scope</h2>
 <p>The proposal for the group originated from consultation with stakeholders and W3C members in China on how to help facilitate increased involvement in W3C activities around CSS, digital-publishing, and other Web technologies for the languages of China.</p>
 <p>In addition to those specifications, the group may review (but is by no means explicitly limited to reviewing) the following: 
   
 </p>
 <ul>
   <li>The work of the Internationalization Working Group.</li>
-  <li>CSS3 Modules, in particular:
+  <li>CSS Modules, in particular:
     <ul>
-      <li>CSS3 Writing Modes Working Draft</li>
-      <li>CSS3 Text</li>
-      <li>CSS3 Lists</li>
-      <li>CSS3 Transitions</li>
-      <li>CSS3 Fonts</li>
-      <li>CSS3 Ruby</li>
-      <li>CSS3 Counter Styles</li>
+      <li>CSS Writing Modes</li>
+      <li>CSS Text</li>
+      <li>CSS Text Decoration</li>
+      <li>CSS Lists</li>
+      <li>CSS Transitions</li>
+      <li>CSS Fonts</li>
+      <li>CSS Ruby</li>
+      <li>CSS Counter Styles</li>
 
     </ul></li>
 <li>Browser testing and Tools</li>
-<li>HTML (in particular references to Ruby, locale-specific formats, and other internationalization aspects)</li>
+<li>HTML (in particular references to ruby, locale-specific formats, and other internationalization aspects)</li>
+<li>EPUB</li>
 </ul>
 
-<p>The group may also review draft specifications produced by Web API related working groups. Along with reviewing the above mentioned specifications and related specifications, it is expected that the group will also gather comments and questions about those specifications, collect information about specific use cases in China for technologies defined in those specifications, and report the results of its activities as a group back to the Internationalization Working Group, as well as to other relevant groups - such as the HTML Working Group, CSS Working Group, SVG Working Group, etc.</p>
+<p>The group may also review draft specifications produced by Web API related working groups. Along with reviewing the above-mentioned specifications and related specifications, it is expected that the group will also gather comments and questions about those specifications, collect information about specific use cases in China for technologies defined in those specifications, and report the results of its activities as a group back to the Internationalization Working Group, as well as to other relevant groups - such as the HTML Working Group, CSS Working Group, SVG Working Group, etc.</p>
 
-<h3>Initial set of languages</h3>
+</section>
 
-<p>Statistically, 1.7 billion of the world population use Chinese (including both simplified Chinese and traditional Chinese) as the main language, 8 million speak Tibetan, 6 million speak Mongolian, and 12 million speak Uighur. And some of the minority groups in China share the same languages and/or scripts with people who live in other countries, e.g. Mongolian and Korean. Though these shared languages and scripts are homogenous, the font, pronunciation and layout requirements might be different. </p>
-<p>Scripts included within the initial scope of the project  are Simplified &amp; Traditional Chinese, Mongolian, Tibetan and Arabic as used for Uighur. </p>
-<p>At a later date the scope may be extended to cover additional scripts used by minority groups in China. Here is an incomplete list of the languages used in China and other related regions: Hanzi (Chinese characters, Traditional, Simplified), Tibetan, Uygur, Mongolian, Korean, Dai, Kazakh, Kirgiz, Yi, etc. Additional languages will be included based on the availability of linguistic and typographic experts. </p>
-<div>
-  <h2 id="deliverables">Deliverables</h2>
+<section id="deliverables">
+<h2>
+  Deliverables
+</h2>
 <p>The Chinese Text Layout Task Force will not produce Recommendation-track deliverables but will produce documents that can be published by the Internationalization Working Group as Working Group Notes on  text layout and related technologies in China and elsewhere, the contents of which might include (but by no means are explicitly limited to) the following:</p>
 <ul>
-<li>Requirements for  Text Layout and presentation.</li>
-<li>Requirements for Digital Publications.</li>
-<li>Translation of W3C drafts of related technologies.</li>
+<li>
+  <a href="https://www.w3.org/TR/clreq/">Requirements for Chinese Text Layout</a>
+</li>
+<li>
+  <a href="https://www.w3.org/TR/clreq-gap/">Chinese Layout Gap Analysis</a>
+</li>
 </ul>
 <p>The group may also choose to produce other non-normative deliverables, such as test cases and error reports – under the terms of the Policies for Contribution of Test Cases to W3C, and in coordination with any relevant working groups. 
 </p>
 
-<p>Target deliverables are documents which include but are not limited to (Simplified &amp; Traditional) Chinese Layout Requirements,  Tibetan Layout Requirements, Mongolian Layout Requirements, and Uyghur Layout Requirements.</p>
+  <p>Documents can be produced in both Chinese and English, but there should always be an English version available, since people who don't speak Chinese are part of the target audience for the documents. In fact, opening up information to an international audience is an important aspect of the group's mission. In line with W3C policy, the authoritative version of a document will be the English one: this may be a translation from Chinese, or may be originated in English.</p>
 
+</section>
 
-<h3>Milestones</h3>
-
-<p>Plans for the main document deliverable are as follows. All deliverables will be made available in both English and Chinese.</p>
-
-    <table class="roadmap" width="80%"><caption>
-
-	      </caption><tfoot><tr><td colspan="4" rowspan="1">Note: The group will document significant changes from this initial
-	          schedule on the group home page</a>.</td>
-	          </tr>
-	      </tfoot><tbody><tr><th rowspan="1" colspan="1">Specification</th><!--th rowspan="1" colspan="1"><abbr title="First Working Draft">FPWD</abbr></th-->
-            <th rowspan="1" colspan="1"><abbr title="First Public Working Draft">FPWD</abbr></th>
-            <th rowspan="1" colspan="1"><abbr title="Working Draft for Final Review"> WD for final review</abbr></th>
-            <th rowspan="1" colspan="1"><abbr title="Working Group Note">WG Note</abbr></th></tr>
-
-<tr>
-	            <th rowspan="1" colspan="1">Requirements for Chinese Text Layout <br/>- Traditional Hanzi, Simplified Hanzi</th>
-	            <!--td class="WD1" rowspan="1" colspan="1"></td-->
-	            <td class="LC" rowspan="1" colspan="1">Q1 2014</td>
-	            <td class="PR" rowspan="1" colspan="1">Q3 2015</td>
-            <td class="REC" rowspan="1" colspan="1">Q4 2015</td></tr>
-
-<tr>
-	            <th rowspan="1" colspan="1">Mongolian Layout Requirements</th>
-	            <!--td class="WD1" rowspan="1" colspan="1">/td-->
-	            <td class="LC" rowspan="1" colspan="1">Q3 2015</td>
-	            <td class="PR" rowspan="1" colspan="1">Q3 2016</td>
-            <td class="REC" rowspan="1" colspan="1">Q4 2016</td></tr>
-
-<tr>
-	            <th rowspan="1" colspan="1">Tibetan Layout Requirements</th>
-	            <!--td class="WD1" rowspan="1" colspan="1">Q2 2013</td-->
-	            <td class="LC" rowspan="1" colspan="1">Q3 2015</td>
-	            <td class="PR" rowspan="1" colspan="1">Q3 2016</td>
-            <td class="REC" rowspan="1" colspan="1">Q4 2016</td></tr>
-
-<tr>
-	            <th rowspan="1" colspan="1">Uyghur Layout Requirements</th>
-	            <td class="LC" rowspan="1" colspan="1">Q3 2015</td>
-	            <td class="PR" rowspan="1" colspan="1">Q3 2016</td>
-            <td class="REC" rowspan="1" colspan="1">Q4 2016</td></tr>
-</tbody></table>
-
-
-<p>W3C/Beihang host has already done some extensive work on CSS requirements for Chinese languages (especially Traditional Chinese/Hanzi, and Simplified Chinese/Hanzi). A developing working draft report is available on the W3C China Web Site. In September 2014, W3C/Beihang host organized a <a href="https://www.chinaw3c.org/layout-workshop.html">Chinese Layout Requirements Workshop</a>. Participants showed great interest in language text layout requirements for Hanzi, and other major scripts used in China. The <a href="https://www.chinaw3c.org/layout-workshop-report.html">final report</a> of the workshop is available on the W3C China Web Site.  </p>
-<p>Other deliverables will be produced on an ongoing basis throughout the life of the charter, and the specific topics to be addressed by the task force and schedule information cannot be determined far in advance, but are driven by the needs of the Web community.</div>
-
-<h3>Success Criteria</h3>
+<section id="success-criteria">
+  <h2>Success Criteria</h2>
 
 <p>The success of the Task Force will be evaluated based on how productively it engages with W3C members and the relevant script communities  to promote discussion of specifications that affect layout and presentation of  languages  on the Web, and how effectively it is able to produce additional documents for the refinement, implementation, and adoption of  text layout and related technologies in China and worldwide.</p>
-</div>
+</section>
 
-<div class="dependencies">
-<h2 id="coordination">Relationships to External Groups</h2>
+<section id="coordination">
+<h2>Relationships to External Groups</h2>
 
-<p>Working Drafts and Notes will be published by the i18n WG, and the i18n WG will work with the task force closely to assist with development and review of the documents.</p>
+<p>Working Drafts and Notes will be published by the i18n WG, and the i18n WG will work with the task force closely to assist with development and review of the documents. For information about the wider framework into which the Chinese layout work fits, see <a href="https://github.com/w3c/i18n-discuss/wiki/Analysing-support-for-text-layout-on-the-Web">Analysing support for text layout on the Web</a>.</p>
 
+<section>
 <h3>Dependencies</h3>
 <dl>
   <dt>The Chinese Text Layout Task Force has no formal dependencies on any other W3C Working Groups. Important points of contact are:</dt>
     <dd>
       <ul>
         <li><a href="https://www.w3.org/International/">Internationalization Activity</a></li>
-        <li><a href="https://www.w3.org/Style/CSS/members">CSS Working Group</a></li>
-        <li><a href="https://www.w3.org/html/wg/">HTML Working Group</a></li>
+        <li><a href="https://www.w3.org/Style/CSS/">CSS Working Group</a></li>
+        <li><a href="https://www.w3.org/2019/html/">HTML Working Group</a></li>
         <li><a href="https://unicode.org/">Unicode Consortium</a></li>
-        <li><a href="https://www.w3.org/2008/webapps/">Web Applications Working Group</a></li>
+        <li><a href="https://www.w3.org/2019/webapps/">Web Applications Working Group</a></li>
         <li><a href="https://www.w3.org/2011/08/browser-testing-charter.html">Browser Testing and Tools Working Group</a></li>
         <li><a href="https://www.w3.org/Graphics/SVG/">SVG Working Group</a></li> 
-        <li><a href="https://www.w3.org/dpub/IG/">Digital Publishing Interest Group</a></li>
-        <li><a href="https://www.w3.org/html/ig/zh/ ">HTML Chinese Interest Group</a></li>
-        <li>Annotation Working Group</li>
+        <li><a href="https://www.w3.org/publishing/groups/epub-wg/">EPUB 3 Working Group</a></li>
+        <li><a href="https://www.w3.org/2018/chinese-web-ig/">Chinese Web Interest Group</a></li>
       </ul>
     </dd>
-    <p> </P>
     <dt>Other Groups</dt>
     <dd>The Chinese Text Layout Task Force is also expected to take advantage of opportunities for discussion and collaboration with existing groups and communities in China as well as groups and communities elsewhere.</dd> 
 </dl>
-</div>
+</section>
+</section>
 
-<div class="participation">
+<section class="participation">
 <h2 id="participation">Participation</h2>
-
-<p>To be successful, the Chinese Text Layout Task Force is expected to have 15 active participants for its duration. Effective participation to Chinese Text Layout Task Force is expected to consume one work day per week for each participant; two days per week for editors.</p>
-
-<p>Participants are reminded of the <a
-href="https://www.w3.org/2005/10/Process-20051014/groups.html#good-standing">Good
-Standing requirements</a> of the W3C Process.</p>
-</div>
-
-<div class="communication">
-<h2 id="communication">Communication</h2>
-
-<p>Chinese Text Layout Task Force discussions take place in Mainland China, Hong Kong, Taiwan, and other areas using scripts covered by the project. However, any Notes or other reports eventually contributed by a group back to the W3C will be made available in both English and Chinese.</p>
-<p>Many of the contributors to the work of the task force will want to communicate in Chinese. The publicly archived public-zhreq@w3.org list  (<a href="https://lists.w3.org/Archives/Public/public-zhreq/">archive</a>) was set up as a Chinese-language list for this purpose. </p>
-
-<p>The task force also reaches out to the wider international community with discussions and announcements in English on the following lists: public-i18n-cjk@w3.org  (<a href="https://lists.w3.org/Archives/Public/public-i18n-cjk/">archive</a>) for Simplified and Traditional Chinese, public-i18n-mongolian@w3.org (<a href="https://lists.w3.org/Archives/Public/public-i18n-mongolian/">archive</a>) for Mongolian, and public-i18n-tibetan@w3.org (<a href="https://lists.w3.org/Archives/Public/public-i18n-tibetan/">archive</a>) for Tibetan. Other lists can be made available as needed. Those English-speaking lists will, in particular, be used for gathering and replying to feedback on the documents. </p>
-<p>The  lists must archive or point to minutes and summaries of all teleconferences and face-to-face meetings. Meeting minutes will list all attendees at a given meeting.</p>
-
-<p>  These include meeting agenda, which should be published before each teleconference or face-to-face meeting.</p>
-
-<p>The group will use the <a href="https://www.w3.org/International/"> Internationalization Activity home page </a> and <a
-href="https://www.chinaw3c.org/"> W3C China Website </a>to provide updated public information about its activities.
+<p>The Task Force provides for two levels of participation.</p>
+    <p><strong>Followers</strong> are subscribed to the <a href="https://lists.w3.org/Archives/Public/public-i18n-chinese/" rel="nofollow">public-i18n-chinese</a> mailing list, where they can track discussions, and contribute opinions via the <a href="https://github.com/w3c/clreq/issues">GitHub issue list</a>. Rather than just 'Watch' the GitHub repository, it is best to subscribe to the  mailing list, because that list is notified once a day (in digest form) about activity in the clreq repository, but also about  activity for other W3C Working Group issues related to Chinese. (Participants are expected to use GitHub issues rather than the mailing list to send feedback.)</p>
+    <p><strong>Task force members</strong> are expert contributors who participate actively in producing the work of the group, contributing text and advice to create the outputs, and participating in any meetings. These people are subscribed to the task force group by W3C staff.</p>
+    <p>All TF members and people making contributions (via issues or pull requests) must read and agree with <a href="https://github.com/w3c/clreq/blob/gh-pages/CONTRIBUTING.md">CONTRIBUTING.md</a>.</p>
+<p>Participants in the group are required (by the <a href="https://www.w3.org/Consortium/Process/#ParticipationCriteria">W3C Process</a>) to follow the
+  W3C <a href="https://www.w3.org/Consortium/cepc/">Code of Ethics and Professional Conduct</a>.
 </p>
 
-<p> Information about the group (deliverables, participants, face-to-face meetings, teleconferences, etc.) is available from the <a
-href="https://www.w3.org/International/core/">Internationalization  Working Group</a> home page and from the home page of the Task Force.</p>
+</section>
 
-</div>
+<section class="communication">
+<h2 id="communication">Communication</h2>
 
-<div class="decisions">
+<p>Chinese Text Layout Task Force discussions take place in Mainland China, Hong Kong, Taiwan, and other areas using scripts covered by the project.</p>
+
+<p>The <a href="https://github.com/w3c/clreq">clreq GitHub repository</a> and its issue list are the main vehicles for technical discussion. Discussion can be in Chinese and English but, where useful, Chinese discussions should be summarised in English when a conclusion is reached, so that the wider community can follow.</p>
+
+<p>The <a href="https://lists.w3.org/Archives/Public/public-i18n-chinese/">public-i18n-chinese@w3.org</a> list receives notifications of changes in the clreq repository, and also of changes to issues in other repositories when those issues are tagged with a clreq label. This includes the CSS and HTML repositories, amongst others. That mailing list should not be used for technical discussion. The public-i18n-chinese list must archive or point to minutes and summaries of all teleconferences and face-to-face meetings. Meeting minutes will list all attendees at a given meeting.</p>
+
+<p>The group will use the <a href="https://www.w3.org/International/">Internationalization Activity home page</a> and <a href="https://www.chinaw3c.org/">W3C China Website</a> to provide updated public information about its activities.
+</p>
+
+<p> Information about the group (deliverables, participants, face-to-face meetings, teleconferences, etc.) is available from the <a href="https://github.com/w3c/clreq">clreq GitHub repository</a>.</p>
+
+<p>
+  Meetings may be held in Chinese, but an effort should be made to communicate key findings and conclusions in English in the minutes.
+</p>
+
+</section>
+
+<section class="decisions">
 <h2 id="decisions">Decision Policy</h2>
 
 <p>As explained in the Process Document (<a
 href="https://www.w3.org/Consortium/Process/policies#Consensus">section 3.3</a>),
 this group will seek to make decisions when there is consensus. In cases where there is a need to formally produce a group resolution about a particular issue, its Chair will put a question about the issue to the group and gather responses (including any formal objections); then, after due consideration of all the responses, the Chair will record a group resolution (possibly after a formal vote and also along with responding to any formal objections).</p>
-</div>
+</section>
 
-<div class="patent">
-<h2 id="patentpolicy">Patent Policy </h2>
+<section id="patentpolicy">
+<h2>Patent Policy </h2>
 
 <p>Participants in the Chinese Text Layout Task Force are obligated to comply with W3C patent-disclosure policy as outlined out in <a href="https://www.w3.org/Consortium/Patent-Policy/#sec-Disclosure">Section 6</a> of the W3C Patent Policy document. Although the Chinese Text Layout Task Force is not chartered to produce Recommendation-track documents that themselves require patent disclosure, participants in the group are nevertheless obligated to comply with W3C patent-disclosure policy for any Recommendation-track specifications that they review or comment on.</p>
         <p>For more information about disclosure obligations for this group, please see
 the <a href="https://www.w3.org/2004/01/pp-impl/">W3C Patent Policy
 Implementation</a>.</p>
-</div>
+</section>
 
-<h2 id="about">About this Charter</h2>
+<section id="licensing">
+  <h2>Licensing</h2>
+  <p>This Task Force will use the <a href="https://www.w3.org/Consortium/Legal/copyright-software">W3C Software and Document license</a> for all its deliverables.</p>
+</section>
 
-<p>This charter for the Task Force within the Internationalization Interest Group has been
-created according to <a href="https://www.w3.org/Consortium/Process/groups#GAGeneral"
-shape="rect">section 6.2</a> of the <a href="https://www.w3.org/Consortium/Process"
-shape="rect">Process Document</a>. In the event of a conflict between this
-document or the provisions of any charter and the W3C Process, the W3C Process
-shall take precedence.</p>
-<hr />
+<section id="about">
+  <h2>About this Charter</h2>
+
+<p>
+  This charter for the Task Force within the Internationalization Interest Group has been created according to <a href="https://www.w3.org/Consortium/Process/#GAGeneral">section 5</a> of the <a href="https://www.w3.org/Consortium/Process/">Process Document</a>. In the event of a conflict between this document or the provisions of any charter and the W3C Process, the W3C Process shall take precedence.
+</p>
+
+<section id="history">
+  <h3>
+    Charter History
+  </h3>
+
+  <p>The following table lists details of all changes from the initial charter:</p>
+
+  <table class="history">
+    <tbody>
+      <tr>
+        <th>
+          Date
+        </th>
+        <th>
+          Changes
+        </th>
+      </tr>
+      <tr>
+        <th>
+          2014
+        </th>
+        <td>
+          N/A
+        </td>
+      </tr>
+      <tr>
+        <th>
+          14 April 2021
+        </th>
+        <td>
+          Removed references to Mongolian, Tibetan, and Uighur scripts. Zhuang Chen, Bobby Tung, and Nashun-urt stepped down as co-chairs. Added Yijun Chen and Eric Q. Liu as co-chairs. Anqi Li and Xiaoqian Wu stepped down as team contacts. Added Fuqiao Xue as team contact. Added Chinese Layout Gap Analysis to the group's deliverables.
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+</section>
+
+</main>
+
+<hr>
+
 <address>
-  Charter Author: Chunming Hu, Anqi Li, Xiaoqian Wu, Richard Ishida
+  Richard Ishida, Fuqiao Xue
 </address>
 
-<p class="copyright"><a rel="Copyright"
-href="https://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a>© 2014
-<a href="https://www.w3.org/"><abbr
-title="World Wide Web Consortium">W3C</abbr></a> <sup>®</sup> (<a
-href="http://www.csail.mit.edu/"><abbr
-title="Massachusetts Institute of Technology">MIT</abbr></a> , <a
-href="http://www.ercim.eu/"><abbr
-title="European Research Consortium for Informatics and Mathematics">ERCIM</abbr></a>
-, <a href="http://www.keio.ac.jp/">Keio</a>, 
- <a href="http://www.buaa.edu.cn/">Beihang</a>) All Rights
-Reserved.</p>
+<p class="copyright">
+  <a href="https://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> ©
+  2021
+  <a href="https://www.w3.org/"><abbr title="World Wide Web Consortium">W3C</abbr></a><sup>®</sup>
+  (
+  <a href="https://www.csail.mit.edu/"><abbr title="Massachusetts Institute of Technology">MIT</abbr></a>,
+  <a href="https://www.ercim.eu/"><abbr title="European Research Consortium for Informatics and Mathematics">ERCIM</abbr></a>,
+  <a href="https://www.keio.ac.jp/">Keio</a>,
+  <a href="https://ev.buaa.edu.cn/">Beihang</a>
+  ), All Rights Reserved.
 
-<p>$Date: 2014/11/24 14:41:44 $</p>
-</div>
+  <abbr title="World Wide Web Consortium">W3C</abbr> <a href="https://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="https://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and <a href="https://www.w3.org/Consortium/Legal/copyright-documents">document use</a> rules apply.
+</p>
+
 </body>
 </html>

@@ -28,7 +28,7 @@ Topics for discussion are suggested by [the gap-analysis template](https://www.w
 ### Feedback 反馈
 Please use the [GitHub issue list](https://github.com/w3c/clreq/issues) to report issues for language support, for discussions, and to send feedback about documents. (Learn [how GitHub issues work](https://www.w3.org/International/i18n-activity/guidelines/issues.html).)
 
-请使用 [GitHub Issue](https://github.com/w3c/clreq/issues) 提出中文支持的问题、讨论以及对有关文档的反馈。学习[如何使用GitHub（英文）](https://www.w3.org/International/i18n-activity/guidelines/issues.html)。
+请使用 [GitHub Issue](https://github.com/w3c/clreq/issues) 提出中文支持的问题、讨论以及对有关文档的反馈。学习[如何使用 GitHub（英文）](https://www.w3.org/International/i18n-activity/guidelines/issues.html)。
 
 Note that the [public-i18n-chinese](https://lists.w3.org/Archives/Public/public-i18n-chinese/) mailing list is used to send notification digests & meeting minutes. It is **not** for technical discussion.
 

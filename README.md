@@ -91,10 +91,15 @@ The following information describes work going on at the W3C to support language
 - [Internationalization Sponsorship Program](https://www.w3.org/International/sponsorship/)
 
 
-### Links for editors
+### Links for editors 编辑用链接
 If you end up creating a document, you should be familiar with and use the following:
+
+如果您成为了小组文档的编辑，您应该熟悉以下内容：
 
 **Because the document is multilingual, you need to follow certain steps when creating or modifying the source text. See [EDITING.md](https://w3c.github.io/clreq/EDITING) for details.**
 
-- [Github guidelines for working with i18n documents](https://www.w3.org/International/i18n-activity/guidelines/github)
+**由于文档包含多种语言，您在创建或修改源代码时需要遵循特定步骤。 有关详细信息，请参阅[EDITING.md](https://w3c.github.io/clreq/EDITING)。**
+
+- [GitHub guidelines for working with i18n documents](https://www.w3.org/International/i18n-activity/guidelines/github)
 - [Editorial guidelines for working with i18n documents](https://www.w3.org/International/i18n-activity/guidelines/editing)
+- [工作組編輯體例之簡繁體詞彙表](https://github.com/w3c/clreq/wiki/%E5%B7%A5%E4%BD%9C%E7%B5%84%E7%B7%A8%E8%BC%AF%E9%AB%94%E4%BE%8B%E4%B9%8B%E7%B0%A1%E7%B9%81%E9%AB%94%E8%A9%9E%E5%BD%99%E8%A1%A8)

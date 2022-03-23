@@ -65,6 +65,10 @@ figcaption {
   content: ':\00A0  ';
 }
 
+a .figno:after {
+  content: '';
+}
+
 a.termref:link,
 a.termref:hover,
 a.termref:visited,

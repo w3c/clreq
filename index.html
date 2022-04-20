@@ -1508,6 +1508,15 @@ var respecConfig = {
             <p its-locale-filter-list="en" lang="en">Ellipses are used to indicate a truncation of text, an unfinished sentence or a break in speech. An ellipsis in Chinese consists of six dots, takes up the space of two Hanzi characters, and is horizontally and vertically centered within its character frame. This is normally achieved using two <span class="uname" translate="no">U+2026 HORIZONTAL ELLIPSIS</span> characters, side-by-side.
             <p its-locale-filter-list="zh-hans" lang="zh-hans">省略号又作删节号，表示节略原文、语句未完或语气的不连续。删节号呈现上占两个汉字空间、包含六个省略点且在水平和垂直方向均位于字面正中，通常使用两个连续的<span class="uname" translate="no">U+2026 HORIZONTAL ELLIPSIS […]</span>来实现。</p>
             <p its-locale-filter-list="zh-hant" lang="zh-hant" class="checkme">刪節號又作省略號，表示節略原文、語句未完或語氣的不連續。刪節號呈現上佔兩個漢字空間、包含六個居中的刪節點且在水平和垂直方向均位於字面正中，通常使用兩個連續的<span class="uname" translate="no">U+2026 HORIZONTAL ELLIPSIS […]</span>來實現。</p>
+            <div class="note" id="u22ef">
+              <p its-locale-filter-list="en" lang="en">Chapter 6.2 of v14 of the Unicode Standard suggests using <span class="uname" translate="no">U+22EF MIDLINE HORIZONTAL ELLIPSIS</span> [⋯] for ellipses.</p>
+              <p its-locale-filter-list="zh-hans" lang="zh-hans">在Unicode标准第14版的6.2章中，也推荐使用<span class="uname" translate="no">U+22EF MIDLINE HORIZONTAL ELLIPSIS</span> [⋯]作为省略号。</p>
+              <p its-locale-filter-list="zh-hant" lang="zh-hant">在Unicode標準第14版的6.2章中，亦推薦使用<span class="uname" translate="no">U+22EF MIDLINE HORIZONTAL ELLIPSIS</span> [⋯]作為刪節號。</p>
+              
+              <p its-locale-filter-list="en" lang="en">This code point, with appropriate rotation and replacement mechanism, will be centered within its character frame regardless of whether it is in vertical or horizontal writing mode, which is more in line with the Chinese typesetting requirements.</p>
+              <p its-locale-filter-list="zh-hans" lang="zh-hans">此符号配合适当的转向与取代机制，在显示上无论直横排，省略点皆居中，更符合排版需求。</p>
+              <p its-locale-filter-list="zh-hant" lang="zh-hant">此符號配合適當的轉向與取代機制，在顯示上無論直橫排，刪節點皆居中，更符合排版需求。</p>
+            </div>
           </li>
           <li id="id84">
             <p its-locale-filter-list="en" lang="en"><span class="leadin">Emphasis Dots.</span></p>
@@ -1890,9 +1899,9 @@ var respecConfig = {
             <p its-locale-filter-list="en" lang="en"><span class="leadin">Ellipsis.</span> </p>
             <p its-locale-filter-list="zh-hans" lang="zh-hans"><span class="leadin">省略号</span></p>
             <p its-locale-filter-list="zh-hant" lang="zh-hant"><span class="leadin">刪節號</span></p>
-            <p its-locale-filter-list="en" lang="en">When two <span class="uname" translate="no">U+2026 HORIZONTAL ELLIPSIS</span> [<span lang="zh">…</span>] characters are used together for ellipsis, they take up the space of two Hanzi characters, are horizontally and vertically centered within their character frames, and consist of six dots.</p>
-            <p its-locale-filter-list="zh-hans" lang="zh-hans">省略号使用连续两个<span class="uname" translate="no">U+2026 HORIZONTAL ELLIPSIS</span> […]，占两个汉字空间、包含六个居中省略点[……]。</p>
-            <p its-locale-filter-list="zh-hant" lang="zh-hant">刪節號使用連續兩個<span class="uname" translate="no">U+2026 HORIZONTAL ELLIPSIS</span> […]，佔二個漢字空間、包含居中六個刪節點[……]。</p>
+            <p its-locale-filter-list="en" lang="en">When two <span class="uname" translate="no">U+2026 HORIZONTAL ELLIPSIS</span> [<span lang="zh">…</span>] or <span class="uname" translate="no">U+22EF MIDLINE HORIZONTAL ELLIPSIS</span> [⋯] characters are used together for ellipsis, they take up the space of two Hanzi characters, are horizontally and vertically centered within their character frames, and consist of six dots.</p>
+            <p its-locale-filter-list="zh-hans" lang="zh-hans">省略号使用连续两个<span class="uname" translate="no">U+2026 HORIZONTAL ELLIPSIS</span> […]或<span class="uname" translate="no">U+22EF MIDLINE HORIZONTAL ELLIPSIS</span> [⋯]，占两个汉字空间、包含六个居中省略点[……]。</p>
+            <p its-locale-filter-list="zh-hant" lang="zh-hant">刪節號使用連續兩個<span class="uname" translate="no">U+2026 HORIZONTAL ELLIPSIS</span> […]或<span class="uname" translate="no">U+22EF MIDLINE HORIZONTAL ELLIPSIS</span> [⋯]，佔二個漢字空間、包含居中六個刪節點[……]。</p>
             <p its-locale-filter-list="en" lang="en">According to section 5.1.5 of the <cite>General Rules for Punctuation</cite> (GB/T 15834—2011), when two ellipses are used together, they should be four characters wide and occupy an independent line.</p>
             <p its-locale-filter-list="zh-hans" lang="zh-hans">《标点符号用法》（GB/T 15834—2011）5.1.5节还规定，两个省略号／删节号连用时，占四个汉字位置并须单独占一行。</p>
             <p its-locale-filter-list="zh-hant" lang="zh-hant">《標點符號用法》（GB/T 15834—2011）5.1.5節還規定，兩個刪節號／省略號連用時，佔四個漢字位置並須單獨佔一行。</p>
@@ -3909,16 +3918,21 @@ var respecConfig = {
           <td>EM DASH</td>
         </tr>
         <tr>
-          <td lang="zh-Hant">刪節號</td>
-          <td lang="zh-Hans">省略号</td>
+          <td rowspan="2" lang="zh-Hant">刪節號</td>
+          <td rowspan="2" lang="zh-Hans">省略号</td>
           <td>……</td>
           <td>2026</td>
           <td>HORIZONTAL ELLIPSIS</td>
-          <td>
+          <td rowspan="2">
             <p its-locale-filter-list="en" lang="en">Takes space of two characters, in the shape of a single line without a break, center-aligned both vertically and horizontally.
             <p its-locale-filter-list="zh-hans" lang="zh-hans">占二个汉字大小，呈一点线、中间不断开，应将省略点置于字面中央。
             <p its-locale-filter-list="zh-hant" lang="zh-hant">佔二個漢字大小，呈一點線、中間不斷開，應將省略點置於字面中央。
           </td>
+        </tr>
+        <tr>
+          <td>⋯⋯</td>
+          <td>22EF</td>
+          <td>MIDLINE HORIZONTAL ELLIPSIS</td>
         </tr>
         <tr>
           <td rowspan="4" lang="zh-Hant">連接號</td>
@@ -4404,6 +4418,13 @@ var respecConfig = {
           <td>&hellip;&hellip;</td>
           <td>2026</td>
           <td>HORIZONTAL ELLIPSIS</td>
+          <td>✓</td>
+          <td>✓</td>
+        </tr>
+        <tr>
+          <td>⋯⋯</td>
+          <td>22EF</td>
+          <td>MIDLINE HORIZONTAL ELLIPSIS</td>
           <td>✓</td>
           <td>✓</td>
         </tr>

@@ -61,6 +61,10 @@ figcaption {
   font-size: 90%;
 }
 
+.fig-title [its-locale-filter-list^="zh"] {
+    font-style: normal;
+}
+
 .figno:after {
   content: ':\00A0  ';
 }

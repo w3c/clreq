@@ -1,9 +1,42 @@
+@font-face {
+  font-family: 'Punctuation SC';
+  src: local('PingFang SC'), local('Noto Sans SC'), local('Noto Sans CJK SC'), local('Heiti SC'), local('Microsoft Yahei');
+  unicode-range: U+201C, U+201D, U+2018, U+2019; /* Unicode range for quotation marks */
+}
+
+@font-face {
+  font-family: 'Punctuation TC';
+  src: local('PingFang TC'), local('Noto Sans TC'), local('Noto Sans CJK TC'), local('Heiti TC'), local('Microsoft JhengHei');
+  unicode-range: U+201C, U+201D, U+2018, U+2019; /* Unicode range for quotation marks */
+}
+
+/*
+-apple-system: iOS Safari, macOS Safari, macOS Firefox
+BlinkMacSystemFont: macOS Chrome
+Segoe UI: Windows
+Roboto: Android, Chrome OS
+Oxygen-Sans: KDE
+Fira Sans: Firefox OS
+Droid Sans: Older versions of Android
+Ubuntu: Ubuntu
+Cantarell: GNOME
+Helvetica Neue: macOS versions < 10.11
+Arial: Any
+PingFang TC/SC: macOS
+Noto Sans TC/SC: Ubuntu, Android
+Noto Sans CJK TC/SC: Ubuntu, Android
+Heiti TC/SC: macOS
+DengXian: Windows
+Microsoft Jhenghei / Microsoft Yahei: Windows < Vista
+sans-serif: Fallback
+*/
+
 [lang=zh-hant] {
-  font-family: 'PingFang TC', 'Noto Sans CJK TC', 'Heiti TC', 'Microsoft JhengHei', Helvetica, 'Segoe UI', Arial, sans-serif;
+  font-family: 'Punctuation TC', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', 'PingFang TC', 'Noto Sans TC', 'Noto Sans CJK TC', 'Heiti TC', 'Microsoft JhengHei', sans-serif;
 }
 
 [lang=zh-hans] {
-  font-family: 'PingFang SC', 'Noto Sans CJK SC', 'Heiti SC', 'DengXian', 'Microsoft YaHei', Helvetica, 'Segoe UI', Arial, sans-serif;
+  font-family: 'Punctuation SC', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', 'PingFang SC', 'Noto Sans SC', 'Noto Sans CJK SC', 'Heiti SC', 'DengXian', 'Microsoft YaHei', sans-serif;
 }
 
 h2 {
@@ -59,6 +92,11 @@ figcaption {
   margin: 0.5em 2em;
   font-style: italic;
   font-size: 90%;
+}
+
+span:lang(zh-hans),
+span:lang(zh-hant) {
+  font-style: normal;
 }
 
 .figno:after {

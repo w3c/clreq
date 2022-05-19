@@ -160,6 +160,12 @@ For additional ideas about markup and styling in Internationalization Activity d
 
 欲了解更多国际化标准计划文档里的標記和样式条约，尤其是wrt行内標記的使用慣例，请查看<https://www.w3.org/International/docs/styleguide>。
 
+### Rules for Punctuation | 标点符号用法
+
+In Traditional Chinese text, you should use single quotation marks (「」) first, followed by double quotation marks (『』). In Simplified Chinese text, you should use double quotation marks (“”) first, followed by single quotation marks (‘’). 
+
+繁体中使用先单（「」）、后双（『』）的直角引号，简体中使用先双（“”）、后单（‘’）的弯引号。
+
 ## Last-minute Pre-publication edits | 发布前的最后改动备忘录
 
 **Make the following changes to the respec file before pushing to GitHub:**

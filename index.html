@@ -1239,7 +1239,7 @@ var respecConfig = {
                   <p its-locale-filter-list="en" lang="en">Set horizontally without changing orientation (like <a href="https://w3c.github.io/jlreq/#handling_of_tatechuyoko">tate-chu-yoko</a> in Japanese). This is usually applied to numbers comprising two to three digits.</p>
                   <p its-locale-filter-list="zh-hans" lang="zh-hans">保持正常方向，横排处理（如日文的<a href="https://w3c.github.io/jlreq/#handling_of_tatechuyoko">纵中横排</a>）。主要应用于二至三位数字。</p>
                   <p its-locale-filter-list="zh-hant" lang="zh-hant">保持正常方向，橫排處理（如日文的<a href="https://w3c.github.io/jlreq/#handling_of_tatechuyoko">縱中橫排</a>）。主要應用於二至三位數字。</p>
-                  <p its-locale-filter-list="en" lang="en">In principle, if numbers are arranged horizontally in a vertical writing mode, the width of the numbers should not exceed one character width. This rule originated in the letterpress printing era due to the fixed width of each line. Therefore, in vertical writing mode, Western text or <a href="#term.european-numerals" class="termref">European numerals</a> are not limited to two digits, but the width should not exceed one character width. Some commonly seen examples include "3.0", "A+" and "2B".</p>
+                  <p its-locale-filter-list="en" lang="en" class="checkme">In principle, if numbers are arranged horizontally in a vertical writing mode, the width of the numbers should not exceed 1 em. This rule originated in the letterpress printing era due to the fixed width of each line. Therefore, in vertical writing mode, Western text or <a href="#term.european-numerals" class="termref">European numerals</a> are not limited to two digits, but the width should not exceed 1 em. Some commonly seen examples include "3.0", "A+" and "2B".</p>
                   <p its-locale-filter-list="zh-hans" lang="zh-hans">数字在直排行内横排，原则上不超过一个汉字的字幅。这是从活字印刷时代起，每行宽度固定所致。故直排时，西文字母与<a href="#term.european-numerals" class="termref">阿拉伯数字</a>横排不限于两位数，但原则上不能超过一个汉字。现代常见的用法还包括[3.0]、[A+]、[2B]等。</p>
                   <p its-locale-filter-list="zh-hant" lang="zh-hant">數字於直排行內橫排，原則上不超過一個漢字的字幅。這是從活字印刷時代起，每行寬度固定所致。故直排時，西文字母與<a href="#term.european-numerals" class="termref">阿拉伯數字</a>橫排不限於二位數，但原則上不能超過一個漢字。現代常見的用法還包括[3.0]、[A+]、[2B]等。</p>
                 </li>
@@ -1648,13 +1648,13 @@ var respecConfig = {
       <p its-locale-filter-list="en" lang="en">Connector marks should take up the same dimensions as a single character, and be vertically and horizontally centered within its square frame. Among the connector marks, the EN DASH should have a short length to distinguish it from the Chinese character [一], which means one. And they should be positioned in the same direction as the characters they mark.</p>
       <p its-locale-filter-list="zh-hans" lang="zh-hans">连接号位于字面正中，占一个汉字的大小，其中，甲式连接号在横排时，符号的直线长度应稍小于汉字“一”以避免歧义，按照文字书写方向使用相应的标注方向。</p>
       <p its-locale-filter-list="zh-hant" lang="zh-hant">連接號位字面正中，佔一個漢字的大小，其中，甲式連接號在橫排時，符號的直線長度應稍小於漢字「一」以避免歧義，依文字書寫方向使用相應的標注方向。</p>
-      <p its-locale-filter-list="en" lang="en">Middle dots should be vertically and horizontally centered within their square frame. To make more economical use of the available space, or to tighten the overall spacing, sometimes the solidus can have a half character width.</p>
+      <p its-locale-filter-list="en" lang="en" class="checkme">Middle dots should be vertically and horizontally centered within their square frame. To make more economical use of the available space, or to tighten the overall spacing, sometimes the solidus can have 1/2 em.</p>
       <p its-locale-filter-list="zh-hans" lang="zh-hans">间隔号位于字面正中，占一个汉字的大小，直、横排方向一致。为了节省排版空间、使词组或数字较紧凑地排列，可以使用半个汉字大小的间隔号。</p>
       <p its-locale-filter-list="zh-hant" lang="zh-hant">間隔號位於字面正中，佔一個漢字的大小，直、橫排方向一致。為了節省排版空間、使詞組或數字較緊湊地排列，可以使用半個漢字大小的間隔號。</p>
       <p its-locale-filter-list="en" lang="en">Interlinear marks like proper noun marks, book title mark type A, and emphasis dots should be positioned underneath the marked characters in horizontal writing mode. In vertical writing mode, emphasis dots should be positioned to the right side of the marked characters so as not to affect the characters above and beneath them.</p>
       <p its-locale-filter-list="zh-hans" lang="zh-hans">标注在行间的标号需以不影响上下行文字为原则进行配置。包括：专名号、甲式书名号等两个符号，位于被标注文字底端（横排位于文字下方、直排位于文字左侧）；着重号横排时位于文字底端（下方）、直排时位于文字顶端（右侧）。</p>
       <p its-locale-filter-list="zh-hant" lang="zh-hant">標注於行間的標號需以不影響上下行文字為原則進行配置。包括：專名號、甲式書名號等二個符號，位受注文字底端（橫排位文字下方、直排位文字左側）；着重號橫排時位受注文字底端（下方）、直排時位在受注文字頂端（右側）。</p>
-      <p its-locale-filter-list="en" lang="en">Solidi should be vertically and horizontally centered within their square frame. As GB rules, it should take half a character width, whereas in Taiwan, there is no clear rule about its dimensions but most publications will give them the same dimensions as a single character.</p>
+      <p its-locale-filter-list="en" lang="en" class="checkme">Solidi should be vertically and horizontally centered within their square frame. As GB rules, it should take 1/2 em, whereas in Taiwan, there is no clear rule about its dimensions but most publications will give them the same dimensions as a single character.</p>
       <p its-locale-filter-list="zh-hans" lang="zh-hans">分隔号位于字面正中，中国大陆的国标规定排版时占半个汉字的大小；而在台湾则未有相关的规定，但多数出版品使用一个汉字的大小。</p>
       <p its-locale-filter-list="zh-hant" lang="zh-hant">分隔號位於字面正中，中國大陸的國標規定排版時佔半個漢字的大小；而在台灣則未有相關的規定，但多數出版品使用一個漢字的大小。</p>
       <p its-locale-filter-list="en" lang="en">
@@ -1714,7 +1714,7 @@ var respecConfig = {
         <p its-locale-filter-list="en" lang="en">Exclamatory question marks are defined in the General Rules for Punctuation (GB/T 15834—2011) as an extended usage of exclamation marks. For questions with a strong exclamatory tone of voice, it is appropriate to add an exclamation mark after the question mark (?!). However, it is common to see a question mark added after an exclamation mark (!?) in numerous publications as well. In addition, <abbr class="exclude" title="Guobiao standards">GB</abbr> rules indicate that it is acceptable to chain up to 3 exclamation marks or question marks in succession (!!!, ???) for exclamatory statements or interrogative sentences which require greater emphasis.</p>
         <p its-locale-filter-list="zh-hans" lang="zh-hans">叹问号于中国大陆《标点符号用法》（GB/T 15834—2011）中作为叹号的延伸用法，当语气同时具备强烈的疑问与感叹时，可于问号后加上叹号（?!）。然而在许多作品中，也常见在叹号后加上问号（!?）的用法。此外，在同标准的问号与叹号用法也指明在语气加重时可叠用问号或者叹号，最多可叠用到三个（!!!、???）。</p>
         <p its-locale-filter-list="zh-hant" lang="zh-hant">嘆問號於中國大陸《標點符號用法》（GB/T 15834—2011）中作為嘆號的延伸用法，當語氣同時具備強烈的疑問與感嘆時，可於問號後加上嘆號（?!）。然而在許多作品中，也常見在嘆號後加上問號（!?）的用法。此外，在同標準的問號與嘆號用法也指明在語氣加重時可疊用問號或者嘆號，最多可疊用到三個（!!!、???）。</p>
-        <p its-locale-filter-list="en" lang="en">In print publications, <abbr class="exclude" title="Guobiao standards">GB</abbr> rules state that when question marks and exclamation marks are chained, they are considered one character width. Double question marks or double exclamation marks also one character width. Triple question marks or triple exclamation marks are two character widths. In addition, for vertical writing mode in Taiwan, chained question marks or exclamation marks are upright and take up one character width.</p>
+        <p its-locale-filter-list="en" lang="en" class="checkme">In print publications, <abbr class="exclude" title="Guobiao standards">GB</abbr> rules state that when question marks and exclamation marks are chained, they are considered 1 em. Double question marks or double exclamation marks also 1 em. Triple question marks or triple exclamation marks are 2 em. In addition, for vertical writing mode in Taiwan, chained question marks or exclamation marks are upright and take up 1 em.</p>
         <p its-locale-filter-list="zh-hans" lang="zh-hans">排版上，《标点符号用法》规定问号与叹号连用时，占一个字位置；两个问号或叹号叠用时，占一个字位置；三个问号或叹号叠用时，占两个字位置。此外，在台湾直排的习惯中，叹问号连用与问号、叹号叠用时，符号多直立，并且占一个字的位置。</p>
         <p its-locale-filter-list="zh-hant" lang="zh-hant">排版上，《標點符號用法》規定問號與嘆號連用時，佔一個字位置；兩個問號或嘆號疊用時，佔一個字位置；三個問號或嘆號疊用時，佔兩個字位置。此外，在台灣直排的習慣中，嘆問號連用與問號、嘆號疊用時，符號多直立，並且佔一個字的位置。</p>
         <div class="note">
@@ -1883,7 +1883,7 @@ var respecConfig = {
           <span its-locale-filter-list="zh-hant" lang="zh-hant">標點符號</span>
         </h5>
 
-        <p its-locale-filter-list="en" lang="en">The following punctuation marks should be considered as one unit and take two character widths. They should not be separated into two lines. In cases where multiples of such punctuation marks appear together, it is allowed to separate them into two lines as described in [[[#handling_western_text_in_chinese_text_using_proportional_western_fonts]]]. If they were forced to remain on one line, it might cause too much space between the characters in the previous line and decrease the aesthetics of the entire composition.</p>
+        <p its-locale-filter-list="en" lang="en" class="checkme">The following punctuation marks should be considered as one unit and take 2 em. They should not be separated into two lines. In cases where multiples of such punctuation marks appear together, it is allowed to separate them into two lines as described in [[[#handling_western_text_in_chinese_text_using_proportional_western_fonts]]]. If they were forced to remain on one line, it might cause too much space between the characters in the previous line and decrease the aesthetics of the entire composition.</p>
         <p its-locale-filter-list="zh-hans" lang="zh-hans">以下标点符号占用两个汉字的空间，在行间应为一体，视作一个字符存在，不能为了适配分行而拆成两行。</p>
         <p its-locale-filter-list="zh-hant" lang="zh-hant">以下標點符號佔用二個漢字的空間，在行間應為一體，視作一個字元存在，不得以適配分行之由拆至二行。</p>
         <ol>
@@ -1891,7 +1891,7 @@ var respecConfig = {
             <p its-locale-filter-list="en" lang="en"><span class="leadin">Two-em dash.</span></p>
             <p its-locale-filter-list="zh-hans" lang="zh-hans"><span class="leadin">乙式括号与破折号</span></p>
             <p its-locale-filter-list="zh-hant" lang="zh-hant"><span class="leadin">乙式括號與破折號</span></p>
-            <p its-locale-filter-list="en" lang="en">Two-em dashes [<span lang="zh">——</span>] can be created using <span class="uname" translate="no">U+2E3A TWO-EM DASH</span> [<span lang="zh">⸺</span>] or two adjacent <span class="uname" translate="no">U+2014 EM DASH</span> [<span lang="zh">—</span>] characters. Both alternatives should take two character widths.</p>
+            <p its-locale-filter-list="en" lang="en" class="checkme">Two-em dashes [<span lang="zh">——</span>] can be created using <span class="uname" translate="no">U+2E3A TWO-EM DASH</span> [<span lang="zh">⸺</span>] or two adjacent <span class="uname" translate="no">U+2014 EM DASH</span> [<span lang="zh">—</span>] characters. Both alternatives should take 2 em.</p>
             <p its-locale-filter-list="zh-hans" lang="zh-hans">乙式括号与破折号是占两个汉字空间的<span class="uname" translate="no">U+2E3A TWO-EM DASH</span> [⸺] 或连续使用两个<span class="uname" translate="no">U+2014 EM DASH</span> [—]。</p>
             <p its-locale-filter-list="zh-hant" lang="zh-hant">乙式括號與破折號為佔二個漢字空間的<span class="uname" translate="no">U+2E3A TWO-EM DASH</span> [⸺] 或連續使用兩個<span class="uname" translate="no">U+2014 EM DASH</span> [—]。</p>
           </li>
@@ -1995,7 +1995,7 @@ var respecConfig = {
         </p>
 
         <p its-locale-filter-list="en" lang="en" class="checkme">
-          The adjustment in principle should be: if any two adjacent punctuation marks take 2 em, they should be reduced to 1.5 em. Based on this principle, the typography style is allowed to be further adjusted so that the two punctuation marks take only 1 character width.
+          The adjustment in principle should be: if any two adjacent punctuation marks take 2 em, they should be reduced to 1.5 em. Based on this principle, the typography style is allowed to be further adjusted so that the two punctuation marks take only 1 em.
         </p>
         <p its-locale-filter-list="zh-hans" lang="zh-hans">
           原则上的调整度应为：如果任意两个相邻标点符号占用2个字宽，应当缩减成1.5个字宽。在此原则上，允许排版风格进一步调整让两个符号只占1个字宽。
@@ -2836,7 +2836,7 @@ var respecConfig = {
       <p its-locale-filter-list="zh-hans" lang="zh-hans">为使不同的文本形成意义上的区隔、构成段落，呈现上，会使用断行以标示一个段落的起始，同时也会在段落首行加上空白进行缩排（也称为缩进），原则上以文本的汉字大小作为缩排单位，主要呈现方法如下。</p>
       <p its-locale-filter-list="zh-hant" lang="zh-hant">為使不同的文本形成意義上的區隔、構成段落，呈現上，會使用斷行以標示一個段落的起始，同時也會在段落首行加上空白進行縮排（也稱為縮進），原則上以文本的漢字大小作為縮排單位，主要呈現方法如下。</p>
       <div class="note" id="n046">
-        <p its-locale-filter-list="en" lang="en" class="checkme">For Chinese publications, a first-line indent usually uses two character width spaces. Publications like magazines, with multi-column content and less text in each column, might apply single character width first-line indents as well.</p>
+        <p its-locale-filter-list="en" lang="en" class="checkme">For Chinese publications, a first-line indent usually uses 2-em spaces. Publications like magazines, with multi-column content and less text in each column, might apply 1-em first-line indents as well.</p>
         <p its-locale-filter-list="zh-hans" lang="zh-hans" class="checkme">中文出版品上，段首缩排以两个汉字的空间为标准。若遇到杂志等多栏排版的情况，每栏字数较少时，视觉上缩排两字将显突兀，时有改用缩排一字的做法。</p>
         <p its-locale-filter-list="zh-hant" lang="zh-hant">中文出版品上，段首縮排以兩個漢字的空間為標準。若遇到雜誌等多欄排版的情況，每欄字數較少時，視覺上縮排兩字將顯突兀，時有改用縮排一字的做法。</p>
       </div>
@@ -3255,7 +3255,7 @@ var respecConfig = {
           </p>
           <aside class="note">
             <p its-locale-filter-list="en" lang="en">
-              In Japanese texts, periods at the end of a line typically do not have their space reduced, but Chinese texts do. This is especially important in Mainland China where the <cite>General Rules for Punctuation</cite> (GB/T 15834—2011) defines in 5.1.10 that if a full-width punctuation occurs at the end of a line, it should take up half a character width for a more pleasing aesthetic.
+              In Japanese texts, periods at the end of a line typically do not have their space reduced, but Chinese texts do. This is especially important in Mainland China where the <cite>General Rules for Punctuation</cite> (GB/T 15834—2011) defines in 5.1.10 that if a full-width punctuation occurs at the end of a line, it should take up 1/2 em for a more pleasing aesthetic.
             </p>
             <p its-locale-filter-list="zh-hans" lang="zh-hans">
               行末的句号，在日文排版中往往不进行挤压处理。但是对于中文排版，一般要进行处理，这对于中国大陆的排版规范尤其重要。《标点符号用法》（GB/T 15834—2011）有明确规定“5.1.10 标点符号排在一行末尾时，若为全角字符则应占半角字符的宽度（即半个字位置），以使视觉效果更美观。”
@@ -3404,7 +3404,7 @@ var respecConfig = {
           </p>
           <aside class="note">
             <p its-locale-filter-list="en" lang="en" class="checkme">
-              Numerous typesetting styles practically only allow expansion of space up to 1/3 em. Similar to space reduction, there are certain typesetting styles where the spacing between Han characters and Western texts are fixed at a default width, for example a quarter of a character width, in such cases, adjustments are not allowed.
+              Numerous typesetting styles practically only allow expansion of space up to 1/3 em. Similar to space reduction, there are certain typesetting styles where the spacing between Han characters and Western texts are fixed at a default width, for example 1/4 em, in such cases, adjustments are not allowed.
             </p>
             <p its-locale-filter-list="zh-hans" lang="zh-hans">
               很多排版风格在实际处理上，只允许最大拉伸到三分之一汉字宽。与上述挤压处理一样，在一些排版风格中，中西间距固定默认宽度（如四分之一汉字宽），被排除在行内调整对象之外，不允许被拉伸。
@@ -3817,7 +3817,7 @@ var respecConfig = {
           <td>203C</td>
           <td>DOUBLE EXCLAMATION MARK</td>
           <td>
-            <p its-locale-filter-list="en" lang="en">Takes one character width.
+            <p its-locale-filter-list="en" lang="en" class="checkme">Takes 1 em.
             <p its-locale-filter-list="zh-hans" lang="zh-hans">占一个汉字大小。
             <p its-locale-filter-list="zh-hant" lang="zh-hant">佔一個漢字大小。
           </td>
@@ -3839,7 +3839,7 @@ var respecConfig = {
           <td>2047</td>
           <td>DOUBLE QUESTION MARK</td>
           <td>
-            <p its-locale-filter-list="en" lang="en">Takes one character width.
+            <p its-locale-filter-list="en" lang="en" class="checkme">Takes 1 em.
             <p its-locale-filter-list="zh-hans" lang="zh-hans">占一个汉字大小。
             <p its-locale-filter-list="zh-hant" lang="zh-hant">佔一個漢字大小。
           </td>

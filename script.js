@@ -1,3 +1,5 @@
+'use strict';
+
 void function() {
 
 var LANG_LIST = ['en', 'zh-hant', 'zh-hans']

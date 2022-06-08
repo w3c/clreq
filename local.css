@@ -245,7 +245,6 @@ table thead span[its-locale-filter-list] {
   text-align: start;
 }
 
-table thead span[its-locale-filter-list][hidden] { display: none; }
 table thead span[its-locale-filter-list='en']:first-child { margin-top: 0; }
 
 .is-multilingual table thead span[its-locale-filter-list='en'] {

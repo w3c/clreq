@@ -156,9 +156,9 @@ Here are some tips on how to maintain the parallel language structure in markup.
     [[[#myFigureId]]]
     ```
 
-For additional ideas about markup and styling in Internationalization Activity documents, especially wrt inline markup conventions, see <https://www.w3.org/International/docs/styleguide>.
+For additional ideas about markup and styling in Internationalization Activity documents, especially wrt inline markup conventions, see <https://www.w3.org/International/i18n-activity/guidelines/editing>.
 
-欲了解更多国际化标准计划文档里的標記和样式条约，尤其是wrt行内標記的使用慣例，请查看<https://www.w3.org/International/docs/styleguide>。
+欲了解更多国际化标准计划文档里的標記和样式条约，尤其是行内標記的使用慣例，请查看<https://www.w3.org/International/i18n-activity/guidelines/editing>。
 
 ### Rules for Punctuation | 标点符号用法
 

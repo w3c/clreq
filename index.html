@@ -324,9 +324,9 @@ var respecConfig = {
         <span its-locale-filter-list="zh-hant" lang="zh-hant">漢字</span>
       </h4>
 
-      <p its-locale-filter-list="en" lang="en">Chinese characters have square <dfn id="endef_characterFrame">character frames</dfn> of equal dimensions. Aligned with the vertical and horizontal center of the character frame, there is a smaller box called the <dfn id="def_letterFace">character face</dfn>, which contains the actual symbol. (There should be some space left between the character face and the character frame).</p>
-      <p its-locale-filter-list="zh-hans" lang="zh-hans">汉字有着正方形的文字外框。文字外框的正中央，有着比文字外框小的字面（反过来说，字面的上下左右与文字外框之间有若干空白。根据不同的字面设计，空白的大小会有所不同）。</p>
-      <p its-locale-filter-list="zh-hant" lang="zh-hant">漢字有著正方形的文字外框。文字外框的正中央，有著比文字外框小的字面（反過來說，字面的上下左右與文字外框之間有若干空白。根據不同的字面設計，空白的大小會有所不同）。</p>
+      <p its-locale-filter-list="en" lang="en">Chinese characters have square <a href="#term.character-frame" class="termref">character frames</a> of equal dimensions. Aligned with the vertical and horizontal center of the character frame, there is a smaller box called the <a href="#term.character-face" class="termref">character face</a>, which contains the actual symbol. (There should be some space left between the character face and the character frame).</p>
+      <p its-locale-filter-list="zh-hans" lang="zh-hans">汉字有着正方形的<a href="#term.character-frame" class="termref">文字外框</a>。文字外框的正中央，有着比文字外框小的<a href="#term.character-face" class="termref">字面</a>（反过来说，字面的上下左右与文字外框之间有若干空白。根据不同的字面设计，空白的大小会有所不同）。</p>
+      <p its-locale-filter-list="zh-hant" lang="zh-hant">漢字有著正方形的<a href="#term.character-frame" class="termref">文字外框</a>。文字外框的正中央，有著比文字外框小的<a href="#term.character-face" class="termref">字面</a>（反過來說，字面的上下左右與文字外框之間有若干空白。根據不同的字面設計，空白的大小會有所不同）。</p>
       <p its-locale-filter-list="en" lang="en">Character size is measured by the size of the character frame. <dfn id="def_characterAdvance">Character advance</dfn> is a term used to describe the advance width of the character frame of a character, which should be the same as the width of the character.</p>
       <p its-locale-filter-list="zh-hans" lang="zh-hans">文字尺寸则为文字外框的尺寸。此外，字幅则是依照文字排列方向的文字外框大小，为文字的宽度。</p>
       <p its-locale-filter-list="zh-hant" lang="zh-hant">文字尺寸則為文字外框的尺寸。此外，字幅則是依照文字排列方向的文字外框大小，為文字的寬度。</p>
@@ -340,9 +340,9 @@ var respecConfig = {
         <span its-locale-filter-list="zh-hant" lang="zh-hant">漢字的配置原則</span>
       </h4>
 
-      <p its-locale-filter-list="en" lang="en">In principle, when composing a line with Chinese characters, no extra space appears between their character frames. This is called <dfn id="endef_solidSetting">solid setting</dfn>. </p>
-      <p its-locale-filter-list="zh-hans" lang="zh-hans">汉字依行排列文字，原则上文字外框彼此紧贴配置，称作密排。</p>
-      <p its-locale-filter-list="zh-hant" lang="zh-hant">漢字依行排列文字，原則上文字外框彼此緊貼配置，稱作密排。</p>
+      <p its-locale-filter-list="en" lang="en">In principle, when composing a line with Chinese characters, no extra space appears between their character frames. This is called <a href="#term.solid-setting" class="termref">solid setting</a>. </p>
+      <p its-locale-filter-list="zh-hans" lang="zh-hans">汉字依行排列文字，原则上文字外框彼此紧贴配置，称作<a href="#term.solid-setting" class="termref">密排</a>。</p>
+      <p its-locale-filter-list="zh-hant" lang="zh-hant">漢字依行排列文字，原則上文字外框彼此緊貼配置，稱作<a href="#term.solid-setting" class="termref">密排</a>。</p>
       <div class="note" id="n003">
         <p its-locale-filter-list="en" lang="en" class="checkme">From the advent of moveable type, each character was set to be flush with one another without any gaps, regardless of vertical or horizontal writing mode. However back then, several sizes of the original pattern of a letter were required to create matrices, while in today's digital era, the same original pattern can be used for any size simply by enlargement or reduction. Because of this, it might be necessary to adjust inter-character spacing when composing lines at large character sizes. When composing lines at small character sizes in outline fonts, hinting data is used to ensure that the width of the strokes that make up a character look correct. When only a small portion of the fonts are smaller, they will be displayed in bitmaps, and there is no need to make extra adjustments.</p>
         <p its-locale-filter-list="zh-hans" lang="zh-hans">从活字排版时代起，汉字无论直、横文字外框彼此紧贴配置适于阅读。但活字排版依照文字尺寸不同，各号数之字型原模不同，字面也随之不同。目前数字字体多仅采取单一原型，当文字尺寸放大时，有时需要调整字距。然而，中文汉字的字面率一般较日文字体小，除非在特殊状况下，不需特别处理。另当文字尺寸缩小时，若为向量字体，则需要补正信息来调整文字线幅；但有部分字体在文字尺寸较小时，会以点阵字体呈现，此时就不需另外调整。</p>
@@ -367,9 +367,9 @@ var respecConfig = {
           </figcaption>
         </figure>
 
-        <p its-locale-filter-list="en" lang="en"> It is common in books to increase the tracking between each character frame (i.e. <dfn id="endef_looseSetting">loose setting</dfn>) for the following cases:</p>
-        <p its-locale-filter-list="zh-hans" lang="zh-hans">在各字之间加入固定量的空白来排列文字，称作疏排。书籍排版上，遇到以下状况时，会采用这种排列方式。</p>
-        <p its-locale-filter-list="zh-hant" lang="zh-hant">在各字之間加入固定量的空白來排列文字，稱作疏排。書籍排版上，遇到以下狀況時，會採用這種排列方式。</p>
+        <p its-locale-filter-list="en" lang="en"> It is common in books to increase the tracking between each character frame (i.e. <a href="#term.loose-setting" class="termref">loose setting</a>) for the following cases:</p>
+        <p its-locale-filter-list="zh-hans" lang="zh-hans">在各字之间加入固定量的空白来排列文字，称作<a href="#term.loose-setting" class="termref">疏排</a>。书籍排版上，遇到以下状况时，会采用这种排列方式。</p>
+        <p its-locale-filter-list="zh-hant" lang="zh-hant">在各字之間加入固定量的空白來排列文字，稱作<a href="#term.loose-setting" class="termref">疏排</a>。書籍排版上，遇到以下狀況時，會採用這種排列方式。</p>
         <ol>
           <li id="id14">
             <p its-locale-filter-list="en" lang="en">To achieve a balance between running heads with different numbers of characters, increased inter-character spacing is used for running heads with few characters.</p>
@@ -509,7 +509,7 @@ var respecConfig = {
         </figcaption>
       </figure>
 
-      <p its-locale-filter-list="en" lang="en"><dfn id="endef_song">Song</dfn>, also known as Songti or Ming, is currently the most common typeface used in Chinese printing. As seen in [[[#fig-song]]].</p>
+      <p its-locale-filter-list="en" lang="en"><dfn id="endef_song" class="lint-ignore">Song</dfn>, also known as Songti or Ming, is currently the most common typeface used in Chinese printing. As seen in [[[#fig-song]]].</p>
       <p its-locale-filter-list="zh-hans" lang="zh-hans">宋体，又称为明体或明朝体，是中文排版最常使用的字体。如[[[#fig-song]]]所示。</p>
       <p its-locale-filter-list="zh-hant" lang="zh-hant">宋體，又稱為明體或明朝體，是中文排版最常使用的字體。如[[[#fig-song]]]所示。</p>
       <p its-locale-filter-list="en" lang="en">Song is commonly used in text, headings and annotations. When used in headings, the characters will appear in a bold face, so as to distinguish the heading from the text. </p>
@@ -534,7 +534,7 @@ var respecConfig = {
         </figcaption>
       </figure>
 
-      <p its-locale-filter-list="en" lang="en"><dfn id="endef_kai">Kai</dfn> also known as Kaiti or regular script, is another major typeface, which provides calligraphic styles for Chinese characters. It shows notable handwriting features. As seen in [[[#fig-kai]]].</p>
+      <p its-locale-filter-list="en" lang="en"><dfn id="endef_kai" class="lint-ignore">Kai</dfn> also known as Kaiti or regular script, is another major typeface, which provides calligraphic styles for Chinese characters. It shows notable handwriting features. As seen in [[[#fig-kai]]].</p>
       <p its-locale-filter-list="zh-hans" lang="zh-hans">楷体又称正书、真书，为中文排版常用的字体。字体特性为带有书法形态、手写笔触。如[[[#fig-kai]]]所示。</p>
       <p its-locale-filter-list="zh-hant" lang="zh-hant">楷體又稱正書、真書，為中文排版常用的字體。字體特性為帶有書法形態、手寫筆觸。如[[[#fig-kai]]]所示。</p>
 
@@ -566,7 +566,7 @@ var respecConfig = {
         </figcaption>
       </figure>
 
-      <p its-locale-filter-list="en" lang="en"><dfn id="endef_hei">Hei</dfn>, also known as Heiti or Gothic, is a type style characterized by strokes of even thickness and less decoration, as seen in [[[#fig-hei]]].</p>
+      <p its-locale-filter-list="en" lang="en"><dfn id="endef_hei" class="lint-ignore">Hei</dfn>, also known as Heiti or Gothic, is a type style characterized by strokes of even thickness and less decoration, as seen in [[[#fig-hei]]].</p>
 
       <p its-locale-filter-list="zh-hans" lang="zh-hans">黑体又作方体，字体特性为笔画宽度平均，较少装饰。如[[[#fig-hei]]]所示。</p>
       <p its-locale-filter-list="zh-hant" lang="zh-hant">黑體又作方體，字體特性為筆畫寬度平均，較少裝飾。如[[[#fig-hei]]]所示。</p>
@@ -599,7 +599,7 @@ var respecConfig = {
         </figcaption>
       </figure>
 
-      <p its-locale-filter-list="en" lang="en">The <dfn id="endef_fangsong">Fangsong</dfn> (Imitation Song) style lies between Song and Kai. As seen in [[[#fig-fangsong]]].</p>
+      <p its-locale-filter-list="en" lang="en">The <dfn id="endef_fangsong" class="lint-ignore">Fangsong</dfn> (Imitation Song) style lies between Song and Kai. As seen in [[[#fig-fangsong]]].</p>
       <p its-locale-filter-list="zh-hans" lang="zh-hans">仿宋体的字体形态介于宋体与楷体之间。如[[[#fig-fangsong]]]所示。</p>
       <p its-locale-filter-list="zh-hant" lang="zh-hant">仿宋體的字體形態介於宋體與楷體之間。如[[[#fig-fangsong]]]所示。</p>
 
@@ -2313,9 +2313,9 @@ var respecConfig = {
         <span its-locale-filter-list="zh-hant" lang="zh-hant">行間注的用途</span>
       </h4>
 
-      <p its-locale-filter-list="en" lang="en">Chinese <dfn id="def_ruby">interlinear annotation</dfn>, also known as ruby, refers to small, supplementary text attached to certain characters or words in the main text. Chinese interlinear annotation is usually set in the interlinear space and aligned to the corresponding base text which it annotates. In Chinese typesetting, Chinese interlinear annotation is mainly used to indicate pronunciation or meaning.</p>
-      <p its-locale-filter-list="zh-hans" lang="zh-hans">行间注是标注在字词旁侧的小字号补充文本。行间注的注文通常位于行间，与其所标注的基文对齐，因这一性质而又名为行间注。行间注在中文排版里的用途主要为标音与释义。</p>
-      <p its-locale-filter-list="zh-hant" lang="zh-hant">行間注是標注於字詞旁側的小字號補充文本。行間注的注文通常位於行間，與其所標注的基文對齊，因這一性質而又名為行間注。行間注在中文排版里的用途主要為標音與釋義。</p>
+      <p its-locale-filter-list="en" lang="en">Chinese <a href="#term.interlinear-annotations" class="termref">interlinear annotation</a>, also known as ruby, refers to small, supplementary text attached to certain characters or words in the main text. Chinese interlinear annotation is usually set in the interlinear space and aligned to the corresponding base text which it annotates. In Chinese typesetting, Chinese interlinear annotation is mainly used to indicate pronunciation or meaning.</p>
+      <p its-locale-filter-list="zh-hans" lang="zh-hans"><a href="#term.interlinear-annotations" class="termref">行间注</a>是标注在字词旁侧的小字号补充文本。行间注的注文通常位于行间，与其所标注的基文对齐，因这一性质而又名为行间注。行间注在中文排版里的用途主要为标音与释义。</p>
+      <p its-locale-filter-list="zh-hant" lang="zh-hant"><a href="#term.interlinear-annotations" class="termref">行間注</a>是標注於字詞旁側的小字號補充文本。行間注的注文通常位於行間，與其所標注的基文對齊，因這一性質而又名為行間注。行間注在中文排版里的用途主要為標音與釋義。</p>
       <section id="h-indicating_pronunciation_for_chinese_characters">
         <h5>
           <span its-locale-filter-list="en" lang="en">Indicating the Pronunciation for Chinese characters</span>
@@ -5275,7 +5275,7 @@ var respecConfig = {
         <td>密排</td>
         <td>密排</td>
         <td>mìpái</td>
-        <td>Solid setting</td>
+        <td>solid setting</td>
         <td>
           <p its-locale-filter-list="en" lang="en">To arrange characters with no inter-character space between adjacent character frames.</p>
           <p its-locale-filter-list="zh-hans" lang="zh-hans">将文字依其外框紧密排列的排版方式。</p>
@@ -5384,7 +5384,7 @@ var respecConfig = {
           <p its-locale-filter-list="zh-hant" lang="zh-hant">文本或文字靠近該行行首的一端。通常，文字直排時始端在上，橫排在左。</p>
         </td>
       </tr>
-      <tr>
+      <tr id="term.loose-setting">
         <td>疏排</td>
         <td>疏排</td>
         <td>shūpái</td>
@@ -5415,6 +5415,17 @@ var respecConfig = {
           <p its-locale-filter-list="en" lang="en">The art and technique of arranging type to make written language legible, readable, and appealing when displayed. <a href="https://en.wikipedia.org/wiki/Typography">[Definition from Wikipedia]</a></p>
           <p its-locale-filter-list="zh-hans" lang="zh-hans">对文字进行合适地排版让书面语言易认、易读、有吸引力地展现出来的一种工艺。</p>
           <p its-locale-filter-list="zh-hant" lang="zh-hant">對文字進行合適地排版讓書面語言易認、易讀、有吸引力地展現出來的一種工藝。</p>
+        </td>
+      </tr>
+      <tr id="term.character-frame">
+        <td>文字外框</td>
+        <td>文字外框</td>
+        <td>wénzìwàikuāng</td>
+        <td>character frame</td>
+        <td>
+          <p its-locale-filter-list="en" lang="en">Rectangular area occupied by a character when it is set solid.</p>
+          <p its-locale-filter-list="zh-hans" lang="zh-hans">文字密排时所占矩形区域。</p>
+          <p its-locale-filter-list="zh-hant" lang="zh-hant">文字密排時所占矩形區域。</p>
         </td>
       </tr>
       <tr id="term.western-script">
@@ -5549,7 +5560,7 @@ var respecConfig = {
           <p its-locale-filter-list="zh-hant" lang="zh-hant">字符之間的空隙。</p>
         </td>
       </tr>
-      <tr>
+      <tr id="term.character-face">
         <td>字面</td>
         <td>字面</td>
         <td>zìmiàn</td>

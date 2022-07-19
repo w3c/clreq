@@ -1,0 +1,11 @@
+{
+  "name": "clreq",
+  "version": "0.1.0",
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "typescript": "~4.7.4"
+  }
+}

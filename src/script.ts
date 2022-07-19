@@ -2,9 +2,9 @@
 
 void function() {
 
-var LANG_LIST = ['en', 'zh-hant', 'zh-hans']
+let LANG_LIST = ['en', 'zh-hant', 'zh-hans']
 
-var L10N = {
+let L10N = {
 	'en': {
     selector: {
       'head > title': 'Requirements for Chinese Text Layout',
@@ -90,22 +90,18 @@ var L10N = {
   },
 }
 
-var $root = document.documentElement
-var $$hidden = []
+let $root = document.documentElement
+let $$hidden: object[] = []
 
-function arrayify(obj) {
+function arrayify(obj: any) {
 	return Array.from ? Array.from(obj) : Array.prototype.slice.call(obj)
 }
 
-function $(selector, context) {
-  return (context || document).querySelector(selector)
+function $$(selector: string) {
+	return arrayify(document.querySelectorAll(selector))
 }
 
-function $$(selector, context) {
-	return arrayify((context || document).querySelectorAll(selector))
-}
-
-function toggle$rootClass(lang) {
+function toggle$rootClass(lang: string) {
   $root.lang = lang === 'all' ? 'en' : lang
 
 	if (lang === 'all') {
@@ -117,7 +113,7 @@ function toggle$rootClass(lang) {
 	}
 }
 
-function showAndHideLang(lang) {
+function showAndHideLang(lang: string) {
   // Show previously hidden parts:
   $$hidden
   .forEach(function($elmt) { Object.assign($elmt, { hidden: false }) })
@@ -135,8 +131,8 @@ function showAndHideLang(lang) {
   )
 }
 
-function replaceBoilerplateText(lang) {
-  var l10n = L10N[lang === 'all' ? 'en' : lang]
+function replaceBoilerplateText(lang: string) {
+  let l10n = L10N[lang === 'all' ? 'en' : lang]
 
   // Alter some basic headings, etc:
   Object.keys(l10n.selector)
@@ -154,8 +150,8 @@ function replaceBoilerplateText(lang) {
 
   $$('body > div.head > details > summary')
   .forEach(function($summary) {
-  	var originalText = $summary.dataset.originalText || $summary.textContent.trim()
-    var text = l10n['summary'] || originalText
+  	let originalText = $summary.dataset.originalText || $summary.textContent.trim()
+    let text = l10n['summary'] || originalText
 
     if (text) {
       $summary.textContent = text
@@ -165,8 +161,8 @@ function replaceBoilerplateText(lang) {
 
   $$('body > div.head > details > dl > dt')
   .forEach(function($dt) {
-    var originalText = $dt.dataset.originalText || $dt.textContent.trim()
-    var text = l10n.dt[originalText] || originalText
+    let originalText = $dt.dataset.originalText || $dt.textContent.trim()
+    let text = l10n.dt[originalText] || originalText
 
     if (text) {
       $dt.textContent = text
@@ -183,7 +179,7 @@ function replaceBoilerplateText(lang) {
  * Expose to global for now since respec will re-parse the entire document
  * and event bound will be lost.
  */
-window.switchLang = function(lang) {
+window.switchLang = function(lang: string) {
   toggle$rootClass(lang)
   showAndHideLang(lang)
   replaceBoilerplateText(lang)

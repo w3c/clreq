@@ -2,9 +2,9 @@
 
 void function() {
 
-let LANG_LIST = ['en', 'zh-hant', 'zh-hans']
+const LANG_LIST = ['en', 'zh-hant', 'zh-hans']
 
-let L10N = {
+const L10N = {
 	'en': {
     selector: {
       'head > title': 'Requirements for Chinese Text Layout',
@@ -90,7 +90,7 @@ let L10N = {
   },
 }
 
-let $root = document.documentElement
+const $root = document.documentElement
 let $$hidden: object[] = []
 
 function arrayify(obj: any) {
@@ -132,7 +132,7 @@ function showAndHideLang(lang: string) {
 }
 
 function replaceBoilerplateText(lang: string) {
-  let l10n = L10N[lang === 'all' ? 'en' : lang]
+  const l10n = L10N[lang === 'all' ? 'en' : lang]
 
   // Alter some basic headings, etc:
   Object.keys(l10n.selector)

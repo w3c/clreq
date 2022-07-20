@@ -2,8 +2,8 @@
 (() => {
   // src/script.ts
   void function() {
-    let LANG_LIST = ["en", "zh-hant", "zh-hans"];
-    let L10N = {
+    const LANG_LIST = ["en", "zh-hant", "zh-hans"];
+    const L10N = {
       "en": {
         selector: {
           "head > title": "Requirements for Chinese Text Layout",
@@ -75,7 +75,7 @@
         }
       }
     };
-    let $root = document.documentElement;
+    const $root = document.documentElement;
     let $$hidden = [];
     function arrayify(obj) {
       return Array.from ? Array.from(obj) : Array.prototype.slice.call(obj);
@@ -109,7 +109,7 @@
       });
     }
     function replaceBoilerplateText(lang) {
-      let l10n = L10N[lang === "all" ? "en" : lang];
+      const l10n = L10N[lang === "all" ? "en" : lang];
       Object.keys(l10n.selector).forEach(function(s) {
         $$(s).forEach(function($elmt) {
           Object.assign($elmt, { textContent: l10n.selector[s] });

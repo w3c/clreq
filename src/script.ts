@@ -209,3 +209,5 @@ function addLangAttr() {
 
 addLangAttr()
 }()
+
+export {};

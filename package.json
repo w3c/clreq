@@ -3,9 +3,10 @@
   "version": "0.1.0",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
-    "build": "tsc"
+    "dev": "esbuild src/script.ts --bundle --watch --outfile=built/script.js",
+    "build": "esbuild src/script.ts --bundle --outfile=built/script.js"
   },
-  "devDependencies": {
-    "typescript": "~4.7.4"
+  "dependencies": {
+    "esbuild": "^0.14.49"
   }
 }

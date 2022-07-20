@@ -1,174 +1,158 @@
-'use strict';
-void function () {
-    let LANG_LIST = ['en', 'zh-hant', 'zh-hans'];
+"use strict";
+(() => {
+  // src/script.ts
+  void function() {
+    let LANG_LIST = ["en", "zh-hant", "zh-hans"];
     let L10N = {
-        'en': {
-            selector: {
-                'head > title': 'Requirements for Chinese Text Layout',
-                '#abstract > h2': 'Abstract',
-                '#toc > ol > li:nth-child(1) > a': 'Abstract',
-                '#sotd > h2': 'Status of This Document',
-                '#toc > ol > li:nth-child(2) > a': 'Status of This Document',
-                '#table-of-contents': 'Table of Contents',
-                '.note-title': 'Note',
-            },
-            'fig': 'Fig. ',
-            dt: {},
-            dd: {
-                'Bug tracker:': '<a href="https://github.com/w3c/clreq/issues">file a bug</a> (<a href="https://github.com/w3c/clreq/issues">open bugs</a>)',
-            },
+      "en": {
+        selector: {
+          "head > title": "Requirements for Chinese Text Layout",
+          "#abstract > h2": "Abstract",
+          "#toc > ol > li:nth-child(1) > a": "Abstract",
+          "#sotd > h2": "Status of This Document",
+          "#toc > ol > li:nth-child(2) > a": "Status of This Document",
+          "#table-of-contents": "Table of Contents",
+          ".note-title": "Note"
         },
-        'zh-hant': {
-            selector: {
-                'head > title': '中文排版需求',
-                '#abstract > h2': '摘要',
-                '#toc > ol > li:nth-child(1) > a': '摘要',
-                '#sotd > h2': '關於本文檔',
-                '#toc > ol > li:nth-child(2) > a': '關於本文檔',
-                '#table-of-contents': '內容大綱',
-                '.note-title': '注',
-            },
-            'fig': '圖',
-            'summary': '關於此文檔',
-            dt: {
-                'This version:': '本版本：',
-                'History:': '歷史：',
-                'Previous version:': '上一版：',
-                'Latest published version:': '最新發佈草稿：',
-                'Latest editor\'s draft:': '最新編輯草稿：',
-                'Editors:': '編輯：',
-                'Former editors:': '原編輯：',
-                'Participate:': '協助參與：',
-                'Feedback:': '反饋：',
-            },
-            dd: {
-                'Bug tracker:': '<a href="https://github.com/w3c/clreq/issues">反饋錯誤</a>（<a href="https://github.com/w3c/clreq/issues">修正中的錯誤</a>）',
-            }
+        "fig": "Fig. ",
+        dt: {},
+        dd: {
+          "Bug tracker:": '<a href="https://github.com/w3c/clreq/issues">file a bug</a> (<a href="https://github.com/w3c/clreq/issues">open bugs</a>)'
+        }
+      },
+      "zh-hant": {
+        selector: {
+          "head > title": "\u4E2D\u6587\u6392\u7248\u9700\u6C42",
+          "#abstract > h2": "\u6458\u8981",
+          "#toc > ol > li:nth-child(1) > a": "\u6458\u8981",
+          "#sotd > h2": "\u95DC\u65BC\u672C\u6587\u6A94",
+          "#toc > ol > li:nth-child(2) > a": "\u95DC\u65BC\u672C\u6587\u6A94",
+          "#table-of-contents": "\u5167\u5BB9\u5927\u7DB1",
+          ".note-title": "\u6CE8"
         },
-        'zh-hans': {
-            selector: {
-                'head > title': '中文排版需求',
-                '#abstract > h2': '摘要',
-                '#toc > ol > li:nth-child(1) > a': '摘要',
-                '#sotd > h2': '关于本文档',
-                '#toc > ol > li:nth-child(2) > a': '关于本文档',
-                '#table-of-contents': '内容大纲',
-                '.note-title': '注',
-            },
-            'fig': '图',
-            'summary': '关于此文档',
-            dt: {
-                'This version:': '本版本：',
-                'History:': '历史：',
-                'Previous version:': '上一版：',
-                'Latest published version:': '最新发布草稿：',
-                'Latest editor\'s draft:': '最新编辑草稿：',
-                'Editors:': '编辑：',
-                'Former editors:': '原编辑：',
-                'Participate:': '协助参与：',
-                'Feedback:': '反馈：',
-            },
-            dd: {
-                'Bug tracker:': '<a href="https://github.com/w3c/clreq/issues">反馈错误</a>（<a href="https://github.com/w3c/clreq/issues">修正中的错误</a>）',
-            }
+        "fig": "\u5716",
+        "summary": "\u95DC\u65BC\u6B64\u6587\u6A94",
+        dt: {
+          "This version:": "\u672C\u7248\u672C\uFF1A",
+          "History:": "\u6B77\u53F2\uFF1A",
+          "Previous version:": "\u4E0A\u4E00\u7248\uFF1A",
+          "Latest published version:": "\u6700\u65B0\u767C\u4F48\u8349\u7A3F\uFF1A",
+          "Latest editor's draft:": "\u6700\u65B0\u7DE8\u8F2F\u8349\u7A3F\uFF1A",
+          "Editors:": "\u7DE8\u8F2F\uFF1A",
+          "Former editors:": "\u539F\u7DE8\u8F2F\uFF1A",
+          "Participate:": "\u5354\u52A9\u53C3\u8207\uFF1A",
+          "Feedback:": "\u53CD\u994B\uFF1A"
         },
+        dd: {
+          "Bug tracker:": '<a href="https://github.com/w3c/clreq/issues">\u53CD\u994B\u932F\u8AA4</a>\uFF08<a href="https://github.com/w3c/clreq/issues">\u4FEE\u6B63\u4E2D\u7684\u932F\u8AA4</a>\uFF09'
+        }
+      },
+      "zh-hans": {
+        selector: {
+          "head > title": "\u4E2D\u6587\u6392\u7248\u9700\u6C42",
+          "#abstract > h2": "\u6458\u8981",
+          "#toc > ol > li:nth-child(1) > a": "\u6458\u8981",
+          "#sotd > h2": "\u5173\u4E8E\u672C\u6587\u6863",
+          "#toc > ol > li:nth-child(2) > a": "\u5173\u4E8E\u672C\u6587\u6863",
+          "#table-of-contents": "\u5185\u5BB9\u5927\u7EB2",
+          ".note-title": "\u6CE8"
+        },
+        "fig": "\u56FE",
+        "summary": "\u5173\u4E8E\u6B64\u6587\u6863",
+        dt: {
+          "This version:": "\u672C\u7248\u672C\uFF1A",
+          "History:": "\u5386\u53F2\uFF1A",
+          "Previous version:": "\u4E0A\u4E00\u7248\uFF1A",
+          "Latest published version:": "\u6700\u65B0\u53D1\u5E03\u8349\u7A3F\uFF1A",
+          "Latest editor's draft:": "\u6700\u65B0\u7F16\u8F91\u8349\u7A3F\uFF1A",
+          "Editors:": "\u7F16\u8F91\uFF1A",
+          "Former editors:": "\u539F\u7F16\u8F91\uFF1A",
+          "Participate:": "\u534F\u52A9\u53C2\u4E0E\uFF1A",
+          "Feedback:": "\u53CD\u9988\uFF1A"
+        },
+        dd: {
+          "Bug tracker:": '<a href="https://github.com/w3c/clreq/issues">\u53CD\u9988\u9519\u8BEF</a>\uFF08<a href="https://github.com/w3c/clreq/issues">\u4FEE\u6B63\u4E2D\u7684\u9519\u8BEF</a>\uFF09'
+        }
+      }
     };
     let $root = document.documentElement;
     let $$hidden = [];
     function arrayify(obj) {
-        return Array.from ? Array.from(obj) : Array.prototype.slice.call(obj);
+      return Array.from ? Array.from(obj) : Array.prototype.slice.call(obj);
     }
     function $$(selector) {
-        return arrayify(document.querySelectorAll(selector));
+      return arrayify(document.querySelectorAll(selector));
     }
     function toggle$rootClass(lang) {
-        $root.lang = lang === 'all' ? 'en' : lang;
-        if (lang === 'all') {
-            $root.classList.add('is-multilingual');
-            $root.classList.remove('isnt-multilingual');
-        }
-        else {
-            $root.classList.remove('is-multilingual');
-            $root.classList.add('isnt-multilingual');
-        }
+      $root.lang = lang === "all" ? "en" : lang;
+      if (lang === "all") {
+        $root.classList.add("is-multilingual");
+        $root.classList.remove("isnt-multilingual");
+      } else {
+        $root.classList.remove("is-multilingual");
+        $root.classList.add("isnt-multilingual");
+      }
     }
     function showAndHideLang(lang) {
-        // Show previously hidden parts:
-        $$hidden
-            .forEach(function ($elmt) { Object.assign($elmt, { hidden: false }); });
-        if (lang === 'all') {
-            return;
-        }
-        // Hide parts of other languages:
-        $$hidden = (LANG_LIST
-            .filter(function (it) { return it !== lang; })
-            .reduce(function (result, it) { return result.concat($$('[its-locale-filter-list="' + it + '"]')); }, [])
-            .map(function ($elmt) { return Object.assign($elmt, { hidden: true }); }));
+      $$hidden.forEach(function($elmt) {
+        Object.assign($elmt, { hidden: false });
+      });
+      if (lang === "all") {
+        return;
+      }
+      $$hidden = LANG_LIST.filter(function(it) {
+        return it !== lang;
+      }).reduce(function(result, it) {
+        return result.concat($$('[its-locale-filter-list="' + it + '"]'));
+      }, []).map(function($elmt) {
+        return Object.assign($elmt, { hidden: true });
+      });
     }
     function replaceBoilerplateText(lang) {
-        let l10n = L10N[lang === 'all' ? 'en' : lang];
-        // Alter some basic headings, etc:
-        Object.keys(l10n.selector)
-            .forEach(function (s) {
-            $$(s)
-                .forEach(function ($elmt) {
-                Object.assign($elmt, { textContent: l10n.selector[s] });
-            });
+      let l10n = L10N[lang === "all" ? "en" : lang];
+      Object.keys(l10n.selector).forEach(function(s) {
+        $$(s).forEach(function($elmt) {
+          Object.assign($elmt, { textContent: l10n.selector[s] });
         });
-        $$('figcaption, .fig-ref')
-            .forEach(function ($elmt) {
-            Object.assign($elmt.firstChild, { textContent: l10n['fig'] });
-        });
-        $$('body > div.head > details > summary')
-            .forEach(function ($summary) {
-            let originalText = $summary.dataset.originalText || $summary.textContent.trim();
-            let text = l10n['summary'] || originalText;
-            if (text) {
-                $summary.textContent = text;
-                $summary.dataset.originalText = originalText;
-            }
-        });
-        $$('body > div.head > details > dl > dt')
-            .forEach(function ($dt) {
-            let originalText = $dt.dataset.originalText || $dt.textContent.trim();
-            let text = l10n.dt[originalText] || originalText;
-            if (text) {
-                $dt.textContent = text;
-                $dt.dataset.originalText = originalText;
-            }
-            if (originalText === 'Bug tracker:') {
-                $dt.nextElementSibling.innerHTML = l10n.dd['Bug tracker:'];
-            }
-        });
+      });
+      $$("figcaption, .fig-ref").forEach(function($elmt) {
+        Object.assign($elmt.firstChild, { textContent: l10n["fig"] });
+      });
+      $$("body > div.head > details > summary").forEach(function($summary) {
+        let originalText = $summary.dataset.originalText || $summary.textContent.trim();
+        let text = l10n["summary"] || originalText;
+        if (text) {
+          $summary.textContent = text;
+          $summary.dataset.originalText = originalText;
+        }
+      });
+      $$("body > div.head > details > dl > dt").forEach(function($dt) {
+        let originalText = $dt.dataset.originalText || $dt.textContent.trim();
+        let text = l10n.dt[originalText] || originalText;
+        if (text) {
+          $dt.textContent = text;
+          $dt.dataset.originalText = originalText;
+        }
+        if (originalText === "Bug tracker:") {
+          $dt.nextElementSibling.innerHTML = l10n.dd["Bug tracker:"];
+        }
+      });
     }
-    /**
-     * Expose to global for now since respec will re-parse the entire document
-     * and event bound will be lost.
-     */
-    window.switchLang = function (lang) {
-        toggle$rootClass(lang);
-        showAndHideLang(lang);
-        replaceBoilerplateText(lang);
+    window.switchLang = function(lang) {
+      toggle$rootClass(lang);
+      showAndHideLang(lang);
+      replaceBoilerplateText(lang);
     };
-    /**
-     * Add `lang` attribute wherever there is a its-locale-filter-list attribute.
-     * This is done by js to reduce burden on editors
-     * If there's already a lang attribute in the tag, that tag is skipped.
-     *
-     * Note that this may still produce temporarily incorrect labelling
-     * where text is awaiting translation.
-     */
     function addLangAttr() {
-        toggle$rootClass('all');
-        LANG_LIST
-            .forEach(function (lang) {
-            $$('[its-locale-filter-list="' + lang + '"]')
-                .forEach(function ($elmt) {
-                if (!$elmt.lang) {
-                    $elmt.lang = lang;
-                }
-            });
+      toggle$rootClass("all");
+      LANG_LIST.forEach(function(lang) {
+        $$('[its-locale-filter-list="' + lang + '"]').forEach(function($elmt) {
+          if (!$elmt.lang) {
+            $elmt.lang = lang;
+          }
         });
+      });
     }
     addLangAttr();
-}();
+  }();
+})();

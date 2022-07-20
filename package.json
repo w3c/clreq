@@ -1,0 +1,12 @@
+{
+  "name": "clreq",
+  "version": "0.1.0",
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "dev": "esbuild src/script.ts --bundle --watch --outfile=built/script.js",
+    "build": "esbuild src/script.ts --bundle --outfile=built/script.js"
+  },
+  "dependencies": {
+    "esbuild": "^0.14.49"
+  }
+}

@@ -4700,7 +4700,12 @@ var respecConfig = {
     <span its-locale-filter-list="zh-hant" lang="zh-hant">詞彙表</span>
   </h2>
 
-  <table class="appendix glossary">
+  <div class="input">
+    <!-- <label for="search">Search:</label> -->
+    <input placeholder="Search" type="text" id="search">
+</div>
+
+  <table class="appendix glossary" id="filter">
     <thead>
       <tr>
         <th class="term">
@@ -5673,6 +5678,27 @@ var respecConfig = {
   <p its-locale-filter-list="zh-hans" lang="zh-hans">欲了解最新的参与者信息，请参看<a href="https://github.com/w3c/clreq/graphs/contributors">GitHub贡献者列表</a>。</p>
   <p its-locale-filter-list="zh-hant" lang="zh-hant">欲了解最新的參與者信息，請參看<a href="https://github.com/w3c/clreq/graphs/contributors">GitHub貢獻者列表</a>。</p>
 </section>
+
+<script>
+  const search = document.getElementById('search')
+  const table = document.getElementById('filter')
+  const trArray = Array.prototype.slice.call(table.querySelectorAll('tbody tr'))
+
+  const filter = event => {
+    const searchTerm = event.target.value.toLowerCase()
+    trArray.forEach(row => {
+      row.classList.add('hidden')
+      const tdArray = Array.prototype.slice.call(row.getElementsByTagName('td'))
+      tdArray.forEach(cell => {
+        if (cell.innerText.toLowerCase().indexOf(searchTerm) > -1) {
+          row.classList.remove('hidden')
+        }
+      })
+    })
+  }
+
+  search.addEventListener('keyup', filter, false)
+</script>
 
 </body>
 </html>

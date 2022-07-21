@@ -301,3 +301,39 @@ table.glossary th.term-en { width: 5.25em; }
 
 /* Override the display property */
 [its-locale-filter-list][hidden] { display: none; }
+
+/* Search */
+.input {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  letter-spacing: normal;
+  max-width: 100%;
+  text-align: left;
+  padding: 16px;
+  margin-top: 4px;
+  transition: .3s cubic-bezier(.25, .8, .5, 1);
+}
+
+/* label {
+  margin-right: 15px;
+} */
+
+#search {
+  color: rgba(0, 0, 0, .87);
+  max-height: 32px;
+  flex: 1 1 auto;
+  line-height: 20px;
+  padding: 8px 0;
+  max-width: 100%;
+  min-width: 0;
+  width: 100%;
+  background-color: transparent;
+  border-style: none;
+  border-radius: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, .42);
+}
+
+.hidden {
+  display: none;
+}

@@ -1,0 +1,9 @@
+@media print {
+  #langSwitch {
+    display: none;
+  }
+  details > summary {
+    font-size: 110%;
+    list-style: none;
+  }
+}

@@ -1,6 +1,7 @@
 # ECHIDNA configuration
 index.html?specStatus=DNOTE&shortName=clreq respec
 local.css
+print.css
 built/script.js
 images/en/increased-inter-character-spacing.svg
 images/en/latin-90-clockwise.svg

@@ -94,7 +94,7 @@ figcaption {
   font-size: 90%;
 }
 
-span:lang(zh) {
+span:lang(zh), figcaption:lang(zh) {
   font-style: normal;
 }
 

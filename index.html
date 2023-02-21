@@ -1208,7 +1208,7 @@ var respecConfig = {
               <p its-locale-filter-list="zh-hant" lang="zh-hant">直排時，西文字母或<a href="#term.european-numerals" class="termref">阿拉伯數字</a>有以下三種配置方式：</p>
               <ul>
                 <li id="id67">
-                  <p its-locale-filter-list="en" lang="en" class="checkme">One by one, with the same normal orientation as Han characters. This is usually applied to a single alphanumeric, as well as acronyms.</p>
+                  <p its-locale-filter-list="en" lang="en" class="checkme">One by one, with the same normal orientation as Han characters. This is usually applied to one-letter alphanumerics, as well as acronyms.</p>
                   <p its-locale-filter-list="zh-hans" lang="zh-hans">与汉字采相同的书写方向，依字母逐个排列，主要用于单一西文字母或阿拉伯数字，以及首字母缩写等。</p>
                   <p its-locale-filter-list="zh-hant" lang="zh-hant">與漢字採相同的書寫方向，依字母逐個排列，主要用於單一西文字母或阿拉伯數字，以及首字母縮寫等。</p>
                   <figure id="latin-one-by-one">
@@ -2317,7 +2317,7 @@ var respecConfig = {
           <p its-locale-filter-list="zh-hant" lang="zh-hant">漢字與西文字母或阿拉伯数字之間，原則上使用不多於四分之一個漢字寬的字距或空白。</p>
         </li>
         <li id="id116">
-          <p its-locale-filter-list="en" lang="en">Justified text alignment is an important feature of Chinese composition. It is harder to align text as expected when a line contains Western text. Typically, spacing or tracking is applied equally across the line, but such adjustments are only applied between Han characters, or between a Han character and a letter of Western text. The spacing is not equally distributed between characters in words of Western alphas and/or European numerals.</p>
+          <p its-locale-filter-list="en" lang="en">Justified text alignment is an important feature of Chinese composition. It is harder to align text as expected when a line contains Western characters. Typically, spacing or tracking is applied equally across the line, but such adjustments are only applied between Han characters, or between a Han character and a Western character. The spacing is not equally distributed between characters in words of Western alphas and/or European numerals.</p>
           <p its-locale-filter-list="zh-hans" lang="zh-hans">由于中文排版强调行首与行尾对齐，当行内包含西文时，较难对齐，这时多使用均排的方式处理。均排时，各西文词组间、阿拉伯数字间的空格，以及西文字母与阿拉伯数字之间不使用均排，仅调整汉字、汉字与西文间的字距或空白。</p>
           <p its-locale-filter-list="zh-hant" lang="zh-hant">由於中文排版強調行頭與行尾對齊，當行內包含西文時，較難對齊，這時多使用均排的方式處理。均排時，各西文詞組間、阿拉伯數字間之空格，以及西文字母與阿拉伯數字之間不使用均排，僅調整漢字、漢字與西文間的字距或空白。</p>
         </li>
@@ -2544,7 +2544,7 @@ var respecConfig = {
               <p its-locale-filter-list="zh-hant" lang="zh-hant">文字直排、注音置於基字右側時，段落通常需要基字尺寸1.5倍以上的行距，注文應標注於此行距間，設計版心時須先取適當行距值。段落行距在基字尺寸1.5倍以上時，行距不應受注音標注與否的影響。</p>
             </div>
             <div class="note" id="n042">
-              <p its-locale-filter-list="en" lang="en">In horizontal writing mode, when Zhuyin annotations are placed to the right side of the base characters (vertical Zhuyin), the spaces between the base characters, where the Zhuyin annotations are placed, should be at least half of the width of those characters. To achieve grid alignment, the characters without Zhuyin annotations, such as punctuation marks, words of Western text and indented spaces should keep the same space as well.</p>
+              <p its-locale-filter-list="en" lang="en">In horizontal writing mode, when Zhuyin annotations are placed to the right side of the base characters (vertical Zhuyin), the spaces between the base characters, where the Zhuyin annotations are placed, should be at least half of the width of those characters. To achieve grid alignment, the characters without Zhuyin annotations, such as punctuation marks, Western words and indented spaces should keep the same space as well.</p>
               <p its-locale-filter-list="zh-hans" lang="zh-hans">文字横排、注音置于基字右侧时，段落间的汉字皆须预留基字尺寸一半以上的字距，每字皆然，注文应标注在此字距间。在纵横对齐的原则下，未标注注文的文字（如标点符号、西文词组、首行缩进的字数等）也会预留相同的空间。</p>
               <p its-locale-filter-list="zh-hant" lang="zh-hant">文字橫排、注音置於基字右側時，段落間的漢字皆須預留基字尺寸一半以上的字距，每字皆然，注文應標注於此字距間。在縱橫對齊的原則下，未標注注文的文字（如標點符號、西文詞組、首行縮進的字數等）也會預留相同的空間。</p>
             </div>
@@ -2713,7 +2713,7 @@ var respecConfig = {
             <p its-locale-filter-list="zh-hant" lang="zh-hant">若注文長於基文且位於行端，二者可向行端對齊。</p>
           </li>
           <li id="id138">
-            <p its-locale-filter-list="en" lang="en">The space between two adjacent annotations should not be smaller than the size of a normal Western text space, which is about 1/4&nbsp;em. Due to the limitation of typesetting technologies, there is usually no space between the rather long phonetic annotations in many printed publications. Luckily, this is not likely to lead to ambiguity because each Han character contains one syllable and most Pinyin fragments are easy to tell apart. However, these annotations can be misleading sometimes. For example, character-based phonetic annotations may result in the false impression that they are word-based. Also, the accidentally concatenated annotations may disrupt word boundaries, which alters the semantic meanings of the words.</p>
+            <p its-locale-filter-list="en" lang="en">The space between two adjacent annotations should not be smaller than the size of a normal Western space, which is about 1/4&nbsp;em. Due to the limitation of typesetting technologies, there is usually no space between the rather long phonetic annotations in many printed publications. Luckily, this is not likely to lead to ambiguity because each Han character contains one syllable and most Pinyin fragments are easy to tell apart. However, these annotations can be misleading sometimes. For example, character-based phonetic annotations may result in the false impression that they are word-based. Also, the accidentally concatenated annotations may disrupt word boundaries, which alters the semantic meanings of the words.</p>
             <p its-locale-filter-list="zh-hans" lang="zh-hans">相邻注文的间距不应小于西文词间空格的宽度（约1/4字宽）。但受排版技术限制，许多出版物中过长的相邻注文都会紧密相连。因汉字为单音节文字且多数汉语拼音音节都容易辨认界限，并不容易出现标音的歧义，但由于每个汉字的标音都已隔开，意外的相连易造成分词连写的假象，且相连的标音时常横跨词界，打乱语义。</p>
             <p its-locale-filter-list="zh-hant" lang="zh-hant">相鄰注文的間距不應小於西文詞間空格的寬度（約1/4字寬）。但受排版技術限制，許多出版物中過長的相鄰注文都會緊密相連。因漢字為單音節文字且多數漢語拼音音節都容易辨認界限，並不容易出現標音的歧義，但由於每個漢字的標音都已隔開，意外的相連易造成分詞連寫的假象，且相連的標音時常橫跨詞界，打亂語義。</p>
           </li>
@@ -3234,7 +3234,7 @@ var respecConfig = {
       </ol>
 
       <p its-locale-filter-list="en" lang="en">
-        In contrast to Western text typesetting, the body text in Chinese books are rarely left-aligned, and instead should be justified. Justification of Western text hinges on the adjustment of space between the words on a line, whereas there are more options for line justification when it comes to Chinese typesetting.
+        In contrast to Western typesetting, the body text in Chinese books are rarely left-aligned, and instead should be justified. Justification of Western text hinges on the adjustment of space between the words on a line, whereas there are more options for line justification when it comes to Chinese typesetting.
       </p>
       <p its-locale-filter-list="zh-hans" lang="zh-hans">
         与西文排版不同，中文排版特别是书籍正文排版极少使用左齐右不齐，原则上应该进行两端对齐。西文排版两端对齐（justification）时，主要是调整单词之间的间隙（词距），而中文排版在两端对齐时，能调整的地方更多，具体如下所述。
@@ -3253,7 +3253,7 @@ var respecConfig = {
       </h4>
 
       <p its-locale-filter-list="en" lang="en">
-        Line adjustments are predicated upon the amount of available space, for example, spacing between words of Western text, [[[#h-punctuation_adjustment_space]]], and so on. There are two methods for line adjustment:
+        Line adjustments are predicated upon the amount of available space, for example, spacing between Western words, [[[#h-punctuation_adjustment_space]]], and so on. There are two methods for line adjustment:
       </p>
       <p its-locale-filter-list="zh-hans" lang="zh-hans">
         行内调整的对象是需要按照预先定义的可调整空间，如西文词距、[[[#h-punctuation_adjustment_space]]]等等。行内调整有以下两种方法：
@@ -3266,7 +3266,7 @@ var respecConfig = {
         <li>
           <p its-locale-filter-list="en" lang="en">
             <span class="leadin">Reduction of Inter-Character Spacing:</span>
-            Inter-character spacing like those between words of Western text, mixed texts, or as described in [[[#h-punctuation_adjustment_space]]], should be reduced in accordance to the prevailing typesetting style.
+            Inter-character spacing like those between Western words, mixed texts, or as described in [[[#h-punctuation_adjustment_space]]], should be reduced in accordance to the prevailing typesetting style.
           </p>
           <p its-locale-filter-list="zh-hans" lang="zh-hans">
             <span class="leadin">挤压处理：</span>“挤压处理”是指按照预先规定的排版风格，压缩西文词距、中西间距和[[[#h-punctuation_adjustment_space]]]等处的做法。
@@ -3279,7 +3279,7 @@ var respecConfig = {
         <li>
           <p its-locale-filter-list="en" lang="en">
             <span class="leadin">Expansion of Inter-Character Spacing:</span>
-            Inter-character spacing like those between words of Western text, mixed texts or scenarios that are not limited by prohibition rules should be added in accordance to the prevailing typesetting style.
+            Inter-character spacing like those between Western words, mixed texts or scenarios that are not limited by prohibition rules should be added in accordance to the prevailing typesetting style.
           </p>
           <p its-locale-filter-list="zh-hans" lang="zh-hans">
             <span class="leadin">拉伸处理：</span>“拉伸处理”是指按照预先规定的排版风格，拉伸西文词距、中西间距以及其他未被特殊规定禁止调整等处的做法。
@@ -3302,7 +3302,7 @@ var respecConfig = {
 
       <div class="note">
         <p its-locale-filter-list="en" lang="en">
-          The word spacing in Western text described here only pertains to situations which involve compositions of mixed Western text and Han characters. The expected behaviour is different from that for purely Western texts, which will take into account the typeface, font size and letter spacing when doing text justification. In general, Western texts will add to word spacing and rarely uses space reduction.
+          The word spacing in Western text described here only pertains to situations which involve compositions of mixed Western and Han characters. The expected behaviour is different from that for purely Western texts, which will take into account the typeface, font size and letter spacing when doing text justification. In general, Western texts will add to word spacing and rarely uses space reduction.
         </p>
         <p its-locale-filter-list="zh-hans" lang="zh-hans">
           本文涉及到行内的“西文词距”调整，仅是针对“在中文排版内混排的西文”，因此，与纯西文排版的习惯不尽相同。一般的西文排版中的词距，需要依照所用字体、字号、字距进行不同判断，而且一般只拉伸、不挤压。
@@ -3471,7 +3471,7 @@ var respecConfig = {
       <ol type="a">
         <li>
           <p its-locale-filter-list="en" lang="en" class="checkme">
-            Word spacing between Western text: for lines with several word spaces of Western text, these should be processed at the same time, with equal treatment. Each word space can be expanded to a maximum of 1/2&nbsp;em.
+            Word spacing between Western text: for lines with several Western word spaces, these should be processed at the same time, with equal treatment. Each word space can be expanded to a maximum of 1/2&nbsp;em.
           </p>
           <p its-locale-filter-list="zh-hans" lang="zh-hans">
             西文词距。一行内若有多处西文词距，应该同时、同等量处理，每个西文词距最大可以拉伸到半个汉字字宽。

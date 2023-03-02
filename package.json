@@ -7,6 +7,6 @@
     "build": "esbuild src/script.ts --bundle --outfile=built/script.js"
   },
   "dependencies": {
-    "esbuild": "^0.17.6"
+    "esbuild": "^0.17.10"
   }
 }

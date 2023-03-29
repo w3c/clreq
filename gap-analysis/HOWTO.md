@@ -7,7 +7,8 @@ Practical steps for editing the document gap-analysis/index.html
 Try to keep the structure (sections, headings, etc) intact, since we rely on them to run batch processes and link from various places. If needed, we can add a new section, but it should be done in collaboration with Richard Ishida. Note that there are catch-all sections available at the end of each division which can be used for things that don't appear to fit elsewhere.
 
 The basic structure of a section in the template looks like this:
-```
+
+```html
 <section id="emphasis" class="tbd">
     <h3>Emphasis &amp; highlights</h3>
     <p class="status_prompt">Bold and italic are not always appropriate for expressing emphasis, and some scripts have their own unique ways of doing it, that are not in the Western tradition at all. Does this script require support for emphasising or highlighting text that cannot be achieved currently?  <a href="https://w3c.github.io/typography/index#emphasis">See available information</a> or <a href="https://github.com/w3c/i18n-activity/issues?utf8=%E2%9C%93&amp;q=is%3Aissue%20is%3Aopen%20label%3Aemphasis%20label%3Atype-info-request">check for currently needed data</a>.</p>

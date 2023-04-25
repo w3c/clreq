@@ -312,9 +312,9 @@ var respecConfig = {
       <p its-locale-filter-list="en" lang="en">Different glyphs are used in different regions. One <a href="https://www.w3.org/TR/i18n-glossary/#def_unicode_code_point">Unicode code point</a> of a Han character may have more than one valid glyph, depending on operating system and typeface used. The focus of this document is Chinese composition and will not cover glyph variations in detail.</p>
       <p its-locale-filter-list="zh-hans" lang="zh-hans">不同地区所使用的字形有差异，各种字形与<a href="https://www.w3.org/TR/i18n-glossary/#def_unicode_code_point">Unicode码位</a>并非一一对应关系，需要依赖处理系统和字体来呈现。本文主要探究中文排版，对此不做详述。</p>
       <p its-locale-filter-list="zh-hant" lang="zh-hant">不同地區所使用的字形有差異，各種字形與<a href="https://www.w3.org/TR/i18n-glossary/#def_unicode_code_point">Unicode碼位</a>並非一一對應關係，需要依賴處理系統和字體來呈現。本文主要探究中文排版，對此不做詳述。</p>
-      <p its-locale-filter-list="en" lang="en">In addition to Han characters (Hanzi), various punctuation marks, as well as Western characters such as European numerals, Latin letters and/or Greek letters, may be used in Chinese text. </p>
-      <p its-locale-filter-list="zh-hans" lang="zh-hans">中文排版除了汉字外，也使用标点符号，也会与阿拉伯数字、拉丁文字、希腊文字等外文混排。</p>
-      <p its-locale-filter-list="zh-hant" lang="zh-hant">中文排版除了漢字外，也使用標點符號。也會與阿拉伯數字、拉丁文字、希臘文字等外文混排。</p>
+      <p its-locale-filter-list="en" lang="en">In addition to Han characters (Hanzi), various punctuation marks, as well as Western text such as European numerals, Latin letters and/or Greek letters, may be used in Chinese text.</p>
+      <p its-locale-filter-list="zh-hans" lang="zh-hans">中文排版除了汉字外，也使用标点符号，也会与阿拉伯数字、拉丁文字、希腊文字等西文混排。</p>
+      <p its-locale-filter-list="zh-hant" lang="zh-hant">中文排版除了漢字外，也使用標點符號。也會與阿拉伯數字、拉丁文字、希臘文字等西文混排。</p>
 
       <div class="note" id="n002">
         <p its-locale-filter-list="en" lang="en">One Simplified Chinese character may have more than one corresponding Traditional form. For example, the Simplified Chinese character <span lang="zh-hans">发</span> can be mapped to either the Traditional Chinese character <span lang="zh-hant">發</span> or <span lang="zh-hant">髮</span>. By contrast, the circumstances where one Traditional Chinese character corresponds to more than one Simplified Chinese character are fairly rare but still worth noting. For example, the Traditional Chinese character <span lang="zh-hant">乾</span> may be mapped to either the Simplified Chinese character <span lang="zh-hans">干</span> or <span lang="zh-hans">乾</span>. The mapping relationship between Traditional and Simplified Chinese is not one-to-one and particular character conversion depends on its context.</p>
@@ -1056,7 +1056,7 @@ var respecConfig = {
           <p its-locale-filter-list="en" lang="en">Line length should be multiples of the character size and the line ends should be aligned with each other.</p>
           <p its-locale-filter-list="zh-hans" lang="zh-hans">一行的行长应为文字尺寸的整数倍，各行的位置尽可能头尾对齐。</p>
           <p its-locale-filter-list="zh-hant" lang="zh-hant">一行的行長應為文字尺寸的整數倍，各行的位置盡可能頭尾對齊。</p>
-          <p its-locale-filter-list="en" lang="en">For Chinese composition without intermixed Western scripts, the characters all have a square-shaped frame, so all line lengths except that of the last line of the paragraph should, in principle, be the same.</p>
+          <p its-locale-filter-list="en" lang="en">For Chinese composition without intermixed Western text, the characters all have a square-shaped frame, so all line lengths except that of the last line of the paragraph should, in principle, be the same.</p>
           <p its-locale-filter-list="zh-hans" lang="zh-hans">中文在不与西文混排的状况下，所使用的文字外框皆为正方形，除段落最后一行不对齐外，各行行首、行尾皆需对齐，这是重要的排版原则。</p>
           <p its-locale-filter-list="zh-hant" lang="zh-hant">中文在不與西文混排的狀況下，所使用的文字外框皆為正方形，除段落最後一行不對齊外，各行行首、行尾皆需對齊，這是重要的排版原則。</p>
         </li>
@@ -1198,45 +1198,45 @@ var respecConfig = {
           </ol>
         </li>
         <li id="id65">
-          <p its-locale-filter-list="en" lang="en">When the text contains Western text or <a href="#term.european-numerals" class="termref">European numerals</a>, the typesetting method is as follows:</p>
-          <p its-locale-filter-list="zh-hans" lang="zh-hans">文中包含西文、<a href="#term.european-numerals" class="termref">阿拉伯数字</a>时，配置如下：</p>
-          <p its-locale-filter-list="zh-hant" lang="zh-hant">文中包含西文、<a href="#term.european-numerals" class="termref">阿拉伯數字</a>時，配置如下：</p>
+          <p its-locale-filter-list="en" lang="en">When the text contains Western alphas or <a href="#term.european-numerals" class="termref">European numerals</a>, the typesetting method is as follows:</p>
+          <p its-locale-filter-list="zh-hans" lang="zh-hans">文中包含西文字母、<a href="#term.european-numerals" class="termref">阿拉伯数字</a>时，配置如下：</p>
+          <p its-locale-filter-list="zh-hant" lang="zh-hant">文中包含西文字母、<a href="#term.european-numerals" class="termref">阿拉伯數字</a>時，配置如下：</p>
           <ol>
             <li id="id66">
-              <p its-locale-filter-list="en" lang="en">In vertical writing mode, there are 3 methods for arranging Western text or <a href="#term.european-numerals" class="termref">European numerals</a>:</p>
-              <p its-locale-filter-list="zh-hans" lang="zh-hans">直排时，西文或<a href="#term.european-numerals" class="termref">阿拉伯数字</a>有以下三种配置方式：</p>
-              <p its-locale-filter-list="zh-hant" lang="zh-hant">直排時，西文或<a href="#term.european-numerals" class="termref">阿拉伯數字</a>有以下三種配置方式：</p>
+              <p its-locale-filter-list="en" lang="en">In vertical writing mode, there are 3 methods for arranging Western alphas or <a href="#term.european-numerals" class="termref">European numerals</a>:</p>
+              <p its-locale-filter-list="zh-hans" lang="zh-hans">直排时，西文字母或<a href="#term.european-numerals" class="termref">阿拉伯数字</a>有以下三种配置方式：</p>
+              <p its-locale-filter-list="zh-hant" lang="zh-hant">直排時，西文字母或<a href="#term.european-numerals" class="termref">阿拉伯數字</a>有以下三種配置方式：</p>
               <ul>
                 <li id="id67">
-                  <p its-locale-filter-list="en" lang="en">One by one, with the same normal orientation as Han characters. This is usually applied to one-letter alphanumerics or acronyms.</p>
-                  <p its-locale-filter-list="zh-hans" lang="zh-hans">与汉字采相同的书写方向，依字母逐个排列，主要用于单一西文字母或阿拉伯数字、首字母缩写等。</p>
-                  <p its-locale-filter-list="zh-hant" lang="zh-hant">與漢字採相同的書寫方向，依字母逐個排列，主要用於單一西文字母或阿拉伯數字、首字母縮寫等。</p>
+                  <p its-locale-filter-list="en" lang="en">One by one, with the same upright orientation as Han characters. This usually applies to single-letter alphanumerics, and acronyms.</p>
+                  <p its-locale-filter-list="zh-hans" lang="zh-hans">与汉字采相同的书写方向，依字母逐个排列，主要用于单一西文字母或阿拉伯数字，以及首字母缩写等。</p>
+                  <p its-locale-filter-list="zh-hant" lang="zh-hant">與漢字採相同的書寫方向，依字母逐個排列，主要用於單一西文字母或阿拉伯數字，以及首字母縮寫等。</p>
                   <figure id="latin-one-by-one">
-                    <img its-locale-filter-list="en" lang="en" src="images/en/latin-one-by-one.svg" alt="Arrangement of alphanumerics in vertical writing mode - normal orientation." width="123" height="181">
+                    <img its-locale-filter-list="en" lang="en" src="images/en/latin-one-by-one.svg" alt="Arrangement of Western text in vertical writing mode—normal orientation." width="123" height="181">
                     <img its-locale-filter-list="zh-hans" lang="zh-hans" src="images/zh/latin-one-by-one-Hans.svg" alt="直排中的西文排版示例1" width="123" height="181">
                     <img its-locale-filter-list="zh-hant" lang="zh-hant" src="images/zh/latin-one-by-one-Hant.svg" alt="直排中的西文排版示例1" width="123" height="181">
                       <figcaption>
-                      <span its-locale-filter-list="en" lang="en">Arrangement of alphanumerics in vertical writing mode - normal orientation.</span>
+                      <span its-locale-filter-list="en" lang="en">Arrangement of Western text in vertical writing mode—normal orientation.</span>
                       <span its-locale-filter-list="zh-hans" lang="zh-hans">直排中的西文排版示例1</span>
                       <span its-locale-filter-list="zh-hant" lang="zh-hant">直排中的西文排版示例1</span>
                       </figcaption>
                   </figure>
                   <div class="note" id="n017">
-                    <p its-locale-filter-list="en" lang="en">Western text or <a href="#term.european-numerals" class="termref">European numerals</a> used for this arrangement should have the same fixed size and width as the Han characters, rather than a proportional width.</p>
+                    <p its-locale-filter-list="en" lang="en">Western alphas or <a href="#term.european-numerals" class="termref">European numerals</a> used for this arrangement should have the same fixed size and width as the Han characters, rather than a proportional width.</p>
                     <p its-locale-filter-list="zh-hans" lang="zh-hans">西文字母或<a href="#term.european-numerals" class="termref">阿拉伯数字</a>，采用此配置时，需使用与汉字相同尺寸、字幅固定的等宽字体，而非比例字体。</p>
                     <p its-locale-filter-list="zh-hant" lang="zh-hant">西文字母或<a href="#term.european-numerals" class="termref">阿拉伯數字</a>，採用此配置時，需使用與漢字相同尺寸、字幅固定的等寬字體，而非比例字體。</p>
                   </div>
                 </li>
                 <li id="id68">
-                  <p its-locale-filter-list="en" lang="en">Rotated 90 degrees clockwise. This is usually applied to English words or sentences.</p>
+                  <p its-locale-filter-list="en" lang="en">Rotated 90 degrees clockwise. This is usually applied to Western words or sentences.</p>
                   <p its-locale-filter-list="zh-hans" lang="zh-hans">文字以顺时针方向旋转90°，主要用于西文的单词、语句等（见[[[#latin-90-clockwise]]]）。</p>
                   <p its-locale-filter-list="zh-hant" lang="zh-hant">文字以順時針方向旋轉90°，主要用於西文的單詞、語句等（見[[[#latin-90-clockwise]]]）。</p>
                   <figure id="latin-90-clockwise">
-                    <img its-locale-filter-list="en" lang="en" src="images/en/latin-90-clockwise.svg" alt="Arrangement of alphanumerics in vertical writing mode - rotated 90 degrees clockwise." width="124" height="188">
+                    <img its-locale-filter-list="en" lang="en" src="images/en/latin-90-clockwise.svg" alt="Arrangement of Western text in vertical writing mode—rotated 90 degrees clockwise." width="124" height="188">
                     <img its-locale-filter-list="zh-hans" lang="zh-hans" src="images/zh/latin-90-clockwise-Hans.svg" alt="直排中的西文排版示例2" width="124" height="188">
                     <img its-locale-filter-list="zh-hant" lang="zh-hant" src="images/zh/latin-90-clockwise-Hant.svg" alt="直排中的西文排版示例2" width="124" height="188">
                       <figcaption>
-                      <span its-locale-filter-list="en" lang="en">Arrangement of alphanumerics in vertical writing mode - rotated 90 degrees clockwise.</span>
+                      <span its-locale-filter-list="en" lang="en">Arrangement of Western text in vertical writing mode—rotated 90 degrees clockwise.</span>
                       <span its-locale-filter-list="zh-hans" lang="zh-hans">直排中的西文排版示例2</span>
                       <span its-locale-filter-list="zh-hant" lang="zh-hant">直排中的西文排版示例2</span>
                       </figcaption>
@@ -1246,7 +1246,7 @@ var respecConfig = {
                   <p its-locale-filter-list="en" lang="en">Set horizontally without changing orientation (like <a href="https://www.w3.org/TR/jlreq/#handling_of_tatechuyoko">tate-chu-yoko</a> in Japanese). This is usually applied to numbers comprising two to three digits.</p>
                   <p its-locale-filter-list="zh-hans" lang="zh-hans">保持正常方向，横排处理（如日文的<a href="https://www.w3.org/TR/jlreq/#handling_of_tatechuyoko">纵中横排</a>）。主要应用于二至三位数字。</p>
                   <p its-locale-filter-list="zh-hant" lang="zh-hant">保持正常方向，橫排處理（如日文的<a href="https://www.w3.org/TR/jlreq/#handling_of_tatechuyoko">縱中橫排</a>）。主要應用於二至三位數字。</p>
-                  <p its-locale-filter-list="en" lang="en" class="checkme">In principle, if numbers are arranged horizontally in a vertical writing mode, the width of the numbers should not exceed 1&nbsp;em. This rule originated in the letterpress printing era due to the fixed width of each line. Therefore, in vertical writing mode, Western text or <a href="#term.european-numerals" class="termref">European numerals</a> are not limited to two digits, but the width should not exceed 1&nbsp;em. Some commonly seen examples include "3.0", "A+" and "2B".</p>
+                  <p its-locale-filter-list="en" lang="en" class="checkme">In principle, if numbers are arranged horizontally in a vertical writing mode, the width of the numbers should not exceed 1&nbsp;em. This rule originated in the letterpress printing era due to the fixed width of each line. Therefore, in vertical writing mode, Western alphas or <a href="#term.european-numerals" class="termref">European numerals</a> are not limited to two digits, but the width should not exceed 1&nbsp;em. Some commonly seen examples include "3.0", "A+" and "2B".</p>
                   <p its-locale-filter-list="zh-hans" lang="zh-hans">数字在直排行内横排，原则上不超过一个汉字的字幅。这是从活字印刷时代起，每行宽度固定所致。故直排时，西文字母与<a href="#term.european-numerals" class="termref">阿拉伯数字</a>横排不限于两位数，但原则上不能超过一个汉字。现代常见的用法还包括[3.0]、[A+]、[2B]等。</p>
                   <p its-locale-filter-list="zh-hant" lang="zh-hant">數字於直排行內橫排，原則上不超過一個漢字的字幅。這是從活字印刷時代起，每行寬度固定所致。故直排時，西文字母與<a href="#term.european-numerals" class="termref">阿拉伯數字</a>橫排不限於二位數，但原則上不能超過一個漢字。現代常見的用法還包括[3.0]、[A+]、[2B]等。</p>
                 </li>
@@ -1407,7 +1407,7 @@ var respecConfig = {
             <p its-locale-filter-list="zh-hant" lang="zh-hant">句號<span class="uname" translate="no">U+3002 IDEOGRAPHIC FULL STOP </span>[。]表示語句結束，逗號<span class="uname" translate="no">U+FF0C FULLWIDTH COMMA </span>[，]表示語氣停頓，頓號<span class="uname" translate="no">U+3001 IDEOGRAPHIC COMMA</span> [、]使用於並列連用、表示次序的字詞之間。</p>
 
             <div class="note" id="n021">
-              <p its-locale-filter-list="en" lang="en">In many college textbooks, science and technology literature, and grammar books of Western languages for example, most of which are in horizontal writing mode, where Western language are heavily used. In these cases, <span class="uname" translate="no">U+FF0E FULLWIDTH FULL STOP</span> [．] can be used as periods, while <span class="uname" translate="no">U+002C COMMA</span> [,] or <span class="uname" translate="no">U+FF0C FULLWIDTH COMMA</span> [，] can be used as commas or secondary commas.</p>
+              <p its-locale-filter-list="en" lang="en">In many college textbooks, science and technology literature, and grammar books of Western languages for example, most of which are in horizontal writing mode, where Western text are heavily used. In these cases, <span class="uname" translate="no">U+FF0E FULLWIDTH FULL STOP</span> [．] can be used as periods, while <span class="uname" translate="no">U+002C COMMA</span> [,] or <span class="uname" translate="no">U+FF0C FULLWIDTH COMMA</span> [，] can be used as commas or secondary commas.</p>
               <p its-locale-filter-list="zh-hans" lang="zh-hans">许多理工书籍、科技文献、西文教科书、语法书籍等内含大量西文词句，并采用横排，为求标点符号体例一致，也有采用<span class="uname" translate="no">U+FF0E FULLWIDTH FULL STOP</span> [．]为句号、采<span class="uname" translate="no">U+002C COMMA</span> [,]或<span class="uname" translate="no">U+FF0C FULLWIDTH COMMA</span> [，]为逗号与顿号的案例。详见[[[#atypical_punctuation_marks_and_their_arrangements]]]节。</p>
               <p its-locale-filter-list="zh-hant" lang="zh-hant">許多理工書籍、科技文獻、西文教科書、語法書籍等內含大量西文詞句，並採用橫排，為求標點符號體例一致，也有採用<span class="uname" translate="no">U+FF0E FULLWIDTH FULL STOP</span> [．]為句號、採<span class="uname" translate="no">U+002C COMMA</span> [,]或<span class="uname" translate="no">U+FF0C FULLWIDTH COMMA</span> [，]為逗號與頓號的案例。詳見[[[#atypical_punctuation_marks_and_their_arrangements]]]節。</p>
             </div>
@@ -1564,10 +1564,10 @@ var respecConfig = {
             <p its-locale-filter-list="en" lang="en">Interpuncts <span class="uname" translate="no">U+00B7 MIDDLE DOT</span> [·], also known as interpoints, middots or centered dots, are punctuation marks consisting of a vertically-centered dot, and are used to mark the boundaries between certain related components, such as mark divisions in transliterated foreign words or the month and day of a date. They are also used with book title marks to separate chapters, articles, and volumes in publications.</p>
             <p its-locale-filter-list="zh-hans" lang="zh-hans">间隔号为<span class="uname" translate="no">U+00B7 MIDDLE DOT</span> [·]。用于标示某些相关联成分之间的分界，如双书名号（书名号乙式）中分隔篇、章、卷，分隔外国人名中文译名、少数民族音译名，分隔日期的月和日等。</p>
             <p its-locale-filter-list="zh-hant" lang="zh-hant">間隔號為<span class="uname" translate="no">U+00B7 MIDDLE DOT</span> [·]。用於標示某些相關聯成分之間的分界，如書名號乙式（雙書名號）中分隔篇、章、卷，分隔外國人名中文譯名、少數民族音譯名，分隔日期的月和日等。</p>
-            <p its-locale-filter-list="en" lang="en">Interpuncts apply to Chinese only. When a translated foreign name contains a Latin character, a western period should be used rather than a interpunct. For example, <span lang="zh-hant">比爾·蓋茨</span> but <span lang="zh-hans">Ｂ．盖茨</span>.</p>
+            <p its-locale-filter-list="en" lang="en">Interpuncts apply to Chinese only. When a translated foreign name contains a Latin character, a Western period should be used rather than a interpunct. For example, <span lang="zh-hant">比爾·蓋茨</span> but <span lang="zh-hans">Ｂ．盖茨</span>.</p>
             <p its-locale-filter-list="zh-hans" lang="zh-hans">间隔号为中文标点。当外语人名缩写成一个字母时，其后宜使用西文句点，而非中文间隔号，如“比尔·盖茨”、“Ｂ．盖茨”。</p>
             <p its-locale-filter-list="zh-hant" lang="zh-hant">間隔號為中文標點。當外語人名縮寫成一個字母時，其後宜使用西文句點，而非中文間隔號，如「比爾·蓋茨」、「Ｂ．蓋茨」。</p>
-            <p its-locale-filter-list="en" lang="en">The width of interpuncts varies in different regions. In principle, in Hong Kong and Taiwan, interpuncts should have the same dimensions as a Hanzi in both vertical writing mode and horizontal writing mode. In Mainland China, interpuncts take up half the space of a Hanzi. </p>
+            <p its-locale-filter-list="en" lang="en">The width of interpuncts varies in different regions. In principle, in Hong Kong and Taiwan, interpuncts should have the same dimensions as a Hanzi in both vertical writing mode and horizontal writing mode. In Mainland China, interpuncts take up half the space of a Hanzi.</p>
             <p its-locale-filter-list="zh-hans" lang="zh-hans">间隔号在各个地区排版时宽度有所不同，原则上港台地区无论直排或横排，都占用一个汉字的大小，在中国大陆则占用半个汉字的大小。</p>
             <p its-locale-filter-list="zh-hant" lang="zh-hant">間隔號在各個地區排版時寬度有所不同，原則上港台地區無論直排或橫排，都占用一個漢字的大小，在中國大陸則占用半個漢字的大小。</p>
             <div class="note" id="n027">
@@ -1705,7 +1705,7 @@ var respecConfig = {
           <span its-locale-filter-list="zh-hant" lang="zh-hant">港台中文出版品的特殊情況</span>
         </h5>
 
-        <p its-locale-filter-list="en" lang="en">In Traditional Chinese publications such as ancient books, science and technology literature, textbooks, or books that have quotations in Western languages, some <a href="#term.pause-or-stop-punctuation-marks" class="termref">pause or stop punctuation marks</a>, including the slight-pause comma, colon and period, are positioned following the marked characters. The same applies for Simplified Chinese as well as Japanese so as to unify punctuation styles for both Chinese and Western languages.</p>
+        <p its-locale-filter-list="en" lang="en">In Traditional Chinese publications such as ancient books, science and technology literature, textbooks, or books that have quotations in Western text, some <a href="#term.pause-or-stop-punctuation-marks" class="termref">pause or stop punctuation marks</a>, including the slight-pause comma, colon and period, are positioned following the marked characters. The same applies for Simplified Chinese as well as Japanese so as to unify punctuation styles for both Chinese and Western text.</p>
         <p its-locale-filter-list="zh-hans" lang="zh-hans">在港台的古籍、科技文献、科学类教科书或常引西文的书籍中，也可见使用于被标注文字末端、字面始端的<a href="#term.pause-or-stop-punctuation-marks" class="termref">点号</a>（顿号、逗号、句号），类似简体中文或日文标点符号，以保持中、西文标点体例一致。</p>
         <p its-locale-filter-list="zh-hant" lang="zh-hant">在港台的古籍、科技文獻、科學類教科書或常引西文的書籍中，亦可見使用位受注文字末端、字面始端的<a href="#term.pause-or-stop-punctuation-marks" class="termref">點號</a>（頓號、逗號、句號），類似簡體中文或日文標點符號，以保持中、西文標點體例一致。</p>
       </section>
@@ -2170,17 +2170,17 @@ var respecConfig = {
         <span its-locale-filter-list="zh-hant" lang="zh-hant">中文與西文的混排</span>
       </h4>
 
-      <p its-locale-filter-list="en" lang="en">There are many examples in Chinese text where Western characters, such as Latin letters, Greek letters, or European numerals, are found alongside Han characters. The following are just a few examples:</p>
+      <p its-locale-filter-list="en" lang="en">There are many examples in Chinese text where Western text, such as Latin letters, Greek letters, or European numerals, are found alongside Han characters. The following are just a few examples:</p>
       <p its-locale-filter-list="zh-hans" lang="zh-hans">中文排版中，汉字与拉丁字母、希腊字母或阿拉伯数字等西文混排的状况经常出现，以下列举部分范例。</p>
       <p its-locale-filter-list="zh-hant" lang="zh-hant">中文排版中，漢字與拉丁字母、希臘字母或阿拉伯數字等西文混排的狀況經常出現，以下列舉部分範例。</p>
       <ol>
         <li id="id105">
-          <p its-locale-filter-list="en" lang="en">One Western letter used as a symbol for something, such as 'A' or 'B'.</p>
+          <p its-locale-filter-list="en" lang="en">One Western letter used as a symbol for something, such as ‘A’ or ‘B’.</p>
           <p its-locale-filter-list="zh-hans" lang="zh-hans" class="checkme">使用西文字母作为记号使用，如“A”“B”。</p>
           <p its-locale-filter-list="zh-hant" lang="zh-hant">使用西文字母作為記號使用，如「A」「B」。</p>
         </li>
         <li id="id106">
-          <p its-locale-filter-list="en" lang="en">A Western word is used in a Chinese context, such as 'editor'.</p>
+          <p its-locale-filter-list="en" lang="en">A Western word is used in a Chinese context, such as ‘editor’.</p>
           <p its-locale-filter-list="zh-hans" lang="zh-hans" class="checkme">直接使用如“editor”的西文单词。</p>
           <p its-locale-filter-list="zh-hant" lang="zh-hant">直接使用如「editor」的西文單字詞。</p>
         </li>
@@ -2196,13 +2196,13 @@ var respecConfig = {
         </li>
         <li id="id109">
           <p its-locale-filter-list="en" lang="en">European numerals used to express years or other numbers, such as '1999年'.</p>
-          <p its-locale-filter-list="zh-hans" lang="zh-hans" class="checkme">使用阿拉伯数字表示纪年、数量值、编号等，如“1999年”。</p>
+          <p its-locale-filter-list="zh-hans" lang="zh-hans">使用阿拉伯数字表示纪年、数量值、编号等，如“1999年”。</p>
           <p its-locale-filter-list="zh-hant" lang="zh-hant">使用阿拉伯數字表示紀年、數量詞、編號等，如「1999年」。</p>
         </li>
       </ol>
-      <p its-locale-filter-list="en" lang="en">Western numeric characters are also used in itemized lists and numbered headings, or as symbols for chemical elements or mathematical formulae. It can be seen from these examples that it is an everyday occurrence to find Western characters mixed with Han characters in Chinese composition.</p>
-      <p its-locale-filter-list="zh-hans" lang="zh-hans" class="checkme">项目符号与标题编号、单位符号、元素符号、数学符号等也多有西文，由此可知，日常使用上中、西文的混排非常常见。</p>
-      <p its-locale-filter-list="zh-hant" lang="zh-hant">項目符號與標題編號、單位符號、元素符號、數學符號等也多有西文，由此可知，日常使用上中、西文的混排非常常見。</p>
+      <p its-locale-filter-list="en" lang="en">Alphanumerics are also used in itemized lists and numbered headings, or as symbols for chemical elements or mathematical formulae. It can be seen from these examples that it is an everyday occurrence to find Western characters mixed with Han characters in Chinese composition.</p>
+      <p its-locale-filter-list="zh-hans" lang="zh-hans">项目符号与标题编号、单位符号、元素符号、数学符号等也多有西文字母或阿拉伯数字，由此可知，日常使用上中、西文的混排非常常见。</p>
+      <p its-locale-filter-list="zh-hant" lang="zh-hant">項目符號與標題編號、單位符號、元素符號、數學符號等也多有西文字母或阿拉伯數字，由此可知，日常使用上中、西文的混排非常常見。</p>
       <div class="note" id="n035">
         <p its-locale-filter-list="en" lang="en">Western numerals, sometimes called arabic, or arabic-indic numerals, are referred to as European numerals in the context of this document, unless notes indicate otherwise.</p>
         <p its-locale-filter-list="zh-hans" lang="zh-hans" class="checkme">若无特别提示，本文使用的“阿拉伯数字”皆指西方语言或欧洲形式的印度-阿拉伯数字。</p>
@@ -2224,9 +2224,9 @@ var respecConfig = {
         <span its-locale-filter-list="zh-hant" lang="zh-hant">橫排的中、西文混排配置</span>
       </h4>
 
-      <p its-locale-filter-list="en" lang="en">In horizontal writing mode, the basic approach uses proportional fonts to represent Western text and uses proportional or monospace fonts for <a href="#term.european-numerals" class="termref">European numerals</a>. In principle, there is tracking or spacing between an adjacent Han character and a Western character of up to 1/4&nbsp;em, except at the line start or end.</p>
-      <p its-locale-filter-list="zh-hans" lang="zh-hans">横排时，西文使用比例字体；<a href="#term.european-numerals" class="termref">阿拉伯数字</a>则常用比例字体或等宽字体。原则上，汉字与西文字母、数字间使用不多于四分之一个汉字宽的字距或空白。但西文出现在行首或行尾时，则无须加入空白。</p>
-      <p its-locale-filter-list="zh-hant" lang="zh-hant">橫排時，西文使用比例字體；<a href="#term.european-numerals" class="termref">阿拉伯數字</a>則常用比例字體或等寬字體。原則上，漢字與西文字母、數字間使用不多於四分之一個漢字寬的字距或空白。但西文出現在行頭或行尾時，則毋須加入空白。</p>
+      <p its-locale-filter-list="en" lang="en">In horizontal writing mode, the basic approach uses proportional fonts to represent Western alphas and uses proportional or monospace fonts for <a href="#term.european-numerals" class="termref">European numerals</a>. In principle, there is tracking or spacing between an adjacent Han character and a Western character of up to 1/4&nbsp;em, except at the line start or end.</p>
+      <p its-locale-filter-list="zh-hans" lang="zh-hans">横排时，西文字母使用比例字体；<a href="#term.european-numerals" class="termref">阿拉伯数字</a>则常用比例字体或等宽字体。原则上，汉字与西文字母、数字间使用不多于四分之一个汉字宽的字距或空白。但西文出现在行首或行尾时，则无须加入空白。</p>
+      <p its-locale-filter-list="zh-hant" lang="zh-hant">橫排時，西文字母使用比例字體；<a href="#term.european-numerals" class="termref">阿拉伯數字</a>則常用比例字體或等寬字體。原則上，漢字與西文字母、數字間使用不多於四分之一個漢字寬的字距或空白。但西文出現在行頭或行尾時，則毋須加入空白。</p>
       <div class="note" id="n036">
         <p its-locale-filter-list="en" lang="en">Another approach is to use a Western word space (<span class="uname" translate="no">U+0020 SPACE</span>), in which case the width depends on the font in use.</p>
         <p its-locale-filter-list="zh-hans" lang="zh-hans">或可使用西文词间空格（<span class="uname" translate="no">U+0020 SPACE</span> [ ]，其宽度随不同字体有所变化）。</p>
@@ -2242,35 +2242,35 @@ var respecConfig = {
         <span its-locale-filter-list="zh-hant" lang="zh-hant">直排的中、西文混排配置</span>
       </h4>
 
-      <p its-locale-filter-list="en" lang="en">For vertical writing mode, the following list describes methods of setting Western letters and <a href="#term.european-numerals" class="termref">European numerals</a>:</p>
-      <p its-locale-filter-list="zh-hans" lang="zh-hans">直排时，西文与<a href="#term.european-numerals" class="termref">阿拉伯数字</a>的配置有以下三种方法：</p>
-      <p its-locale-filter-list="zh-hant" lang="zh-hant">直排時，西文與<a href="#term.european-numerals" class="termref">阿拉伯數字</a>的配置有以下三種方法：</p>
+      <p its-locale-filter-list="en" lang="en">For vertical writing mode, the following list describes methods of setting Western alphas and <a href="#term.european-numerals" class="termref">European numerals</a>:</p>
+      <p its-locale-filter-list="zh-hans" lang="zh-hans">直排时，西文字母与<a href="#term.european-numerals" class="termref">阿拉伯数字</a>的配置有以下三种方法：</p>
+      <p its-locale-filter-list="zh-hant" lang="zh-hant">直排時，西文字母與<a href="#term.european-numerals" class="termref">阿拉伯數字</a>的配置有以下三種方法：</p>
       <ol>
         <li id="id110">
-          <p its-locale-filter-list="en" lang="en" class="checkme"><span class="leadin">Setting Western letters with Han character width monospace fonts</span>. Letters or European numerals follow each other, one at a time, in the same direction and orientation as the Han characters. This arrangement is usually adopted where the text contains a single letter or digit, or an acronym (such as <abbr title="Gross Domestic Product">GDP</abbr>).</p>
-          <p its-locale-filter-list="zh-hans" lang="zh-hans">采用与汉字等宽的字体或全角文字，使用与汉字相同的书写方向按照字母排列，无须转向。当文中的西文字母与阿拉伯数字为单独一字或为首字母缩写时（如GDP），多使用这种方式配置。</p>
+          <p its-locale-filter-list="en" lang="en" class="checkme"><span class="leadin">Setting Western text with Han character width monospace fonts</span>. Western alphas or European numerals follow each other, one at a time, in the same direction and orientation as the Han characters. This arrangement is usually adopted where the text contains a single letter or digit, or an acronym (such as <abbr title="Gross Domestic Product">GDP</abbr>).</p>
+          <p its-locale-filter-list="zh-hans" lang="zh-hans">采用与汉字等宽的字体或全角文字，使用与汉字相同的书写方向依字母排列，无须转向。当文中的西文字母与阿拉伯数字为单独一字或为首字母缩写时（如GDP），多使用这种方式配置。</p>
           <p its-locale-filter-list="zh-hant" lang="zh-hant">採用與漢字等寬之字體或全形字元，使用與漢字相同的書寫方向依字母排列，毋須轉向。當文中的西文字母與阿拉伯數字為單獨一字、或為首字母縮寫時（如GDP），多使用這種方式配置。</p>
           <figure id="latin-normal-orientation">
-            <img its-locale-filter-list="en" lang="en" src="images/en/latin-one-by-one.svg" alt="Example of Latin letters in normal orientation." width="123" height="181">
+            <img its-locale-filter-list="en" lang="en" src="images/en/latin-one-by-one.svg" alt="Example of Western alphas in normal orientation." width="123" height="181">
             <img its-locale-filter-list="zh-hans" lang="zh-hans" src="images/zh/latin-one-by-one-Hans.svg" alt="没有转向的西文字母示例" width="123" height="181">
             <img its-locale-filter-list="zh-hant" lang="zh-hant" src="images/zh/latin-one-by-one-Hant.svg" alt="沒有轉向的西文字母示例" width="123" height="181">
               <figcaption>
-              <span its-locale-filter-list="en" lang="en">Example of Latin letters in normal orientation.</span>
+              <span its-locale-filter-list="en" lang="en">Example of Western alphas in normal orientation.</span>
               <span its-locale-filter-list="zh-hans" lang="zh-hans">没有转向的西文字母示例</span>
               <span its-locale-filter-list="zh-hant" lang="zh-hant">沒有轉向的西文字母示例</span>
               </figcaption>
           </figure>
         </li>
         <li id="id111">
-          <p its-locale-filter-list="en" lang="en" class="checkme"><span class="leadin">Setting Western letters with proportional fonts, rotated 90 degrees clockwise.</span> This approach is usually adopted where Latin letters compose a word or sentence. There is tracking or spacing between a Han character and an adjacent Western letter or European numeral, up to a width of 1/4&nbsp;em, except at the line start or end.</p>
-          <p its-locale-filter-list="zh-hans" lang="zh-hans">采用比例字体，将文字顺时针旋转90°配置。当文中的西文为一般单词、语句或四位数以上的阿拉伯数字时，采用此方法配置。汉字与西文字母、数字间使用不多于四分之一个汉字宽的字距或空白。但西文出现在行首或行尾时，则无须加入空白。</p>
-          <p its-locale-filter-list="zh-hant" lang="zh-hant">採用比例字體，將文字順時針旋轉90度配置。當文中的西字為一般單字詞、語句，或阿拉伯數在四位數以上時，採用此方法配置。漢字與西文字母、數字間使用不多於四分之一個漢字寬的字距或空白。但西文出現在行頭或行尾時，則毋須加入空白。</p>
+          <p its-locale-filter-list="en" lang="en" class="checkme"><span class="leadin">Setting Western text with proportional fonts, rotated 90 degrees clockwise.</span> This approach is usually adopted where Western text compose a word or sentence. There is tracking or spacing between a Han character and an adjacent Western alpha or European numeral, up to a width of 1/4&nbsp;em, except at the line start or end.</p>
+          <p its-locale-filter-list="zh-hans" lang="zh-hans">采用比例字体，将文字顺时针旋转90°配置。当文中的西文为一般单词、语句或四位数以上的阿拉伯数字时，采用此方法配置。汉字与西文字母、阿拉伯数字间使用不多于四分之一个汉字宽的字距或空白。但西文出现在行首或行尾时，则无须加入空白。</p>
+          <p its-locale-filter-list="zh-hant" lang="zh-hant">採用比例字體，將文字順時針旋轉90度配置。當文中的西字為一般單字詞、語句，或阿拉伯數在四位數以上時，採用此方法配置。漢字與西文字母、阿拉伯數字間使用不多於四分之一個漢字寬的字距或空白。但西文出現在行頭或行尾時，則毋須加入空白。</p>
           <figure id="latin-90-clockwise-2">
-            <img its-locale-filter-list="en" lang="en" src="images/en/latin-90-clockwise.svg" alt="Example of Latin letters rotated 90 degrees clockwise." width="124" height="188">
+            <img its-locale-filter-list="en" lang="en" src="images/en/latin-90-clockwise.svg" alt="Example of Western alphas rotated 90 degrees clockwise." width="124" height="188">
             <img its-locale-filter-list="zh-hans" lang="zh-hans" src="images/zh/latin-90-clockwise-Hans.svg" alt="顺时针旋转90°的西文字母示例" width="124" height="188">
             <img its-locale-filter-list="zh-hant" lang="zh-hant" src="images/zh/latin-90-clockwise-Hant.svg" alt="順時針旋轉90°的西文字母示例" width="124" height="188">
               <figcaption>
-              <span its-locale-filter-list="en" lang="en">Example of Latin letters rotated 90 degrees clockwise.</span>
+              <span its-locale-filter-list="en" lang="en">Example of Western alphas rotated 90 degrees clockwise.</span>
               <span its-locale-filter-list="zh-hans" lang="zh-hans">顺时针旋转90°的西文字母示例</span>
               <span its-locale-filter-list="zh-hant" lang="zh-hant">順時針旋轉90°的西文字母示例</span>
               </figcaption>
@@ -2284,8 +2284,8 @@ var respecConfig = {
       </ol>
       <div class="note" id="n037">
         <p its-locale-filter-list="en" lang="en">Han numerals are usually used in vertical writing mode, however, in recent years it is becoming more common to see fullwidth European numerals and proportional numerals set as horizontal-in-vertical.</p>
-        <p its-locale-filter-list="zh-hans" lang="zh-hans">直排时多使用汉字数字，然而近年使用西文数字的情况渐有增长，纵中横排亦颇为常见。</p>
-        <p its-locale-filter-list="zh-hant" lang="zh-hant">直排時多使用漢字數字，然而近年使用西文數字的情況漸有增長，縱中橫排亦頗為常見。</p>
+        <p its-locale-filter-list="zh-hans" lang="zh-hans">直排时多使用汉字数字，然而近年使用阿拉伯数字的情况渐有增长，纵中横排亦颇为常见。</p>
+        <p its-locale-filter-list="zh-hant" lang="zh-hant">直排時多使用漢字數字，然而近年使用阿拉伯數字的情況漸有增長，縱中橫排亦頗為常見。</p>
       </div>
       <div class="note" id="n038">
         <p its-locale-filter-list="en" lang="en">Quotation marks are usually not used in vertical writing mode (corner brackets are used instead). However, when quoting Western text, quotation marks are sometimes used to match Western style. In this case, the orientation of the quotation marks must follow the quoted Western text (rotated 90° clockwise).</p>
@@ -2302,23 +2302,23 @@ var respecConfig = {
         <span its-locale-filter-list="zh-hant" lang="zh-hant">西文使用比例字體時的混排處理</span>
       </h4>
 
-      <p its-locale-filter-list="en" lang="en">The following provides composition rules for handling Western characters and European numerals in horizontal writing mode or for situations in vertical writing mode where the Western words/phrases or European numerals are rotated 90 degrees clockwise:</p>
-      <p its-locale-filter-list="zh-hans" lang="zh-hans">横排中混排的西文、阿拉伯数字，及直排中将文字采顺时针旋转90°配置的西文、阿拉伯数字，其配置方式如下：</p>
-      <p its-locale-filter-list="zh-hant" lang="zh-hant">橫排中混排的西文、阿拉伯數字，及直排中將文字採順時針旋轉90度配置的西文、阿拉伯數字，其配置方式如下：</p>
+      <p its-locale-filter-list="en" lang="en">The following provides composition rules for handling Western alphas and European numerals in horizontal writing mode or for situations in vertical writing mode where the words/phrases of Western alphas or European numerals are rotated 90 degrees clockwise:</p>
+      <p its-locale-filter-list="zh-hans" lang="zh-hans">横排中混排的西文字母、阿拉伯数字，及直排中将文字采顺时针旋转90°配置的西文字母、阿拉伯数字，其配置方式如下：</p>
+      <p its-locale-filter-list="zh-hant" lang="zh-hant">橫排中混排的西文字母、阿拉伯數字，及直排中將文字採順時針旋轉90度配置的西文字母、阿拉伯數字，其配置方式如下：</p>
       <ol>
         <li id="id114">
           <p its-locale-filter-list="en" lang="en">A sequence of Western characters in a Western word should not break across a line-break, except where hyphenation is allowed.</p>
-          <p its-locale-filter-list="zh-hans" lang="zh-hans" class="checkme">西文单字词在可使用连字符处外，不得分隔为两行。</p>
+          <p its-locale-filter-list="zh-hans" lang="zh-hans">西文单字词在可使用连字符處之外，不得分隔为两行。</p>
           <p its-locale-filter-list="zh-hant" lang="zh-hant">西文單字詞在可使用連字符處之外，不得分隔為兩行。</p>
         </li>
         <li id="id115">
-          <p its-locale-filter-list="en" lang="en" class="checkme">Tracking or spacing between a Han character and a Western letter or numeral is up to 1/4&nbsp;em.</p>
-          <p its-locale-filter-list="zh-hans" lang="zh-hans">汉字与西文字母之间，原则上使用不多于四分之一个汉字宽的字距或空白。</p>
-          <p its-locale-filter-list="zh-hant" lang="zh-hant">漢字與西文字母之間，原則上使用不多於四分之一個漢字寬的字距或空白。</p>
+          <p its-locale-filter-list="en" lang="en" class="checkme">Tracking or spacing between a Han character and an alphanumeric is up to 1/4&nbsp;em.</p>
+          <p its-locale-filter-list="zh-hans" lang="zh-hans">汉字与西文字母或阿拉伯数字之间，原则上使用不多于四分之一个汉字宽的字距或空白。</p>
+          <p its-locale-filter-list="zh-hant" lang="zh-hant">漢字與西文字母或阿拉伯数字之間，原則上使用不多於四分之一個漢字寬的字距或空白。</p>
         </li>
         <li id="id116">
-          <p its-locale-filter-list="en" lang="en">Justified text alignment is an important feature of Chinese composition. It is harder to align text as expected when a line contains Western characters. Typically, spacing or tracking is applied equally across the line, but such adjustments are only applied between Han characters or between Han and Western letters.  The spacing is not equally distributed between characters in Western words and/or European numerals.</p>
-          <p its-locale-filter-list="zh-hans" lang="zh-hans" class="checkme">由于中文排版强调行首与行尾对齐，当行内包含西文时，较难对齐，这时多使用均排的方式处理。均排时，各西文词组间、阿拉伯数字间的空格，以及西文字母与阿拉伯数字之间不使用均排，仅调整汉字、汉字与西文间的字距或空白。</p>
+          <p its-locale-filter-list="en" lang="en">Justified text alignment is an important feature of Chinese composition. It is harder to align text as expected when a line contains Western characters. Typically, spacing or tracking is applied equally across the line, but such adjustments are only applied between Han characters, or between a Han character and a Western character. The spacing is not equally distributed between characters in Western words and/or European numerals.</p>
+          <p its-locale-filter-list="zh-hans" lang="zh-hans">由于中文排版强调行首与行尾对齐，当行内包含西文时，较难对齐，这时多使用均排的方式处理。均排时，各西文词组间、阿拉伯数字间的空格，以及西文字母与阿拉伯数字之间不使用均排，仅调整汉字、汉字与西文间的字距或空白。</p>
           <p its-locale-filter-list="zh-hant" lang="zh-hant">由於中文排版強調行頭與行尾對齊，當行內包含西文時，較難對齊，這時多使用均排的方式處理。均排時，各西文詞組間、阿拉伯數字間之空格，以及西文字母與阿拉伯數字之間不使用均排，僅調整漢字、漢字與西文間的字距或空白。</p>
         </li>
       </ol>
@@ -2327,14 +2327,14 @@ var respecConfig = {
       <p its-locale-filter-list="zh-hant" lang="zh-hant">以下情況例外：</p>
       <ol>
         <li id="id117">
-          <p its-locale-filter-list="en" lang="en">Tracking or spacing of Western letters or <a href="#term.european-numerals" class="termref">European numerals</a> before the line start or after the line end are not justified.</p>
-          <p its-locale-filter-list="zh-hans" lang="zh-hans">位于行首的西文与<a href="#term.european-numerals" class="termref">阿拉伯数字</a>之前、位于行尾的西文与<a href="#term.european-numerals" class="termref">阿拉伯数字</a>之后不调整字距或加入空白。</p>
-          <p its-locale-filter-list="zh-hant" lang="zh-hant">位於行頭的西文與<a href="#term.european-numerals" class="termref">阿拉伯數字</a>之前、位於行尾的西文與<a href="#term.european-numerals" class="termref">阿拉伯數字</a>之後不調整字距或加入空白。</p>
+          <p its-locale-filter-list="en" lang="en">Tracking or spacing of Western alphas or <a href="#term.european-numerals" class="termref">European numerals</a> before the line start or after the line end are not justified.</p>
+          <p its-locale-filter-list="zh-hans" lang="zh-hans">位于行首的西文字母与<a href="#term.european-numerals" class="termref">阿拉伯数字</a>之前、位于行尾的西文字母与<a href="#term.european-numerals" class="termref">阿拉伯数字</a>之后不调整字距或加入空白。</p>
+          <p its-locale-filter-list="zh-hant" lang="zh-hant">位於行頭的西文字母與<a href="#term.european-numerals" class="termref">阿拉伯數字</a>之前、位於行尾的西文字母與<a href="#term.european-numerals" class="termref">阿拉伯數字</a>之後不調整字距或加入空白。</p>
         </li>
         <li id="id118">
-          <p its-locale-filter-list="en" lang="en">Tracking or spacing of Western letters or European numerals is not adjusted before or after Chinese commas or full stops, nor after Chinese opening and before Chinese closing brackets.</p>
-          <p its-locale-filter-list="zh-hans" lang="zh-hans" class="checkme">在中文点号前后、中文开始夹注符号之后、结束夹注符号之前的西文，不调整字距或加入空白。</p>
-          <p its-locale-filter-list="zh-hant" lang="zh-hant">於中文點號前後、中文開始夾注符號之後、結束夾注符號之前的西文，不調整字距或加入空白。</p>
+          <p its-locale-filter-list="en" lang="en">Tracking or spacing of Western alphas or European numerals is not adjusted before or after Chinese commas or full stops, nor after Chinese opening and before Chinese closing brackets.</p>
+          <p its-locale-filter-list="zh-hans" lang="zh-hans">在中文点号前后、中文开始夹注符号之后、结束夹注符号之前的西文字母或阿拉伯数字，不调整字距或加入空白。</p>
+          <p its-locale-filter-list="zh-hant" lang="zh-hant">於中文點號前後、中文開始夾注符號之後、結束夾注符號之前的西文字母或阿拉伯數字，不調整字距或加入空白。</p>
         </li>
       </ol>
     </section>
@@ -2347,19 +2347,19 @@ var respecConfig = {
         <span its-locale-filter-list="zh-hant" lang="zh-hant">縱橫對齊下的中西文混排處理</span>
       </h4>
 
-      <p its-locale-filter-list="en" lang="en">Due to the fact that each Han character is of the same width, not only should characters at the start and end of a line be aligned but it is also a requirement for characters within blocks of Han text to be aligned both vertically and horizontally, whether in vertical or horizontal writing mode.  When Western text or European numerals are present, this principle is harder to achieve. Possible approaches are listed below:</p>
-      <p its-locale-filter-list="zh-hans" lang="zh-hans">由于汉字各字等宽的性质，无论在直排或横排的情况下，除了行齐首尾对齐外，也要求各行间的各个汉字能够纵横对齐。若遇西文或阿拉伯数字采用比例字体，难以满足这项原则时，处理方式如下：</p>
-      <p its-locale-filter-list="zh-hant" lang="zh-hant">由於漢字各字等寬的性質，無論在直排或橫排的情況下，除了行齊頭尾對齊外，亦求各行間的各個漢字能夠縱橫對齊。若遇西文或阿拉伯數字採用比例字體，便難以滿足這項原則，處理方式如下：</p>
+      <p its-locale-filter-list="en" lang="en">Due to the fact that each Han character is of the same width, not only should characters at the start and end of a line be aligned but it is also a requirement for characters within blocks of Han text to be aligned both vertically and horizontally, whether in vertical or horizontal writing mode. When Western alphas or European numerals are present, this principle is harder to achieve. Possible approaches are listed below:</p>
+      <p its-locale-filter-list="zh-hans" lang="zh-hans">由于汉字各字等宽的性质，无论在直排或横排的情况下，除了行齐首尾对齐外，亦求各行间的各个汉字能够纵横对齐。若遇西文字母或阿拉伯数字采用比例字体，难以满足这项原则时，处理方式如下：</p>
+      <p its-locale-filter-list="zh-hant" lang="zh-hant">由於漢字各字等寬的性質，無論在直排或橫排的情況下，除了行齊頭尾對齊外，亦求各行間的各個漢字能夠縱橫對齊。若遇西文字母或阿拉伯數字採用比例字體，便難以滿足這項原則，處理方式如下：</p>
       <ol>
         <li id="id119">
-          <p its-locale-filter-list="en" lang="en" class="checkme">Instead of 1/4-em spacing between Han and Western letters, it is possible to use flexible spacing of up to 1/2&nbsp;em. This brings the space occupied by Western characters to a multiple of the width of a Han character. In this way, both the Han character before and after the Western language span snaps to the grid lines.</p>
-          <p its-locale-filter-list="zh-hans" lang="zh-hans" class="checkme">汉字与西文字母间不使用四分之一汉字宽的字距，而是加入大于零、小于等于二分之一汉字宽的弹性空白，使西文所占的空间为汉字的整数倍，确保西文前后的汉字都能纵横对齐。</p>
-          <p its-locale-filter-list="zh-hant" lang="zh-hant">漢字與西文字母間不使用四分之一漢字寬之字距，而是加入大於零、小於等於二分之一漢字寬的彈性空白，使西文所佔之空間為漢字的整數倍，確保西文前後之漢字都能縱橫對齊。</p>
+          <p its-locale-filter-list="en" lang="en" class="checkme">Instead of 1/4-em spacing between a Han character and an alphanumeric, it is possible to use flexible spacing of up to 1/2&nbsp;em. This brings the space occupied by Western characters to a multiple of the width of a Han character. In this way, both the Han characters before and after a Western text span snap to the grid lines.</p>
+          <p its-locale-filter-list="zh-hans" lang="zh-hans">汉字与西文字母或阿拉伯数字间不使用四分之一汉字宽的字距，而是加入大于零、小于等于二分之一汉字宽的弹性空白，使西文所占的空间为汉字的整数倍，确保西文前后的汉字都能纵横对齐。</p>
+          <p its-locale-filter-list="zh-hant" lang="zh-hant">漢字與西文字母或阿拉伯数字間不使用四分之一漢字寬之字距，而是加入大於零、小於等於二分之一漢字寬的彈性空白，使西文所佔之空間為漢字的整數倍，確保西文前後之漢字都能縱橫對齊。</p>
         </li>
         <li id="id120">
           <p its-locale-filter-list="en" lang="en">When a Western word appears at the line end and needs to be broken, rather than breaking the word at a syllable boundary per the Western convention, the word may be forced to break at the line end, in order to ensure correct alignment.</p>
-          <p its-locale-filter-list="zh-hans" lang="zh-hans" class="checkme">当西文位于行尾必须断行时，不需遵照西文从音节断行的惯例，在行尾强制断行，以确保行尾对齐。</p>
-          <p its-locale-filter-list="zh-hant" lang="zh-hant">當西文位於行尾必須斷行時，不遵照西文從音節斷行的慣例，於行尾強制斷行，以確保行尾對齊。</p>
+          <p its-locale-filter-list="zh-hans" lang="zh-hans">当西文单词位于行尾必须断行时，无须遵照西文从音节断行的惯例，在行尾强制断行，以确保行尾对齐。</p>
+          <p its-locale-filter-list="zh-hant" lang="zh-hant">當西文單詞位於行尾必須斷行時，無須遵照西文從音節斷行的慣例，於行尾強制斷行，以確保行尾對齊。</p>
         </li>
       </ol>
       <div class="note" id="n039">
@@ -2544,7 +2544,7 @@ var respecConfig = {
               <p its-locale-filter-list="zh-hant" lang="zh-hant">文字直排、注音置於基字右側時，段落通常需要基字尺寸1.5倍以上的行距，注文應標注於此行距間，設計版心時須先取適當行距值。段落行距在基字尺寸1.5倍以上時，行距不應受注音標注與否的影響。</p>
             </div>
             <div class="note" id="n042">
-              <p its-locale-filter-list="en" lang="en">In horizontal writing mode, when Zhuyin annotations are placed to the right side of the base characters (vertical Zhuyin), the spaces between the base characters, where the Zhuyin annotations are placed, should be at least half of the width of those characters. To achieve grid alignment, the characters without Zhuyin annotations, such as punctuation marks, Western words and indented space should keep the same space as well.</p>
+              <p its-locale-filter-list="en" lang="en">In horizontal writing mode, when Zhuyin annotations are placed to the right side of the base characters (vertical Zhuyin), the spaces between the base characters, where the Zhuyin annotations are placed, should be at least half of the width of those characters. To achieve grid alignment, the characters without Zhuyin annotations, such as punctuation marks, Western words and indented spaces should keep the same space as well.</p>
               <p its-locale-filter-list="zh-hans" lang="zh-hans">文字横排、注音置于基字右侧时，段落间的汉字皆须预留基字尺寸一半以上的字距，每字皆然，注文应标注在此字距间。在纵横对齐的原则下，未标注注文的文字（如标点符号、西文词组、首行缩进的字数等）也会预留相同的空间。</p>
               <p its-locale-filter-list="zh-hant" lang="zh-hant">文字橫排、注音置於基字右側時，段落間的漢字皆須預留基字尺寸一半以上的字距，每字皆然，注文應標注於此字距間。在縱橫對齊的原則下，未標注注文的文字（如標點符號、西文詞組、首行縮進的字數等）也會預留相同的空間。</p>
             </div>
@@ -2713,8 +2713,8 @@ var respecConfig = {
             <p its-locale-filter-list="zh-hant" lang="zh-hant">若注文長於基文且位於行端，二者可向行端對齊。</p>
           </li>
           <li id="id138">
-            <p its-locale-filter-list="en" lang="en">The space between two adjacent annotations should not be smaller than the size of a normal Western-language space, which is about 1/4&nbsp;em. Due to the limitation of typesetting technologies, there is usually no space between the rather long phonetic annotations in many printed publications. Luckily, this is not likely to lead to ambiguity because each Han character contains one syllable and most Pinyin fragments are easy to tell apart. However, these annotations can be misleading sometimes. For example, character-based phonetic annotations may result in the false impression that they are word-based. Also, the accidentally concatenated annotations may disrupt word boundaries, which alters the semantic meanings of the words.</p>
-            <p its-locale-filter-list="zh-hans" lang="zh-hans" class="checkme">相邻注文的间距不应小于西文词间空格的宽度（约1/4字宽）。但受排版技术限制，许多出版物中过长的相邻注文都会紧密相连。因汉字为单音节文字且多数汉语拼音音节都容易辨认界限，并不容易出现标音的歧义，但由于每个汉字的标音都已隔开，意外的相连易造成分词连写的假象，且相连的标音时常横跨词界，打乱语义。</p>
+            <p its-locale-filter-list="en" lang="en">The space between two adjacent annotations should not be smaller than the size of a normal Western space, which is about 1/4&nbsp;em. Due to the limitation of typesetting technologies, there is usually no space between the rather long phonetic annotations in many printed publications. Luckily, this is not likely to lead to ambiguity because each Han character contains one syllable and most Pinyin fragments are easy to tell apart. However, these annotations can be misleading sometimes. For example, character-based phonetic annotations may result in the false impression that they are word-based. Also, the accidentally concatenated annotations may disrupt word boundaries, which alters the semantic meanings of the words.</p>
+            <p its-locale-filter-list="zh-hans" lang="zh-hans">相邻注文的间距不应小于西文词间空格的宽度（约1/4字宽）。但受排版技术限制，许多出版物中过长的相邻注文都会紧密相连。因汉字为单音节文字且多数汉语拼音音节都容易辨认界限，并不容易出现标音的歧义，但由于每个汉字的标音都已隔开，意外的相连易造成分词连写的假象，且相连的标音时常横跨词界，打乱语义。</p>
             <p its-locale-filter-list="zh-hant" lang="zh-hant">相鄰注文的間距不應小於西文詞間空格的寬度（約1/4字寬）。但受排版技術限制，許多出版物中過長的相鄰注文都會緊密相連。因漢字為單音節文字且多數漢語拼音音節都容易辨認界限，並不容易出現標音的歧義，但由於每個漢字的標音都已隔開，意外的相連易造成分詞連寫的假象，且相連的標音時常橫跨詞界，打亂語義。</p>
           </li>
           <li id="id139">
@@ -2868,13 +2868,13 @@ var respecConfig = {
         <p its-locale-filter-list="zh-hant" lang="zh-hant">為了保證詞彙的整體性，在注文總長與其基文的長度不一時，需要調整相互間的對齊關係，以求體例清晰並避免誤會。</p>
         <ol>
           <li id="id152">
-            <p its-locale-filter-list="en" lang="en"> When the length of an annotation is shorter than that of its base text, the annotation can be center-aligned (in the case of Western script) or use larger tracking (in the case of Han characters). There are two methods to satisfy the latter, one is to equally distribute the spacing while the other is to align justified.</p>
-            <p its-locale-filter-list="zh-hans" lang="zh-hans" class="checkme">当注文总长小于其基文的长度时，将注文设置居中（适用西文）或加大注文字距（适用汉字），后者更有“间隔平均分配”及“始末端对齐”两种方式。</p>
+            <p its-locale-filter-list="en" lang="en"> When the length of an annotation is shorter than that of its base text, the annotation can be center-aligned (in the case of Western text) or use larger tracking (in the case of Han characters). There are two methods to satisfy the latter, one is to equally distribute the spacing while the other is to align justified.</p>
+            <p its-locale-filter-list="zh-hans" lang="zh-hans">当注文总长小于其基文的长度时，将注文设置居中（适用西文）或加大注文字距（适用汉字），后者更有“间隔平均分配”及“始末端对齐”两种方式。</p>
             <p its-locale-filter-list="zh-hant" lang="zh-hant">當注文總長小於其基文的長度時，將注文設置居中（適用西文）或加大注文字距（適用漢字），後者更有「間隔平均分配」及「始末端對齊」二種方式。</p>
           </li>
           <li id="id153">
-            <p its-locale-filter-list="en" lang="en">When the length of an annotation is longer than that of its base text, the base text can be center-aligned (in the case of Western script) or use a larger tracking (in the case of Han characters).</p>
-            <p its-locale-filter-list="zh-hans" lang="zh-hans" class="checkme">当注文总长大于其基文的长度时，将基文设置居中（适用西文）或加大基文字距（适用汉字）。</p>
+            <p its-locale-filter-list="en" lang="en">When the length of an annotation is longer than that of its base text, the base text can be center-aligned (in the case of Western text) or use a larger tracking (in the case of Han characters).</p>
+            <p its-locale-filter-list="zh-hans" lang="zh-hans">当注文总长大于其基文的长度时，将基文设置居中（适用西文）或加大基文字距（适用汉字）。</p>
             <p its-locale-filter-list="zh-hant" lang="zh-hant">當注文總長大於其基文的長度時，將基文設置居中（適用西文）或加大基文字距（適用漢字）。</p>
           </li>
         </ol>
@@ -3189,13 +3189,13 @@ var respecConfig = {
       <ol type="a">
         <li>
           <p its-locale-filter-list="en" lang="en">
-            Lines which are interspersed with many <a href="#term.european-numerals" class="termref">European numerals</a>, Latin letters or other non-full width characters;
+            Lines which are interspersed with many <a href="#term.european-numerals" class="termref">European numerals</a>, Western alphas or other non-full width characters;
           </p>
           <p its-locale-filter-list="zh-hans" lang="zh-hans">
-            行内夹杂了<a href="#term.european-numerals" class="termref">阿拉伯数字</a>、西文等非一个汉字字宽的字符；
+            行内夹杂了<a href="#term.european-numerals" class="termref">阿拉伯数字</a>、西文字母等非一个汉字字宽的字符；
           </p>
           <p its-locale-filter-list="zh-hant" lang="zh-hant" class="checkme">
-            行內夾雜了<a href="#term.european-numerals" class="termref">阿拉伯數字</a>、西文等非一個漢字字寬的字符；
+            行內夾雜了<a href="#term.european-numerals" class="termref">阿拉伯數字</a>、西文字母等非一個漢字字寬的字符；
           </p>
         </li>
         <li>
@@ -3234,7 +3234,7 @@ var respecConfig = {
       </ol>
 
       <p its-locale-filter-list="en" lang="en">
-        In contrast to Western typesetting, the body text in Chinese books are rarely left-aligned, and instead should be justified. Justification of Western texts hinges on the adjustment of space between the words on a line, whereas there are more options for line justification when it comes to Chinese typesetting.
+        In contrast to Western typesetting, the body text in Chinese books are rarely left-aligned, and instead should be justified. Justification of Western text hinges on the adjustment of space between the words on a line, whereas there are more options for line justification when it comes to Chinese typesetting.
       </p>
       <p its-locale-filter-list="zh-hans" lang="zh-hans">
         与西文排版不同，中文排版特别是书籍正文排版极少使用左齐右不齐，原则上应该进行两端对齐。西文排版两端对齐（justification）时，主要是调整单词之间的间隙（词距），而中文排版在两端对齐时，能调整的地方更多，具体如下所述。
@@ -3284,7 +3284,7 @@ var respecConfig = {
           <p its-locale-filter-list="zh-hans" lang="zh-hans">
             <span class="leadin">拉伸处理：</span>“拉伸处理”是指按照预先规定的排版风格，拉伸西文词距、中西间距以及其他未被特殊规定禁止调整等处的做法。
           </p>
-          <p its-locale-filter-list="zh-hant" lang="zh-hant" class="checkme">
+          <p its-locale-filter-list="zh-hant" lang="zh-hant">
             <span class="leadin">拉伸處理：</span>「拉伸處理」是指按照預先規定的排版風格，拉伸西文詞距、中西間距以及其他未被特殊規定禁止調整等處的做法。
           </p>
         </li>
@@ -3302,12 +3302,12 @@ var respecConfig = {
 
       <div class="note">
         <p its-locale-filter-list="en" lang="en">
-          The word spacing in Western texts described here only pertains to situations which involve compositions of mixed Western and Han characters. The expected behaviour is different from that for purely Western texts, which will take into account the typeface, font size and letter spacing when doing text justification. In general, Western texts will add to word spacing and rarely uses space reduction.
+          The word spacing in Western text described here only pertains to situations which involve compositions of mixed Western and Han characters. The expected behaviour is different from that for purely Western texts, which will take into account the typeface, font size and letter spacing when doing text justification. In general, Western texts will add to word spacing and rarely uses space reduction.
         </p>
         <p its-locale-filter-list="zh-hans" lang="zh-hans">
           本文涉及到行内的“西文词距”调整，仅是针对“在中文排版内混排的西文”，因此，与纯西文排版的习惯不尽相同。一般的西文排版中的词距，需要依照所用字体、字号、字距进行不同判断，而且一般只拉伸、不挤压。
         </p>
-        <p its-locale-filter-list="zh-hant" lang="zh-hant" class="checkme">
+        <p its-locale-filter-list="zh-hant" lang="zh-hant">
           本文涉及到行內的「西文詞距」調整，僅是針對「在中文排版內混排的西文」，因此，與純西文排版的習慣不盡相同。一般的西文排版中的詞距，需要依照所用字體、字號、字距進行不同判斷，而且一般只拉伸、不擠壓。
         </p>
       </div>
@@ -3357,7 +3357,7 @@ var respecConfig = {
 
         <li>
           <p its-locale-filter-list="en" lang="en" class="checkme">
-            Spacing between Western texts: for lines with numerous instances of Western text, their spacing should be processed at the same time, with equal treatment. The minimum space between each Western text should be 1/4&nbsp;em.
+            Spacing between Western text: for lines with numerous instances of Western text, their spacing should be processed at the same time, with equal treatment. The minimum space between each Western text should be 1/4&nbsp;em.
           </p>
           <p its-locale-filter-list="zh-hans" lang="zh-hans">
             位于行内的西文词距。一行内若有多处西文词距，应该同时、同等量处理，每个西文词距最小可以挤压到四分之一汉字宽。
@@ -3471,12 +3471,12 @@ var respecConfig = {
       <ol type="a">
         <li>
           <p its-locale-filter-list="en" lang="en" class="checkme">
-            Word spacing between Western texts: for lines with several Western word spaces, these should be processed at the same time, with equal treatment. Each word space can be expanded to a maximum of 1/2&nbsp;em.
+            Word spacing between Western text: for lines with several Western word spaces, these should be processed at the same time, with equal treatment. Each word space can be expanded to a maximum of 1/2&nbsp;em.
           </p>
           <p its-locale-filter-list="zh-hans" lang="zh-hans">
             西文词距。一行内若有多处西文词距，应该同时、同等量处理，每个西文词距最大可以拉伸到半个汉字字宽。
           </p>
-          <p its-locale-filter-list="zh-hant" lang="zh-hant" class="checkme">
+          <p its-locale-filter-list="zh-hant" lang="zh-hant">
             西文詞距。一行內若有多處西文詞距，應該同時、同等量處理，每個西文詞距最大可以拉伸到半個漢字字寬。
           </p>
         </li>
@@ -3778,8 +3778,8 @@ var respecConfig = {
           </div>
         </li>
         <li id="id194">
-          <p its-locale-filter-list="en" lang="en">Set the run-in heading with the same character size and typeface as the main text, but add heading numbers or Western characters in front of the heading.</p>
-          <p its-locale-filter-list="zh-hans" lang="zh-hans" class="checkme">与内文采用相同文字尺寸与字体，但在前面添加汉字数字或阿拉伯数字。</p>
+          <p its-locale-filter-list="en" lang="en">Set the run-in heading with the same character size and typeface as the main text, but add heading numbers or European numerals in front of the heading.</p>
+          <p its-locale-filter-list="zh-hans" lang="zh-hans">与内文采用相同文字尺寸与字体，但在前面添加汉字数字或阿拉伯数字。</p>
           <p its-locale-filter-list="zh-hant" lang="zh-hant">與內文採用相同文字尺寸與字體，但於前面添加漢字數字或阿拉伯數字。</p>
         </li>
       </ol>
@@ -4921,9 +4921,7 @@ var respecConfig = {
         <td>bǐlì zìtǐ</td>
         <td>proportional type</td>
         <td>
-          <p its-locale-filter-list="en" lang="en">A proportional typeface contains glyphs of varying widths
-            in order to make the glyphs properly related in size.
-            It is widely used in Latin characters.</p>
+          <p its-locale-filter-list="en" lang="en">A proportional typeface contains glyphs of varying widths in order to make the glyphs properly related in size. It is widely used in Western text.</p>
           <p its-locale-filter-list="zh-hans" lang="zh-hans">西文字体的一种分类，此类字体中各字符的字幅大小不一。</p>
           <p its-locale-filter-list="zh-hant" lang="zh-hant">西文字體的一種分類，此類字體中各字元的字幅大小不一。</p>
         </td>
@@ -5129,7 +5127,7 @@ var respecConfig = {
         <td>hánggāo</td>
         <td>line height</td>
         <td>
-          <p its-locale-filter-list="en" lang="en">The height of a single line. Western scripts refer to this as the vertical distance between lines of text measured from base line to base line.</p>
+          <p its-locale-filter-list="en" lang="en">The height of a single line. Western text refer to this as the vertical distance between lines of text measured from base line to base line.</p>
           <p its-locale-filter-list="zh-hans" lang="zh-hans">一行的高度，西文里通常指基线到基线的距离。</p>
           <p its-locale-filter-list="zh-hant" lang="zh-hant">一行的高度，西文裡通常指基線到基線的距離。</p>
         </td>
@@ -5515,7 +5513,7 @@ var respecConfig = {
         <td>西文</td>
         <td>西文</td>
         <td>Xīwén</td>
-        <td>Western scripts</td>
+        <td>Western text</td>
         <td>
           <p its-locale-filter-list="en" lang="en">Writing systems derived from Greek and Latin.</p>
           <p its-locale-filter-list="zh-hans" lang="zh-hans">欧洲、美洲和大洋洲通行的文字。</p>

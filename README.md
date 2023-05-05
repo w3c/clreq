@@ -12,13 +12,17 @@ Topics for discussion are suggested by [the gap-analysis template](https://www.w
 
 讨论的议题写在[差距分析模板（英文）](https://www.w3.org/International/i18n-activity/templates/gap-analysis/gap-analysis_template.html)中。这项工作源自列出了需要关注文种概要的[文种矩阵](https://www.w3.org/International/typography/gap-analysis/language-matrix.html)。
 
+---
+
+## Help wanted!
+**We're looking for information about this writing system. Follow the link for specific questions.**
+
+**[Chinese](https://github.com/w3c/clreq/issues?q=is%3Aissue+is%3Aopen+label%3A問題/question)**
+
+---
+
 ### Key links 关键链接
 [GitHub repo](https://github.com/w3c/clreq) • [Discussion threads](https://github.com/w3c/clreq/issues) • [Issue tracker](https://www.w3.org/International/i18n-activity/textlayout/?filter=clreq) (with clreq filter) • [Charter 章程](https://www.w3.org/International/clreq/charter/)
-
-### Help wanted!
-We're looking for information about this writing system. Follow the link for specific questions.
-
-[Chinese](https://github.com/w3c/clreq/issues?q=is%3Aissue+is%3Aopen+label%3A問題/question)
 
 
 ### Documents 文档

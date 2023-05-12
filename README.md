@@ -49,7 +49,7 @@ Note that the [public-i18n-chinese](https://lists.w3.org/Archives/Public/public-
 
 
 ### Participate 参与
-You can participate in the task force work at various levels. In order of increasing commitment, these include Follower, Contributor, Participant, Editor, and Chair. [Find your level](https://www.w3.org/International/i18n-drafts/pages/task_force_roles).
+You can participate in the work at various levels. In order of increasing commitment, these include List subscriber, Participant, Editor, and Chair. [Explore the options](https://www.w3.org/International/i18n-drafts/pages/languagedev_participation.html).
 
 您可以以不同程度参加小组的工作，包含关注者、贡献者、参与者、编辑和主席，[在这里找到您的角色](https://www.w3.org/International/i18n-drafts/pages/task_force_roles)。
 

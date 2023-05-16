@@ -51,7 +51,7 @@ Note that the [public-i18n-chinese](https://lists.w3.org/Archives/Public/public-
 ### Participate 参与
 You can participate in the work at various levels. In order of increasing commitment, these include List subscriber, Participant, Editor, and Chair. [Explore the options](https://www.w3.org/International/i18n-drafts/pages/languagedev_participation.html).
 
-您可以以不同程度参加小组的工作，包含关注者、贡献者、参与者、编辑和主席，[在这里找到您的角色](https://www.w3.org/International/i18n-drafts/pages/task_force_roles)。
+您可以不同程度参与工作，包含列表订阅者、参与者、编辑和主席，[探索不同的选项](https://www.w3.org/International/i18n-drafts/pages/languagedev_participation.html)。
 
 **To just follow the work:** Rather than 'Watch' this repository, [subscribe](mailto:public-i18n-chinese-request@w3.org?subject=subscribe) to the [public-i18n-chinese](https://lists.w3.org/Archives/Public/public-i18n-chinese/) mailing list. That list is notified (no more than once a day, and in digest form), about changes to issues in this repository, but also about other W3C Working Group issues related to the Chinese writing systems.
 

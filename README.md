@@ -26,15 +26,15 @@ Topics for discussion are suggested by [the gap-analysis template](https://www.w
 
 
 ### Documents 文档
-- **Chinese Gap Analysis 中文支持差距分析** • [DNOTE](https://www.w3.org/TR/clreq-gap) • [*Editor's draft 编辑草案*](https://www.w3.org/International/clreq/gap-analysis/) • [*Latest commits*](https://github.com/w3c/clreq/commits/gh-pages/gap-analysis/index.html)
-- **Chinese Layout Requirements 中文排版需求** • [DNOTE](https://www.w3.org/TR/clreq) • [*Editor's draft 编辑草案*](https://www.w3.org/International/clreq/) • [*Latest commits*](https://github.com/w3c/clreq/commits/gh-pages/index.html)
+- **Chinese Gap Analysis 中文支持差距分析** • [DNOTE 备忘草案](https://www.w3.org/TR/clreq-gap) • [*Editor's draft 编辑草案*](https://www.w3.org/International/clreq/gap-analysis/) • [*Latest commits 更改历史记录*](https://github.com/w3c/clreq/commits/gh-pages/gap-analysis/index.html)
+- **Chinese Layout Requirements 中文排版需求** • [DNOTE 备忘草案](https://www.w3.org/TR/clreq) • [*Editor's draft 编辑草案*](https://www.w3.org/International/clreq/) • [*Latest commits 更改历史记录*](https://github.com/w3c/clreq/commits/gh-pages/index.html)
 
 
-### Discussions
-- **Chinese** • [*Questions*](https://github.com/w3c/clreq/issues?q=is%3Aissue+is%3Aopen+label%3A問題/question )
-• [*Gap reports*](https://github.com/w3c/clreq/labels/doc%3Aclreq)
-• [*Other*](https://github.com/w3c/clreq/issues?q=is%3Aopen+-label%3A%E5%95%8F%E9%A1%8C%2Fquestion+-label%3Agap) 
-• [*Spec issues*](https://github.com/w3c/i18n-activity/issues?q=is%3Aopen+label%3Aclreq+label%3Aspec-type-issue)
+### Discussions 讨论
+- **Chinese 中文** • [*Questions 问题*](https://github.com/w3c/clreq/issues?q=is%3Aissue+is%3Aopen+label%3A問題/question )
+• [*Gap reports 差距分析*](https://github.com/w3c/clreq/labels/doc%3Aclreq)
+• [*Other 其他*](https://github.com/w3c/clreq/issues?q=is%3Aopen+-label%3A%E5%95%8F%E9%A1%8C%2Fquestion+-label%3Agap) 
+• [*Spec issues 技术标准相关*](https://github.com/w3c/i18n-activity/issues?q=is%3Aopen+label%3Aclreq+label%3Aspec-type-issue)
 
 
 ### Related documents 相关文档

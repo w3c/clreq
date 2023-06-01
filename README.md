@@ -15,7 +15,7 @@ Topics for discussion are suggested by [the gap-analysis template](https://www.w
 ---
 
 ## Help wanted!
-**We're looking for information about this writing system. [Follow the link](https://github.com/w3c/clreq/issues?q=is:issue+is:open+label:%E5%95%8F%E9%A1%8C/question) for specific questions.**
+**We're looking for information about this writing system. [Follow this link](https://github.com/w3c/clreq/issues?q=is:issue+is:open+label:%E5%95%8F%E9%A1%8C/question) for specific questions.**
 
 **我们正在征集当前书写系统的相关信息。[点击链接](https://github.com/w3c/clreq/issues?q=is:issue+is:open+label:%E5%95%8F%E9%A1%8C/question)查看具体问题。**
 

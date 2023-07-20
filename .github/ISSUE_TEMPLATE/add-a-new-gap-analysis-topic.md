@@ -17,10 +17,17 @@ More:
 
 
 IF THIS IS NOT THE ISSUE THAT IS BEING TRACKED BY THE GAP-ANALYSIS PIPELINE, ADD A POINTER TO THAT ISSUE.  THE INITIAL BRIEF INTRO SHOULD REMAIN, AND MAY BE TAILORED WITH EXAMPLES RELEVANT TO THIS LANGUAGE.  YOU MAY, OPTIONALLY, ALSO ADD OTHER DETAILS BELOW IF THEY ARE SPECIFIC TO THIS LANGUAGE. THEN ADD THIS:
+
 <b class="meta">For more details, see [this GitHub issue](https://github.com/w3c/XXXX/issues/XX), which is being used to track this gap. Please add any discussion there, and not to this issue.</b>
 
-THEN ADD THIS TO THE SECOND COMMENT FIELD AND DELETE THE REST OF THIS TEMPLATE.
-_The first comment in this issue contains text that will automatically appear in one or more gap-analysis documents as a subsection with the same title as this issue. Any edits made to that comment will be immediately available in the Editor's draft of the document. Proposals for changes or discussion of the content can be made by following the link to the GitHub issue being used to track this gap and adding comments there._
+THEN ADD THESE 2 PARAS TO THE SECOND COMMENT FIELD AND DELETE THE REST OF THIS TEMPLATE.
+
+_The first comment in this issue contains text that will automatically appear in one or more gap-analysis documents as a subsection with the same title as this issue. Any edits made to that comment will be immediately available in the Editor's draft of the document._
+
+_**Please add any discussion to the GitHub issue being used to track this gap, and not to this issue**_
+
+
+
 
 
 ### The GAP

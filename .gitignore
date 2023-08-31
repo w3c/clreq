@@ -219,3 +219,15 @@ base.css
 /flat.html
 /local-for-publishing.css
 /local-for_editing.css
+
+######################
+# IntelliJ
+######################
+.idea/
+*.iml
+*.iws
+*.ipr
+*.ids
+*.orig
+classes/
+out/

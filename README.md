@@ -10,7 +10,7 @@ We aim to address the problem that local users don't know how to tell the W3C wh
 
 Topics for discussion are suggested by [the gap-analysis template](https://www.w3.org/International/i18n-activity/templates/gap-analysis/gap-analysis_template.html). This work feeds into the [language matrix](https://www.w3.org/International/typography/gap-analysis/language-matrix.html) which provides a heat-map for language issues on the Web.
 
-讨论的议题写在[差距分析模板（英文）](https://www.w3.org/International/i18n-activity/templates/gap-analysis/gap-analysis_template.html)中。这项工作源自列出了需要关注文种概要的[文种矩阵](https://www.w3.org/International/typography/gap-analysis/language-matrix.html)。
+讨论议题源自[差距分析模板（英文）](https://www.w3.org/International/i18n-activity/templates/gap-analysis/gap-analysis_template.html)。该工作融汇于[文种矩阵](https://www.w3.org/International/typography/gap-analysis/language-matrix.html)之中，进而概括了需要关注的文种的问题。
 
 ---
 

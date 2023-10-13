@@ -22,7 +22,7 @@
       noRecTrack:           true,
       shortName:            "clreq-gap",
       copyrightStart:       "2018",
-      edDraftURI:           "https://w3c.github.io/clreq/gap-analysis/",
+      edDraftURI:           "https://www.w3.org/International/clreq/gap-analysis/",
 
       // if this is a LCWD, uncomment and set the end of its review period
       // lcEnd: "2009-08-05",
@@ -37,14 +37,14 @@
 
       group: 		"i18n",
       github: 		"w3c/clreq",
-	  
+
 	preProcess: [
 		() => { addPrompts() },
 		async () => { await getAllData('clreq','doc:clreq') }
 		],
 
 	postProcess: [
-		async function importStyleSheet() { 
+		async function importStyleSheet() {
 			const elems = document.querySelectorAll(`link[rel='stylesheet'][data-import]`)
 			await Promise.all(
 				[...elems].map(async link => {
@@ -82,20 +82,20 @@
 <p>This page documents difficulties people encounter when trying to use the Chinese language in both Simplified and Traditional scripts on the Web. </p>
 <p>Having identified an issue, it investigates the current status with regards to web specifications and implementations by user agents (browsers, e-readers, etc.), and attempts to prioritise the severity of the issue for web users.  </p>
 <p>A summary of this report and others can be found as part of the <a href="https://w3c.github.io/typography/gap-analysis/language-matrix.html" style="font-size: 140%;">language matrix</a>.</p>
-    
+
     <section id="workflow">
     <h3>Work flow</h3>
     <p><span style="font-weight:bold; font-size: 140%;">This version of the document is a preliminary analysis</span></p>
 
     <p>Gap analysis work usually starts with a <strong>preliminary analysis</strong>, conducted quickly by one or a small group of experts. Then a more <strong>detailed analysis</strong> is carried out, involving a wider range of experts. The detailed analysis may involve the development of tests, in order to illustrate issues and track results for browsers. The next phase is <strong>ongoing maintenance</strong>. It is expected that the resulting document will not be frozen: as gaps are fixed, this should be noted in the document. It is also possible that new gaps are noticed or arise, and they can be added to this document when that happens.</p>
-    
+
     <p>As the gap analysis develops, the requirements for features that are problematic should be described in the companion document, <a href="https://www.w3.org/TR/clreq/">Requirements for Chinese Text Layout</a>. Links to the appropriate part of that document should be added to this document as the material is created. Note that the requirements document should not contain any technology-specific information: all of that belongs here.</p>
     </section>
-    
+
     <section id="prioritization">
     <h3>Prioritization</h3>
     <p>This document not only describes gaps, it also attempts to prioritise them in terms of the impact on the local user. The prioritisation is indicated by colour.</p>
-        
+
         <p>Key:</p>
   <ul style="list-style-type: none;">
         <li class="ok"></li>
@@ -105,16 +105,16 @@
         <li class="broken"></li>
         <li class="tbd"></li>
         </ul>
-    
+
     <p>It is important to note that these colours do not indicate to what extent a particular feature is broken. They indicate the impact of a broken or missing feature on the content author or end user.</p>
     <p>Basic styling is the level that would be generally accepted as sufficient for most Web pages. Advanced level support would include additional features one might expect to include in ebooks or other advanced typographic formats. There may be features of a script or language that are not supported on the Web, but that are not generally regarded as necessary (usually archaic or obscure features). In this case, the feature can be described here, but the status should be marked as OK.</p>
     <p>The decision as to what priority level is assigned to a described gap is down to the experts doing the gap analysis. It may not always be straightforward to decide. If a given section in this document refers to more than one feature that is broken, each with different impacts on Web users, the priority for the section should be the lowest denominator.</p>
     <p>A cell can be scored as OK if the feature in question is specified in an appropriate specification, and is supported by user agents. A specification that is in CR or later and has two implementations in 'major' browsers will count. This means that the feature may not be supported in all browsers yet. (At some point in the future we may try to distinguish, visually, whether support is available in a specification but still pending in major browsers or applications.) </p>
     </section>
 </section>
-    
-    
-    
+
+
+
 
 
 <section id="direction">
@@ -146,9 +146,9 @@
 
 <section id="h_characters_and_phrases">
 <h2>Characters and phrases</h2>
-    
-    
-    
+
+
+
 <section id="charset" class="ok">
 <h3>Characters &amp; encoding</h3>
 <p id="prompt-charset" class="status_prompt promptStub"></p>
@@ -227,7 +227,7 @@
 
 <div id="insert-segmentation"></div>
 </section>
- 
+
 
 
 <section id="punctuation_etc" class="tbd">
@@ -236,9 +236,9 @@
 
 <div id="insert-punctuation_etc"></div>
 </section>
-   
-    
-    
+
+
+
 <section id="text_decoration" class="tbd">
 <h3>Text decoration</h3>
 <p id="prompt-text_decoration" class="status_prompt promptStub"></p>
@@ -252,8 +252,8 @@
 <section id="quotations" class="tbd">
 <h3>Quotations</h3>
 <p id="prompt-quotations" class="status_prompt promptStub"></p>
-	
-	
+
+
 <div id="insert-quotations"></div>
 </section>
 
@@ -285,7 +285,7 @@
 <section id="h_lines_and_paragraphs">
 <h2>Lines and Paragraphs</h2>
 
- 
+
 <section id="line_breaking" class="tbd">
 <h3>Line breaking</h3>
 <p id="prompt-line_breaking" class="status_prompt promptStub"></p>
@@ -423,7 +423,7 @@
 
 <div id="insert-other"></div>
     </section>
-    
+
 </section>
 
 

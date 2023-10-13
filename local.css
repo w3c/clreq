@@ -129,12 +129,6 @@ kbd {
 
 code { color: #A52A2A; }
 
-.uname {
-  text-transform: uppercase;
-  font-size: 85%;
-  letter-spacing:0.03em;
-}
-
 #langSwitch {
 	position: fixed;
 	top: -14px;

@@ -62,6 +62,8 @@ You can participate in the work at various levels. In order of increasing commit
 
 **To just follow the work:** Rather than 'Watch' this repository, [subscribe](mailto:public-i18n-chinese-request@w3.org?subject=subscribe) to the [public-i18n-chinese](https://lists.w3.org/Archives/Public/public-i18n-chinese/) mailing list. That list is notified (no more than once a day, and in digest form), about changes to issues in this repository, but also about other W3C Working Group issues related to the Chinese writing systems.
 
+If you prefer to receive notifications of all discussions for Chinese, Japanese, and Korean languages,  [subscribe](mailto:public-i18n-cjk-request@w3.org?subject=subscribe) to the [public-i18n-cjk](https://lists.w3.org/Archives/Public/public-i18n-cjk/) mailing list.
+
 如果只是关注小组工作：相比于“Watch”此仓库，订阅[public-i18n-chinese](https://lists.w3.org/Archives/Public/public-i18n-chinese/)邮件列表会更好。该列表每天以摘要形式通知此仓库的活动以及其他W3C工作组中与中文相关的问题。
 
 **To contribute content:** All contributors should read and agree with [CONTRIBUTING.md](CONTRIBUTING.md).
@@ -87,7 +89,8 @@ To get an idea about what's involved, see  [Get involved with Language Enablemen
 
 
 ### Links to practical information 实用信息链接
-- [Mail archive](https://lists.w3.org/Archives/Public/public-i18n-chinese/)
+- [public-i18n-chinese mail archive](https://lists.w3.org/Archives/Public/public-i18n-chinese/)
+- [public-i18n-cjk mail archive](https://lists.w3.org/Archives/Public/public-i18n-cjk/)
 - [Writing i18n tests](https://github.com/w3c/i18n-activity/wiki/Writing-i18n-tests)
 - [Practical tips for task forces](https://www.w3.org/International/i18n-activity/guidelines/process.html) (See also the github and editorial guidelines below)
 - Action tracker (tbd)

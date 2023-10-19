@@ -767,9 +767,9 @@ var respecConfig = {
       <p its-locale-filter-list="zh-hant" lang="zh-hant" class="checkme">本部分說明如何以基本版式為起點來為實際的各頁面確定版式，這個步驟稱做具體頁面的「定版」。</p>
       <ol>
         <li id="id39">
-          <p its-locale-filter-list="en" lang="en" class="checkme"><span class="leadin">Realm and position of headings:</span> The spacing of the heading in the block direction (i.e., height of the heading in horizontal writing mode or width of the heading in vertical writing mode) should be calculated from the position of the body text, and set to a multiple of the number of lines. If indent of the heading space is required, the starting point should be from the body text position set by the type area, and the amount of indent should be a multiple of the body text size.</p>
+          <p its-locale-filter-list="en" lang="en"><span class="leadin">Realm and position of headings:</span> The positioning and space occupied by headings should be based on the position of lines in the basic layout setting, measured in "number of lines occupied" (referred to as "line count"). In practical typesetting, it's often set as a multiple of the number of lines. Typical typesetting requirements might be expressed as "Single-line headings occupy three lines" or "Double-line headings occupy five lines." Here, "Single-line" or "Double-line" refers to the number of lines the heading text itself occupies, while "three lines" or "five lines" refers to the space occupied by lines in the basic layout. When indenting headings, it should also be based on the text size defined in the basic layout, determining the amount of indentation. Specific methods can be found in [[#handling_of_headings]].</p>
           <p its-locale-filter-list="zh-hans" lang="zh-hans"><span class="leadin">标题的地位：</span>标题摆放的位置及其所占空间，应以基本版式设定中行的位置为基准，以“占几行空间”方式来设计，这个方式称作“占行”。实际定版工作中为计算方便，通常设置为行的整数倍。定版要求通常写成“单行标题占三行”或“双行标题占五行”等方式，“单行”“双行”指标题文字本身的行数，而“三行”“五行”则指的是基本版式中行所占的空间。标题缩排时，也应以基本版式所设定的文字尺寸为基准，决定要缩排的量。具体方法可见[[[#handling_of_headings]]]。</p>
-          <p its-locale-filter-list="zh-hant" lang="zh-hant" class="checkme"><span class="leadin">標題的地位：</span>標題擺放的位置及其所占空間，應以基本版式設定中行的位置為基準，以「占幾行空間」方式來設計，這個方式稱作「占行」。實際定版工作中為計算方便，通常設置為行的整數倍。定版要求通常寫成「單行標題占三行」或「雙行標題占五行」等方式，「單行」「雙行」指標題文字本身的行數，而「三行」「五行」則指的是基本版式中行所占的空間。標題縮排時，也應以基本版式所設定的文字尺寸為基準，決定要縮排的量。具體方法可見[[[#handling_of_headings]]]。</p>
+          <p its-locale-filter-list="zh-hant" lang="zh-hant"><span class="leadin">標題的地位：</span>標題擺放的位置及其所占空間，應以基本版式設定中行的位置為基準，以「占幾行空間」方式來設計，這個方式稱作「占行」。實際定版工作中為計算方便，通常設置為行的整數倍。定版要求通常寫成「單行標題占三行」或「雙行標題占五行」等方式，「單行」「雙行」指標題文字本身的行數，而「三行」「五行」則指的是基本版式中行所占的空間。標題縮排時，也應以基本版式所設定的文字尺寸為基準，決定要縮排的量。具體方法可見[[[#handling_of_headings]]]。</p>
         </li>
         <li id="id40">
           <p its-locale-filter-list="en" lang="en" class="checkme"><span class="leadin">Size of illustrations:</span> In horizontal writing mode, the width of illustrations should, if at all possible, be the width of the type area; in horizontal writing mode with multiple columns, the width of illustrations should, if at all possible, be the width of one type area column. The illustrations are usually set at the head or the foot of the page. Likewise, in vertical writing mode, the height of illustrations should, if at all possible, be either the height of one type area column or the height of the type area. The illustrations are usually set at the right or left of the type area.</p>
@@ -2066,7 +2066,7 @@ var respecConfig = {
       <p its-locale-filter-list="en" lang="en">Most Chinese publications do not use hanging punctuation at line end. According to the <a href="https://www.w3.org/TR/jlreq/#positioning_of_punctuation_marks">Japanese Layout Requirements</a> document, hanging punctuation at the line end is a kind of extension of the prohibition rules at line start. This rule helps to avoid moving characters or punctuation marks between lines and avoids inconsistency of space between the characters in different lines.</p>
       <p its-locale-filter-list="zh-hans" lang="zh-hans">绝大多数的中文出版物没有悬挂行尾点号的惯例。参考<a href="https://www.w3.org/TR/jlreq/#h-note-162">日文排版</a>的做法，点号悬挂是行首标点禁则处理方式的延伸，可以避免文字及点号在前后行的移动，甚而导致前行字距不一的问题。</p>
       <p its-locale-filter-list="zh-hant" lang="zh-hant">絕多數的中文出版品沒有懸掛行尾點號的慣例。參考<a href="https://www.w3.org/TR/jlreq/#h-note-162">日文排版</a>的做法，點號懸掛是行首標點禁則處理方式的延伸，可以避免文字及點號在前後行的移動，甚而導致前行字距不一的問題。</p>
-      <p its-locale-filter-list="en" lang="en">In general, the punctuation marks that can be hung at the line end include slight-pause comma, comma and period. In Simplified Chinese, all the pause or stop punctuation marks overhang the line end since they are positioned at the starting point of the character frame.</p>
+      <p its-locale-filter-list="en" lang="en">In general, the punctuation marks that can be hung at the line end include the slight-pause comma, comma, and period. In Simplified Chinese, all the pause or stop punctuation marks overhang the end point of the character frame since they are positioned at the start point of the character frame.</p>
       <p its-locale-filter-list="zh-hans" lang="zh-hans">通常，行尾只可悬挂一个点号；适合行尾悬挂的点号有顿号、逗号及句号。简体中文排版中，其余点号因其字面分布偏向被标注文字的一侧、字面始端，也可进行行尾悬挂配置。</p>
       <p its-locale-filter-list="zh-hant" lang="zh-hant">通常，行尾只可懸掛一個點號；適合行尾懸掛的點號有頓號、逗號及句號三者。簡體中文排版中，其餘點號因其字面分布偏向受注文字一側、字面始端，亦可進行行尾懸掛配置。</p>
       <p its-locale-filter-list="en" lang="en">If a punctuation mark (slight-pause comma, comma or period) is expected to be at the start of a line, it should be placed at the end of the previous line, to fit in the type area.</p>
@@ -5458,9 +5458,9 @@ var respecConfig = {
         <td>始端</td>
         <td>始端</td>
         <td>shǐduān</td>
-        <td>starting point</td>
+        <td>start point</td>
         <td>
-          <p its-locale-filter-list="en" lang="en">The text or character that is near the beginning of the line. Normally, when the text is in vertical writing mode, the starting point is on the top; in horizontal writing mode, the starting point is on the left.</p>
+          <p its-locale-filter-list="en" lang="en">The text or character that is near the beginning of the line. Normally, when the text is in vertical writing mode, the start point is on the top; in horizontal writing mode, the start point is on the left.</p>
           <p its-locale-filter-list="zh-hans" lang="zh-hans">文本或文字靠近该行行首的一端。通常，文字直排时始端在上，横排在左。</p>
           <p its-locale-filter-list="zh-hant" lang="zh-hant">文本或文字靠近該行行首的一端。通常，文字直排時始端在上，橫排在左。</p>
         </td>

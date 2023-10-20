@@ -62,9 +62,11 @@ You can participate in the work at various levels. In order of increasing commit
 
 **To just follow the work:** Rather than 'Watch' this repository, [subscribe](mailto:public-i18n-chinese-request@w3.org?subject=subscribe) to the [public-i18n-chinese](https://lists.w3.org/Archives/Public/public-i18n-chinese/) mailing list. That list is notified (no more than once a day, and in digest form), about changes to issues in this repository, but also about other W3C Working Group issues related to the Chinese writing systems.
 
+如果只是关注小组工作：相比于“Watch”此仓库，订阅[public-i18n-chinese](https://lists.w3.org/Archives/Public/public-i18n-chinese/)邮件列表会更好。该列表每天以摘要形式通知此仓库的活动以及其他W3C工作组中与中文相关的问题。
+
 If you prefer to receive notifications of all discussions for Chinese, Japanese, and Korean languages,  [subscribe](mailto:public-i18n-cjk-request@w3.org?subject=subscribe) to the [public-i18n-cjk](https://lists.w3.org/Archives/Public/public-i18n-cjk/) mailing list.
 
-如果只是关注小组工作：相比于“Watch”此仓库，订阅[public-i18n-chinese](https://lists.w3.org/Archives/Public/public-i18n-chinese/)邮件列表会更好。该列表每天以摘要形式通知此仓库的活动以及其他W3C工作组中与中文相关的问题。
+如果您希望接收有关汉语、日语和朝鲜语/韩国语的所有讨论的通知，请[订阅](mailto:public-i18n-cjk-request@w3.org?subject=subscribe) [public-i18n-cjk](https://lists.w3.org/Archives/Public/public-i18n-cjk/) 邮件列表。
 
 **To contribute content:** All contributors should read and agree with [CONTRIBUTING.md](CONTRIBUTING.md).
 

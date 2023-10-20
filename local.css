@@ -1,12 +1,12 @@
 @font-face {
   font-family: 'Punctuation SC';
-  src: local('PingFang SC'), local('Noto Sans SC'), local('Noto Sans CJK SC'), local('Heiti SC'), local('Microsoft Yahei');
+  src: local('PingFang SC'), local('Noto Sans CJK SC'), local('Noto Sans SC'), local('Heiti SC'), local('Microsoft Yahei');
   unicode-range: U+201C, U+201D, U+2018, U+2019, U+2E3A, U+2014, U+2013, U+2026, U+00B7, U+007E, U+002F; /* Unicode range for punctuation marks */
 }
 
 @font-face {
   font-family: 'Punctuation TC';
-  src: local('PingFang TC'), local('Noto Sans TC'), local('Noto Sans CJK TC'), local('Heiti TC'), local('Microsoft JhengHei');
+  src: local('PingFang TC'), local('Noto Sans CJK TC'), local('Noto Sans TC'), local('Heiti TC'), local('Microsoft JhengHei');
   unicode-range: U+201C, U+201D, U+2018, U+2019, U+2E3A, U+2014, U+2013, U+2026, U+00B7, U+007E, U+002F; /* Unicode range for punctuation marks */
 }
 
@@ -23,8 +23,8 @@ Cantarell: GNOME
 Helvetica Neue: macOS versions < 10.11
 Arial: Any
 PingFang TC/SC: macOS
-Noto Sans TC/SC: Ubuntu, Android
 Noto Sans CJK TC/SC: Ubuntu, Android
+Noto Sans TC/SC: Ubuntu, Android
 Heiti TC/SC: macOS
 DengXian: Windows
 Microsoft Jhenghei / Microsoft Yahei: Windows < Vista
@@ -32,11 +32,11 @@ sans-serif: Fallback
 */
 
 [lang=zh-hant] {
-  font-family: 'Punctuation TC', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', 'PingFang TC', 'Noto Sans TC', 'Noto Sans CJK TC', 'Heiti TC', 'Microsoft JhengHei', sans-serif;
+  font-family: 'Punctuation TC', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', 'PingFang TC', 'Noto Sans CJK TC', 'Noto Sans TC', 'Heiti TC', 'Microsoft JhengHei', sans-serif;
 }
 
 [lang=zh-hans] {
-  font-family: 'Punctuation SC', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', 'PingFang SC', 'Noto Sans SC', 'Noto Sans CJK SC', 'Heiti SC', 'DengXian', 'Microsoft YaHei', sans-serif;
+  font-family: 'Punctuation SC', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', 'PingFang SC', 'Noto Sans CJK SC', 'Noto Sans SC', 'Heiti SC', 'DengXian', 'Microsoft YaHei', sans-serif;
 }
 
 h2 {

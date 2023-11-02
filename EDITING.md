@@ -166,6 +166,33 @@ In Traditional Chinese text, you should use single quotation marks (「」) firs
 
 繁体中使用先单（「」）、后双（『』）的直角引号，简体中使用先双（“”）、后单（‘’）的弯引号。
 
+### Working on the language switching code | 语言切换功能
+
+The code for the language switching function is implemented in the following TypeScript file:
+
+语言切换功能的代码在如下TypeScript文件内实现：
+
+```
+src/script.ts
+```
+
+The compiled file is in:
+
+编译后的文件在：
+
+```
+built/script.js
+```
+
+Compiling the TypeScript file requires installing [Node.js](https://nodejs.org/en) and [pnpm](https://pnpm.io/), and using the following commands:
+
+编译该文件需要安装[Node.js](https://nodejs.org/en)和[pnpm](https://pnpm.io/)，并运行：
+
+```
+pnpm install
+pnpm build
+```
+
 ## Last-minute Pre-publication edits | 发布前的最后改动备忘录
 
 **Make the following changes to the respec file before pushing to GitHub:**

@@ -350,6 +350,16 @@ var respecConfig = {
       <p its-locale-filter-list="en" lang="en">In principle, when composing a line with Han characters, no extra space appears between their character frames. This is called <a href="#term.solid-setting" class="termref">solid setting</a>. </p>
       <p its-locale-filter-list="zh-hans" lang="zh-hans">汉字依行排列文字，原则上文字外框彼此紧贴配置，称作<a href="#term.solid-setting" class="termref">密排</a>。</p>
       <p its-locale-filter-list="zh-hant" lang="zh-hant">漢字依行排列文字，原則上文字外框彼此緊貼配置，稱作<a href="#term.solid-setting" class="termref">密排</a>。</p>
+
+      <figure id="fig-solid-setting">
+        <span style="text-align:center;"><img src="images/zh/solid-setting.svg" alt="Examples of solid setting in horizontal writing mode." width="289" height="111"></span>
+        <figcaption>
+          <span its-locale-filter-list="en" lang="en">Examples of solid setting in horizontal writing mode.</span>
+          <span its-locale-filter-list="zh-hans" lang="zh-hans">密排</span>
+          <span its-locale-filter-list="zh-hant" lang="zh-hant">密排</span>
+        </figcaption>
+      </figure>
+
       <div class="note" id="n003">
         <p its-locale-filter-list="en" lang="en" class="checkme">From the advent of moveable type, each character was set to be flush with one another without any gaps, regardless of vertical or horizontal writing mode. However back then, several sizes of the original pattern of a letter were required to create matrices, while in today's digital era, the same original pattern can be used for any size simply by enlargement or reduction. Because of this, it might be necessary to adjust inter-character spacing when composing lines at large character sizes. When composing lines at small character sizes in outline fonts, hinting data is used to ensure that the width of the strokes that make up a character look correct. When only a small portion of the fonts are smaller, they will be displayed in bitmaps, and there is no need to make extra adjustments.</p>
         <p its-locale-filter-list="zh-hans" lang="zh-hans">从活字排版时代起，汉字无论直、横文字外框彼此紧贴配置适于阅读。但活字排版依照文字尺寸不同，各号数之字型原模不同，字面也随之不同。目前数字字体多仅采取单一原型，当文字尺寸放大时，有时需要调整字距。然而，中文汉字的字面率一般较日文字体小，除非在特殊状况下，不需特别处理。另当文字尺寸缩小时，若为向量字体，则需要补正信息来调整文字线幅；但有部分字体在文字尺寸较小时，会以点阵字体呈现，此时就不需另外调整。</p>

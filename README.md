@@ -34,7 +34,7 @@ Topics for discussion are suggested by [the gap-analysis template](https://www.w
 - **Chinese 中文** • [*Questions 问题*](https://github.com/w3c/clreq/issues?q=is%3Aissue+is%3Aopen+label%3A問題/question )
 • [*Gap reports 差距分析*](https://github.com/w3c/clreq/labels/doc%3Aclreq)
 • [*Other 其他*](https://github.com/w3c/clreq/issues?q=is%3Aopen+-label%3A%E5%95%8F%E9%A1%8C%2Fquestion+-label%3Agap) 
-• [*Spec issues 技术标准相关*](https://github.com/w3c/i18n-activity/issues?q=is%3Aopen+label%3Aclreq+label%3Aspec-type-issue)
+• [*Spec issues 技术标准相关*](https://github.com/w3c/i18n-activity/issues?q=is%3Aopen+label%3Aclreq+label%3Aspec-type-issue)
 
 
 ### Related documents 相关文档

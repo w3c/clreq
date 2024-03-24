@@ -1,5 +1,33 @@
+/* 深色模式下的样式 */
 @media (prefers-color-scheme: dark) {
   img.invert-on-dark-mode {
     filter: invert(1);
+  }
+
+  h4 {
+    color: #BBEFFC;
+  }
+
+  #langSwitch button {
+    background: #627262 none repeat scroll 0% 0%;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+  }
+
+  #langSwitch button:lang(zh-hans) {
+    background-color: #005a9c;
+  }
+
+  #langSwitch button:lang(zh-hant) {
+    background-color: #0171c4;
+  }
+
+  .translateme, .retranslateme {
+    background-color: #627262;
+
+  }
+
+  .checkme {
+    background-color: #627262;
   }
 }

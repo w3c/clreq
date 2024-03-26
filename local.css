@@ -39,6 +39,54 @@ sans-serif: Fallback
   font-family: 'Punctuation SC', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', 'PingFang SC', 'Noto Sans CJK SC', 'Noto Sans SC', 'Heiti SC', 'DengXian', 'Microsoft YaHei', sans-serif;
 }
 
+/* Default color scheme */
+:root {
+  --primary-color: #005a9c;
+  --secondary-color: #A52A2A;
+  --background-color: #FFFFFF;
+  --text-color: #000000;
+  --border-color: #ddd;
+  --link-color: #C60;
+  --highlight-color: #99FF99;
+  --delete-color: silver;
+  --switch-button-bg: #FFF;
+  --switch-button-bg-zh-hans: #fbc481;
+  --switch-button-bg-zh-hant: #9fe19f;
+  --multilingual-zh-hans: rgba(248,138,5,.5);
+  --multilingual-zh-hant: rgba(64,196,64,.5);
+  --switch-button-border: #CCC;
+  --translation-bg: #F3F3C3;
+  --checkmark-bg: #BBEFFC;
+  --warning-color: coral;
+}
+
+/* Dark mode color scheme */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary-color: rgb(110, 194, 255);
+    --secondary-color: rgb(51, 125, 255);
+    --background-color: #181a1b;
+    --text-color: #EFEFEF;
+    --border-color: rgb(58, 62, 65);
+    --link-color: rgb(110, 194, 255);
+    --highlight-color: rgb(69, 43, 9);
+    --delete-color: rgb(154, 154, 154);
+    --switch-button-bg: rgb(30, 33, 34);
+    --switch-button-bg-zh-hans: #8f704a;
+    --switch-button-bg-zh-hant: #597e59;
+    --switch-button-border: rgb(53, 42, 11);
+    --multilingual-zh-hans: rgba(248,138,5,.7);
+    --multilingual-zh-hant: rgba(64,196,64,.7);
+    --translation-bg: rgb(31, 34, 35);
+    --checkmark-bg: rgb(24, 26, 27);
+    --warning-color: rgb(236, 164, 113);
+  }
+
+  img.invert-on-dark-mode {
+    filter: invert(1);
+  }
+}
+
 h2 {
   margin-top: 3em;
   margin-bottom: 0em;
@@ -52,11 +100,11 @@ h3 {
   margin-top: 3em;
 }
 
-h4  {
+h4 {
+  color: var(--primary-color);
   margin-top: 2em;
   font-size: 100%;
   font-weight: normal;
-  color: #005a9c;
 }
 
 h5 {
@@ -65,22 +113,24 @@ h5 {
 
 .leadin {
   font-weight: bold;
+  color: var(--text-color);
 }
 
 ins {
-  background-color: #99FF99;
+  background-color: var(--highlight-color);
   text-decoration: none;
 }
 
 del {
   display: inline;
-  color: silver;
+  color: var(--delete-color);
 }
 
 figure {
   margin-bottom: 2em;
   text-align: center;
   vertical-align: top;
+  border: 1px solid var(--border-color);
 }
 
 figure img {
@@ -92,6 +142,7 @@ figcaption {
   margin: 0.5em 2em;
   font-style: italic;
   font-size: 90%;
+  color: var(--text-color);
 }
 
 span:lang(zh), figcaption:lang(zh) {
@@ -102,89 +153,96 @@ span:lang(zh), figcaption:lang(zh) {
   content: ':\00A0  ';
 }
 
-a .figno:after {
-  content: '';
-}
-
 a.termref:link,
 a.termref:hover,
 a.termref:visited,
 a.termref:active {
-  text-decoration:none;
-  border-bottom: 1px dotted #FC0;
-  color:#C60;
+  text-decoration: none;
+  border-bottom: 1px dotted var(--link-color);
+  color: var(--link-color);
 }
 
-.qterm:before, .qchar:before { content: "'"; }
-.qterm:after, .qchar:after { content: "'"; }
-.quote:before { content: '"'; }
-.quote:after { content: '"'; }
+.qterm:before, .qchar:before {
+  content: "'";
+}
 
-code,
-samp,
-kbd {
-  font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace;
+.qterm:after, .qchar:after {
+  content: "'";
+}
+
+.quote:before {
+  content: '"';
+}
+
+.quote:after {
+  content: '"';
+}
+
+code, samp, kbd {
+  font-family: monospace;
   font-size: 100%;
+  background-color: var(--translation-bg);
+  color: var(--secondary-color);
+  border-radius: 5px;
+  padding: 0.2em 0.4em;
 }
-
-code { color: #A52A2A; }
 
 #langSwitch {
-	position: fixed;
-	top: -14px;
-	z-index: 10000;
-	top: 100px;
-	right: 10px;
-	width: 5em;
-	text-align: right;
-	}
+  position: fixed;
+  top: 100px;
+  right: 10px;
+  z-index: 10000;
+  width: 5em;
+  text-align: right;
+}
+
 #langSwitch button {
-	background: #FFF none repeat scroll 0% 0%;
-	border: 1px solid #CCC;
-	border-radius: 5px;
-	}
+  background: var(--switch-button-bg);
+  border: 1px solid var(--switch-button-border);
+  border-radius: 5px;
+}
+
 #langSwitch button:lang(zh-hans) {
-	background-color: #fbc481;
-	}
+  background-color: var(--switch-button-bg-zh-hans);
+}
 
 #langSwitch button:lang(zh-hant) {
-	background-color: #9fe19f;
-	}
-
+  background-color: var(--switch-button-bg-zh-hant);
+}
 
 .translateme, .retranslateme {
-  background-color: #F3F3C3;
+  background-color: var(--translation-bg);
   background-clip: content-box;
+  color: var(--warning-color);
 }
+
 .checkme {
-  background-color: #BBEFFC;
+  background-color: var(--checkmark-bg);
   background-clip: content-box;
+  color: var(--warning-color);
 }
 
 .checkme::before {
-    content: ' Check this translation: ';
-    color: coral;
-	}
+  content: ' Check this translation: ';
+}
 
 .translateme::before {
-    content: ' Translate this: ';
-    color: coral;
-	}
+  content: ' Translate this: ';
+}
 
 .retranslateme::before {
-    content: ' (Re)translate this: ';
-    color: coral;
-	}
+  content: ' (Re)translate this: ';
+}
 
 .is-multilingual [its-locale-filter-list^="zh"] {
   padding-left: .4em;
   border-left: 3px solid;
 }
-.is-multilingual [its-locale-filter-list="zh-hant"] {
-  border-color: rgba(64,196,64,.5);
-}
 .is-multilingual [its-locale-filter-list="zh-hans"] {
-  border-color: rgba(248,138,5,.5);
+  border-color: var(--multilingual-zh-hans);
+}
+.is-multilingual [its-locale-filter-list="zh-hant"] {
+  border-color: var(--multilingual-zh-hant);
 }
 
 .is-multilingual h2[its-locale-filter-list^="zh"],

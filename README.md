@@ -49,7 +49,7 @@ Topics for discussion are suggested by [the gap-analysis template](https://www.w
 ### Gap analysis documents 差距分析文档 差距分析文檔
 - **Chinese Gap Analysis** • [DNOTE](https://www.w3.org/TR/clreq-gap) • [*Editor's draft*](https://www.w3.org/International/clreq/gap-analysis/) • [*Latest commits*](https://github.com/w3c/clreq/commits/gh-pages/gap-analysis/index.html)
 
-+ **中文支持的差距分析** • [备忘草案](https://www.w3.org/TR/clreq-gap) • [*編輯草案*](https://www.w3.org/International/clreq/gap-analysis/) • [*更改历史记录*](https://github.com/w3c/clreq/commits/gh-pages/gap-analysis/index.html)
++ **中文支持的差距分析** • [备忘草案](https://www.w3.org/TR/clreq-gap) • [*编辑草案*](https://www.w3.org/International/clreq/gap-analysis/) • [*更改历史记录*](https://github.com/w3c/clreq/commits/gh-pages/gap-analysis/index.html)
 
 - **中文支援的差距分析** • [備忘草案](https://www.w3.org/TR/clreq-gap) • [*編輯草案*](https://www.w3.org/International/clreq/gap-analysis/) • [*更改歷史記錄*](https://github.com/w3c/clreq/commits/gh-pages/gap-analysis/index.html)
 

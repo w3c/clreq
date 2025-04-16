@@ -43,7 +43,7 @@ Topics for discussion are suggested by [the gap-analysis template](https://www.w
 + **中文支持资源** • [备忘草案](https://www.w3.org/TR/hani-lreq) • [*编辑草案*](https://www.w3.org/International/clreq/resources/) • [*更改历史记录*](https://github.com/w3c/clreq/commits/gh-pages/resources)
 + **中文排版需求** • [备忘草案](https://www.w3.org/TR/clreq) • [*编辑草案*](https://www.w3.org/International/clreq/) • [*更改历史记录*](https://github.com/w3c/clreq/commits/gh-pages/index.html)
 
-- **中文支援資源** • [備忘錄草稿](https://www.w3.org/TR/hani-lreq) • [*編輯草稿*](https://www.w3.org/International/clreq/resources/) • [*更改歷史記錄*](https://github.com/w3c/clreq/commits/gh-pages/resources)
+- **中文支援資源** • [備忘草案](https://www.w3.org/TR/hani-lreq) • [*編輯草稿*](https://www.w3.org/International/clreq/resources/) • [*更改歷史記錄*](https://github.com/w3c/clreq/commits/gh-pages/resources)
 - **中文排版需求** • [備忘草案](https://www.w3.org/TR/clreq) • [*編輯草稿*](https://www.w3.org/International/clreq/) • [*更改歷史記錄*](https://github.com/w3c/clreq/commits/gh-pages/index.html)
 
 ### Gap analysis documents 差距分析文档 差距分析文檔

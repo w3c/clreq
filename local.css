@@ -61,30 +61,28 @@ sans-serif: Fallback
 }
 
 /* Dark mode color scheme */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --primary-color: rgb(110, 194, 255);
-    --secondary-color: rgb(51, 125, 255);
-    --background-color: #181a1b;
-    --text-color: #EFEFEF;
-    --border-color: rgb(58, 62, 65);
-    --link-color: rgb(110, 194, 255);
-    --highlight-color: rgb(69, 43, 9);
-    --delete-color: rgb(154, 154, 154);
-    --switch-button-bg: rgb(30, 33, 34);
-    --switch-button-bg-zh-hans: #8f704a;
-    --switch-button-bg-zh-hant: #597e59;
-    --switch-button-border: rgb(53, 42, 11);
-    --multilingual-zh-hans: rgba(248,138,5,.7);
-    --multilingual-zh-hant: rgba(64,196,64,.7);
-    --translation-bg: rgb(31, 34, 35);
-    --checkmark-bg: rgb(24, 26, 27);
-    --warning-color: rgb(236, 164, 113);
-  }
+body.darkmode {
+  --primary-color: rgb(110, 194, 255);
+  --secondary-color: rgb(51, 125, 255);
+  --background-color: #181a1b;
+  --text-color: #EFEFEF;
+  --border-color: rgb(58, 62, 65);
+  --link-color: rgb(110, 194, 255);
+  --highlight-color: rgb(69, 43, 9);
+  --delete-color: rgb(154, 154, 154);
+  --switch-button-bg: rgb(30, 33, 34);
+  --switch-button-bg-zh-hans: #8f704a;
+  --switch-button-bg-zh-hant: #597e59;
+  --switch-button-border: rgb(53, 42, 11);
+  --multilingual-zh-hans: rgba(248,138,5,.7);
+  --multilingual-zh-hant: rgba(64,196,64,.7);
+  --translation-bg: rgb(31, 34, 35);
+  --checkmark-bg: rgb(24, 26, 27);
+  --warning-color: rgb(236, 164, 113);
+}
 
-  img.invert-on-dark-mode {
-    filter: invert(1);
-  }
+body.darkmode img.invert-on-dark-mode {
+  filter: invert(1);
 }
 
 h2 {

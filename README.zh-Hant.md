@@ -1,6 +1,6 @@
 # 中文支援 (clreq)
 
-**語言版本: [English](README.md)** | **[简体中文](README.zh-cn.md)** | **[繁體中文 (當前)](README.zh-tw.md)**
+**語言版本: [English](README.md)** | **[简体中文](README.zh-Hans.md)** | **[繁體中文 (當前)](README.zh-Hant.md)**
 
 本小組旨在探討Web和電子書在簡體和繁體中文支援方面的不足，並且記錄相關需求。
 

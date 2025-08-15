@@ -213,6 +213,7 @@ pip-log.txt
 
 # Node.js
 node_modules
+package-lock.json
 
 respec-*
 base.css

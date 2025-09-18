@@ -1,0 +1,3 @@
+# https://github.com/benbalter/jekyll-optional-front-matter#one-potential-gotcha
+include:
+  - README.md

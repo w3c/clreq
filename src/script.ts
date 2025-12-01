@@ -20,6 +20,10 @@ const L10N = {
     // Prefix for figure captions (e.g., "Fig. 1", "Fig. 2")
     'fig': 'Fig. ',
 
+    collapseSidebar: 'Collapse Sidebar',
+    expandSidebar: 'Pop Out Sidebar',
+    jumpToToc: 'Jump to Table of Contents',
+
     dt: {},
 
     dd: {
@@ -39,6 +43,10 @@ const L10N = {
     },
 
     'fig': '圖',
+
+    collapseSidebar: '收起側邊欄',
+    expandSidebar: '彈出側邊欄',
+    jumpToToc: '跳轉至內容大綱',
 
     'summary': '關於此文檔',
 
@@ -72,6 +80,10 @@ const L10N = {
     },
 
     'fig': '图',
+
+    collapseSidebar: '收起侧边栏',
+    expandSidebar: '弹出侧边栏',
+    jumpToToc: '跳转至内容大纲',
 
     'summary': '关于此文档',
 
@@ -186,6 +198,49 @@ function replaceBoilerplateText(lang: string) {
       $dt.nextElementSibling.innerHTML = l10n.dd['Bug tracker:']
     }
   })
+
+  // Update sidebar strings introduced by fixup.js
+  // https://github.com/w3c/tr-design/blob/gh-pages/src/fixup.js
+  translateFixupStrings(lang)
+}
+
+let sidebarObserver: MutationObserver | null = null
+
+function translateFixupStrings(lang: string) {
+  const l10n = L10N[lang === 'all' ? 'en' : lang]
+  
+  const fixupIds: { [key: string]: string } = {
+    'toc-collapse-text': 'collapseSidebar',
+    'toc-expand-text': 'expandSidebar',
+    'toc-jump-text': 'jumpToToc',
+  }
+
+  Object.keys(fixupIds).forEach(function(id) {
+    const el = document.getElementById(id)
+    if (el) {
+      const key = fixupIds[id]
+      if (l10n[key]) {
+        if (el.textContent !== l10n[key]) {
+          el.textContent = l10n[key]
+        }
+      }
+    }
+  })
+
+  // Lazily setup observer for the toggle button because fixup.js might replace content
+  // and fixup.js runs after this script
+  if (!sidebarObserver) {
+    const toggle = document.getElementById('toc-toggle')
+    if (toggle) {
+      sidebarObserver = new MutationObserver(function() {
+        const currentLang = $root.lang || 'en'
+        if (currentLang !== 'en') {
+          translateFixupStrings(currentLang)
+        }
+      })
+      sidebarObserver.observe(toggle, { childList: true, subtree: true })
+    }
+  }
 }
 
 /**

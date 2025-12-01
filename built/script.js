@@ -17,6 +17,9 @@
         },
         // Prefix for figure captions (e.g., "Fig. 1", "Fig. 2")
         "fig": "Fig. ",
+        collapseSidebar: "Collapse Sidebar",
+        expandSidebar: "Pop Out Sidebar",
+        jumpToToc: "Jump to Table of Contents",
         dt: {},
         dd: {
           "Bug tracker:": '<a href="https://github.com/w3c/clreq/issues">file a bug</a> (<a href="https://github.com/w3c/clreq/issues">open bugs</a>)'
@@ -33,6 +36,9 @@
           ".note-title": "\u6CE8"
         },
         "fig": "\u5716",
+        collapseSidebar: "\u6536\u8D77\u5074\u908A\u6B04",
+        expandSidebar: "\u5F48\u51FA\u5074\u908A\u6B04",
+        jumpToToc: "\u8DF3\u8F49\u81F3\u5167\u5BB9\u5927\u7DB1",
         "summary": "\u95DC\u65BC\u6B64\u6587\u6A94",
         dt: {
           "This version:": "\u672C\u7248\u672C\uFF1A",
@@ -61,6 +67,9 @@
           ".note-title": "\u6CE8"
         },
         "fig": "\u56FE",
+        collapseSidebar: "\u6536\u8D77\u4FA7\u8FB9\u680F",
+        expandSidebar: "\u5F39\u51FA\u4FA7\u8FB9\u680F",
+        jumpToToc: "\u8DF3\u8F6C\u81F3\u5185\u5BB9\u5927\u7EB2",
         "summary": "\u5173\u4E8E\u6B64\u6587\u6863",
         dt: {
           "This version:": "\u672C\u7248\u672C\uFF1A",
@@ -141,6 +150,39 @@
           $dt.nextElementSibling.innerHTML = l10n.dd["Bug tracker:"];
         }
       });
+      translateFixupStrings(lang);
+    }
+    let sidebarObserver = null;
+    function translateFixupStrings(lang) {
+      const l10n = L10N[lang === "all" ? "en" : lang];
+      const fixupIds = {
+        "toc-collapse-text": "collapseSidebar",
+        "toc-expand-text": "expandSidebar",
+        "toc-jump-text": "jumpToToc"
+      };
+      Object.keys(fixupIds).forEach(function(id) {
+        const el = document.getElementById(id);
+        if (el) {
+          const key = fixupIds[id];
+          if (l10n[key]) {
+            if (el.textContent !== l10n[key]) {
+              el.textContent = l10n[key];
+            }
+          }
+        }
+      });
+      if (!sidebarObserver) {
+        const toggle = document.getElementById("toc-toggle");
+        if (toggle) {
+          sidebarObserver = new MutationObserver(function() {
+            const currentLang = $root.lang || "en";
+            if (currentLang !== "en") {
+              translateFixupStrings(currentLang);
+            }
+          });
+          sidebarObserver.observe(toggle, { childList: true, subtree: true });
+        }
+      }
     }
     window.switchLang = function(lang) {
       toggle$rootClass(lang);

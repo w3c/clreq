@@ -8,6 +8,9 @@ We aim to address the problem that local users don't know how to tell the W3C wh
 
 Topics for discussion are suggested by [the gap-analysis template](https://www.w3.org/International/i18n-activity/templates/gap-analysis/gap-analysis_template.html). This work feeds into the [language matrix](https://www.w3.org/International/typography/gap-analysis/language-matrix.html) which provides a heat-map for language issues on the Web.
 
+### Key links
+[GitHub repo](https://github.com/w3c/clreq) • [Discussion threads](https://github.com/w3c/clreq/issues) • [Charter](https://www.w3.org/International/clreq/charter/)
+
 ---
 
 ## Help wanted!
@@ -15,24 +18,17 @@ Topics for discussion are suggested by [the gap-analysis template](https://www.w
 
 ---
 
-### Key links
-[GitHub repo](https://github.com/w3c/clreq) • [Discussion threads](https://github.com/w3c/clreq/issues) • [Charter](https://www.w3.org/International/clreq/charter/)
 
-### Resource & requirement documents
+### Chinese, Simplified & Traditional
 - **Chinese Script Resources** • [DNOTE](https://www.w3.org/TR/hani-lreq) • [*Editor's draft*](https://www.w3.org/International/clreq/resources/) • [*Latest commits*](https://github.com/w3c/clreq/commits/gh-pages/resources)
 - **Chinese Layout Requirements** • [DNOTE](https://www.w3.org/TR/clreq) • [*Editor's draft*](https://www.w3.org/International/clreq/) • [*Latest commits*](https://github.com/w3c/clreq/commits/gh-pages/index.html)
-
-### Gap analysis documents
 - **Chinese Gap Analysis** • [DNOTE](https://www.w3.org/TR/clreq-gap) • [*Editor's draft*](https://www.w3.org/International/clreq/gap-analysis/) • [*Latest commits*](https://github.com/w3c/clreq/commits/gh-pages/gap-analysis/index.html)
-
-### Discussions
-
-- **Chinese** • [*Questions*](https://github.com/w3c/clreq/issues?q=is%3Aissue+is%3Aopen+label%3A問題/question )
+- **Discussions** • [*Questions*](https://github.com/w3c/clreq/issues?q=is%3Aissue+is%3Aopen+label%3A問題/question )
 • [*Gap reports*](https://github.com/w3c/clreq/labels/doc%3Aclreq)
 • [*Other*](https://github.com/w3c/clreq/issues?q=is%3Aopen+-label%3A%E5%95%8F%E9%A1%8C%2Fquestion+-label%3Agap)
 • [*Spec issues*](https://github.com/w3c/i18n-activity/issues?q=is%3Aopen+label%3Aclreq+label%3Aspec-type-issue)
 
-### Related documents
+### Other documents
 - [Ready-made Counter Styles](https://www.w3.org/TR/predefined-counter-styles/)
 
 ### Feedback

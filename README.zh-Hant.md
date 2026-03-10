@@ -8,6 +8,9 @@
 
 討論議題源自[差距分析模板（英文）](https://www.w3.org/International/i18n-activity/templates/gap-analysis/gap-analysis_template.html)。該工作融匯於[文種矩陣](https://www.w3.org/International/typography/gap-analysis/language-matrix.html)之中，進而概括了需要關注的文種的問題。
 
+### 關鍵連結
+[GitHub 倉庫](https://github.com/w3c/clreq) • [討論串](https://github.com/w3c/clreq/issues) • [章程](https://www.w3.org/International/clreq/charter/)
+
 ---
 
 ## 徵求協助！
@@ -15,19 +18,11 @@
 
 ---
 
-### 關鍵連結
-[GitHub 倉庫](https://github.com/w3c/clreq) • [討論串](https://github.com/w3c/clreq/issues) • [章程](https://www.w3.org/International/clreq/charter/)
-
 ### 資源與需求文檔
 - **中文支援資源** • [備忘草案](https://www.w3.org/TR/hani-lreq) • [*編輯草案*](https://www.w3.org/International/clreq/resources/) • [*更改歷史記錄*](https://github.com/w3c/clreq/commits/gh-pages/resources)
 - **中文排版需求** • [備忘草案](https://www.w3.org/TR/clreq) • [*編輯草案*](https://www.w3.org/International/clreq/) • [*更改歷史記錄*](https://github.com/w3c/clreq/commits/gh-pages/index.html)
-
-### 差距分析文檔
 - **中文支援的差距分析** • [備忘草案](https://www.w3.org/TR/clreq-gap) • [*編輯草案*](https://www.w3.org/International/clreq/gap-analysis/) • [*更改歷史記錄*](https://github.com/w3c/clreq/commits/gh-pages/gap-analysis/index.html)
-
-### 討論
-
-- **中文** • [*問題*](https://github.com/w3c/clreq/issues?q=is%3Aissue+is%3Aopen+label%3A問題/question )
+- **討論** • [*問題*](https://github.com/w3c/clreq/issues?q=is%3Aissue+is%3Aopen+label%3A問題/question )
 • [*差距分析*](https://github.com/w3c/clreq/labels/doc%3Aclreq)
 • [*其他*](https://github.com/w3c/clreq/issues?q=is%3Aopen+-label%3A%E5%95%8F%E9%A1%8C%2Fquestion+-label%3Agap)
 • [*技術標準相關*](https://github.com/w3c/i18n-activity/issues?q=is%3Aopen+label%3Aclreq+label%3Aspec-type-issue)

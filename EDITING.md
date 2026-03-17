@@ -166,6 +166,36 @@ In Traditional Chinese text, you should use single quotation marks (「」) firs
 
 繁体中使用先单（「」）、后双（『』）的直角引号，简体中使用先双（“”）、后单（‘’）的弯引号。
 
+### Working with image source files | 处理图片源文件
+
+Image source files under `images/source/`, are sometimes stored using Git Large File Storage (Git LFS). This keeps large binary assets out of normal Git history while allowing them to be versioned with the rest of the repository.
+
+位于`images/source/`目录下的图像源文件，有时会通过Git LFS进行存储。这种做法既能将比较大的二进制文件排除在常规的Git历史记录之外，又能使其与仓库中的其余文件一同进行版本管理。
+
+This is preferable to committing such files directly to the repository because Git stores normal file contents in repository history permanently. For large binary source files such as `*.ai`, each revision can noticeably increase clone and fetch sizes, while offering little useful diff or merge support. With Git LFS, the repository keeps only a small pointer file, and contributors download the full binary only when they actually need it. Other files should still be committed normally, because they are usually smaller and benefit from Git's regular diff, merge, and review workflow.
+
+之所以不直接把这类文件提交到仓库，是因为Git会将普通文件内容永久写入仓库历史。对于`*.ai`这类大型二进制源文件，每次修订都可能明显增大克隆和抓取的体积，而Git对这类文件也很难提供有意义的差异比较或合并支持。使用Git LFS后，仓库里只保留一个很小的指针文件，真正的二进制内容只在确有需要时才下载。其他文件则仍应直接提交到仓库，因为它们通常更小，也能充分利用Git原有的比较、合并与审阅流程。
+
+If you only work on the HTML, CSS, or TypeScript files, you do not normally need to think about Git LFS. If you need to open, modify, or add image source files like `*.ai`, install Git LFS first:
+
+如果您只编辑HTML、CSS或TypeScript文件，通常无需关心Git LFS。若您需要打开、修改或新增如`*.ai`的图片源文件，请先安装Git LFS：
+
+```
+git lfs install
+```
+
+After cloning the repository, if the `*.ai` files appear as small text pointer files instead of real artwork files, fetch the LFS content with:
+
+克隆仓库之后，如果`*.ai`文件显示为很小的文本指针文件，而不是真正的图片源文件，请运行以下命令拉取LFS内容：
+
+```
+git lfs pull
+```
+
+New or updated `*.ai` files are already covered by the repository's `.gitattributes` rules, so you can add and commit them using the normal Git workflow (`git add`, `git commit`, etc.). Please do not remove the LFS tracking rule for these files.
+
+仓库的`.gitattributes`已经为新的或修改过的`*.ai`文件配置了规则，因此您可以按普通Git流程（如 `git add`、`git commit`）提交这些文件。请不要移除对这些文件的LFS跟踪规则。
+
 ### Working on the language switching code | 语言切换功能
 
 The code for the language switching function is implemented in the following TypeScript file:

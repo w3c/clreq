@@ -1012,13 +1012,17 @@ var respecConfig = {
     <p its-locale-filter-list="zh-hans" lang="zh-hans">中西混排中，由于正文是中文，原则上应该使用中文标点，遵守中文标点的习惯用法。但是，涉及公式较多的科学技术中文图书，句号可以统一使用西文句号<span class="uname" translate="no">U+002E FULL STOP</span> [.]，省略号可以使用西文省略号U+2026 HORIZONTAL ELLIPSIS […]，字面分布按西文习惯；又或西文例句较多且多与中文混排的中文版西文语法教材，亦可使用前述的西文句号。</p>
     <p its-locale-filter-list="zh-hant" lang="zh-hant">中西混排中，由於正文是中文，原則上應該使用中文標點，遵守中文標點的習慣用法。但是，涉及公式較多的科學技術中文圖書，句號可以統一使用西文句號<span class="uname" translate="no">U+002E FULL STOP</span> [.]，刪節號可以使用西文刪節號U+2026 HORIZONTAL ELLIPSIS […]，字面分布按西文習慣；又或西文例句較多且多與中文混排的中文版西文語法教材，亦可使用前述的西文句號。</p>
 
-  <!-- <section>
-    <h4>
-      <span its-locale-filter-list="en" lang="en">Mixed Text Composition in Horizontal Writing Mode</span>
-      <span its-locale-filter-list="zh-hans" lang="zh-hans">横排的中、西文混排配置</span>
-      <span its-locale-filter-list="zh-hant" lang="zh-hant">橫排的中、西文混排配置</span>
-    </h4>
-  </section> -->
+        <section id="h-encoding-erhua">
+        <h4>
+          <span its-locale-filter-list="en" lang="en">Erhua</span>
+          <span its-locale-filter-list="zh-hans" lang="zh-hans">儿化</span>
+          <span its-locale-filter-list="zh-hant" lang="zh-hant">兒化</span>
+        </h4>
+
+              <p its-locale-filter-list="en" lang="en">In Chinese, the character 儿/兒 is used in two distinct ways. When used as a noun, it is written at full size. When used as a suffix for érhuà (rhotacization), it may be written in a smaller size to distinguish the pronunciation (e.g., 花儿 is pronounced <i>huār</i>, not <i>huā'ér</i>). Unicode has encoded two dedicated characters for this usage: <span class="uname" translate="no">U+16FF2 CHINESE SMALL SIMPLIFIED ER</span> and <span class="uname" translate="no">U+16FF3 CHINESE SMALL TRADITIONAL ER</span> (rarely used).</p>
+              <p its-locale-filter-list="zh-hans" lang="zh-hans">汉语中的“儿”字有两种用法。作名词时，使用标准大小的“儿”（U+513F）。作为儿化韵的后缀时，使用小写的“儿”以示发音区别（如：花儿读作huār而非huā'ér）。Unicode已为此用法编码了专用字符：<span class="uname" translate="no">U+16FF2 CHINESE SMALL SIMPLIFIED ER</span> 与 <span class="uname" translate="no">U+16FF3 CHINESE SMALL TRADITIONAL ER</span>（罕用）。</p>
+              <p its-locale-filter-list="zh-hant" lang="zh-hant">漢語中的「兒」字有兩種用法。作名詞時，使用標準大小的「兒」（U+5152）。作為兒化韻的後綴時，使用小寫的「兒」以示發音區別（如：花兒讀作huār而非huā'ér）。Unicode已為此用法編碼了專用字元：<span class="uname" translate="no">U+16FF2 CHINESE SMALL SIMPLIFIED ER</span> 與 <span class="uname" translate="no">U+16FF3 CHINESE SMALL TRADITIONAL ER</span>（罕用）。</p>
+        </section>
 
     </section>
 </section>
@@ -1406,9 +1410,9 @@ var respecConfig = {
             <p its-locale-filter-list="zh-hans" lang="zh-hans"><span class="leadin">书名号</span></p>
             <p its-locale-filter-list="zh-hant" lang="zh-hant"><span class="leadin">書名號</span></p>
 
-            <p its-locale-filter-list="en" lang="en">According to <cite>Punctuation Guidance</cite> (revised edition in 2008) issued by the Ministry of Education in Taiwan, book title marks are used to indicate the names of works which usually include books, articles, songs, movies, files, calligraphy and paintings. Generally, there are two types of book title marks, wavy low lines or angle brackets. Book title mark type A <span class="uname" translate="no">U+FE4F WAVY LOW LINE</span> [﹏] has a wavy line appearance and is positioned at the <a href="#term.line-foot" class="termref">line foot</a> of the annotated text. When two works are listed adjacent to each other, their wavy lines should be visually separated. Book title mark type B includes <span class="uname" translate="no">U+300A LEFT DOUBLE ANGLE BRACKET</span> [《], <span class="uname" translate="no">U+300B RIGHT DOUBLE ANGLE BRACKET</span> [》], <span class="uname" translate="no">U+3008 LEFT ANGLE BRACKET</span> [〈] and <span class="uname" translate="no">U+3009 RIGHT ANGLE BRACKET</span> [〉]. The former pair is used for the names of books while the latter pair is used for the names of articles.</p>
-            <p its-locale-filter-list="zh-hans" lang="zh-hans">根据台湾教育部的《重订标点符号手册》（2008年修订版），书名号分为甲式及乙式，甲式为波浪底线<span class="uname" translate="no">U+FE4F WAVY LOW LINE</span> [﹏]，标注在相应文本<a href="#term.line-foot" class="termref">底端</a>，二个作品名称相邻时，甲式书名号间须在视觉上分离予以辨别。乙式有双书名号<span class="uname" translate="no">U+300A LEFT DOUBLE ANGLE BRACKET</span> [《]与<span class="uname" translate="no">U+300B RIGHT DOUBLE ANGLE BRACKET</span> [》]、单书名号<span class="uname" translate="no">U+3008 LEFT ANGLE BRACKET</span> [〈]与<span class="uname" translate="no">U+3009 RIGHT ANGLE BRACKET</span> [〉]，前一对用于标示书名号、后一对用于标示篇名。</p>
-            <p its-locale-filter-list="zh-hant" lang="zh-hant">根據台灣教育部的《重訂標點符號手冊》（2008年修訂版），書名號分為甲式及乙式，甲式為波浪底線<span class="uname" translate="no">U+FE4F WAVY LOW LINE</span> [﹏]，標注在相應文本<a href="#term.line-foot" class="termref">底端</a>，二個作品名稱相鄰時，甲式書名號間須在視覺上分離予以辨別。乙式有雙書名號<span class="uname" translate="no">U+300A LEFT DOUBLE ANGLE BRACKET</span> [《]與<span class="uname" translate="no">U+300B RIGHT DOUBLE ANGLE BRACKET</span> [》]、單書名號<span class="uname" translate="no">U+3008 LEFT ANGLE BRACKET</span> [〈]與<span class="uname" translate="no">U+3009 RIGHT ANGLE BRACKET</span> [〉]，前一對用於標示書名號、後一對用於標示篇名。</p>
+            <p its-locale-filter-list="en" lang="en">According to <cite>Punctuation Guidance</cite> (revised edition in 2008) issued by the Ministry of Education in Taiwan, book title marks are used to indicate the names of works which usually include books, articles, songs, movies, files, calligraphy and paintings. Generally, there are two types of book title marks, wavy low lines or angle brackets. Book title mark type A <span class="uname" translate="no">U+FE4F WAVY LOW LINE</span> [﹏] has a wavy line appearance and is positioned at the <a href="#term.line-foot" class="termref">line foot</a> of the annotated text. The default length of the book title mark type A equals the width of the character frame. When two works are listed adjacent to each other, the side of the book title mark close to the adjacent one is shortened (to visually separate the two book title marks for easier distinction), while the other side remains unchanged. Book title mark type B includes <span class="uname" translate="no">U+300A LEFT DOUBLE ANGLE BRACKET</span> [《], <span class="uname" translate="no">U+300B RIGHT DOUBLE ANGLE BRACKET</span> [》], <span class="uname" translate="no">U+3008 LEFT ANGLE BRACKET</span> [〈] and <span class="uname" translate="no">U+3009 RIGHT ANGLE BRACKET</span> [〉]. The former pair is used for the names of books while the latter pair is used for the names of articles.</p>
+            <p its-locale-filter-list="zh-hans" lang="zh-hans">根据台湾教育部的《重订标点符号手册》（2008年修订版），书名号分为甲式及乙式，甲式为波浪底线<span class="uname" translate="no">U+FE4F WAVY LOW LINE</span> [﹏]，标注在相应文本<a href="#term.line-foot" class="termref">底端</a>。书名号甲式长度默认与字符外框同等长度。二个作品名称相邻时，相邻的那一侧的书名号长度缩短（让两段书名号在视觉上分离，更容易辨别），而书名号的另一侧长度不变。乙式有双书名号<span class="uname" translate="no">U+300A LEFT DOUBLE ANGLE BRACKET</span> [《]与<span class="uname" translate="no">U+300B RIGHT DOUBLE ANGLE BRACKET</span> [》]、单书名号<span class="uname" translate="no">U+3008 LEFT ANGLE BRACKET</span> [〈]与<span class="uname" translate="no">U+3009 RIGHT ANGLE BRACKET</span> [〉]，前一对用于标示书名号、后一对用于标示篇名。</p>
+            <p its-locale-filter-list="zh-hant" lang="zh-hant">根據台灣教育部的《重訂標點符號手冊》（2008年修訂版），書名號分為甲式及乙式，甲式為波浪底線<span class="uname" translate="no">U+FE4F WAVY LOW LINE</span> [﹏]，標注在相應文本<a href="#term.line-foot" class="termref">底端</a>。書名號甲式長度預設與字元外框同等長度。二個作品名稱相鄰時，相鄰的那一側的書名號長度縮短（讓兩段書名號在視覺上分離，更容易辨別），而書名號的另一側長度不變。乙式有雙書名號<span class="uname" translate="no">U+300A LEFT DOUBLE ANGLE BRACKET</span> [《]與<span class="uname" translate="no">U+300B RIGHT DOUBLE ANGLE BRACKET</span> [》]、單書名號<span class="uname" translate="no">U+3008 LEFT ANGLE BRACKET</span> [〈]與<span class="uname" translate="no">U+3009 RIGHT ANGLE BRACKET</span> [〉]，前一對用於標示書名號、後一對用於標示篇名。</p>
             <p its-locale-filter-list="en" lang="en">Book title marks are used to indicate titles of books, articles, songs, films, documents, artworks and so on.</p>
             <p its-locale-filter-list="zh-hans" lang="zh-hans">书名号用于标示书名、篇名、歌曲名、影剧名、文件名、字画名等各种作品名称。</p>
             <p its-locale-filter-list="zh-hant" lang="zh-hant">書名號用於標示書名、篇名、歌曲名、影劇名、文件名、字畫名等各種作品名稱。</p>
@@ -1427,9 +1431,9 @@ var respecConfig = {
             <p its-locale-filter-list="en" lang="en"><span class="uname" translate="no">U+FF3F FULLWIDTH LOW LINE</span> [＿] is positioned at the <a href="#term.line-foot" class="termref">line foot</a> of proper nouns such as a person's name, the name of a place, etc.</p>
             <p its-locale-filter-list="zh-hans" lang="zh-hans">专名号为<span class="uname" translate="no">U+FF3F FULLWIDTH LOW LINE</span> [＿]，标示专有名词——如人名、地名等——<a href="#term.line-foot" class="termref">底端</a>的符号。</p>
             <p its-locale-filter-list="zh-hant" lang="zh-hant">專名號為<span class="uname" translate="no">U+FF3F FULLWIDTH LOW LINE</span> [＿]，標示專有名詞——如人名、地名等——<a href="#term.line-foot" class="termref">底端</a>的符號。</p>
-            <p its-locale-filter-list="en" lang="en">When two proper nouns are adjacent to each other, the lines of the marks should be visually separated.</p>
-            <p its-locale-filter-list="zh-hans" lang="zh-hans">在两个专有名词相邻时，专名号间须在视觉上分离予以辨别。</p>
-            <p its-locale-filter-list="zh-hant" lang="zh-hant">在二個專有名詞相鄰時，專名號間須在視覺上分離予以辨別。</p>
+            <p its-locale-filter-list="en" lang="en">The length of the proper noun mark equals the width of the character frame. When two proper nouns are adjacent to each other, the side of the proper noun mark close to the adjacent one is shortened (to visually separate the two proper noun marks for easier distinction), while the other side remains unchanged.</p>
+            <p its-locale-filter-list="zh-hans" lang="zh-hans">专名号长度默认与字符外框同等长度。在两个专有名词相邻时，相邻的那一侧的专名号长度缩短（让两段专名号在视觉上分离，更容易辨别），而专名号的另一侧长度不变。</p>
+            <p its-locale-filter-list="zh-hant" lang="zh-hant">專名號長度預設與字元外框同等長度。在二個專有名詞相鄰時，相鄰的那一側的專名號長度縮短（讓兩段專名號在視覺上分離，更容易辨別），而專名號的另一側長度不變。</p>
           </li>
 
         </ol>
@@ -2163,6 +2167,9 @@ var respecConfig = {
           <p its-locale-filter-list="en" lang="en">Emphasis Marks shall be center-aligned with its corresponding character; interlinear lines must be correspond with the length and quantity of content they are marking out. As such, if there are multiple instances which need to be marked out with interlinear lines, multiple interlinear lines need to be used. Interlinear lines cannot be arbitrarily broken up. And a single interlinear line cannot be composed out of multiple fragments. For example, if there are two adjacent Proper Nouns, even if the text being marked out is set solid, both Proper Nouns must be clearly marked with two Proper Noun Marks that are distinguishable from one another. In this instance, a single Proper Noun Mark must not be used, because this would cause the two Proper Nouns to be misunderstood as a single Proper Noun.</p>
           <p its-locale-filter-list="zh-hans" lang="zh-hans">着重号应与所指示的字符居中对齐；行间线应与所标注内容的长短、数量均要保持一致，即，有几个标注项目就用几条线段，不能任意从中断开，也不能用多条线段拼接组合。比如，相邻的两个专名，即使所标注的正文汉字是密排，两个专名要用两条专名线，中间的断开要能够辨认；此时不能用一条专名线连起来标注，否则连续的两个专名会被误认为是一个专名。</p>
           <p its-locale-filter-list="zh-hant" lang="zh-hant">著重號應與所指示的字元居中對齊；行間線應與所標註內容的長短、數量均要保持一致，即，有幾個標註項目就用幾條線段，不能任意從中斷開，也不能用多條線段拼接組合。比如，相鄰的兩個專名，即使所標註的正文漢字是密排，兩個專名要用兩條專名線，中間的斷開要能夠辨認；此時不能用一條專名線連起來標註，否則連續的兩個專名會被誤認為是一個專名。</p>
+          <p its-locale-filter-list="en" lang="en">By default, the length of interlinear book title marks (type A) and proper noun marks should match the corresponding <a href="#term.character-frame" class="termref">character frames</a>. When two titles or proper nouns are adjacent, the adjoining ends of the marks should be shortened to create a visual separation, while the other ends remain unchanged. The shortening should not exceed 1/8&nbsp;em.</p>
+          <p its-locale-filter-list="zh-hans" lang="zh-hans">默认情况下，行间书名号（甲式）与专名号的长度应与相应<a href="#term.character-frame" class="termref">文字外框</a>一致。若两个专有名词或作品名称相邻，则相邻一侧的书名号或专名号应缩短，以在视觉上将二者区分开来，另一侧长度保持不变。缩短量不应超过1/8&nbsp;em。</p>
+          <p its-locale-filter-list="zh-hant" lang="zh-hant">預設情況下，行間書名號（甲式）與專名號的長度應與相應<a href="#term.character-frame" class="termref">文字外框</a>一致。若兩個專有名詞或作品名稱相鄰，則相鄰一側的書名號或專名號應縮短，以在視覺上將二者區分開來，另一側長度保持不變。縮短量不應超過1/8&nbsp;em。</p>
 
           <p its-locale-filter-list="en" lang="en">Interlinear marks must be as close to the marked text as possible.<br>The thickness and size of the interlinear lines and emphasis marks is determined by the font design and typesetting rendering engine, but even though there is no absolute limitation, the sizing of these interlinear marks must be harmonious with the font size and letter-spacing of the marked text.</p>
           <p its-locale-filter-list="zh-hans" lang="zh-hans">行间标点应尽量紧贴所标注汉字一侧。<br>行间线、着重号的大小或粗度取决于字体和排版引擎的设计，虽然没有绝对限制，但显然尺寸上应与所标汉字字号、字距相匹配。</p>
@@ -3545,11 +3552,11 @@ var respecConfig = {
     <p its-locale-filter-list="zh-hans" lang="zh-hans">书籍多数仅使用一种排版样式，杂志则会使用上数种。</p>
     <p its-locale-filter-list="zh-hant" lang="zh-hant">書籍多數僅使用一種排版樣式，雜誌則會使用上數種。</p>
 
-    <p its-locale-filter-list="en" lang="en" class="checkme">The <a href="#term.type-area" class="termref">type area</a> is the rectangular region in the middle of the page that contains the main body of text. The text within this area can be divided into two or more independent parts according to the reading direction of the text. Each independent part is called a "column", and this type of division is called a "multi-column layout". Depending on the number of columns on a page, it can be specifically referred to as "two-column", "three-column", etc. Conversely, filling the type area directly with text without dividing it into columns is called a "single-column" layout.</p>
+    <p its-locale-filter-list="en" lang="en">The <a href="#term.type-area" class="termref">type area</a> is the rectangular region in the middle of the page that contains the main body of text. The text within this area can be divided into two or more independent parts according to the reading direction of the text. Each independent part is called a "column", and this type of division is called a "multi-column layout". Depending on the number of columns in a page, the type area can be specifically referred to as "two-column", "three-column", etc. Conversely, filling the type area directly with text without dividing it into columns produces a "single-column" layout.</p>
     <p its-locale-filter-list="zh-hans" lang="zh-hans"><a href="#term.type-area" class="termref">版心</a>是页面中间包含文本的主体的矩形区域。版心里的文字，可以按照文字阅读方向分割成两个或者更多的独立部分，每个独立部分称为“栏”，而这种分割版式叫“分栏”，根据一页里栏数，可以具体地称为“双栏”“三栏”等各种方式；相对地，将文字直接按照基本版式填满版心、不分栏的方式也可成为“通栏”。</p>
     <p its-locale-filter-list="zh-hant" lang="zh-hant"><a href="#term.type-area" class="termref">版心</a>是頁面中間包含文本的主體的矩形區域。版心裡的文字，可以按照文字閱讀方向分割成兩個或者更多的獨立部分，每個獨立部分稱為「欄」，而這種分割版式叫「分欄」，根據一頁裡欄數，可以具體地稱為「雙欄」「三欄」等各種方式；相對地，將文字直接按照基本版式填滿版心、不分欄的方式也可成為「通欄」。</p>
 
-    <p its-locale-filter-list="en" lang="en" class="checkme">Although books typically use only one typesetting style (i.e., the "page format"), the design of actual pages, such as the table of contents and index, is often redesigned based on the page format. There are also many cases where pages like the index are designed with different typesetting styles. For example, the index of a vertically typeset book might be designed with horizontal or multi-column layouts. Nevertheless, the text block size of the index should still be similar to that of the page format.</p>
+    <p its-locale-filter-list="en" lang="en">Although books typically use only one typesetting style (i.e., the "page format"), the design of some actual pages, such as the table of contents and index, is often redesigned based on the page format. There are also many cases where pages like the index are designed with different typesetting styles. For example, the index of a vertically typeset book might be designed with horizontal or multi-column layouts. Nevertheless, the type area of the index should still be similar to that of the page format.</p>
     <p its-locale-filter-list="zh-hans" lang="zh-hans">尽管书籍通常仅使用一种排版样式（即“基本版式”），在实际页面的设计上，如目录、索引等页面，会基于基本版式重新设计。索引等页面采用不同排版样式设计的案例也相当多，直排书索引也会以横排或者多栏排版等方式设计。尽管如此，索引的版心尺寸仍应与基本版式近似。</p>
     <p its-locale-filter-list="zh-hant" lang="zh-hant" class="checkme">盡管書籍通常僅使用一種排版樣式（即“基本版式”），在實際頁面的設計上，如目錄、索引等頁面，會基於基本版式重新設計。索引等頁面採用不同排版樣式設計的案例也相當多，直排書索引也會以橫排或者多欄排版等方式設計。盡管如此，索引的版心尺寸仍應與基本版式近似。</p>
     <p its-locale-filter-list="en" lang="en">Magazines usually contain various kinds of content, which naturally leads to a variety of template designs, different sizes of characters, and varying numbers of columns. </p>
@@ -3603,7 +3610,7 @@ var respecConfig = {
         <span its-locale-filter-list="zh-hant" lang="zh-hant">基本版式的設計元素</span>
       </h4>
 
-      <p its-locale-filter-list="en" lang="en" class="checkme">The type area defines the basic printing style of a book. The following are the basic elements of the type area.</p>
+      <p its-locale-filter-list="en" lang="en">The following are the basic elements of the type area:</p>
       <p its-locale-filter-list="zh-hans" lang="zh-hans">基本版式的设计元素如下：</p>
       <p its-locale-filter-list="zh-hant" lang="zh-hant">基本版式的設計元素如下：</p>
       <ul>
@@ -3653,7 +3660,7 @@ var respecConfig = {
         <span its-locale-filter-list="zh-hant" lang="zh-hant">從基本版式到實際版面的定版設計</span>
       </h4>
 
-      <p its-locale-filter-list="en" lang="en" class="checkme">This section explains how to create an actual page format based on the type area, a step referred to as "page format finalization" for specific pages.</p>
+      <p its-locale-filter-list="en" lang="en" class="checkme">This section explains how to create an actual page format based on the template of the page format, a step referred to as "page format finalization" for specific pages.</p>
       <p its-locale-filter-list="zh-hans" lang="zh-hans">本部分说明如何以基本版式为起点来为实际的各页面确定版式，这个步骤称做具体页面的“定版”。</p>
       <p its-locale-filter-list="zh-hant" lang="zh-hant" class="checkme">本部分說明如何以基本版式為起點來為實際的各頁面確定版式，這個步驟稱做具體頁面的「定版」。</p>
 
@@ -3662,7 +3669,7 @@ var respecConfig = {
       <p its-locale-filter-list="zh-hant" lang="zh-hant" class="checkme">報紙、雜誌經常會根據需要，在定版的基礎上改變欄數，這種操作方式稱作「破欄」。比如將原定版中的三欄部分改為雙欄，稱作「三破二」；將原定版中的三欄部分改為四欄，稱作「三破四」。破欄操作時要根據原定版格式仔細計算確認變更後的欄寬和欄距。</p>
       <ol>
         <li id="id39">
-          <p its-locale-filter-list="en" lang="en" class="checkme"><span class="leadin">Realm and position of headings:</span> The spacing of the heading in the block direction (i.e., height of the heading in horizontal writing mode or width of the heading in vertical writing mode) should be calculated from the position of the body text, and set to a multiple of the number of lines. If indent of the heading space is required, the starting point should be from the body text position set by the type area, and the amount of indent should be a multiple of the body text size.</p>
+          <p its-locale-filter-list="en" lang="en" class="checkme"><span class="leadin">The placement of headings:</span> The spacing of the heading in the block direction (i.e., height of the heading in horizontal writing mode or width of the heading in vertical writing mode) should be calculated from the position of the body text, and set to a multiple of the number of lines. If indent of the heading space is required, the starting point should be from the body text position set by the type area, and the amount of indent should be a multiple of the body text size.</p>
           <p its-locale-filter-list="zh-hans" lang="zh-hans"><span class="leadin">标题的地位：</span>标题摆放的位置及其所占空间，应以基本版式设定中行的位置为基准，以“占几行空间”方式来设计，这个方式称作“占行”。实际定版工作中为计算方便，通常设置为行的整数倍。定版要求通常写成“单行标题占三行”或“双行标题占五行”等方式，“单行”“双行”指标题文字本身的行数，而“三行”“五行”则指的是基本版式中行所占的空间。标题缩排时，也应以基本版式所设定的字型大小为基准，决定要缩排的量。具体方法可见[[[#handling_of_headings]]]。</p>
           <p its-locale-filter-list="zh-hant" lang="zh-hant" class="checkme"><span class="leadin">標題的地位：</span>標題擺放的位置及其所占空間，應以基本版式設定中行的位置為基準，以「占幾行空間」方式來設計，這個方式稱作「占行」。實際定版工作中為計算方便，通常設置為行的整數倍。定版要求通常寫成「單行標題占三行」或「雙行標題占五行」等方式，「單行」「雙行」指標題文字本身的行數，而「三行」「五行」則指的是基本版式中行所占的空間。標題縮排時，也應以基本版式所設定的字型大小為基準，決定要縮排的量。具體方法可見[[[#handling_of_headings]]]。</p>
         </li>
@@ -4150,17 +4157,17 @@ var respecConfig = {
       <ul>
         <li id="id178">
           <p its-locale-filter-list="en" lang="en">Whole-page headings</p>
-          <p its-locale-filter-list="zh-hans" lang="zh-hans" class="checkme">全页标题</p>
+          <p its-locale-filter-list="zh-hans" lang="zh-hans">全页标题</p>
           <p its-locale-filter-list="zh-hant" lang="zh-hant">全頁標題</p>
         </li>
         <li id="id179">
           <p its-locale-filter-list="en" lang="en">Block headings</p>
-          <p its-locale-filter-list="zh-hans" lang="zh-hans" class="checkme">内文标题</p>
+          <p its-locale-filter-list="zh-hans" lang="zh-hans">内文标题</p>
           <p its-locale-filter-list="zh-hant" lang="zh-hant">內文標題</p>
         </li>
         <li id="id180">
           <p its-locale-filter-list="en" lang="en">Run-in headings</p>
-          <p its-locale-filter-list="zh-hans" lang="zh-hans" class="checkme">同行标题</p>
+          <p its-locale-filter-list="zh-hans" lang="zh-hans">同行标题</p>
           <p its-locale-filter-list="zh-hant" lang="zh-hant">同行標題</p>
         </li>
       </ul>

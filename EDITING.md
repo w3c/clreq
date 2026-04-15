@@ -160,11 +160,15 @@ For additional ideas about markup and styling in Internationalization Activity d
 
 欲了解更多国际化标准计划文档里的標記和样式条约，尤其是行内標記的使用慣例，请查看<https://www.w3.org/International/i18n-activity/guidelines/editing>。
 
-### Rules for Punctuation | 标点符号用法
+### Writing style guide | 写作风格指南
 
 In Traditional Chinese text, you should use single quotation marks (「」) first, followed by double quotation marks (『』). In Simplified Chinese text, you should use double quotation marks (“”) first, followed by single quotation marks (‘’). 
 
 繁体中使用先单（「」）、后双（『』）的直角引号，简体中使用先双（“”）、后单（‘’）的弯引号。
+
+Leave a space between a number and a unit of measurement, eg. `14 pt`.
+
+数字和计量单位之间应留一个空格，例如`14 pt`。
 
 ### Working on the language switching code | 语言切换功能
 

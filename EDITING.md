@@ -160,11 +160,42 @@ For additional ideas about markup and styling in Internationalization Activity d
 
 欲了解更多国际化标准计划文档里的標記和样式条约，尤其是行内標記的使用慣例，请查看<https://www.w3.org/International/i18n-activity/guidelines/editing>。
 
-### Rules for Punctuation | 标点符号用法
+### Writing style guide | 写作风格指南
 
 In Traditional Chinese text, you should use single quotation marks (「」) first, followed by double quotation marks (『』). In Simplified Chinese text, you should use double quotation marks (“”) first, followed by single quotation marks (‘’). 
 
 繁体中使用先单（「」）、后双（『』）的直角引号，简体中使用先双（“”）、后单（‘’）的弯引号。
+
+Leave a space between a number and a unit of measurement, eg. `14 pt`.
+
+数字和计量单位之间应留一个空格，例如`14 pt`。
+
+### Working on the language switching code | 语言切换功能
+
+The code for the language switching function is implemented in the following TypeScript file:
+
+语言切换功能的代码在如下TypeScript文件内实现：
+
+```
+src/script.ts
+```
+
+The compiled file is in:
+
+编译后的文件在：
+
+```
+built/script.js
+```
+
+Compiling the TypeScript file requires installing [Node.js](https://nodejs.org/en) and [pnpm](https://pnpm.io/), and using the following commands:
+
+编译该文件需要安装[Node.js](https://nodejs.org/en)和[pnpm](https://pnpm.io/)，并运行：
+
+```
+pnpm install
+pnpm build
+```
 
 ### Working with image source files | 处理图片源文件
 
@@ -195,30 +226,3 @@ git lfs pull
 New or updated `*.ai` files are already covered by the repository's `.gitattributes` rules, so you can add and commit them using the normal Git workflow (`git add`, `git commit`, etc.). Please do not remove the LFS tracking rule for these files.
 
 仓库的`.gitattributes`已经为新的或修改过的`*.ai`文件配置了规则，因此您可以按普通Git流程（如 `git add`、`git commit`）提交这些文件。请不要移除对这些文件的LFS跟踪规则。
-
-### Working on the language switching code | 语言切换功能
-
-The code for the language switching function is implemented in the following TypeScript file:
-
-语言切换功能的代码在如下TypeScript文件内实现：
-
-```
-src/script.ts
-```
-
-The compiled file is in:
-
-编译后的文件在：
-
-```
-built/script.js
-```
-
-Compiling the TypeScript file requires installing [Node.js](https://nodejs.org/en) and [pnpm](https://pnpm.io/), and using the following commands:
-
-编译该文件需要安装[Node.js](https://nodejs.org/en)和[pnpm](https://pnpm.io/)，并运行：
-
-```
-pnpm install
-pnpm build
-```

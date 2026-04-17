@@ -1,0 +1,20 @@
+name: Publish clreq on /TR
+
+on:
+  workflow_dispatch:
+
+jobs:
+  publish-TR:
+    name: Publish clreq
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: w3c/spec-prod@v2
+        with:
+          TOOLCHAIN: respec
+          SOURCE: index.html
+          W3C_ECHIDNA_TOKEN: ${{ secrets.TR_TOKEN_CLREQ }}
+          W3C_WG_DECISION_URL: https://lists.w3.org/Archives/Public/www-international/2016AprJun/0046.html
+          W3C_BUILD_OVERRIDE: |
+            specStatus: DNOTE
+            shortname: clreq

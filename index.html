@@ -1012,13 +1012,17 @@ var respecConfig = {
     <p its-locale-filter-list="zh-hans" lang="zh-hans">中西混排中，由于正文是中文，原则上应该使用中文标点，遵守中文标点的习惯用法。但是，涉及公式较多的科学技术中文图书，句号可以统一使用西文句号<span class="uname" translate="no">U+002E FULL STOP</span> [.]，省略号可以使用西文省略号U+2026 HORIZONTAL ELLIPSIS […]，字面分布按西文习惯；又或西文例句较多且多与中文混排的中文版西文语法教材，亦可使用前述的西文句号。</p>
     <p its-locale-filter-list="zh-hant" lang="zh-hant">中西混排中，由於正文是中文，原則上應該使用中文標點，遵守中文標點的習慣用法。但是，涉及公式較多的科學技術中文圖書，句號可以統一使用西文句號<span class="uname" translate="no">U+002E FULL STOP</span> [.]，刪節號可以使用西文刪節號U+2026 HORIZONTAL ELLIPSIS […]，字面分布按西文習慣；又或西文例句較多且多與中文混排的中文版西文語法教材，亦可使用前述的西文句號。</p>
 
-  <!-- <section>
-    <h4>
-      <span its-locale-filter-list="en" lang="en">Mixed Text Composition in Horizontal Writing Mode</span>
-      <span its-locale-filter-list="zh-hans" lang="zh-hans">横排的中、西文混排配置</span>
-      <span its-locale-filter-list="zh-hant" lang="zh-hant">橫排的中、西文混排配置</span>
-    </h4>
-  </section> -->
+        <section id="h-encoding-erhua">
+        <h4>
+          <span its-locale-filter-list="en" lang="en">Erhua</span>
+          <span its-locale-filter-list="zh-hans" lang="zh-hans">儿化</span>
+          <span its-locale-filter-list="zh-hant" lang="zh-hant">兒化</span>
+        </h4>
+
+              <p its-locale-filter-list="en" lang="en">In Chinese, the character 儿/兒 is used in two distinct ways. When used as a noun, it is written at full size. When used as a suffix for érhuà (rhotacization), it may be written in a smaller size to distinguish the pronunciation (e.g., 花儿 is pronounced <i>huār</i>, not <i>huā'ér</i>). Unicode has encoded two dedicated characters for this usage: <span class="uname" translate="no">U+16FF2 CHINESE SMALL SIMPLIFIED ER</span> and <span class="uname" translate="no">U+16FF3 CHINESE SMALL TRADITIONAL ER</span> (rarely used).</p>
+              <p its-locale-filter-list="zh-hans" lang="zh-hans">汉语中的“儿”字有两种用法。作名词时，使用标准大小的“儿”（U+513F）。作为儿化韵的后缀时，使用小写的“儿”以示发音区别（如：花儿读作huār而非huā'ér）。Unicode已为此用法编码了专用字符：<span class="uname" translate="no">U+16FF2 CHINESE SMALL SIMPLIFIED ER</span> 与 <span class="uname" translate="no">U+16FF3 CHINESE SMALL TRADITIONAL ER</span>（罕用）。</p>
+              <p its-locale-filter-list="zh-hant" lang="zh-hant">漢語中的「兒」字有兩種用法。作名詞時，使用標準大小的「兒」（U+5152）。作為兒化韻的後綴時，使用小寫的「兒」以示發音區別（如：花兒讀作huār而非huā'ér）。Unicode已為此用法編碼了專用字元：<span class="uname" translate="no">U+16FF2 CHINESE SMALL SIMPLIFIED ER</span> 與 <span class="uname" translate="no">U+16FF3 CHINESE SMALL TRADITIONAL ER</span>（罕用）。</p>
+        </section>
 
     </section>
 </section>
@@ -1406,9 +1410,9 @@ var respecConfig = {
             <p its-locale-filter-list="zh-hans" lang="zh-hans"><span class="leadin">书名号</span></p>
             <p its-locale-filter-list="zh-hant" lang="zh-hant"><span class="leadin">書名號</span></p>
 
-            <p its-locale-filter-list="en" lang="en">According to <cite>Punctuation Guidance</cite> (revised edition in 2008) issued by the Ministry of Education in Taiwan, book title marks are used to indicate the names of works which usually include books, articles, songs, movies, files, calligraphy and paintings. Generally, there are two types of book title marks, wavy low lines or angle brackets. Book title mark type A <span class="uname" translate="no">U+FE4F WAVY LOW LINE</span> [﹏] has a wavy line appearance and is positioned at the <a href="#term.line-foot" class="termref">line foot</a> of the annotated text. When two works are listed adjacent to each other, their wavy lines should be visually separated. Book title mark type B includes <span class="uname" translate="no">U+300A LEFT DOUBLE ANGLE BRACKET</span> [《], <span class="uname" translate="no">U+300B RIGHT DOUBLE ANGLE BRACKET</span> [》], <span class="uname" translate="no">U+3008 LEFT ANGLE BRACKET</span> [〈] and <span class="uname" translate="no">U+3009 RIGHT ANGLE BRACKET</span> [〉]. The former pair is used for the names of books while the latter pair is used for the names of articles.</p>
-            <p its-locale-filter-list="zh-hans" lang="zh-hans">根据台湾教育部的《重订标点符号手册》（2008年修订版），书名号分为甲式及乙式，甲式为波浪底线<span class="uname" translate="no">U+FE4F WAVY LOW LINE</span> [﹏]，标注在相应文本<a href="#term.line-foot" class="termref">底端</a>，二个作品名称相邻时，甲式书名号间须在视觉上分离予以辨别。乙式有双书名号<span class="uname" translate="no">U+300A LEFT DOUBLE ANGLE BRACKET</span> [《]与<span class="uname" translate="no">U+300B RIGHT DOUBLE ANGLE BRACKET</span> [》]、单书名号<span class="uname" translate="no">U+3008 LEFT ANGLE BRACKET</span> [〈]与<span class="uname" translate="no">U+3009 RIGHT ANGLE BRACKET</span> [〉]，前一对用于标示书名号、后一对用于标示篇名。</p>
-            <p its-locale-filter-list="zh-hant" lang="zh-hant">根據台灣教育部的《重訂標點符號手冊》（2008年修訂版），書名號分為甲式及乙式，甲式為波浪底線<span class="uname" translate="no">U+FE4F WAVY LOW LINE</span> [﹏]，標注在相應文本<a href="#term.line-foot" class="termref">底端</a>，二個作品名稱相鄰時，甲式書名號間須在視覺上分離予以辨別。乙式有雙書名號<span class="uname" translate="no">U+300A LEFT DOUBLE ANGLE BRACKET</span> [《]與<span class="uname" translate="no">U+300B RIGHT DOUBLE ANGLE BRACKET</span> [》]、單書名號<span class="uname" translate="no">U+3008 LEFT ANGLE BRACKET</span> [〈]與<span class="uname" translate="no">U+3009 RIGHT ANGLE BRACKET</span> [〉]，前一對用於標示書名號、後一對用於標示篇名。</p>
+            <p its-locale-filter-list="en" lang="en">According to <cite>Punctuation Guidance</cite> (revised edition in 2008) issued by the Ministry of Education in Taiwan, book title marks are used to indicate the names of works which usually include books, articles, songs, movies, files, calligraphy and paintings. Generally, there are two types of book title marks, wavy low lines or angle brackets. Book title mark type A <span class="uname" translate="no">U+FE4F WAVY LOW LINE</span> [﹏] has a wavy line appearance and is positioned at the <a href="#term.line-foot" class="termref">line foot</a> of the annotated text. The default length of the book title mark type A equals the width of the character frame. When two works are listed adjacent to each other, the side of the book title mark close to the adjacent one is shortened (to visually separate the two book title marks for easier distinction), while the other side remains unchanged. Book title mark type B includes <span class="uname" translate="no">U+300A LEFT DOUBLE ANGLE BRACKET</span> [《], <span class="uname" translate="no">U+300B RIGHT DOUBLE ANGLE BRACKET</span> [》], <span class="uname" translate="no">U+3008 LEFT ANGLE BRACKET</span> [〈] and <span class="uname" translate="no">U+3009 RIGHT ANGLE BRACKET</span> [〉]. The former pair is used for the names of books while the latter pair is used for the names of articles.</p>
+            <p its-locale-filter-list="zh-hans" lang="zh-hans">根据台湾教育部的《重订标点符号手册》（2008年修订版），书名号分为甲式及乙式，甲式为波浪底线<span class="uname" translate="no">U+FE4F WAVY LOW LINE</span> [﹏]，标注在相应文本<a href="#term.line-foot" class="termref">底端</a>。书名号甲式长度默认与字符外框同等长度。二个作品名称相邻时，相邻的那一侧的书名号长度缩短（让两段书名号在视觉上分离，更容易辨别），而书名号的另一侧长度不变。乙式有双书名号<span class="uname" translate="no">U+300A LEFT DOUBLE ANGLE BRACKET</span> [《]与<span class="uname" translate="no">U+300B RIGHT DOUBLE ANGLE BRACKET</span> [》]、单书名号<span class="uname" translate="no">U+3008 LEFT ANGLE BRACKET</span> [〈]与<span class="uname" translate="no">U+3009 RIGHT ANGLE BRACKET</span> [〉]，前一对用于标示书名号、后一对用于标示篇名。</p>
+            <p its-locale-filter-list="zh-hant" lang="zh-hant">根據台灣教育部的《重訂標點符號手冊》（2008年修訂版），書名號分為甲式及乙式，甲式為波浪底線<span class="uname" translate="no">U+FE4F WAVY LOW LINE</span> [﹏]，標注在相應文本<a href="#term.line-foot" class="termref">底端</a>。書名號甲式長度預設與字元外框同等長度。二個作品名稱相鄰時，相鄰的那一側的書名號長度縮短（讓兩段書名號在視覺上分離，更容易辨別），而書名號的另一側長度不變。乙式有雙書名號<span class="uname" translate="no">U+300A LEFT DOUBLE ANGLE BRACKET</span> [《]與<span class="uname" translate="no">U+300B RIGHT DOUBLE ANGLE BRACKET</span> [》]、單書名號<span class="uname" translate="no">U+3008 LEFT ANGLE BRACKET</span> [〈]與<span class="uname" translate="no">U+3009 RIGHT ANGLE BRACKET</span> [〉]，前一對用於標示書名號、後一對用於標示篇名。</p>
             <p its-locale-filter-list="en" lang="en">Book title marks are used to indicate titles of books, articles, songs, films, documents, artworks and so on.</p>
             <p its-locale-filter-list="zh-hans" lang="zh-hans">书名号用于标示书名、篇名、歌曲名、影剧名、文件名、字画名等各种作品名称。</p>
             <p its-locale-filter-list="zh-hant" lang="zh-hant">書名號用於標示書名、篇名、歌曲名、影劇名、文件名、字畫名等各種作品名稱。</p>
@@ -1427,9 +1431,9 @@ var respecConfig = {
             <p its-locale-filter-list="en" lang="en"><span class="uname" translate="no">U+FF3F FULLWIDTH LOW LINE</span> [＿] is positioned at the <a href="#term.line-foot" class="termref">line foot</a> of proper nouns such as a person's name, the name of a place, etc.</p>
             <p its-locale-filter-list="zh-hans" lang="zh-hans">专名号为<span class="uname" translate="no">U+FF3F FULLWIDTH LOW LINE</span> [＿]，标示专有名词——如人名、地名等——<a href="#term.line-foot" class="termref">底端</a>的符号。</p>
             <p its-locale-filter-list="zh-hant" lang="zh-hant">專名號為<span class="uname" translate="no">U+FF3F FULLWIDTH LOW LINE</span> [＿]，標示專有名詞——如人名、地名等——<a href="#term.line-foot" class="termref">底端</a>的符號。</p>
-            <p its-locale-filter-list="en" lang="en">When two proper nouns are adjacent to each other, the lines of the marks should be visually separated.</p>
-            <p its-locale-filter-list="zh-hans" lang="zh-hans">在两个专有名词相邻时，专名号间须在视觉上分离予以辨别。</p>
-            <p its-locale-filter-list="zh-hant" lang="zh-hant">在二個專有名詞相鄰時，專名號間須在視覺上分離予以辨別。</p>
+            <p its-locale-filter-list="en" lang="en">The length of the proper noun mark equals the width of the character frame. When two proper nouns are adjacent to each other, the side of the proper noun mark close to the adjacent one is shortened (to visually separate the two proper noun marks for easier distinction), while the other side remains unchanged.</p>
+            <p its-locale-filter-list="zh-hans" lang="zh-hans">专名号长度默认与字符外框同等长度。在两个专有名词相邻时，相邻的那一侧的专名号长度缩短（让两段专名号在视觉上分离，更容易辨别），而专名号的另一侧长度不变。</p>
+            <p its-locale-filter-list="zh-hant" lang="zh-hant">專名號長度預設與字元外框同等長度。在二個專有名詞相鄰時，相鄰的那一側的專名號長度縮短（讓兩段專名號在視覺上分離，更容易辨別），而專名號的另一側長度不變。</p>
           </li>
 
         </ol>
@@ -1495,7 +1499,7 @@ var respecConfig = {
           <div class="note" id="emphasis-marks-embedded">
             <p its-locale-filter-list="en" lang="en">Unlike Chinese, emphasis marks in horizontal Japanese text are placed above the text. When Japanese text is embedded in Chinese or vice versa, the use of emphasis marks should follow the style of the main language of the text. For example, if Chinese text contains fragments of text in Japanese or another language, the entire punctuation system, including emphasis marks, should remain in the Chinese style. Even if there is Japanese text, emphasis marks should still be placed below the corresponding text to maintain the consistency and readability of Chinese layout. Similarly, in a text that is mainly in Japanese, embedded Chinese content should also follow Japanese layout rules and place emphasis marks above the text.</p>
             <p its-locale-filter-list="zh-hans" lang="zh-hans">与中文不同，横排日文文本中的着重号位于文本上方。当中文与日文文本相互嵌入时，着重号的使用需遵循文本的主要语言风格。例如，如果中文文本中包含日文或其他语言的片段，那么包括着重号在内的整个标点符号系统应保持中文风格。即使文本中混有日文，着重号也应位于相应文本部分的下方，以维持中文排版的一致性和可读性。同理，在以日文为主的文本中，嵌入的中文内容也应遵循日文排版规则，将着重号置于文本上方。</p>
-            <p its-locale-filter-list="zh-hant" lang="zh-hant">與中文不同，橫排日文文本中的著重號位于文本上方。當中文與日文文本相互嵌入時，著重號的使用需遵循文本的主要語言風格。例如，如果中文文本中包含日文或其他語言的片段，那麽包括著重號在內的整個標點符號系統應保持中文風格。即使文本中混有日文，著重號也應位于相應文本部分的下方，以維持中文排版的壹致性和可讀性。同理，在以日文為主的文本中，嵌入的中文內容也應遵循日文排版規則，將著重號置于文本上方。</p>
+            <p its-locale-filter-list="zh-hant" lang="zh-hant">與中文不同，橫排日文文本中的著重號位于文本上方。當中文與日文文本相互嵌入時，著重號的使用需遵循文本的主要語言風格。例如，如果中文文本中包含日文或其他語言的片段，那麽包括著重號在內的整個標點符號系統應保持中文風格。即使文本中混有日文，著重號也應位于相應文本部分的下方，以維持中文排版的一致性和可讀性。同理，在以日文為主的文本中，嵌入的中文內容也應遵循日文排版規則，將著重號置于文本上方。</p>
 
             <p its-locale-filter-list="en" lang="en">This rule ensures that the overall style and visual effect are not damaged in mixed text composition.</p>
             <p its-locale-filter-list="zh-hans" lang="zh-hans">这一规则确保了在多语言混排情境下，中文排版的整体风格和视觉效果不受破坏。</p>
@@ -1724,8 +1728,8 @@ var respecConfig = {
           </li>
           <li id="id126">
             <p its-locale-filter-list="en" lang="en">When Bopomofo annotations are placed to the right side of base characters, in principle they should take half of the space of the corresponding base characters. The space should include the phonetic symbols as well as the tone marks. Bopomofo annotations without tone marks, such as the level tone in Mandarin, should take the same amount of space as annotations with tone marks.</p>
-            <p its-locale-filter-list="zh-hans" lang="zh-hans">当注音标注在基字右侧时，原则上占用文字尺寸一半的空间。该空间包含字音与调号，无调号的注音（如国语阴平调）所占的注文空间与包含调号者一致。</p>
-            <p its-locale-filter-list="zh-hant" lang="zh-hant">當注音標注於基字右側時，原則上佔用文字尺寸一半的空間。該空間包含字音與調號，無調號的注音（如國語陰平調）所佔的注文空間與包含調號者一致。</p>
+            <p its-locale-filter-list="zh-hans" lang="zh-hans">当注音标注在基字右侧时，原则上占用字型大小一半的空间。该空间包含字音与调号，无调号的注音（如国语阴平调）所占的注文空间与包含调号者一致。</p>
+            <p its-locale-filter-list="zh-hant" lang="zh-hant">當注音標注於基字右側時，原則上佔用字型大小一半的空間。該空間包含字音與調號，無調號的注音（如國語陰平調）所佔的注文空間與包含調號者一致。</p>
             <div class="note" id="n041">
               <p its-locale-filter-list="en" lang="en">In vertical writing mode, when Bopomofo annotations are placed to the right side of the base characters (vertical Bopomofo), the <a>line gap</a> of the paragraph, where the Bopomofo annotations should be placed, needs more than 1.5 times that of the base characters. The type area should be designed to allow the proper space for the line gap. If the line gap is more than 1.5 times that of the height of the base character, the line gap should not be affected, whether there are Bopomofo annotations between the lines or not.</p>
               <p its-locale-filter-list="zh-hans" lang="zh-hans">文字直排、注音置于基字右侧时，段落通常需要基字尺寸1.5倍以上的行距，注文应标注在此行距间，设计版心时须先取适当行距值。段落行距在基字尺寸1.5倍以上时，行距不应受注音标注与否的影响。</p>
@@ -2163,6 +2167,9 @@ var respecConfig = {
           <p its-locale-filter-list="en" lang="en">Emphasis Marks shall be center-aligned with its corresponding character; interlinear lines must be correspond with the length and quantity of content they are marking out. As such, if there are multiple instances which need to be marked out with interlinear lines, multiple interlinear lines need to be used. Interlinear lines cannot be arbitrarily broken up. And a single interlinear line cannot be composed out of multiple fragments. For example, if there are two adjacent Proper Nouns, even if the text being marked out is set solid, both Proper Nouns must be clearly marked with two Proper Noun Marks that are distinguishable from one another. In this instance, a single Proper Noun Mark must not be used, because this would cause the two Proper Nouns to be misunderstood as a single Proper Noun.</p>
           <p its-locale-filter-list="zh-hans" lang="zh-hans">着重号应与所指示的字符居中对齐；行间线应与所标注内容的长短、数量均要保持一致，即，有几个标注项目就用几条线段，不能任意从中断开，也不能用多条线段拼接组合。比如，相邻的两个专名，即使所标注的正文汉字是密排，两个专名要用两条专名线，中间的断开要能够辨认；此时不能用一条专名线连起来标注，否则连续的两个专名会被误认为是一个专名。</p>
           <p its-locale-filter-list="zh-hant" lang="zh-hant">著重號應與所指示的字元居中對齊；行間線應與所標註內容的長短、數量均要保持一致，即，有幾個標註項目就用幾條線段，不能任意從中斷開，也不能用多條線段拼接組合。比如，相鄰的兩個專名，即使所標註的正文漢字是密排，兩個專名要用兩條專名線，中間的斷開要能夠辨認；此時不能用一條專名線連起來標註，否則連續的兩個專名會被誤認為是一個專名。</p>
+          <p its-locale-filter-list="en" lang="en">By default, the length of interlinear book title marks (type A) and proper noun marks should match the corresponding <a href="#term.character-frame" class="termref">character frames</a>. When two titles or proper nouns are adjacent, the adjoining ends of the marks should be shortened to create a visual separation, while the other ends remain unchanged. The shortening should not exceed 1/8&nbsp;em.</p>
+          <p its-locale-filter-list="zh-hans" lang="zh-hans">默认情况下，行间书名号（甲式）与专名号的长度应与相应<a href="#term.character-frame" class="termref">文字外框</a>一致。若两个专有名词或作品名称相邻，则相邻一侧的书名号或专名号应缩短，以在视觉上将二者区分开来，另一侧长度保持不变。缩短量不应超过1/8&nbsp;em。</p>
+          <p its-locale-filter-list="zh-hant" lang="zh-hant">預設情況下，行間書名號（甲式）與專名號的長度應與相應<a href="#term.character-frame" class="termref">文字外框</a>一致。若兩個專有名詞或作品名稱相鄰，則相鄰一側的書名號或專名號應縮短，以在視覺上將二者區分開來，另一側長度保持不變。縮短量不應超過1/8&nbsp;em。</p>
 
           <p its-locale-filter-list="en" lang="en">Interlinear marks must be as close to the marked text as possible.<br>The thickness and size of the interlinear lines and emphasis marks is determined by the font design and typesetting rendering engine, but even though there is no absolute limitation, the sizing of these interlinear marks must be harmonious with the font size and letter-spacing of the marked text.</p>
           <p its-locale-filter-list="zh-hans" lang="zh-hans">行间标点应尽量紧贴所标注汉字一侧。<br>行间线、着重号的大小或粗度取决于字体和排版引擎的设计，虽然没有绝对限制，但显然尺寸上应与所标汉字字号、字距相匹配。</p>
@@ -2429,7 +2436,7 @@ var respecConfig = {
           <li id="european-numerals-no-split">
             <p its-locale-filter-list="en" lang="en"><a href="#term.european-numerals" class="termref">European numerals</a> cannot be split into two lines.</p>
             <p its-locale-filter-list="zh-hans" lang="zh-hans"><a href="#term.european-numerals" class="termref">阿拉伯数字</a>应作为一个整体，不能拆成两行。</p>
-            <p its-locale-filter-list="zh-hant" lang="zh-hant"><a href="#term.european-numerals" class="termref">阿拉伯數字</a>應作為壹個整體，不能拆成兩行。</p>
+            <p its-locale-filter-list="zh-hant" lang="zh-hant"><a href="#term.european-numerals" class="termref">阿拉伯數字</a>應作為一個整體，不能拆成兩行。</p>
           </li>
           <li id="percent-sign-no-split">
               <p its-locale-filter-list="en" lang="en">The percent sign (%), thousandth sign (‰), degree symbol (°, ℃, ℉) and the European numerals preceding them cannot be separated into two lines.</p>
@@ -2895,7 +2902,7 @@ var respecConfig = {
           位于行内的夹注符号。可以对开始夹注符号的前侧、结束夹注符号的后侧进行挤压，最小可以挤压到半个汉字字宽。一行内如有多处，应该同时、同等量处理。
         </p>
         <p its-locale-filter-list="zh-hant" lang="zh-hant" class="checkme">
-          位於行內的夾註符號。可以對開始夾註符號的前側、結束夾註符號的後側進行擠壓，最小可以擠壓到半個漢字字寬。壹行內如有多處，應該同時、同等量處理。
+          位於行內的夾註符號。可以對開始夾註符號的前側、結束夾註符號的後側進行擠壓，最小可以擠壓到半個漢字字寬。一行內如有多處，應該同時、同等量處理。
         </p>
       </li>
 
@@ -3007,7 +3014,7 @@ var respecConfig = {
             很多排版风格在实际处理上，只允许最大拉伸到三分之一汉字宽。与上述挤压处理一样，在一些排版风格中，中西间距固定默认宽度（如四分之一汉字宽），被排除在行内调整对象之外，不允许被拉伸。
           </p>
           <p its-locale-filter-list="zh-hant" lang="zh-hant" class="checkme">
-            很多排版風格在實際處理上，只允許最大拉伸到三分之一漢字寬。與上述擠壓處理一樣，在一些排版風格中，中西間距固定默認寬度（如四分之壹漢字寬），被排除在行內調整對象之外，不允許被拉伸。
+            很多排版風格在實際處理上，只允許最大拉伸到三分之一漢字寬。與上述擠壓處理一樣，在一些排版風格中，中西間距固定默認寬度（如四分之一漢字寬），被排除在行內調整對象之外，不允許被拉伸。
           </p>
         </aside>
       </li>
@@ -3427,9 +3434,9 @@ var respecConfig = {
     <p its-locale-filter-list="en" lang="en">Han characters have square <a href="#term.character-frame" class="termref">character frames</a> of equal dimensions. Aligned with the vertical and horizontal center of the character frame, there is a smaller box called the <a href="#term.character-face" class="termref">character face</a>, which contains the actual symbol. (There should be some space left between the character face and the character frame).</p>
     <p its-locale-filter-list="zh-hans" lang="zh-hans">汉字有着正方形的<a href="#term.character-frame" class="termref">文字外框</a>。文字外框的正中央，有着比文字外框小的<a href="#term.character-face" class="termref">字面</a>（反过来说，字面的上下左右与文字外框之间有若干空白。根据不同的字面设计，空白的大小会有所不同）。</p>
     <p its-locale-filter-list="zh-hant" lang="zh-hant">漢字有著正方形的<a href="#term.character-frame" class="termref">文字外框</a>。文字外框的正中央，有著比文字外框小的<a href="#term.character-face" class="termref">字面</a>（反過來說，字面的上下左右與文字外框之間有若干空白。根據不同的字面設計，空白的大小會有所不同）。</p>
-    <p its-locale-filter-list="en" lang="en">Character size is measured by the size of the character frame. <dfn id="def_characterAdvance">Character advance</dfn> is a term used to describe the advance width of the character frame of a character, which should be the same as the width of the character.</p>
-    <p its-locale-filter-list="zh-hans" lang="zh-hans">文字尺寸则为文字外框的尺寸。此外，字幅则是依照文字排列方向的文字外框大小，为文字的宽度。</p>
-    <p its-locale-filter-list="zh-hant" lang="zh-hant">文字尺寸則為文字外框的尺寸。此外，字幅則是依照文字排列方向的文字外框大小，為文字的寬度。</p>
+    <p its-locale-filter-list="en" lang="en">Font size is measured by the size of the character frame. <dfn id="def_characterAdvance">Character advance</dfn> is a term used to describe the advance width of the character frame of a character, which should be the same as the width of the character.</p>
+    <p its-locale-filter-list="zh-hans" lang="zh-hans">字型大小则为文字外框的尺寸。此外，字幅则是依照文字排列方向的文字外框大小，为文字的宽度。</p>
+    <p its-locale-filter-list="zh-hant" lang="zh-hant">字型大小則為文字外框的尺寸。此外，字幅則是依照文字排列方向的文字外框大小，為文字的寬度。</p>
 
     <!-- <p>
       TBD: add more content about baseline
@@ -3545,11 +3552,11 @@ var respecConfig = {
     <p its-locale-filter-list="zh-hans" lang="zh-hans">书籍多数仅使用一种排版样式，杂志则会使用上数种。</p>
     <p its-locale-filter-list="zh-hant" lang="zh-hant">書籍多數僅使用一種排版樣式，雜誌則會使用上數種。</p>
 
-    <p its-locale-filter-list="en" lang="en" class="checkme">The <a href="#term.type-area" class="termref">type area</a> is the rectangular region in the middle of the page that contains the main body of text. The text within this area can be divided into two or more independent parts according to the reading direction of the text. Each independent part is called a "column", and this type of division is called a "multi-column layout". Depending on the number of columns on a page, it can be specifically referred to as "two-column", "three-column", etc. Conversely, filling the type area directly with text without dividing it into columns is called a "single-column" layout.</p>
+    <p its-locale-filter-list="en" lang="en">The <a href="#term.type-area" class="termref">type area</a> is the rectangular region in the middle of the page that contains the main body of text. The text within this area can be divided into two or more independent parts according to the reading direction of the text. Each independent part is called a "column", and this type of division is called a "multi-column layout". Depending on the number of columns in a page, the type area can be specifically referred to as "two-column", "three-column", etc. Conversely, filling the type area directly with text without dividing it into columns produces a "single-column" layout.</p>
     <p its-locale-filter-list="zh-hans" lang="zh-hans"><a href="#term.type-area" class="termref">版心</a>是页面中间包含文本的主体的矩形区域。版心里的文字，可以按照文字阅读方向分割成两个或者更多的独立部分，每个独立部分称为“栏”，而这种分割版式叫“分栏”，根据一页里栏数，可以具体地称为“双栏”“三栏”等各种方式；相对地，将文字直接按照基本版式填满版心、不分栏的方式也可成为“通栏”。</p>
     <p its-locale-filter-list="zh-hant" lang="zh-hant"><a href="#term.type-area" class="termref">版心</a>是頁面中間包含文本的主體的矩形區域。版心裡的文字，可以按照文字閱讀方向分割成兩個或者更多的獨立部分，每個獨立部分稱為「欄」，而這種分割版式叫「分欄」，根據一頁裡欄數，可以具體地稱為「雙欄」「三欄」等各種方式；相對地，將文字直接按照基本版式填滿版心、不分欄的方式也可成為「通欄」。</p>
 
-    <p its-locale-filter-list="en" lang="en" class="checkme">Although books typically use only one typesetting style (i.e., the "page format"), the design of actual pages, such as the table of contents and index, is often redesigned based on the page format. There are also many cases where pages like the index are designed with different typesetting styles. For example, the index of a vertically typeset book might be designed with horizontal or multi-column layouts. Nevertheless, the text block size of the index should still be similar to that of the page format.</p>
+    <p its-locale-filter-list="en" lang="en">Although books typically use only one typesetting style (i.e., the "page format"), the design of some actual pages, such as the table of contents and index, is often redesigned based on the page format. There are also many cases where pages like the index are designed with different typesetting styles. For example, the index of a vertically typeset book might be designed with horizontal or multi-column layouts. Nevertheless, the type area of the index should still be similar to that of the page format.</p>
     <p its-locale-filter-list="zh-hans" lang="zh-hans">尽管书籍通常仅使用一种排版样式（即“基本版式”），在实际页面的设计上，如目录、索引等页面，会基于基本版式重新设计。索引等页面采用不同排版样式设计的案例也相当多，直排书索引也会以横排或者多栏排版等方式设计。尽管如此，索引的版心尺寸仍应与基本版式近似。</p>
     <p its-locale-filter-list="zh-hant" lang="zh-hant" class="checkme">盡管書籍通常僅使用一種排版樣式（即“基本版式”），在實際頁面的設計上，如目錄、索引等頁面，會基於基本版式重新設計。索引等頁面採用不同排版樣式設計的案例也相當多，直排書索引也會以橫排或者多欄排版等方式設計。盡管如此，索引的版心尺寸仍應與基本版式近似。</p>
     <p its-locale-filter-list="en" lang="en">Magazines usually contain various kinds of content, which naturally leads to a variety of template designs, different sizes of characters, and varying numbers of columns. </p>
@@ -3603,17 +3610,17 @@ var respecConfig = {
         <span its-locale-filter-list="zh-hant" lang="zh-hant">基本版式的設計元素</span>
       </h4>
 
-      <p its-locale-filter-list="en" lang="en" class="checkme">The type area defines the basic printing style of a book. The following are the basic elements of the type area.</p>
+      <p its-locale-filter-list="en" lang="en">The following are the basic elements of the type area:</p>
       <p its-locale-filter-list="zh-hans" lang="zh-hans">基本版式的设计元素如下：</p>
       <p its-locale-filter-list="zh-hant" lang="zh-hant">基本版式的設計元素如下：</p>
       <ul>
         <li id="id32">
-          <p its-locale-filter-list="en" lang="en"> Character size and typeface name</p>
-          <p its-locale-filter-list="zh-hans" lang="zh-hans">所使用的文字尺寸及字体种类</p>
-          <p its-locale-filter-list="zh-hant" lang="zh-hant">所使用的文字尺寸及字體種類</p>
+          <p its-locale-filter-list="en" lang="en">Font size and typeface name</p>
+          <p its-locale-filter-list="zh-hans" lang="zh-hans">所使用的字型大小及字体种类</p>
+          <p its-locale-filter-list="zh-hant" lang="zh-hant">所使用的字型大小及字體種類</p>
         </li>
         <li id="id33">
-          <p its-locale-filter-list="en" lang="en"> Text direction (vertical writing mode or horizontal writing mode)</p>
+          <p its-locale-filter-list="en" lang="en">Text direction (vertical writing mode or horizontal writing mode)</p>
           <p its-locale-filter-list="zh-hans" lang="zh-hans">文本方向（直排或横排）</p>
           <p its-locale-filter-list="zh-hant" lang="zh-hant">文本方向（直排或橫排）</p>
         </li>
@@ -3653,7 +3660,7 @@ var respecConfig = {
         <span its-locale-filter-list="zh-hant" lang="zh-hant">從基本版式到實際版面的定版設計</span>
       </h4>
 
-      <p its-locale-filter-list="en" lang="en" class="checkme">This section explains how to create an actual page format based on the type area, a step referred to as "page format finalization" for specific pages.</p>
+      <p its-locale-filter-list="en" lang="en" class="checkme">This section explains how to create an actual page format based on the template of the page format, a step referred to as "page format finalization" for specific pages.</p>
       <p its-locale-filter-list="zh-hans" lang="zh-hans">本部分说明如何以基本版式为起点来为实际的各页面确定版式，这个步骤称做具体页面的“定版”。</p>
       <p its-locale-filter-list="zh-hant" lang="zh-hant" class="checkme">本部分說明如何以基本版式為起點來為實際的各頁面確定版式，這個步驟稱做具體頁面的「定版」。</p>
 
@@ -3662,9 +3669,9 @@ var respecConfig = {
       <p its-locale-filter-list="zh-hant" lang="zh-hant" class="checkme">報紙、雜誌經常會根據需要，在定版的基礎上改變欄數，這種操作方式稱作「破欄」。比如將原定版中的三欄部分改為雙欄，稱作「三破二」；將原定版中的三欄部分改為四欄，稱作「三破四」。破欄操作時要根據原定版格式仔細計算確認變更後的欄寬和欄距。</p>
       <ol>
         <li id="id39">
-          <p its-locale-filter-list="en" lang="en" class="checkme"><span class="leadin">Realm and position of headings:</span> The spacing of the heading in the block direction (i.e., height of the heading in horizontal writing mode or width of the heading in vertical writing mode) should be calculated from the position of the body text, and set to a multiple of the number of lines. If indent of the heading space is required, the starting point should be from the body text position set by the type area, and the amount of indent should be a multiple of the body text size.</p>
-          <p its-locale-filter-list="zh-hans" lang="zh-hans"><span class="leadin">标题的地位：</span>标题摆放的位置及其所占空间，应以基本版式设定中行的位置为基准，以“占几行空间”方式来设计，这个方式称作“占行”。实际定版工作中为计算方便，通常设置为行的整数倍。定版要求通常写成“单行标题占三行”或“双行标题占五行”等方式，“单行”“双行”指标题文字本身的行数，而“三行”“五行”则指的是基本版式中行所占的空间。标题缩排时，也应以基本版式所设定的文字尺寸为基准，决定要缩排的量。具体方法可见[[[#handling_of_headings]]]。</p>
-          <p its-locale-filter-list="zh-hant" lang="zh-hant" class="checkme"><span class="leadin">標題的地位：</span>標題擺放的位置及其所占空間，應以基本版式設定中行的位置為基準，以「占幾行空間」方式來設計，這個方式稱作「占行」。實際定版工作中為計算方便，通常設置為行的整數倍。定版要求通常寫成「單行標題占三行」或「雙行標題占五行」等方式，「單行」「雙行」指標題文字本身的行數，而「三行」「五行」則指的是基本版式中行所占的空間。標題縮排時，也應以基本版式所設定的文字尺寸為基準，決定要縮排的量。具體方法可見[[[#handling_of_headings]]]。</p>
+          <p its-locale-filter-list="en" lang="en" class="checkme"><span class="leadin">The placement of headings:</span> The spacing of the heading in the block direction (i.e., height of the heading in horizontal writing mode or width of the heading in vertical writing mode) should be calculated from the position of the body text, and set to a multiple of the number of lines. If indent of the heading space is required, the starting point should be from the body text position set by the type area, and the amount of indent should be a multiple of the body text size.</p>
+          <p its-locale-filter-list="zh-hans" lang="zh-hans"><span class="leadin">标题的地位：</span>标题摆放的位置及其所占空间，应以基本版式设定中行的位置为基准，以“占几行空间”方式来设计，这个方式称作“占行”。实际定版工作中为计算方便，通常设置为行的整数倍。定版要求通常写成“单行标题占三行”或“双行标题占五行”等方式，“单行”“双行”指标题文字本身的行数，而“三行”“五行”则指的是基本版式中行所占的空间。标题缩排时，也应以基本版式所设定的字型大小为基准，决定要缩排的量。具体方法可见[[[#handling_of_headings]]]。</p>
+          <p its-locale-filter-list="zh-hant" lang="zh-hant" class="checkme"><span class="leadin">標題的地位：</span>標題擺放的位置及其所占空間，應以基本版式設定中行的位置為基準，以「占幾行空間」方式來設計，這個方式稱作「占行」。實際定版工作中為計算方便，通常設置為行的整數倍。定版要求通常寫成「單行標題占三行」或「雙行標題占五行」等方式，「單行」「雙行」指標題文字本身的行數，而「三行」「五行」則指的是基本版式中行所占的空間。標題縮排時，也應以基本版式所設定的字型大小為基準，決定要縮排的量。具體方法可見[[[#handling_of_headings]]]。</p>
         </li>
         <li id="id40">
           <p its-locale-filter-list="en" lang="en" class="checkme"><span class="leadin">Size of illustrations:</span> In horizontal writing mode, the width of illustrations should, if at all possible, be the width of the type area; in horizontal writing mode with multiple columns, the width of illustrations should, if at all possible, be the width of one type area column. The illustrations are usually set at the head or the foot of the page. Likewise, in vertical writing mode, the height of illustrations should, if at all possible, be either the height of one type area column or the height of the type area. The illustrations are usually set at the right or left of the type area.</p>
@@ -3694,14 +3701,14 @@ var respecConfig = {
           <p its-locale-filter-list="zh-hant" lang="zh-hant">決定版心尺寸</p>
           <ol>
             <li id="id43">
-              <p its-locale-filter-list="en" lang="en">For a document with a single column per page, specify the character size, the line length (the number of characters per line), the number of lines per page, and the <a>line gap</a>. </p>
-              <p its-locale-filter-list="zh-hans" lang="zh-hans">无分栏时，需决定文字尺寸、一行的字数（即行长）、一页的行数以及行距。</p>
-              <p its-locale-filter-list="zh-hant" lang="zh-hant">無分欄時，需決定文字尺寸、一行的字數（即行長）、一頁的行數以及行距。</p>
+              <p its-locale-filter-list="en" lang="en">For a document with a single column per page, specify the font size, the line length (the number of characters per line), the number of lines per page, and the <a>line gap</a>. </p>
+              <p its-locale-filter-list="zh-hans" lang="zh-hans">无分栏时，需决定字型大小、一行的字数（即行长）、一页的行数以及行距。</p>
+              <p its-locale-filter-list="zh-hant" lang="zh-hant">無分欄時，需決定字型大小、一行的字數（即行長）、一頁的行數以及行距。</p>
             </li>
             <li id="id44">
-              <p its-locale-filter-list="en" lang="en">For a document with multiple columns per page, specify the character size, the line length (the number of characters per line), the number of lines per column, the <a>line gap</a>, the number of columns and the column gap.</p>
-              <p its-locale-filter-list="zh-hans" lang="zh-hans">当分栏时，需决定文字尺寸、一行的字数（即行长）、一栏的行数、行距、栏数以及栏距。</p>
-              <p its-locale-filter-list="zh-hant" lang="zh-hant">當分欄時，需決定文字尺寸、一行的字數（即行長）、一欄的行數、行距、欄數以及欄距。</p>
+              <p its-locale-filter-list="en" lang="en">For a document with multiple columns per page, specify the font size, the line length (the number of characters per line), the number of lines per column, the <a>line gap</a>, the number of columns and the column gap.</p>
+              <p its-locale-filter-list="zh-hans" lang="zh-hans">当分栏时，需决定字型大小、一行的字数（即行长）、一栏的行数、行距、栏数以及栏距。</p>
+              <p its-locale-filter-list="zh-hant" lang="zh-hant">當分欄時，需決定字型大小、一行的字數（即行長）、一欄的行數、行距、欄數以及欄距。</p>
             </li>
           </ol>
         </li>
@@ -3948,15 +3955,15 @@ var respecConfig = {
           <p its-locale-filter-list="zh-hant" lang="zh-hant">一般內文主要使用五號字（10.5&nbsp;pt ≒ 3.7&nbsp;mm），而報紙、雜誌則使用新五號字（9&nbsp;pt ≒ 3.2&nbsp;mm），兩種皆常用。而一般內文字最小使用到六號字（7.875&nbsp;pt ≒ 2.8&nbsp;mm），若小於此尺寸，由於漢字結構複雜，較難閱讀。</p>
         </li>
         <li id="id52">
-          <p its-locale-filter-list="en" lang="en">Line length should be multiples of the character size and the line ends should be aligned with each other.</p>
-          <p its-locale-filter-list="zh-hans" lang="zh-hans">一行的行长应为文字尺寸的整数倍，各行的位置尽可能头尾对齐。</p>
-          <p its-locale-filter-list="zh-hant" lang="zh-hant">一行的行長應為文字尺寸的整數倍，各行的位置盡可能頭尾對齊。</p>
+          <p its-locale-filter-list="en" lang="en">Line length should be multiples of the font size and the line ends should be aligned with each other.</p>
+          <p its-locale-filter-list="zh-hans" lang="zh-hans">一行的行长应为字型大小的整数倍，各行的位置尽可能头尾对齐。</p>
+          <p its-locale-filter-list="zh-hant" lang="zh-hant">一行的行長應為字型大小的整數倍，各行的位置盡可能頭尾對齊。</p>
           <p its-locale-filter-list="en" lang="en">For Chinese composition without intermixed Western text, the characters all have a square-shaped frame, so all line lengths except that of the last line of the paragraph should, in principle, be the same.</p>
           <p its-locale-filter-list="zh-hans" lang="zh-hans">中文在不与西文混排的状况下，所使用的文字外框皆为正方形，除段落最后一行不对齐外，各行行首、行尾皆需对齐，这是重要的排版原则。</p>
           <p its-locale-filter-list="zh-hant" lang="zh-hant">中文在不與西文混排的狀況下，所使用的文字外框皆為正方形，除段落最後一行不對齊外，各行行首、行尾皆需對齊，這是重要的排版原則。</p>
           <div class="note" id="n008">
             <p its-locale-filter-list="en" lang="en">Due to the following reasons, the line length must be an integral multiple of the font size:</p>
-            <p its-locale-filter-list="zh-hans" lang="zh-hans">基于下述理由，行长必须为文字尺寸的整数倍：</p>
+            <p its-locale-filter-list="zh-hans" lang="zh-hans">基于下述理由，行长必须为字型大小的整数倍：</p>
             <ol>
               <li>
               <p its-locale-filter-list="en" lang="en">The basic principle of Chinese typesetting is, with the exception of the last line of a paragraph, the end of every line should be aligned with each other.</p>
@@ -3987,24 +3994,24 @@ var respecConfig = {
           <p its-locale-filter-list="zh-hans" lang="zh-hans">繁体中文排版中，字间的注音符号可能会超入行距空间，而翻译书籍也可能使用类似日文排版的<a href="https://www.w3.org/TR/jlreq/#ruby_and_emphasis_dots">ruby</a>文字，此时行距仍需保持一致。当文中需要配置这些元素时，于设计版心的阶段就须考量到这些要素来决定行距。</p>
           <p its-locale-filter-list="zh-hant" lang="zh-hant">繁體中文排版中，字間的注音符號可能會超入行距空間，而翻譯書籍亦可能使用類似日文排版的<a href="https://www.w3.org/TR/jlreq/#ruby_and_emphasis_dots">ruby</a>文字，此時行距仍需保持一致。當文中需要配置這些元素時，於設計版心的階段就須考量到這些要素來決定行距。</p>
           <div class="note" id="n009">
-            <p its-locale-filter-list="en" lang="en">The <a>line gap</a> for the type area is commonly set to a value between 50% and 100% of the height of the character frame used for the type area. A shorter line gap can be chosen in cases where the line length is short or the character size of the type area is relatively small. On the other hand, the line gap usually does not exceed the character size. Increasing the line gap beyond the character size does not improve the reading experience.</p>
-            <p its-locale-filter-list="zh-hans" lang="zh-hans">版心的行距多半介于文字尺寸的50%–100%之间，当行长较短或文字尺寸较小时，行距设定也会相对较小。反之，行距一般不会超过文字尺寸，就算超过文字尺寸，也不会因而增加易读性。</p>
-            <p its-locale-filter-list="zh-hant" lang="zh-hant">版心的行距多半介於文字尺寸的50%–100%之間，當行長較短或文字尺寸較小時，行距設定也會相對較小。反之，行距一般不會超過文字尺寸，就算超過文字尺寸，也不會因而增加易讀性。</p>
+            <p its-locale-filter-list="en" lang="en">The <a>line gap</a> for the type area is commonly set to a value between 50% and 100% of the height of the character frame used for the type area. A shorter line gap can be chosen in cases where the line length is short or the font size of the type area is relatively small. On the other hand, the line gap usually does not exceed the font size. Increasing the line gap beyond the font size does not improve the reading experience.</p>
+            <p its-locale-filter-list="zh-hans" lang="zh-hans">版心的行距多半介于字型大小的50%–100%之间，当行长较短或字型较小时，行距设定也会相对较小。反之，行距一般不会超过字型大小，就算超过字型大小，也不会因而增加易读性。</p>
+            <p its-locale-filter-list="zh-hant" lang="zh-hant">版心的行距多半介於字型大小的50%–100%之間，當行長較短或字型較小時，行距設定也會相對較小。反之，行距一般不會超過字型大小，就算超過字型大小，也不會因而增加易讀性。</p>
           </div>
           <div class="note" id="n010">
-            <p its-locale-filter-list="en" lang="en">There is another method of specifying the type area that uses <a href="#term.line-height" class="termref">line height</a> rather than line gaps. Line height is the distance between two adjacent lines measured from their reference points. The reference point differs from implementation to implementation. For example, in vertical writing mode, the horizontal center of the character frame can be used, and in horizontal writing mode, the vertical center of the character frame can be used. When the character size is the same for every character, the following calculation is used:</p>
+            <p its-locale-filter-list="en" lang="en">There is another method of specifying the type area that uses <a href="#term.line-height" class="termref">line height</a> rather than line gaps. Line height is the distance between two adjacent lines measured from their reference points. The reference point differs from implementation to implementation. For example, in vertical writing mode, the horizontal center of the character frame can be used, and in horizontal writing mode, the vertical center of the character frame can be used. When the font size is the same for every character, the following calculation is used:</p>
             <p its-locale-filter-list="zh-hans" lang="zh-hans">指定版心的方法中，有着不以行距，而是依<a href="#term.line-height" class="termref">行高</a>来设定的方法。行高就是彼此邻接的两行之基准点间的距离。基准点依照处理方式而会有所不同。比如，在直排时可以行左右的中央线为基准点，横排时可以行上下的中央线为基准点。当配置的文字全部尺寸相同时，有着以下关系：</p>
             <p its-locale-filter-list="zh-hant" lang="zh-hant">指定版心的方法中，有著不以行距，而是依<a href="#term.line-height" class="termref">行高</a>來設定的方法。行高就是彼此鄰接的兩行之基準點間的距離。基準點依照處理方式而會有所不同。比如，在直排時可以行左右的中央線為基準點，橫排時可以行上下的中央線為基準點。當配置的文字全部尺寸相同時，有著以下關係：</p>
             <ul>
               <li id="id54">
-                <p its-locale-filter-list="en" lang="en">line height = character size / 2 + line gap + character size / 2 = character size + line gap</p>
-                <p its-locale-filter-list="zh-hans" lang="zh-hans">行高=文字尺寸÷2+行距+文字尺寸÷2=文字尺寸+行距</p>
-                <p its-locale-filter-list="zh-hant" lang="zh-hant">行高=文字尺寸÷2+行距+文字尺寸÷2=文字尺寸+行距</p>
+                <p its-locale-filter-list="en" lang="en">line height = font size / 2 + line gap + font size / 2 = font size + line gap</p>
+                <p its-locale-filter-list="zh-hans" lang="zh-hans">行高=字型大小÷2+行距+字型大小÷2=字型大小+行距</p>
+                <p its-locale-filter-list="zh-hant" lang="zh-hant">行高=字型大小÷2+行距+字型大小÷2=字型大小+行距</p>
               </li>
               <li id="id55">
-                <p its-locale-filter-list="en" lang="en"><dfn id="endef_lineGap">line gap</dfn> = line height - character size</p>
-                <p its-locale-filter-list="zh-hans" lang="zh-hans">行距=行高-文字尺寸</p>
-                <p its-locale-filter-list="zh-hant" lang="zh-hant">行距=行高-文字尺寸</p>
+                <p its-locale-filter-list="en" lang="en"><dfn id="endef_lineGap">line gap</dfn> = line height - font size</p>
+                <p its-locale-filter-list="zh-hans" lang="zh-hans">行距=行高-字型大小</p>
+                <p its-locale-filter-list="zh-hant" lang="zh-hant">行距=行高-字型大小</p>
               </li>
             </ul>
           </div>
@@ -4150,17 +4157,17 @@ var respecConfig = {
       <ul>
         <li id="id178">
           <p its-locale-filter-list="en" lang="en">Whole-page headings</p>
-          <p its-locale-filter-list="zh-hans" lang="zh-hans" class="checkme">全页标题</p>
+          <p its-locale-filter-list="zh-hans" lang="zh-hans">全页标题</p>
           <p its-locale-filter-list="zh-hant" lang="zh-hant">全頁標題</p>
         </li>
         <li id="id179">
           <p its-locale-filter-list="en" lang="en">Block headings</p>
-          <p its-locale-filter-list="zh-hans" lang="zh-hans" class="checkme">内文标题</p>
+          <p its-locale-filter-list="zh-hans" lang="zh-hans">内文标题</p>
           <p its-locale-filter-list="zh-hant" lang="zh-hant">內文標題</p>
         </li>
         <li id="id180">
           <p its-locale-filter-list="en" lang="en">Run-in headings</p>
-          <p its-locale-filter-list="zh-hans" lang="zh-hans" class="checkme">同行标题</p>
+          <p its-locale-filter-list="zh-hans" lang="zh-hans">同行标题</p>
           <p its-locale-filter-list="zh-hant" lang="zh-hant">同行標題</p>
         </li>
       </ul>
@@ -4213,13 +4220,13 @@ var respecConfig = {
       <p its-locale-filter-list="zh-hant" lang="zh-hant">標題主要是為了呈現階層結構，所以需要以特別的表現體裁來顯示其階層。標題的表現體裁包含以下幾種方式：</p>
       <ol>
         <li id="id181">
-          <p its-locale-filter-list="en" lang="en"><span class="leadin">Character size for the heading:</span> The character size of headings should be selected in accordance with the level of headings. For example, when the character size of main text is 9 point, the small headings are usually set in 10 points, medium headings are usually set in 12 points and large headings are usually set in 14 points.</p>
-          <p its-locale-filter-list="zh-hans" lang="zh-hans" class="checkme">使用不同的文字尺寸呈现标题的阶层，例如，有着大标、中标、小标时，小标比本文文字尺寸(例如：9&nbsp;pt)大一阶段(例如：10&nbsp;pt)，中标则比小标大一阶段(例如：12&nbsp;pt)，大标则比中标大一阶段(例如:14&nbsp;pt)。</p>
-          <p its-locale-filter-list="zh-hant" lang="zh-hant">使用不同的文字尺寸呈現標題的階層，例如，有著大標、中標、小標時，小標比本文文字尺寸（例如：9&nbsp;pt）大一階段（例如：10&nbsp;pt），中標則比小標大一階段（例如：12&nbsp;pt），大標則比中標大一階段（例如：14&nbsp;pt）。</p>
+          <p its-locale-filter-list="en" lang="en"><span class="leadin">Font size for the heading:</span> The font size of headings should be selected in accordance with the level of headings. For example, when the font size of main text is 9 point, the small headings are usually set in 10 points, medium headings are usually set in 12 points and large headings are usually set in 14 points.</p>
+          <p its-locale-filter-list="zh-hans" lang="zh-hans" class="checkme">使用不同的字型大小呈现标题的阶层，例如，有着大标、中标、小标时，小标比本文字型大小(例如：9&nbsp;pt)大一阶段(例如：10&nbsp;pt)，中标则比小标大一阶段(例如：12&nbsp;pt)，大标则比中标大一阶段(例如:14&nbsp;pt)。</p>
+          <p its-locale-filter-list="zh-hant" lang="zh-hant">使用不同的字型大小呈現標題的階層，例如，有著大標、中標、小標時，小標比本文字型大小（例如：9&nbsp;pt）大一階段（例如：10&nbsp;pt），中標則比小標大一階段（例如：12&nbsp;pt），大標則比中標大一階段（例如：14&nbsp;pt）。</p>
           <div class="note" id="n055">
-            <p its-locale-filter-list="en" lang="en">The character size of headings is usually larger than that of the main text. When this rule is applied, the characters in the heading should be 10% to 20% larger. And the character size of higher level headings is larger than the size of smaller size headings.</p>
-            <p its-locale-filter-list="zh-hans" lang="zh-hans" class="checkme">也有采用将本文文字尺寸依照比例放大的方式，使用这方式时，以10%–20%上下，依阶层放大为佳。</p>
-            <p its-locale-filter-list="zh-hant" lang="zh-hant">也有採用將本文文字尺寸依照比例放大的方式，使用這方式時，以10%–20%上下，依階層放大為佳。</p>
+            <p its-locale-filter-list="en" lang="en">The font size of headings is usually larger than that of the main text. When this rule is applied, the characters in the heading should be 10% to 20% larger. And the font size of higher level headings is larger than the size of smaller size headings.</p>
+            <p its-locale-filter-list="zh-hans" lang="zh-hans" class="checkme">也有采用将本文字型大小依照比例放大的方式，使用这方式时，以10%–20%上下，依阶层放大为佳。</p>
+            <p its-locale-filter-list="zh-hant" lang="zh-hant">也有採用將本文字型大小依照比例放大的方式，使用這方式時，以10%–20%上下，依階層放大為佳。</p>
           </div>
         </li>
         <li id="id182">
@@ -4242,9 +4249,9 @@ var respecConfig = {
           <p its-locale-filter-list="zh-hans" lang="zh-hans" class="checkme">对齐横排的大标与中标使用置中对齐的案例相当多，但直排时，则多使用对齐行首或下字。</p>
           <p its-locale-filter-list="zh-hant" lang="zh-hant">對齊橫排的大標與中標使用置中對齊的案例相當多，但直排時，則多使用對齊行首或下字。</p>
           <div class="note" id="n058">
-            <p its-locale-filter-list="en" lang="en">The number of characters of line start indent for a heading depends on the heading level. If the heading level is higher, the indent character number is less, if the heading level is lower, the number of indent characters is more. The character size is based on the main text of the type area. The difference in character numbers is usually around two characters.</p>
-            <p its-locale-filter-list="zh-hans" lang="zh-hans" class="checkme">下字时，下字的量一般使用版心设定文字尺寸的两倍汉字的长宽。大标、中标、小标下字量，由各排版者决定，无一定规则。</p>
-            <p its-locale-filter-list="zh-hant" lang="zh-hant">下字時，下字的量一般使用版心設定文字尺寸的二倍漢字之長寬。大標、中標、小標下字量，由各排版者決定，無一定規則。</p>
+            <p its-locale-filter-list="en" lang="en">The number of characters of line start indent for a heading depends on the heading level. If the heading level is higher, the indent character number is less, if the heading level is lower, the number of indent characters is more. The font size is based on the main text of the type area. The difference in character numbers is usually around two characters.</p>
+            <p its-locale-filter-list="zh-hans" lang="zh-hans" class="checkme">下字时，下字的量一般使用版心设定字型大小的两倍汉字的长宽。大标、中标、小标下字量，由各排版者决定，无一定规则。</p>
+            <p its-locale-filter-list="zh-hant" lang="zh-hant">下字時，下字的量一般使用版心設定字型大小的二倍漢字之長寬。大標、中標、小標下字量，由各排版者決定，無一定規則。</p>
           </div>
         </li>
         <li id="id184">
@@ -4333,29 +4340,29 @@ var respecConfig = {
         <span its-locale-filter-list="zh-hant" lang="zh-hant">同行標題的處理方式</span>
       </h4>
 
-      <p its-locale-filter-list="en" lang="en">Run-in headings are usually used for low level headings. The following are some examples of run-in headings. Inter-character space between the run-in heading and following main text is usually a one character space of the base character size decided for the type area. Note that the run-in heading may be set at the last line of the page, or of the column in multi column style.</p>
-      <p its-locale-filter-list="zh-hans" lang="zh-hans" class="checkme">同行标题主要用于小标，以下介绍几个同行标题的配置范例。同行标题与之后接续内文的空白量，一般为版心设定文字尺寸的全角空白。此外，同行标题可以配置于页末。</p>
-      <p its-locale-filter-list="zh-hant" lang="zh-hant">同行標題主要用於小標，以下介紹幾個同行標題的配置範例。同行標題與之後接續內文的空白量，一般為版心設定文字尺寸的全形空白。此外，同行標題可以配置於頁末。</p>
+      <p its-locale-filter-list="en" lang="en">Run-in headings are usually used for low level headings. The following are some examples of run-in headings. Inter-character space between the run-in heading and following main text is usually a one character space of the base font size decided for the type area. Note that the run-in heading may be set at the last line of the page, or of the column in multi column style.</p>
+      <p its-locale-filter-list="zh-hans" lang="zh-hans" class="checkme">同行标题主要用于小标，以下介绍几个同行标题的配置范例。同行标题与之后接续内文的空白量，一般为版心设定字型大小的全角空白。此外，同行标题可以配置于页末。</p>
+      <p its-locale-filter-list="zh-hant" lang="zh-hant">同行標題主要用於小標，以下介紹幾個同行標題的配置範例。同行標題與之後接續內文的空白量，一般為版心設定字型大小的全形空白。此外，同行標題可以配置於頁末。</p>
       <ol>
         <li id="id192">
-          <p its-locale-filter-list="en" lang="en">The run-in heading is set with the same character size as the main text and in Hei or Kai. </p>
-          <p its-locale-filter-list="zh-hans" lang="zh-hans" class="checkme">与内文采用相同文字尺寸，字体改为黑体或者楷体。</p>
-          <p its-locale-filter-list="zh-hant" lang="zh-hant">與內文採相同文字尺寸，字體改為黑體或者楷體。</p>
+          <p its-locale-filter-list="en" lang="en">The run-in heading is set with the same font size as the main text and in Hei or Kai. </p>
+          <p its-locale-filter-list="zh-hans" lang="zh-hans" class="checkme">与内文采用相同字型大小，字体改为黑体或者楷体。</p>
+          <p its-locale-filter-list="zh-hant" lang="zh-hant">與內文採相同字型大小，字體改為黑體或者楷體。</p>
         </li>
         <li id="id193">
-          <p its-locale-filter-list="en" lang="en">Set the run-in heading in a character size not smaller than the main text and use Hei or Kai.</p>
-          <p its-locale-filter-list="zh-hans" lang="zh-hans" class="checkme">不比内文文字尺寸较小，字体改为黑体或者楷体。</p>
-          <p its-locale-filter-list="zh-hant" lang="zh-hant">不比內文文字尺寸較小，字體改為黑體或者楷體。</p>
+          <p its-locale-filter-list="en" lang="en">Set the run-in heading in a font size not smaller than the main text and use Hei or Kai.</p>
+          <p its-locale-filter-list="zh-hans" lang="zh-hans">不小于内文字型大小，字体改为黑体或者楷体。</p>
+          <p its-locale-filter-list="zh-hant" lang="zh-hant">不小於內文字型大小，字體改為黑體或者楷體。</p>
           <div class="note" id="n060">
             <p its-locale-filter-list="en" lang="en">The space that the run-in headings take is not an integer times larger than the characters in the body content, and the space between the run-in headings and body content can be adjusted so as to align the body content as well as the line start and line end.</p>
-            <p its-locale-filter-list="zh-hans" lang="zh-hans" class="checkme">此时同行标题所占空间并非内文文字尺寸的整数倍，所以可调整与内文间的空白量，以避免内文文字无法纵横对齐，或者无法齐行首、行尾。</p>
-            <p its-locale-filter-list="zh-hant" lang="zh-hant">此時同行標題所占空間並非內文文字尺寸的整數倍，所以可調整與內文間的空白量，以避免內文文字無法縱橫對齊，或者無法齊行首、行尾。</p>
+            <p its-locale-filter-list="zh-hans" lang="zh-hans" class="checkme">此时同行标题所占空间并非内文字型大小的整数倍，所以可调整与内文间的空白量，以避免内文文字无法纵横对齐，或者无法齐行首、行尾。</p>
+            <p its-locale-filter-list="zh-hant" lang="zh-hant">此時同行標題所占空間並非內文字型大小的整數倍，所以可調整與內文間的空白量，以避免內文文字無法縱橫對齊，或者無法齊行首、行尾。</p>
           </div>
         </li>
         <li id="id194">
-          <p its-locale-filter-list="en" lang="en">Set the run-in heading with the same character size and typeface as the main text, but add heading numbers or European numerals in front of the heading.</p>
-          <p its-locale-filter-list="zh-hans" lang="zh-hans">与内文采用相同文字尺寸与字体，但在前面添加汉字数字或阿拉伯数字。</p>
-          <p its-locale-filter-list="zh-hant" lang="zh-hant">與內文採用相同文字尺寸與字體，但於前面添加漢字數字或阿拉伯數字。</p>
+          <p its-locale-filter-list="en" lang="en">Set the run-in heading with the same font size and typeface as the main text, but add heading numbers or European numerals in front of the heading.</p>
+          <p its-locale-filter-list="zh-hans" lang="zh-hans">与内文采用相同字型大小与字体，但在前面添加汉字数字或阿拉伯数字。</p>
+          <p its-locale-filter-list="zh-hant" lang="zh-hant">與內文採用相同字型大小與字體，但於前面添加漢字數字或阿拉伯數字。</p>
         </li>
       </ol>
     </section>
@@ -5474,8 +5481,8 @@ var respecConfig = {
         <td>halfwidth</td>
         <td>
           <ol type="a" its-locale-filter-list="en" lang="en">
-            <li id="id205">A relative index for the length which is equal to 1/2 of a given character size.
-            <li id="id206">A square character frame that has a character advance of 1/2 character size.
+            <li id="id205">A relative index for the length which is equal to 1/2 of a given font size.
+            <li id="id206">A square character frame that has a character advance of 1/2 font size.
           </ol>
           <p its-locale-filter-list="zh-hans" lang="zh-hans">排字的度量单位，宽度等于同样字号全角的一半。</p>
           <p its-locale-filter-list="zh-hant" lang="zh-hant">排字的度量單位，寬度等於同樣字號全形的一半。</p>
@@ -6025,8 +6032,8 @@ var respecConfig = {
         <td>fullwidth</td>
         <td>
           <ol type="a" its-locale-filter-list="en" lang="en">
-            <li id="id207">A relative index for the length which is equal to a given character size.
-            <li id="id208">A square character frame that has a character advance of character size.
+            <li id="id207">A relative index for the length which is equal to a given font size.
+            <li id="id208">A square character frame that has a character advance of font size.
           </ol>
           <p its-locale-filter-list="zh-hans" lang="zh-hans">排字的一种相对度量单位，宽度等于所使用的字号，用做排版宽度水平方向的度量。</p>
           <p its-locale-filter-list="zh-hant" lang="zh-hant">排字的一種相對度量單位，寬度等於所使用的字號，用做排版寬度水平方向的度量。</p>

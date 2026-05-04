@@ -1,0 +1,557 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>中文排版未解决问题清单</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --warm-page: #f7f3ee;
+      --warm-paper: #fefdf9;
+      --warm-wash: #fefaf4;
+      --ink: #25211d;
+      --muted-ink: #746b62;
+      --hairline: #e4d9cf;
+      --brick: #b85c38;
+      --brick-strong: #8d351d;
+      --brick-deep: #5f1e10;
+      --code-wash: #f3e8de;
+      --guide-wash: #fef8f0;
+      --badge-wash: #f0e3d7;
+      --open-wash: #fef0de;
+      --open-text: #9b4100;
+      --review-wash: #eee9ff;
+      --review-text: #5d4a98;
+      --fixed-wash: #e6f4ec;
+      --fixed-text: #236740;
+      --dark-panel: #2f2924;
+      --shadow-paper: 0 18px 50px rgba(73, 48, 31, .10);
+      --focus-ring: 0 0 0 3px rgba(184, 92, 56, .28);
+      --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans SC", "Source Han Sans SC", "Microsoft YaHei", sans-serif;
+      --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      text-autospace: normal;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after {
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: .01ms !important;
+        scroll-behavior: auto !important;
+      }
+    }
+
+    body {
+      margin: 0;
+      background:
+        radial-gradient(circle at top left, rgba(184, 92, 56, .13), transparent 34rem),
+        linear-gradient(180deg, var(--warm-wash) 0, var(--warm-page) 25rem);
+      color: var(--ink);
+      font-family: var(--font-sans);
+      line-height: 1.75;
+      text-rendering: optimizeLegibility;
+    }
+
+    a {
+      color: var(--brick-strong);
+      text-underline-offset: .18em;
+      text-decoration-thickness: .08em;
+    }
+
+    a:hover { color: var(--brick-deep); }
+
+    a:focus-visible,
+    button:focus-visible {
+      outline: 2px solid var(--brick-strong);
+      outline-offset: 3px;
+      box-shadow: var(--focus-ring);
+    }
+
+    .skip-link {
+      position: absolute;
+      left: 16px;
+      top: 12px;
+      z-index: 10;
+      padding: .55rem .8rem;
+      border-radius: 999px;
+      background: var(--dark-panel);
+      color: var(--warm-wash);
+      transform: translateY(-160%);
+      transition: transform .16s cubic-bezier(.16, 1, .3, 1);
+    }
+
+    .skip-link:focus-visible { transform: translateY(0); }
+
+    code {
+      padding: .05em .28em;
+      border-radius: .35em;
+      background: var(--code-wash);
+      font-family: var(--font-mono);
+      font-size: .92em;
+    }
+
+    .page {
+      width: min(1160px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 42px 0 56px;
+    }
+
+    .report-header {
+      padding: clamp(24px, 4vw, 38px);
+      border: 1px solid rgba(228, 217, 207, .95);
+      border-radius: 24px;
+      background: rgba(254, 253, 249, .92);
+      box-shadow: var(--shadow-paper);
+    }
+
+    .report-kicker {
+      margin-bottom: 18px;
+      color: var(--brick-strong);
+      font-size: .9rem;
+      font-weight: 800;
+      letter-spacing: .05em;
+    }
+
+    .report-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(240px, 330px);
+      gap: clamp(22px, 4vw, 42px);
+      align-items: end;
+    }
+
+    h1 {
+      max-width: none;
+      margin: 0;
+      font-size: clamp(2.05rem, 4.3vw, 3.6rem);
+      line-height: 1.08;
+      letter-spacing: -.04em;
+    }
+
+    .subtitle {
+      max-width: 45rem;
+      margin: 20px 0 0;
+      color: var(--muted-ink);
+      font-size: 1.08rem;
+    }
+
+    .source-line {
+      max-width: 52rem;
+      margin: 24px 0 0;
+      padding-top: 18px;
+      border-top: 1px solid var(--hairline);
+      color: var(--muted-ink);
+      font-size: .94rem;
+    }
+
+    .scope-note {
+      display: grid;
+      gap: 8px;
+      padding: 18px;
+      border: 1px solid var(--hairline);
+      border-radius: 18px;
+      background: var(--guide-wash);
+      color: var(--muted-ink);
+      font-size: .93rem;
+      line-height: 1.65;
+    }
+
+    .scope-note strong { color: var(--ink); }
+
+    .status-ledger {
+      display: grid;
+      grid-template-columns: 1.1fr repeat(4, minmax(0, 1fr));
+      gap: 12px;
+      margin: 18px 0 28px;
+    }
+
+    .ledger-item {
+      display: grid;
+      gap: 5px;
+      min-height: 132px;
+      padding: 18px;
+      border: 1px solid var(--hairline);
+      border-radius: 22px;
+      background: var(--warm-paper);
+    }
+
+    .ledger-total {
+      background: var(--dark-panel);
+      color: var(--warm-wash);
+      box-shadow: var(--shadow-paper);
+    }
+
+    .ledger-number {
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1;
+      font-weight: 850;
+      letter-spacing: -.04em;
+    }
+
+    .ledger-label { font-weight: 800; }
+
+    .ledger-note {
+      align-self: end;
+      color: inherit;
+      opacity: .78;
+      font-size: .88rem;
+      line-height: 1.55;
+    }
+
+    .reader-guide {
+      display: grid;
+      grid-template-columns: minmax(0, .9fr) minmax(260px, 1.1fr);
+      gap: clamp(18px, 4vw, 34px);
+      align-items: center;
+      margin: 28px 0;
+      padding: 26px;
+      border: 1px solid rgba(228, 217, 207, .95);
+      border-radius: 24px;
+      background: rgba(254, 253, 249, .9);
+      box-shadow: var(--shadow-paper);
+    }
+
+    h2 {
+      margin: 0;
+      font-size: clamp(1.45rem, 3vw, 2rem);
+      line-height: 1.25;
+    }
+
+    .status-key {
+      display: grid;
+      gap: 10px;
+      margin: 0;
+    }
+
+    .status-key div {
+      display: grid;
+      grid-template-columns: 6.2em minmax(0, 1fr);
+      gap: 12px;
+      align-items: center;
+      padding: 10px 0;
+      border-bottom: 1px solid var(--hairline);
+    }
+
+    .status-key div:last-child { border-bottom: 0; }
+    .status-key dt, .status-key dd { margin: 0; }
+    .status-key dd { color: var(--muted-ink); font-size: .94rem; }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 28px;
+      border-radius: 999px;
+      padding: .25em .7em;
+      font-size: .82rem;
+      font-weight: 800;
+      white-space: nowrap;
+    }
+
+    .tag-open { background: var(--open-wash); color: var(--open-text); }
+    .tag-review { background: var(--review-wash); color: var(--review-text); }
+    .tag-fixed { background: var(--fixed-wash); color: var(--fixed-text); }
+
+    .category-nav {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 10px;
+      margin: 30px 0 34px;
+    }
+
+    .category-nav a {
+      display: flex;
+      min-height: 48px;
+      align-items: center;
+      gap: 10px;
+      padding: 12px 14px;
+      border: 1px solid var(--hairline);
+      border-radius: 18px;
+      background: var(--warm-paper);
+      color: var(--ink);
+      font-size: .94rem;
+      font-weight: 750;
+      text-decoration: none;
+    }
+
+    .category-nav a:hover {
+      border-color: rgba(184, 92, 56, .45);
+      color: var(--brick-deep);
+    }
+
+    .category-nav span {
+      color: var(--brick-strong);
+      font-size: .78rem;
+      font-weight: 900;
+      letter-spacing: .05em;
+    }
+
+    .category {
+      scroll-margin-top: 18px;
+      margin-top: 38px;
+    }
+
+    .category-header {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 20px;
+      margin-bottom: 14px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid var(--hairline);
+    }
+
+    .category-header h2 { font-size: clamp(1.28rem, 2.2vw, 1.55rem); }
+
+    .count {
+      color: var(--muted-ink);
+      font-size: .9rem;
+      white-space: nowrap;
+    }
+
+    .issue-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .issue-card {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      padding: 18px;
+      border: 1px solid rgba(228, 217, 207, .95);
+      border-radius: 24px;
+      background: rgba(254, 253, 249, .9);
+    }
+
+    .issue-top {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+
+    .issue-no {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 4.5em;
+      min-height: 28px;
+      padding: .25em .65em;
+      border-radius: 999px;
+      background: var(--badge-wash);
+      color: var(--brick-strong);
+      font-weight: 850;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .issue-card h3 {
+      margin: 0;
+      font-size: 1rem;
+      line-height: 1.35;
+    }
+
+    .info {
+      margin: 0;
+      color: var(--muted-ink);
+      font-size: .94rem;
+      line-height: 1.68;
+    }
+
+    .info strong {
+      color: var(--ink);
+      font-weight: 750;
+    }
+
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 8px 12px;
+      margin-top: auto;
+      padding-top: 10px;
+      border-top: 1px solid var(--hairline);
+      color: var(--muted-ink);
+      font-size: .88rem;
+    }
+
+    .meta a {
+      min-height: 32px;
+      display: inline-flex;
+      align-items: center;
+      margin-left: auto;
+    }
+
+    footer {
+      margin-top: 46px;
+      padding-top: 22px;
+      border-top: 1px solid var(--hairline);
+      color: var(--muted-ink);
+      font-size: .92rem;
+    }
+
+    @media (max-width: 980px) {
+      .report-layout,
+      .reader-guide,
+      .issue-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .status-ledger,
+      .category-nav {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 620px) {
+      .page {
+        width: min(100% - 22px, 1160px);
+        padding-top: 24px;
+      }
+
+      .report-header,
+      .reader-guide {
+        padding: 20px;
+        border-radius: 18px;
+      }
+
+      .status-ledger,
+      .category-nav {
+        grid-template-columns: 1fr;
+      }
+
+      .ledger-item { min-height: auto; }
+
+      .status-key div {
+        grid-template-columns: 1fr;
+        gap: 6px;
+      }
+
+      .category-header,
+      .issue-top {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .category-nav a,
+      .meta a {
+        min-height: 44px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#issue-list">跳到问题清单</a>
+  <main class="page" id="main">
+    <section class="report-header" aria-labelledby="page-title">
+      <div class="report-kicker">W3C CLREQ GAP</div>
+      <div class="report-layout">
+        <div class="report-copy">
+          <h1 id="page-title">中文排版未解决问题清单</h1>
+          <!-- <p class="subtitle">帮助你快速判断Web平台在中文排版支持上的缺口。</p> -->
+          <!-- <p class="source-line">来源：<a href="https://www.w3.org/TR/clreq-gap/">W3C Chinese Layout Gap Analysis</a>。本页为非官方中文整理，不替代 W3C 原文与 GitHub issue。</p> -->
+        </div>
+        <!-- <aside class="scope-note" aria-label="整理范围">
+          <strong>整理范围</strong>
+          <span>收录 23 个唯一 GitHub issue。原文中 #367、#247、#237 出现在多个章节，本页按 issue 编号去重。</span>
+        </aside> -->
+      </div>
+    </section>
+
+    <section class="status-ledger" aria-label="状态概览">
+      <article class="ledger-item ledger-total">
+        <span class="ledger-number">23</span>
+        <span class="ledger-label">问题</span>
+      </article>
+      <article class="ledger-item">
+        <span class="ledger-number">9</span>
+        <span class="ledger-label">待解决</span>
+      </article>
+      <article class="ledger-item">
+        <span class="ledger-number">10</span>
+        <span class="ledger-label">待确认</span>
+      </article>
+      <article class="ledger-item">
+        <span class="ledger-number">4</span>
+        <span class="ledger-label">已修复</span>
+      </article>
+      <article class="ledger-item">
+        <span class="ledger-number">4</span>
+        <span class="ledger-label">主题类别</span>
+      </article>
+    </section>
+
+    <section class="reader-guide" aria-labelledby="guide-title">
+      <h2 id="guide-title">如何使用这份清单</h2>
+      <dl class="status-key" aria-label="状态说明">
+        <div><dt><span class="tag tag-open">待解决</span></dt><dd>当前仍影响中文排版能力</dd></div>
+        <div><dt><span class="tag tag-review">待确认</span></dt><dd>需要更多测试或跟踪确认</dd></div>
+        <div><dt><span class="tag tag-fixed">已修复</span></dt><dd>已有解决进展，保留作历史记录</dd></div>
+      </dl>
+    </section>
+
+    <nav class="category-nav" aria-label="问题类别导航">
+      <a href="#cat-writing-mode"><span>01</span>文字方向 / 行文模式</a>
+      <a href="#cat-glyphs-fonts"><span>02</span>字形的变形与定位</a>
+      <a href="#cat-inline"><span>03</span>标点与行内特性</a>
+      <a href="#cat-lines"><span>04</span>行与段落版式</a>
+    </nav>
+    <section class="category" id="issue-list" aria-labelledby="cat-writing-mode">
+      <div class="category-header"><h2 id="cat-writing-mode">文字方向 / 行文模式</h2><span class="count">5 项</span></div>
+      <div class="issue-grid">
+        <article class="issue-card"><div class="issue-top"><span class="issue-no">#367</span><span class="tag tag-review">待确认</span></div><h3>无法让直排中的列表计数器保持直立</h3><p class="info"><strong>问题说明：</strong>直排列表中，项目编号或序号可能随文字方向旋转。</p><p class="info"><strong>影响：</strong>编号列表在直排排版中会显得突兀，阅读顺序和视觉对齐都可能受影响。</p><p class="meta"><span>分类：文字方向 / 行文模式</span><a href="https://github.com/w3c/clreq/issues/367">GitHub issue</a></p></article>
+        <article class="issue-card"><div class="issue-top"><span class="issue-no">#250</span><span class="tag tag-review">待确认</span></div><h3>表格单元格不能正确处理直排方向</h3><p class="info"><strong>问题说明：</strong>表格进入直排环境后，单元格内容和内部排版不一定能按中文直排习惯工作。</p><p class="info"><strong>影响：</strong>数据表在直排电子书中难以自然呈现。</p><p class="meta"><span>分类：文字方向 / 行文模式</span><a href="https://github.com/w3c/clreq/issues/250">GitHub issue</a></p></article>
+        <article class="issue-card"><div class="issue-top"><span class="issue-no">#249</span><span class="tag tag-open">待解决</span></div><h3>纵中横支持不足，尤其是 <code>digits</code> 取值</h3><p class="info"><strong>问题说明：</strong>直排中常需要把短数字或缩写横排嵌入一字宽空间，但相关能力和取值支持仍不完整。</p><p class="info"><strong>影响：</strong>日期、页码、编号、年份等内容在直排中容易变得松散或方向错误，影响出版级排版。</p><p class="meta"><span>分类：文字方向 / 行文模式</span><a href="https://github.com/w3c/clreq/issues/249">GitHub issue</a></p></article>
+        <article class="issue-card"><div class="issue-top"><span class="issue-no">#248</span><span class="tag tag-fixed">已修复</span></div><h3>不支持直立文字方向</h3><p class="info"><strong>问题说明：</strong>早期实现中，部分字符无法按直排需求保持直立，导致文字方向控制不足。</p><p class="info"><strong>影响：</strong>中英文混排、符号和数字在直排中的方向容易不一致；该项已保留为历史修复记录。</p><p class="meta"><span>分类：文字方向 / 行文模式</span><a href="https://github.com/w3c/clreq/issues/248">GitHub issue</a></p></article>
+        <article class="issue-card"><div class="issue-top"><span class="issue-no">#247</span><span class="tag tag-open">待解决</span></div><h3>直排表单控件支持较差</h3><p class="info"><strong>问题说明：</strong>输入框、按钮、下拉框等控件在直排环境下往往仍按横排逻辑显示和交互。</p><p class="info"><strong>影响：</strong>需要直排界面的网站或阅读器难以提供一致体验。</p><p class="meta"><span>分类：文字方向 / 行文模式</span><a href="https://github.com/w3c/clreq/issues/247">GitHub issue</a></p></article>
+      </div>
+    </section>
+
+    <section class="category" aria-labelledby="cat-glyphs-fonts">
+      <div class="category-header"><h2 id="cat-glyphs-fonts">字形的变形与定位</h2><span class="count">4 项</span></div>
+      <div class="issue-grid">
+        <article class="issue-card"><div class="issue-top"><span class="issue-no">#587</span><span class="tag tag-open">待解决</span></div><h3>缺少楷体和仿宋通用字体族</h3><p class="info"><strong>问题说明：</strong>CSS 通用字体族中没有稳定表达楷体、仿宋等中文常用风格的名称。</p><p class="info"><strong>影响：</strong>网页很难可靠调用这些字体风格，教育、古籍、政府公文等场景需要写大量平台相关的字体列表。</p><p class="meta"><span>分类：字形的变形与定位</span><a href="https://github.com/w3c/clreq/issues/587">GitHub issue</a></p></article>
+        <article class="issue-card"><div class="issue-top"><span class="issue-no">#430</span><span class="tag tag-review">待确认</span></div><h3>标点符号字形不符合中文排版要求</h3><p class="info"><strong>问题说明：</strong>浏览器或字体可能使用不适合中文的标点字形、宽度或位置。</p><p class="info"><strong>影响：</strong>破折号、省略号等会破坏中文文本的对齐，尤其影响高质量正文排版。</p><p class="meta"><span>分类：字形的变形与定位</span><a href="https://github.com/w3c/clreq/issues/430">GitHub issue</a></p></article>
+        <article class="issue-card"><div class="issue-top"><span class="issue-no">#403</span><span class="tag tag-open">待解决</span></div><h3>Web字体文件过大</h3><p class="info"><strong>问题说明：</strong>中文字符集庞大，完整字体文件体积通常远大于拉丁字母的字体。</p><p class="info"><strong>影响：</strong>网页加载速度、流量成本和首屏显示都会受影响，使中文站点更难使用定制字体。</p><p class="meta"><span>分类：字形的变形与定位</span><a href="https://github.com/w3c/clreq/issues/403">GitHub issue</a></p></article>
+        <article class="issue-card"><div class="issue-top"><span class="issue-no">#237</span><span class="tag tag-review">待确认</span></div><h3>变体序列的字体回退存在问题</h3><p class="info"><strong>问题说明：</strong>使用变体选择符指定特定字形时，浏览器在字体回退中可能无法找到正确字形。</p><p class="info"><strong>影响：</strong>人名、地名、古籍和专业文本中需要精确字形的字符可能显示为错误形态或缺字。</p><p class="meta"><span>分类：字形的变形与定位</span><a href="https://github.com/w3c/clreq/issues/237">GitHub issue</a></p></article>
+      </div>
+    </section>
+
+    <section class="category" aria-labelledby="cat-inline">
+      <div class="category-header"><h2 id="cat-inline">标点与行内特性</h2><span class="count">9 项</span></div>
+      <div class="issue-grid">
+        <article class="issue-card"><div class="issue-top"><span class="issue-no">#240</span><span class="tag tag-review">待确认</span></div><h3>语言变化时 <code>q</code> 元素会产生错误的引号</h3><p class="info"><strong>问题说明：</strong>同一段内容中切换语言后，自动生成引号的元素可能没有按中文或上下文使用正确引号。</p><p class="info"><strong>影响：</strong>多语引用、翻译文本和学术内容中的引号会显得不规范，作者可能需要手写标点。</p><p class="meta"><span>分类：引号</span><a href="https://github.com/w3c/clreq/issues/240">GitHub issue</a></p></article>
+        <article class="issue-card"><div class="issue-top"><span class="issue-no">#550</span><span class="tag tag-open">待解决</span></div><h3>增加字间距后，着重号应随文字居中对齐</h3><p class="info"><strong>问题说明：</strong>文本设置字间距后，着重号的位置可能没有跟随单个汉字的视觉中心重新对齐。</p><p class="info"><strong>影响：</strong>强调文字时会出现着重号偏移，影响教材、说明文和正式出版内容的可读性。</p><p class="meta"><span>分类：强调与突出显示</span><a href="https://github.com/w3c/clreq/issues/550">GitHub issue</a></p></article>
+        <article class="issue-card"><div class="issue-top"><span class="issue-no">#239</span><span class="tag tag-fixed">已修复</span></div><h3>着重号支持缺乏互操作性</h3><p class="info"><strong>问题说明：</strong>不同浏览器对着重号的位置、形状和排布处理不一致。</p><p class="info"><strong>影响：</strong>同一页面在不同浏览器中强调效果不同，开发者难以依赖标准属性实现稳定中文强调。</p><p class="meta"><span>分类：强调与突出显示</span><a href="https://github.com/w3c/clreq/issues/239">GitHub issue</a></p></article>
+        <article class="issue-card"><div class="issue-top"><span class="issue-no">#238</span><span class="tag tag-open">待解决</span></div><h3>默认情况下着重号不会跳过标点</h3><p class="info"><strong>问题说明：</strong>中文排版通常不在标点上加着重号，但浏览器默认行为可能会把标点也纳入强调。</p><p class="info"><strong>影响：</strong>整句强调时标点被错误标注，产生不符合中文习惯的视觉噪音。</p><p class="meta"><span>分类：强调与突出显示</span><a href="https://github.com/w3c/clreq/issues/238">GitHub issue</a></p></article>
+        <article class="issue-card"><div class="issue-top"><span class="issue-no">#357</span><span class="tag tag-review">待确认</span></div><h3>页内搜索无法匹配带 ruby 标注的文本</h3><p class="info"><strong>问题说明：</strong>带 ruby 标注的正文在浏览器页内搜索中可能无法按普通文本方式命中。</p><p class="info"><strong>影响：</strong>注影响学习材料和电子书阅读。</p><p class="meta"><span>分类：行内注与行间注</span><a href="https://github.com/w3c/clreq/issues/357">GitHub issue</a></p></article>
+        <article class="issue-card"><div class="issue-top"><span class="issue-no">#243</span><span class="tag tag-review">待确认</span></div><h3>不支持割注</h3><p class="info"><strong>问题说明：</strong>割注是一种把小号注释嵌入正文行内的传统排版方式，Web上缺少直接表达割注的能力。</p><p class="info"><strong>影响：</strong>需要复杂替代方案，难以兼顾语义、无障碍和版式。</p><p class="meta"><span>分类：行内注与行间注</span><a href="https://github.com/w3c/clreq/issues/243">GitHub issue</a></p></article>
+        <article class="issue-card"><div class="issue-top"><span class="issue-no">#242</span><span class="tag tag-review">待确认</span></div><h3>ruby文本选择存在困难</h3><p class="info"><strong>问题说明：</strong>用户选择带ruby的文本时，浏览器可能把基文和注文混在一起。</p><p class="info"><strong>影响：</strong>复制和引用都会受到影响，学习类内容尤其明显。</p><p class="meta"><span>分类：行内注与行间注</span><a href="https://github.com/w3c/clreq/issues/242">GitHub issue</a></p></article>
+        <article class="issue-card"><div class="issue-top"><span class="issue-no">#241</span><span class="tag tag-open">待解决</span></div><h3>不支持注音符号</h3><p class="info"><strong>问题说明：</strong>注音符号常用于繁体中文学习和台湾地区文本，但浏览器对注音符号的支持不足。</p><p class="info"><strong>影响：</strong>教材、儿童读物和语言学习页面难以正确呈现注音位置与间距。</p><p class="meta"><span>分类：行内注与行间注</span><a href="https://github.com/w3c/clreq/issues/241">GitHub issue</a></p></article>
+        <article class="issue-card"><div class="issue-top"><span class="issue-no">#599</span><span class="tag tag-open">待解决</span></div><h3>相邻文本标示项之间应留出小间隙</h3><p class="info"><strong>问题说明：</strong>多个相邻的专名号或其他文本标示可能连成一片，缺少中文排版需要的分隔。</p><p class="info"><strong>影响：</strong>降低文本层次和可读性。</p><p class="meta"><span>分类：文本标示</span><a href="https://github.com/w3c/clreq/issues/599">GitHub issue</a></p></article>
+      </div>
+    </section>
+
+    <section class="category" aria-labelledby="cat-lines">
+      <div class="category-header"><h2 id="cat-lines">行与段落版式</h2><span class="count">5 项</span></div>
+      <div class="issue-grid">
+        <article class="issue-card"><div class="issue-top"><span class="issue-no">#245</span><span class="tag tag-fixed">已修复</span></div><h3>UAX #14对引号换行的处理仍有问题</h3><p class="info"><strong>问题说明：</strong>通用换行算法对中文引号和相邻标点的处理曾与中文排版习惯不完全一致。</p><p class="info"><strong>影响：</strong>该项已解决，保留作历史修复记录。</p><p class="meta"><span>分类：换行</span><a href="https://github.com/w3c/clreq/issues/245">GitHub issue</a></p></article>
+        <article class="issue-card"><div class="issue-top"><span class="issue-no">#244</span><span class="tag tag-review">待确认</span></div><h3>浏览器在换行时对全角空格的处理不一致</h3><p class="info"><strong>问题说明：</strong>全角空格在中文中可承担缩进或分隔作用，但浏览器换行处理并不统一。</p><p class="info"><strong>影响：</strong>段首缩进或某些特殊格式文本在不同浏览器中可能断行不同。</p><p class="meta"><span>分类：换行</span><a href="https://github.com/w3c/clreq/issues/244">GitHub issue</a></p></article>
+        <article class="issue-card"><div class="issue-top"><span class="issue-no">#401</span><span class="tag tag-open">待解决</span></div><h3>缺少在中日文与西文之间自动加间距的支持</h3><p class="info"><strong>问题说明：</strong>中文和西文、数字相邻时通常需要适度间距，但浏览器缺少可靠的自动处理。</p><p class="info"><strong>影响：</strong>技术文档、新闻、产品页面中的中英数字混排容易拥挤，开发者常依赖手工空格或脚本。</p><p class="meta"><span>分类：文本间距</span><a href="https://github.com/w3c/clreq/issues/401">GitHub issue</a></p></article>
+        <article class="issue-card"><div class="issue-top"><span class="issue-no">#319</span><span class="tag tag-review">待确认</span></div><h3>设置字间距时浏览器会产生多余空隙</h3><p class="info"><strong>问题说明：</strong>对中文文本使用字间距时，浏览器可能在标点或行尾产生额外空间。</p><p class="info"><strong>影响：</strong>标题、海报式排版和强调文本的视觉边界不稳定，需要大量兼容性修正。</p><p class="meta"><span>分类：文本间距</span><a href="https://github.com/w3c/clreq/issues/319">GitHub issue</a></p></article>
+        <article class="issue-card"><div class="issue-top"><span class="issue-no">#246</span><span class="tag tag-fixed">已修复</span></div><h3>缺少 <code>@counter-style</code> 支持</h3><p class="info"><strong>问题说明：</strong>早期 Web 平台对自定义列表计数样式支持不足，难以表达中文编号系统。</p><p class="info"><strong>影响：</strong>章节、条款和多级列表无法稳定使用中文序号；该项已保留为历史修复记录。</p><p class="meta"><span>分类：列表与计数器</span><a href="https://github.com/w3c/clreq/issues/246">GitHub issue</a></p></article>
+      </div>
+    </section>
+
+    <footer>
+      <p>修改日期：2026-05-04。内容根据<a href="https://www.w3.org/TR/clreq-gap/">W3C Chinese Layout Gap Analysis</a>整理；问题状态可能随规范、浏览器实现和GitHub issue更新而变化。</p>
+    </footer>
+  </main>
+</body>
+</html>

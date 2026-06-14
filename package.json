@@ -7,7 +7,7 @@
     "build": "esbuild src/script.ts --bundle --outfile=built/script.js"
   },
   "dependencies": {
-    "esbuild": "^0.25.12"
+    "esbuild": "^0.28.1"
   },
   "packageManager": "pnpm@8.10.2+sha1.e0b68270e89c817ff88b7be62466a2128c53af02"
 }

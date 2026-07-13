@@ -10,10 +10,10 @@ CSS Fonts defines `serif` as corresponding to Song for Chinese, and `sans-serif`
 
 The availability labels are significant:
 
-- **Built-in/system:** the cited platform inventory or configuration identifies the font as part of the system baseline.
-- **OS optional/downloadable:** the OS vendor supplies the font, but it may be absent until a language feature or font asset is installed.
-- **Distribution package:** an official Linux distribution repository supplies the font; this does not imply that a default desktop installation includes it.
-- **No mapping:** the checked official inventory or configuration contains no suitable face.
+* Built-in/system: the cited platform inventory or configuration identifies the font as part of the system baseline.
+* OS optional/downloadable: the OS vendor supplies the font, but it may be absent until a language feature or font asset is installed.
+* Distribution package: an official Linux distribution repository supplies the font; this does not imply that a default desktop installation includes it.
+* No mapping: the checked official inventory or configuration contains no suitable face.
 
 The Chinese-name column reports the localized alias.
 
@@ -25,41 +25,41 @@ The Windows 11 inventory separates its core font list from optional Features on 
 
 | CSS generic | Language/region | Chinese/localized family name | English family name | Availability | Evidence and notes |
 | --- | --- | --- | --- | --- | --- |
-| `serif` (Song) | Simplified Chinese | 宋体 | `SimSun` | **Built-in** | Windows 11 core list; Microsoft describes SimSun as a Simplified Chinese Song font. [MS-W11] [MS-SIMSUN] [MS-NAMES] |
-| `serif` (Song) | Traditional Chinese | 新細明體 | `PMingLiU` | **OS optional** | Traditional Chinese supplemental font. Microsoft describes the MingLiU family as Traditional Chinese mincho/serif. [MS-W11] [MS-MINGLIU] [MS-NAMES] |
-| `sans-serif` (Hei) | Simplified Chinese | 微软雅黑 | `Microsoft YaHei` | **Built-in** | Windows 11 core list and Microsoft font-family documentation. [MS-W11] [MS-YAHEI] [MS-NAMES] |
-| `sans-serif` (Hei) | Traditional Chinese | 微軟正黑體 | `Microsoft JhengHei` | **Built-in** | Windows 11 core list and Microsoft font-family documentation. [MS-W11] [MS-JHENGHEI] [MS-NAMES] |
-| `generic(fangsong)` | Simplified Chinese | 仿宋 | `FangSong` | **OS optional** | Simplified Chinese supplemental font; the Microsoft family page identifies it as Simplified Chinese. No Traditional-Chinese-specific Fangsong family was verified in the Windows 11 inventory. [MS-W11] [MS-FANGSONG] [MS-NAMES] |
-| `generic(kai)` | Simplified Chinese | 楷体 | `KaiTi` | **OS optional** | Simplified Chinese supplemental font. [MS-W11] [MS-KAITI] [MS-NAMES] |
-| `generic(kai)` | Traditional Chinese | 標楷體 | `DFKai-SB` | **OS optional** | Traditional Chinese supplemental font. [MS-W11] [MS-NAMES] |
+| `serif` (Song) | Simplified Chinese | 宋体 | `SimSun` | Built-in | Windows 11 core list; Microsoft describes SimSun as a Simplified Chinese Song font. [MS-W11] [MS-SIMSUN] [MS-NAMES] |
+| `serif` (Song) | Traditional Chinese | 新細明體 | `PMingLiU` | OS optional | Traditional Chinese supplemental font. Microsoft describes the MingLiU family as Traditional Chinese mincho/serif. [MS-W11] [MS-MINGLIU] [MS-NAMES] |
+| `sans-serif` (Hei) | Simplified Chinese | 微软雅黑 | `Microsoft YaHei` | Built-in | Windows 11 core list and Microsoft font-family documentation. [MS-W11] [MS-YAHEI] [MS-NAMES] |
+| `sans-serif` (Hei) | Traditional Chinese | 微軟正黑體 | `Microsoft JhengHei` | Built-in | Windows 11 core list and Microsoft font-family documentation. [MS-W11] [MS-JHENGHEI] [MS-NAMES] |
+| `generic(fangsong)` | Simplified Chinese | 仿宋 | `FangSong` | OS optional | Simplified Chinese supplemental font; the Microsoft family page identifies it as Simplified Chinese. No Traditional-Chinese-specific Fangsong family was verified in the Windows 11 inventory. [MS-W11] [MS-FANGSONG] [MS-NAMES] |
+| `generic(kai)` | Simplified Chinese | 楷体 | `KaiTi` | OS optional | Simplified Chinese supplemental font. [MS-W11] [MS-KAITI] [MS-NAMES] |
+| `generic(kai)` | Traditional Chinese | 標楷體 | `DFKai-SB` | OS optional | Traditional Chinese supplemental font. [MS-W11] [MS-NAMES] |
 
 ### macOS
 
-Apple's current font inventory distinguishes **system font** from **downloadable**. Songti SC/TC and Heiti SC/TC are marked as macOS system fonts. PingFang SC/TC, Kaiti SC/TC, and STFangsong are marked downloadable on current macOS. [APPLE-FONTS]
+Apple's current font inventory distinguishes system font from downloadable. Songti SC/TC and Heiti SC/TC are marked as macOS system fonts. PingFang SC/TC, Kaiti SC/TC, and STFangsong are marked downloadable on current macOS. [APPLE-FONTS]
 
 | CSS generic | Language/region | Chinese/localized family name | English family name | Availability | Evidence and notes |
 | --- | --- | --- | --- | --- | --- |
-| `serif` (Song) | Simplified Chinese | 宋体-简 | `Songti SC` | **System font** | Apple inventory and OpenType localized family-name records. [APPLE-FONTS] [APPLE-NAMES] |
-| `serif` (Song) | Traditional Chinese | 宋體-繁 | `Songti TC` | **System font** | Apple inventory and OpenType localized family-name records. [APPLE-FONTS] [APPLE-NAMES] |
-| `sans-serif` (Hei) | Simplified Chinese | 黑体-简 | `Heiti SC` | **System font** | Stable built-in candidate. The more modern 苹方-简 / `PingFang SC` is also OS-supplied, but Apple's current inventory marks it downloadable. [APPLE-FONTS] [APPLE-NAMES] |
-| `sans-serif` (Hei) | Traditional Chinese | 黑體-繁 | `Heiti TC` | **System font** | Stable built-in candidate. The more modern 蘋方-繁 / `PingFang TC` is also OS-supplied, but Apple's current inventory marks it downloadable. [APPLE-FONTS] [APPLE-NAMES] |
-| `generic(fangsong)` | Simplified Chinese | 华文仿宋 | `STFangsong` | **Downloadable** | Do not assume presence before the asset is installed. [APPLE-FONTS] [APPLE-NAMES] |
-| `generic(kai)` | Simplified Chinese | 楷体-简 | `Kaiti SC` | **Downloadable** | Do not assume presence before the asset is installed. [APPLE-FONTS] [APPLE-NAMES] |
-| `generic(kai)` | Traditional Chinese | 楷體-繁 | `Kaiti TC` | **Downloadable** | Do not assume presence before the asset is installed. `BiauKaiTC` / 標楷體-繁 is another downloadable Traditional Chinese candidate. [APPLE-FONTS] [APPLE-NAMES] |
+| `serif` (Song) | Simplified Chinese | 宋体-简 | `Songti SC` | System font | Apple inventory and OpenType localized family-name records. [APPLE-FONTS] [APPLE-NAMES] |
+| `serif` (Song) | Traditional Chinese | 宋體-繁 | `Songti TC` | System font | Apple inventory and OpenType localized family-name records. [APPLE-FONTS] [APPLE-NAMES] |
+| `sans-serif` (Hei) | Simplified Chinese | 黑体-简 | `Heiti SC` | System font | Stable built-in candidate. The more modern 苹方-简 / `PingFang SC` is also OS-supplied, but Apple's current inventory marks it downloadable. [APPLE-FONTS] [APPLE-NAMES] |
+| `sans-serif` (Hei) | Traditional Chinese | 黑體-繁 | `Heiti TC` | System font | Stable built-in candidate. The more modern 蘋方-繁 / `PingFang TC` is also OS-supplied, but Apple's current inventory marks it downloadable. [APPLE-FONTS] [APPLE-NAMES] |
+| `generic(fangsong)` | Simplified Chinese | 华文仿宋 | `STFangsong` | Downloadable | Do not assume presence before the asset is installed. [APPLE-FONTS] [APPLE-NAMES] |
+| `generic(kai)` | Simplified Chinese | 楷体-简 | `Kaiti SC` | Downloadable | Do not assume presence before the asset is installed. [APPLE-FONTS] [APPLE-NAMES] |
+| `generic(kai)` | Traditional Chinese | 楷體-繁 | `Kaiti TC` | Downloadable | Do not assume presence before the asset is installed. `BiauKaiTC` / 標楷體-繁 is another downloadable Traditional Chinese candidate. [APPLE-FONTS] [APPLE-NAMES] |
 
 ### iOS and iPadOS
 
-In Apple's current public inventory, the Chinese families below are all marked **downloadable** on iOS/iPadOS, not **system font**. They are therefore verified OS-supplied candidates but not a safe assumption for an already-installed browser mapping. Apple/WebKit confirmation is needed for any non-public or automatically activated system fallback used internally by iOS. [APPLE-FONTS]
+In Apple's current public inventory, the Chinese families below are all marked downloadable on iOS/iPadOS, not system font. They are therefore verified OS-supplied candidates but not a safe assumption for an already-installed browser mapping. Apple/WebKit confirmation is needed for any non-public or automatically activated system fallback used internally by iOS. [APPLE-FONTS]
 
 | CSS generic | Language/region | Chinese/localized family name | English family name | Availability | Evidence and notes |
 | --- | --- | --- | --- | --- | --- |
-| `serif` (Song) | Simplified Chinese | 宋体-简 | `Songti SC` | **Downloadable** | Verified in Apple's inventory and font metadata; not tagged as an iOS system font. [APPLE-FONTS] [APPLE-NAMES] |
-| `serif` (Song) | Traditional Chinese | 宋體-繁 | `Songti TC` | **Downloadable** | Verified in Apple's inventory and font metadata; not tagged as an iOS system font. [APPLE-FONTS] [APPLE-NAMES] |
-| `sans-serif` (Hei) | Simplified Chinese | 苹方-简 | `PingFang SC` | **Downloadable** | `Heiti SC` / 黑体-简 is also listed as downloadable on iOS. [APPLE-FONTS] [APPLE-NAMES] |
-| `sans-serif` (Hei) | Traditional Chinese | 蘋方-繁 | `PingFang TC` | **Downloadable** | `Heiti TC` / 黑體-繁 is also listed as downloadable on iOS. [APPLE-FONTS] [APPLE-NAMES] |
-| `generic(fangsong)` | Simplified Chinese | 华文仿宋 | `STFangsong` | **Downloadable** | No built-in-tagged iOS Fangsong face was verified. [APPLE-FONTS] [APPLE-NAMES] |
-| `generic(kai)` | Simplified Chinese | 楷体-简 | `Kaiti SC` | **Downloadable** | No built-in-tagged iOS Kai face was verified. [APPLE-FONTS] [APPLE-NAMES] |
-| `generic(kai)` | Traditional Chinese | 楷體-繁 | `Kaiti TC` | **Downloadable** | `BiauKaiTC` / 標楷體-繁 is another downloadable candidate. [APPLE-FONTS] [APPLE-NAMES] |
+| `serif` (Song) | Simplified Chinese | 宋体-简 | `Songti SC` | Downloadable | Verified in Apple's inventory and font metadata; not tagged as an iOS system font. [APPLE-FONTS] [APPLE-NAMES] |
+| `serif` (Song) | Traditional Chinese | 宋體-繁 | `Songti TC` | Downloadable | Verified in Apple's inventory and font metadata; not tagged as an iOS system font. [APPLE-FONTS] [APPLE-NAMES] |
+| `sans-serif` (Hei) | Simplified Chinese | 苹方-简 | `PingFang SC` | Downloadable | `Heiti SC` / 黑体-简 is also listed as downloadable on iOS. [APPLE-FONTS] [APPLE-NAMES] |
+| `sans-serif` (Hei) | Traditional Chinese | 蘋方-繁 | `PingFang TC` | Downloadable | `Heiti TC` / 黑體-繁 is also listed as downloadable on iOS. [APPLE-FONTS] [APPLE-NAMES] |
+| `generic(fangsong)` | Simplified Chinese | 华文仿宋 | `STFangsong` | Downloadable | No built-in-tagged iOS Fangsong face was verified. [APPLE-FONTS] [APPLE-NAMES] |
+| `generic(kai)` | Simplified Chinese | 楷体-简 | `Kaiti SC` | Downloadable | No built-in-tagged iOS Kai face was verified. [APPLE-FONTS] [APPLE-NAMES] |
+| `generic(kai)` | Traditional Chinese | 楷體-繁 | `Kaiti TC` | Downloadable | `BiauKaiTC` / 標楷體-繁 is another downloadable candidate. [APPLE-FONTS] [APPLE-NAMES] |
 
 ### Linux desktop distributions
 
@@ -67,17 +67,17 @@ Linux has no single system-font inventory. The following entries are verified ex
 
 | CSS generic | Language/region | Chinese/localized family name | English family name | Availability | Evidence and notes |
 | --- | --- | --- | --- | --- | --- |
-| `serif` (Song) | Simplified Chinese | 无独立中文族名；简体中文名称记录仍为 `Noto Serif CJK SC` | `Noto Serif CJK SC` | **Distribution package** (`fonts-noto-cjk`) | Debian explicitly lists the SC and TC serif families. The checked OpenType zh-CN name record repeats the English family name. [DEBIAN-NOTO] [DEBIAN-NOTO-NAMES] |
-| `serif` (Song) | Traditional Chinese | 无独立中文族名；繁体中文名称记录仍为 `Noto Serif CJK TC` | `Noto Serif CJK TC` | **Distribution package** (`fonts-noto-cjk`) | Regional Traditional Chinese face. [DEBIAN-NOTO] [DEBIAN-NOTO-NAMES] |
-| `serif` (Ming) | Traditional Chinese | cwTeX 明體 | `cwTeXMing` | **Distribution package** (`fonts-cwtex-ming`) | The package is derived from cwTeX Traditional Chinese fonts; the paired names are in the OpenType name table. [DEBIAN-CWTEX-MING] [LINUX-NAMES] |
-| `sans-serif` (Hei) | Simplified and Traditional Chinese | 文泉驿正黑 | `WenQuanYi Zen Hei` | **Distribution package** (`fonts-wqy-zenhei`) | Debian documents Simplified and Traditional coverage; the localized family name occurs in the font metadata for both language systems. [DEBIAN-WQY] [WQY-NAMES] |
-| `sans-serif` (Hei) | Simplified/Traditional Chinese | 无独立中文族名；中文名称记录仍为 `Noto Sans CJK SC` / `Noto Sans CJK TC` | `Noto Sans CJK SC` / `Noto Sans CJK TC` | **Distribution package** (`fonts-noto-cjk`) | Use the face matching the content language. [DEBIAN-NOTO] [DEBIAN-NOTO-NAMES] |
-| `generic(fangsong)` | Traditional Chinese | cwTeX 仿宋體 | `cwTeXFangSong` | **Distribution package** (`fonts-cwtex-fs`) | Debian identifies this as a Traditional Chinese FangSong font; paired names are in the OpenType name table. No equivalent cross-distribution default was verified. [DEBIAN-CWTEX-FS] [LINUX-NAMES] |
-| `generic(kai)` | Traditional Chinese | cwTeX 楷書 | `cwTeXKai` | **Distribution package** (`fonts-cwtex-kai`) | Debian identifies this as a Traditional Chinese Kai font; paired names are in the OpenType name table. No equivalent cross-distribution default was verified. [DEBIAN-CWTEX-KAI] [LINUX-NAMES] |
+| `serif` (Song) | Simplified Chinese | n/a | `Noto Serif CJK SC` | Distribution package (`fonts-noto-cjk`) | Debian explicitly lists the SC and TC serif families. The checked OpenType zh-CN name record repeats the English family name. [DEBIAN-NOTO] [DEBIAN-NOTO-NAMES] |
+| `serif` (Song) | Traditional Chinese | n/a | `Noto Serif CJK TC` | Distribution package (`fonts-noto-cjk`) | Regional Traditional Chinese face. [DEBIAN-NOTO] [DEBIAN-NOTO-NAMES] |
+| `serif` (Song) | Traditional Chinese | cwTeX 明體 | `cwTeXMing` | Distribution package (`fonts-cwtex-ming`) | The package is derived from cwTeX Traditional Chinese fonts. [DEBIAN-CWTEX-MING] [LINUX-NAMES] |
+| `sans-serif` (Hei) | Simplified and Traditional Chinese | 文泉驿正黑 | `WenQuanYi Zen Hei` | Distribution package (`fonts-wqy-zenhei`) | Debian documents Simplified and Traditional coverage; the localized family name occurs in the font metadata for both language systems. [DEBIAN-WQY] [WQY-NAMES] |
+| `sans-serif` (Hei) | Simplified/Traditional Chinese | n/a | `Noto Sans CJK SC` / `Noto Sans CJK TC` | Distribution package (`fonts-noto-cjk`) | Use the face matching the content language. [DEBIAN-NOTO] [DEBIAN-NOTO-NAMES] |
+| `generic(fangsong)` | Traditional Chinese | cwTeX 仿宋體 | `cwTeXFangSong` | Distribution package (`fonts-cwtex-fs`) | Debian identifies this as a Traditional Chinese FangSong font; paired names are in the OpenType name table. No equivalent cross-distribution default was verified. [DEBIAN-CWTEX-FS] [LINUX-NAMES] |
+| `generic(kai)` | Traditional Chinese | cwTeX 楷書 | `cwTeXKai` | Distribution package (`fonts-cwtex-kai`) | Debian identifies this as a Traditional Chinese Kai font; paired names are in the OpenType name table. No equivalent cross-distribution default was verified. [DEBIAN-CWTEX-KAI] [LINUX-NAMES] |
 
 ### Android Open Source Project (AOSP)
 
-The checked AOSP `fonts.xml` maps the `zh-Hans` and `zh-Hant` fallback families to indices 2 and 3 of `NotoSansCJK-Regular.ttc`; each group also has the same-index `NotoSerifCJK-Regular.ttc` face marked `fallbackFor="serif"`. The AOSP configuration contains no Kai or Fangsong family. [AOSP-FONTS]
+The AOSP `fonts.xml` maps the `zh-Hans` and `zh-Hant` fallback families to indices 2 and 3 of `NotoSansCJK-Regular.ttc`; each group also has the same-index `NotoSerifCJK-Regular.ttc` face marked `fallbackFor="serif"`. The AOSP configuration contains no Kai or Fangsong family. [AOSP-FONTS]
 
 | CSS generic | Language/region | Chinese/localized family name | English family name | Availability | Evidence and notes |
 | --- | --- | --- | --- | --- | --- |
@@ -102,19 +102,20 @@ OpenHarmony's checked font configuration uses `HarmonyOS Sans SC` for `zh-Hans` 
 
 ## Implementation guidance
 
-1. Do not treat an optional, downloadable, or distribution-package font as already installed. `generic(fangsong)` and `generic(kai)` are allowed not to match on a system without a suitable local face. [CSS-FONTS-4]
-2. Browser vendors should document any private, hidden, automatically activated, OEM-specific, or version-specific mappings in additions to this table.
+Do not treat an optional, downloadable, or distribution-package font as already installed. `generic(fangsong)` and `generic(kai)` are allowed not to match on a system without a suitable local face. [CSS-FONTS-4]
+
+Browser vendors should document any private, hidden, automatically activated, OEM-specific, or version-specific mappings in additions to this table.
 
 ## Maintenance and verification policy
 
 A contribution adding or changing a mapping should include:
 
-- the exact OS or distribution version;
-- an official vendor inventory, OS source/configuration, or distribution package reference proving availability;
-- the font file name and family name;
-- the English and Chinese localized family-name records, or an explicit statement that the Chinese-language record repeats the Latin-script name;
-- the availability class: built-in, optional/downloadable, distribution package, or OEM-specific;
-- the language/region whose glyph conventions the face implements.
+* the exact OS or distribution version;
+* an official vendor inventory, OS source/configuration, or distribution package reference proving availability;
+* the font file name and family name;
+* the English and Chinese localized family-name records, or an explicit statement that the Chinese-language record repeats the Latin-script name;
+* the availability class: built-in, optional/downloadable, distribution package, or OEM-specific;
+* the language/region whose glyph conventions the face implements.
 
 <!-- Reference-style link definitions. -->
 

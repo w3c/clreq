@@ -2,6 +2,19 @@
 
 **Last verified:** 2026-07-13
 
+## Table of contents
+
+* [Purpose and scope](#purpose-and-scope)
+* [Recommended mappings](#recommended-mappings)
+  * [Microsoft Windows](#microsoft-windows)
+  * [macOS](#macos)
+  * [iOS and iPadOS](#ios-and-ipados)
+  * [Linux desktop distributions](#linux-desktop-distributions)
+  * [Android Open Source Project (AOSP)](#android-open-source-project-aosp)
+  * [HarmonyOS / OpenHarmony](#harmonyos--openharmony)
+* [Implementation guidance](#implementation-guidance)
+* [Maintenance](#maintenance)
+
 ## Purpose and scope
 
 This document is a platform-versioned implementation resource for browser vendors and other user-agent implementers.
@@ -106,7 +119,7 @@ Do not treat an optional, downloadable, or distribution-package font as already 
 
 Browser vendors should document any private, hidden, automatically activated, OEM-specific, or version-specific mappings in additions to this table.
 
-## Maintenance and verification policy
+## Maintenance
 
 A contribution adding or changing a mapping should include:
 

@@ -67,11 +67,11 @@ Linux has no single system-font inventory. The following entries are verified ex
 
 | CSS generic | Language/region | Chinese/localized family name | English family name | Availability | Evidence and notes |
 | --- | --- | --- | --- | --- | --- |
-| `serif` (Song) | Simplified Chinese | n/a | `Noto Serif CJK SC` | Distribution package (`fonts-noto-cjk`) | Debian explicitly lists the SC and TC serif families. The checked OpenType zh-CN name record repeats the English family name. [DEBIAN-NOTO] [DEBIAN-NOTO-NAMES] |
-| `serif` (Song) | Traditional Chinese | n/a | `Noto Serif CJK TC` | Distribution package (`fonts-noto-cjk`) | Regional Traditional Chinese face. [DEBIAN-NOTO] [DEBIAN-NOTO-NAMES] |
+| `serif` (Song) | Simplified Chinese | — | `Noto Serif CJK SC` | Distribution package (`fonts-noto-cjk`) | Debian explicitly lists the SC and TC serif families. The checked OpenType zh-CN name record repeats the English family name. [DEBIAN-NOTO] [DEBIAN-NOTO-NAMES] |
+| `serif` (Song) | Traditional Chinese | — | `Noto Serif CJK TC` | Distribution package (`fonts-noto-cjk`) | Regional Traditional Chinese face. [DEBIAN-NOTO] [DEBIAN-NOTO-NAMES] |
 | `serif` (Song) | Traditional Chinese | cwTeX 明體 | `cwTeXMing` | Distribution package (`fonts-cwtex-ming`) | The package is derived from cwTeX Traditional Chinese fonts. [DEBIAN-CWTEX-MING] [LINUX-NAMES] |
 | `sans-serif` (Hei) | Simplified and Traditional Chinese | 文泉驿正黑 | `WenQuanYi Zen Hei` | Distribution package (`fonts-wqy-zenhei`) | Debian documents Simplified and Traditional coverage; the localized family name occurs in the font metadata for both language systems. [DEBIAN-WQY] [WQY-NAMES] |
-| `sans-serif` (Hei) | Simplified/Traditional Chinese | n/a | `Noto Sans CJK SC` / `Noto Sans CJK TC` | Distribution package (`fonts-noto-cjk`) | Use the face matching the content language. [DEBIAN-NOTO] [DEBIAN-NOTO-NAMES] |
+| `sans-serif` (Hei) | Simplified/Traditional Chinese | — | `Noto Sans CJK SC` / `Noto Sans CJK TC` | Distribution package (`fonts-noto-cjk`) | Use the face matching the content language. [DEBIAN-NOTO] [DEBIAN-NOTO-NAMES] |
 | `generic(fangsong)` | Traditional Chinese | cwTeX 仿宋體 | `cwTeXFangSong` | Distribution package (`fonts-cwtex-fs`) | Debian identifies this as a Traditional Chinese FangSong font; paired names are in the OpenType name table. No equivalent cross-distribution default was verified. [DEBIAN-CWTEX-FS] [LINUX-NAMES] |
 | `generic(kai)` | Traditional Chinese | cwTeX 楷書 | `cwTeXKai` | Distribution package (`fonts-cwtex-kai`) | Debian identifies this as a Traditional Chinese Kai font; paired names are in the OpenType name table. No equivalent cross-distribution default was verified. [DEBIAN-CWTEX-KAI] [LINUX-NAMES] |
 
@@ -81,12 +81,12 @@ The AOSP `fonts.xml` maps the `zh-Hans` and `zh-Hant` fallback families to indic
 
 | CSS generic | Language/region | Chinese/localized family name | English family name | Availability | Evidence and notes |
 | --- | --- | --- | --- | --- | --- |
-| `serif` (Song) | Simplified Chinese | n/a | `Noto Serif CJK SC` | **AOSP system fallback** | TTC index 2, selected for `zh-Hans` and `serif`. [AOSP-FONTS] [AOSP-NOTO-SERIF] |
-| `serif` (Song) | Traditional Chinese | n/a | `Noto Serif CJK TC` | **AOSP system fallback** | TTC index 3, selected for `zh-Hant` and `serif`. [AOSP-FONTS] [AOSP-NOTO-SERIF] |
-| `sans-serif` (Hei) | Simplified Chinese | n/a | `Noto Sans CJK SC` | **AOSP system fallback** | TTC index 2, selected for `zh-Hans`. [AOSP-FONTS] [AOSP-NOTO-SANS] |
-| `sans-serif` (Hei) | Traditional Chinese | n/a | `Noto Sans CJK TC` | **AOSP system fallback** | TTC index 3, selected for `zh-Hant`. [AOSP-FONTS] [AOSP-NOTO-SANS] |
-| `generic(fangsong)` | Chinese | — | — | **No mapping** | No Fangsong face or alias occurs in the checked AOSP font configuration. [AOSP-FONTS] |
-| `generic(kai)` | Chinese | — | — | **No mapping** | No Kai face or alias occurs in the checked AOSP font configuration. [AOSP-FONTS] |
+| `serif` (Song) | Simplified Chinese | — | `Noto Serif CJK SC` | AOSP system fallback | TTC index 2, selected for `zh-Hans` and `serif`. [AOSP-FONTS] [AOSP-NOTO-SERIF] |
+| `serif` (Song) | Traditional Chinese | — | `Noto Serif CJK TC` | AOSP system fallback | TTC index 3, selected for `zh-Hant` and `serif`. [AOSP-FONTS] [AOSP-NOTO-SERIF] |
+| `sans-serif` (Hei) | Simplified Chinese | — | `Noto Sans CJK SC` | AOSP system fallback | TTC index 2, selected for `zh-Hans`. [AOSP-FONTS] [AOSP-NOTO-SANS] |
+| `sans-serif` (Hei) | Traditional Chinese | — | `Noto Sans CJK TC` | AOSP system fallback | TTC index 3, selected for `zh-Hant`. [AOSP-FONTS] [AOSP-NOTO-SANS] |
+| `generic(fangsong)` | Chinese | — | — | No mapping | No Fangsong face or alias occurs in the checked AOSP font configuration. [AOSP-FONTS] |
+| `generic(kai)` | Chinese | — | — | No mapping | No Kai face or alias occurs in the checked AOSP font configuration. [AOSP-FONTS] |
 
 ### HarmonyOS / OpenHarmony
 
@@ -94,11 +94,11 @@ OpenHarmony's checked font configuration uses `HarmonyOS Sans SC` for `zh-Hans` 
 
 | CSS generic | Language/region | Chinese/localized family name | English family name | Availability | Evidence and notes |
 | --- | --- | --- | --- | --- | --- |
-| `serif` (Song) | Chinese | — | — | **No verified Chinese mapping** | The checked configuration supplies no Chinese Song face; Chinese fallback is HarmonyOS Sans. [OHOS-CONFIG] |
-| `sans-serif` (Hei) | Simplified Chinese | 鸿蒙黑体 | `HarmonyOS Sans SC` | **OpenHarmony system fallback** | The official system resource and font configuration use `/system/fonts/HarmonyOS_Sans_SC.ttf`; the zh-CN name record is 鸿蒙黑体. [OHOS-RESOURCES] [OHOS-CONFIG] [OHOS-TYPEFACE] [OHOS-NAMES-SC] |
-| `sans-serif` (Hei) | Traditional Chinese | 鴻蒙黑體 | `HarmonyOS Sans TC` | **OpenHarmony system fallback** | The official system resource and font configuration include `HarmonyOS_Sans_TC.ttf`; the zh-TW name record is 鴻蒙黑體. [OHOS-RESOURCES] [OHOS-CONFIG] [OHOS-NAMES-TC] |
-| `generic(fangsong)` | Chinese | — | — | **No mapping** | No Fangsong face or alias occurs in the checked OpenHarmony font configuration. [OHOS-CONFIG] |
-| `generic(kai)` | Chinese | — | — | **No mapping** | No Kai face or alias occurs in the checked OpenHarmony font configuration. [OHOS-CONFIG] |
+| `serif` (Song) | Chinese | — | — | No verified Chinese mapping | The checked configuration supplies no Chinese Song face; Chinese fallback is HarmonyOS Sans. [OHOS-CONFIG] |
+| `sans-serif` (Hei) | Simplified Chinese | 鸿蒙黑体 | `HarmonyOS Sans SC` | OpenHarmony system fallback | The official system resource and font configuration use `/system/fonts/HarmonyOS_Sans_SC.ttf`; the zh-CN name record is 鸿蒙黑体. [OHOS-RESOURCES] [OHOS-CONFIG] [OHOS-TYPEFACE] [OHOS-NAMES-SC] |
+| `sans-serif` (Hei) | Traditional Chinese | 鴻蒙黑體 | `HarmonyOS Sans TC` | OpenHarmony system fallback | The official system resource and font configuration include `HarmonyOS_Sans_TC.ttf`; the zh-TW name record is 鴻蒙黑體. [OHOS-RESOURCES] [OHOS-CONFIG] [OHOS-NAMES-TC] |
+| `generic(fangsong)` | Chinese | — | — | No mapping | No Fangsong face or alias occurs in the checked OpenHarmony font configuration. [OHOS-CONFIG] |
+| `generic(kai)` | Chinese | — | — | No mapping | No Kai face or alias occurs in the checked OpenHarmony font configuration. [OHOS-CONFIG] |
 
 ## Implementation guidance
 

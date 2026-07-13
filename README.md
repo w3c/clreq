@@ -30,6 +30,7 @@ Topics for discussion are suggested by [the gap-analysis template](https://www.w
 
 ### Other documents
 - [Ready-made Counter Styles](https://www.w3.org/TR/predefined-counter-styles/)
+- [Recommended System Font Mappings for Generic Chinese Font Families](system-font-mappings.md)
 
 ### Feedback
 Please use the [GitHub issue list](https://github.com/w3c/clreq/issues) to report issues for language support, for discussions, and to send feedback about documents. (Learn [how GitHub issues work](https://www.w3.org/International/i18n-activity/guidelines/issues.html).)

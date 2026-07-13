@@ -29,6 +29,7 @@
 
 ### 相关文档
 - [现成的计数器样式](https://www.w3.org/TR/predefined-counter-styles/)
+- [中文通用字体族的推荐系统字体映射](system-font-mappings.md)
 
 ### 反馈
 请使用[GitHub Issue](https://github.com/w3c/clreq/issues)提出中文支持的问题、讨论以及对有关文档的反馈。您也可以学习[如何使用GitHub issues](https://www.w3.org/International/i18n-activity/guidelines/issues.zh-hans.html)。

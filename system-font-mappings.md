@@ -68,13 +68,16 @@ Most of the additional families are downloadable rather than system fonts in App
 | `sans-serif` (Hei) | Traditional Chinese (Taiwan) | 蘋方-繁 | `PingFang TC` | Downloadable | Regional Taiwan family. [APPLE-FONTS] [APPLE-NAMES] |
 | `sans-serif` (Hei) | Traditional Chinese (Hong Kong) | 蘋方-港 | `PingFang HK` | Downloadable | Regional Hong Kong family. [APPLE-FONTS] [APPLE-NAMES] |
 | `sans-serif` (Hei) | Traditional Chinese (Macao) | 蘋方-澳 | `PingFang MO` | Downloadable | Regional Macao family. [APPLE-FONTS] [APPLE-NAMES] |
-| `sans-serif` (Hei) | Chinese; region not identified by the inventory label | — | `Hei`, `STHeiti`, `STXihei` | Downloadable | Apple lists these separately from the system `Heiti SC` and `Heiti TC` family names. [APPLE-FONTS] |
+| `sans-serif` (Hei) | Chinese; region not identified by the inventory label | — | `Hei` | Downloadable | Apple lists `Hei Regular` as a separate entry from the system `Heiti SC` and `Heiti TC` faces. [APPLE-FONTS] |
+| `sans-serif` (Hei) | Chinese; region not identified by the inventory label | — | `STHeiti` | Downloadable |  [APPLE-FONTS] |
+| `sans-serif` (Hei) | Chinese; region not identified by the inventory label | — | `STXihei` | Downloadable | [APPLE-FONTS] |
 | `sans-serif` (Hei) | Traditional Chinese | 儷黑 | `LiHei Pro` | Downloadable | [APPLE-FONTS] |
 | `sans-serif` (Hei) | Traditional Chinese | — | `Hiragino Sans TC` | Downloadable | Apple lists W3 and W6 faces. [APPLE-FONTS] |
 | `generic(fangsong)` | Simplified Chinese | 华文仿宋 | `STFangsong` | Downloadable | Do not assume presence before the asset is installed. [APPLE-FONTS] [APPLE-NAMES] |
 | `generic(kai)` | Simplified Chinese | 楷体-简 | `Kaiti SC` | Downloadable | Do not assume presence before the asset is installed. [APPLE-FONTS] [APPLE-NAMES] |
 | `generic(kai)` | Traditional Chinese | 楷體-繁 | `Kaiti TC` | Downloadable | Do not assume presence before the asset is installed. [APPLE-FONTS] [APPLE-NAMES] |
-| `generic(kai)` | Chinese; region not identified by the inventory label | — | `Kai`, `STKaiti` | Downloadable | Additional Kai-style candidates; not selected as the default mapping. [APPLE-FONTS] |
+| `generic(kai)` | Chinese; region not identified by the inventory label | — | `Kai Regular` | Downloadable | [APPLE-FONTS] |
+| `generic(kai)` | Chinese; region not identified by the inventory label | — | `STKaiti` | Downloadable | [APPLE-FONTS] |
 | `generic(kai)` | Traditional Chinese (Taiwan/Hong Kong) | — | `BiauKaiTC`, `BiauKaiHK` | Downloadable | Regional Traditional Chinese Kai candidates. [APPLE-FONTS] |
 | `generic(kai)` | Traditional Chinese | — | `DFKaiShu-SB-Estd-BF` | Downloadable | [APPLE-FONTS] |
 | — | Simplified and Traditional Chinese | — | `Yuanti SC`, `Yuanti TC` | Downloadable | Rounded sans/display families; Apple lists Light, Regular, and Bold faces. [APPLE-FONTS] |

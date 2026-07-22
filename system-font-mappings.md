@@ -83,9 +83,9 @@ Most of the additional families are downloadable rather than system fonts in App
 | `generic(kai)` | Chinese; region not identified by the inventory label | — | `STKaiti` | Downloadable | [APPLE-FONTS] |
 | `generic(kai)` | Traditional Chinese (Taiwan/Hong Kong) | — | `BiauKaiTC`, `BiauKaiHK` | Downloadable | Regional Traditional Chinese Kai candidates. [APPLE-FONTS] |
 | `generic(kai)` | Traditional Chinese | — | `DFKaiShu-SB-Estd-BF` | Downloadable | [APPLE-FONTS] |
-| — | Simplified and Traditional Chinese | — | `Yuanti SC`, `Yuanti TC` | Downloadable | Rounded sans/display families; Apple lists Light, Regular, and Bold faces. [APPLE-FONTS] |
+| — | Simplified and Traditional Chinese | — | `Yuanti SC`, `Yuanti TC` | Downloadable | Rounded sans families; Apple lists Light, Regular, and Bold faces. [APPLE-FONTS] |
 | — | Multi-script | — | `Arial Unicode MS` | System font | CJK-capable but not region-specific; it should not be used to infer Simplified- or Traditional-Chinese glyph conventions. [APPLE-FONTS] [APPLE-NAMES] |
-| — | Simplified and Traditional Chinese | — | `Xingkai SC`, `Xingkai TC` | Downloadable | Semi-cursive display/calligraphic families, not neutral `generic(kai)` defaults. [APPLE-FONTS] |
+| — | Simplified and Traditional Chinese | — | `Xingkai SC`, `Xingkai TC` | Downloadable | Semi-cursive calligraphic families, not neutral `generic(kai)` defaults. [APPLE-FONTS] |
 | — | Simplified and Traditional Chinese | — | `Baoli SC`, `Baoli TC` | Downloadable | [APPLE-FONTS] |
 | — | Simplified and Traditional Chinese | — | `Hannotate SC`, `Hannotate TC` | Downloadable | Handwriting families; Apple lists Regular and Bold faces. [APPLE-FONTS] |
 | — | Simplified and Traditional Chinese | — | `HanziPen SC`, `HanziPen TC` | Downloadable | Handwriting/pen families; Apple lists Regular and Bold faces. [APPLE-FONTS] |

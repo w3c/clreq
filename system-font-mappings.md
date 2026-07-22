@@ -1,6 +1,6 @@
 # Recommended System Font Mappings for Generic Chinese Font Families
 
-**Last verified:** 2026-07-13
+**Last verified:** 2026-07-21
 
 ## Table of contents
 
@@ -25,6 +25,7 @@ Each font is classified with one of the following availability labels:
 
 * Built-in/system: the cited platform inventory or configuration identifies the font as part of the system baseline.
 * OS optional/downloadable: the OS vendor supplies the font, but it may be absent until a language feature or font asset is installed.
+* Document-based app support: the OS vendor supplies the font through document-based apps rather than as a general system or downloadable font; do not assume it is available to browsers or other applications.
 * Distribution package: an official Linux distribution repository supplies the font; this does not imply that a default desktop installation includes it.
 * No mapping: the checked official inventory or configuration contains no suitable face.
 
@@ -48,17 +49,45 @@ The Windows 11 inventory separates its core font list from optional Features on 
 
 ### macOS
 
-Apple's current font inventory distinguishes system font from downloadable. Songti SC/TC and Heiti SC/TC are marked as macOS system fonts. PingFang SC/TC, Kaiti SC/TC, and STFangsong are marked downloadable on current macOS. [APPLE-FONTS]
+Apple's current font inventory distinguishes system font, downloadable, and document-based app support. A dash in the CSS-generic column means that the family is available but is not recommended as a neutral default for one of the Chinese generic families covered by this document. [APPLE-FONTS] [APPLE-NAMES]
+
+Most of the additional families are downloadable rather than system fonts in Apple's terminology.
 
 | CSS generic | Language/region | Chinese/localized family name | English family name | Availability | Evidence and notes |
 | --- | --- | --- | --- | --- | --- |
 | `serif` (Song) | Simplified Chinese | 宋体-简 | `Songti SC` | System font | Apple inventory and OpenType localized family-name records. [APPLE-FONTS] [APPLE-NAMES] |
+| `serif` (Song) | Simplified Chinese | 华文宋体 | `STSong` | System font |  [APPLE-FONTS] [APPLE-NAMES] |
+| `serif` (Song) | Simplified Chinese | — | `SimSong` | Downloadable | Apple lists Regular and Bold faces. [APPLE-FONTS] |
 | `serif` (Song) | Traditional Chinese | 宋體-繁 | `Songti TC` | System font | Apple inventory and OpenType localized family-name records. [APPLE-FONTS] [APPLE-NAMES] |
-| `sans-serif` (Hei) | Simplified Chinese | 黑体-简 | `Heiti SC` | System font | Stable built-in candidate. The more modern 苹方-简 / `PingFang SC` is also OS-supplied, but Apple's current inventory marks it downloadable. [APPLE-FONTS] [APPLE-NAMES] |
-| `sans-serif` (Hei) | Traditional Chinese | 黑體-繁 | `Heiti TC` | System font | Stable built-in candidate. The more modern 蘋方-繁 / `PingFang TC` is also OS-supplied, but Apple's current inventory marks it downloadable. [APPLE-FONTS] [APPLE-NAMES] |
+| `serif` (Song) | Traditional Chinese | 儷宋 | `LiSong Pro` | Downloadable | [APPLE-FONTS] |
+| `sans-serif` (Hei) | Simplified Chinese | 黑体-简 | `Heiti SC` | System font | Stable built-in candidate. [APPLE-FONTS] [APPLE-NAMES] |
+| `sans-serif` (Hei) | Simplified Chinese | 兰亭黑-简 | `Lantinghei SC` | Downloadable | Apple lists Demibold, Extralight, and Heavy faces. [APPLE-FONTS] |
+| `sans-serif` (Hei) | Simplified Chinese | 苹方-简 | `PingFang SC` | Downloadable | [APPLE-FONTS] [APPLE-NAMES] |
+| `sans-serif` (Hei) | Traditional Chinese | 黑體-繁 | `Heiti TC` | System font | Stable built-in candidate. [APPLE-FONTS] [APPLE-NAMES] |
+| `sans-serif` (Hei) | Traditional Chinese | 蘭亭黑-繁 | `Lantinghei TC` | Downloadable; Extralight has document-based app support | [APPLE-FONTS] |
+| `sans-serif` (Hei) | Traditional Chinese (Taiwan) | 蘋方-繁 | `PingFang TC` | Downloadable | Regional Taiwan family. [APPLE-FONTS] [APPLE-NAMES] |
+| `sans-serif` (Hei) | Traditional Chinese (Hong Kong) | 蘋方-港 | `PingFang HK` | Downloadable | Regional Hong Kong family. [APPLE-FONTS] [APPLE-NAMES] |
+| `sans-serif` (Hei) | Traditional Chinese (Macao) | 蘋方-澳 | `PingFang MO` | Downloadable | Regional Macao family. [APPLE-FONTS] [APPLE-NAMES] |
+| `sans-serif` (Hei) | Chinese; region not identified by the inventory label | — | `Hei`, `STHeiti`, `STXihei` | Downloadable | Apple lists these separately from the system `Heiti SC` and `Heiti TC` family names. [APPLE-FONTS] |
+| `sans-serif` (Hei) | Traditional Chinese | 儷黑 | `LiHei Pro` | Downloadable | [APPLE-FONTS] |
+| `sans-serif` (Hei) | Traditional Chinese | — | `Hiragino Sans TC` | Downloadable | Apple lists W3 and W6 faces. [APPLE-FONTS] |
 | `generic(fangsong)` | Simplified Chinese | 华文仿宋 | `STFangsong` | Downloadable | Do not assume presence before the asset is installed. [APPLE-FONTS] [APPLE-NAMES] |
 | `generic(kai)` | Simplified Chinese | 楷体-简 | `Kaiti SC` | Downloadable | Do not assume presence before the asset is installed. [APPLE-FONTS] [APPLE-NAMES] |
-| `generic(kai)` | Traditional Chinese | 楷體-繁 | `Kaiti TC` | Downloadable | Do not assume presence before the asset is installed. `BiauKaiTC` / 標楷體-繁 is another downloadable Traditional Chinese candidate. [APPLE-FONTS] [APPLE-NAMES] |
+| `generic(kai)` | Traditional Chinese | 楷體-繁 | `Kaiti TC` | Downloadable | Do not assume presence before the asset is installed. [APPLE-FONTS] [APPLE-NAMES] |
+| `generic(kai)` | Chinese; region not identified by the inventory label | — | `Kai`, `STKaiti` | Downloadable | Additional Kai-style candidates; not selected as the default mapping. [APPLE-FONTS] |
+| `generic(kai)` | Traditional Chinese (Taiwan/Hong Kong) | — | `BiauKaiTC`, `BiauKaiHK` | Downloadable | Regional Traditional Chinese Kai candidates. [APPLE-FONTS] |
+| `generic(kai)` | Traditional Chinese | — | `DFKaiShu-SB-Estd-BF` | Downloadable | [APPLE-FONTS] |
+| — | Simplified and Traditional Chinese | — | `Yuanti SC`, `Yuanti TC` | Downloadable | Rounded sans/display families; Apple lists Light, Regular, and Bold faces. [APPLE-FONTS] |
+| — | Multi-script | — | `Arial Unicode MS` | System font | CJK-capable but not region-specific; it should not be used to infer Simplified- or Traditional-Chinese glyph conventions. [APPLE-FONTS] [APPLE-NAMES] |
+| — | Simplified and Traditional Chinese | — | `Xingkai SC`, `Xingkai TC` | Downloadable | Semi-cursive display/calligraphic families, not neutral `generic(kai)` defaults. [APPLE-FONTS] |
+| — | Simplified and Traditional Chinese | — | `Baoli SC`, `Baoli TC` | Downloadable | [APPLE-FONTS] |
+| — | Simplified and Traditional Chinese | — | `Hannotate SC`, `Hannotate TC` | Downloadable | Handwriting families; Apple lists Regular and Bold faces. [APPLE-FONTS] |
+| — | Simplified and Traditional Chinese | — | `HanziPen SC`, `HanziPen TC` | Downloadable | Handwriting/pen families; Apple lists Regular and Bold faces. [APPLE-FONTS] |
+| — | Simplified and Traditional Chinese | — | `Libian SC`, `Libian TC` | Downloadable | Clerical families. [APPLE-FONTS] |
+| — | Simplified and Traditional Chinese | — | `LingWai SC`, `LingWai TC` | Downloadable | Handwriting families. [APPLE-FONTS] |
+| — | Simplified and Traditional Chinese | — | `Wawati SC`, `Wawati TC` | Downloadable | Handwriting families. [APPLE-FONTS] |
+| — | Simplified and Traditional Chinese | — | `Weibei SC`, `Weibei TC` | Downloadable | Stele families. [APPLE-FONTS] |
+| — | Simplified and Traditional Chinese | — | `Yuppy SC`, `Yuppy TC` | Downloadable | Handwriting families. [APPLE-FONTS] |
 
 ### iOS and iPadOS
 
@@ -115,7 +144,7 @@ OpenHarmony's checked font configuration uses `HarmonyOS Sans SC` for `zh-Hans` 
 
 ## Implementation guidance
 
-Do not treat an optional, downloadable, or distribution-package font as already installed. `generic(fangsong)` and `generic(kai)` are allowed not to match on a system without a suitable local face. [CSS-FONTS-4]
+Do not treat an optional, downloadable, document-based app support, or distribution-package font as already installed and available to CSS. `generic(fangsong)` and `generic(kai)` are allowed not to match on a system without a suitable local face. [CSS-FONTS-4]
 
 Browser vendors should document any private, hidden, automatically activated, OEM-specific, or version-specific mappings in additions to this table.
 
@@ -127,7 +156,7 @@ A contribution adding or changing a mapping should include:
 * an official vendor inventory, OS source/configuration, or distribution package reference proving availability;
 * the font file name and family name;
 * the English and Chinese localized family-name records, or an explicit statement that the Chinese-language record repeats the Latin-script name;
-* the availability class: built-in, optional/downloadable, distribution package, or OEM-specific;
+* the availability class: built-in, optional/downloadable, document-based app support, distribution package, or OEM-specific;
 * the language/region whose glyph conventions the face implements.
 
 <!-- Reference-style link definitions. -->

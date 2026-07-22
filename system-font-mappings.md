@@ -39,9 +39,11 @@ The Windows 11 inventory separates its core font list from optional Features on 
 
 | CSS generic | Language/region | Chinese/localized family name | English family name | Availability | Evidence and notes |
 | --- | --- | --- | --- | --- | --- |
-| `serif` (Song) | Simplified Chinese | 宋体 | `SimSun` | Built-in | Windows 11 core list; Microsoft describes SimSun as a Simplified Chinese Song font. [MS-W11] [MS-SIMSUN] [MS-NAMES] |
+| `serif` (Song) | Simplified Chinese | 宋体 | `SimSun`, `NSimSun` | Built-in | Windows 11 core list; Microsoft describes SimSun as a Simplified Chinese Song font. [MS-W11] [MS-SIMSUN] [MS-NAMES] |
 | `serif` (Song) | Traditional Chinese | 新細明體 | `PMingLiU` | OS optional | Traditional Chinese supplemental font. Microsoft describes the MingLiU family as Traditional Chinese mincho/serif. [MS-W11] [MS-MINGLIU] [MS-NAMES] |
 | `sans-serif` (Hei) | Simplified Chinese | 微软雅黑 | `Microsoft YaHei` | Built-in | Windows 11 core list and Microsoft font-family documentation. [MS-W11] [MS-YAHEI] [MS-NAMES] |
+| `sans-serif` (Hei) | Simplified Chinese | 等线 | `DengXian` | OS optional | Simplified Chinese supplemental font. [MS-W11] [MS-DENGXIAN] |
+| `sans-serif` (Hei) | Simplified Chinese | 黑体 | `SimHei` | OS optional | Simplified Chinese supplemental font. [MS-W11] [MS-SIMHEI] [MS-NAMES] |
 | `sans-serif` (Hei) | Traditional Chinese | 微軟正黑體 | `Microsoft JhengHei` | Built-in | Windows 11 core list and Microsoft font-family documentation. [MS-W11] [MS-JHENGHEI] [MS-NAMES] |
 | `generic(fangsong)` | Simplified Chinese | 仿宋 | `FangSong` | OS optional | Simplified Chinese supplemental font; the Microsoft family page identifies it as Simplified Chinese. No Traditional-Chinese-specific Fangsong family was verified in the Windows 11 inventory. [MS-W11] [MS-FANGSONG] [MS-NAMES] |
 | `generic(kai)` | Simplified Chinese | 楷体 | `KaiTi` | OS optional | Simplified Chinese supplemental font. [MS-W11] [MS-KAITI] [MS-NAMES] |
@@ -71,6 +73,7 @@ Most of the additional families are downloadable rather than system fonts in App
 | `sans-serif` (Hei) | Chinese; region not identified by the inventory label | — | `Hei` | Downloadable | Apple lists `Hei Regular` as a separate entry from the system `Heiti SC` and `Heiti TC` faces. [APPLE-FONTS] |
 | `sans-serif` (Hei) | Chinese; region not identified by the inventory label | — | `STHeiti` | Downloadable |  [APPLE-FONTS] |
 | `sans-serif` (Hei) | Chinese; region not identified by the inventory label | — | `STXihei` | Downloadable | [APPLE-FONTS] |
+| `sans-serif` (Hei) | Traditional Chinese | — | `Apple LiGothic` | Downloadable | Apple lists the face as `Apple LiGothic Medium`. It is a separate Apple inventory entry from `LiHei Pro`. [APPLE-FONTS] [MS-NAMES] |
 | `sans-serif` (Hei) | Traditional Chinese | 儷黑 | `LiHei Pro` | Downloadable | [APPLE-FONTS] |
 | `sans-serif` (Hei) | Traditional Chinese | — | `Hiragino Sans TC` | Downloadable | Apple lists W3 and W6 faces. [APPLE-FONTS] |
 | `generic(fangsong)` | Simplified Chinese | 华文仿宋 | `STFangsong` | Downloadable | Do not assume presence before the asset is installed. [APPLE-FONTS] [APPLE-NAMES] |
@@ -169,6 +172,10 @@ A contribution adding or changing a mapping should include:
 [MS-W11]: https://learn.microsoft.com/en-us/typography/fonts/windows_11_font_list "Microsoft Typography — Font List Windows 11"
 
 [MS-SIMSUN]: https://learn.microsoft.com/en-us/typography/font-list/simsun "Microsoft Typography — SimSun font family"
+
+[MS-DENGXIAN]: https://learn.microsoft.com/en-us/typography/font-list/dengxian "Microsoft Typography — DengXian font family"
+
+[MS-SIMHEI]: https://learn.microsoft.com/en-us/typography/font-list/simhei "Microsoft Typography — SimHei font family"
 
 [MS-YAHEI]: https://learn.microsoft.com/en-us/typography/font-list/microsoft-yahei "Microsoft Typography — Microsoft YaHei font family"
 

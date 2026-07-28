@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="360" viewBox="0 0 800 360" role="img" aria-labelledby="title description">
+  <title id="title">Facing-page headers and page numbers</title>
+  <desc id="description">An even page on the left and an odd page on the right. Their headers and page numbers are mirrored toward the outer edges.</desc>
+  <defs>
+    <style>
+      .page { fill: #fff; stroke: #333; stroke-width: 2; }
+      .edge { fill: #dfeec2; }
+      .rule { stroke: #4f7f19; stroke-width: 2; }
+      .body-line { stroke: #999; stroke-linecap: round; stroke-width: 3; }
+      .header { fill: #222; font: 16px "PingFang SC", "Noto Sans CJK SC", "Microsoft YaHei", sans-serif; letter-spacing: 1px; }
+      .folio { fill: #222; font: 18px Georgia, "Times New Roman", serif; }
+    </style>
+    <clipPath id="left-page">
+      <rect x="80" y="20" width="310" height="320" />
+    </clipPath>
+    <clipPath id="right-page">
+      <rect x="410" y="20" width="310" height="320" />
+    </clipPath>
+  </defs>
+
+  <rect class="page" x="80" y="20" width="310" height="320" />
+  <rect class="page" x="410" y="20" width="310" height="320" />
+
+  <g clip-path="url(#left-page)">
+    <rect class="edge" x="80" y="20" width="8" height="320" />
+    <text class="header" x="108" y="58">中文排版需求</text>
+    <line class="rule" x1="108" y1="70" x2="362" y2="70" />
+
+    <line class="body-line" x1="120" y1="104" x2="348" y2="104" />
+    <line class="body-line" x1="120" y1="121" x2="358" y2="121" />
+    <line class="body-line" x1="120" y1="138" x2="340" y2="138" />
+    <line class="body-line" x1="120" y1="155" x2="358" y2="155" />
+    <line class="body-line" x1="120" y1="172" x2="350" y2="172" />
+    <line class="body-line" x1="120" y1="189" x2="358" y2="189" />
+    <line class="body-line" x1="120" y1="206" x2="329" y2="206" />
+    <line class="body-line" x1="120" y1="240" x2="358" y2="240" />
+    <line class="body-line" x1="120" y1="257" x2="345" y2="257" />
+    <line class="body-line" x1="120" y1="274" x2="300" y2="274" />
+
+    <text class="folio" x="108" y="316">42</text>
+  </g>
+
+  <g clip-path="url(#right-page)">
+    <rect class="edge" x="712" y="20" width="8" height="320" />
+    <text class="header" x="692" y="58" text-anchor="end">第七章　页面与书籍版式</text>
+    <line class="rule" x1="438" y1="70" x2="692" y2="70" />
+
+    <line class="body-line" x1="452" y1="104" x2="680" y2="104" />
+    <line class="body-line" x1="442" y1="121" x2="680" y2="121" />
+    <line class="body-line" x1="460" y1="138" x2="680" y2="138" />
+    <line class="body-line" x1="442" y1="155" x2="680" y2="155" />
+    <line class="body-line" x1="450" y1="172" x2="680" y2="172" />
+    <line class="body-line" x1="442" y1="189" x2="680" y2="189" />
+    <line class="body-line" x1="471" y1="206" x2="680" y2="206" />
+    <line class="body-line" x1="442" y1="240" x2="680" y2="240" />
+    <line class="body-line" x1="455" y1="257" x2="680" y2="257" />
+    <line class="body-line" x1="500" y1="274" x2="680" y2="274" />
+
+    <text class="folio" x="692" y="316" text-anchor="end">43</text>
+  </g>
+
+  <path d="M390 20c8 12 12 30 12 54v212c0 24-4 42-12 54" fill="none" stroke="#aaa" stroke-width="1.5" />
+  <path d="M410 20c-8 12-12 30-12 54v212c0 24 4 42 12 54" fill="none" stroke="#aaa" stroke-width="1.5" />
+</svg>

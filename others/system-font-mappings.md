@@ -1,6 +1,6 @@
 # Recommended System Font Mappings for Generic Chinese Font Families
 
-**Last verified:** 2026-07-21
+**Last verified:** 2026-09-03
 
 ## Table of contents
 
@@ -111,7 +111,7 @@ In Apple's current public inventory, the Chinese families below are all marked d
 
 ### Linux desktop distributions
 
-Linux has no single system-font inventory. The following entries are verified examples from Debian's official repository and should be treated as package-dependent candidates. Other distributions may package the same fonts under different package names, versions, or fontconfig rules.
+Linux has no single system-font inventory. The following entries are verified against Debian 13 (`trixie`); notes cite other official distribution repositories where they materially establish broader availability. All entries are package-dependent candidates, not evidence of a default desktop installation. Other distributions may package the same fonts under different package names or versions.
 
 | CSS generic | Language/region | Chinese/localized family name | English family name | Availability | Evidence and notes |
 | --- | --- | --- | --- | --- | --- |
@@ -121,7 +121,13 @@ Linux has no single system-font inventory. The following entries are verified ex
 | `sans-serif` (Hei) | Simplified and Traditional Chinese | 文泉驿正黑 | `WenQuanYi Zen Hei` | Distribution package (`fonts-wqy-zenhei`) | Debian documents Simplified and Traditional coverage; the localized family name occurs in the font metadata for both language systems. [DEBIAN-WQY] [WQY-NAMES] |
 | `sans-serif` (Hei) | Simplified/Traditional Chinese | — | `Noto Sans CJK SC` / `Noto Sans CJK TC` | Distribution package (`fonts-noto-cjk`) | Use the face matching the content language. [DEBIAN-NOTO] [DEBIAN-NOTO-NAMES] |
 | `generic(fangsong)` | Traditional Chinese | cwTeX 仿宋體 | `cwTeXFangSong` | Distribution package (`fonts-cwtex-fs`) | Debian identifies this as a Traditional Chinese FangSong font; paired names are in the OpenType name table. No equivalent cross-distribution default was verified. [DEBIAN-CWTEX-FS] [LINUX-NAMES] |
+| `generic(kai)` | Simplified Chinese | 霞鹜文楷 | `LXGW WenKai` | Distribution package (`fonts-lxgw-wenkai`) | Debian 13 and Ubuntu 24.04 package the main family. Upstream places it in the Kai category but describes hybrid Kai/Fangsong traits; the main family also mixes in many GB-form glyphs, so it is not a neutral Traditional-Chinese mapping. [DEBIAN-LXGW] [UBUNTU-LXGW] [LXGW-UPSTREAM] [LXGW-NAMES] |
+| `generic(kai)` | Simplified Chinese | 文鼎ＰＬ简中楷 | `AR PL KaitiM GB` | Distribution package (`fonts-arphic-gkai00mp`) | Debian 13 and Ubuntu 24.04 package the original GB Kai font. Paired names are in the OpenType name table. Coverage is limited to the legacy GB repertoire; this is not a default desktop font. [DEBIAN-ARPHIC-GKAI] [UBUNTU-ARPHIC-GKAI] [ARPHIC-GKAI-NAMES] |
+| `generic(kai)` | Simplified Chinese | — | `AR PL UKai CN` | Distribution package (`fonts-arphic-ukai`) | Unicode derivative of the KaitiM GB/Big5 fonts. Debian's fontconfig rules select this face for `zh-cn` and `zh-sg`; Fedora and Arch also package the collection. No localized family-name record is present. [DEBIAN-ARPHIC-UKAI] [FEDORA-ARPHIC-UKAI] [ARCH-ARPHIC-UKAI] [ARPHIC-UKAI-CONFIG] [ARPHIC-UKAI-NAMES] |
 | `generic(kai)` | Traditional Chinese | cwTeX 楷書 | `cwTeXKai` | Distribution package (`fonts-cwtex-kai`) | Debian identifies this as a Traditional Chinese Kai font; paired names are in the OpenType name table. No equivalent cross-distribution default was verified. [DEBIAN-CWTEX-KAI] [LINUX-NAMES] |
+| `generic(kai)` | Traditional Chinese | 文鼎ＰＬ中楷 | `AR PL KaitiM Big5` | Distribution package (`fonts-arphic-bkai00mp`) | Debian 13 and Ubuntu 24.04 package the original Big5 Kai font. Paired names are in the OpenType name table. Coverage is limited to the legacy Big5 repertoire; this is not a default desktop font. [DEBIAN-ARPHIC-BKAI] [UBUNTU-ARPHIC-BKAI] [ARPHIC-BKAI-NAMES] |
+| `generic(kai)` | Traditional Chinese (Hong Kong/Macao) | — | `AR PL UKai HK` | Distribution package (`fonts-arphic-ukai`) | Debian's fontconfig rules select this face for `zh-hk` and `zh-mo`. No localized family-name record is present. [ARPHIC-UKAI-CONFIG] [ARPHIC-UKAI-NAMES] |
+| `generic(kai)` | Traditional Chinese (Taiwan) | — | `AR PL UKai TW` | Distribution package (`fonts-arphic-ukai`) | Debian's fontconfig rules select this face for `zh-tw`. No localized family-name record is present. [ARPHIC-UKAI-CONFIG] [ARPHIC-UKAI-NAMES] |
 
 ### Android Open Source Project (AOSP)
 
@@ -208,6 +214,36 @@ A contribution adding or changing a mapping should include:
 [DEBIAN-CWTEX-KAI]: https://packages.debian.org/sid/fonts-cwtex-kai "Debian — fonts-cwtex-kai"
 
 [LINUX-NAMES]: https://packages.debian.org/source/sid/fonts-cwtex "OpenType name tables inspected from Debian's fonts-cwtex 1.0-4 source package"
+
+[DEBIAN-LXGW]: https://packages.debian.org/trixie/fonts/fonts-lxgw-wenkai "Debian 13 — fonts-lxgw-wenkai"
+
+[UBUNTU-LXGW]: https://packages.ubuntu.com/noble/fonts/fonts-lxgw-wenkai "Ubuntu 24.04 LTS — fonts-lxgw-wenkai"
+
+[LXGW-UPSTREAM]: https://github.com/lxgw/LxgwWenKai/blob/v1.522/README.md "LXGW WenKai v1.522 — upstream description, coverage, and regional variants"
+
+[LXGW-NAMES]: https://deb.debian.org/debian/pool/main/f/fonts-lxgw-wenkai/fonts-lxgw-wenkai_1.511%2Brepack-1_all.deb "OpenType name table inspected from Debian's fonts-lxgw-wenkai 1.511+repack-1 binary package"
+
+[DEBIAN-ARPHIC-GKAI]: https://packages.debian.org/trixie/fonts/fonts-arphic-gkai00mp "Debian 13 — fonts-arphic-gkai00mp"
+
+[UBUNTU-ARPHIC-GKAI]: https://packages.ubuntu.com/noble/fonts/fonts-arphic-gkai00mp "Ubuntu 24.04 LTS — fonts-arphic-gkai00mp"
+
+[ARPHIC-GKAI-NAMES]: https://sources.debian.org/data/main/f/fonts-arphic-gkai00mp/2.11-16/gkai00mp.ttf "OpenType name table inspected from Debian's AR PL KaitiM GB font file"
+
+[DEBIAN-ARPHIC-BKAI]: https://packages.debian.org/trixie/fonts/fonts-arphic-bkai00mp "Debian 13 — fonts-arphic-bkai00mp"
+
+[UBUNTU-ARPHIC-BKAI]: https://packages.ubuntu.com/noble/fonts/fonts-arphic-bkai00mp "Ubuntu 24.04 LTS — fonts-arphic-bkai00mp"
+
+[ARPHIC-BKAI-NAMES]: https://sources.debian.org/data/main/f/fonts-arphic-bkai00mp/2.10-21/bkai00mp.ttf "OpenType name table inspected from Debian's AR PL KaitiM Big5 font file"
+
+[DEBIAN-ARPHIC-UKAI]: https://packages.debian.org/trixie/fonts/fonts-arphic-ukai "Debian 13 — fonts-arphic-ukai"
+
+[FEDORA-ARPHIC-UKAI]: https://packages.fedoraproject.org/pkgs/cjkuni-ukai-fonts/cjkuni-ukai-fonts/ "Fedora — cjkuni-ukai-fonts"
+
+[ARCH-ARPHIC-UKAI]: https://archlinux.org/packages/extra/any/ttf-arphic-ukai/ "Arch Linux — ttf-arphic-ukai"
+
+[ARPHIC-UKAI-CONFIG]: https://sources.debian.org/data/main/f/fonts-arphic-ukai/0.2.20080216.2-5/75-ttf-arphic-ukai-select.conf "Debian's language-selection fontconfig rules for AR PL UKai"
+
+[ARPHIC-UKAI-NAMES]: https://sources.debian.org/data/main/f/fonts-arphic-ukai/0.2.20080216.2-5/ukai.ttc "OpenType name tables inspected from Debian's AR PL UKai collection"
 
 [AOSP-FONTS]: https://android.googlesource.com/platform/frameworks/base/+/1cdfff555f4a21f71ccc978290e2e212e2f8b168/data/fonts/fonts.xml#1411 "AOSP `fonts.xml` at revision `1cdfff5` — Chinese fallback groups"
 

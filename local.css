@@ -58,7 +58,7 @@ h4  {
   margin-top: 2em;
   font-size: 100%;
   font-weight: normal;
-  color: #005a9c;
+  color: var(--heading-text, #005a9c);
 }
 
 h5 {
@@ -70,7 +70,8 @@ h5 {
 }
 
 ins {
-  background-color: #99FF99;
+  background-color: var(--clreq-ins-bg, #99FF99);
+  color: var(--clreq-control-text, black);
   text-decoration: none;
 }
 
@@ -114,7 +115,7 @@ a.termref:visited,
 a.termref:active {
   text-decoration:none;
   border-bottom: 1px dotted #FC0;
-  color:#C60;
+  color: var(--clreq-term-text, #C60);
 }
 
 .qterm:before, .qchar:before { content: "'"; }
@@ -129,31 +130,33 @@ kbd {
   font-size: 100%;
 }
 
-code { color: #A52A2A; }
+code { color: var(--clreq-code-text, #A52A2A); }
 
 
 .translateme, .retranslateme {
-  background-color: #F3F3C3;
+  background-color: var(--clreq-translate-bg, #F3F3C3);
+  color: var(--clreq-control-text, black);
   background-clip: content-box;
 }
 .checkme {
-  background-color: #BBEFFC;
+  background-color: var(--clreq-check-bg, #BBEFFC);
+  color: var(--clreq-control-text, black);
   background-clip: content-box;
 }
 
 .checkme::before {
     content: ' Check this translation: ';
-    color: coral;
+    color: var(--clreq-status-text, #9c3b00);
 	}
 
 .translateme::before {
     content: ' Translate this: ';
-    color: coral;
+    color: var(--clreq-status-text, #9c3b00);
 	}
 
 .retranslateme::before {
     content: ' (Re)translate this: ';
-    color: coral;
+    color: var(--clreq-status-text, #9c3b00);
 	}
 
 .is-multilingual [its-locale-filter-list^="zh"] {
@@ -198,7 +201,7 @@ code { color: #A52A2A; }
 .appendix { overflow-x: auto }
 
 table { border-collapse: collapse; }
-table tr { border-bottom: 1px solid #ddd; }
+table tr { border-bottom: 1px solid var(--clreq-border, #ddd); }
 table th { padding: .25em .25em .5em .25em; }
 table th:last-child { padding-left: .5em; }
 table th span { font-size: .815em; }
@@ -293,7 +296,7 @@ table.glossary th.term-en { width: 5.25em; }
 } */
 
 #search {
-  color: rgba(0, 0, 0, .87);
+  color: var(--clreq-control-text, rgba(0, 0, 0, .87));
   max-height: 40px;
   flex: 1 1 auto;
   line-height: 20px;
@@ -301,27 +304,27 @@ table.glossary th.term-en { width: 5.25em; }
   max-width: 100%;
   min-width: 0;
   width: 100%;
-  background-color: #f5f5f5;
-  border: 1px solid #e0e0e0;
+  background-color: var(--clreq-input-bg, #f5f5f5);
+  border: 1px solid var(--clreq-border, #e0e0e0);
   border-radius: 8px;
   transition: all 0.2s ease-in-out;
   font-size: 14px;
 }
 
 #search:hover {
-  background-color: #fafafa;
-  border-color: #bdbdbd;
+  background-color: var(--clreq-input-hover-bg, #fafafa);
+  border-color: var(--clreq-muted-text, #bdbdbd);
 }
 
 #search:focus {
   outline: none;
-  background-color: #ffffff;
+  background-color: var(--clreq-panel-bg, #ffffff);
   border-color: #2196f3;
   box-shadow: 0 0 0 2px rgba(33, 150, 243, 0.1);
 }
 
 #search::placeholder {
-  color: #757575;
+  color: var(--clreq-muted-text, #757575);
 }
 
 .hidden {
@@ -350,7 +353,7 @@ table.glossary th.term-en { width: 5.25em; }
   border: none;
   font-size: 20px;
   cursor: pointer;
-  color: #757575;
+  color: var(--clreq-muted-text, #757575);
   padding: 0;
   width: 24px;
   height: 24px;
@@ -361,12 +364,12 @@ table.glossary th.term-en { width: 5.25em; }
 }
 
 #clear-search:hover {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: var(--clreq-input-hover-bg, rgba(0, 0, 0, 0.1));
 }
 
 .search-results-count {
   font-size: 14px;
-  color: #757575;
+  color: var(--clreq-muted-text, #757575);
   padding: 0 16px;
 }
 
@@ -382,7 +385,8 @@ table.glossary th.term-en { width: 5.25em; }
 }
 
 mark {
-  background-color: #ffeb3b;
+  background-color: var(--clreq-mark-bg, #ffeb3b);
+  color: var(--clreq-control-text, black);
   padding: 0 2px;
   border-radius: 2px;
 }
@@ -407,7 +411,7 @@ section li[id]:hover > a.self-link {
 section li[id] > a.self-link::before {
   content: "§";
   text-decoration: none;
-  color: black;
+  color: inherit;
 }
 
 
@@ -424,7 +428,8 @@ section li[id] > a.self-link::before {
     display: flex;
     flex-direction: column;
     align-content: end;
-    background-color: white;
+    background-color: var(--clreq-panel-bg, white);
+    color: var(--clreq-control-text, black);
     padding:1em;
     border-radius: .75em;
 	}
@@ -450,18 +455,19 @@ section li[id] > a.self-link::before {
     }
 
 #langSwitch button {
-	background: #FFF none repeat scroll 0% 0%;
-	border: 1px solid #CCC;
+	background: var(--clreq-panel-bg, #FFF) none repeat scroll 0% 0%;
+	color: inherit;
+	border: 1px solid var(--clreq-border, #CCC);
 	border-radius: 5px;
     display: block;
     margin-block: .2em;
 	}
 #langSwitch button:lang(zh-hans) {
-	background-color: #fbc481;
+	background-color: var(--clreq-hans-bg, #fbc481);
 	}
 
 #langSwitch button:lang(zh-hant) {
-	background-color: #9fe19f;
+	background-color: var(--clreq-hant-bg, #9fe19f);
 	}
 
 .selectedLanguage::before {
@@ -476,3 +482,45 @@ section li[id] > a.self-link::before {
     align-self: center;
     }
 
+/* Match both the system preference and ReSpec's manual dark-mode toggle.
+ * Respect the manual light override; keep these palettes in sync.
+ * Screen-only rules preserve print colors. */
+@media screen and (prefers-color-scheme: dark) {
+  body:not(:has(input[name="color-scheme"][value="light"]:checked)) {
+    --clreq-ins-bg: #173b24;
+    --clreq-term-text: #ffbb77;
+    --clreq-code-text: #ffaaaa;
+    --clreq-translate-bg: #343419;
+    --clreq-check-bg: #153943;
+    --clreq-status-text: #ffb38a;
+    --clreq-control-text: #ddd;
+    --clreq-panel-bg: #181818;
+    --clreq-input-bg: #222;
+    --clreq-input-hover-bg: #303030;
+    --clreq-border: #666;
+    --clreq-muted-text: #aaa;
+    --clreq-mark-bg: #514600;
+    --clreq-hans-bg: #503416;
+    --clreq-hant-bg: #234323;
+  }
+}
+
+@media screen {
+  body.darkmode {
+    --clreq-ins-bg: #173b24;
+    --clreq-term-text: #ffbb77;
+    --clreq-code-text: #ffaaaa;
+    --clreq-translate-bg: #343419;
+    --clreq-check-bg: #153943;
+    --clreq-status-text: #ffb38a;
+    --clreq-control-text: #ddd;
+    --clreq-panel-bg: #181818;
+    --clreq-input-bg: #222;
+    --clreq-input-hover-bg: #303030;
+    --clreq-border: #666;
+    --clreq-muted-text: #aaa;
+    --clreq-mark-bg: #514600;
+    --clreq-hans-bg: #503416;
+    --clreq-hant-bg: #234323;
+  }
+}

@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="240" viewBox="0 0 520 240" role="img" aria-labelledby="title description">
+  <title id="title">Two possible word segmentations of a Chinese sentence</title>
+  <desc id="description">The seven characters 研究生命的起源. Reading A groups them as 研究, 生命, 的, and 起源. Reading B groups them as 研究生, 命, 的, and 起源.</desc>
+  <defs>
+    <style>
+      .han { fill: #222; font: 40px "PingFang SC", "Noto Sans CJK SC", "Source Han Sans SC", "Microsoft YaHei", sans-serif; }
+      .boundary { stroke: #ddd; stroke-width: 1; stroke-dasharray: 4 4; }
+      .seg-a { stroke: #4f7f19; stroke-width: 3; fill: none; stroke-linecap: square; }
+      .seg-b { stroke: #2f6f9f; stroke-width: 3; fill: none; stroke-linecap: square; }
+      .label-a { fill: #4f7f19; font: bold 20px Georgia, "Times New Roman", serif; }
+      .label-b { fill: #2f6f9f; font: bold 20px Georgia, "Times New Roman", serif; }
+    </style>
+  </defs>
+
+  <rect width="520" height="240" fill="#fff"/>
+
+  <g class="boundary">
+    <line x1="95" y1="45" x2="95" y2="205"/>
+    <line x1="145" y1="45" x2="145" y2="205"/>
+    <line x1="195" y1="45" x2="195" y2="205"/>
+    <line x1="245" y1="45" x2="245" y2="205"/>
+    <line x1="295" y1="45" x2="295" y2="205"/>
+    <line x1="345" y1="45" x2="345" y2="205"/>
+    <line x1="395" y1="45" x2="395" y2="205"/>
+    <line x1="445" y1="45" x2="445" y2="205"/>
+  </g>
+
+  <g class="han" text-anchor="middle">
+    <text x="120" y="85">研</text>
+    <text x="170" y="85">究</text>
+    <text x="220" y="85">生</text>
+    <text x="270" y="85">命</text>
+    <text x="320" y="85">的</text>
+    <text x="370" y="85">起</text>
+    <text x="420" y="85">源</text>
+  </g>
+
+  <g class="seg-a">
+    <path d="M99 140 H191 M99 140 V132 M191 140 V132"/>
+    <path d="M199 140 H291 M199 140 V132 M291 140 V132"/>
+    <path d="M299 140 H341 M299 140 V132 M341 140 V132"/>
+    <path d="M349 140 H441 M349 140 V132 M441 140 V132"/>
+  </g>
+  <text class="label-a" x="65" y="146">A</text>
+
+  <g class="seg-b">
+    <path d="M99 190 H241 M99 190 V182 M241 190 V182"/>
+    <path d="M249 190 H291 M249 190 V182 M291 190 V182"/>
+    <path d="M299 190 H341 M299 190 V182 M341 190 V182"/>
+    <path d="M349 190 H441 M349 190 V182 M441 190 V182"/>
+  </g>
+  <text class="label-b" x="65" y="196">B</text>
+</svg>

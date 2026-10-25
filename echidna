@@ -4,6 +4,7 @@ local.css
 print.css
 src/script.js
 images/page-headers-footers.svg
+images/segmentation-ambiguity.svg
 images/en/emphasis-mark-horizontal.png
 images/en/emphasis-mark-vertical.png
 images/en/increased-inter-character-spacing.svg

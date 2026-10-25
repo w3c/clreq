@@ -1032,6 +1032,77 @@ var respecConfig = {
         </section>
 
     </section>
+
+<section id="h_segmentation">
+  <h3>
+    <span its-locale-filter-list="en" lang="en">Grapheme/word segmentation &amp; selection</span>
+    <span its-locale-filter-list="zh-hans" lang="zh-hans">字素、词语的分割与选择</span>
+    <span its-locale-filter-list="zh-hant" lang="zh-hant">字素、詞語的分割與選擇</span>
+  </h3>
+
+  <p its-locale-filter-list="en" lang="en">Before text can be edited, searched, counted, or sorted, it is divided into units such as grapheme clusters, words, sentences, and paragraphs.</p>
+  <p its-locale-filter-list="zh-hans" lang="zh-hans">在编辑、检索、统计、排序等操作之前，文本需要划分为字素丛、词语、句子和段落等单位。</p>
+  <p its-locale-filter-list="zh-hant" lang="zh-hant">在編輯、檢索、統計、排序等操作之前，文字需要劃分為字素叢、詞語、句子和段落等單位。</p>
+
+  <section id="h_grapheme_clusters">
+    <h4>
+      <span its-locale-filter-list="en" lang="en">Grapheme clusters</span>
+      <span its-locale-filter-list="zh-hans" lang="zh-hans">字素丛</span>
+      <span its-locale-filter-list="zh-hant" lang="zh-hant">字素叢</span>
+    </h4>
+
+    <p its-locale-filter-list="en" lang="en">A grapheme cluster is a sequence of one or more code points that users perceive as a single character. It may consist of a base character followed by one or more combining marks, variation selectors, or other code points, and may also be an emoji sequence joined by zero width joiners. Unicode defines the default boundaries between grapheme clusters in <cite><a href="https://www.unicode.org/reports/tr29/">Unicode Text Segmentation</a></cite> (UAX #29).</p>
+    <p its-locale-filter-list="zh-hans" lang="zh-hans">字素丛是由一个或多个码位组成、被用户感知为单个字符的文本单位。它可以由一个基字符后跟一个或多个组合附加符号、变体选择符或其他码位组成，也可以是由零宽连接符连接的表情符号序列。Unicode在《Unicode文本分割》（<a href="https://www.unicode.org/reports/tr29/">UAX #29</a>）中定义了字素丛之间的默认边界。</p>
+    <p its-locale-filter-list="zh-hant" lang="zh-hant">字素叢是由一個或多個碼位組成、被使用者感知為單一字元的文字單位。它可以由一個基字元後跟一個或多個組合附加符號、變體選擇符或其他碼位組成，也可以是由零寬連接符連接的表情符號序列。Unicode在《Unicode文字分割》（<a href="https://www.unicode.org/reports/tr29/">UAX #29</a>）中定義了字素叢之間的預設邊界。</p>
+
+    <p its-locale-filter-list="en" lang="en">A Han character is normally represented by a single Unicode code point and therefore forms a single grapheme cluster. A Han character followed by an ideographic variation selector, however, consists of more than one code point. Chinese text may also contain pinyin with combining tone marks, emoji, and other combining sequences. These sequences should be treated as a single unit for editing and for counting.</p>
+    <p its-locale-filter-list="zh-hans" lang="zh-hans">汉字通常由一个Unicode码位表示，因此构成一个字素丛。不过，后跟表意文字变体选择符的汉字由多个码位组成。中文文本还可能包含带组合声调符号的拼音、表情符号以及其他组合序列。这些序列在编辑和计数时应被视为一个整体。</p>
+    <p its-locale-filter-list="zh-hant" lang="zh-hant">漢字通常由一個Unicode碼位表示，因此構成一個字素叢。不過，後跟表意文字變體選擇符的漢字由多個碼位組成。中文文字還可能包含帶組合聲調符號的拼音、表情符號以及其他組合序列。這些序列在編輯和計數時應被視為一個整體。</p>
+
+    <p its-locale-filter-list="en" lang="en">Cursor movement, deletion, and selection should operate on grapheme cluster boundaries rather than on code point or code unit boundaries. A caret should never be placed inside a grapheme cluster, and the Backspace and Delete keys should remove the whole cluster.</p>
+    <p its-locale-filter-list="zh-hans" lang="zh-hans">光标移动、删除和选择应以字素丛边界为单位，而不是以码位或码元边界为单位。插入点不应落在字素丛内部，退格键和删除键应删除整个字素丛。</p>
+    <p its-locale-filter-list="zh-hant" lang="zh-hant">游標移動、刪除和選擇應以字素叢邊界為單位，而不是以碼位或碼元邊界為單位。插入點不應落在字素叢內部，退格鍵和刪除鍵應刪除整個字素叢。</p>
+  </section>
+
+  <section id="h_word_boundaries">
+    <h4>
+      <span its-locale-filter-list="en" lang="en">Words and word boundaries</span>
+      <span its-locale-filter-list="zh-hans" lang="zh-hans">词语与词边界</span>
+      <span its-locale-filter-list="zh-hant" lang="zh-hant">詞語與詞邊界</span>
+    </h4>
+
+    <p its-locale-filter-list="en" lang="en">Chinese words are not separated by spaces or by any other character. Word boundaries in Chinese are computed by language-specific word segmentation, usually with a dictionary and a set of rules, sometimes combined with statistical models. The rules need to handle personal names, place names, numbers, and mixed text composition.</p>
+    <p its-locale-filter-list="zh-hans" lang="zh-hans">中文词语之间不使用空格或其他字符分隔，因此中文的词边界要通过与语言相关的分词来计算。分词通常使用词典和一组规则，有时还结合统计模型，并需要处理人名、地名、数字以及中英文混排等情况。</p>
+    <p its-locale-filter-list="zh-hant" lang="zh-hant">中文詞語之間不使用空格或其他字元分隔，因此中文的詞邊界要透過與語言相關的分詞來計算。分詞通常使用詞典和一組規則，有時還結合統計模型，並需要處理人名、地名、數字以及中英文混排等情況。</p>
+
+    <p its-locale-filter-list="en" lang="en">Word segmentation is inherently ambiguous. A sequence of Han characters may have more than one possible segmentation, and the correct one depends on context. For example, <span lang="zh-hans">研究生命的起源</span> may be divided as 研究 / 生命 / 的 / 起源 or as 研究生 / 命 / 的 / 起源; the two groupings lead to different interpretations (see [[[#fig-segmentation-ambiguity]]]). No algorithm can guarantee the semantically correct result in every case.</p>
+    <p its-locale-filter-list="zh-hans" lang="zh-hans">词语切分具有歧义。一串汉字可能有不止一种切分方式，正确结果取决于上下文和语义。例如“研究生命的起源”可以切分为“研究／生命／的／起源”，也可以切分为“研究生／命／的／起源”，两种切分会导致不同的理解（见[[[#fig-segmentation-ambiguity]]]）。任何算法都无法在所有情况下保证语义正确的切分结果。</p>
+    <p its-locale-filter-list="zh-hant" lang="zh-hant">詞語切分具有歧義。一串漢字可能有不止一種切分方式，正確結果取決於上下文和語義。例如「研究生命的起源」可以切分為「研究／生命／的／起源」，也可以切分為「研究生／命／的／起源」，兩種切分會導致不同的理解（見[[[#fig-segmentation-ambiguity]]]）。任何演算法都無法在所有情況下保證語義正確的切分結果。</p>
+
+    <figure id="fig-segmentation-ambiguity">
+      <img src="images/segmentation-ambiguity.svg" alt="Two possible word segmentations of 研究生命的起源: A groups it as 研究 / 生命 / 的 / 起源; B groups it as 研究生 / 命 / 的 / 起源." width="520" height="240" loading="lazy">
+      <figcaption>
+        <span its-locale-filter-list="en" lang="en">Two possible word segmentations of the same sequence of Han characters.</span>
+        <span its-locale-filter-list="zh-hans" lang="zh-hans">同一串汉字的两种可能分词结果</span>
+        <span its-locale-filter-list="zh-hant" lang="zh-hant">同一串漢字的兩種可能分詞結果</span>
+      </figcaption>
+    </figure>
+  </section>
+
+  <section id="h_sentence">
+    <h4>
+      <span its-locale-filter-list="en" lang="en">Sentences</span>
+      <span its-locale-filter-list="zh-hans" lang="zh-hans">句子</span>
+      <span its-locale-filter-list="zh-hant" lang="zh-hant">句子</span>
+    </h4>
+
+    <p its-locale-filter-list="en" lang="en">Sentences in Chinese are delimited primarily by sentence-final punctuation: the full stop (。), the question mark (？), and the exclamation mark (！), often followed by a closing quotation mark or bracket. The ellipsis (……) may also end an unfinished sentence. A period used in a decimal number or an abbreviation is not a sentence boundary. Sentence segmentation is used for sentence selection and similar operations.</p>
+    <p its-locale-filter-list="zh-hans" lang="zh-hans">中文句子主要由句末标点界定：句号（。）、问号（？）和感叹号（！），其后常常还有后引号或后括号。省略号（……）也可以结束一个未完成的句子。小数或缩写中的句点不是句子边界。句子切分用于选择句子等操作。</p>
+    <p its-locale-filter-list="zh-hant" lang="zh-hant">中文句子主要由句末標點界定：句號（。）、問號（？）和驚嘆號（！），其後常常還有後引號或後括號。刪節號（……）也可以結束一個未完成的句子。小數或縮寫中的句點不是句子邊界。句子切分用於選擇句子等操作。</p>
+
+  </section>
+
+</section>
 </section>
 
 
@@ -1041,15 +1112,6 @@ var respecConfig = {
 
 
 
-<!-- <section id="h_segmentation">
-  <h3>
-    <span its-locale-filter-list="en" lang="en">Grapheme/word segmentation &amp; selection</span>
-    <span its-locale-filter-list="zh-hans" lang="zh-hans">字素、词语的分割与选择</span>
-    <span its-locale-filter-list="zh-hant" lang="zh-hant">字素、詞語的分割與選擇</span>
-  </h3>
-
-<p>TBD(?)</p>
-</section> -->
 
 
 
